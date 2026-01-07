@@ -1,0 +1,25 @@
+package adjust
+
+type Column int
+
+const (
+    _ Column = iota
+    ColumnId
+    ColumnType
+    ColumnCategory
+    ColumnStandard
+    ColumnRate
+    ColumnOrder
+    ColumnApt
+    ColumnDate
+
+)
+
+type Params struct {
+    Column Column
+    Value interface{}
+}
+
+
+
+

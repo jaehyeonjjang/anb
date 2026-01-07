@@ -1,0 +1,1980 @@
+<P ColumnBreak="false" PageBreak="true" ParaShape="12" Style="2">
+	<TEXT CharShape="8">
+		<CHAR>
+			3.1.9 공중이 이용하는 부위</CHAR>
+	</TEXT>
+</P>
+<P ParaShape="260" Style="2">
+	<TEXT CharShape="76">
+		<CHAR>
+			가. 추락방지시설</CHAR>
+	</TEXT>
+</P>
+<P ParaShape="1" Style="2">
+	<TEXT CharShape="76">
+		<TABLE BorderFill="3" CellSpacing="0" ColCount="3" PageBreak="None" RepeatHeader="true" RowCount="7">
+			<SHAPEOBJECT InstId="1147381442" Lock="false" NumberingType="Table" ZOrder="93">
+				<SIZE Height="26216" HeightRelTo="Absolute" Protect="false" Width="49617" WidthRelTo="Absolute"/>
+				<POSITION AffectLSpacing="false" AllowOverlap="false" FlowWithText="true" HoldAnchorAndSO="false" HorzAlign="Left" HorzOffset="0" HorzRelTo="Para" TreatAsChar="true" VertAlign="Top" VertOffset="0" VertRelTo="Para"/>
+				<OUTSIDEMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+			</SHAPEOBJECT>
+		<INSIDEMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+		<ROW>
+			<CELL BorderFill="34" ColAddr="0" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="4117" Protect="false" RowAddr="0" RowSpan="1" Width="11238">
+				<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+				<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+					<P ParaShape="71" Style="20">
+						<TEXT CharShape="70">
+							<CHAR>
+								구   분</CHAR>
+						</TEXT>
+				</P>
+		</PARALIST>
+</CELL>
+<CELL BorderFill="35" ColAddr="1" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="4117" Protect="false" RowAddr="0" RowSpan="1" Width="9530">
+	<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+	<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+		<P ParaShape="71" Style="20">
+			<TEXT CharShape="70">
+				<CHAR>
+					조 사 항 목</CHAR>
+			</TEXT>
+	</P>
+</PARALIST>
+</CELL>
+<CELL BorderFill="36" ColAddr="2" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="4117" Protect="false" RowAddr="0" RowSpan="1" Width="28849">
+	<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+	<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+		<P ParaShape="5" Style="20">
+			<TEXT CharShape="70">
+				<CHAR>
+					점    검    내    용</CHAR>
+			</TEXT>
+	</P>
+</PARALIST>
+</CELL>
+</ROW>
+<ROW>
+	<CELL BorderFill="12" ColAddr="0" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="14544" Protect="false" RowAddr="1" RowSpan="4" Width="11238">
+		<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+		<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+			<P ParaShape="261" Style="0">
+				<TEXT CharShape="24">
+					<CHAR>
+						부재 상태 및 내구성</CHAR>
+				</TEXT>
+		</P>
+</PARALIST>
+</CELL>
+<CELL BorderFill="18" ColAddr="1" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="3636" Protect="false" RowAddr="1" RowSpan="1" Width="9530">
+	<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+	<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+		<P ParaShape="261" Style="0">
+			<TEXT CharShape="24">
+				<CHAR>
+					규격</CHAR>
+			</TEXT>
+	</P>
+</PARALIST>
+</CELL>
+<CELL BorderFill="11" ColAddr="2" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="3636" Protect="false" RowAddr="1" RowSpan="1" Width="28849">
+	<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+	<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+		<P ParaShape="92" Style="0">
+			<TEXT CharShape="24">
+				<CHAR>
+					지지구조 철물, 연결재 등의 규격</CHAR>
+			</TEXT>
+	</P>
+</PARALIST>
+</CELL>
+</ROW>
+<ROW>
+	<CELL BorderFill="18" ColAddr="1" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="3636" Protect="false" RowAddr="2" RowSpan="1" Width="9530">
+		<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+		<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+			<P ParaShape="261" Style="0">
+				<TEXT CharShape="24">
+					<CHAR>
+						접합 및 고정상태</CHAR>
+				</TEXT>
+		</P>
+</PARALIST>
+</CELL>
+<CELL BorderFill="11" ColAddr="2" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="3636" Protect="false" RowAddr="2" RowSpan="1" Width="28849">
+	<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+	<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+		<P ParaShape="92" Style="0">
+			<TEXT CharShape="24">
+				<CHAR>
+					지지구조 철물, 연결재 등의 접합 및 고정상태</CHAR>
+			</TEXT>
+	</P>
+</PARALIST>
+</CELL>
+</ROW>
+<ROW>
+	<CELL BorderFill="18" ColAddr="1" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="3636" Protect="false" RowAddr="3" RowSpan="1" Width="9530">
+		<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+		<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+			<P ParaShape="261" Style="0">
+				<TEXT CharShape="24">
+					<CHAR>
+						탈락 및 파손</CHAR>
+				</TEXT>
+		</P>
+</PARALIST>
+</CELL>
+<CELL BorderFill="11" ColAddr="2" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="3636" Protect="false" RowAddr="3" RowSpan="1" Width="28849">
+	<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+	<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+		<P ParaShape="92" Style="0">
+			<TEXT CharShape="24">
+				<CHAR>
+					지지구조 철물, 연결재 등의 탈락 및 파손 유무</CHAR>
+			</TEXT>
+	</P>
+</PARALIST>
+</CELL>
+</ROW>
+<ROW>
+	<CELL BorderFill="18" ColAddr="1" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="3636" Protect="false" RowAddr="4" RowSpan="1" Width="9530">
+		<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+		<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+			<P ParaShape="261" Style="0">
+				<TEXT CharShape="24">
+					<CHAR>
+						부식도</CHAR>
+				</TEXT>
+		</P>
+</PARALIST>
+</CELL>
+<CELL BorderFill="11" ColAddr="2" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="3636" Protect="false" RowAddr="4" RowSpan="1" Width="28849">
+	<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+	<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+		<P ParaShape="92" Style="0">
+			<TEXT CharShape="24">
+				<CHAR>
+					지지구조 철물, 연결재 등의 부식유무</CHAR>
+			</TEXT>
+	</P>
+</PARALIST>
+</CELL>
+</ROW>
+<ROW>
+	<CELL BorderFill="12" ColAddr="0" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="3636" Protect="false" RowAddr="5" RowSpan="1" Width="11238">
+		<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+		<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+			<P ParaShape="261" Style="0">
+				<TEXT CharShape="24">
+					<CHAR>
+						변위·변형</CHAR>
+				</TEXT>
+		</P>
+</PARALIST>
+</CELL>
+<CELL BorderFill="18" ColAddr="1" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="3636" Protect="false" RowAddr="5" RowSpan="1" Width="9530">
+	<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+	<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+		<P ParaShape="261" Style="0">
+			<TEXT CharShape="24">
+				<CHAR>
+					처짐변형</CHAR>
+			</TEXT>
+	</P>
+</PARALIST>
+</CELL>
+<CELL BorderFill="11" ColAddr="2" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="3636" Protect="false" RowAddr="5" RowSpan="1" Width="28849">
+	<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+	<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+		<P ParaShape="92" Style="0">
+			<TEXT CharShape="24">
+				<CHAR>
+					지지구조 철물, 연결재 등의 처짐 및 변형유무</CHAR>
+			</TEXT>
+	</P>
+</PARALIST>
+</CELL>
+</ROW>
+<ROW>
+	<CELL BorderFill="31" ColAddr="0" ColSpan="3" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="3919" Protect="false" RowAddr="6" RowSpan="1" Width="49617">
+		<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+		<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+			<P ParaShape="92" Style="0">
+				<TEXT CharShape="24">
+					<CHAR>
+						 ※ 상태양호</CHAR>
+				</TEXT>
+		</P>
+</PARALIST>
+</CELL>
+</ROW>
+</TABLE>
+<CHAR/>
+</TEXT>
+</P>
+<P ParaShape="1" Style="2">
+	<TEXT CharShape="76"/>
+</P>
+<P ParaShape="1" Style="2">
+	<TEXT CharShape="76">
+		<TABLE BorderFill="3" CellSpacing="0" ColCount="2" PageBreak="None" RepeatHeader="true" RowCount="7">
+			<SHAPEOBJECT InstId="1922155869" Lock="false" NumberingType="Table" ZOrder="125">
+				<SIZE Height="25933" HeightRelTo="Absolute" Protect="false" Width="49617" WidthRelTo="Absolute"/>
+				<POSITION AffectLSpacing="false" AllowOverlap="false" FlowWithText="true" HoldAnchorAndSO="false" HorzAlign="Left" HorzOffset="0" HorzRelTo="Para" TreatAsChar="true" VertAlign="Top" VertOffset="0" VertRelTo="Para"/>
+				<OUTSIDEMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+			</SHAPEOBJECT>
+		<INSIDEMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+		<ROW>
+			<CELL BorderFill="34" ColAddr="0" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="4117" Protect="false" RowAddr="0" RowSpan="1" Width="6450">
+				<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+				<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+					<P ParaShape="71" Style="20">
+						<TEXT CharShape="70">
+							<CHAR>
+								평가기준</CHAR>
+						</TEXT>
+				</P>
+		</PARALIST>
+</CELL>
+<CELL BorderFill="36" ColAddr="1" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="4117" Protect="false" RowAddr="0" RowSpan="1" Width="43167">
+	<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+	<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+		<P ParaShape="5" Style="20">
+			<TEXT CharShape="70">
+				<CHAR>
+					평  가  내  용</CHAR>
+			</TEXT>
+	</P>
+</PARALIST>
+</CELL>
+</ROW>
+<ROW>
+	<CELL BorderFill="12" ColAddr="0" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="3636" Protect="false" RowAddr="1" RowSpan="1" Width="6450">
+		<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+		<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+			<P ParaShape="261" Style="0">
+				<TEXT CharShape="24">
+					<CHAR>
+						a</CHAR>
+				</TEXT>
+		</P>
+</PARALIST>
+</CELL>
+<CELL BorderFill="11" ColAddr="1" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="3636" Protect="false" RowAddr="1" RowSpan="1" Width="43167">
+	<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+	<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+		<P ParaShape="92" Style="0">
+			<TEXT CharShape="24">
+				<CHAR>
+					규격에 맞게 설치되어 있고 손상 및 결함 등이 없는 최상의 상태</CHAR>
+			</TEXT>
+	</P>
+</PARALIST>
+</CELL>
+</ROW>
+<ROW>
+	<CELL BorderFill="12" ColAddr="0" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="3636" Protect="false" RowAddr="2" RowSpan="1" Width="6450">
+		<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+		<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+			<P ParaShape="261" Style="0">
+				<TEXT CharShape="24">
+					<CHAR>
+						b</CHAR>
+				</TEXT>
+		</P>
+</PARALIST>
+</CELL>
+<CELL BorderFill="11" ColAddr="1" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="3636" Protect="false" RowAddr="2" RowSpan="1" Width="43167">
+	<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+	<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+		<P ParaShape="92" Style="0">
+			<TEXT CharShape="24">
+				<CHAR>
+					추락방지시설에 경미한 결함 및 파손이 발생하였으나, 기능에는 문제가 없으며 결함의 진행 여부를 지속적으로 관찰하고 보수 여부를 결정해야 하는 상태 </CHAR>
+			</TEXT>
+	</P>
+</PARALIST>
+</CELL>
+</ROW>
+<ROW>
+	<CELL BorderFill="12" ColAddr="0" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="3636" Protect="false" RowAddr="3" RowSpan="1" Width="6450">
+		<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+		<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+			<P ParaShape="261" Style="0">
+				<TEXT CharShape="24">
+					<CHAR>
+						c</CHAR>
+				</TEXT>
+		</P>
+</PARALIST>
+</CELL>
+<CELL BorderFill="11" ColAddr="1" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="3636" Protect="false" RowAddr="3" RowSpan="1" Width="43167">
+	<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+	<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+		<P ParaShape="92" Style="0">
+			<TEXT CharShape="24">
+				<CHAR>
+					추락방지시설에 결함 및 파손으로 인하여 기능에 일부 문제가 발생하여 간단한 보수가 필요한 상태</CHAR>
+			</TEXT>
+	</P>
+</PARALIST>
+</CELL>
+</ROW>
+<ROW>
+	<CELL BorderFill="12" ColAddr="0" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="3636" Protect="false" RowAddr="4" RowSpan="1" Width="6450">
+		<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+		<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+			<P ParaShape="261" Style="0">
+				<TEXT CharShape="24">
+					<CHAR>
+						d</CHAR>
+				</TEXT>
+		</P>
+</PARALIST>
+</CELL>
+<CELL BorderFill="11" ColAddr="1" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="3636" Protect="false" RowAddr="4" RowSpan="1" Width="43167">
+	<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+	<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+		<P ParaShape="92" Style="0">
+			<TEXT CharShape="24">
+				<CHAR>
+					고정부 및 연결부 파손 등으로 인해 추락방지시설의 전도 및 이탈이 발생할 수 있어 즉각적인 보수·보강이 필요한 상태</CHAR>
+			</TEXT>
+	</P>
+</PARALIST>
+</CELL>
+</ROW>
+<ROW>
+	<CELL BorderFill="12" ColAddr="0" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="3636" Protect="false" RowAddr="5" RowSpan="1" Width="6450">
+		<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+		<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+			<P ParaShape="261" Style="0">
+				<TEXT CharShape="24">
+					<CHAR>
+						e</CHAR>
+				</TEXT>
+		</P>
+</PARALIST>
+</CELL>
+<CELL BorderFill="11" ColAddr="1" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="3636" Protect="false" RowAddr="5" RowSpan="1" Width="43167">
+	<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+	<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+		<P ParaShape="92" Style="0">
+			<TEXT CharShape="24">
+				<CHAR>
+					추락방지시설의 전반적 기능저하로 사용자의 안전에 위험이 있어 즉각 사용을 금지해야 하는 상태</CHAR>
+			</TEXT>
+	</P>
+</PARALIST>
+</CELL>
+</ROW>
+<ROW>
+	<CELL BorderFill="252" ColAddr="0" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="3636" Protect="false" RowAddr="6" RowSpan="1" Width="6450">
+		<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+		<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+			<P ParaShape="251" Style="0">
+				<TEXT CharShape="70">
+					<CHAR>
+						평가 등급</CHAR>
+				</TEXT>
+		</P>
+</PARALIST>
+</CELL>
+<CELL BorderFill="8" ColAddr="1" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="3636" Protect="false" RowAddr="6" RowSpan="1" Width="43167">
+	<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+	<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+		<P ParaShape="92" Style="0">
+			<TEXT CharShape="24">
+				<CHAR>
+					금회 조사 결과 현재 상태를 “a등급”으로 판정함.</CHAR>
+			</TEXT>
+	</P>
+</PARALIST>
+</CELL>
+</ROW>
+</TABLE>
+<CHAR/>
+</TEXT>
+</P>
+<P ParaShape="1" Style="2">
+	<TEXT CharShape="76"/>
+</P>
+<P ParaShape="1" Style="2">
+	<TEXT CharShape="76"/>
+</P>
+<P ColumnBreak="false" PageBreak="true" ParaShape="260" Style="2">
+	<TEXT CharShape="76">
+		<CHAR>
+			나. 도로포장</CHAR>
+	</TEXT>
+</P>
+<P ParaShape="1" Style="2">
+	<TEXT CharShape="76">
+		<TABLE BorderFill="3" CellSpacing="0" ColCount="3" PageBreak="None" RepeatHeader="true" RowCount="7">
+			<SHAPEOBJECT InstId="1921488447" Lock="false" NumberingType="Table" ZOrder="121">
+				<SIZE Height="25933" HeightRelTo="Absolute" Protect="false" Width="49617" WidthRelTo="Absolute"/>
+				<POSITION AffectLSpacing="false" AllowOverlap="false" FlowWithText="true" HoldAnchorAndSO="false" HorzAlign="Left" HorzOffset="0" HorzRelTo="Para" TreatAsChar="true" VertAlign="Top" VertOffset="0" VertRelTo="Para"/>
+				<OUTSIDEMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+			</SHAPEOBJECT>
+		<INSIDEMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+		<ROW>
+			<CELL BorderFill="34" ColAddr="0" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="4117" Protect="false" RowAddr="0" RowSpan="1" Width="11238">
+				<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+				<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+					<P ParaShape="71" Style="20">
+						<TEXT CharShape="70">
+							<CHAR>
+								구   분</CHAR>
+						</TEXT>
+				</P>
+		</PARALIST>
+</CELL>
+<CELL BorderFill="35" ColAddr="1" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="4117" Protect="false" RowAddr="0" RowSpan="1" Width="9530">
+	<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+	<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+		<P ParaShape="71" Style="20">
+			<TEXT CharShape="70">
+				<CHAR>
+					조 사 항 목</CHAR>
+			</TEXT>
+	</P>
+</PARALIST>
+</CELL>
+<CELL BorderFill="36" ColAddr="2" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="4117" Protect="false" RowAddr="0" RowSpan="1" Width="28849">
+	<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+	<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+		<P ParaShape="5" Style="20">
+			<TEXT CharShape="70">
+				<CHAR>
+					점    검    내    용</CHAR>
+			</TEXT>
+	</P>
+</PARALIST>
+</CELL>
+</ROW>
+<ROW>
+	<CELL BorderFill="12" ColAddr="0" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="18180" Protect="false" RowAddr="1" RowSpan="5" Width="11238">
+		<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+		<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+			<P ParaShape="261" Style="0">
+				<TEXT CharShape="24">
+					<CHAR>
+						포장상태 및 내구성</CHAR>
+				</TEXT>
+		</P>
+</PARALIST>
+</CELL>
+<CELL BorderFill="18" ColAddr="1" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="3636" Protect="false" RowAddr="1" RowSpan="1" Width="9530">
+	<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+	<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+		<P ParaShape="261" Style="0">
+			<TEXT CharShape="24">
+				<CHAR>
+					아스팔트 상태</CHAR>
+			</TEXT>
+	</P>
+</PARALIST>
+</CELL>
+<CELL BorderFill="11" ColAddr="2" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="3636" Protect="false" RowAddr="1" RowSpan="1" Width="28849">
+	<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+	<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+		<P ParaShape="92" Style="0">
+			<TEXT CharShape="24">
+				<CHAR>
+					균열, 함몰, 단차 및 요철, 블리딩, 마모 발생 상태</CHAR>
+			</TEXT>
+	</P>
+</PARALIST>
+</CELL>
+</ROW>
+<ROW>
+	<CELL BorderFill="18" ColAddr="1" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="3636" Protect="false" RowAddr="2" RowSpan="1" Width="9530">
+		<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+		<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+			<P ParaShape="261" Style="0">
+				<TEXT CharShape="24">
+					<CHAR>
+						콘크리트 상태</CHAR>
+				</TEXT>
+		</P>
+</PARALIST>
+</CELL>
+<CELL BorderFill="11" ColAddr="2" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="3636" Protect="false" RowAddr="2" RowSpan="1" Width="28849">
+	<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+	<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+		<P ParaShape="92" Style="0">
+			<TEXT CharShape="24">
+				<CHAR>
+					균열, 마모, 박리, 파손 발생 상태</CHAR>
+			</TEXT>
+	</P>
+</PARALIST>
+</CELL>
+</ROW>
+<ROW>
+	<CELL BorderFill="18" ColAddr="1" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="3636" Protect="false" RowAddr="3" RowSpan="1" Width="9530">
+		<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+		<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+			<P ParaShape="261" Style="0">
+				<TEXT CharShape="24">
+					<CHAR>
+						신축이음 전후, 구조물 경계부</CHAR>
+				</TEXT>
+		</P>
+</PARALIST>
+</CELL>
+<CELL BorderFill="11" ColAddr="2" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="3636" Protect="false" RowAddr="3" RowSpan="1" Width="28849">
+	<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+	<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+		<P ParaShape="92" Style="0">
+			<TEXT CharShape="24">
+				<CHAR>
+					단차, 파손 발생 상태</CHAR>
+			</TEXT>
+	</P>
+</PARALIST>
+</CELL>
+</ROW>
+<ROW>
+	<CELL BorderFill="18" ColAddr="1" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="3636" Protect="false" RowAddr="4" RowSpan="1" Width="9530">
+		<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+		<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+			<P ParaShape="261" Style="0">
+				<TEXT CharShape="24">
+					<CHAR>
+						곡선부, 중차량 통행차로</CHAR>
+				</TEXT>
+		</P>
+</PARALIST>
+</CELL>
+<CELL BorderFill="11" ColAddr="2" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="3636" Protect="false" RowAddr="4" RowSpan="1" Width="28849">
+	<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+	<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+		<P ParaShape="92" Style="0">
+			<TEXT CharShape="24">
+				<CHAR>
+					마모, 바퀴자국 발생 상태</CHAR>
+			</TEXT>
+	</P>
+</PARALIST>
+</CELL>
+</ROW>
+<ROW>
+	<CELL BorderFill="18" ColAddr="1" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="3636" Protect="false" RowAddr="5" RowSpan="1" Width="9530">
+		<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+		<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+			<P ParaShape="261" Style="0">
+				<TEXT CharShape="24">
+					<CHAR>
+						배수구 주변</CHAR>
+				</TEXT>
+		</P>
+</PARALIST>
+</CELL>
+<CELL BorderFill="11" ColAddr="2" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="3636" Protect="false" RowAddr="5" RowSpan="1" Width="28849">
+	<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+	<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+		<P ParaShape="92" Style="0">
+			<TEXT CharShape="24">
+				<CHAR>
+					물고임 발생 상태</CHAR>
+			</TEXT>
+	</P>
+</PARALIST>
+</CELL>
+</ROW>
+<ROW>
+	<CELL BorderFill="31" ColAddr="0" ColSpan="3" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="3636" Protect="false" RowAddr="6" RowSpan="1" Width="49617">
+		<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+		<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+			<P ParaShape="92" Style="0">
+				<TEXT CharShape="24">
+					<CHAR>
+						 ※ 상태양호</CHAR>
+				</TEXT>
+		</P>
+</PARALIST>
+</CELL>
+</ROW>
+</TABLE>
+<CHAR/>
+</TEXT>
+</P>
+<P ParaShape="1" Style="2">
+	<TEXT CharShape="76"/>
+</P>
+<P ParaShape="1" Style="2">
+	<TEXT CharShape="76">
+		<TABLE BorderFill="3" CellSpacing="0" ColCount="2" PageBreak="None" RepeatHeader="true" RowCount="7">
+			<SHAPEOBJECT InstId="1922155871" Lock="false" NumberingType="Table" ZOrder="126">
+				<SIZE Height="25933" HeightRelTo="Absolute" Protect="false" Width="49617" WidthRelTo="Absolute"/>
+				<POSITION AffectLSpacing="false" AllowOverlap="false" FlowWithText="true" HoldAnchorAndSO="false" HorzAlign="Left" HorzOffset="0" HorzRelTo="Para" TreatAsChar="true" VertAlign="Top" VertOffset="0" VertRelTo="Para"/>
+				<OUTSIDEMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+			</SHAPEOBJECT>
+		<INSIDEMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+		<ROW>
+			<CELL BorderFill="34" ColAddr="0" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="4117" Protect="false" RowAddr="0" RowSpan="1" Width="6449">
+				<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+				<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+					<P ParaShape="71" Style="20">
+						<TEXT CharShape="70">
+							<CHAR>
+								평가기준</CHAR>
+						</TEXT>
+				</P>
+		</PARALIST>
+</CELL>
+<CELL BorderFill="36" ColAddr="1" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="4117" Protect="false" RowAddr="0" RowSpan="1" Width="43168">
+	<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+	<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+		<P ParaShape="5" Style="20">
+			<TEXT CharShape="70">
+				<CHAR>
+					평  가  내  용</CHAR>
+			</TEXT>
+	</P>
+</PARALIST>
+</CELL>
+</ROW>
+<ROW>
+	<CELL BorderFill="12" ColAddr="0" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="3636" Protect="false" RowAddr="1" RowSpan="1" Width="6449">
+		<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+		<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+			<P ParaShape="261" Style="0">
+				<TEXT CharShape="24">
+					<CHAR>
+						a</CHAR>
+				</TEXT>
+		</P>
+</PARALIST>
+</CELL>
+<CELL BorderFill="11" ColAddr="1" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="3636" Protect="false" RowAddr="1" RowSpan="1" Width="43168">
+	<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+	<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+		<P ParaShape="92" Style="0">
+			<TEXT CharShape="24">
+				<CHAR>
+					포장상태가 최상으로 차량의 주행에 문제가 없는 상태</CHAR>
+			</TEXT>
+	</P>
+</PARALIST>
+</CELL>
+</ROW>
+<ROW>
+	<CELL BorderFill="12" ColAddr="0" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="3636" Protect="false" RowAddr="2" RowSpan="1" Width="6449">
+		<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+		<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+			<P ParaShape="261" Style="0">
+				<TEXT CharShape="24">
+					<CHAR>
+						b</CHAR>
+				</TEXT>
+		</P>
+</PARALIST>
+</CELL>
+<CELL BorderFill="11" ColAddr="1" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="3636" Protect="false" RowAddr="2" RowSpan="1" Width="43168">
+	<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+	<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+		<P ParaShape="92" Style="0">
+			<TEXT CharShape="24">
+				<CHAR>
+					포장의 결함 및 파손이 미미하게 발생된 상태로 차량주행에 문제는 없으며 결함의 진행여부를 지속적으로 관찰하고 보수 여부를 결정하여야 하는 상태</CHAR>
+			</TEXT>
+	</P>
+</PARALIST>
+</CELL>
+</ROW>
+<ROW>
+	<CELL BorderFill="12" ColAddr="0" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="3636" Protect="false" RowAddr="3" RowSpan="1" Width="6449">
+		<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+		<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+			<P ParaShape="261" Style="0">
+				<TEXT CharShape="24">
+					<CHAR>
+						c</CHAR>
+				</TEXT>
+		</P>
+</PARALIST>
+</CELL>
+<CELL BorderFill="11" ColAddr="1" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="3636" Protect="false" RowAddr="3" RowSpan="1" Width="43168">
+	<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+	<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+		<P ParaShape="92" Style="0">
+			<TEXT CharShape="24">
+				<CHAR>
+					포장 결함 및 파손이 차량에 직접적인 파손을 유발할 정도는 아니나 차량운전자에게 불쾌감을 유발할 수 있어 간단한 보수가 필요한 상태</CHAR>
+			</TEXT>
+	</P>
+</PARALIST>
+</CELL>
+</ROW>
+<ROW>
+	<CELL BorderFill="12" ColAddr="0" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="3636" Protect="false" RowAddr="4" RowSpan="1" Width="6449">
+		<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+		<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+			<P ParaShape="261" Style="0">
+				<TEXT CharShape="24">
+					<CHAR>
+						d</CHAR>
+				</TEXT>
+		</P>
+</PARALIST>
+</CELL>
+<CELL BorderFill="11" ColAddr="1" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="3636" Protect="false" RowAddr="4" RowSpan="1" Width="43168">
+	<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+	<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+		<P ParaShape="92" Style="0">
+			<TEXT CharShape="24">
+				<CHAR>
+					깊이 8cm이상의 포트홀에 의해 차량에 심각한 손상이 발생할 수 있어 즉각적인 보수가 필요한 상태</CHAR>
+			</TEXT>
+	</P>
+<P ParaShape="92" Style="0">
+	<TEXT CharShape="24">
+		<CHAR>
+			배수불량으로 인한 주행차로 상시 물고임으로 통행차량의 안전성 저하가 우려되는 상태</CHAR>
+	</TEXT>
+</P>
+</PARALIST>
+</CELL>
+</ROW>
+<ROW>
+	<CELL BorderFill="12" ColAddr="0" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="3636" Protect="false" RowAddr="5" RowSpan="1" Width="6449">
+		<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+		<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+			<P ParaShape="261" Style="0">
+				<TEXT CharShape="24">
+					<CHAR>
+						e</CHAR>
+				</TEXT>
+		</P>
+</PARALIST>
+</CELL>
+<CELL BorderFill="11" ColAddr="1" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="3636" Protect="false" RowAddr="5" RowSpan="1" Width="43168">
+	<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+	<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+		<P ParaShape="92" Style="0">
+			<TEXT CharShape="24">
+				<CHAR>
+					도로포장 결함 및 파손 정도가 심각하고 차량주행이 불가하여 차량통행 제한 및 사용금지가 필요한 상태</CHAR>
+			</TEXT>
+	</P>
+</PARALIST>
+</CELL>
+</ROW>
+<ROW>
+	<CELL BorderFill="252" ColAddr="0" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="3636" Protect="false" RowAddr="6" RowSpan="1" Width="6449">
+		<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+		<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+			<P ParaShape="251" Style="0">
+				<TEXT CharShape="70">
+					<CHAR>
+						평가 등급</CHAR>
+				</TEXT>
+		</P>
+</PARALIST>
+</CELL>
+<CELL BorderFill="8" ColAddr="1" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="3636" Protect="false" RowAddr="6" RowSpan="1" Width="43168">
+	<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+	<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+		<P ParaShape="92" Style="0">
+			<TEXT CharShape="24">
+				<CHAR>
+					금회 조사 결과 현재 상태를 “a등급”으로 판정함.</CHAR>
+			</TEXT>
+	</P>
+</PARALIST>
+</CELL>
+</ROW>
+</TABLE>
+<CHAR/>
+</TEXT>
+</P>
+<P ParaShape="1" Style="2">
+	<TEXT CharShape="76"/>
+</P>
+<P ParaShape="1" Style="2">
+	<TEXT CharShape="76"/>
+</P>
+<P ColumnBreak="false" PageBreak="true" ParaShape="260" Style="2">
+	<TEXT CharShape="76">
+		<CHAR>
+			다. 도로부 신축 이음부</CHAR>
+	</TEXT>
+</P>
+<P ParaShape="1" Style="2">
+	<TEXT CharShape="76">
+		<TABLE BorderFill="3" CellSpacing="0" ColCount="3" PageBreak="None" RepeatHeader="true" RowCount="6">
+			<SHAPEOBJECT InstId="1921488449" Lock="false" NumberingType="Table" ZOrder="122">
+				<SIZE Height="22297" HeightRelTo="Absolute" Protect="false" Width="49617" WidthRelTo="Absolute"/>
+				<POSITION AffectLSpacing="false" AllowOverlap="false" FlowWithText="true" HoldAnchorAndSO="false" HorzAlign="Left" HorzOffset="0" HorzRelTo="Para" TreatAsChar="true" VertAlign="Top" VertOffset="0" VertRelTo="Para"/>
+				<OUTSIDEMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+			</SHAPEOBJECT>
+		<INSIDEMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+		<ROW>
+			<CELL BorderFill="34" ColAddr="0" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="4117" Protect="false" RowAddr="0" RowSpan="1" Width="11238">
+				<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+				<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+					<P ParaShape="71" Style="20">
+						<TEXT CharShape="70">
+							<CHAR>
+								구   분</CHAR>
+						</TEXT>
+				</P>
+		</PARALIST>
+</CELL>
+<CELL BorderFill="35" ColAddr="1" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="4117" Protect="false" RowAddr="0" RowSpan="1" Width="9530">
+	<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+	<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+		<P ParaShape="71" Style="20">
+			<TEXT CharShape="70">
+				<CHAR>
+					조 사 항 목</CHAR>
+			</TEXT>
+	</P>
+</PARALIST>
+</CELL>
+<CELL BorderFill="36" ColAddr="2" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="4117" Protect="false" RowAddr="0" RowSpan="1" Width="28849">
+	<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+	<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+		<P ParaShape="5" Style="20">
+			<TEXT CharShape="70">
+				<CHAR>
+					점    검    내    용</CHAR>
+			</TEXT>
+	</P>
+</PARALIST>
+</CELL>
+</ROW>
+<ROW>
+	<CELL BorderFill="12" ColAddr="0" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="10908" Protect="false" RowAddr="1" RowSpan="3" Width="11238">
+		<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+		<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+			<P ParaShape="261" Style="0">
+				<TEXT CharShape="24">
+					<CHAR>
+						본체 설치상태 및 부재 내구성</CHAR>
+				</TEXT>
+		</P>
+</PARALIST>
+</CELL>
+<CELL BorderFill="18" ColAddr="1" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="3636" Protect="false" RowAddr="1" RowSpan="1" Width="9530">
+	<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+	<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+		<P ParaShape="261" Style="0">
+			<TEXT CharShape="24">
+				<CHAR>
+					설치 및 관리상태</CHAR>
+			</TEXT>
+	</P>
+</PARALIST>
+</CELL>
+<CELL BorderFill="11" ColAddr="2" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="3636" Protect="false" RowAddr="1" RowSpan="1" Width="28849">
+	<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+	<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+		<P ParaShape="92" Style="0">
+			<TEXT CharShape="24">
+				<CHAR>
+					충격음, 본체유동 및 파손, 누수, 유간부족 및 과다, 유간 오물퇴적 발생 상태</CHAR>
+			</TEXT>
+	</P>
+</PARALIST>
+</CELL>
+</ROW>
+<ROW>
+	<CELL BorderFill="18" ColAddr="1" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="3636" Protect="false" RowAddr="2" RowSpan="1" Width="9530">
+		<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+		<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+			<P ParaShape="261" Style="0">
+				<TEXT CharShape="24">
+					<CHAR>
+						고무재</CHAR>
+				</TEXT>
+		</P>
+</PARALIST>
+</CELL>
+<CELL BorderFill="11" ColAddr="2" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="3636" Protect="false" RowAddr="2" RowSpan="1" Width="28849">
+	<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+	<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+		<P ParaShape="92" Style="0">
+			<TEXT CharShape="24">
+				<CHAR>
+					고무판 마모, 강판노출 및 부식 상태</CHAR>
+			</TEXT>
+	</P>
+</PARALIST>
+</CELL>
+</ROW>
+<ROW>
+	<CELL BorderFill="18" ColAddr="1" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="3636" Protect="false" RowAddr="3" RowSpan="1" Width="9530">
+		<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+		<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+			<P ParaShape="261" Style="0">
+				<TEXT CharShape="24">
+					<CHAR>
+						강재</CHAR>
+				</TEXT>
+		</P>
+</PARALIST>
+</CELL>
+<CELL BorderFill="11" ColAddr="2" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="3636" Protect="false" RowAddr="3" RowSpan="1" Width="28849">
+	<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+	<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+		<P ParaShape="92" Style="0">
+			<TEXT CharShape="24">
+				<CHAR>
+					강재 연결부 이완 및 파손 상태</CHAR>
+			</TEXT>
+	</P>
+</PARALIST>
+</CELL>
+</ROW>
+<ROW>
+	<CELL BorderFill="12" ColAddr="0" ColSpan="2" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="3636" Protect="false" RowAddr="4" RowSpan="1" Width="20768">
+		<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+		<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+			<P ParaShape="261" Style="0">
+				<TEXT CharShape="24">
+					<CHAR>
+						후타재 설치상태 및 부내구성</CHAR>
+				</TEXT>
+		</P>
+</PARALIST>
+</CELL>
+<CELL BorderFill="11" ColAddr="2" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="3636" Protect="false" RowAddr="4" RowSpan="1" Width="28849">
+	<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+	<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+		<P ParaShape="92" Style="0">
+			<TEXT CharShape="191">
+				<CHAR>
+					단차(본체, 교면포장, 접속슬래브), 균열 및 파손 발생 상태</CHAR>
+			</TEXT>
+	</P>
+</PARALIST>
+</CELL>
+</ROW>
+<ROW>
+	<CELL BorderFill="31" ColAddr="0" ColSpan="3" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="3636" Protect="false" RowAddr="5" RowSpan="1" Width="49617">
+		<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+		<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+			<P ParaShape="92" Style="0">
+				<TEXT CharShape="24">
+					<CHAR>
+						 ※ 불분명하여 조사에서 제외함</CHAR>
+				</TEXT>
+		</P>
+</PARALIST>
+</CELL>
+</ROW>
+</TABLE>
+<CHAR/>
+</TEXT>
+</P>
+<P ParaShape="1" Style="2">
+	<TEXT CharShape="76"/>
+</P>
+<P ParaShape="1" Style="2">
+	<TEXT CharShape="76">
+		<TABLE BorderFill="3" CellSpacing="0" ColCount="2" PageBreak="None" RepeatHeader="true" RowCount="7">
+			<SHAPEOBJECT InstId="1922155873" Lock="false" NumberingType="Table" ZOrder="127">
+				<SIZE Height="29744" HeightRelTo="Absolute" Protect="false" Width="49617" WidthRelTo="Absolute"/>
+				<POSITION AffectLSpacing="false" AllowOverlap="false" FlowWithText="true" HoldAnchorAndSO="false" HorzAlign="Left" HorzOffset="0" HorzRelTo="Para" TreatAsChar="true" VertAlign="Top" VertOffset="0" VertRelTo="Para"/>
+				<OUTSIDEMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+			</SHAPEOBJECT>
+		<INSIDEMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+		<ROW>
+			<CELL BorderFill="34" ColAddr="0" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="4117" Protect="false" RowAddr="0" RowSpan="1" Width="6450">
+				<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+				<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+					<P ParaShape="71" Style="20">
+						<TEXT CharShape="70">
+							<CHAR>
+								평가기준</CHAR>
+						</TEXT>
+				</P>
+		</PARALIST>
+</CELL>
+<CELL BorderFill="36" ColAddr="1" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="4117" Protect="false" RowAddr="0" RowSpan="1" Width="43167">
+	<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+	<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+		<P ParaShape="5" Style="20">
+			<TEXT CharShape="70">
+				<CHAR>
+					평  가  내  용</CHAR>
+			</TEXT>
+	</P>
+</PARALIST>
+</CELL>
+</ROW>
+<ROW>
+	<CELL BorderFill="12" ColAddr="0" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="3636" Protect="false" RowAddr="1" RowSpan="1" Width="6450">
+		<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+		<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+			<P ParaShape="261" Style="0">
+				<TEXT CharShape="24">
+					<CHAR>
+						a</CHAR>
+				</TEXT>
+		</P>
+</PARALIST>
+</CELL>
+<CELL BorderFill="11" ColAddr="1" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="3636" Protect="false" RowAddr="1" RowSpan="1" Width="43167">
+	<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+	<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+		<P ParaShape="92" Style="0">
+			<TEXT CharShape="24">
+				<CHAR>
+					신축이음부에 손상이 없는 상태</CHAR>
+			</TEXT>
+	</P>
+</PARALIST>
+</CELL>
+</ROW>
+<ROW>
+	<CELL BorderFill="12" ColAddr="0" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="4485" Protect="false" RowAddr="2" RowSpan="1" Width="6450">
+		<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+		<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+			<P ParaShape="261" Style="0">
+				<TEXT CharShape="24">
+					<CHAR>
+						b</CHAR>
+				</TEXT>
+		</P>
+</PARALIST>
+</CELL>
+<CELL BorderFill="11" ColAddr="1" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="4485" Protect="false" RowAddr="2" RowSpan="1" Width="43167">
+	<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+	<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+		<P ParaShape="92" Style="0">
+			<TEXT CharShape="24">
+				<CHAR>
+					신축이음 본체의 토사 및 이물질 퇴적, 고무판 노후, 후타재의 미세균열이 발생된 상태로 기능발휘에는 지정이 없으며 결함의 진행 여부를 지속적으로 관찰하고 보수 여부를 결정하여야 하는 상태</CHAR>
+			</TEXT>
+	</P>
+</PARALIST>
+</CELL>
+</ROW>
+<ROW>
+	<CELL BorderFill="12" ColAddr="0" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="4485" Protect="false" RowAddr="3" RowSpan="1" Width="6450">
+		<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+		<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+			<P ParaShape="261" Style="0">
+				<TEXT CharShape="24">
+					<CHAR>
+						c</CHAR>
+				</TEXT>
+		</P>
+</PARALIST>
+</CELL>
+<CELL BorderFill="11" ColAddr="1" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="4485" Protect="false" RowAddr="3" RowSpan="1" Width="43167">
+	<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+	<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+		<P ParaShape="92" Style="0">
+			<TEXT CharShape="24">
+				<CHAR>
+					신축이음 본체의 유간사이 이물질로 기능불량, 고무판 마모, 국부적인 부식등의 열화가 발생한 상태 또는 후타재의 균열이 50cm이하의 간격으로 발생하거나, 국부적인 박리, 박락, 파손이 발생하여 간단한 보수가 필요한 상태</CHAR>
+			</TEXT>
+	</P>
+</PARALIST>
+</CELL>
+</ROW>
+<ROW>
+	<CELL BorderFill="12" ColAddr="0" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="5749" Protect="false" RowAddr="4" RowSpan="1" Width="6450">
+		<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+		<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+			<P ParaShape="261" Style="0">
+				<TEXT CharShape="24">
+					<CHAR>
+						d</CHAR>
+				</TEXT>
+		</P>
+</PARALIST>
+</CELL>
+<CELL BorderFill="11" ColAddr="1" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="5749" Protect="false" RowAddr="4" RowSpan="1" Width="43167">
+	<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+	<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+		<P ParaShape="92" Style="0">
+			<TEXT CharShape="24">
+				<CHAR>
+					신축유간 밀착으로 인한 거동불량 또는 신축유간이 넓어 차량통행에 지장을 초래할 수 있어 교체가 필요한 상태</CHAR>
+			</TEXT>
+	</P>
+<P ParaShape="92" Style="0">
+	<TEXT CharShape="24">
+		<CHAR>
+			신축이음의 파손 상태가 심각하여 차량통행 시 충격이 발생하는 등 긴급한 보수·보강이 필요한 상태</CHAR>
+	</TEXT>
+</P>
+</PARALIST>
+</CELL>
+</ROW>
+<ROW>
+	<CELL BorderFill="12" ColAddr="0" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="3636" Protect="false" RowAddr="5" RowSpan="1" Width="6450">
+		<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+		<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+			<P ParaShape="261" Style="0">
+				<TEXT CharShape="24">
+					<CHAR>
+						e</CHAR>
+				</TEXT>
+		</P>
+</PARALIST>
+</CELL>
+<CELL BorderFill="11" ColAddr="1" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="3636" Protect="false" RowAddr="5" RowSpan="1" Width="43167">
+	<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+	<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+		<P ParaShape="92" Style="0">
+			<TEXT CharShape="24">
+				<CHAR>
+					신축이음부 본체 탈락으로 차량주행 시 파손을 유발하거나, 주행 중 사고의 원인이 될 수 있는 상태</CHAR>
+			</TEXT>
+	</P>
+</PARALIST>
+</CELL>
+</ROW>
+<ROW>
+	<CELL BorderFill="252" ColAddr="0" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="3636" Protect="false" RowAddr="6" RowSpan="1" Width="6450">
+		<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+		<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+			<P ParaShape="251" Style="0">
+				<TEXT CharShape="70">
+					<CHAR>
+						평가 등급</CHAR>
+				</TEXT>
+		</P>
+</PARALIST>
+</CELL>
+<CELL BorderFill="8" ColAddr="1" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="3636" Protect="false" RowAddr="6" RowSpan="1" Width="43167">
+	<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+	<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+		<P ParaShape="92" Style="0">
+			<TEXT CharShape="24">
+				<CHAR>
+					등급산정 어려움</CHAR>
+			</TEXT>
+	</P>
+</PARALIST>
+</CELL>
+</ROW>
+</TABLE>
+<CHAR/>
+</TEXT>
+</P>
+<P ParaShape="1" Style="2">
+	<TEXT CharShape="76"/>
+</P>
+<P ParaShape="1" Style="2">
+	<TEXT CharShape="76"/>
+</P>
+<P ColumnBreak="false" PageBreak="true" ParaShape="260" Style="2">
+	<TEXT CharShape="76">
+		<CHAR>
+			라. 환기구 등의 덮개</CHAR>
+	</TEXT>
+</P>
+<P ParaShape="1" Style="2">
+	<TEXT CharShape="76">
+		<TABLE BorderFill="3" CellSpacing="0" ColCount="3" PageBreak="None" RepeatHeader="true" RowCount="8">
+			<SHAPEOBJECT InstId="1921488451" Lock="false" NumberingType="Table" ZOrder="123">
+				<SIZE Height="29286" HeightRelTo="Absolute" Protect="false" Width="49617" WidthRelTo="Absolute"/>
+				<POSITION AffectLSpacing="false" AllowOverlap="false" FlowWithText="true" HoldAnchorAndSO="false" HorzAlign="Left" HorzOffset="0" HorzRelTo="Para" TreatAsChar="true" VertAlign="Top" VertOffset="0" VertRelTo="Para"/>
+				<OUTSIDEMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+			</SHAPEOBJECT>
+		<INSIDEMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+		<ROW>
+			<CELL BorderFill="34" ColAddr="0" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="4117" Protect="false" RowAddr="0" RowSpan="1" Width="11238">
+				<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+				<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+					<P ParaShape="71" Style="20">
+						<TEXT CharShape="70">
+							<CHAR>
+								구   분</CHAR>
+						</TEXT>
+				</P>
+		</PARALIST>
+</CELL>
+<CELL BorderFill="35" ColAddr="1" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="4117" Protect="false" RowAddr="0" RowSpan="1" Width="9530">
+	<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+	<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+		<P ParaShape="71" Style="20">
+			<TEXT CharShape="70">
+				<CHAR>
+					조 사 항 목</CHAR>
+			</TEXT>
+	</P>
+</PARALIST>
+</CELL>
+<CELL BorderFill="36" ColAddr="2" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="4117" Protect="false" RowAddr="0" RowSpan="1" Width="28849">
+	<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+	<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+		<P ParaShape="5" Style="20">
+			<TEXT CharShape="70">
+				<CHAR>
+					점    검    내    용</CHAR>
+			</TEXT>
+	</P>
+</PARALIST>
+</CELL>
+</ROW>
+<ROW>
+	<CELL BorderFill="12" ColAddr="0" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="15350" Protect="false" RowAddr="1" RowSpan="5" Width="11238">
+		<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+		<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+			<P ParaShape="261" Style="0">
+				<TEXT CharShape="24">
+					<CHAR>
+						부재 상태 및 내구성</CHAR>
+				</TEXT>
+		</P>
+</PARALIST>
+</CELL>
+<CELL BorderFill="18" ColAddr="1" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="3636" Protect="false" RowAddr="1" RowSpan="1" Width="9530">
+	<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+	<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+		<P ParaShape="261" Style="0">
+			<TEXT CharShape="24">
+				<CHAR>
+					규격</CHAR>
+			</TEXT>
+	</P>
+</PARALIST>
+</CELL>
+<CELL BorderFill="11" ColAddr="2" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="3636" Protect="false" RowAddr="1" RowSpan="1" Width="28849">
+	<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+	<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+		<P ParaShape="92" Style="0">
+			<TEXT CharShape="24">
+				<CHAR>
+					지지구조 및 연결재 등의 규격</CHAR>
+			</TEXT>
+	</P>
+</PARALIST>
+</CELL>
+</ROW>
+<ROW>
+	<CELL BorderFill="18" ColAddr="1" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="3636" Protect="false" RowAddr="2" RowSpan="1" Width="9530">
+		<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+		<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+			<P ParaShape="261" Style="0">
+				<TEXT CharShape="24">
+					<CHAR>
+						접합 및 고정상태</CHAR>
+				</TEXT>
+		</P>
+</PARALIST>
+</CELL>
+<CELL BorderFill="11" ColAddr="2" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="3636" Protect="false" RowAddr="2" RowSpan="1" Width="28849">
+	<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+	<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+		<P ParaShape="92" Style="0">
+			<TEXT CharShape="24">
+				<CHAR>
+					지지구조, 연결재 등의 접합 및 고정상태</CHAR>
+			</TEXT>
+	</P>
+</PARALIST>
+</CELL>
+</ROW>
+<ROW>
+	<CELL BorderFill="18" ColAddr="1" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="3636" Protect="false" RowAddr="3" RowSpan="1" Width="9530">
+		<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+		<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+			<P ParaShape="261" Style="0">
+				<TEXT CharShape="24">
+					<CHAR>
+						탈락 및 파손</CHAR>
+				</TEXT>
+		</P>
+</PARALIST>
+</CELL>
+<CELL BorderFill="11" ColAddr="2" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="3636" Protect="false" RowAddr="3" RowSpan="1" Width="28849">
+	<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+	<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+		<P ParaShape="92" Style="0">
+			<TEXT CharShape="24">
+				<CHAR>
+					지지구조, 연결재 등의 탈락 및 파손 유무</CHAR>
+			</TEXT>
+	</P>
+</PARALIST>
+</CELL>
+</ROW>
+<ROW>
+	<CELL BorderFill="18" ColAddr="1" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="3636" Protect="false" RowAddr="4" RowSpan="1" Width="9530">
+		<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+		<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+			<P ParaShape="261" Style="0">
+				<TEXT CharShape="24">
+					<CHAR>
+						부식도</CHAR>
+				</TEXT>
+		</P>
+</PARALIST>
+</CELL>
+<CELL BorderFill="11" ColAddr="2" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="3636" Protect="false" RowAddr="4" RowSpan="1" Width="28849">
+	<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+	<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+		<P ParaShape="92" Style="0">
+			<TEXT CharShape="24">
+				<CHAR>
+					지지구조, 연결재 등의 부식 유무</CHAR>
+			</TEXT>
+	</P>
+</PARALIST>
+</CELL>
+</ROW>
+<ROW>
+	<CELL BorderFill="18" ColAddr="1" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="3636" Protect="false" RowAddr="5" RowSpan="1" Width="9530">
+		<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+		<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+			<P ParaShape="261" Style="0">
+				<TEXT CharShape="24">
+					<CHAR>
+						걸침턱 및 추락방지시설</CHAR>
+				</TEXT>
+		</P>
+</PARALIST>
+</CELL>
+<CELL BorderFill="11" ColAddr="2" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="3636" Protect="false" RowAddr="5" RowSpan="1" Width="28849">
+	<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+	<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+		<P ParaShape="92" Style="0">
+			<TEXT CharShape="24">
+				<CHAR>
+					걸침턱, 추락방지시설 등의 상태 및 유무</CHAR>
+			</TEXT>
+	</P>
+</PARALIST>
+</CELL>
+</ROW>
+<ROW>
+	<CELL BorderFill="12" ColAddr="0" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="3069" Protect="false" RowAddr="6" RowSpan="1" Width="11238">
+		<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+		<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+			<P ParaShape="261" Style="0">
+				<TEXT CharShape="24">
+					<CHAR>
+						변위·변형</CHAR>
+				</TEXT>
+		</P>
+</PARALIST>
+</CELL>
+<CELL BorderFill="18" ColAddr="1" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="3636" Protect="false" RowAddr="6" RowSpan="1" Width="9530">
+	<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+	<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+		<P ParaShape="261" Style="0">
+			<TEXT CharShape="24">
+				<CHAR>
+					처짐변형</CHAR>
+			</TEXT>
+	</P>
+</PARALIST>
+</CELL>
+<CELL BorderFill="11" ColAddr="2" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="3636" Protect="false" RowAddr="6" RowSpan="1" Width="28849">
+	<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+	<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+		<P ParaShape="92" Style="0">
+			<TEXT CharShape="24">
+				<CHAR>
+					환기구 덮개 등의 처짐 및 변형 유무</CHAR>
+			</TEXT>
+	</P>
+</PARALIST>
+</CELL>
+</ROW>
+<ROW>
+	<CELL BorderFill="31" ColAddr="0" ColSpan="3" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="3353" Protect="false" RowAddr="7" RowSpan="1" Width="49617">
+		<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+		<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+			<P ParaShape="92" Style="0">
+				<TEXT CharShape="24">
+					<CHAR>
+						 ※ 상태양호</CHAR>
+				</TEXT>
+		</P>
+</PARALIST>
+</CELL>
+</ROW>
+</TABLE>
+<CHAR/>
+</TEXT>
+</P>
+<P ParaShape="1" Style="2">
+	<TEXT CharShape="76"/>
+</P>
+<P ParaShape="1" Style="2">
+	<TEXT CharShape="76">
+		<TABLE BorderFill="3" CellSpacing="0" ColCount="2" PageBreak="None" RepeatHeader="true" RowCount="7">
+			<SHAPEOBJECT InstId="1922155875" Lock="false" NumberingType="Table" ZOrder="128">
+				<SIZE Height="26782" HeightRelTo="Absolute" Protect="false" Width="49617" WidthRelTo="Absolute"/>
+				<POSITION AffectLSpacing="false" AllowOverlap="false" FlowWithText="true" HoldAnchorAndSO="false" HorzAlign="Left" HorzOffset="0" HorzRelTo="Para" TreatAsChar="true" VertAlign="Top" VertOffset="0" VertRelTo="Para"/>
+				<OUTSIDEMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+			</SHAPEOBJECT>
+		<INSIDEMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+		<ROW>
+			<CELL BorderFill="34" ColAddr="0" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="4117" Protect="false" RowAddr="0" RowSpan="1" Width="6450">
+				<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+				<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+					<P ParaShape="71" Style="20">
+						<TEXT CharShape="70">
+							<CHAR>
+								평가기준</CHAR>
+						</TEXT>
+				</P>
+		</PARALIST>
+</CELL>
+<CELL BorderFill="36" ColAddr="1" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="4117" Protect="false" RowAddr="0" RowSpan="1" Width="43167">
+	<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+	<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+		<P ParaShape="5" Style="20">
+			<TEXT CharShape="70">
+				<CHAR>
+					평  가  내  용</CHAR>
+			</TEXT>
+	</P>
+</PARALIST>
+</CELL>
+</ROW>
+<ROW>
+	<CELL BorderFill="12" ColAddr="0" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="3636" Protect="false" RowAddr="1" RowSpan="1" Width="6450">
+		<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+		<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+			<P ParaShape="261" Style="0">
+				<TEXT CharShape="24">
+					<CHAR>
+						a</CHAR>
+				</TEXT>
+		</P>
+</PARALIST>
+</CELL>
+<CELL BorderFill="11" ColAddr="1" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="3636" Protect="false" RowAddr="1" RowSpan="1" Width="43167">
+	<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+	<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+		<P ParaShape="92" Style="0">
+			<TEXT CharShape="24">
+				<CHAR>
+					규격에 맞게 설치되어 있고 환기구 등의 덮개가 최상의 상태</CHAR>
+			</TEXT>
+	</P>
+</PARALIST>
+</CELL>
+</ROW>
+<ROW>
+	<CELL BorderFill="12" ColAddr="0" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="4485" Protect="false" RowAddr="2" RowSpan="1" Width="6450">
+		<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+		<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+			<P ParaShape="261" Style="0">
+				<TEXT CharShape="24">
+					<CHAR>
+						b</CHAR>
+				</TEXT>
+		</P>
+</PARALIST>
+</CELL>
+<CELL BorderFill="11" ColAddr="1" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="4485" Protect="false" RowAddr="2" RowSpan="1" Width="43167">
+	<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+	<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+		<P ParaShape="92" Style="0">
+			<TEXT CharShape="24">
+				<CHAR>
+					덮개 등(지지구조 철물, 연결재, 걸침턱 등)에 결함 및 파손 등이 발생하였으나, 기능 발휘에는 지장이 없고 기능성에 문제가 없는 상태</CHAR>
+			</TEXT>
+	</P>
+<P ParaShape="92" Style="0">
+	<TEXT CharShape="24">
+		<CHAR>
+			기능성에 문제가 없어 결함 및 파손에 대해 지속적 관찰이 필요한 상태</CHAR>
+	</TEXT>
+</P>
+</PARALIST>
+</CELL>
+</ROW>
+<ROW>
+	<CELL BorderFill="12" ColAddr="0" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="3636" Protect="false" RowAddr="3" RowSpan="1" Width="6450">
+		<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+		<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+			<P ParaShape="261" Style="0">
+				<TEXT CharShape="24">
+					<CHAR>
+						c</CHAR>
+				</TEXT>
+		</P>
+</PARALIST>
+</CELL>
+<CELL BorderFill="11" ColAddr="1" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="3636" Protect="false" RowAddr="3" RowSpan="1" Width="43167">
+	<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+	<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+		<P ParaShape="92" Style="0">
+			<TEXT CharShape="24">
+				<CHAR>
+					덮개 등(지지구조 철물, 연결재, 걸침턱 등)에 결함 및 파손 등으로 기능에 일부 문제가 발생하여 보수가 필요한 상태</CHAR>
+			</TEXT>
+	</P>
+</PARALIST>
+</CELL>
+</ROW>
+<ROW>
+	<CELL BorderFill="12" ColAddr="0" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="3636" Protect="false" RowAddr="4" RowSpan="1" Width="6450">
+		<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+		<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+			<P ParaShape="261" Style="0">
+				<TEXT CharShape="24">
+					<CHAR>
+						d</CHAR>
+				</TEXT>
+		</P>
+</PARALIST>
+</CELL>
+<CELL BorderFill="11" ColAddr="1" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="3636" Protect="false" RowAddr="4" RowSpan="1" Width="43167">
+	<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+	<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+		<P ParaShape="92" Style="0">
+			<TEXT CharShape="24">
+				<CHAR>
+					덮개 등(지지구조 철물, 연결재, 걸침턱 등)에 결함 및 파손 등으로 기능이 상실되어 국부적인 교체 및 보강이 필요한 상태</CHAR>
+			</TEXT>
+	</P>
+</PARALIST>
+</CELL>
+</ROW>
+<ROW>
+	<CELL BorderFill="12" ColAddr="0" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="3636" Protect="false" RowAddr="5" RowSpan="1" Width="6450">
+		<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+		<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+			<P ParaShape="261" Style="0">
+				<TEXT CharShape="24">
+					<CHAR>
+						e</CHAR>
+				</TEXT>
+		</P>
+</PARALIST>
+</CELL>
+<CELL BorderFill="11" ColAddr="1" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="3636" Protect="false" RowAddr="5" RowSpan="1" Width="43167">
+	<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+	<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+		<P ParaShape="92" Style="0">
+			<TEXT CharShape="24">
+				<CHAR>
+					결함 및 파손 정도가 심각하거나 덮개 등이 탈락된 상태</CHAR>
+			</TEXT>
+	</P>
+</PARALIST>
+</CELL>
+</ROW>
+<ROW>
+	<CELL BorderFill="252" ColAddr="0" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="3636" Protect="false" RowAddr="6" RowSpan="1" Width="6450">
+		<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+		<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+			<P ParaShape="251" Style="0">
+				<TEXT CharShape="70">
+					<CHAR>
+						평가 등급</CHAR>
+				</TEXT>
+		</P>
+</PARALIST>
+</CELL>
+<CELL BorderFill="8" ColAddr="1" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="3636" Protect="false" RowAddr="6" RowSpan="1" Width="43167">
+	<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+	<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+		<P ParaShape="92" Style="0">
+			<TEXT CharShape="24">
+				<CHAR>
+					금회 조사 결과 현재 상태를 “a등급”으로 판정함.</CHAR>
+			</TEXT>
+	</P>
+</PARALIST>
+</CELL>
+</ROW>
+</TABLE>
+<CHAR/>
+</TEXT>
+</P>
+<P ParaShape="1" Style="2">
+	<TEXT CharShape="76"/>
+</P>
+<P ParaShape="1" Style="2">
+	<TEXT CharShape="76"/>
+</P>
+<P ColumnBreak="false" PageBreak="true" ParaShape="235" Style="2">
+	<TEXT CharShape="8">
+		<CHAR>
+			3.1.10 외벽마감재</CHAR>
+	</TEXT>
+</P>
+<P ParaShape="1" Style="2">
+	<TEXT CharShape="76">
+		<TABLE BorderFill="3" CellSpacing="0" ColCount="3" PageBreak="None" RepeatHeader="true" RowCount="7">
+			<SHAPEOBJECT InstId="1921488453" Lock="false" NumberingType="Table" ZOrder="124">
+				<SIZE Height="25933" HeightRelTo="Absolute" Protect="false" Width="49617" WidthRelTo="Absolute"/>
+				<POSITION AffectLSpacing="false" AllowOverlap="false" FlowWithText="true" HoldAnchorAndSO="false" HorzAlign="Left" HorzOffset="0" HorzRelTo="Para" TreatAsChar="true" VertAlign="Top" VertOffset="0" VertRelTo="Para"/>
+				<OUTSIDEMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+			</SHAPEOBJECT>
+		<INSIDEMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+		<ROW>
+			<CELL BorderFill="34" ColAddr="0" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="4117" Protect="false" RowAddr="0" RowSpan="1" Width="11237">
+				<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+				<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+					<P ParaShape="71" Style="20">
+						<TEXT CharShape="70">
+							<CHAR>
+								구   분</CHAR>
+						</TEXT>
+				</P>
+		</PARALIST>
+</CELL>
+<CELL BorderFill="35" ColAddr="1" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="4117" Protect="false" RowAddr="0" RowSpan="1" Width="9530">
+	<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+	<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+		<P ParaShape="71" Style="20">
+			<TEXT CharShape="70">
+				<CHAR>
+					조 사 항 목</CHAR>
+			</TEXT>
+	</P>
+</PARALIST>
+</CELL>
+<CELL BorderFill="36" ColAddr="2" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="4117" Protect="false" RowAddr="0" RowSpan="1" Width="28850">
+	<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+	<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+		<P ParaShape="5" Style="20">
+			<TEXT CharShape="70">
+				<CHAR>
+					점    검    내    용</CHAR>
+			</TEXT>
+	</P>
+</PARALIST>
+</CELL>
+</ROW>
+<ROW>
+	<CELL BorderFill="12" ColAddr="0" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="12280" Protect="false" RowAddr="1" RowSpan="4" Width="11237">
+		<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+		<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+			<P ParaShape="261" Style="0">
+				<TEXT CharShape="24">
+					<CHAR>
+						부재 상태 및 내구성</CHAR>
+				</TEXT>
+		</P>
+</PARALIST>
+</CELL>
+<CELL BorderFill="18" ColAddr="1" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="3636" Protect="false" RowAddr="1" RowSpan="1" Width="9530">
+	<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+	<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+		<P ParaShape="261" Style="0">
+			<TEXT CharShape="24">
+				<CHAR>
+					균열발생 상태</CHAR>
+			</TEXT>
+	</P>
+</PARALIST>
+</CELL>
+<CELL BorderFill="11" ColAddr="2" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="3636" Protect="false" RowAddr="1" RowSpan="1" Width="28850">
+	<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+	<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+		<P ParaShape="92" Style="0">
+			<TEXT CharShape="24">
+				<CHAR>
+					균열 폭 및 면적률, 발생 형태</CHAR>
+			</TEXT>
+	</P>
+</PARALIST>
+</CELL>
+</ROW>
+<ROW>
+	<CELL BorderFill="18" ColAddr="1" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="3636" Protect="false" RowAddr="2" RowSpan="1" Width="9530">
+		<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+		<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+			<P ParaShape="261" Style="0">
+				<TEXT CharShape="24">
+					<CHAR>
+						붙임모르타르 상태</CHAR>
+				</TEXT>
+		</P>
+</PARALIST>
+</CELL>
+<CELL BorderFill="11" ColAddr="2" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="3636" Protect="false" RowAddr="2" RowSpan="1" Width="28850">
+	<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+	<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+		<P ParaShape="92" Style="0">
+			<TEXT CharShape="24">
+				<CHAR>
+					들뜸, 박락, 노후정도</CHAR>
+			</TEXT>
+	</P>
+</PARALIST>
+</CELL>
+</ROW>
+<ROW>
+	<CELL BorderFill="18" ColAddr="1" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="3636" Protect="false" RowAddr="3" RowSpan="1" Width="9530">
+		<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+		<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+			<P ParaShape="261" Style="0">
+				<TEXT CharShape="24">
+					<CHAR>
+						연결철물 시공 상태</CHAR>
+				</TEXT>
+		</P>
+</PARALIST>
+</CELL>
+<CELL BorderFill="11" ColAddr="2" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="3636" Protect="false" RowAddr="3" RowSpan="1" Width="28850">
+	<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+	<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+		<P ParaShape="92" Style="0">
+			<TEXT CharShape="24">
+				<CHAR>
+					지지구조 철물 및 연결재 노후상태 등</CHAR>
+			</TEXT>
+	</P>
+</PARALIST>
+</CELL>
+</ROW>
+<ROW>
+	<CELL BorderFill="18" ColAddr="1" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="3636" Protect="false" RowAddr="4" RowSpan="1" Width="9530">
+		<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+		<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+			<P ParaShape="261" Style="0">
+				<TEXT CharShape="24">
+					<CHAR>
+						균열방지 조치 상태</CHAR>
+				</TEXT>
+		</P>
+</PARALIST>
+</CELL>
+<CELL BorderFill="11" ColAddr="2" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="3636" Protect="false" RowAddr="4" RowSpan="1" Width="28850">
+	<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+	<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+		<P ParaShape="92" Style="0">
+			<TEXT CharShape="24">
+				<CHAR>
+					하중분산(조적턱, 앵글선반 등), 신축줄눈</CHAR>
+			</TEXT>
+	</P>
+</PARALIST>
+</CELL>
+</ROW>
+<ROW>
+	<CELL BorderFill="12" ColAddr="0" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="3070" Protect="false" RowAddr="5" RowSpan="1" Width="11237">
+		<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+		<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+			<P ParaShape="261" Style="0">
+				<TEXT CharShape="24">
+					<CHAR>
+						변위·변형</CHAR>
+				</TEXT>
+		</P>
+</PARALIST>
+</CELL>
+<CELL BorderFill="18" ColAddr="1" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="3636" Protect="false" RowAddr="5" RowSpan="1" Width="9530">
+	<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+	<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+		<P ParaShape="261" Style="0">
+			<TEXT CharShape="24">
+				<CHAR>
+					기울기 및 배부름</CHAR>
+			</TEXT>
+	</P>
+</PARALIST>
+</CELL>
+<CELL BorderFill="11" ColAddr="2" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="3636" Protect="false" RowAddr="5" RowSpan="1" Width="28850">
+	<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+	<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+		<P ParaShape="92" Style="0">
+			<TEXT CharShape="24">
+				<CHAR>
+					면외방향 기울기 및 배부름 발생 유무</CHAR>
+			</TEXT>
+	</P>
+</PARALIST>
+</CELL>
+</ROW>
+<ROW>
+	<CELL BorderFill="31" ColAddr="0" ColSpan="3" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="3636" Protect="false" RowAddr="6" RowSpan="1" Width="49617">
+		<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+		<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+			<P ParaShape="195" Style="0">
+				<TEXT CharShape="24">
+					<CHAR>
+						 ※ 해당 건축물 외벽에서 균열 및 콘크리트 박락이 조사됨.</CHAR>
+				</TEXT>
+		</P>
+</PARALIST>
+</CELL>
+</ROW>
+</TABLE>
+<CHAR/>
+</TEXT>
+</P>
+<P ParaShape="1" Style="2">
+	<TEXT CharShape="76">
+		<TABLE BorderFill="3" CellSpacing="0" ColCount="2" PageBreak="Cell" RepeatHeader="true" RowCount="3">
+			<SHAPEOBJECT InstId="1958467382" Lock="false" NumberingType="Table" ZOrder="130">
+				<SIZE Height="38259" HeightRelTo="Absolute" Protect="false" Width="49463" WidthRelTo="Absolute"/>
+				<POSITION AffectLSpacing="false" AllowOverlap="false" FlowWithText="true" HoldAnchorAndSO="false" HorzAlign="Left" HorzOffset="0" HorzRelTo="Column" TreatAsChar="true" VertAlign="Top" VertOffset="0" VertRelTo="Para"/>
+				<OUTSIDEMARGIN Bottom="140" Left="140" Right="140" Top="140"/>
+			</SHAPEOBJECT>
+		<INSIDEMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+		<ROW>
+			<CELL BorderFill="79" ColAddr="0" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="17413" Protect="false" RowAddr="0" RowSpan="1" Width="24733">
+				<CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+				<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+					<P ParaShape="6" Style="0">
+						<TEXT CharShape="24">
+							<PICTURE Reverse="false">
+								<SHAPEOBJECT InstId="1475935152" Lock="false" NumberingType="Figure" ZOrder="146">
+									<SIZE Height="17574" HeightRelTo="Absolute" Protect="true" Width="24377" WidthRelTo="Absolute"/>
+									<POSITION AffectLSpacing="false" AllowOverlap="false" FlowWithText="true" HoldAnchorAndSO="false" HorzAlign="Left" HorzOffset="0" HorzRelTo="Para" TreatAsChar="true" VertAlign="Top" VertOffset="0" VertRelTo="Para"/>
+									<OUTSIDEMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+									<SHAPECOMMENT>
+										그림입니다.
+원본 그림의 이름: IMG_0004.JPG
+원본 그림의 크기: 가로 2048pixel, 세로 1536pixel
+사진 찍은 날짜: 2024년 03월 11일, 오후 5:25</SHAPECOMMENT>
+								</SHAPEOBJECT>
+							<SHAPECOMPONENT CurHeight="17574" CurWidth="24377" GroupLevel="0" HorzFlip="false" InstID="402193329" OriHeight="61440" OriWidth="81900" VertFlip="false" XPos="0" YPos="0">
+								<ROTATIONINFO Angle="0" CenterX="12188" CenterY="8787" Rotate="1"/>
+								<RENDERINGINFO>
+									<TRANSMATRIX E1="1.00000" E2="0.00000" E3="0.00000" E4="0.00000" E5="1.00000" E6="0.00000"/>
+									<SCAMATRIX E1="0.29764" E2="0.00000" E3="0.00000" E4="0.00000" E5="0.28604" E6="0.00000"/>
+									<ROTMATRIX E1="1.00000" E2="0.00000" E3="0.00000" E4="0.00000" E5="1.00000" E6="0.00000"/>
+								</RENDERINGINFO>
+						</SHAPECOMPONENT>
+					<IMAGERECT X0="0" X1="81900" X2="81900" X3="0" Y0="0" Y1="0" Y2="61440" Y3="61440"/>
+					<IMAGECLIP Bottom="27360" Left="0" Right="36480" Top="0"/>
+					<INSIDEMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+					<IMAGE Alpha="0" BinItem="14" Bright="0" Contrast="0" Effect="RealPic"/>
+					<EFFECTS/>
+				</PICTURE>
+			<CHAR/>
+		</TEXT>
+</P>
+</PARALIST>
+</CELL>
+<CELL BorderFill="80" ColAddr="1" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="17413" Protect="false" RowAddr="0" RowSpan="1" Width="24730">
+	<CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+	<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+		<P ParaShape="6" Style="0">
+			<TEXT CharShape="24">
+				<PICTURE Reverse="false">
+					<SHAPEOBJECT InstId="1475935154" Lock="false" NumberingType="Figure" ZOrder="147">
+						<SIZE Height="17574" HeightRelTo="Absolute" Protect="true" Width="24377" WidthRelTo="Absolute"/>
+						<POSITION AffectLSpacing="false" AllowOverlap="false" FlowWithText="true" HoldAnchorAndSO="false" HorzAlign="Left" HorzOffset="0" HorzRelTo="Para" TreatAsChar="true" VertAlign="Top" VertOffset="0" VertRelTo="Para"/>
+						<OUTSIDEMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+						<SHAPECOMMENT>
+							그림입니다.
+원본 그림의 이름: IMG_0005.JPG
+원본 그림의 크기: 가로 2048pixel, 세로 1536pixel
+사진 찍은 날짜: 2024년 03월 11일, 오후 5:26</SHAPECOMMENT>
+					</SHAPEOBJECT>
+				<SHAPECOMPONENT CurHeight="17574" CurWidth="24376" GroupLevel="0" HorzFlip="false" InstID="402193331" OriHeight="61440" OriWidth="81900" VertFlip="false" XPos="0" YPos="0">
+					<ROTATIONINFO Angle="0" CenterX="12188" CenterY="8787" Rotate="1"/>
+					<RENDERINGINFO>
+						<TRANSMATRIX E1="1.00000" E2="0.00000" E3="0.00000" E4="0.00000" E5="1.00000" E6="0.00000"/>
+						<SCAMATRIX E1="0.29764" E2="0.00000" E3="0.00000" E4="0.00000" E5="0.28604" E6="0.00000"/>
+						<ROTMATRIX E1="1.00000" E2="0.00000" E3="0.00000" E4="0.00000" E5="1.00000" E6="0.00000"/>
+					</RENDERINGINFO>
+			</SHAPECOMPONENT>
+		<IMAGERECT X0="0" X1="81900" X2="81900" X3="0" Y0="0" Y1="0" Y2="61440" Y3="61440"/>
+		<IMAGECLIP Bottom="27300" Left="0" Right="36480" Top="0"/>
+		<INSIDEMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+		<IMAGE Alpha="0" BinItem="12" Bright="0" Contrast="0" Effect="RealPic"/>
+		<EFFECTS/>
+	</PICTURE>
+<CHAR/>
+</TEXT>
+</P>
+</PARALIST>
+</CELL>
+</ROW>
+<ROW>
+	<CELL BorderFill="79" ColAddr="0" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="17413" Protect="false" RowAddr="1" RowSpan="1" Width="24733">
+		<CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+		<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+			<P ParaShape="6" Style="0">
+				<TEXT CharShape="24">
+					<PICTURE Reverse="false">
+						<SHAPEOBJECT InstId="1475935156" Lock="false" NumberingType="Figure" ZOrder="148">
+							<SIZE Height="17574" HeightRelTo="Absolute" Protect="true" Width="24377" WidthRelTo="Absolute"/>
+							<POSITION AffectLSpacing="false" AllowOverlap="false" FlowWithText="true" HoldAnchorAndSO="false" HorzAlign="Left" HorzOffset="0" HorzRelTo="Para" TreatAsChar="true" VertAlign="Top" VertOffset="0" VertRelTo="Para"/>
+							<OUTSIDEMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+							<SHAPECOMMENT>
+								그림입니다.
+원본 그림의 이름: IMG_0013.JPG
+원본 그림의 크기: 가로 2048pixel, 세로 1536pixel
+사진 찍은 날짜: 2024년 03월 11일, 오후 5:41</SHAPECOMMENT>
+						</SHAPEOBJECT>
+					<SHAPECOMPONENT CurHeight="17574" CurWidth="24376" GroupLevel="0" HorzFlip="false" InstID="402193333" OriHeight="61440" OriWidth="81900" VertFlip="false" XPos="0" YPos="0">
+						<ROTATIONINFO Angle="0" CenterX="12188" CenterY="8787" Rotate="1"/>
+						<RENDERINGINFO>
+							<TRANSMATRIX E1="1.00000" E2="0.00000" E3="0.00000" E4="0.00000" E5="1.00000" E6="0.00000"/>
+							<SCAMATRIX E1="0.29764" E2="0.00000" E3="0.00000" E4="0.00000" E5="0.28604" E6="0.00000"/>
+							<ROTMATRIX E1="1.00000" E2="0.00000" E3="0.00000" E4="0.00000" E5="1.00000" E6="0.00000"/>
+						</RENDERINGINFO>
+				</SHAPECOMPONENT>
+			<IMAGERECT X0="0" X1="81900" X2="81900" X3="0" Y0="0" Y1="0" Y2="61440" Y3="61440"/>
+			<IMAGECLIP Bottom="27360" Left="0" Right="36480" Top="0"/>
+			<INSIDEMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+			<IMAGE Alpha="0" BinItem="11" Bright="0" Contrast="0" Effect="RealPic"/>
+			<EFFECTS/>
+		</PICTURE>
+	<CHAR/>
+</TEXT>
+</P>
+</PARALIST>
+</CELL>
+<CELL BorderFill="80" ColAddr="1" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="17413" Protect="false" RowAddr="1" RowSpan="1" Width="24730">
+	<CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+	<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+		<P ParaShape="6" Style="0">
+			<TEXT CharShape="24">
+				<PICTURE Reverse="false">
+					<SHAPEOBJECT InstId="1475935158" Lock="false" NumberingType="Figure" ZOrder="149">
+						<SIZE Height="17574" HeightRelTo="Absolute" Protect="true" Width="24377" WidthRelTo="Absolute"/>
+						<POSITION AffectLSpacing="false" AllowOverlap="false" FlowWithText="true" HoldAnchorAndSO="false" HorzAlign="Left" HorzOffset="0" HorzRelTo="Para" TreatAsChar="true" VertAlign="Top" VertOffset="0" VertRelTo="Para"/>
+						<OUTSIDEMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+						<SHAPECOMMENT>
+							그림입니다.
+원본 그림의 이름: IMG_0014.JPG
+원본 그림의 크기: 가로 2048pixel, 세로 1536pixel
+사진 찍은 날짜: 2024년 03월 11일, 오후 5:50</SHAPECOMMENT>
+					</SHAPEOBJECT>
+				<SHAPECOMPONENT CurHeight="17574" CurWidth="24376" GroupLevel="0" HorzFlip="false" InstID="402193335" OriHeight="61440" OriWidth="81900" VertFlip="false" XPos="0" YPos="0">
+					<ROTATIONINFO Angle="0" CenterX="12188" CenterY="8787" Rotate="1"/>
+					<RENDERINGINFO>
+						<TRANSMATRIX E1="1.00000" E2="0.00000" E3="0.00000" E4="0.00000" E5="1.00000" E6="0.00000"/>
+						<SCAMATRIX E1="0.29764" E2="0.00000" E3="0.00000" E4="0.00000" E5="0.28604" E6="0.00000"/>
+						<ROTMATRIX E1="1.00000" E2="0.00000" E3="0.00000" E4="0.00000" E5="1.00000" E6="0.00000"/>
+					</RENDERINGINFO>
+			</SHAPECOMPONENT>
+		<IMAGERECT X0="0" X1="81900" X2="81900" X3="0" Y0="0" Y1="0" Y2="61440" Y3="61440"/>
+		<IMAGECLIP Bottom="27300" Left="0" Right="36480" Top="0"/>
+		<INSIDEMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+		<IMAGE Alpha="0" BinItem="13" Bright="0" Contrast="0" Effect="RealPic"/>
+		<EFFECTS/>
+	</PICTURE>
+<CHAR/>
+</TEXT>
+</P>
+</PARALIST>
+</CELL>
+</ROW>
+<ROW>
+	<CELL BorderFill="71" ColAddr="0" ColSpan="2" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="2547" Protect="false" RowAddr="2" RowSpan="1" Width="49463">
+		<CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+		<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+			<P ParaShape="20" Style="20">
+				<TEXT CharShape="25">
+					<CHAR>
+						외벽 결함 현황</CHAR>
+				</TEXT>
+		</P>
+</PARALIST>
+</CELL>
+</ROW>
+</TABLE>
+<CHAR/>
+</TEXT>
+</P>
+<P ParaShape="1" Style="2">
+	<TEXT CharShape="76"/>
+</P>

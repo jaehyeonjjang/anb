@@ -1,0 +1,22 @@
+<BINDATALIST Count="{{partimageCount+sightimageCount+16}}">
+<BINITEM BinData="1" Format="jpg" Type="Embedding"/>
+<BINITEM BinData="2" Format="jpg" Type="Embedding"/>
+<BINITEM BinData="3" Format="jpg" Type="Embedding"/>
+<BINITEM BinData="4" Format="jpg" Type="Embedding"/>
+<BINITEM BinData="5" Format="jpg" Type="Embedding"/>
+<BINITEM BinData="6" Format="jpg" Type="Embedding"/>
+<BINITEM BinData="7" Format="jpg" Type="Embedding"/>
+<BINITEM BinData="8" Format="jpg" Type="Embedding"/>
+<BINITEM BinData="9" Format="jpg" Type="Embedding"/>
+<BINITEM BinData="10" Format="jpg" Type="Embedding"/>
+<BINITEM BinData="11" Format="jpg" Type="Embedding"/>
+<BINITEM BinData="12" Format="jpg" Type="Embedding"/>
+<BINITEM BinData="13" Format="png" Type="Embedding"/>
+<BINITEM BinData="14" Format="png" Type="Embedding"/>
+<BINITEM BinData="15" Format="jpg" Type="Embedding"/>
+<BINITEM BinData="16" Format="jpg" Type="Embedding"/>
+{{range i, v := partimages}}<BINITEM BinData="{{i+17}}" Format="jpg" Type="Embedding"/>
+{{end}}
+{{range i, v := sightimages}}<BINITEM BinData="{{i+17+partimageCount}}" Format="jpg" Type="Embedding"/>
+{{end}}
+</BINDATALIST>

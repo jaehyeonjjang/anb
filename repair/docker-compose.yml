@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+  backend:
+    container_name: repair
+    restart: always
+    image: netb.co.kr:5000/repair
+    network_mode: host
+    volumes:
+      - /mnt/webdata:/usr/local/main/webdata

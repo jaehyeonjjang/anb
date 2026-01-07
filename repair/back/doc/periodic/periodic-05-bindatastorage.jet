@@ -1,0 +1,4 @@
+<BINDATASTORAGE>
+{{range i, v := basicimages}}<BINDATA Encoding="Base64" Id="{{i+1}}" Size="{{v.Size}}">{{v.Data}}</BINDATA>{{end}}
+{{range i, v := images}}<BINDATA Encoding="Base64" Id="{{i+52}}" Size="{{v.Size}}">{{v.Data}}</BINDATA>{{end}}
+</BINDATASTORAGE>

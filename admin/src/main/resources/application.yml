@@ -1,0 +1,97 @@
+# default: 공통Common 적용
+info:
+  app:
+    encoding: \${file.encoding}
+    java.source: \${java.version}
+    java.target: \${java.version}
+logging:
+  level:
+    org.springframework.web: TRACE
+server:
+  port: 9000
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    beans:
+      cache:
+        time-to-live: 10s
+    shutdown:
+      enabled: true
+    health:
+      show-details: never
+    httptrace:
+      enabled: true
+path:
+    root-path: /Users/yuhki/program/anb/backend
+    upload-path: webdata  
+---
+spring:
+  profiles: default
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://netb.co.kr:3306/anb2?useSSL=false&characterEncoding=UTF-8&serverTimezone=UTC
+    username: anb
+    password: anbdb        
+  jpa:
+    generate-ddl: false
+    show-sql: true
+    open-in-view: false
+    database: mysql
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect        
+    hibernate:
+      ddl-auto: update
+  devtools:
+    livereload:
+      enabled: true
+  servlet:
+    multipart:
+      file-size-threshold: 1MB
+      max-file-size: 100MB
+      max-request-size: 100MB      
+---
+# test profile 사용시 적용
+spring:
+  profiles: test
+  datasource:
+    url: jdbc:h2:mem:test;DB_CLOSE_ON_EXIT=FALSE
+    username: anb
+    password: anbdb
+  jpa:
+    hibernate:
+      ddl-auto: create-drop 
+server:
+  port: ${random.int[8000,9000]}
+
+---
+# 개발서버 적용
+spring:
+  profiles: dev
+  datasource:
+    url: jdbc:mariadb://<<url>>:3306/dev
+    username: anb
+    password: anbdb
+  jpa:
+    hibernate:
+      ddl-auto: validate
+server:
+  port: 9000
+
+---
+# 운영서버 적용
+spring:
+  profiles: prd
+  datasource:
+    url: jdbc:mariadb://<<url>>:3306/prd
+    username: anb
+    password: anbdb
+  jpa:
+    hibernate:
+      ddl-auto: validate
+server:
+  port: 5000
+logging:
+  level:
+    org.springframework.web: INFO

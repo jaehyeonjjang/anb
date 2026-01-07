@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  font-size: 12px;
+}
+
+a {
+  color: var(--el-color-primary);
+}
+
+code {
+  border-radius: 2px;
+  padding: 2px 4px;
+  background-color: var(--el-color-primary-light-9);
+  color: var(--el-color-primary);
+}
+
+.resulttext {
+  text-align: left;
+  padding: 10px 10px;
+  background: #eee;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display:flex;
+  justify-content: space-between;
+}
+
+.flex-container{ 
+  width: 100%; 
+  height: 400px; 
+  display: -webkit-box; 
+  display: -moz-box;
+  display: -ms-flexbox; 
+  display: flex; 
+  
+  -webkit-box-align: center; 
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; 
+  
+  -webkit-box-pack: center;
+  -moz-box-pack: center; 
+  -ms-flex-pack: center; 
+  justify-content: center;
+}

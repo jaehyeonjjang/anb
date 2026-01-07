@@ -1,0 +1,10 @@
+.DS_Store
+*.exe
+bin
+webdata
+assets/assets.7z
+views.7z
+anb.db
+front
+logfile.log
+*.org

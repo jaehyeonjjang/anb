@@ -1,0 +1,178 @@
+<P ColumnBreak="false" PageBreak="true" ParaShape="29" Style="0">
+<TEXT CharShape="3">
+<TABLE BorderFill="16" CellSpacing="0" ColCount="1" PageBreak="None" RepeatHeader="true" RowCount="2">
+<SHAPEOBJECT InstId="1217700397" Lock="false" NumberingType="Table" ZOrder="5">
+<SIZE Height="3412" HeightRelTo="Absolute" Protect="false" Width="33140" WidthRelTo="Absolute"/>
+<POSITION AffectLSpacing="false" AllowOverlap="false" FlowWithText="true" HoldAnchorAndSO="false" HorzAlign="Left" HorzOffset="0" HorzRelTo="Column" TreatAsChar="true" VertAlign="Top" VertOffset="0" VertRelTo="Para"/>
+<OUTSIDEMARGIN Bottom="140" Left="140" Right="140" Top="140"/>
+</SHAPEOBJECT>
+<INSIDEMARGIN Bottom="140" Left="140" Right="140" Top="140"/>
+<ROW>
+<CELL BorderFill="28" ColAddr="0" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="2832" Protect="false" RowAddr="0" RowSpan="1" Width="33140">
+<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+<P ParaShape="36" Style="10">
+<TEXT CharShape="50">
+<CHAR>목     차</CHAR></TEXT></P></PARALIST></CELL></ROW>
+<ROW>
+<CELL BorderFill="41" ColAddr="0" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="0" Protect="false" RowAddr="1" RowSpan="1" Width="33140">
+<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+<P ParaShape="9" Style="0">
+<TEXT CharShape="63"/>
+</P></PARALIST></CELL></ROW></TABLE></TEXT>
+<TEXT CharShape="14">
+<FOOTER ApplyPageType="Both" SeriesNum="3">
+<PARALIST HasNumRef="false" HasTextRef="false" LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" TextHeight="3402" TextWidth="48192" VertAlign="Bottom">
+<P ParaShape="79" Style="0">
+<TEXT CharShape="38"/>
+</P>
+<P ParaShape="78" Style="0">
+<TEXT CharShape="25">
+<TABLE BorderFill="16" CellSpacing="0" ColCount="1" PageBreak="None" RepeatHeader="true" RowCount="1">
+<SHAPEOBJECT InstId="2115338100" Lock="false" NumberingType="Table" ZOrder="20">
+<SIZE Height="639" HeightRelTo="Absolute" Protect="false" Width="48071" WidthRelTo="Absolute"/>
+<POSITION AffectLSpacing="false" AllowOverlap="false" FlowWithText="true" HoldAnchorAndSO="false" HorzAlign="Left" HorzOffset="0" HorzRelTo="Column" TreatAsChar="true" VertAlign="Top" VertOffset="0" VertRelTo="Para"/>
+<OUTSIDEMARGIN Bottom="140" Left="140" Right="140" Top="140"/>
+</SHAPEOBJECT>
+<INSIDEMARGIN Bottom="140" Left="140" Right="140" Top="140"/>
+<ROW>
+<CELL BorderFill="37" ColAddr="0" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="639" Protect="false" RowAddr="0" RowSpan="1" Width="48071">
+<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+<P ParaShape="9" Style="0">
+<TEXT CharShape="37"/>
+</P></PARALIST></CELL></ROW></TABLE>
+<CHAR/>
+</TEXT></P>
+<P ParaShape="28" Style="0">
+<TEXT CharShape="2">
+<CHAR>(주)에 이 앤 비</CHAR></TEXT>
+<TEXT CharShape="25"/>
+</P>
+<P ParaShape="9" Style="0">
+<TEXT CharShape="25"/>
+</P></PARALIST></FOOTER>
+<CHAR/>
+</TEXT></P>
+<P ParaShape="29" Style="0">
+<TEXT CharShape="31"/>
+</P>
+<P ParaShape="73" Style="25">
+<TEXT CharShape="97">
+<CHAR>Ⅰ. 위치도 </CHAR></TEXT>
+<TEXT CharShape="98">
+<CHAR>
+<TAB/>1</CHAR></TEXT></P>
+<P ParaShape="69" Style="25">
+<TEXT CharShape="97">
+<CHAR>Ⅱ. 전경 및 시설물 부위별 사진 </CHAR></TEXT>
+<TEXT CharShape="98">
+<CHAR>
+<TAB/>2</CHAR></TEXT></P>
+<P ParaShape="69" Style="25">
+<TEXT CharShape="97">
+<CHAR>Ⅲ. 정기안전점검 결과표 </CHAR></TEXT>
+<TEXT CharShape="98">
+<CHAR>
+<TAB/>{{startDongPages}}</CHAR></TEXT></P>
+<P ParaShape="69" Style="25">
+<TEXT CharShape="97">
+<CHAR>Ⅳ. 정기안전점검표 </CHAR></TEXT>
+<TEXT CharShape="98">
+<CHAR>
+<TAB/>{{startDongPages+dongPages}}</CHAR></TEXT></P>
+<P ParaShape="69" Style="25">
+<TEXT CharShape="97">
+<CHAR>Ⅴ. 정기안전점검 실시결과 요약표 </CHAR></TEXT>
+<TEXT CharShape="98">
+<CHAR>
+<TAB/>{{startDongPages+dongPages+dongPages}}</CHAR></TEXT></P>
+<P ParaShape="68" Style="10">
+<TEXT CharShape="98"/>
+</P>
+<P ParaShape="70" Style="23">
+<TEXT CharShape="97">
+<CHAR>제 1 장  점검 개요 및 결과 </CHAR></TEXT>
+<TEXT CharShape="98">
+<CHAR>
+<TAB/>{{startDongPages+dongPages+dongPages+dongPages}}</CHAR></TEXT></P>
+<P ParaShape="70" Style="23">
+<TEXT CharShape="98"/>
+</P>
+<P ParaShape="71" Style="25">
+<TEXT CharShape="98">
+<CHAR>1. 일반사항 
+<TAB/>{{startDongPages+dongPages*3+1}}</CHAR></TEXT></P>
+<P ParaShape="71" Style="25">
+<TEXT CharShape="98">
+<CHAR>2. 점검결과 
+<TAB/>{{startDongPages+dongPages*3+1+2}}</CHAR></TEXT></P>
+<P ParaShape="71" Style="25">
+<TEXT CharShape="98">
+<CHAR>3. 결함</CHAR></TEXT>
+<TEXT CharShape="16">
+<CHAR>(손상)</CHAR></TEXT>
+<TEXT CharShape="98">
+<CHAR>의 발생원인 분석 
+<TAB/>{{startDongPages+dongPages*3+1+2+10+aptusagePageCount}}</CHAR></TEXT></P>
+<P ParaShape="71" Style="25">
+<TEXT CharShape="98"/>
+</P>
+<P ParaShape="70" Style="23">
+<TEXT CharShape="97">
+<CHAR>제 2 장  종합결론 및 건의 </CHAR></TEXT>
+<TEXT CharShape="98">
+<CHAR>
+<TAB/>{{startDongPages+dongPages*3+1+2+10+aptusagePageCount+1}}</CHAR></TEXT></P>
+<P ParaShape="70" Style="23">
+<TEXT CharShape="98"/>
+</P>
+<P ParaShape="71" Style="25">
+<TEXT CharShape="98">
+<CHAR>1. 종합결론 
+<TAB/>{{startDongPages+dongPages*3+1+2+10+aptusagePageCount+2}}</CHAR></TEXT></P>
+<P ParaShape="71" Style="25">
+<TEXT CharShape="98">
+<CHAR>2. 시설물의 사용제한의 필요성 여부 
+<TAB/>{{startDongPages+dongPages*3+1+2+10+aptusagePageCount+3}}</CHAR></TEXT></P>
+<P ParaShape="71" Style="25">
+<TEXT CharShape="98">
+<CHAR>3. 유지관리시 특별한 관리가 요구되는 사항 
+<TAB/>{{startDongPages+dongPages*3+1+2+10+aptusagePageCount+3}}</CHAR></TEXT></P>
+<P ParaShape="71" Style="25">
+<TEXT CharShape="98">
+<CHAR>4. 안전등급 지정 
+<TAB/>{{startDongPages+dongPages*3+1+2+10+aptusagePageCount+4}}</CHAR></TEXT></P>
+<P ParaShape="71" Style="25">
+<TEXT CharShape="98"/>
+</P>
+<P ParaShape="70" Style="23">
+<TEXT CharShape="97">
+<CHAR>제 3 장  부  록 </CHAR></TEXT>
+<TEXT CharShape="98">
+<CHAR>
+<TAB/>{{startDongPages+dongPages*3+1+2+10+aptusagePageCount+5}}</CHAR></TEXT></P>
+<P ParaShape="70" Style="23">
+<TEXT CharShape="105"/>
+</P>
+<P ParaShape="107" Style="24">
+<TEXT CharShape="16">
+<CHAR>Ⅰ. 과업지시서 </CHAR></TEXT></P>
+<P ParaShape="107" Style="24">
+<TEXT CharShape="16">
+<CHAR>Ⅱ. 외관조사망도</CHAR></TEXT></P>
+<P ParaShape="107" Style="24">
+<TEXT CharShape="16">
+<CHAR>Ⅲ. 시설물관리대장 사본 </CHAR></TEXT></P>
+<P ParaShape="107" Style="24">
+<TEXT CharShape="16">
+<CHAR>Ⅳ. 사진자료 </CHAR></TEXT></P>
+<P ParaShape="107" Style="24">
+<TEXT CharShape="16">
+<CHAR>Ⅴ. 사전조사 자료 일체 </CHAR></TEXT></P>
+<P ParaShape="107" Style="24">
+<TEXT CharShape="16">
+<CHAR>Ⅵ. 기타 참고자료 </CHAR></TEXT></P>
+
+

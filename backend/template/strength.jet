@@ -1,0 +1,80 @@
+<P ColumnBreak="false" PageBreak="true" ParaShape="240" Style="1"><TEXT CharShape="13"><TABLE BorderFill="257" CellSpacing="0" ColCount="2" PageBreak="Cell" RepeatHeader="true" RowCount="1"><SHAPEOBJECT InstId="1436973045" Lock="false" NumberingType="Table" ZOrder="23"><SIZE Height="2069" HeightRelTo="Absolute" Protect="true" Width="27516" WidthRelTo="Absolute"/><POSITION AffectLSpacing="false" AllowOverlap="false" FlowWithText="true" HoldAnchorAndSO="false" HorzAlign="Left" HorzOffset="0" HorzRelTo="Para" TreatAsChar="true" VertAlign="Top" VertOffset="0" VertRelTo="Para"/><OUTSIDEMARGIN Bottom="0" Left="0" Right="0" Top="0"/></SHAPEOBJECT><INSIDEMARGIN Bottom="0" Left="0" Right="0" Top="0"/><ROW><CELL BorderFill="32" ColAddr="0" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="2069" Protect="false" RowAddr="0" RowSpan="1" Width="4277"><CELLMARGIN Bottom="0" Left="0" Right="0" Top="0"/><PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center"><P ParaShape="8" Style="50"><TEXT CharShape="14"><CHAR>3.3</CHAR></TEXT></P>
+</PARALIST></CELL><CELL BorderFill="32" ColAddr="1" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="2069" Protect="false" RowAddr="0" RowSpan="1" Width="23239"><CELLMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+
+<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center"><P ParaShape="9" Style="51"><TEXT CharShape="14"><CHAR>재료시험 및 측정 결과분석</CHAR></TEXT></P>
+</PARALIST></CELL></ROW></TABLE><CHAR/></TEXT></P>
+<P ParaShape="58" Style="2"><TEXT CharShape="13"><CHAR>3.3.1 장비측정 위치도</CHAR></TEXT></P>
+<P ParaShape="207" Style="3"><TEXT CharShape="11"><CHAR>가. 강도 및 탄산화 위치도(강도 SH#, 탄산화 N#)</CHAR></TEXT></P>
+<P ParaShape="204" Style="3">
+        <TEXT CharShape="11">
+                {{range i, v := items}}
+                {{if i % 2 == 0}}
+                <TABLE BorderFill="3" CellSpacing="0" ColCount="1" PageBreak="Cell" RepeatHeader="true" RowCount="4">
+                        <SHAPEOBJECT InstId="1554151386" Lock="false" NumberingType="Table" ZOrder="124">
+                                <SIZE Height="61118" HeightRelTo="Absolute" Protect="false" Width="47284" WidthRelTo="Absolute"/>
+                                <POSITION AffectLSpacing="false" AllowOverlap="false" FlowWithText="true" HoldAnchorAndSO="false" HorzAlign="Left" HorzOffset="0" HorzRelTo="Column" TreatAsChar="true" VertAlign="Top" VertOffset="0" VertRelTo="Para"/>
+                                <OUTSIDEMARGIN Bottom="140" Left="140" Right="140" Top="140"/>
+                        </SHAPEOBJECT>
+                        <INSIDEMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+                        {{end}}
+                        <ROW>
+                                <CELL BorderFill="3" ColAddr="0" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="27339" Protect="false" RowAddr="{{i*2}}" RowSpan="1" Width="47284">
+                                        <CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+                                        <PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+                                                <P ParaShape="40" Style="0">
+                                                        <TEXT CharShape="5">
+                                                                {{if v.Number > 0}}
+                                                                <PICTURE Reverse="false">
+                                                                        <SHAPEOBJECT InstId="1673190896" Lock="false" NumberingType="Figure" TextFlow="BothSides" TextWrap="Square" ZOrder="146">
+                                                                                <SIZE Height="26390" HeightRelTo="Absolute" Protect="false" Width="46085" WidthRelTo="Absolute"/>
+                                                                                <POSITION AffectLSpacing="false" AllowOverlap="false" FlowWithText="true" HoldAnchorAndSO="false" HorzAlign="Left" HorzOffset="0" HorzRelTo="Column" TreatAsChar="false" VertAlign="Top" VertOffset="0" VertRelTo="Para"/>
+                                                                                <OUTSIDEMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+                                                                                <SHAPECOMMENT>
+                                                                                        This is Picture.
+                                                                                Original Picture Name: {{v.Filename|basename}}</SHAPECOMMENT>
+                                                                        </SHAPEOBJECT>
+                                                                        <SHAPECOMPONENT CurHeight="26390" CurWidth="46085" GroupLevel="0" HorzFlip="false" InstID="599449073" OriHeight="28940" OriWidth="32644" VertFlip="false" XPos="0" YPos="870">
+                                                                                <ROTATIONINFO Angle="0" CenterX="23042" CenterY="13195" Rotate="1"/>
+                                                                                <RENDERINGINFO>
+                                                                                        <TRANSMATRIX E1="1.00000" E2="0.00000" E3="0.00000" E4="0.00000" E5="1.00000" E6="870.00000"/>
+                                                                                        <SCAMATRIX E1="1.41174" E2="0.00000" E3="0.00000" E4="0.00000" E5="0.91189" E6="-870.00000"/>
+                                                                                        <ROTMATRIX E1="1.00000" E2="0.00000" E3="0.00000" E4="0.00000" E5="1.00000" E6="0.00000"/>
+                                                                                </RENDERINGINFO>
+                                                                        </SHAPECOMPONENT>
+                                                                        <IMAGERECT X0="0" X1="32644" X2="32644" X3="0" Y0="0" Y1="0" Y2="28940" Y3="28940"/>
+                                                                        <IMAGECLIP Bottom="70740" Left="0" Right="79800" Top="0"/>
+                                                                        <INSIDEMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+                                                                        <IMAGE Alpha="0" BinItem="{{v.Number}}" Bright="0" Contrast="0" Effect="RealPic"/>
+                                                                        <EFFECTS/>
+                                                                </PICTURE>
+                                                                <CHAR/>
+                                                                {{end}}
+                                                        </TEXT>
+                                                </P>
+
+                                        </PARALIST>
+                                </CELL>
+                        </ROW>
+                        <ROW>
+                                <CELL BorderFill="3" ColAddr="0" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="2797" Protect="false" RowAddr="{{i*2+1}}" RowSpan="1" Width="47284">
+                                        <CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+                                        <PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+                                                <P ParaShape="40" Style="0">
+                                                        <TEXT CharShape="42">
+                                                                <CHAR>
+                                                                {{v.Position}}</CHAR>
+                                                        </TEXT>
+                                                </P>
+
+                                        </PARALIST>
+                                </CELL>
+                        </ROW>
+                        {{if i % 2 == 1}}
+                </TABLE>
+                {{end}}
+                {{end}}
+                <CHAR/>
+        </TEXT>
+</P>
+
+

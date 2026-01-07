@@ -1,0 +1,9 @@
+-/ios
+-/android
+-/linux
+-/macos
+-/windows
+-/web
+-/assets
+-/*.md
+-/*.lock

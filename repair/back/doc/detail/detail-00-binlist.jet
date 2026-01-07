@@ -1,0 +1,56 @@
+    <BINDATALIST Count="{{48+partimageCount+sightimageCount+positionimageCount}}">
+		<BINITEM BinData="1" Format="jpg" Type="Embedding"/>
+		<BINITEM BinData="2" Format="jpg" Type="Embedding"/>
+		<BINITEM BinData="3" Format="jpg" Type="Embedding"/>
+		<BINITEM BinData="4" Format="jpg" Type="Embedding"/>
+		<BINITEM BinData="5" Format="jpg" Type="Embedding"/>
+		<BINITEM BinData="6" Format="bmp" Type="Embedding"/>
+		<BINITEM BinData="7" Format="bmp" Type="Embedding"/>
+		<BINITEM BinData="8" Format="bmp" Type="Embedding"/>
+		<BINITEM BinData="9" Format="bmp" Type="Embedding"/>
+		<BINITEM BinData="10" Format="jpg" Type="Embedding"/>
+		<BINITEM BinData="11" Format="jpg" Type="Embedding"/>
+		<BINITEM BinData="12" Format="jpg" Type="Embedding"/>
+		<BINITEM BinData="13" Format="jpg" Type="Embedding"/>
+		<BINITEM BinData="14" Format="jpg" Type="Embedding"/>
+		<BINITEM BinData="15" Format="bmp" Type="Embedding"/>
+		<BINITEM BinData="16" Format="bmp" Type="Embedding"/>
+		<BINITEM BinData="17" Format="png" Type="Embedding"/>
+		<BINITEM BinData="18" Format="png" Type="Embedding"/>
+		<BINITEM BinData="19" Format="jpg" Type="Embedding"/>
+		<BINITEM BinData="20" Format="jpg" Type="Embedding"/>
+		<BINITEM BinData="21" Format="jpg" Type="Embedding"/>
+		<BINITEM BinData="22" Format="jpg" Type="Embedding"/>
+		<BINITEM BinData="23" Format="jpg" Type="Embedding"/>
+		<BINITEM BinData="24" Format="jpg" Type="Embedding"/>
+		<BINITEM BinData="25" Format="jpg" Type="Embedding"/>
+		<BINITEM BinData="26" Format="jpg" Type="Embedding"/>
+		<BINITEM BinData="27" Format="png" Type="Embedding"/>
+		<BINITEM BinData="28" Format="png" Type="Embedding"/>
+		<BINITEM BinData="29" Format="png" Type="Embedding"/>
+		<BINITEM BinData="30" Format="png" Type="Embedding"/>
+		<BINITEM BinData="31" Format="png" Type="Embedding"/>
+		<BINITEM BinData="32" Format="jpg" Type="Embedding"/>
+		<BINITEM BinData="33" Format="jpg" Type="Embedding"/>
+		<BINITEM BinData="34" Format="jpg" Type="Embedding"/>
+		<BINITEM BinData="35" Format="jpg" Type="Embedding"/>
+		<BINITEM BinData="36" Format="jpg" Type="Embedding"/>
+		<BINITEM BinData="37" Format="jpg" Type="Embedding"/>
+		<BINITEM BinData="38" Format="OLE" Type="Storage"/>
+		<BINITEM BinData="39" Format="OLE" Type="Storage"/>
+		<BINITEM BinData="40" Format="jpg" Type="Embedding"/>
+		<BINITEM BinData="41" Format="jpg" Type="Embedding"/>
+		<BINITEM BinData="42" Format="jpg" Type="Embedding"/>
+		<BINITEM BinData="43" Format="jpg" Type="Embedding"/>
+		<BINITEM BinData="44" Format="OLE" Type="Storage"/>
+		<BINITEM BinData="45" Format="OLE" Type="Storage"/>
+		<BINITEM BinData="46" Format="jpg" Type="Embedding"/>
+		<BINITEM BinData="47" Format="jpg" Type="Embedding"/>
+		<BINITEM BinData="48" Format="bmp" Type="Embedding"/>
+{{range i, v := partimages}}<BINITEM BinData="{{i+48+1}}" Format="jpg" Type="Embedding"/>
+{{end}}
+{{range i, v := sightimages}}<BINITEM BinData="{{i+48+1+partimageCount}}" Format="jpg" Type="Embedding"/>
+{{end}}
+{{range i, v := positionimages}}<BINITEM BinData="{{i+48+1+partimageCount+sightimageCount}}" Format="jpg" Type="Embedding"/>
+{{end}}
+	</BINDATALIST>

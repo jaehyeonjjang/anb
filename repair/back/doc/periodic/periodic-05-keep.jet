@@ -1,0 +1,484 @@
+<P ColumnBreak="false" PageBreak="true" ParaShape="80" Style="0">
+<TEXT CharShape="70">
+<CHAR>4.2 정기안전점검 유지관리자료 보유 현황 검토</CHAR></TEXT></P>
+<P ParaShape="118" Style="0">
+<TEXT CharShape="62">
+<TABLE BorderFill="3" CellSpacing="0" ColCount="4" PageBreak="Cell" RepeatHeader="true" RowCount="7">
+<SHAPEOBJECT InstId="1298851290" Lock="false" NumberingType="Table" ZOrder="2">
+<SIZE Height="64579" HeightRelTo="Absolute" Protect="false" Width="46452" WidthRelTo="Absolute"/>
+<POSITION AffectLSpacing="false" AllowOverlap="false" FlowWithText="true" HoldAnchorAndSO="false" HorzAlign="Left" HorzOffset="0" HorzRelTo="Para" TreatAsChar="true" VertAlign="Top" VertOffset="0" VertRelTo="Para"/>
+<OUTSIDEMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+</SHAPEOBJECT>
+<INSIDEMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+<ROW>
+<CELL BorderFill="53" ColAddr="0" ColSpan="2" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="2756" Protect="false" RowAddr="0" RowSpan="1" Width="22209">
+<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+<P ParaShape="61" Style="0">
+<TEXT CharShape="8">
+<CHAR>보존대상목록</CHAR></TEXT></P></PARALIST></CELL>
+<CELL BorderFill="55" ColAddr="2" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="2756" Protect="false" RowAddr="0" RowSpan="1" Width="18920">
+<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+<P ParaShape="91" Style="0">
+<TEXT CharShape="8">
+<CHAR>관리</CHAR></TEXT>
+<TEXT CharShape="81">
+<CHAR>주</CHAR></TEXT>
+<TEXT CharShape="8">
+<CHAR>체</CHAR></TEXT>
+<TEXT CharShape="82">
+<CHAR> </CHAR></TEXT>
+<TEXT CharShape="81">
+<CHAR>보</CHAR></TEXT>
+<TEXT CharShape="8">
+<CHAR>유현황</CHAR></TEXT></P></PARALIST></CELL>
+<CELL BorderFill="57" ColAddr="3" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="2756" Protect="false" RowAddr="0" RowSpan="1" Width="5323">
+<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+<P ParaShape="92" Style="0">
+<TEXT CharShape="81">
+<CHAR>비고</CHAR></TEXT></P></PARALIST></CELL></ROW>
+
+<ROW>
+<CELL BorderFill="52" ColAddr="0" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="20017" Protect="false" RowAddr="1" RowSpan="2" Width="5306">
+<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+<P ParaShape="93" Style="0">
+<TEXT CharShape="4">
+<CHAR>설</CHAR></TEXT>
+<TEXT CharShape="76">
+<CHAR>계</CHAR></TEXT>
+<TEXT CharShape="4">
+<CHAR>도서</CHAR></TEXT></P></PARALIST></CELL>
+<CELL BorderFill="54" ColAddr="1" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="11001" Protect="false" RowAddr="1" RowSpan="1" Width="16903">
+<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+<P ParaShape="94" Style="0">
+<TEXT CharShape="87">
+<CHAR>◦공통</CHAR></TEXT></P>
+<P ParaShape="95" Style="0">
+<TEXT CharShape="88">
+<CHAR> -</CHAR></TEXT>
+<TEXT CharShape="89">
+<CHAR> </CHAR></TEXT>
+<TEXT CharShape="85">
+<CHAR>준</CHAR></TEXT>
+<TEXT CharShape="65">
+<CHAR>공내</CHAR></TEXT>
+<TEXT CharShape="85">
+<CHAR>역</CHAR></TEXT>
+<TEXT CharShape="65">
+<CHAR>서</CHAR></TEXT></P>
+<P ParaShape="95" Style="0">
+<TEXT CharShape="88">
+<CHAR> -</CHAR></TEXT>
+<TEXT CharShape="89">
+<CHAR> </CHAR></TEXT>
+<TEXT CharShape="85">
+<CHAR>공</CHAR></TEXT>
+<TEXT CharShape="65">
+<CHAR>사시</CHAR></TEXT>
+<TEXT CharShape="85">
+<CHAR>방</CHAR></TEXT>
+<TEXT CharShape="65">
+<CHAR>서</CHAR></TEXT></P>
+<P ParaShape="95" Style="0">
+<TEXT CharShape="88">
+<CHAR> -</CHAR></TEXT>
+<TEXT CharShape="89">
+<CHAR> </CHAR></TEXT>
+<TEXT CharShape="85">
+<CHAR>각</CHAR></TEXT>
+<TEXT CharShape="65">
+<CHAR>종계</CHAR></TEXT>
+<TEXT CharShape="85">
+<CHAR>산</CHAR></TEXT>
+<TEXT CharShape="65">
+<CHAR>서</CHAR></TEXT></P>
+<P ParaShape="95" Style="0">
+<TEXT CharShape="88">
+<CHAR> -</CHAR></TEXT>
+<TEXT CharShape="89">
+<CHAR> </CHAR></TEXT>
+<TEXT CharShape="85">
+<CHAR>토</CHAR></TEXT>
+<TEXT CharShape="65">
+<CHAR>질조사</CHAR></TEXT>
+<TEXT CharShape="90">
+<CHAR> </CHAR></TEXT>
+<TEXT CharShape="65">
+<CHAR>보</CHAR></TEXT>
+<TEXT CharShape="85">
+<CHAR>고</CHAR></TEXT>
+<TEXT CharShape="65">
+<CHAR>서</CHAR></TEXT></P>
+<P ParaShape="95" Style="0">
+<TEXT CharShape="88">
+<CHAR> -</CHAR></TEXT>
+<TEXT CharShape="89">
+<CHAR> </CHAR></TEXT>
+<TEXT CharShape="85">
+<CHAR>기</CHAR></TEXT>
+<TEXT CharShape="65">
+<CHAR>타 특이</CHAR></TEXT>
+<TEXT CharShape="85">
+<CHAR>사</CHAR></TEXT>
+<TEXT CharShape="65">
+<CHAR>항</CHAR></TEXT>
+<TEXT CharShape="91">
+<CHAR> </CHAR></TEXT>
+<TEXT CharShape="85">
+<CHAR>보</CHAR></TEXT>
+<TEXT CharShape="65">
+<CHAR>고서</CHAR></TEXT></P></PARALIST></CELL>
+<CELL BorderFill="54" ColAddr="2" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="11001" Protect="false" RowAddr="1" RowSpan="1" Width="18920">
+<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+{{if len(keep1) > 0}}{{range keep1}}<P ParaShape="64" Style="0"><TEXT CharShape="65"><CHAR> {{.}}</CHAR></TEXT></P>{{end}}{{else}}<P ParaShape="64" Style="0"><TEXT CharShape="65"><CHAR> </CHAR></TEXT></P>{{end}}
+</PARALIST></CELL>
+<CELL BorderFill="56" ColAddr="3" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="11001" Protect="false" RowAddr="1" RowSpan="1" Width="5323">
+<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+<P ParaShape="137" Style="0">
+<TEXT CharShape="120">
+<CHAR>{{periodickeep.Remark1}}</CHAR></TEXT></P></PARALIST></CELL></ROW>
+
+<ROW>
+<CELL BorderFill="31" ColAddr="1" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="9016" Protect="false" RowAddr="2" RowSpan="1" Width="16903">
+<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+<P ParaShape="94" Style="0">
+<TEXT CharShape="87">
+<CHAR>◦설</CHAR></TEXT>
+<TEXT CharShape="92">
+<CHAR>계</CHAR></TEXT>
+<TEXT CharShape="87">
+<CHAR>도면</CHAR></TEXT></P>
+<P ParaShape="95" Style="0">
+<TEXT CharShape="88">
+<CHAR> -</CHAR></TEXT>
+<TEXT CharShape="89">
+<CHAR> </CHAR></TEXT>
+<TEXT CharShape="85">
+<CHAR>공통</CHAR></TEXT></P>
+<P ParaShape="95" Style="0">
+<TEXT CharShape="88">
+<CHAR> -</CHAR></TEXT>
+<TEXT CharShape="89">
+<CHAR> </CHAR></TEXT>
+<TEXT CharShape="85">
+<CHAR>토목</CHAR></TEXT></P>
+<P ParaShape="95" Style="0">
+<TEXT CharShape="88">
+<CHAR> -</CHAR></TEXT>
+<TEXT CharShape="89">
+<CHAR> </CHAR></TEXT>
+<TEXT CharShape="85">
+<CHAR>건축</CHAR></TEXT></P>
+<P ParaShape="95" Style="0">
+<TEXT CharShape="88">
+<CHAR> -</CHAR></TEXT>
+<TEXT CharShape="89">
+<CHAR> </CHAR></TEXT>
+<TEXT CharShape="65">
+<CHAR>기계, 전</CHAR></TEXT>
+<TEXT CharShape="85">
+<CHAR>기</CHAR></TEXT>
+<TEXT CharShape="65">
+<CHAR>설비</CHAR></TEXT></P></PARALIST></CELL>
+<CELL BorderFill="31" ColAddr="2" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="9016" Protect="false" RowAddr="2" RowSpan="1" Width="18920">
+<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+{{if len(keep2) > 0}}{{range keep2}}<P ParaShape="64" Style="0"><TEXT CharShape="65"><CHAR> {{.}}</CHAR></TEXT></P>{{end}}{{else}}<P ParaShape="64" Style="0"><TEXT CharShape="65"><CHAR> </CHAR></TEXT></P>{{end}}
+</PARALIST></CELL>
+<CELL BorderFill="33" ColAddr="3" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="9016" Protect="false" RowAddr="2" RowSpan="1" Width="5323">
+<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+<P ParaShape="137" Style="0">
+<TEXT CharShape="120">
+<CHAR>{{periodickeep.Remark2}}</CHAR></TEXT></P></PARALIST></CELL></ROW>
+
+<ROW>
+<CELL BorderFill="32" ColAddr="0" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="5624" Protect="false" RowAddr="3" RowSpan="1" Width="5306">
+<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+<P ParaShape="96" Style="0">
+<TEXT CharShape="4">
+<CHAR>시</CHAR></TEXT>
+<TEXT CharShape="76">
+<CHAR>설</CHAR></TEXT>
+<TEXT CharShape="4">
+<CHAR>물 관</CHAR></TEXT>
+<TEXT CharShape="76">
+<CHAR>리</CHAR></TEXT>
+<TEXT CharShape="4">
+<CHAR>대장</CHAR></TEXT></P></PARALIST></CELL>
+<CELL BorderFill="31" ColAddr="1" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="5624" Protect="false" RowAddr="3" RowSpan="1" Width="16903">
+<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+<P ParaShape="97" Style="0">
+<TEXT CharShape="65">
+<CHAR>◦기</CHAR></TEXT>
+<TEXT CharShape="85">
+<CHAR>본</CHAR></TEXT>
+<TEXT CharShape="65">
+<CHAR>현황 </CHAR></TEXT></P>
+<P ParaShape="97" Style="0">
+<TEXT CharShape="65">
+<CHAR>◦상</CHAR></TEXT>
+<TEXT CharShape="85">
+<CHAR>제</CHAR></TEXT>
+<TEXT CharShape="65">
+<CHAR>제원 </CHAR></TEXT></P>
+<P ParaShape="97" Style="0">
+<TEXT CharShape="65">
+<CHAR>◦유</CHAR></TEXT>
+<TEXT CharShape="85">
+<CHAR>지</CHAR></TEXT>
+<TEXT CharShape="65">
+<CHAR>관리</CHAR></TEXT>
+<TEXT CharShape="90">
+<CHAR> </CHAR></TEXT>
+<TEXT CharShape="65">
+<CHAR>이력</CHAR></TEXT></P></PARALIST></CELL>
+<CELL BorderFill="31" ColAddr="2" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="5624" Protect="false" RowAddr="3" RowSpan="1" Width="18920">
+<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+{{if len(keep3) > 0}}{{range keep3}}<P ParaShape="64" Style="0"><TEXT CharShape="65"><CHAR> {{.}}</CHAR></TEXT></P>{{end}}{{else}}<P ParaShape="64" Style="0"><TEXT CharShape="65"><CHAR> </CHAR></TEXT></P>{{end}}
+</PARALIST></CELL>
+<CELL BorderFill="33" ColAddr="3" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="5624" Protect="false" RowAddr="3" RowSpan="1" Width="5323">
+<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+<P ParaShape="137" Style="0">
+<TEXT CharShape="120">
+<CHAR>{{periodickeep.Remark3}}</CHAR></TEXT></P></PARALIST></CELL></ROW>
+
+<ROW>
+<CELL BorderFill="32" ColAddr="0" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="18428" Protect="false" RowAddr="4" RowSpan="1" Width="5306">
+<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+<P ParaShape="98" Style="0">
+<TEXT CharShape="4">
+<CHAR>시</CHAR></TEXT>
+<TEXT CharShape="76">
+<CHAR>공</CHAR></TEXT>
+<TEXT CharShape="4">
+<CHAR>관련</CHAR></TEXT></P>
+<P ParaShape="98" Style="0">
+<TEXT CharShape="76">
+<CHAR>자료</CHAR></TEXT></P></PARALIST></CELL>
+<CELL BorderFill="31" ColAddr="1" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="18428" Protect="false" RowAddr="4" RowSpan="1" Width="16903">
+<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+<P ParaShape="94" Style="0">
+<TEXT CharShape="87">
+<CHAR>◦시</CHAR></TEXT>
+<TEXT CharShape="92">
+<CHAR>공</CHAR></TEXT>
+<TEXT CharShape="87">
+<CHAR>관련</CHAR></TEXT>
+<TEXT CharShape="107">
+<CHAR> </CHAR></TEXT>
+<TEXT CharShape="87">
+<CHAR>자료</CHAR></TEXT></P>
+<P ParaShape="99" Style="0">
+<TEXT CharShape="65">
+<CHAR>◦품</CHAR></TEXT>
+<TEXT CharShape="85">
+<CHAR>질</CHAR></TEXT>
+<TEXT CharShape="65">
+<CHAR>관리</CHAR></TEXT>
+<TEXT CharShape="90">
+<CHAR> </CHAR></TEXT>
+<TEXT CharShape="65">
+<CHAR>관련</CHAR></TEXT>
+<TEXT CharShape="85">
+<CHAR>자</CHAR></TEXT>
+<TEXT CharShape="65">
+<CHAR>료</CHAR></TEXT></P>
+<P ParaShape="100" Style="0">
+<TEXT CharShape="88">
+<CHAR>-</CHAR></TEXT>
+<TEXT CharShape="89">
+<CHAR> </CHAR></TEXT>
+<TEXT CharShape="65">
+<CHAR>재료</CHAR></TEXT>
+<TEXT CharShape="85">
+<CHAR>증</CHAR></TEXT>
+<TEXT CharShape="65">
+<CHAR>명서</CHAR></TEXT></P>
+<P ParaShape="100" Style="0">
+<TEXT CharShape="88">
+<CHAR>-</CHAR></TEXT>
+<TEXT CharShape="89">
+<CHAR> </CHAR></TEXT>
+<TEXT CharShape="65">
+<CHAR>품질</CHAR></TEXT>
+<TEXT CharShape="85">
+<CHAR>시</CHAR></TEXT>
+<TEXT CharShape="65">
+<CHAR>험기록</CHAR></TEXT></P>
+<P ParaShape="101" Style="0">
+<TEXT CharShape="88">
+<CHAR>-</CHAR></TEXT>
+<TEXT CharShape="93">
+<CHAR> </CHAR></TEXT>
+<TEXT CharShape="85">
+<CHAR>관</CHAR></TEXT>
+<TEXT CharShape="65">
+<CHAR>리</CHAR></TEXT>
+<TEXT CharShape="91">
+<CHAR> </CHAR></TEXT>
+<TEXT CharShape="65">
+<CHAR>및</CHAR></TEXT>
+<TEXT CharShape="91">
+<CHAR> </CHAR></TEXT>
+<TEXT CharShape="85">
+<CHAR>선</CHAR></TEXT>
+<TEXT CharShape="65">
+<CHAR>정시험</CHAR></TEXT>
+<TEXT CharShape="90">
+<CHAR> </CHAR></TEXT>
+<TEXT CharShape="65">
+<CHAR>기록</CHAR></TEXT>
+<TEXT CharShape="90">
+<CHAR> </CHAR></TEXT>
+<TEXT CharShape="65">
+<CHAR>등 각종 시험</CHAR></TEXT>
+<TEXT CharShape="90">
+<CHAR> </CHAR></TEXT>
+<TEXT CharShape="65">
+<CHAR>기록</CHAR></TEXT></P>
+<P ParaShape="78" Style="0">
+<TEXT CharShape="88">
+<CHAR>-</CHAR></TEXT>
+<TEXT CharShape="94">
+<CHAR> </CHAR></TEXT>
+<TEXT CharShape="95">
+<CHAR>시설물</CHAR></TEXT>
+<TEXT CharShape="65">
+<CHAR>의</CHAR></TEXT>
+<TEXT CharShape="96">
+<CHAR> </CHAR></TEXT>
+<TEXT CharShape="95">
+<CHAR>주</CHAR></TEXT>
+<TEXT CharShape="65">
+<CHAR>요</CHAR></TEXT>
+<TEXT CharShape="96">
+<CHAR> </CHAR></TEXT>
+<TEXT CharShape="95">
+<CHAR>구</CHAR></TEXT>
+<TEXT CharShape="65">
+<CHAR>조</CHAR></TEXT>
+<TEXT CharShape="96">
+<CHAR> </CHAR></TEXT>
+<TEXT CharShape="95">
+<CHAR>부위</CHAR></TEXT>
+<TEXT CharShape="65">
+<CHAR>에</CHAR></TEXT>
+<TEXT CharShape="95">
+<CHAR> 대한 계</CHAR></TEXT>
+<TEXT CharShape="65">
+<CHAR>측</CHAR></TEXT>
+<TEXT CharShape="97">
+<CHAR> </CHAR></TEXT>
+<TEXT CharShape="95">
+<CHAR>관련자료</CHAR></TEXT></P>
+<P ParaShape="102" Style="0">
+<TEXT CharShape="65">
+<CHAR>◦</CHAR></TEXT>
+<TEXT CharShape="104">
+<CHAR>사</CHAR></TEXT>
+<TEXT CharShape="105">
+<CHAR>고</CHAR></TEXT>
+<TEXT CharShape="104">
+<CHAR>기록</CHAR></TEXT></P>
+<P ParaShape="99" Style="0">
+<TEXT CharShape="65">
+<CHAR>◦</CHAR></TEXT>
+<TEXT CharShape="104">
+<CHAR>댐</CHAR></TEXT>
+<TEXT CharShape="105">
+<CHAR>시</CHAR></TEXT>
+<TEXT CharShape="104">
+<CHAR>설</CHAR></TEXT>
+<TEXT CharShape="106">
+<CHAR> </CHAR></TEXT>
+<TEXT CharShape="105">
+<CHAR>운</CHAR></TEXT>
+<TEXT CharShape="104">
+<CHAR>영기록</CHAR></TEXT></P></PARALIST></CELL>
+<CELL BorderFill="31" ColAddr="2" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="18428" Protect="false" RowAddr="4" RowSpan="1" Width="18920">
+<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+{{if len(keep4) > 0}}{{range keep4}}<P ParaShape="64" Style="0"><TEXT CharShape="65"><CHAR> {{.}}</CHAR></TEXT></P>{{end}}{{else}}<P ParaShape="64" Style="0"><TEXT CharShape="65"><CHAR> </CHAR></TEXT></P>{{end}}
+</PARALIST></CELL>
+<CELL BorderFill="33" ColAddr="3" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="18428" Protect="false" RowAddr="4" RowSpan="1" Width="5323">
+<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+<P ParaShape="137" Style="0">
+<TEXT CharShape="120">
+<CHAR>{{periodickeep.Remark4}}</CHAR></TEXT></P></PARALIST></CELL></ROW>
+
+<ROW>
+<CELL BorderFill="32" ColAddr="0" ColSpan="2" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="7045" Protect="false" RowAddr="5" RowSpan="1" Width="22209">
+<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+<P ParaShape="103" Style="0">
+<TEXT CharShape="4">
+<CHAR>안전</CHAR></TEXT>
+<TEXT CharShape="76">
+<CHAR>점</CHAR></TEXT>
+<TEXT CharShape="4">
+<CHAR>검 및 정밀안전진단 </CHAR></TEXT>
+<TEXT CharShape="76">
+<CHAR>자</CHAR></TEXT>
+<TEXT CharShape="4">
+<CHAR>료</CHAR></TEXT></P></PARALIST></CELL>
+<CELL BorderFill="31" ColAddr="2" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="7045" Protect="false" RowAddr="5" RowSpan="1" Width="18920">
+<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+{{if len(keep5) > 0}}{{range keep5}}<P ParaShape="64" Style="0"><TEXT CharShape="65"><CHAR> {{.}}</CHAR></TEXT></P>{{end}}{{else}}<P ParaShape="64" Style="0"><TEXT CharShape="65"><CHAR> </CHAR></TEXT></P>{{end}}
+</PARALIST></CELL>
+<CELL BorderFill="33" ColAddr="3" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="7045" Protect="false" RowAddr="5" RowSpan="1" Width="5323">
+<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+<P ParaShape="137" Style="0">
+<TEXT CharShape="120">
+<CHAR>{{periodickeep.Remark5}}</CHAR></TEXT></P></PARALIST></CELL></ROW>
+
+<ROW>
+<CELL BorderFill="34" ColAddr="0" ColSpan="2" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="10709" Protect="false" RowAddr="6" RowSpan="1" Width="22209">
+<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+<P ParaShape="103" Style="0">
+<TEXT CharShape="4">
+<CHAR>보수·</CHAR></TEXT>
+<TEXT CharShape="76">
+<CHAR>보</CHAR></TEXT>
+<TEXT CharShape="4">
+<CHAR>강</CHAR></TEXT>
+<TEXT CharShape="84">
+<CHAR> </CHAR></TEXT>
+<TEXT CharShape="76">
+<CHAR>자</CHAR></TEXT>
+<TEXT CharShape="4">
+<CHAR>료</CHAR></TEXT></P></PARALIST></CELL>
+<CELL BorderFill="29" ColAddr="2" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="10709" Protect="false" RowAddr="6" RowSpan="1" Width="18920">
+<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+{{if len(keep6) > 0}}{{range keep6}}<P ParaShape="64" Style="0"><TEXT CharShape="65"><CHAR> {{.}}</CHAR></TEXT></P>{{end}}{{else}}<P ParaShape="64" Style="0"><TEXT CharShape="65"><CHAR> </CHAR></TEXT></P>{{end}}
+</PARALIST></CELL>
+<CELL BorderFill="28" ColAddr="3" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="10709" Protect="false" RowAddr="6" RowSpan="1" Width="5323">
+<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+<P ParaShape="137" Style="0">
+<TEXT CharShape="120">
+<CHAR>{{periodickeep.Remark6}}</CHAR></TEXT></P></PARALIST></CELL></ROW>
+</TABLE>
+<CHAR/>
+</TEXT></P>
+<P ParaShape="118" Style="0">
+<TEXT CharShape="62"/>
+</P>

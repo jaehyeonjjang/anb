@@ -1,0 +1,12 @@
+project-name: repair
+
+-/bin
+-/build
+-/chat
+-/dist
+-/webdata
+-/*.xlsx
+-/*.jpg
+-/*.png
+-/models
+-/controllers/rest

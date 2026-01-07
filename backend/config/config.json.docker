@@ -1,0 +1,12 @@
+{
+    "database": "mysql",
+    "connectionString": "root:@tcp(127.0.0.1:3306)/anb",
+    "smsUser": "jcjcompany",
+    "smsKey": "ledz12znhaw97kxtt3jvmek179j035gj",
+
+    "MailSender": "sender@jcjonlineb2b.com",
+    "MailHost": "linux.netb.co.kr",
+    "MailPort": "25",
+    "MailUser": "yuhki",
+    "MailPasswd": "dkTkfl123!"
+}

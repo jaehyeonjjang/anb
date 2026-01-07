@@ -1,0 +1,3 @@
+<BINDATALIST Count="{{imagecount}}">
+{{range i, v := images}}<BINITEM BinData="{{i+1}}" Format="{{v.Ext}}" Type="Embedding"/>
+{{end}}</BINDATALIST>

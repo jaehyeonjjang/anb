@@ -1,0 +1,617 @@
+<TABDEFLIST Count="38">
+	<TABDEF AutoTabLeft="false" AutoTabRight="false" Id="0"/>
+	<TABDEF AutoTabLeft="false" AutoTabRight="false" Id="1">
+		<TABITEM Leader="None" Pos="8000" Type="Left"/>
+		<TABITEM Leader="None" Pos="16000" Type="Left"/>
+		<TABITEM Leader="None" Pos="24000" Type="Left"/>
+		<TABITEM Leader="None" Pos="32000" Type="Left"/>
+		<TABITEM Leader="None" Pos="40000" Type="Left"/>
+		<TABITEM Leader="None" Pos="48000" Type="Left"/>
+		<TABITEM Leader="None" Pos="56000" Type="Left"/>
+		<TABITEM Leader="None" Pos="64000" Type="Left"/>
+		<TABITEM Leader="None" Pos="72000" Type="Left"/>
+		<TABITEM Leader="None" Pos="80000" Type="Left"/>
+		<TABITEM Leader="None" Pos="88000" Type="Left"/>
+		<TABITEM Leader="None" Pos="104000" Type="Left"/>
+		<TABITEM Leader="None" Pos="112000" Type="Left"/>
+		<TABITEM Leader="None" Pos="120000" Type="Left"/>
+		<TABITEM Leader="None" Pos="128000" Type="Left"/>
+		<TABITEM Leader="None" Pos="136000" Type="Left"/>
+		<TABITEM Leader="None" Pos="144000" Type="Left"/>
+		<TABITEM Leader="None" Pos="152000" Type="Left"/>
+		<TABITEM Leader="None" Pos="160000" Type="Left"/>
+		<TABITEM Leader="None" Pos="168000" Type="Left"/>
+		<TABITEM Leader="None" Pos="176000" Type="Left"/>
+		<TABITEM Leader="None" Pos="184000" Type="Left"/>
+		<TABITEM Leader="None" Pos="192000" Type="Left"/>
+		<TABITEM Leader="None" Pos="200000" Type="Left"/>
+		<TABITEM Leader="None" Pos="208000" Type="Left"/>
+		<TABITEM Leader="None" Pos="216000" Type="Left"/>
+		<TABITEM Leader="None" Pos="224000" Type="Left"/>
+		<TABITEM Leader="None" Pos="232000" Type="Left"/>
+		<TABITEM Leader="None" Pos="240000" Type="Left"/>
+		<TABITEM Leader="None" Pos="248000" Type="Left"/>
+	</TABDEF>
+<TABDEF AutoTabLeft="false" AutoTabRight="false" Id="2">
+	<TABITEM Leader="None" Pos="0" Type="Left"/>
+	<TABITEM Leader="None" Pos="0" Type="Left"/>
+	<TABITEM Leader="None" Pos="0" Type="Left"/>
+	<TABITEM Leader="None" Pos="0" Type="Left"/>
+	<TABITEM Leader="None" Pos="0" Type="Left"/>
+	<TABITEM Leader="None" Pos="0" Type="Left"/>
+	<TABITEM Leader="None" Pos="0" Type="Left"/>
+	<TABITEM Leader="None" Pos="0" Type="Left"/>
+	<TABITEM Leader="None" Pos="0" Type="Left"/>
+	<TABITEM Leader="None" Pos="8000" Type="Left"/>
+	<TABITEM Leader="None" Pos="16000" Type="Left"/>
+	<TABITEM Leader="None" Pos="24000" Type="Left"/>
+	<TABITEM Leader="None" Pos="32000" Type="Left"/>
+	<TABITEM Leader="None" Pos="40000" Type="Left"/>
+	<TABITEM Leader="None" Pos="48000" Type="Left"/>
+	<TABITEM Leader="None" Pos="56000" Type="Left"/>
+	<TABITEM Leader="None" Pos="64000" Type="Left"/>
+	<TABITEM Leader="None" Pos="72000" Type="Left"/>
+	<TABITEM Leader="None" Pos="80000" Type="Left"/>
+	<TABITEM Leader="None" Pos="88000" Type="Left"/>
+	<TABITEM Leader="None" Pos="96000" Type="Left"/>
+	<TABITEM Leader="None" Pos="104000" Type="Left"/>
+	<TABITEM Leader="None" Pos="112000" Type="Left"/>
+	<TABITEM Leader="None" Pos="120000" Type="Left"/>
+	<TABITEM Leader="None" Pos="128000" Type="Left"/>
+	<TABITEM Leader="None" Pos="136000" Type="Left"/>
+	<TABITEM Leader="None" Pos="144000" Type="Left"/>
+	<TABITEM Leader="None" Pos="152000" Type="Left"/>
+	<TABITEM Leader="None" Pos="160000" Type="Left"/>
+	<TABITEM Leader="None" Pos="168000" Type="Left"/>
+	<TABITEM Leader="None" Pos="176000" Type="Left"/>
+	<TABITEM Leader="None" Pos="184000" Type="Left"/>
+	<TABITEM Leader="None" Pos="192000" Type="Left"/>
+	<TABITEM Leader="None" Pos="200000" Type="Left"/>
+	<TABITEM Leader="None" Pos="208000" Type="Left"/>
+	<TABITEM Leader="None" Pos="216000" Type="Left"/>
+	<TABITEM Leader="None" Pos="224000" Type="Left"/>
+	<TABITEM Leader="None" Pos="232000" Type="Left"/>
+	<TABITEM Leader="None" Pos="240000" Type="Left"/>
+	<TABITEM Leader="None" Pos="248000" Type="Left"/>
+</TABDEF>
+<TABDEF AutoTabLeft="false" AutoTabRight="false" Id="3">
+	<TABITEM Leader="Dot" Pos="90424" Type="Right"/>
+</TABDEF>
+<TABDEF AutoTabLeft="false" AutoTabRight="false" Id="4">
+	<TABITEM Leader="None" Pos="8064" Type="Left"/>
+	<TABITEM Leader="None" Pos="16128" Type="Left"/>
+	<TABITEM Leader="None" Pos="24192" Type="Left"/>
+	<TABITEM Leader="None" Pos="32256" Type="Left"/>
+	<TABITEM Leader="None" Pos="40320" Type="Left"/>
+	<TABITEM Leader="None" Pos="48384" Type="Left"/>
+	<TABITEM Leader="None" Pos="56448" Type="Left"/>
+	<TABITEM Leader="None" Pos="64512" Type="Left"/>
+	<TABITEM Leader="None" Pos="72576" Type="Left"/>
+	<TABITEM Leader="None" Pos="80640" Type="Left"/>
+	<TABITEM Leader="None" Pos="88704" Type="Left"/>
+	<TABITEM Leader="None" Pos="104832" Type="Left"/>
+	<TABITEM Leader="None" Pos="112896" Type="Left"/>
+	<TABITEM Leader="None" Pos="120960" Type="Left"/>
+	<TABITEM Leader="None" Pos="129024" Type="Left"/>
+	<TABITEM Leader="None" Pos="137088" Type="Left"/>
+	<TABITEM Leader="None" Pos="145152" Type="Left"/>
+	<TABITEM Leader="None" Pos="153216" Type="Left"/>
+	<TABITEM Leader="None" Pos="161280" Type="Left"/>
+	<TABITEM Leader="None" Pos="169344" Type="Left"/>
+	<TABITEM Leader="None" Pos="177408" Type="Left"/>
+	<TABITEM Leader="None" Pos="185472" Type="Left"/>
+	<TABITEM Leader="None" Pos="193536" Type="Left"/>
+	<TABITEM Leader="None" Pos="201600" Type="Left"/>
+	<TABITEM Leader="None" Pos="209664" Type="Left"/>
+	<TABITEM Leader="None" Pos="217728" Type="Left"/>
+	<TABITEM Leader="None" Pos="225792" Type="Left"/>
+	<TABITEM Leader="None" Pos="233856" Type="Left"/>
+	<TABITEM Leader="None" Pos="241920" Type="Left"/>
+	<TABITEM Leader="None" Pos="249984" Type="Left"/>
+	<TABITEM Leader="None" Pos="258048" Type="Left"/>
+</TABDEF>
+<TABDEF AutoTabLeft="false" AutoTabRight="false" Id="5">
+	<TABITEM Leader="None" Pos="3216" Type="Left"/>
+	<TABITEM Leader="Dot" Pos="37296" Type="Left"/>
+</TABDEF>
+<TABDEF AutoTabLeft="false" AutoTabRight="false" Id="6">
+	<TABITEM Leader="None" Pos="0" Type="Left"/>
+	<TABITEM Leader="None" Pos="0" Type="Left"/>
+	<TABITEM Leader="None" Pos="0" Type="Left"/>
+	<TABITEM Leader="None" Pos="0" Type="Left"/>
+	<TABITEM Leader="None" Pos="0" Type="Left"/>
+	<TABITEM Leader="None" Pos="0" Type="Left"/>
+	<TABITEM Leader="None" Pos="0" Type="Left"/>
+	<TABITEM Leader="None" Pos="0" Type="Left"/>
+	<TABITEM Leader="None" Pos="0" Type="Left"/>
+	<TABITEM Leader="None" Pos="0" Type="Left"/>
+	<TABITEM Leader="None" Pos="0" Type="Left"/>
+	<TABITEM Leader="None" Pos="0" Type="Left"/>
+	<TABITEM Leader="None" Pos="0" Type="Left"/>
+	<TABITEM Leader="None" Pos="0" Type="Left"/>
+	<TABITEM Leader="None" Pos="0" Type="Left"/>
+	<TABITEM Leader="None" Pos="0" Type="Left"/>
+	<TABITEM Leader="None" Pos="0" Type="Left"/>
+	<TABITEM Leader="None" Pos="0" Type="Left"/>
+	<TABITEM Leader="None" Pos="0" Type="Left"/>
+	<TABITEM Leader="None" Pos="0" Type="Left"/>
+	<TABITEM Leader="None" Pos="0" Type="Left"/>
+	<TABITEM Leader="None" Pos="0" Type="Left"/>
+	<TABITEM Leader="None" Pos="0" Type="Left"/>
+	<TABITEM Leader="None" Pos="0" Type="Left"/>
+	<TABITEM Leader="None" Pos="8000" Type="Left"/>
+	<TABITEM Leader="None" Pos="16000" Type="Left"/>
+	<TABITEM Leader="None" Pos="24000" Type="Left"/>
+	<TABITEM Leader="None" Pos="32000" Type="Left"/>
+	<TABITEM Leader="None" Pos="40000" Type="Left"/>
+	<TABITEM Leader="None" Pos="48000" Type="Left"/>
+	<TABITEM Leader="None" Pos="56000" Type="Left"/>
+	<TABITEM Leader="None" Pos="64000" Type="Left"/>
+	<TABITEM Leader="None" Pos="72000" Type="Left"/>
+	<TABITEM Leader="None" Pos="80000" Type="Left"/>
+	<TABITEM Leader="None" Pos="88000" Type="Left"/>
+	<TABITEM Leader="None" Pos="96000" Type="Left"/>
+	<TABITEM Leader="None" Pos="104000" Type="Left"/>
+	<TABITEM Leader="None" Pos="112000" Type="Left"/>
+	<TABITEM Leader="None" Pos="120000" Type="Left"/>
+	<TABITEM Leader="None" Pos="128000" Type="Left"/>
+</TABDEF>
+<TABDEF AutoTabLeft="false" AutoTabRight="false" Id="7">
+	<TABITEM Leader="None" Pos="8000" Type="Left"/>
+	<TABITEM Leader="None" Pos="16000" Type="Left"/>
+	<TABITEM Leader="None" Pos="24000" Type="Left"/>
+	<TABITEM Leader="None" Pos="32000" Type="Left"/>
+	<TABITEM Leader="None" Pos="40000" Type="Left"/>
+	<TABITEM Leader="None" Pos="48000" Type="Left"/>
+	<TABITEM Leader="None" Pos="56000" Type="Left"/>
+	<TABITEM Leader="None" Pos="64000" Type="Left"/>
+	<TABITEM Leader="None" Pos="72000" Type="Left"/>
+	<TABITEM Leader="None" Pos="80000" Type="Left"/>
+	<TABITEM Leader="None" Pos="88000" Type="Left"/>
+	<TABITEM Leader="None" Pos="104000" Type="Left"/>
+	<TABITEM Leader="None" Pos="112000" Type="Left"/>
+	<TABITEM Leader="None" Pos="120000" Type="Left"/>
+	<TABITEM Leader="None" Pos="128000" Type="Left"/>
+	<TABITEM Leader="None" Pos="136000" Type="Left"/>
+	<TABITEM Leader="None" Pos="144000" Type="Left"/>
+	<TABITEM Leader="None" Pos="152000" Type="Left"/>
+	<TABITEM Leader="None" Pos="160000" Type="Left"/>
+	<TABITEM Leader="None" Pos="168000" Type="Left"/>
+	<TABITEM Leader="None" Pos="176000" Type="Left"/>
+	<TABITEM Leader="None" Pos="184000" Type="Left"/>
+	<TABITEM Leader="None" Pos="192000" Type="Left"/>
+	<TABITEM Leader="None" Pos="200000" Type="Left"/>
+	<TABITEM Leader="None" Pos="208000" Type="Left"/>
+	<TABITEM Leader="None" Pos="216000" Type="Left"/>
+	<TABITEM Leader="None" Pos="224000" Type="Left"/>
+	<TABITEM Leader="None" Pos="232000" Type="Left"/>
+	<TABITEM Leader="None" Pos="240000" Type="Left"/>
+	<TABITEM Leader="None" Pos="248000" Type="Left"/>
+</TABDEF>
+<TABDEF AutoTabLeft="false" AutoTabRight="false" Id="8">
+	<TABITEM Leader="None" Pos="0" Type="Left"/>
+	<TABITEM Leader="None" Pos="0" Type="Left"/>
+	<TABITEM Leader="None" Pos="0" Type="Left"/>
+	<TABITEM Leader="None" Pos="0" Type="Left"/>
+	<TABITEM Leader="None" Pos="0" Type="Left"/>
+	<TABITEM Leader="None" Pos="0" Type="Left"/>
+	<TABITEM Leader="None" Pos="0" Type="Left"/>
+	<TABITEM Leader="None" Pos="0" Type="Left"/>
+	<TABITEM Leader="None" Pos="0" Type="Left"/>
+	<TABITEM Leader="None" Pos="0" Type="Left"/>
+	<TABITEM Leader="None" Pos="0" Type="Left"/>
+	<TABITEM Leader="None" Pos="0" Type="Left"/>
+	<TABITEM Leader="None" Pos="0" Type="Left"/>
+	<TABITEM Leader="None" Pos="0" Type="Left"/>
+	<TABITEM Leader="None" Pos="0" Type="Left"/>
+	<TABITEM Leader="None" Pos="0" Type="Left"/>
+	<TABITEM Leader="None" Pos="0" Type="Left"/>
+	<TABITEM Leader="None" Pos="0" Type="Left"/>
+	<TABITEM Leader="None" Pos="0" Type="Left"/>
+	<TABITEM Leader="None" Pos="0" Type="Left"/>
+	<TABITEM Leader="None" Pos="0" Type="Left"/>
+	<TABITEM Leader="None" Pos="0" Type="Left"/>
+	<TABITEM Leader="None" Pos="0" Type="Left"/>
+	<TABITEM Leader="None" Pos="0" Type="Left"/>
+	<TABITEM Leader="None" Pos="8000" Type="Left"/>
+	<TABITEM Leader="None" Pos="16000" Type="Left"/>
+	<TABITEM Leader="None" Pos="24000" Type="Left"/>
+	<TABITEM Leader="None" Pos="30936" Type="Left"/>
+	<TABITEM Leader="None" Pos="40000" Type="Left"/>
+	<TABITEM Leader="None" Pos="48000" Type="Left"/>
+	<TABITEM Leader="None" Pos="56000" Type="Left"/>
+	<TABITEM Leader="None" Pos="64000" Type="Left"/>
+	<TABITEM Leader="None" Pos="72000" Type="Left"/>
+	<TABITEM Leader="None" Pos="80000" Type="Left"/>
+	<TABITEM Leader="None" Pos="88000" Type="Left"/>
+	<TABITEM Leader="None" Pos="96000" Type="Left"/>
+	<TABITEM Leader="None" Pos="104000" Type="Left"/>
+	<TABITEM Leader="None" Pos="112000" Type="Left"/>
+	<TABITEM Leader="None" Pos="120000" Type="Left"/>
+	<TABITEM Leader="None" Pos="128000" Type="Left"/>
+</TABDEF>
+<TABDEF AutoTabLeft="false" AutoTabRight="false" Id="9">
+	<TABITEM Leader="None" Pos="9944" Type="Left"/>
+	<TABITEM Leader="None" Pos="16000" Type="Left"/>
+	<TABITEM Leader="None" Pos="24000" Type="Left"/>
+	<TABITEM Leader="None" Pos="32000" Type="Left"/>
+	<TABITEM Leader="None" Pos="40000" Type="Left"/>
+	<TABITEM Leader="None" Pos="48000" Type="Left"/>
+	<TABITEM Leader="None" Pos="56000" Type="Left"/>
+	<TABITEM Leader="None" Pos="64000" Type="Left"/>
+	<TABITEM Leader="None" Pos="72000" Type="Left"/>
+	<TABITEM Leader="None" Pos="80000" Type="Left"/>
+	<TABITEM Leader="None" Pos="88000" Type="Left"/>
+	<TABITEM Leader="None" Pos="96000" Type="Left"/>
+	<TABITEM Leader="None" Pos="104000" Type="Left"/>
+</TABDEF>
+<TABDEF AutoTabLeft="false" AutoTabRight="false" Id="10">
+	<TABITEM Leader="None" Pos="9944" Type="Left"/>
+	<TABITEM Leader="None" Pos="16000" Type="Left"/>
+	<TABITEM Leader="None" Pos="24000" Type="Left"/>
+	<TABITEM Leader="None" Pos="32000" Type="Left"/>
+	<TABITEM Leader="None" Pos="40000" Type="Left"/>
+	<TABITEM Leader="None" Pos="48000" Type="Left"/>
+	<TABITEM Leader="None" Pos="56000" Type="Left"/>
+	<TABITEM Leader="None" Pos="64000" Type="Left"/>
+	<TABITEM Leader="None" Pos="72000" Type="Left"/>
+	<TABITEM Leader="None" Pos="80000" Type="Left"/>
+	<TABITEM Leader="None" Pos="88000" Type="Left"/>
+	<TABITEM Leader="None" Pos="96000" Type="Left"/>
+	<TABITEM Leader="None" Pos="104000" Type="Left"/>
+</TABDEF>
+<TABDEF AutoTabLeft="false" AutoTabRight="false" Id="11">
+	<TABITEM Leader="None" Pos="30516" Type="Left"/>
+</TABDEF>
+<TABDEF AutoTabLeft="false" AutoTabRight="false" Id="12">
+	<TABITEM Leader="None" Pos="9944" Type="Left"/>
+	<TABITEM Leader="None" Pos="16000" Type="Left"/>
+	<TABITEM Leader="None" Pos="24000" Type="Left"/>
+	<TABITEM Leader="None" Pos="32000" Type="Left"/>
+	<TABITEM Leader="None" Pos="40000" Type="Left"/>
+	<TABITEM Leader="None" Pos="48000" Type="Left"/>
+	<TABITEM Leader="None" Pos="56000" Type="Left"/>
+	<TABITEM Leader="None" Pos="64000" Type="Left"/>
+	<TABITEM Leader="None" Pos="72000" Type="Left"/>
+	<TABITEM Leader="None" Pos="80000" Type="Left"/>
+	<TABITEM Leader="None" Pos="88000" Type="Left"/>
+	<TABITEM Leader="None" Pos="96000" Type="Left"/>
+	<TABITEM Leader="None" Pos="104000" Type="Left"/>
+</TABDEF>
+<TABDEF AutoTabLeft="false" AutoTabRight="false" Id="13">
+	<TABITEM Leader="None" Pos="8000" Type="Left"/>
+	<TABITEM Leader="None" Pos="16000" Type="Left"/>
+	<TABITEM Leader="None" Pos="24000" Type="Left"/>
+	<TABITEM Leader="None" Pos="32000" Type="Left"/>
+	<TABITEM Leader="None" Pos="40000" Type="Left"/>
+	<TABITEM Leader="None" Pos="48000" Type="Left"/>
+	<TABITEM Leader="None" Pos="56000" Type="Left"/>
+	<TABITEM Leader="None" Pos="64000" Type="Left"/>
+	<TABITEM Leader="None" Pos="72000" Type="Left"/>
+	<TABITEM Leader="None" Pos="80000" Type="Left"/>
+	<TABITEM Leader="None" Pos="88000" Type="Left"/>
+	<TABITEM Leader="None" Pos="104000" Type="Left"/>
+	<TABITEM Leader="None" Pos="112000" Type="Left"/>
+	<TABITEM Leader="None" Pos="120000" Type="Left"/>
+	<TABITEM Leader="None" Pos="128000" Type="Left"/>
+	<TABITEM Leader="None" Pos="136000" Type="Left"/>
+	<TABITEM Leader="None" Pos="144000" Type="Left"/>
+	<TABITEM Leader="None" Pos="152000" Type="Left"/>
+	<TABITEM Leader="None" Pos="160000" Type="Left"/>
+	<TABITEM Leader="None" Pos="168000" Type="Left"/>
+	<TABITEM Leader="None" Pos="176000" Type="Left"/>
+	<TABITEM Leader="None" Pos="184000" Type="Left"/>
+	<TABITEM Leader="None" Pos="192000" Type="Left"/>
+	<TABITEM Leader="None" Pos="200000" Type="Left"/>
+	<TABITEM Leader="None" Pos="208000" Type="Left"/>
+	<TABITEM Leader="None" Pos="216000" Type="Left"/>
+	<TABITEM Leader="None" Pos="224000" Type="Left"/>
+	<TABITEM Leader="None" Pos="232000" Type="Left"/>
+	<TABITEM Leader="None" Pos="240000" Type="Left"/>
+	<TABITEM Leader="None" Pos="248000" Type="Left"/>
+</TABDEF>
+<TABDEF AutoTabLeft="false" AutoTabRight="false" Id="14">
+	<TABITEM Leader="None" Pos="2264" Type="Left"/>
+	<TABITEM Leader="None" Pos="4488" Type="Left"/>
+</TABDEF>
+<TABDEF AutoTabLeft="false" AutoTabRight="false" Id="15">
+	<TABITEM Leader="None" Pos="8000" Type="Left"/>
+	<TABITEM Leader="None" Pos="16000" Type="Left"/>
+	<TABITEM Leader="None" Pos="24000" Type="Left"/>
+	<TABITEM Leader="None" Pos="32000" Type="Left"/>
+	<TABITEM Leader="None" Pos="40000" Type="Left"/>
+	<TABITEM Leader="None" Pos="48000" Type="Left"/>
+	<TABITEM Leader="None" Pos="50200" Type="Left"/>
+	<TABITEM Leader="None" Pos="56000" Type="Left"/>
+	<TABITEM Leader="None" Pos="64000" Type="Left"/>
+	<TABITEM Leader="None" Pos="72000" Type="Left"/>
+	<TABITEM Leader="None" Pos="80000" Type="Left"/>
+	<TABITEM Leader="None" Pos="88000" Type="Left"/>
+	<TABITEM Leader="None" Pos="96000" Type="Left"/>
+	<TABITEM Leader="None" Pos="104000" Type="Left"/>
+	<TABITEM Leader="None" Pos="112000" Type="Left"/>
+	<TABITEM Leader="None" Pos="120000" Type="Left"/>
+	<TABITEM Leader="None" Pos="128000" Type="Left"/>
+	<TABITEM Leader="None" Pos="136000" Type="Left"/>
+	<TABITEM Leader="None" Pos="144000" Type="Left"/>
+	<TABITEM Leader="None" Pos="152000" Type="Left"/>
+	<TABITEM Leader="None" Pos="160000" Type="Left"/>
+	<TABITEM Leader="None" Pos="168000" Type="Left"/>
+	<TABITEM Leader="None" Pos="176000" Type="Left"/>
+	<TABITEM Leader="None" Pos="184000" Type="Left"/>
+	<TABITEM Leader="None" Pos="192000" Type="Left"/>
+	<TABITEM Leader="None" Pos="200000" Type="Left"/>
+	<TABITEM Leader="None" Pos="208000" Type="Left"/>
+	<TABITEM Leader="None" Pos="216000" Type="Left"/>
+	<TABITEM Leader="None" Pos="224000" Type="Left"/>
+	<TABITEM Leader="None" Pos="232000" Type="Left"/>
+	<TABITEM Leader="None" Pos="240000" Type="Left"/>
+	<TABITEM Leader="None" Pos="248000" Type="Left"/>
+</TABDEF>
+<TABDEF AutoTabLeft="false" AutoTabRight="false" Id="16">
+	<TABITEM Leader="Dot" Pos="90424" Type="Right"/>
+</TABDEF>
+<TABDEF AutoTabLeft="false" AutoTabRight="false" Id="17">
+	<TABITEM Leader="None" Pos="0" Type="Left"/>
+	<TABITEM Leader="None" Pos="0" Type="Left"/>
+	<TABITEM Leader="None" Pos="0" Type="Left"/>
+	<TABITEM Leader="None" Pos="0" Type="Left"/>
+	<TABITEM Leader="None" Pos="0" Type="Left"/>
+	<TABITEM Leader="None" Pos="0" Type="Left"/>
+	<TABITEM Leader="None" Pos="0" Type="Left"/>
+	<TABITEM Leader="None" Pos="0" Type="Left"/>
+	<TABITEM Leader="None" Pos="8000" Type="Left"/>
+	<TABITEM Leader="None" Pos="16000" Type="Left"/>
+	<TABITEM Leader="None" Pos="24000" Type="Left"/>
+	<TABITEM Leader="None" Pos="32000" Type="Left"/>
+	<TABITEM Leader="None" Pos="40000" Type="Left"/>
+	<TABITEM Leader="None" Pos="48000" Type="Left"/>
+	<TABITEM Leader="None" Pos="56000" Type="Left"/>
+	<TABITEM Leader="None" Pos="64000" Type="Left"/>
+	<TABITEM Leader="None" Pos="72000" Type="Left"/>
+	<TABITEM Leader="None" Pos="80000" Type="Left"/>
+	<TABITEM Leader="None" Pos="88000" Type="Left"/>
+	<TABITEM Leader="None" Pos="96000" Type="Left"/>
+	<TABITEM Leader="None" Pos="104000" Type="Left"/>
+	<TABITEM Leader="None" Pos="112000" Type="Left"/>
+	<TABITEM Leader="None" Pos="120000" Type="Left"/>
+	<TABITEM Leader="None" Pos="128000" Type="Left"/>
+	<TABITEM Leader="None" Pos="136000" Type="Left"/>
+	<TABITEM Leader="None" Pos="144000" Type="Left"/>
+	<TABITEM Leader="None" Pos="152000" Type="Left"/>
+	<TABITEM Leader="None" Pos="160000" Type="Left"/>
+	<TABITEM Leader="None" Pos="168000" Type="Left"/>
+	<TABITEM Leader="None" Pos="176000" Type="Left"/>
+	<TABITEM Leader="None" Pos="184000" Type="Left"/>
+	<TABITEM Leader="None" Pos="192000" Type="Left"/>
+	<TABITEM Leader="None" Pos="200000" Type="Left"/>
+	<TABITEM Leader="None" Pos="208000" Type="Left"/>
+	<TABITEM Leader="None" Pos="216000" Type="Left"/>
+	<TABITEM Leader="None" Pos="224000" Type="Left"/>
+	<TABITEM Leader="None" Pos="232000" Type="Left"/>
+	<TABITEM Leader="None" Pos="240000" Type="Left"/>
+	<TABITEM Leader="None" Pos="248000" Type="Left"/>
+	<TABITEM Leader="None" Pos="256000" Type="Left"/>
+</TABDEF>
+<TABDEF AutoTabLeft="false" AutoTabRight="false" Id="18">
+	<TABITEM Leader="None" Pos="248000" Type="Left"/>
+</TABDEF>
+<TABDEF AutoTabLeft="false" AutoTabRight="false" Id="19">
+	<TABITEM Leader="Dot" Pos="96376" Type="Right"/>
+</TABDEF>
+<TABDEF AutoTabLeft="false" AutoTabRight="false" Id="20">
+	<TABITEM Leader="None" Pos="248000" Type="Left"/>
+</TABDEF>
+<TABDEF AutoTabLeft="false" AutoTabRight="false" Id="21">
+	<TABITEM Leader="Dot" Pos="96376" Type="Right"/>
+</TABDEF>
+<TABDEF AutoTabLeft="false" AutoTabRight="false" Id="22">
+	<TABITEM Leader="Dot" Pos="96376" Type="Right"/>
+</TABDEF>
+<TABDEF AutoTabLeft="false" AutoTabRight="false" Id="23">
+	<TABITEM Leader="None" Pos="4664" Type="Left"/>
+	<TABITEM Leader="None" Pos="8000" Type="Left"/>
+	<TABITEM Leader="None" Pos="16000" Type="Left"/>
+	<TABITEM Leader="None" Pos="24000" Type="Left"/>
+	<TABITEM Leader="None" Pos="32000" Type="Left"/>
+	<TABITEM Leader="None" Pos="40000" Type="Left"/>
+	<TABITEM Leader="None" Pos="48000" Type="Left"/>
+	<TABITEM Leader="None" Pos="56000" Type="Left"/>
+	<TABITEM Leader="None" Pos="64000" Type="Left"/>
+	<TABITEM Leader="None" Pos="72000" Type="Left"/>
+	<TABITEM Leader="None" Pos="80000" Type="Left"/>
+	<TABITEM Leader="None" Pos="88000" Type="Left"/>
+	<TABITEM Leader="None" Pos="104000" Type="Left"/>
+	<TABITEM Leader="None" Pos="112000" Type="Left"/>
+	<TABITEM Leader="None" Pos="120000" Type="Left"/>
+	<TABITEM Leader="None" Pos="128000" Type="Left"/>
+	<TABITEM Leader="None" Pos="136000" Type="Left"/>
+	<TABITEM Leader="None" Pos="144000" Type="Left"/>
+	<TABITEM Leader="None" Pos="152000" Type="Left"/>
+	<TABITEM Leader="None" Pos="160000" Type="Left"/>
+	<TABITEM Leader="None" Pos="168000" Type="Left"/>
+	<TABITEM Leader="None" Pos="176000" Type="Left"/>
+	<TABITEM Leader="None" Pos="184000" Type="Left"/>
+	<TABITEM Leader="None" Pos="192000" Type="Left"/>
+	<TABITEM Leader="None" Pos="200000" Type="Left"/>
+	<TABITEM Leader="None" Pos="208000" Type="Left"/>
+	<TABITEM Leader="None" Pos="216000" Type="Left"/>
+	<TABITEM Leader="None" Pos="224000" Type="Left"/>
+	<TABITEM Leader="None" Pos="232000" Type="Left"/>
+	<TABITEM Leader="None" Pos="240000" Type="Left"/>
+	<TABITEM Leader="None" Pos="248000" Type="Left"/>
+</TABDEF>
+<TABDEF AutoTabLeft="false" AutoTabRight="false" Id="24">
+	<TABITEM Leader="Dot" Pos="90424" Type="Right"/>
+	<TABITEM Leader="None" Pos="96000" Type="Left"/>
+</TABDEF>
+<TABDEF AutoTabLeft="false" AutoTabRight="false" Id="25">
+	<TABITEM Leader="Dot" Pos="90424" Type="Right"/>
+</TABDEF>
+<TABDEF AutoTabLeft="false" AutoTabRight="false" Id="26">
+	<TABITEM Leader="None" Pos="4664" Type="Left"/>
+	<TABITEM Leader="Dot" Pos="90424" Type="Right"/>
+</TABDEF>
+<TABDEF AutoTabLeft="false" AutoTabRight="false" Id="27">
+	<TABITEM Leader="None" Pos="8000" Type="Left"/>
+	<TABITEM Leader="None" Pos="16000" Type="Left"/>
+	<TABITEM Leader="None" Pos="24000" Type="Left"/>
+	<TABITEM Leader="None" Pos="32000" Type="Left"/>
+	<TABITEM Leader="None" Pos="38440" Type="Left"/>
+	<TABITEM Leader="None" Pos="40000" Type="Left"/>
+	<TABITEM Leader="None" Pos="48000" Type="Left"/>
+	<TABITEM Leader="None" Pos="56000" Type="Left"/>
+	<TABITEM Leader="None" Pos="64000" Type="Left"/>
+	<TABITEM Leader="None" Pos="72000" Type="Left"/>
+	<TABITEM Leader="None" Pos="80000" Type="Left"/>
+	<TABITEM Leader="None" Pos="88000" Type="Left"/>
+	<TABITEM Leader="None" Pos="96000" Type="Left"/>
+	<TABITEM Leader="None" Pos="104000" Type="Left"/>
+	<TABITEM Leader="None" Pos="112000" Type="Left"/>
+	<TABITEM Leader="None" Pos="120000" Type="Left"/>
+	<TABITEM Leader="None" Pos="128000" Type="Left"/>
+	<TABITEM Leader="None" Pos="136000" Type="Left"/>
+	<TABITEM Leader="None" Pos="144000" Type="Left"/>
+	<TABITEM Leader="None" Pos="152000" Type="Left"/>
+	<TABITEM Leader="None" Pos="160000" Type="Left"/>
+	<TABITEM Leader="None" Pos="168000" Type="Left"/>
+	<TABITEM Leader="None" Pos="176000" Type="Left"/>
+	<TABITEM Leader="None" Pos="184000" Type="Left"/>
+	<TABITEM Leader="None" Pos="192000" Type="Left"/>
+	<TABITEM Leader="None" Pos="200000" Type="Left"/>
+	<TABITEM Leader="None" Pos="208000" Type="Left"/>
+	<TABITEM Leader="None" Pos="216000" Type="Left"/>
+	<TABITEM Leader="None" Pos="224000" Type="Left"/>
+	<TABITEM Leader="None" Pos="232000" Type="Left"/>
+	<TABITEM Leader="None" Pos="240000" Type="Left"/>
+	<TABITEM Leader="None" Pos="248000" Type="Left"/>
+</TABDEF>
+<TABDEF AutoTabLeft="false" AutoTabRight="false" Id="28">
+	<TABITEM Leader="None" Pos="1098" Type="Left"/>
+</TABDEF>
+<TABDEF AutoTabLeft="false" AutoTabRight="false" Id="29">
+	<TABITEM Leader="None" Pos="8000" Type="Left"/>
+	<TABITEM Leader="None" Pos="10656" Type="Left"/>
+	<TABITEM Leader="None" Pos="11392" Type="Left"/>
+	<TABITEM Leader="None" Pos="16000" Type="Left"/>
+	<TABITEM Leader="None" Pos="24000" Type="Left"/>
+	<TABITEM Leader="None" Pos="32000" Type="Left"/>
+	<TABITEM Leader="None" Pos="40000" Type="Left"/>
+	<TABITEM Leader="None" Pos="48000" Type="Left"/>
+	<TABITEM Leader="None" Pos="56000" Type="Left"/>
+	<TABITEM Leader="None" Pos="64000" Type="Left"/>
+	<TABITEM Leader="None" Pos="72000" Type="Left"/>
+	<TABITEM Leader="None" Pos="80000" Type="Left"/>
+	<TABITEM Leader="None" Pos="88000" Type="Left"/>
+	<TABITEM Leader="None" Pos="96000" Type="Left"/>
+	<TABITEM Leader="None" Pos="104000" Type="Left"/>
+	<TABITEM Leader="None" Pos="112000" Type="Left"/>
+	<TABITEM Leader="None" Pos="120000" Type="Left"/>
+	<TABITEM Leader="None" Pos="128000" Type="Left"/>
+	<TABITEM Leader="None" Pos="136000" Type="Left"/>
+	<TABITEM Leader="None" Pos="144000" Type="Left"/>
+	<TABITEM Leader="None" Pos="152000" Type="Left"/>
+	<TABITEM Leader="None" Pos="160000" Type="Left"/>
+	<TABITEM Leader="None" Pos="168000" Type="Left"/>
+	<TABITEM Leader="None" Pos="176000" Type="Left"/>
+	<TABITEM Leader="None" Pos="184000" Type="Left"/>
+	<TABITEM Leader="None" Pos="192000" Type="Left"/>
+	<TABITEM Leader="None" Pos="200000" Type="Left"/>
+	<TABITEM Leader="None" Pos="208000" Type="Left"/>
+	<TABITEM Leader="None" Pos="216000" Type="Left"/>
+	<TABITEM Leader="None" Pos="224000" Type="Left"/>
+	<TABITEM Leader="None" Pos="232000" Type="Left"/>
+	<TABITEM Leader="None" Pos="240000" Type="Left"/>
+	<TABITEM Leader="None" Pos="248000" Type="Left"/>
+</TABDEF>
+<TABDEF AutoTabLeft="false" AutoTabRight="false" Id="30">
+	<TABITEM Leader="None" Pos="8000" Type="Left"/>
+	<TABITEM Leader="None" Pos="11344" Type="Left"/>
+	<TABITEM Leader="None" Pos="16000" Type="Left"/>
+	<TABITEM Leader="None" Pos="24000" Type="Left"/>
+	<TABITEM Leader="None" Pos="32000" Type="Left"/>
+	<TABITEM Leader="None" Pos="40000" Type="Left"/>
+	<TABITEM Leader="None" Pos="43232" Type="Left"/>
+	<TABITEM Leader="None" Pos="48000" Type="Left"/>
+	<TABITEM Leader="None" Pos="56000" Type="Left"/>
+	<TABITEM Leader="None" Pos="64000" Type="Left"/>
+	<TABITEM Leader="None" Pos="72000" Type="Left"/>
+	<TABITEM Leader="None" Pos="80000" Type="Left"/>
+	<TABITEM Leader="None" Pos="88000" Type="Left"/>
+	<TABITEM Leader="None" Pos="96000" Type="Left"/>
+	<TABITEM Leader="None" Pos="104000" Type="Left"/>
+	<TABITEM Leader="None" Pos="112000" Type="Left"/>
+	<TABITEM Leader="None" Pos="120000" Type="Left"/>
+	<TABITEM Leader="None" Pos="128000" Type="Left"/>
+	<TABITEM Leader="None" Pos="136000" Type="Left"/>
+	<TABITEM Leader="None" Pos="144000" Type="Left"/>
+	<TABITEM Leader="None" Pos="152000" Type="Left"/>
+	<TABITEM Leader="None" Pos="160000" Type="Left"/>
+	<TABITEM Leader="None" Pos="168000" Type="Left"/>
+	<TABITEM Leader="None" Pos="176000" Type="Left"/>
+	<TABITEM Leader="None" Pos="184000" Type="Left"/>
+	<TABITEM Leader="None" Pos="192000" Type="Left"/>
+	<TABITEM Leader="None" Pos="200000" Type="Left"/>
+	<TABITEM Leader="None" Pos="208000" Type="Left"/>
+	<TABITEM Leader="None" Pos="216000" Type="Left"/>
+	<TABITEM Leader="None" Pos="224000" Type="Left"/>
+	<TABITEM Leader="None" Pos="232000" Type="Left"/>
+	<TABITEM Leader="None" Pos="240000" Type="Left"/>
+	<TABITEM Leader="None" Pos="248000" Type="Left"/>
+</TABDEF>
+<TABDEF AutoTabLeft="false" AutoTabRight="false" Id="31">
+	<TABITEM Leader="None" Pos="2264" Type="Left"/>
+	<TABITEM Leader="None" Pos="4488" Type="Left"/>
+</TABDEF>
+<TABDEF AutoTabLeft="false" AutoTabRight="false" Id="32">
+	<TABITEM Leader="None" Pos="2264" Type="Left"/>
+	<TABITEM Leader="None" Pos="4488" Type="Left"/>
+</TABDEF>
+<TABDEF AutoTabLeft="false" AutoTabRight="false" Id="33">
+	<TABITEM Leader="None" Pos="8000" Type="Left"/>
+	<TABITEM Leader="None" Pos="10656" Type="Left"/>
+	<TABITEM Leader="None" Pos="11392" Type="Left"/>
+	<TABITEM Leader="None" Pos="16000" Type="Left"/>
+	<TABITEM Leader="None" Pos="24000" Type="Left"/>
+	<TABITEM Leader="None" Pos="32000" Type="Left"/>
+	<TABITEM Leader="None" Pos="40000" Type="Left"/>
+	<TABITEM Leader="None" Pos="48000" Type="Left"/>
+	<TABITEM Leader="None" Pos="56000" Type="Left"/>
+	<TABITEM Leader="None" Pos="64000" Type="Left"/>
+	<TABITEM Leader="None" Pos="72000" Type="Left"/>
+	<TABITEM Leader="None" Pos="80000" Type="Left"/>
+	<TABITEM Leader="None" Pos="88000" Type="Left"/>
+	<TABITEM Leader="None" Pos="96000" Type="Left"/>
+	<TABITEM Leader="None" Pos="104000" Type="Left"/>
+	<TABITEM Leader="None" Pos="112000" Type="Left"/>
+	<TABITEM Leader="None" Pos="120000" Type="Left"/>
+	<TABITEM Leader="None" Pos="128000" Type="Left"/>
+	<TABITEM Leader="None" Pos="136000" Type="Left"/>
+	<TABITEM Leader="None" Pos="144000" Type="Left"/>
+	<TABITEM Leader="None" Pos="152000" Type="Left"/>
+	<TABITEM Leader="None" Pos="160000" Type="Left"/>
+	<TABITEM Leader="None" Pos="168000" Type="Left"/>
+	<TABITEM Leader="None" Pos="176000" Type="Left"/>
+	<TABITEM Leader="None" Pos="184000" Type="Left"/>
+	<TABITEM Leader="None" Pos="192000" Type="Left"/>
+	<TABITEM Leader="None" Pos="200000" Type="Left"/>
+	<TABITEM Leader="None" Pos="208000" Type="Left"/>
+	<TABITEM Leader="None" Pos="216000" Type="Left"/>
+	<TABITEM Leader="None" Pos="224000" Type="Left"/>
+	<TABITEM Leader="None" Pos="232000" Type="Left"/>
+	<TABITEM Leader="None" Pos="240000" Type="Left"/>
+	<TABITEM Leader="None" Pos="248000" Type="Left"/>
+</TABDEF>
+<TABDEF AutoTabLeft="false" AutoTabRight="false" Id="34">
+	<TABITEM Leader="None" Pos="2264" Type="Left"/>
+	<TABITEM Leader="None" Pos="4488" Type="Left"/>
+</TABDEF>
+<TABDEF AutoTabLeft="false" AutoTabRight="false" Id="35">
+	<TABITEM Leader="None" Pos="2264" Type="Left"/>
+	<TABITEM Leader="None" Pos="4488" Type="Left"/>
+</TABDEF>
+<TABDEF AutoTabLeft="true" AutoTabRight="true" Id="36"/>
+<TABDEF AutoTabLeft="false" AutoTabRight="false" Id="37">
+	<TABITEM Leader="None" Pos="1104" Type="Left"/>
+</TABDEF>
+</TABDEFLIST>

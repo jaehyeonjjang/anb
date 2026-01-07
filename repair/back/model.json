@@ -1,0 +1,755 @@
+{
+  "buildtool": "1.4",
+  "database": "repair",
+  "user": "repair",
+  "server": "dev.netb.co.kr",
+  "password": "repairdb",
+  "auth": "jwt",
+  "adminLevel": "3",
+  "showpasswd": true,
+  "double": true,
+  "table": [
+    {
+      "name": "user",
+      "compare": [
+        {
+          "name": "name",
+          "type": "like"
+        }
+      ],
+      "map": [
+        {
+          "name": "level",
+          "data": [
+            "",
+            "normal:일반",
+            "manager:매니저",
+            "admin:관리자",
+            "rootadmin:총관리자"
+          ]
+        }
+      ],
+      "method": [
+        "CountByLevel",
+        "FindByLevel",
+        "CountByApt",
+        "FindByApt",
+        "CountByAptLevel",
+        "FindByAptLevel",
+        "GetByEmail",
+        "CountByEmail",
+        "GetByLoginid",
+        "CountByLoginid"
+      ]
+    },
+    {
+      "name": "apt",
+      "compare": [
+        {
+          "name": "name",
+          "type": "like"
+        }
+      ],
+      "method": [
+        "CountByNamelike",
+        "FindByNamelike",
+        "CountByEmaillike",
+        "FindByEmaillike"
+      ]
+    },
+    {
+      "name": "category",
+      "compare": [
+        {
+          "name": "name",
+          "type": "like"
+        }
+      ],
+      "method": [
+        "GetByLevelName",
+        "GetByLevelParentName",
+        "CountByApt",
+        "FindByApt",
+        "CountByAptLevel",
+        "FindByAptLevel",
+        "GetByAptLevelParentName",
+        "GetByAptName",
+        "CountByAptParent",
+        "FindByAptParent",
+        "FindByAptOrder"
+      ]
+    },
+    {
+      "name": "dong",
+      "method": [
+        "CountByApt",
+        "FindByApt",
+        "DeleteByApt"
+      ]
+    },
+    {
+      "name": "history",
+      "join": [
+        {
+          "name": "category",
+          "column": "category"
+        }
+      ],
+      "compare": [
+        {
+          "name": "content",
+          "type": "like"
+        }
+      ],
+      "method": [
+        "CountByApt",
+        "FindByApt",
+        "DeleteByApt",
+        "FindByCategory",
+        "DeleteByCategory"
+      ]
+    },
+    {
+      "name": "breakdown",
+      "join": [
+        {
+          "name": "standard",
+          "column": "standard"
+        },
+        {
+          "name": "category",
+          "column": "method"
+        },
+        {
+          "name": "dong",
+          "column": "dong"
+        }
+      ],
+      "method": [
+        "CountByApt",
+        "FindByApt",
+        "DeleteByApt",
+        "CountByAptDong",
+        "CountByAptStandard",
+        "UpdateDuedateById",
+        "UpdateLastdateById",
+        "FindByCategory",
+        "DeleteByCategory",
+        "FindByMethod",
+        "UpdateSubcategoryByCategory"
+      ]
+    },
+    {
+      "name": "standard",
+      "compare": [
+        {
+          "name": "name",
+          "type": "like"
+        }
+      ],
+      "join": [
+        {
+          "name": "category",
+          "column": "category"
+        }
+      ],
+      "method": [
+        "CountByApt",
+        "FindByApt",
+        "GetByAptCategoryName",
+        "FindByCategory",
+        "DeleteByCategory"
+      ]
+    },
+    {
+      "name": "area",
+      "compare": [
+        {
+          "name": "name",
+          "type": "like"
+        }
+      ],
+      "method": [
+        "CountByApt",
+        "FindByApt",
+        "DeleteByApt"
+      ]
+    },
+    {
+      "name": "totalreport",
+      "join": [
+        {
+          "name": "standard",
+          "column": "standard"
+        },
+        {
+          "name": "category",
+          "column": "method"
+        }
+      ],
+      "method": [
+        "CountByApt",
+        "FindByApt"
+      ]
+    },
+    {
+      "name": "totalyearreport",
+      "join": [
+        {
+          "name": "standard",
+          "column": "standard"
+        },
+        {
+          "name": "category",
+          "column": "method"
+        }
+      ],
+      "method": [
+        "CountByApt",
+        "FindByApt"
+      ]
+    },
+    {
+      "name": "standardlist",
+      "compare": [
+        {
+          "name": "name",
+          "type": "like"
+        }
+      ],
+      "join": [
+        {
+          "name": "category",
+          "column": "category"
+        }
+      ],
+      "method": [
+        "CountByApt",
+        "FindByApt"
+      ]
+    },
+    {
+      "name": "yearreport",
+      "join": [
+        {
+          "name": "standard",
+          "column": "standard"
+        },
+        {
+          "name": "category",
+          "column": "method"
+        }
+      ],
+      "method": [
+        "CountByApt",
+        "FindByApt"
+      ]
+    },
+    {
+      "name": "advice",
+      "compare": [
+        {
+          "name": "content",
+          "type": "like"
+        }
+      ],
+      "method": [
+        "CountByApt",
+        "FindByApt"
+      ]
+    },
+    {
+      "name": "reviewcontent",
+      "compare": [
+        {
+          "name": "content",
+          "type": "like"
+        }
+      ],
+      "method": [
+        "CountByApt",
+        "FindByApt"
+      ]
+    },
+    {
+      "name": "reviewcontentbasic",
+      "compare": [
+        {
+          "name": "content",
+          "type": "like"
+        }
+      ]
+    },
+    {
+      "name": "review",
+      "join": [
+        {
+          "name": "category",
+          "column": "category"
+        },
+        {
+          "name": "standard",
+          "column": "standard"
+        }
+      ],
+      "compare": [
+        {
+          "name": "content",
+          "type": "like"
+        }
+      ],
+      "method": [
+        "CountByApt",
+        "FindByApt",
+        "FindByCategory",
+        "DeleteByCategory",
+        "FindByMethod"
+      ]
+    },
+    {
+      "name": "reviewbasic",
+      "compare": [
+        {
+          "name": "content",
+          "type": "like"
+        }
+      ]
+    },
+    {
+      "name": "saving",
+      "method": [
+        "CountByApt",
+        "FindByApt",
+        "DeleteByApt"
+      ]
+    },
+    {
+      "name": "file",
+      "method": [
+        "CountByApt",
+        "FindByApt",
+        "DeleteByApt"
+      ]
+    },
+    {
+      "name": "repairlist",
+      "compare": [
+        {
+          "name": "name",
+          "type": "like"
+        }
+      ],
+      "map": [
+        {
+          "name": "repairtype",
+          "data": [
+            "",
+            "establishment:재수립",
+            "review:검토조정",
+            "other:타업체작업"
+          ]
+        }
+      ],
+      "method": [
+        "UpdateStatusById",
+        "CountByRepairtypes",
+        "FindByRepairtypes"
+      ]
+    },
+    {
+      "name": "approval",
+      "compare": [
+        {
+          "name": "name",
+          "type": "like"
+        }
+      ],
+      "method": [
+        "CountByApt",
+        "FindByApt",
+        "DeleteByApt"
+      ]
+    },
+    {
+      "name": "adjust",
+      "method": [
+        "CountByApt",
+        "FindByApt",
+        "DeleteByApt",
+        "FindByCategory",
+        "DeleteByCategory"
+      ]
+    },
+    {
+      "name": "breakdownhistory",
+      "join": [
+        {
+          "name": "category",
+          "column": "method"
+        },
+        {
+          "name": "standard",
+          "column": "standard"
+        }
+      ],
+      "method": [
+        "CountByApt",
+        "FindByApt",
+        "DeleteByApt",
+        "CountByBreakdown",
+        "GetByBreakdown",
+        "FindByCategory",
+        "DeleteByCategory",
+        "FindByMethod"
+      ]
+    },
+    {
+      "name": "standardhistory",
+      "method": [
+        "CountByApt",
+        "FindByApt",
+        "DeleteByApt",
+        "CountByStandard",
+        "GetByStandard"
+      ]
+    },
+    {
+      "name": "repair",
+      "map": [
+        {
+          "name": "periodtype",
+          "data": [
+            "",
+            "periodic:정기",
+            "sometime:수시"
+          ]
+        }
+      ],
+      "method": [
+        "UpdateStatusById"
+      ]
+    },
+    {
+      "name": "blueprint",
+      "map": [
+        {
+          "name": "floortype",
+          "data": [
+            "",
+            "parking:주차장",
+            "underground:지하",
+            "ground:지상",
+            "top:옥탑",
+            "roof:지붕"
+          ]
+        }
+      ],
+      "method": [
+        "CountByApt",
+        "FindByApt",
+        "UpdateFilenameById"
+      ]
+    },
+    {
+      "name": "patrol",
+      "map": [
+        {
+          "name": "status",
+          "data": [
+            "",
+            "normal:순찰중",
+            "complete:순찰완료"
+          ]
+        }
+      ],
+      "join": [
+        {
+          "name": "apt",
+          "column": "apt"
+        },
+        {
+          "name": "user",
+          "column": "user"
+        }
+      ],
+      "method": [
+        "CountByApt",
+        "FindByApt"
+      ]
+    },
+    {
+      "name": "patrolimage",
+      "method": [
+        "CountByApt",
+        "FindByApt",
+        "CountByPatrol",
+        "FindByPatrol"
+      ]
+    },
+    {
+      "name": "technician",
+      "compare": [
+        {
+          "name": "name",
+          "type": "like"
+        }
+      ]
+    },
+    {
+      "name": "detail",
+      "compare": [
+        {
+          "name": "name",
+          "type": "like"
+        }
+      ],
+      "join": [
+        {
+          "name": "apt",
+          "column": "apt"
+        }
+      ]
+    },
+    {
+      "name": "detailtechnician",
+      "join": [
+        {
+          "name": "technician",
+          "column": "technician"
+        }
+      ],
+      "method": [
+        "CountByDetail",
+        "FindByDetail",
+        "DeleteByDetail"
+      ]
+    },
+    {
+      "name": "aptusagefloor",
+      "method": [
+        "CountByApt",
+        "FindByApt",
+        "DeleteByApt"
+      ]
+    },
+    {
+      "name": "aptusage",
+      "method": [
+        "CountByApt",
+        "FindByApt",
+        "DeleteByApt"
+      ]
+    },
+    {
+      "name": "periodic",
+      "compare": [
+        {
+          "name": "name",
+          "type": "like"
+        }
+      ],
+      "join": [
+        {
+          "name": "apt",
+          "column": "apt"
+        }
+      ],
+      "session": [
+        {
+          "key": "apt",
+          "column": "apt"
+        }
+      ]
+    },
+    {
+      "name": "periodictechnician",
+      "join": [
+        {
+          "name": "technician",
+          "column": "technician"
+        }
+      ],
+      "method": [
+        "CountByPeriodic",
+        "FindByPeriodic",
+        "DeleteByPeriodic"
+      ]
+    },
+    {
+      "name": "periodicdata",
+      "join": [
+        {
+          "name": "blueprint",
+          "column": "blueprint"
+        }
+      ],
+      "method": [
+        "DeleteByPeriodicBlueprint"
+      ]
+    },
+    {
+      "name": "periodicincidental",
+      "method": [
+        "GetByPeriodic"
+      ]
+    },
+    {
+      "name": "periodicouterwall",
+      "method": [
+        "GetByPeriodic"
+      ]
+    },
+    {
+      "name": "periodicincidental",
+      "method": [
+        "GetByPeriodic"
+      ]
+    },
+    {
+      "name": "periodicopinion",
+      "method": [
+        "GetByPeriodic"
+      ]
+    },
+    {
+      "name": "periodicimage",
+      "method": [
+        "GetByPeriodic",
+        "CountByOfflinefilename"
+      ]
+    },
+    {
+      "name": "periodicdataimage",
+      "method": [
+        "GetByPeriodic",
+        "CountByOfflinefilename",
+        "DeleteByPeriodicdata"
+      ]
+    },
+    {
+      "name": "periodicblueprintzoom",
+      "method": [
+        "GetByPeriodicBlueprint",
+        "UpdateStatusByPeriodicBlueprint",
+        "DeleteByPeriodicBlueprint"
+      ]
+    },
+    {
+      "name": "managebook",
+      "join": [
+        {
+          "name": "managebookcategory",
+          "column": "managebookcategory"
+        }
+      ],
+      "method": [
+        "DeleteByPeriodic",
+        "DeleteByManagebookcategory"
+      ]
+    },
+    {
+      "name": "periodicotheretc",
+      "method": [
+        "GetByPeriodic"
+      ]
+    },
+    {
+      "name": "aptdongetc",
+      "method": [
+        "GetByAptAptdongParentName",
+        "CountByAptdong",
+        "DeleteByAptdong"
+      ]
+    },
+    {
+      "name": "periodickeep",
+      "method": [
+        "GetByPeriodic"
+      ]
+    },
+    {
+      "name": "inquiry",
+      "join": [
+        {
+          "name": "user",
+          "column": "user"
+        }
+      ]
+    },
+    {
+      "name": "contract",
+      "join": [
+        {
+          "name": "user",
+          "column": "user"
+        }
+      ],
+      "method": [
+        "GetByEstimate"
+      ]
+    },
+    {
+      "name": "estimate",
+      "join": [
+        {
+          "name": "user",
+          "column": "user"
+        }
+      ]
+    },
+    {
+      "name": "repairarea",
+      "join": [
+        {
+          "name": "apt",
+          "column": "apt"
+        }
+      ]
+    },
+    {
+      "name": "oldapt",
+      "compare": [
+        {
+          "name": "name",
+          "type": "like"
+        },
+        {
+          "name": "search",
+          "type": "like"
+        }
+      ]
+    },
+    {
+      "name": "oldapt",
+      "map": [
+        {
+          "name": "default",
+          "data": [
+            "",
+            "default:기본",
+            "notuse:사용 안함"
+          ]
+        }
+      ],
+      "compare": [
+        {
+          "name": "name",
+          "type": "like"
+        }
+      ]
+    },
+    {
+      "name": "compareestimate",
+      "join": [
+        {
+          "name": "comparecompany",
+          "column": "comparecompany"
+        }
+      ],
+      "method": [
+        "FindByEstimate",
+        "DeleteByEstimate"
+      ]
+    }
+  ]
+}

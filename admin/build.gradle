@@ -1,0 +1,82 @@
+plugins {
+    id "org.springframework.boot" version "2.4.5"
+    id "io.spring.dependency-management" version "1.0.11.RELEASE"
+    id "java"
+}
+
+description = """
+Project name: ${project.name}
+
+Anb Admin backend
+"""
+
+apply plugin: "java"
+apply plugin: "io.spring.dependency-management"
+
+version = "2022.04.15"
+
+group = "com.anb.admin"
+version = "${jar.version}"
+
+sourceCompatibility = 1.8
+
+[compileJava, compileTestJava]*.options*.encoding = "UTF-8"
+
+repositories {
+    mavenCentral()
+    maven { url "https://repo.spring.io/snapshot" }
+    maven { url "https://repo.spring.io/milestone" }
+}
+
+configurations {
+    implementation.exclude module: "tomcat-jdbc"
+}
+
+dependencies {
+    compileOnly("javax.xml.bind:jaxb-api")
+
+    //runtimeOnly("com.h2database:h2")
+    runtimeOnly("mysql:mysql-connector-java")
+    
+    implementation("org.projectlombok:lombok")
+    annotationProcessor("org.projectlombok:lombok")
+
+    implementation("org.apache.commons:commons-lang3")
+    implementation("commons-io:commons-io:2.6")
+    
+    implementation("org.springframework.boot:spring-boot-starter-web")
+    implementation("org.springframework.boot:spring-boot-starter-validation")
+    implementation("org.springframework.boot:spring-boot-configuration-processor")
+    implementation("org.springframework.boot:spring-boot-starter-data-jpa")
+    implementation("org.springframework.boot:spring-boot-starter-security")
+    implementation("org.springframework.boot:spring-boot-starter-actuator")
+    implementation("org.springframework.boot:spring-boot-starter-tomcat")
+
+
+    implementation("javax.xml.bind:jaxb-api")
+    //implementation("com.h2database:h2")
+    testImplementation("org.springframework.boot:spring-boot-starter-test")
+}
+
+test {
+    useJUnitPlatform()
+}
+
+jar {
+    archiveFileName = "${project.name}"
+    archiveVersion = "${project.version}"
+}
+
+bootJar {
+    manifest {
+        attributes("Implementation-Title": "${project.name}",
+                "Implementation-Version": "${project.version}")
+    }
+
+    launchScript()
+}
+
+bootRun {
+    String activeProfile = System.properties['spring.profiles.active']
+    systemProperty "spring.profiles.active", activeProfile
+}

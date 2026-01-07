@@ -1,0 +1,18 @@
+{
+    "android": {
+        "debug": {
+            "keystore": "./anb.store",
+            "storePassword": "11111111",
+            "alias": "key0",
+            "password" : "11111111",
+            "keystoreType": ""
+        },
+        "release": {
+            "keystore": "./anb.store",
+            "storePassword": "11111111",
+            "alias": "key0",
+            "password" : "11111111",
+            "keystoreType": ""
+        }
+    }
+}

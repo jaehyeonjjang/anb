@@ -1,0 +1,110 @@
+<P ColumnBreak="false" PageBreak="true" ParaShape="39" Style="0">
+  <TEXT CharShape="3">
+    <TABLE BorderFill="16" CellSpacing="0" ColCount="1" PageBreak="None" RepeatHeader="true" RowCount="2">
+      <SHAPEOBJECT InstId="2011781993" Lock="false" NumberingType="Table" ZOrder="30">
+        <SIZE Height="2944" HeightRelTo="Absolute" Protect="false" Width="32924" WidthRelTo="Absolute"/>
+        <POSITION AffectLSpacing="false" AllowOverlap="false" FlowWithText="true" HoldAnchorAndSO="false" HorzAlign="Left" HorzOffset="0" HorzRelTo="Column" TreatAsChar="true" VertAlign="Top" VertOffset="0" VertRelTo="Para"/>
+        <OUTSIDEMARGIN Bottom="140" Left="140" Right="140" Top="140"/>
+      </SHAPEOBJECT>
+      <INSIDEMARGIN Bottom="140" Left="140" Right="140" Top="140"/>
+      <ROW>
+        <CELL BorderFill="28" ColAddr="0" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="2264" Protect="false" RowAddr="0" RowSpan="1" Width="32924">
+          <CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+          <PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+            <P ParaShape="13" Style="0">
+              <TEXT CharShape="50">
+      <CHAR>제 2 장  종합결론 및 건의</CHAR></TEXT></P></PARALIST></CELL></ROW>
+      <ROW>
+        <CELL BorderFill="41" ColAddr="0" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="680" Protect="false" RowAddr="1" RowSpan="1" Width="32924">
+          <CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+          <PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+            <P ParaShape="9" Style="0">
+              <TEXT CharShape="76"/>
+    </P></PARALIST></CELL></ROW></TABLE>
+    <CHAR/>
+</TEXT></P>
+<P ParaShape="39" Style="0">
+  <TEXT CharShape="3"/>
+</P>
+<P ParaShape="40" Style="1">
+  <TEXT CharShape="3">
+    <HEADER ApplyPageType="Both" SeriesNum="6">
+      <PARALIST HasNumRef="false" HasTextRef="false" LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" TextHeight="4252" TextWidth="48192" VertAlign="Top">
+        <P ParaShape="37" Style="28">
+          <TEXT CharShape="30">
+            <TABLE BorderFill="16" CellSpacing="0" ColCount="3" PageBreak="Cell" RepeatHeader="true" RowCount="1">
+              <SHAPEOBJECT InstId="2011781994" Lock="false" NumberingType="Table" ZOrder="33">
+                <SIZE Height="1982" HeightRelTo="Absolute" Protect="false" Width="47834" WidthRelTo="Absolute"/>
+                <POSITION AffectLSpacing="false" AllowOverlap="false" FlowWithText="true" HoldAnchorAndSO="false" HorzAlign="Left" HorzOffset="0" HorzRelTo="Column" TreatAsChar="true" VertAlign="Top" VertOffset="0" VertRelTo="Para"/>
+                <OUTSIDEMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+              </SHAPEOBJECT>
+              <INSIDEMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+              <ROW>
+                <CELL BorderFill="22" ColAddr="0" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="1982" Protect="false" RowAddr="0" RowSpan="1" Width="16039">
+                  <CELLMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+                  <PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+                    <P ParaShape="42" Style="29">
+                      <TEXT CharShape="75">
+                      <CHAR>정기안전점검 보고서</CHAR></TEXT>
+                      <TEXT CharShape="40"/>
+                </P></PARALIST></CELL>
+                <CELL BorderFill="22" ColAddr="1" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="1982" Protect="false" RowAddr="0" RowSpan="1" Width="15756">
+                  <CELLMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+                  <PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+                    <P ParaShape="43" Style="29">
+                      <TEXT CharShape="3"/>
+                </P></PARALIST></CELL>
+                <CELL BorderFill="22" ColAddr="2" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="1982" Protect="false" RowAddr="0" RowSpan="1" Width="16039">
+                  <CELLMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+                  <PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+                    <P ParaShape="26" Style="0">
+                      <TEXT CharShape="32">
+                      <CHAR>제2장  종합결론 및 건의</CHAR></TEXT>
+                      <TEXT CharShape="71"/>
+            </P></PARALIST></CELL></ROW></TABLE>
+            <CHAR/>
+  </TEXT></P></PARALIST></HEADER></TEXT>
+  <TEXT CharShape="36">
+    <TABLE BorderFill="149" CellSpacing="0" ColCount="2" PageBreak="Cell" RepeatHeader="true" RowCount="1">
+      <SHAPEOBJECT InstId="2011781995" Lock="false" NumberingType="Table" ZOrder="31">
+        <SIZE Height="2069" HeightRelTo="Absolute" Protect="true" Width="27516" WidthRelTo="Absolute"/>
+        <POSITION AffectLSpacing="false" AllowOverlap="false" FlowWithText="true" HoldAnchorAndSO="false" HorzAlign="Left" HorzOffset="0" HorzRelTo="Para" TreatAsChar="true" VertAlign="Top" VertOffset="0" VertRelTo="Para"/>
+        <OUTSIDEMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+      </SHAPEOBJECT>
+      <INSIDEMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+      <ROW>
+        <CELL BorderFill="74" ColAddr="0" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="2069" Protect="false" RowAddr="0" RowSpan="1" Width="4843">
+          <CELLMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+          <PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+            <P ParaShape="16" Style="30">
+              <TEXT CharShape="42">
+        <CHAR> 1.</CHAR></TEXT></P></PARALIST></CELL>
+        <CELL BorderFill="74" ColAddr="1" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="2069" Protect="false" RowAddr="0" RowSpan="1" Width="22673">
+          <CELLMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+          <PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+            <P ParaShape="17" Style="31">
+              <TEXT CharShape="42">
+    <CHAR>종합결론</CHAR></TEXT></P></PARALIST></CELL></ROW></TABLE>
+    <CHAR/>
+  </TEXT></P>
+  <P ParaShape="86" Style="0">
+    <TEXT CharShape="73">
+    <CHAR>{{if opinion.Content1 != ""}}{{opinion.Content1}}{{else}}가. 본 점검대상 건축물은 {{apt.Position}}에 위치한 {{namejosa}} {{if aptperiodic.Outline9 == 1}}공동주택(아파트){{end}}{{if aptperiodic.Outline9 == 2}}제 1종 근린생활시설{{end}}{{if aptperiodic.Outline9 == 3}}제 2종 근린생활시설{{end}}{{if aptperiodic.Outline9 == 4}}업무시설{{end}}{{if aptperiodic.Outline9 == 5}}{{aptperiodic.Outline9content}}{{end}} 등의 용도로 사용 중인 {{aptperiodic.Facilitydivision}}종 시설물이며, 사용승인 이후 약 {{progressDate}}이 경과된 상태로 자료수집 및 분석, 외관조사 등을 통한 정기안전점검 결과 안전등급 “{{if opinion.Grade == 1}}양호{{end}}{{if opinion.Grade == 2}}보통{{end}}{{if opinion.Grade == 3}}불량{{end}}”로 평가되었다. {{if opinion.Grade == 1}}안전등급 “양호”는 보조부재에 경미한 결함이 발생하였으나 기능 발휘에는 지장이 없으며 내구성 증진을 위하여 일부의 보수가 필요한 상태이다.{{end}}{{if opinion.Grade == 2}}안전등급 “보통”은 주요부재에 경미한 결함 또는 보조부재에 광범위한 결함이 발생하였으나 전체적인 시설물의 안전에는 지장이 없으며, 주요부재에 내구성, 기능성 저하 방지를 위한 보수가 필요하거나 보조부재에 간단한 보강이 필요한 상태이다.{{end}}{{if opinion.Grade == 3}}안전등급 “불량”은 주요부재에 발생한 심각한 결함으로 인하여 시설물의 안전에 위험이 있어 즉각 사용을 금지하고 보강 또는 개축을 하여야 하는 상태이다.{{end}}{{end}}</CHAR></TEXT></P>
+  <P ParaShape="118" Style="0">
+    <TEXT CharShape="112"/>
+  </P>
+  <P ParaShape="86" Style="0">
+    <TEXT CharShape="73">
+    <CHAR>{{if opinion.Content2 != ""}}{{opinion.Content2}}{{else}}나. 본 건축물의 주요 구조체의 구조형식은 {{if aptperiodic.Outline7 == 7}}{{aptperiodic.Outline7content}}{{else}}{{aptperiodic.Outline7|structure}}{{end}}로 주요 결함은 {{endopinion}} 등으로 결함을 장기간 방치할 경우 구조체의 내력저하를 초래할 수 있으므로 안전성, 사용성 증진과 구조물의 내구성능 회복을 위해 유지관리 계획 수립을 통한 보수가 필요하며, 결함의 진행여부를 주기적으로 점검해야 할 것이다.{{end}}</CHAR></TEXT></P>
+  
+  <P ParaShape="118" Style="0">
+    <TEXT CharShape="112"/>
+  </P>
+  <P ParaShape="86" Style="0">
+    <TEXT CharShape="73">
+    <CHAR>{{if opinion.Content3 != ""}}{{opinion.Content3}}{{else}}다. 설계도서 등의 관련서류{{if periodic.Blueprint1 == 1}}(준공도면은 관리소 보관 중이{{if periodic.Blueprint1save == 1}}며, 시설물정보관리종합시스템(FMS)또한 보고서 및 관련서류가 대부분 등록된 것으로 확인되었{{end}}다.){{end}}는 건축물의 관리 및 이력사항에 중요한 자료가 되므로 중요성을 인식하고 인수·인계시 추가 분실, 파손되지 않도록 노력하여야 하며, 결함진행부위 조기보수 및 안전사고 발생시 적극적으로 대처할 수 있도록 만전을 기해야 한다. 또한, 향후 시설물의 사용 시 용도변경, 구조변경 등 외부 하중증가 요인에 따른 설계 내하력을 초과하여 사용할 경우 안전진단기관 및 건축구조전문가의 구조안전성을 확인 받은 후 사용해야 할 것으로 사료된다.{{end}}</CHAR></TEXT></P>
+  
+  <P ParaShape="118" Style="0">
+    <TEXT CharShape="112">
+  <CHAR> </CHAR></TEXT></P>
+

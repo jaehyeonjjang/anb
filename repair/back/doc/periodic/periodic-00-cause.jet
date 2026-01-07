@@ -1,0 +1,129 @@
+<P ColumnBreak="false" PageBreak="true" ParaShape="72" Style="1">
+  <TEXT CharShape="36">
+    <TABLE BorderFill="150" CellSpacing="0" ColCount="2" PageBreak="Cell" RepeatHeader="true" RowCount="1">
+      <SHAPEOBJECT InstId="1078053252" Lock="false" NumberingType="Table" ZOrder="25">
+        <SIZE Height="2635" HeightRelTo="Absolute" Protect="false" Width="22705" WidthRelTo="Absolute"/>
+        <POSITION AffectLSpacing="false" AllowOverlap="false" FlowWithText="true" HoldAnchorAndSO="false" HorzAlign="Left" HorzOffset="0" HorzRelTo="Para" TreatAsChar="true" VertAlign="Top" VertOffset="0" VertRelTo="Para"/>
+        <OUTSIDEMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+      </SHAPEOBJECT>
+      <INSIDEMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+      <ROW>
+        <CELL BorderFill="74" ColAddr="0" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="2635" Protect="false" RowAddr="0" RowSpan="1" Width="3755">
+          <CELLMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+          <PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+            <P ParaShape="16" Style="30">
+              <TEXT CharShape="47">
+        <CHAR>3.</CHAR></TEXT></P></PARALIST></CELL>
+        <CELL BorderFill="74" ColAddr="1" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="2635" Protect="false" RowAddr="0" RowSpan="1" Width="18950">
+          <CELLMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+          <PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+            <P ParaShape="17" Style="31">
+              <TEXT CharShape="42">
+    <CHAR>결함(손상)의 발생원인 분석</CHAR></TEXT></P></PARALIST></CELL></ROW></TABLE>
+    <CHAR/>
+</TEXT></P>
+<P ParaShape="72" Style="1">
+  <TEXT CharShape="36">
+    <TABLE BorderFill="16" CellSpacing="0" ColCount="2" PageBreak="Cell" RepeatHeader="true" RowCount="7">
+      <SHAPEOBJECT InstId="2035196972" Lock="false" NumberingType="Table" ZOrder="39">
+        <SIZE Height="65316" HeightRelTo="Absolute" Protect="false" Width="47376" WidthRelTo="Absolute"/>
+        <POSITION AffectLSpacing="false" AllowOverlap="false" FlowWithText="true" HoldAnchorAndSO="false" HorzAlign="Left" HorzOffset="0" HorzRelTo="Column" TreatAsChar="true" VertAlign="Top" VertOffset="0" VertRelTo="Para"/>
+        <OUTSIDEMARGIN Bottom="140" Left="140" Right="140" Top="140"/>
+      </SHAPEOBJECT>
+      <INSIDEMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+      <ROW>
+        <CELL BorderFill="132" ColAddr="0" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="4112" Protect="false" RowAddr="0" RowSpan="1" Width="5859">
+          <CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+          <PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+            <P ParaShape="38" Style="0">
+              <TEXT CharShape="13">
+        <CHAR>구 분</CHAR></TEXT></P></PARALIST></CELL>
+        <CELL BorderFill="133" ColAddr="1" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="4112" Protect="false" RowAddr="0" RowSpan="1" Width="41517">
+          <CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+          <PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+            <P ParaShape="38" Style="0">
+              <TEXT CharShape="13">
+      <CHAR>층별 주요 손상</CHAR></TEXT></P></PARALIST></CELL></ROW>
+      <ROW>
+        <CELL BorderFill="130" ColAddr="0" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="7763" Protect="false" RowAddr="1" RowSpan="1" Width="5859">
+          <CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+          <PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+            <P ParaShape="38" Style="0">
+              <TEXT CharShape="31">
+        <CHAR>지붕층</CHAR></TEXT></P></PARALIST></CELL>
+        <CELL BorderFill="131" ColAddr="1" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="7763" Protect="false" RowAddr="1" RowSpan="1" Width="41517">
+          <CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+          <PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+            {{range causes[0]}}<P ParaShape="18" Style="0"><TEXT CharShape="3"><CHAR>{{.}}</CHAR></TEXT></P>{{end}}
+          </PARALIST>
+        </CELL>
+      </ROW>
+      <ROW>
+        <CELL BorderFill="31" ColAddr="0" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="12376" Protect="false" RowAddr="2" RowSpan="1" Width="5859">
+          <CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+          <PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+            <P ParaShape="38" Style="0">
+              <TEXT CharShape="31">
+        <CHAR>지상층</CHAR></TEXT></P></PARALIST></CELL>
+        <CELL BorderFill="19" ColAddr="1" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="12376" Protect="false" RowAddr="2" RowSpan="1" Width="41517">
+          <CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+          <PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+            {{range causes[1]}}<P ParaShape="18" Style="0"><TEXT CharShape="3"><CHAR>{{.}}</CHAR></TEXT></P>{{end}}
+          </PARALIST></CELL></ROW>
+      <ROW>
+        <CELL BorderFill="31" ColAddr="0" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="13650" Protect="false" RowAddr="3" RowSpan="1" Width="5859">
+          <CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+          <PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+            <P ParaShape="38" Style="0">
+              <TEXT CharShape="31">
+        <CHAR>지하층</CHAR></TEXT></P></PARALIST></CELL>
+        <CELL BorderFill="19" ColAddr="1" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="13650" Protect="false" RowAddr="3" RowSpan="1" Width="41517">
+          <CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+          <PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+            {{range causes[2]}}<P ParaShape="18" Style="0"><TEXT CharShape="3"><CHAR>{{.}}</CHAR></TEXT></P>{{end}}
+            </PARALIST></CELL></ROW>
+      <ROW>
+        <CELL BorderFill="31" ColAddr="0" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="8980" Protect="false" RowAddr="4" RowSpan="1" Width="5859">
+          <CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+          <PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+            <P ParaShape="38" Style="0">
+              <TEXT CharShape="31">
+        <CHAR>외  벽</CHAR></TEXT></P></PARALIST></CELL>
+        <CELL BorderFill="19" ColAddr="1" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="8980" Protect="false" RowAddr="4" RowSpan="1" Width="41517">
+          <CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+          <PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+            {{range causes[3]}}<P ParaShape="18" Style="0"><TEXT CharShape="3"><CHAR>{{.}}</CHAR></TEXT></P>{{end}}
+          </PARALIST></CELL></ROW>
+      <ROW>
+        <CELL BorderFill="31" ColAddr="0" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="6178" Protect="false" RowAddr="5" RowSpan="1" Width="5859">
+          <CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+          <PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+            <P ParaShape="38" Style="0">
+              <TEXT CharShape="31">
+        <CHAR>부대시설</CHAR></TEXT></P></PARALIST></CELL>
+        <CELL BorderFill="19" ColAddr="1" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="6178" Protect="false" RowAddr="5" RowSpan="1" Width="41517">
+          <CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+          <PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+            {{range otherStrs}}<P ParaShape="18" Style="0"><TEXT CharShape="3"><CHAR>{{.}}</CHAR></TEXT></P>{{end}}
+        </PARALIST></CELL>
+      </ROW>
+      <ROW>
+        <CELL BorderFill="64" ColAddr="0" ColSpan="2" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="12257" Protect="false" RowAddr="6" RowSpan="1" Width="47376">
+          <CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+          <PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+            <P ParaShape="18" Style="0">
+              <TEXT CharShape="14">
+              <CHAR> </CHAR></TEXT>
+              <TEXT CharShape="3">
+            <CHAR>조사된 균열의 원인은 대부분 재료적 성질인 온도 및 건조수축에 기인한 부재간의 구속력차이, 이질재간 팽창률 차이에 의한 접합부 이격 등의 원인으로 발생되어, 현재 구조적 안전성에 영향을 미치지 않을 것으로 사료되나, 균열폭 0.3mm이상의 균열과 누수를 동반하는 균열은 구조체의 내구성 저하와 철근부식 및 탄산화를 촉진하는 요소가 될 수 있으므로 내구성 및 사용성 증진을 위한 순차적인 보수가 필요한 것으로 사료된다.
+ </CHAR></TEXT></P>
+
+             <P ParaShape="18" Style="0">
+              <TEXT CharShape="14">
+              <CHAR> </CHAR></TEXT>
+              <TEXT CharShape="3">
+            <CHAR>또한 철근노출 및 철골부식 부위는 구조체 내구성에 손상을 초래하게 될 수 있으므로 내구성 보호를 위해 방청 및 단면복구 등의 보수가 필요한 것으로 판단된다.</CHAR></TEXT></P>
+
+          </PARALIST></CELL></ROW></TABLE>
+                <CHAR/>
+              </TEXT></P>

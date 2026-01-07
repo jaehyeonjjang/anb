@@ -1,0 +1,398 @@
+<P ParaShape="115" Style="2">
+	<TEXT CharShape="73">
+		<CHAR>
+			 </CHAR>
+	</TEXT>
+<TEXT CharShape="76">
+	<TABLE BorderFill="3" CellSpacing="0" ColCount="1" PageBreak="None" RepeatHeader="true" RowCount="2">
+		<SHAPEOBJECT InstId="1551605273" Lock="false" NumberingType="Table" ZOrder="101">
+			<SIZE Height="3412" HeightRelTo="Absolute" Protect="false" Width="33140" WidthRelTo="Absolute"/>
+			<POSITION AffectLSpacing="false" AllowOverlap="false" FlowWithText="true" HoldAnchorAndSO="false" HorzAlign="Left" HorzOffset="0" HorzRelTo="Column" TreatAsChar="true" VertAlign="Top" VertOffset="0" VertRelTo="Para"/>
+			<OUTSIDEMARGIN Bottom="140" Left="140" Right="140" Top="140"/>
+		</SHAPEOBJECT>
+	<INSIDEMARGIN Bottom="140" Left="140" Right="140" Top="140"/>
+	<ROW>
+		<CELL BorderFill="21" ColAddr="0" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="2832" Protect="false" RowAddr="0" RowSpan="1" Width="33140">
+			<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+			<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+				<P ParaShape="8" Style="14">
+					<TEXT CharShape="7">
+						<CHAR>
+							목    차</CHAR>
+					</TEXT>
+			</P>
+	</PARALIST>
+</CELL>
+</ROW>
+<ROW>
+	<CELL BorderFill="29" ColAddr="0" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="0" Protect="false" RowAddr="1" RowSpan="1" Width="33140">
+		<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+		<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+			<P ParaShape="22" Style="0">
+				<TEXT CharShape="104"/>
+			</P>
+	</PARALIST>
+</CELL>
+</ROW>
+</TABLE>
+</TEXT>
+<TEXT CharShape="24">
+	<HEADER ApplyPageType="Both" SeriesNum="8">
+		<PARALIST HasNumRef="false" HasTextRef="false" LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" TextHeight="4251" TextWidth="49890" VertAlign="Top">
+			<P ParaShape="25" Style="23">
+				<TEXT CharShape="23">
+					<TABLE BorderFill="3" CellSpacing="0" ColCount="3" PageBreak="Cell" RepeatHeader="true" RowCount="1">
+						<SHAPEOBJECT InstId="1551605274" Lock="false" NumberingType="Table" ZOrder="102">
+							<SIZE Height="1982" HeightRelTo="Absolute" Protect="false" Width="47834" WidthRelTo="Absolute"/>
+							<POSITION AffectLSpacing="false" AllowOverlap="false" FlowWithText="true" HoldAnchorAndSO="false" HorzAlign="Left" HorzOffset="0" HorzRelTo="Column" TreatAsChar="true" VertAlign="Top" VertOffset="0" VertRelTo="Para"/>
+							<OUTSIDEMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+						</SHAPEOBJECT>
+					<INSIDEMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+					<ROW>
+						<CELL BorderFill="9" ColAddr="0" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="1982" Protect="false" RowAddr="0" RowSpan="1" Width="16039">
+							<CELLMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+							<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+								<P ParaShape="40" Style="31">
+									<TEXT CharShape="100">
+										<CHAR>
+											정밀안전점검 보고서</CHAR>
+									</TEXT>
+								<TEXT CharShape="43"/>
+							</P>
+					</PARALIST>
+			</CELL>
+		<CELL BorderFill="9" ColAddr="1" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="1982" Protect="false" RowAddr="0" RowSpan="1" Width="15756">
+			<CELLMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+			<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+				<P ParaShape="41" Style="31">
+					<TEXT CharShape="24"/>
+				</P>
+		</PARALIST>
+</CELL>
+<CELL BorderFill="9" ColAddr="2" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="1982" Protect="false" RowAddr="0" RowSpan="1" Width="16039">
+	<CELLMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+	<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+		<P ParaShape="42" Style="0">
+			<TEXT CharShape="46">
+				<CHAR>
+					서  두</CHAR>
+			</TEXT>
+	</P>
+</PARALIST>
+</CELL>
+</ROW>
+</TABLE>
+<CHAR/>
+</TEXT>
+</P>
+</PARALIST>
+</HEADER>
+<CHAR/>
+</TEXT>
+</P>
+<P ParaShape="222" Style="0">
+	<TEXT CharShape="70">
+		<CHAR>
+			⚪시설물 위치도</CHAR>
+	</TEXT>
+</P>
+<P ParaShape="222" Style="0">
+	<TEXT CharShape="70">
+		<CHAR>
+			⚪시설물 전경 및 부위별 사진</CHAR>
+	</TEXT>
+</P>
+<P ParaShape="222" Style="0">
+	<TEXT CharShape="70">
+		<CHAR>
+			⚪정밀안전점검 결과표</CHAR>
+	</TEXT>
+</P>
+<P ParaShape="222" Style="0">
+	<TEXT CharShape="70">
+		<CHAR>
+			⚪정밀안전점검 실시결과 요약표</CHAR>
+	</TEXT>
+</P>
+<P ParaShape="222" Style="0">
+	<TEXT CharShape="70">
+		<CHAR>
+			⚪시설물 현황표</CHAR>
+	</TEXT>
+</P>
+<P ParaShape="122" Style="0">
+	<TEXT CharShape="70"/>
+</P>
+<P ParaShape="127" Style="0">
+	<TEXT CharShape="166">
+		<CHAR>
+			제 1 장  정밀안전점검의 개요<TAB/>
+			1</CHAR>
+	</TEXT>
+</P>
+<P ParaShape="123" Style="0">
+	<TEXT CharShape="83">
+		<CHAR>
+			<FWSPACE/>
+			1. 1  점검의 목적<TAB/>
+			2</CHAR>
+	</TEXT>
+</P>
+<P ParaShape="123" Style="0">
+	<TEXT CharShape="83">
+		<CHAR>
+			<FWSPACE/>
+			1. 2  시설물의 개요 및 이력사항<TAB/>
+			2</CHAR>
+	</TEXT>
+</P>
+<P ParaShape="123" Style="0">
+	<TEXT CharShape="83">
+		<CHAR>
+			<FWSPACE/>
+			1. 3  점검의 범위 및 과업내용<TAB/>
+			3</CHAR>
+	</TEXT>
+</P>
+<P ParaShape="123" Style="0">
+	<TEXT CharShape="83">
+		<CHAR>
+			<FWSPACE/>
+			1. 4  사용장비 및 기기 현황<TAB/>
+			5</CHAR>
+	</TEXT>
+</P>
+<P ParaShape="123" Style="0">
+	<TEXT CharShape="83">
+		<CHAR>
+			<FWSPACE/>
+			1. 5  점검 수행일정<TAB/>
+			5</CHAR>
+	</TEXT>
+</P>
+<P ParaShape="123" Style="0">
+	<TEXT CharShape="83"/>
+</P>
+<P ParaShape="128" Style="0">
+	<TEXT CharShape="166">
+		<CHAR>
+			제 2 장  자료수집 및 분석<TAB/>
+			6</CHAR>
+	</TEXT>
+</P>
+<P ParaShape="123" Style="0">
+	<TEXT CharShape="83">
+		<CHAR>
+			<FWSPACE/>
+			2. 1  점검 일반사항<TAB/>
+			7</CHAR>
+	</TEXT>
+</P>
+<P ParaShape="123" Style="0">
+	<TEXT CharShape="83">
+		<CHAR>
+			<FWSPACE/>
+			2. 2  건축물사용 및 관리실태<TAB/>
+			10</CHAR>
+	</TEXT>
+</P>
+<P ParaShape="123" Style="0">
+	<TEXT CharShape="83">
+		<CHAR>
+			<FWSPACE/>
+			2. 3  설계도면, 구조계산서 검토·분석<TAB/>
+			12</CHAR>
+	</TEXT>
+</P>
+<P ParaShape="123" Style="0">
+	<TEXT CharShape="83">
+		<CHAR>
+			<FWSPACE/>
+			2. 4  기존 정밀안전점검·정밀안전진단 실시결과<TAB/>
+			12</CHAR>
+	</TEXT>
+</P>
+<P ParaShape="123" Style="0">
+	<TEXT CharShape="83">
+		<CHAR>
+			<FWSPACE/>
+			2. 5  보수·보강 이력사항<TAB/>
+			13</CHAR>
+	</TEXT>
+</P>
+<P ParaShape="123" Style="0">
+	<TEXT CharShape="83">
+		<CHAR>
+			<FWSPACE/>
+			2. 6  내진설계 여부 확인<TAB/>
+			13</CHAR>
+	</TEXT>
+</P>
+<P ParaShape="123" Style="0">
+	<TEXT CharShape="83">
+		<CHAR>
+			<FWSPACE/>
+			2. 7  사전조사 결과 및 금회점검 진행 계획<TAB/>
+			13</CHAR>
+	</TEXT>
+</P>
+<P ParaShape="123" Style="0">
+	<TEXT CharShape="83"/>
+</P>
+<P ParaShape="128" Style="0">
+	<TEXT CharShape="166">
+		<CHAR>
+			제 3 장  현장조사 및 시험<TAB/>
+			14</CHAR>
+	</TEXT>
+</P>
+<P ParaShape="123" Style="0">
+	<TEXT CharShape="83">
+		<CHAR>
+			<FWSPACE/>
+			3. 1  외관조사<TAB/>
+			15</CHAR>
+	</TEXT>
+</P>
+<P ParaShape="123" Style="0">
+	<TEXT CharShape="83">
+		<CHAR>
+			<FWSPACE/>
+			3. 2  결함(손상)의 발생원인 분석<TAB/>
+			34</CHAR>
+	</TEXT>
+</P>
+<P ParaShape="123" Style="0">
+	<TEXT CharShape="83">
+		<CHAR>
+			<FWSPACE/>
+			3. 3  재료시험 및 측정 결과분석<TAB/>
+			35</CHAR>
+	</TEXT>
+</P>
+<P ParaShape="129" Style="0">
+	<TEXT CharShape="166"/>
+</P>
+<P ParaShape="129" Style="0">
+	<TEXT CharShape="166">
+		<CHAR>
+			제 4 장 시설물의 상태평가<TAB/>
+			68</CHAR>
+	</TEXT>
+</P>
+<P ParaShape="123" Style="0">
+	<TEXT CharShape="83">
+		<CHAR>
+			<FWSPACE/>
+			4. 1  시설물 전체의 상태평가 결과<TAB/>
+			69</CHAR>
+	</TEXT>
+</P>
+<P ParaShape="123" Style="0">
+	<TEXT CharShape="83">
+		<CHAR>
+			<FWSPACE/>
+			4. 2  안전등급 지정<TAB/>
+			75</CHAR>
+	</TEXT>
+</P>
+<P ParaShape="123" Style="0">
+	<TEXT CharShape="166"/>
+</P>
+<P ParaShape="129" Style="0">
+	<TEXT CharShape="166">
+		<CHAR>
+			제 5 장 종합결론 및 건의<TAB/>
+			76</CHAR>
+	</TEXT>
+</P>
+<P ParaShape="123" Style="0">
+	<TEXT CharShape="83">
+		<CHAR>
+			<FWSPACE/>
+			5. 1  종합결론<TAB/>
+			77</CHAR>
+	</TEXT>
+</P>
+<P ParaShape="123" Style="0">
+	<TEXT CharShape="83">
+		<CHAR>
+			<FWSPACE/>
+			5. 2  시설물의 사용제한의 필요성 여부<TAB/>
+			78</CHAR>
+	</TEXT>
+</P>
+<P ParaShape="123" Style="0">
+	<TEXT CharShape="83">
+		<CHAR>
+			<FWSPACE/>
+			5. 3  유지관리시 특별한 관리가 요구되는 사항<TAB/>
+			78</CHAR>
+	</TEXT>
+</P>
+<P ParaShape="123" Style="0">
+	<TEXT CharShape="83"/>
+</P>
+<P ParaShape="129" Style="0">
+	<TEXT CharShape="166">
+		<CHAR>
+			부    록<TAB/>
+			79</CHAR>
+	</TEXT>
+</P>
+<P ParaShape="123" Style="0">
+	<TEXT CharShape="83">
+		<CHAR>
+			<FWSPACE/>
+			Ⅰ.  과업지시서</CHAR>
+	</TEXT>
+</P>
+<P ParaShape="123" Style="0">
+	<TEXT CharShape="83">
+		<CHAR>
+			<FWSPACE/>
+			Ⅱ.  외관조사망도</CHAR>
+	</TEXT>
+</P>
+<P ParaShape="123" Style="0">
+	<TEXT CharShape="83">
+		<CHAR>
+			<FWSPACE/>
+			Ⅲ.  측정, 시험 성과표</CHAR>
+	</TEXT>
+</P>
+<P ParaShape="123" Style="0">
+	<TEXT CharShape="83">
+		<CHAR>
+			<FWSPACE/>
+			Ⅳ.  상태평가 결과 자료</CHAR>
+	</TEXT>
+</P>
+<P ParaShape="123" Style="0">
+	<TEXT CharShape="83">
+		<CHAR>
+			<FWSPACE/>
+			Ⅴ.  시설물관리대장 사본</CHAR>
+	</TEXT>
+</P>
+<P ParaShape="123" Style="0">
+	<TEXT CharShape="83">
+		<CHAR>
+			<FWSPACE/>
+			Ⅵ.  사진자료</CHAR>
+	</TEXT>
+</P>
+<P ParaShape="123" Style="0">
+	<TEXT CharShape="83">
+		<CHAR>
+			<FWSPACE/>
+			Ⅶ.  사전조사 자료 일체</CHAR>
+	</TEXT>
+</P>
+<P ParaShape="123" Style="0">
+	<TEXT CharShape="83">
+		<CHAR>
+			<FWSPACE/>
+			Ⅷ.  기타 참고자료</CHAR>
+	</TEXT>
+</P>

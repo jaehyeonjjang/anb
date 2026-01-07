@@ -1,0 +1,53 @@
+/************* 로그인 페이지 스타일 ***********/
+div#wrap_log { width:100%; height:100%; min-width:800px; min-height:100%; background:  #35a4d0; }
+div.log_logo {width:285px; height:100px; padding-top:80px;  margin:0 auto;}
+div.log_box { width:580px; height:360px;  margin:220px auto 0;  background:#fff; }
+div.log_box > ul.logarea { width:580px; height:360px; box-shadow: 0 0 5px 3px #24759f; -moz-box-shadow: 0 0 5px 3px #24759f ; -webkit-box-shadow: 0 0 5px 3px #24759f;  }
+div.log_box > ul.logarea > li {float:left;}
+
+
+/* 왼쪽 로그인 부분  */
+div.log_box ul.logarea > li.left_log { width:560px; height:340px; border:10px solid #2c434e;}
+
+div.log_box ul.logarea > li.left_log > dl.log_content { width:480px; margin:30px 0 0 40px;  }
+div.log_box ul.logarea > li.left_log > dl.log_content:after{content:"";display:block;clear:both;}
+
+div.log_box ul.logarea > li.left_log > dl.log_content > dt {float:left;  width:270px;}
+div.log_box ul.logarea > li.left_log > dl.log_content > dd {float:right;  width:120px;}
+div.log_box ul.logarea > li.left_log > dl.log_content > dt > input { width:346px; font-size:14px; font-weight:bold; padding:1px 2px 1px 7px;line-height:40px;height:40px;border:0px solid #ccc;color:#ffffff;background:#39a6d0; margin-bottom:2px; }
+div.log_box ul.logarea > li.left_log > dl.log_content > dt > input::-webkit-input-placeholder{color:#fff;} /* 웹킷 전용 속성 */
+div.log_box ul.logarea > li.left_log > dl.log_content > dt > input:-moz-placeholder{color:#fff;} /* 파이어폭스 전용 속성 */
+
+/* 로그인 버튼 */
+div.log_box ul.logarea > li.left_log > dl.log_content > dd > p.log_btn {width:120px; height:130px;  background:#314852; text-align:center; }
+div.log_box ul.logarea > li.left_log > dl.log_content > dd > p.log_btn a { display:block; width:120px; height:82px; padding-top:48px; color:#fff; font-size:22px; font-weight:bold; text-decoration:none; }
+div.log_box ul.logarea > li.left_log > dl.log_content > dd > p.log_btn a:hover { background:#222;  }
+div.log_box ul.logarea > li.left_log > dl.log_content > dd > p.log_btn span {display:block; font-size:13px; margin-top:5px;}
+
+/* 로그인 콘텐츠 하단 코드 아이디 저장 부분 */
+div.log_box ul.logarea > li.left_log > p.save_check { text-align:left;margin:10px 0 20px 40px; font-size:11px; color:#666;  }
+div.log_box ul.logarea > li.left_log > p.save_check:after{content:"";display:block;clear:both;}
+
+
+/* 로그인 콘텐츠 하단 비번 찾기등의 버튼 부분 */
+div.log_box ul.logarea > li.left_log > div.guide_btnbox {width:480px; margin:30px 0 0 90px; }
+div.log_box ul.logarea > li.left_log > div.guide_btnbox:after{content:"";display:block;clear:both;}
+div.log_box ul.logarea > li.left_log > div.guide_btnbox ul { }
+div.log_box ul.logarea > li.left_log > div.guide_btnbox li {float:left; width:33%; text-align:center; border-right:1px dashed #d4d4d4; }
+div.log_box ul.logarea > li.left_log > div.guide_btnbox li.last { border-right:0px dashed #d4d4d4;}
+div.log_box ul.logarea > li.left_log > div.guide_btnbox li a { display:block; }
+div.log_box ul.logarea > li.left_log > div.guide_btnbox li a:hover { font-weight:bold; color:#000;}
+div.log_box ul.logarea > li.left_log > div.guide_btnbox li a p {height: 60px; }
+
+
+/* 하단 고정 삼각형 텍스트 이미지 */
+div.btm_img { position:absolute; width:358px; height:179px; left: 50%; bottom:0px; margin-left:-179px; z-index:100; }
+
+/* 시스템 이동 부분 */
+div.url_box { width:980px; height:360px;  margin:40px auto 0;  background:#fff; }
+div.url_box > ul.urlarea { width:980px; height:360px; box-shadow: 0 0 5px 3px #24759f; -moz-box-shadow: 0 0 5px 3px #24759f ; -webkit-box-shadow: 0 0 5px 3px #24759f;  }
+div.url_box > ul.urlarea > li {float:left;}
+
+div.url_box ul.urlarea li.left_url {width:450px;height:300px;  background: url(/assets/_images/log/log_banner.jpg) no-repeat center top; font-size:15px; font-weight:bold; padding-top:60px; padding-left:40px; color:#090909; }
+
+div.url_box ul.urlarea li.right_url {width:450px;height:300px;  background: url(/assets/_images/log/log_banner.jpg) no-repeat center top; font-size:15px; font-weight:bold; padding-top:60px; padding-left:40px; color:#090909; }

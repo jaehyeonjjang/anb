@@ -1,0 +1,75 @@
+<P ColumnBreak="false" PageBreak="true" ParaShape="29" Style="0">
+  <TEXT CharShape="3"/>
+</P>
+<P ParaShape="29" Style="0">
+  <TEXT CharShape="3">
+    <TABLE BorderFill="16" CellSpacing="0" ColCount="1" PageBreak="Cell" RepeatHeader="true" RowCount="2">
+      <SHAPEOBJECT InstId="1197258210" Lock="false" NumberingType="Table" ZOrder="119">
+        <SIZE Height="61604" HeightRelTo="Absolute" Protect="false" Width="47625" WidthRelTo="Absolute"/>
+        <POSITION AffectLSpacing="false" AllowOverlap="false" FlowWithText="true" HoldAnchorAndSO="false" HorzAlign="Left" HorzOffset="0" HorzRelTo="Para" TreatAsChar="true" VertAlign="Top" VertOffset="0" VertRelTo="Para"/>
+        <OUTSIDEMARGIN Bottom="140" Left="140" Right="140" Top="140"/>
+      </SHAPEOBJECT>
+      <INSIDEMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+      <ROW>
+        <CELL BorderFill="151" ColAddr="0" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="2414" Protect="false" RowAddr="0" RowSpan="1" Width="47625">
+          <CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+          <PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+            <P ParaShape="117" Style="0">
+              <TEXT CharShape="33">
+      <CHAR>책임기술자 종합의견</CHAR></TEXT></P></PARALIST></CELL></ROW>
+      <ROW>
+        <CELL BorderFill="152" ColAddr="0" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="59190" Protect="false" RowAddr="1" RowSpan="1" Width="47625">
+          <CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+          <PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+            <P ParaShape="118" Style="0">
+              <TEXT CharShape="100">
+            <CHAR>{{opinion.Content1}}</CHAR></TEXT></P>
+            <P ParaShape="118" Style="0">
+              <TEXT CharShape="110"/>
+            </P>
+            <P ParaShape="118" Style="0">
+              <TEXT CharShape="100">
+              <CHAR>{{opinion.Content2}}</CHAR></TEXT></P>
+            <P ParaShape="118" Style="0">
+              <TEXT CharShape="100"/>
+            </P>
+            <P ParaShape="118" Style="0">
+              <TEXT CharShape="100">
+            <CHAR>{{opinion.Content3}}</CHAR></TEXT></P>
+            <P ParaShape="118" Style="0">
+              <TEXT CharShape="110">
+            <CHAR> </CHAR></TEXT></P>
+            <P ParaShape="118" Style="0">
+              <TEXT CharShape="100">
+            <CHAR>{{opinion.Content4}}</CHAR></TEXT></P>
+            <P ParaShape="118" Style="0">
+              <TEXT CharShape="100">
+                <PICTURE Reverse="false">
+                  <SHAPEOBJECT InstId="1197258211" Lock="false" NumberingType="Figure" TextWrap="BehindText" ZOrder="1">
+                    <SIZE Height="3947" HeightRelTo="Absolute" Protect="false" Width="4082" WidthRelTo="Absolute"/>
+                    <POSITION AffectLSpacing="false" AllowOverlap="false" FlowWithText="true" HoldAnchorAndSO="false" HorzAlign="Left" HorzOffset="37265" HorzRelTo="Column" TreatAsChar="false" VertAlign="Top" VertOffset="128" VertRelTo="Para"/>
+                    <OUTSIDEMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+                  <SHAPECOMMENT>그림입니다.</SHAPECOMMENT></SHAPEOBJECT>
+                  <SHAPECOMPONENT CurHeight="3947" CurWidth="4082" GroupLevel="0" HorzFlip="false" InstID="123516388" OriHeight="17580" OriWidth="18180" VertFlip="false" XPos="0" YPos="1110">
+                    <ROTATIONINFO Angle="0" CenterX="2041" CenterY="1973" Rotate="1"/>
+                    <RENDERINGINFO>
+                      <TRANSMATRIX E1="1.00000" E2="0.00000" E3="0.00000" E4="0.00000" E5="1.00000" E6="1110.00000"/>
+                      <SCAMATRIX E1="0.22453" E2="0.00000" E3="0.00000" E4="0.00000" E5="0.22452" E6="-1110.00000"/>
+                      <ROTMATRIX E1="1.00000" E2="0.00000" E3="0.00000" E4="0.00000" E5="1.00000" E6="0.00000"/>
+                  </RENDERINGINFO></SHAPECOMPONENT>
+                  <IMAGERECT X0="0" X1="18180" X2="18180" X3="0" Y0="0" Y1="0" Y2="17580" Y3="17580"/>
+                  <IMAGECLIP Bottom="17580" Left="0" Right="18180" Top="0"/>
+                  <INSIDEMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+                  <IMAGE Alpha="0" BinItem="11" Bright="0" Contrast="0" Effect="RealPic"/>
+                  <EFFECTS/>
+                </PICTURE>
+                <CHAR/>
+            </TEXT></P>
+            <P ColumnBreak="false" PageBreak="true" ParaShape="118" Style="0">
+              <TEXT CharShape="100">
+                <CHAR>                                              책임기술자  :  {{mastertechnicianname}}    (인)</CHAR></TEXT></P></PARALIST></CELL></ROW></TABLE>
+                <CHAR/>
+              </TEXT></P>
+              <P ParaShape="29" Style="0">
+                <TEXT CharShape="3"/>
+              </P>

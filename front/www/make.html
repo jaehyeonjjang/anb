@@ -1,0 +1,5095 @@
+<!DOCTYPE html>
+<html lang="ko"><head>
+  <meta charset="utf-8">
+  <!--<meta  http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: ms-appdata: https://netb.co.kr 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">-->
+  <meta http-equiv="Content-Security-Policy" content="default-src https://netb.co.kr 'unsafe-inline' 'unsafe-eval' *">
+
+  <!-- <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover"> -->
+  <meta name="viewport" content="initial-scale=1.0, width=device-width, user-scalable=yes">
+  <title>AnB 현장관리 프로그램</title>
+
+  <link href="assets/css/log.css?t=1" rel="stylesheet" type="text/css">
+  <link href="assets/css/loading.css?t=1" rel="stylesheet" type="text/css">
+  <link href="assets/css/normalize.min.css?t=1" rel="stylesheet" type="text/css">
+  <link href="assets/css/combo.select.css?t=1" rel="stylesheet" type="text/css">
+  <link href="assets/css/msdropdown/dd.css?t=1" rel="stylesheet" type="text/css" />
+  <link href="assets/css/common.css?t=15" rel="stylesheet" type="text/css">
+  <style>
+  select {
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: url(assets/img/se6.png) no-repeat 100% 100%;
+  }
+
+  select::-ms-expand {
+    display: none;
+  }
+
+  </style>
+  <script src="assets/js/jquery-1.9.1.js"></script>
+  <script src="assets/js/jquery.form.min.js" type="text/javascript"></script>
+  <script src="assets/js/jquery.combo.select.js?t=3"></script>
+  <script type="text/javascript" src="assets/js/hammer.min.js"></script>
+  <script type="text/javascript">
+
+  var MIN_SCALE = 1; // 1=scaling when first loaded
+  var MAX_SCALE = 64;
+
+  // HammerJS fires "pinch" and "pan" events that are cumulative in nature and not
+  // deltas. Therefore, we need to store the "last" values of scale, x and y so that we can
+  // adjust the UI accordingly. It isn't until the "pinchend" and "panend" events are received
+  // that we can set the "last" values.
+
+  // Our "raw" coordinates are not scaled. This allows us to only have to modify our stored
+  // coordinates when the UI is updated. It also simplifies our calculations as these
+  // coordinates are without respect to the current scale.
+
+  var viewportWidth = null;
+  var viewportHeight = null;
+  var lastScale = null;
+
+
+  var x = 0;
+  var lastX = 0;
+  var y = 0;
+  var lastY = 0;
+  var pinchCenter = null;
+
+  // We need to disable the following event handlers so that the browser doesn't try to
+  // automatically handle our image drag gestures.
+  var disableImgEventHandlers = function () {
+    var events = ['onclick', 'onmousedown', 'onmousemove', 'onmouseout', 'onmouseover', 'onmouseup', 'ondblclick', 'onfocus', 'onblur'];
+    //var events = ['ondblclick', 'onfocus', 'onblur'];
+
+    events.forEach(function (event) {
+      img[event] = function () {
+        return false;
+      };
+    });
+  };
+
+  // Traverse the DOM to calculate the absolute position of an element
+  var absolutePosition = function (el) {
+    var x = 0,
+        y = 0;
+
+    while (el !== null) {
+      x += el.offsetLeft;
+      y += el.offsetTop;
+      el = el.offsetParent;
+    }
+
+    return { x: x, y: y };
+  };
+
+  var restrictScale = function (scale) {
+    if (scale < MIN_SCALE) {
+      scale = MIN_SCALE;
+    } else if (scale > MAX_SCALE) {
+      scale = MAX_SCALE;
+    }
+    return scale;
+  };
+
+  var restrictRawPos = function (pos, viewportDim, imgDim) {
+    if (pos < viewportDim/_zoom - imgDim) { // too far left/up?
+      pos = viewportDim/_zoom - imgDim;
+    } else if (pos > 0) { // too far right/down?
+      pos = 0;
+    }
+    return pos;
+
+
+  };
+
+  var updateLastPos = function (deltaX, deltaY) {
+    lastX = x;
+    lastY = y;
+  };
+
+  var translate = function (deltaX, deltaY) {
+    // We restrict to the min of the viewport width/height or current width/height as the
+    // current width/height may be smaller than the viewport width/height
+
+    var newX = restrictRawPos(lastX + deltaX/_zoom,
+                              Math.min(viewportWidth, curWidth), _imgWidth);
+    x = newX;
+    //img.style.marginLeft = Math.ceil(newX*_zoom) + 'px';
+    container.style.scrollLeft = Math.ceil(newX*_zoom) + 'px';
+
+    var newY = restrictRawPos(lastY + deltaY/_zoom,
+                              Math.min(viewportHeight, curHeight), _imgHeight);
+    y = newY;
+    //img.style.marginTop = Math.ceil(newY*_zoom) + 'px';
+    container.style.scrollTop = Math.ceil(newY*_zoom) + 'px';
+  };
+
+  var zoom = function (scaleBy) {
+    _zoom = restrictScale(lastScale*scaleBy);
+
+    curWidth = _imgWidth*_zoom;
+    curHeight = _imgHeight*_zoom;
+
+    img.style.width = Math.ceil(curWidth) + 'px';
+    img.style.height = Math.ceil(curHeight) + 'px';
+
+
+    console.log('lastScale : ' + lastScale);
+    console.log('scaleBy : ' + scaleBy);
+    console.log('zoom : ' + _zoom);
+    //resizeCanvas();
+
+    // Adjust margins to make sure that we aren't out of bounds
+    //translate(0, 0);
+  };
+
+  var rawCenter = function (e) {
+    var pos = absolutePosition(container);
+
+    // We need to account for the scroll position
+    var scrollLeft = window.pageXOffset ? window.pageXOffset : container.scrollLeft;
+    var scrollTop = window.pageYOffset ? window.pageYOffset : container.scrollTop;
+
+    var zoomX = -x + (e.center.x - pos.x + scrollLeft)/_zoom;
+    var zoomY = -y + (e.center.y - pos.y + scrollTop)/_zoom;
+
+    return { x: zoomX, y: zoomY };
+  };
+
+  var updateLastScale = function () {
+    lastScale = _zoom;
+  };
+
+  var zoomAround = function (scaleBy, rawZoomX, rawZoomY, doNotUpdateLast) {
+    // Zoom
+    zoom(scaleBy);
+
+    // New raw center of viewport
+    var rawCenterX = -x + Math.min(viewportWidth, curWidth)/2/_zoom;
+    var rawCenterY = -y + Math.min(viewportHeight, curHeight)/2/_zoom;
+
+    // Delta
+    var deltaX = (rawCenterX - rawZoomX)*_zoom;
+    var deltaY = (rawCenterY - rawZoomY)*_zoom;
+
+    // Translate back to zoom center
+    translate(deltaX, deltaY);
+
+    if (!doNotUpdateLast) {
+      updateLastScale();
+      updateLastPos();
+    }
+  };
+
+  var zoomCenter = function (scaleBy) {
+    // Center of viewport
+    var zoomX = -x + Math.min(viewportWidth, curWidth)/2/_zoom;
+    var zoomY = -y + Math.min(viewportHeight, curHeight)/2/_zoom;
+
+    zoomAround(scaleBy, zoomX, zoomY);
+  };
+
+  var zoomIn = function () {
+    zoomCenter(2);
+  };
+
+  var zoomOut = function () {
+    zoomCenter(1/2);
+  };
+
+  var onLoad = function () {
+
+
+  };
+
+  </script>
+
+</head>
+
+
+
+<body style="overflow:hidden;background:#F6f6f6;color:#000;margin:0px 0px;">
+  <div id="divLogin" class="loginlayout" style="border:0px solid #4da6d6;margin:0px 0px;display:none;">
+    <div id="divWaitPopup" class="loading-popup" style="display:none;">
+      <div class="loading-box">
+        <div class="loading-container">
+          <div class="loading"></div>
+          <div id="loading-text">loading</div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div id="login_frame" name="loginframe" class="loginframe">
+
+      <div id="login_center" name="loginframe" class="logincenter">
+
+        <div style="position:absolute;right:0px;">
+          <div id="divSystem" style="text-align:right;margin:0px 20px 20px 20px;padding-top:20px;">            
+            <img id="imgSync" src="assets/img/icon/upload.png" style="cursor:hand;cursor:pointer;width:30px;margin-right:5px;" onClick="sync()" />
+            <img id="imgExit" src="assets/img/icon/cancel.png" style="cursor:hand;cursor:pointer;width:30px;" onClick="clickExit()" />
+          </div>
+          <div style="clear:both;"></div>
+        </div>
+        <form id="login_form" name="login_form" method="post" id="frm" action="/include/login_check.php" onSubmit="return login()">
+          <div class="log_box">
+            <ul class="logarea" style="padding:0;">
+              <li class="left_log">
+                <div style="margin:58px 0px 60px 40px;">
+                  <div id="login_bar" name="login" class="login_bar">
+                    <img src="assets/img/login_icon_01.png" style="width:14px;height:22px">
+                  </div>
+                  <div id="login_title" name="login" class="logintitle">
+                    <span id="login_title" name="login">현장관리 시스템 <span style="color:#999999;font-size:14px;">#VERSION#</span></span>
+                  </div>
+                </div>
+
+                <dl class="log_content" style="padding-top:60px;">
+                  <dt>
+                    <input id="txtLoginid" type="text" name="loginid" placeholder="아이디" value="" style="ime-mode:disabled" onkeypress="javascript:press_it()">
+                    <input id="txtPasswd" type="password" name="passwd" placeholder="비밀번호" onkeypress="javascript:press_it()"></dt>
+                    <dd><p style='height:86px;background:#314852;'><a href="javascript:runSave();" style="color:white;font-size:20px;line-height:150%;display:block;padding-top:13px;">LOG IN<br><span>로그인</span></a></p></dd>
+                </dl>
+                <p class="save_check" style="display:none;">
+                  <input type="checkbox" name="saveId" value="Y" checked="">회사코드/아이디 저장
+                </p>
+              </li>
+            </ul>
+          </div><!-- end log_box" //-->
+        </form>
+
+
+      </div>
+    </div><!-- end wrap_log" //-->
+
+
+  </div>
+
+  <div style="position: absolute; width: 9999px; visibility: hidden; display: none; max-width: none;"></div>
+  <div onClick="clickPopupBg(event)" id="divPopupBg" style="display:none;position: absolute; left: 0px; top: 0px;background: #000;opacity:0.7;z-index:99998;"></div>
+  <div id="divPopup" style="display:none;position: absolute; left: 0px; top: 0px;justify-content: center; align-items: center;z-index:99999;">
+    <div style="background:white;width:500px;height:320px;border-radius:10px;padding:20px 20px;">
+      <div>
+        <div id="divPopupTitle" style="font-size:20px;text-align:left;font-weight:bold;float:left;">현장 선택</div>
+        <img src="assets/img/icon/cancel.png" style="cursor:hand;cursor:pointer;width:20px;display:block;float:right;" onClick="closeShowPopup()" />
+        <div style="clear:both;"></div>
+      </div>
+      <div id="divPopupContent" style="margin-top:40px;overflow:auto;height:250px;">
+      </div>
+    </div>
+  </div>
+
+  <div id="divSelectPopup" style="display:none;position: absolute; left: 0px; top: 0px;justify-content: center; align-items: center;z-index:99999;">
+    <div style="background:white;width:700px;height:500px;border-radius:10px;padding:20px 20px;">
+      <div>
+        <div id="divSelectPopupTitle" style="font-size:20px;text-align:left;font-weight:bold;float:left;"></div>
+        <img src="assets/img/icon/cancel.png" style="cursor:hand;cursor:pointer;width:20px;display:block;float:right;" onClick="closeSelectPopup()" />
+        <div style="clear:both;"></div>
+      </div>
+      <div id="divSelectPopupContent" style="margin-top:40px;overflow:auto;height:250px;">
+      </div>
+    </div>
+  </div>
+
+
+  <div id="divMain" style="display:none;">
+
+
+    <div id="divWaitPopup" class="loading-popup" style="margin-top:50px;display:none;">
+      <div class="loading-box">
+        <div class="loading-container">
+          <div class="loading"></div>
+          <div id="loading-text">loading</div>
+        </div>
+      </div>
+    </div>
+
+    <div id="wrap_log">
+      <div id="top_layout" name="top" class="toplayout">
+        <div id="top_left" name="top" class="topleft" style="width:700px;cursor:hand;cursor:pointer;">
+          <div style="float:left" id='lblImageName'></div>
+          <div style="float:left;margin-left:8px">|</div>
+          <div style="float:left;font-size:12px;color:#465767;margin-top:-4px;margin-left:8px">
+
+            <div id="divMenu" class="wrap" style="width:300px;float:left;margin-right:5px;z-index:10;">
+              <div class="select_box" id="cboImage" style="width:300px;">
+                <div class="box">
+                  <div class="select" id="lblImage" style="width:300px;">선택</div>
+                  <ul class="list" id="lstImage" style="width:300px;">
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        <div id="top_right" name="top" class="topright" style="width:200px;float:right;">
+          <div id="login_box" class="loginbox" style="width:200px;">
+            <div style="float:left;margin-left:16px;color:#aaa;" id="lblSessionName"></div>
+            <span id="user_info" name="user"></span>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <a id="divSync" href="javascript:sync()" style="color:#FFF;">Sync</a>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+
+            <a id="divLogout" href="javascript:clickLogout()" style="color:#FFF;">Logout</a>
+          </div>
+        </div>
+        <div style="clear:both;"></div>
+      </div>
+      <div id="main_layout" name="main" class="mainlayout">
+        <div id="apt_setup" style="text-align:left;padding: 10px 20px 0px 20px;">
+          <div style="float:left;margin-bottom:15px;padding:0px 0px;">
+
+            
+
+            <div id="divDrawMenu" class="wrap" style="float:left;margin-right:5px;z-index:10;display:none;">
+              <div class="select_box">
+                <div class="box">
+                  <div class="select" id="lblDraw">선택</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="wrap" style="float:left;margin-right:10px;display:none;">
+              <div class="select_box" id="cboSelect">
+                <div class="box">
+                  <div class="select" id="lblSelect">선택</div>
+                  <ul class="list" id="lstSelect" style="width:100px;">
+
+
+                    <li id="divSelectContent1" class="selectitem" style="cursor:hand;cursor:pointer;padding-left:10px;" onClick="selectType(1)">
+                      <img src="assets/img/i_crack_01_.png" align="absmiddle" style="display:block;float:left;margin-top:8px;" />
+                      <div style="float:left;margin-left:5px;">곡선</div>
+                      <div style="clear:both;"></div>
+                    </li>
+
+                    <li id="divSelectContent15" class="selectitem" style="cursor:hand;cursor:pointer;padding-left:10px;" onClick="selectType(15)">
+                      <img src="assets/img/i_crack_02_.png" align="absmiddle" style="display:block;float:left;margin-top:8px;" />
+                      <div style="float:left;margin-left:5px;">곡선</div>
+                      <div style="clear:both;"></div>
+                    </li>
+
+                    <li id="divSelectContent2" class="selectitem" style="cursor:hand;cursor:pointer;padding-left:10px;" onClick="selectType(2)">
+                      <img src="assets/img/i_crack_01.png" align="absmiddle" style="display:block;float:left;margin-top:8px;" />
+                      <div style="float:left;margin-left:5px;">직선</div>
+                      <div style="clear:both;"></div>
+                    </li>
+
+                    <li id="divSelectContent16" class="selectitem" style="cursor:hand;cursor:pointer;padding-left:10px;" onClick="selectType(16)">
+                      <img src="assets/img/i_crack_02.png" align="absmiddle" style="display:block;float:left;margin-top:8px;" />
+                      <div style="float:left;margin-left:5px;">직선</div>
+                      <div style="clear:both;"></div>
+                    </li>
+
+                    <li id="divSelectContent3" class="selectitem" style="cursor:hand;cursor:pointer;padding-left:10px;" onClick="selectType(3)">
+                      <img src="assets/img/i_crack_02.png" align="absmiddle" style="display:block;float:left;margin-top:8px;" />
+                      <div style="float:left;margin-left:5px;">균열 0.2</div>
+                      <div style="clear:both;"></div>
+                    </li>
+
+                    <li id="divSelectContent4" class="selectitem" style="cursor:hand;cursor:pointer;padding-left:10px;" onClick="selectType(4)">
+                      <img src="assets/img/i_crack_02.png" align="absmiddle" style="display:block;float:left;margin-top:8px;" />
+                      <div style="float:left;margin-left:5px;">균열 0.3</div>
+                      <div style="clear:both;"></div>
+                    </li>
+
+                    <li id="divSelectContent5" class="selectitem" style="cursor:hand;cursor:pointer;padding-left:10px;" onClick="selectType(5)">
+                      <img src="assets/img/i_crack_03.png" align="absmiddle" style="display:block;float:left;margin-top:8px;" />
+                      <div style="float:left;margin-left:5px;">누수(흔적)</div>
+                      <div style="clear:both;"></div>
+                    </li>
+
+                    <li id="divSelectContent6" class="selectitem" style="cursor:hand;cursor:pointer;padding-left:10px;" onClick="selectType(6)">
+                      <img src="assets/img/i_crack_04.png" align="absmiddle" style="display:block;float:left;margin-top:8px;" />
+                      <div style="float:left;margin-left:5px;">바닥균열</div>
+                      <div style="clear:both;"></div>
+                    </li>
+
+                    <li id="divSelectContent7" class="selectitem" style="cursor:hand;cursor:pointer;padding-left:10px;" onClick="selectType(7)">
+                      <img src="assets/img/i_crack_05.png" align="absmiddle" style="display:block;float:left;margin-top:8px;" />
+                      <div style="float:left;margin-left:5px;">철근노출</div>
+                      <div style="clear:both;"></div>
+                    </li>
+
+                    <li id="divSelectContent8" class="selectitem" style="cursor:hand;cursor:pointer;padding-left:10px;" onClick="selectType(8)">
+                      <img src="assets/img/i_crack_06.png" align="absmiddle" style="display:block;float:left;margin-top:8px;" />
+                      <div style="float:left;margin-left:5px;">부식</div>
+                      <div style="clear:both;"></div>
+                    </li>
+
+                    <li id="divSelectContent9" class="selectitem" style="cursor:hand;cursor:pointer;padding-left:10px;" onClick="selectType(9)">
+                      <img src="assets/img/i_crack_07.png" align="absmiddle" style="display:block;float:left;margin-top:8px;" />
+                      <div style="float:left;margin-left:5px;">보 균열 W:0.2</div>
+                      <div style="clear:both;"></div>
+                    </li>
+
+                    <li id="divSelectContent10" class="selectitem" style="cursor:hand;cursor:pointer;padding-left:10px;" onClick="selectType(10)">
+                      <img src="assets/img/i_crack_08.png" align="absmiddle" style="display:block;float:left;margin-top:8px;" />
+                      <div style="float:left;margin-left:5px;">보 균열 W:0.3</div>
+                      <div style="clear:both;"></div>
+                    </li>
+
+                    <li id="divSelectContent11" class="selectitem" style="cursor:hand;cursor:pointer;padding-left:10px;" onClick="selectType(11)">
+                      <img src="assets/img/i_crack_09.png" align="absmiddle" style="display:block;float:left;margin-top:8px;" />
+                      <div style="float:left;margin-left:5px;">비내력결함</div>
+                      <div style="clear:both;"></div>
+                    </li>
+
+                    <li id="divSelectContent12" class="selectitem" style="cursor:hand;cursor:pointer;padding-left:10px;" onClick="selectType(12)">
+                      <img src="assets/img/i_crack_10.png" align="absmiddle" style="display:block;float:left;margin-top:8px;" />
+                      <div style="float:left;margin-left:5px;">기타결함</div>
+                      <div style="clear:both;"></div>
+                    </li>
+
+
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div id="divCombo" style="float:left;display:none;">
+              <select id="msCombo" style="width:150px;" onChange="selectType($('#msCombo').val())">
+                <option value="" data-image="assets/img/ico_view.gif" data-title="">선택</option>
+                <option value="1" data-image="assets/img/i_crack_01_.png" data-title="W2">곡선</option>
+                <option value="15" data-image="assets/img/i_crack_02_.png" data-title="W2">곡선</option>
+                <option value="51" data-image="assets/img/i_crack_01___.png" data-title="W2">곡선</option>
+                <option value="2" data-image="assets/img/i_crack_01.png" data-title="W2">직선</option>
+                <option value="16" data-image="assets/img/i_crack_02.png" data-title="W2">직선</option>
+                <option value="52" data-image="assets/img/i_crack_01__.png" data-title="W2">직선</option>
+
+                <option value="3" data-image="assets/img/i_crack_01.png" data-title="W2">슬레이브균열 0.2</option>
+                <option value="4" data-image="assets/img/i_crack_02.png" data-title="W3">슬레이브균열 0.3</option>
+
+
+                <!--<option value="5" data-image="assets/img/i_crack_03.png" data-title="W3">누수(흔적)</option>-->
+                <option value="6" data-image="assets/img/i_crack_04.png" data-title="W3">바닥균열</option>
+                <option value="7" data-image="assets/img/i_crack_05.png" data-title="W3">철근노출</option>
+                <option value="8" data-image="assets/img/i_crack_06.png" data-title="W3">부식</option>
+                <option value="9" data-image="assets/img/i_crack_07.png" data-title="W3">보균열 0.2</option>
+                <option value="10" data-image="assets/img/i_crack_08.png" data-title="W3">보균열 0.3</option>
+                <option value="11" data-image="assets/img/i_crack_09.png" data-title="W3">비내력결함</option>
+                <option value="12" data-image="assets/img/i_crack_10.png" data-title="W3">기타결홤</option>
+                <option value="81" data-image="assets/img/i_crack_81.png" data-title="W3">누수(흔적)</option>
+                <option value="82" data-image="assets/img/i_crack_82.png" data-title="W3">누수(흔적)</option>
+                <option value="83" data-image="assets/img/i_crack_83.png" data-title="W3">누수(흔적)</option>
+                <option value="84" data-image="assets/img/i_crack_84.png" data-title="W3">멀 균열누수(흔적)</option>
+                <option value="85" data-image="assets/img/i_crack_85.png" data-title="W3">균열누수(흔적)</option>
+                <option value="86" data-image="assets/img/i_crack_86.png" data-title="W3">균열누수(흔적)</option>
+                <option value="87" data-image="assets/img/i_crack_87.png" data-title="W3">균열누수(흔적)</option>
+              </select>
+            </div>
+
+            &nbsp;&nbsp;
+            <div id="btnCarbonation1" class="btn btn-menu" onClick="selectType(13)" style="display:none;">수평점</div>
+            <div id="btnCarbonation2" class="btn btn-menu" onClick="selectType(14)" style="display:none;">수직점</div>
+
+            <div id="btnSlope1" class="btn btn-menu" onClick="selectType(17)" style="display:none;">가로선</div>
+            <div id="btnSlope2" class="btn btn-menu" onClick="selectType(18)" style="display:none;">세로선</div>
+            <div id="btnSlope3" class="btn btn-menu" onClick="selectType(19)" style="display:none;">직선</div>
+            <div id="btnLength" class="btn btn-menu" onClick="selectType(TYPE_LENGTH)" style="display:none;">길이</div>
+            <div id="btnLength2" class="btn btn-menu" onClick="selectType(TYPE_LENGTH2)" style="display:none;">연속길이</div>
+            <div id="btnArea" class="btn btn-menu" onClick="selectType(TYPE_AREA)" style="display:none;">면적</div>
+            <div id="btnMemoDraw" class="btn btn-menu" onClick="selectType(TYPE_MEMO)" style="display:none;">메모 그리기</div>
+            <div id="btnNumber" class="btn btn-menu" onClick="selectType(TYPE_NUMBER)" style="display:none;color:red;border:1px solid red;">순번</div>
+            <div id="btnNumber2" class="btn btn-menu" onClick="selectType(TYPE_NUMBER2)" style="display:none;color:blue;border:1px solid blue;">순번</div>
+            <div id="btnGroup" class="btn btn-menu" onClick="viewGroup()" style="display:none;">그룹</div>
+
+            <div id="btnSelect" class="btn btn-menu" onClick="selectMode(2)" style="display:none;">선택</div>
+            <div id="btnDelete" class="btn btn-menu" onClick="deleteItem()" style="display:none;">삭제</div>
+            <div id="btnMove" class="btn btn-menu" onClick="selectMode(3)" style="display:none;">이동</div>
+
+
+
+            <div id="btnUndo" class="btn btn-menu" onClick="undo()" style="display:none;letter-spacing:-2px;">UNDO</div>
+            <div id="btnRedo" class="btn btn-menu" onClick="redo()" style="display:none;letter-spacing:-2px;">REDO</div>
+
+            <div id="btnPan" class="btn btn-menu" onClick="selectMode(MODE_PAN)" style="display:none;"><img src="assets/img/4arrow2.png" style="width:18px;"></div>
+            <div id="btnZoom" class="btn btn-menu" onClick="selectMode(MODE_ZOOM)" style="display:none;"><img src="assets/img/zoom2.png" style="width:18px;"></div>
+            <div id="btnZoomUp" class="btn btn-menu" onClick="zoomUp()" style="display:none;">확대</div>
+            <div id="btnZoomDown" class="btn btn-menu" onClick="zoomDown()" style="display:none;">축소</div>
+
+            <div id="btnDetailClose" class="btn btn-menu" onClick="closePopup()" style="display:none;color:#FFF;background:#00aa00;">도면</div>
+            <div id="btnSave" class="btn btn-menu" onClick="save(null)" style="display:none;color:#FFF;background:#00aa00;">저장</div>
+            <div id="btnMemo" class="btn btn-menu" onClick="memo()" style="display:none;color:#FFF;background:#00aa00;">메모</div>
+            <div style="display:none;">
+            <div id="btnStatus" class="btn btn-menu" onClick="clickStatus()" style="display:none;color:#FFF;background:#00aa00;">상태</div>
+            </div>
+            <div id="btnMemoClose" class="btn btn-menu" onClick="closeMemo()" style="display:none;color:#FFF;background:#00aa00;">도면</div>
+            <div id="btnDetail" class="btn btn-menu" onClick="viewPopup()" style="display:none;color:#FFF;background:#00aa00;">상세</div>
+
+
+            <div id="btnClose" class="btn btn-menu" onClick="closeDraw()" style="display:none;float:right;color:#FFF;background:#000000;">닫기</div>
+            <!--
+                 <a href="#" class="button bigicon group">묶음</a>
+                 <input id="" name="" placeholder="번호"  class="inbox"/>
+                 <a href="#" class="button bigicon numin">채번</a>
+                 <a href="javascript:detail_popup_open();" class="button bigicon detail">상세</a>
+                 <a href="javascript:detail_popup_close();" class="button bigicon outmenu">닫기</a>
+            -->
+            <div style="clear:both"></div>
+          </div>
+
+          <div id="canvasframe" style="background:#666666;margin-top:0px;overflow:scroll;border: 1px solid #8f8f8f;padding:0px 0px;"><canvas id="canvas" style="background: #666666;"></canvas></div>
+
+
+        </div>
+      </div>
+    </div>
+    <div id="divGroup" style="position:absolute;left:0px;top:0px;">
+    </div>
+
+    <div onClick="closeThumbnail()" id="divShadow" style="position:absolute;left:0px;top:0px;background:black;opacity:0.7;display:none;z-index:99998;">
+    </div>
+
+    <div onClick="closeThumbnail()" id="divThumbnail" style="position:absolute;left:0px;top:0px;display:none;z-index:99999;text-align:center;">
+      <img onClick="closeThumbnail()" src="" id="imgThumbnail" style="" />
+    </div>
+    <form style="display:none;" name="upload_form" id="upload_form" action="/api/image/upload" method="post" enctype="multipart/form-data"><input type="file" id="upload" name="upload" accept="image/*" capture capture="capture" onchange="uploadProcess()"></form>
+
+    <div id="detailModal" class="popupModal" tabindex="-1" style="display:none;z-index:2;margin-top:5px;"></div>
+    <div id="singleModal" tabindex="-1" style="position:absolute;height:70px;display:none;"></div>
+    <div id="areaPopup" tabindex="-1" style="position:absolute;height:70px;display:none;border:none;overflow:auto;"></div>
+    <div id="tablePopup" tabindex="-1" style="display:none;z-index:999;position:absolute;left:400px;top:0px;border:1px solid #999;background:#FFF;border-radius:3px;">
+      <div style="margin:10px 10px 10px 10px;">
+        <div onClick="closeTablePopup()" style="cursor:hand;cursor:pointer;text-align:right;margin-top:-5px;margin-right:-5px;">×</div>
+        <div id="btnTableRowCopy" onClick="clickTableRowCopy()" onMouseOver="this.style.backgroundColor = '#EEE';" onMouseOut="this.style.backgroundColor = '#FFF';" style="padding:2px 5px;border-radius:2px;cursor:hand;cursor:pointer;margin-top:-10px;margin-right:10px;">복사</div>
+        <div id="btnTableRowDelete" onClick="clickTableRowDelete()" onMouseOver="this.style.backgroundColor = '#EEE';" onMouseOut="this.style.backgroundColor = '#FFF';"  style="padding:2px 5px;border-radius:2px;cursor:hand;cursor:pointer;">삭제</div>
+        <div id="btnTableRowInsert" onClick="clickTableRowInsert()" onMouseOver="this.style.backgroundColor = '#EEE';" onMouseOut="this.style.backgroundColor = '#FFF';"  style="padding:2px 5px;border-radius:2px;cursor:hand;cursor:pointer;">한칸 삽입</div>
+        <div id="btnTableRowUp" onClick="clickTableRowUp()" onMouseOver="this.style.backgroundColor = '#EEE';" onMouseOut="this.style.backgroundColor = '#FFF';"  style="padding:2px 5px;border-radius:2px;cursor:hand;cursor:pointer;">한단계 위로</div>
+        <div id="btnTableRowDown" onClick="clickTableRowDown()" onMouseOver="this.style.backgroundColor = '#EEE';" onMouseOut="this.style.backgroundColor = '#FFF';"  style="padding:2px 5px;border-radius:2px;cursor:hand;cursor:pointer;">한단계 아래로</div>
+        <div onClick="clickTableRowMemo()" onMouseOver="this.style.backgroundColor = '#EEE';" onMouseOut="this.style.backgroundColor = '#FFF';"  style="padding:2px 5px;border-radius:2px;cursor:hand;cursor:pointer;">메모</div>
+      </div>
+    </div>
+
+    <div onClick="closeStatusPopup()" id="divStatusPopupBg" style="position:absolute;left:0px;top:0px;background:black;opacity:0.7;display:none;z-index:99998;">
+    </div>
+
+    <div id="divStatusPopup" style="display:none;position: absolute; left: 0px; top: 0px;justify-content: center; align-items: center;z-index:99999;">
+      <div style="background:white;width:760px;height:550px;border-radius:10px;padding:20px 20px;">
+        <div>
+          <div id="divSelectPopupTitle" style="font-size:20px;text-align:left;font-weight:bold;float:left;"></div>
+          <img src="assets/img/icon/cancel.png" style="cursor:hand;cursor:pointer;width:20px;display:block;float:right;" onClick="closeStatusPopup()" />
+          <div style="clear:both;"></div>
+        </div>
+        <div id="divStatusPopupContent" style="margin-top:0px;overflow:hidden;height:525px;">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="js/common.js?t=20"></script>
+  <script type="text/javascript" src="js/canvas.js?t=94"></script>
+  <script type="text/javascript" src="js/save.js?t=52"></script>
+  <script type="text/javascript" src="js/sync.js?t=49"></script>
+  <script type="text/javascript" src="js/download.js?t=51"></script>
+  <script type="text/javascript" src="js/login.js?t=50"></script>
+  <script type="text/javascript" src="assets/js/msdropdown/jquery.dd.js"></script>
+  <script type="text/javascript">
+    var _serverMode = 'mobile';
+    var _serverAddr = '';
+
+    var FILETYPE_FLOORITEM = 8;
+    var FILETYPE_FLOORDRAW = 9;
+    var _apt = 0;
+    var _optitems = [];
+    var _filetype = -1;
+    var _image = 0;
+
+  function clickStatusCategory(id) {
+    $('.divStatusItem').hide();
+    $('#divStatusItem' + id).show();
+
+    $('.divStatusCategory').css('border', '1px solid #999');
+    $('.divStatusCategory').css('color', '#333');
+    $('.divStatusCategory').css('backgroundColor', '#FFF');
+
+    $('#divStatusCategory' + id).css('border', '1px solid #048AB1');
+    $('#divStatusCategory' + id).css('color', '#FFF');
+    $('#divStatusCategory' + id).css('backgroundColor', '#048AB1');
+  }
+
+  var _statusTitle = ['', 'name', 'content', 'width', 'length', 'count', 'progress', 'remark', 'imagename', 'name', 'fault'];
+  
+  function clickStatusItem(type, pos, name) {
+    var current = _statusTitle[type];
+
+    $('#' + current + pos).val(name);
+    $('#status' + current + pos).html(name);
+
+    if (type == 1) {
+      changeName(pos);
+    } else if (type == 9) {
+      changeImagename(pos);
+    } else if (type == 8) {
+      changeImagename(pos);
+    } else if (type == 2) {
+      changeContent(pos);
+    } else if (type == 3) {
+      changeData(pos);
+    } else if (type == 4) {
+      changeData(pos);
+    } else if (type == 5) {
+      changeData(pos);
+    } else if (type == 6) {
+      changeData(pos);
+    } else if (type == 7) {
+      changeData(pos);
+    } else if (type == 10) {
+      changeData(pos);
+    }
+
+    closeStatusPopup();
+  }
+
+  function clickStatus() {
+    var str = '';
+    var str2 = '';
+    
+    var index = 0;
+
+    str += '<div>';
+    str += '<div class="divStatusCategory" id="divStatusCategory' + index + '" onClick="clickStatusCategory(' + index + ')" style="cursor:hand;cursor:pointer;border:1px solid #999;border-radius:3px;font-size:16px;float:left;margin-right:10px;text-align:center;padding:10px 20px;">' + '출력 안함' + '</div>';
+
+    index = 1;
+    str += '<div>';
+    str += '<div class="divStatusCategory" id="divStatusCategory' + index + '" onClick="clickStatusCategory(' + index + ')" style="cursor:hand;cursor:pointer;border:1px solid #999;border-radius:3px;font-size:16px;float:left;margin-right:10px;text-align:center;padding:10px 20px;">' + '상태양호' + '</div>';
+
+    str2 += '<div class="divStatusItem" style="display:none;margin-top:30px;" id="divStatusItem' + index + '">';
+    str2 += '</div>';
+
+    index = 2;
+    str += '<div class="divStatusCategory" id="divStatusCategory' + index + '" onClick="clickStatusCategory(' + index + ')" style="cursor:hand;cursor:pointer;border:1px solid #999;border-radius:3px;font-size:16px;float:left;margin-right:10px;text-align:center;padding:10px 20px;">직접입력</div>';
+    str2 += '<div class="divStatusItem" style="display:none;margin-top:30px;" id="divStatusItem' + index + '">';
+    str2 += '<input id="txtStatusItem" style="display:block;float:left;padding:7px 10px;font-size:16px;width:400px;margin-right:5px;margin-top:5px;" type="text" value="' + '' + '" />';
+    str2 += '<div onClick="" style="cursor:hand;cursor:pointer;margin-top:5px;border:1px solid #999;border-radius:3px;font-size:16px;float:left;margin-right:10px;text-align:center;padding:10px;20px;width:100px;background:#048ab1;color:#FFF;">확인</div>';
+    str2 += '<div style="clear:both;"></div></div>';
+    
+
+    str += '<div style="clear:both;"></div></div>';
+
+    
+    $('#divStatusPopupContent').html(str + str2);
+
+    var w = $(window).width();
+    var h = $(window).height();
+
+    changeStatusGroupTitle();
+
+    $('#divStatusPopupBg').css('width', w + 'px');
+    $('#divStatusPopupBg').css('height', h + 'px');
+    $('#divStatusPopupBg').show();
+
+    var left = parseInt((w - 760) / 2);
+    var top = parseInt((h - 550) / 2);    
+    
+    $('#divStatusPopup').css('left', left + 'px');
+    $('#divStatusPopup').css('top', top + 'px');
+    $('#divStatusPopup').show();
+
+    clickStatusCategory(0);
+  }
+    
+  function clickStatusSave(type, pos) {
+    var name = $('#txtStatusItem').val();
+
+    clickStatusItem(type, pos, name);
+  }
+
+  function clickStatusTypeSave(type, pos) {
+    var name = $('#lblStatusType').html();
+
+    clickStatusItem(type, pos, name);
+  }
+
+  function clickStatusMemoSave(pos) {
+    $('#aptmemo' + pos).val($('#aptmemo').val());
+    $('#usermemo' + pos).val($('#usermemo').val());
+
+    closeStatusPopup();
+  }
+
+  function changeStatusGroupTitle() {
+    var list = JSON.parse(localStorage.getItem('lists'));
+    
+    var titles = [];
+    for (var i = 0; i < list.statuscategorys.length; i++) {
+      var item = list.statuscategorys[i];
+      if (item.Company != _user.Company) {
+        continue;
+      }
+
+      if (item.Type != 2) {
+        continue;
+      }
+
+      if (item.Name == '기타') {
+        continue;
+      }
+
+      if ($('#txtStatusgroup' + item.Id).val() != '') {
+        titles.push($('#txtStatusgroup' + item.Id).val());
+      }
+    }
+
+    $('#lblStatusType').html(titles.join('/'));
+  }
+
+
+  function clickStatusItemGroup(group, id, type, pos, name) {
+
+    $('.statusgroup' + group).css('border', '1px solid #999');
+    $('.statusgroup' + group).css('color', '#333');
+    $('.statusgroup' + group).css('backgroundColor', '#FFF');
+
+    if ($('#txtStatusgroup' + group).val() == name) {
+      $('#txtStatusgroup' + group).val('');
+    } else {
+      $('#txtStatusgroup' + group).val(name);
+    
+      $('#statusgroup' + group + '_' + id).css('border', '1px solid #048AB1');
+      $('#statusgroup' + group + '_' + id).css('color', '#FFF');
+      $('#statusgroup' + group + '_' + id).css('backgroundColor', '#048AB1');
+    }
+
+    changeStatusGroupTitle();
+  }
+  
+  function viewStatusPopup(type, pos) {
+    var current = $('#' + _statusTitle[type] + pos).val();    
+    
+    var str = '';
+    var str2 = '';
+
+    var tab = -1;
+    var list = JSON.parse(localStorage.getItem('lists'));
+
+    str += '<div>';
+    var index = 1;
+
+    if (type == 100) {
+
+      var t = 0;
+
+      if (_filetype == 1) {
+        for (var i = 0; i < _items.length; i++) {
+          if (!isNumber(_items[i].mode))
+            continue;
+
+          if (pos == t) {
+            break;
+          }
+          
+          t++;
+        }
+      } else {
+        t = pos;
+      }
+
+      var aptmemo = $('#aptmemo' + t).val();
+      var usermemo = $('#usermemo' + t).val();
+      
+      str += '<div>';
+
+      str += '<input type="text" style="margin-top:20px;width:98%;padding: 5px 5px;" id="aptmemo" value="' + aptmemo + '" />';
+      str += '<textarea style="margin-top:20px;width:97%;height:330px;" id="usermemo">' + usermemo + '</textarea>';
+      str += '<div style="border-top:1px solid #ccc;margin-top:35px;padding-top:10px;">';
+      str += '<div onClick="closeStatusPopup()" style="cursor:hand;cursor:pointer;margin-top:5px;border:1px solid #999;border-radius:3px;font-size:16px;float:right;margin-right:10px;text-align:center;padding:10px 20px;width:100px;">취소</div>';
+      str += '<div onClick="clickStatusMemoSave(' + t + ')" style="cursor:hand;cursor:pointer;margin-top:5px;border:1px solid #999;border-radius:3px;font-size:16px;float:right;margin-right:10px;text-align:center;padding:10px 20px;width:100px;color:white;background:#b13333;">확인</div>';
+      str += '<div style="clear:both;"></div></div>';
+
+    } else if (type == 1 || type == 3 || type == 4 || type == 5 || type == 6 || type == 7 || type == 10) {
+      var width = 100;
+
+      if (type == 7) {
+        width = 200;
+      }
+
+      str += '<div class="divStatusCategory" id="divStatusCategory' + index + '" onClick="clickStatusCategory(' + index + ')" style="cursor:hand;cursor:pointer;border:1px solid #999;border-radius:3px;font-size:16px;float:left;margin-right:10px;text-align:center;padding:10px 20px;">' + '선택' + '</div>';
+
+      str2 += '<div class="divStatusItem" style="display:none;margin-top:30px;" id="divStatusItem' + index + '">';
+      for (var j = 0; j < list.statuss.length; j++) {
+        var item2 = list.statuss[j];
+        if (item2.Company != _user.Company) {
+          continue;
+        }
+
+        if (item2.Type != type) {
+          continue;
+        }
+
+        var bg = '';
+        if (current == item2.Name) {
+          bg = 'background:#048ab1;color:#FFF;';
+          tab = index;
+        }
+
+        str2 += '<div onClick="clickStatusItem(' + type + ', ' + pos + ',\'' + item2.Name + '\')" style="cursor:hand;cursor:pointer;margin-top:5px;border:1px solid #999;border-radius:3px;font-size:16px;float:left;margin-right:10px;text-align:center;padding:10px 20px;width:' + width + 'px;' + bg + '">' + item2.Name + '</div>';
+      }
+
+      str2 += '<div style="clear:both;"></div></div>';
+
+      index++;
+    } else if (type == 2) {
+      var currents = current.split('/'); 
+      var str3 = '';
+      var titles = [];
+
+      str2 += '<div class="divStatusItem" style="display:none;margin-top:30px;" id="divStatusItem' + 1 + '">';
+
+      for (var i = 0; i < list.statuscategorys.length; i++) {
+        var item = list.statuscategorys[i];
+        if (item.Company != _user.Company) {
+          continue;
+        }
+
+        if (item.Type != type) {
+          continue;
+        }
+
+        var findFlag = false;
+        var findTitle = '';
+        
+        if (item.Name != '기타') {
+          titles.push(item.Name);
+          index = 1;
+
+          str2 += '<div style="margin-bottom:20px;">';
+          str2 += '<div style="font-size:18px;margin-bottom:10px;">' + item.Name + '</div>';
+
+          for (var j = 0; j < list.statuss.length; j++) {
+            var item2 = list.statuss[j];
+            if (item2.Company != _user.Company) {
+              continue;
+            }
+
+            if (item2.Type != type) {
+              continue;
+            }
+
+            if (item2.Statuscategory != item.Id) {
+              continue;
+            }
+
+            var bg = '';
+            if (current == item2.Name) {
+              bg = 'background:#048ab1;color:#FFF;';
+              tab = index;
+
+              findFlag = true;
+              findTitle = item2.Name;
+              
+            } else {
+              for (var k = 0; k < currents.length; k++) {
+                if (currents[k] == item2.Name) {
+                  bg = 'background:#048ab1;color:#FFF;';
+                  tab = index;
+
+                  findFlag = true;
+                  findTitle = item2.Name;
+                  break;
+                }
+              }
+            }
+            
+            str2 += '<div class="statusgroup' + item.Id + '" id="statusgroup' + item.Id + '_' + item2.Id + '" onClick="clickStatusItemGroup(' + item.Id + ', ' + item2.Id + ',' + type + ', ' + pos + ',\'' + item2.Name + '\')" style="cursor:hand;cursor:pointer;margin-top:5px;border:1px solid #999;border-radius:3px;font-size:16px;float:left;margin-right:10px;text-align:center;padding:10px 20px;width:100px;' + bg + '">' + item2.Name + '</div>';
+          }
+
+          if (findFlag == true) {
+            str2 += '<div style="clear:both;"><input type="hidden" id="txtStatusgroup' + item.Id + '" value="' + findTitle + '" /></div></div>';
+          } else {
+            str2 += '<div style="clear:both;"><input type="hidden" id="txtStatusgroup' + item.Id + '" value="" /></div></div>';            
+          }
+
+        } else {
+          index = 2;
+          str3 += '<div class="divStatusItem" style="display:none;margin-top:30px;" id="divStatusItem' + index + '">';
+          for (var j = 0; j < list.statuss.length; j++) {
+            var item2 = list.statuss[j];
+            if (item2.Company != _user.Company) {
+              continue;
+            }
+
+            if (item2.Type != type) {
+              continue;
+            }
+
+            if (item2.Statuscategory != item.Id) {
+              continue;
+            }
+
+            var bg = '';
+            if (current == item2.Name) {
+              bg = 'background:#048ab1;color:#FFF;';
+              tab = index;
+            }
+            str3 += '<div onClick="clickStatusItem(' + type + ', ' + pos + ',\'' + item2.Name + '\')" style="cursor:hand;cursor:pointer;margin-top:5px;border:1px solid #999;border-radius:3px;font-size:16px;float:left;margin-right:10px;text-align:center;padding:10px 20px;width:200px;' + bg + '">' + item2.Name + '</div>';
+          }
+
+          str3 += '<div style="clear:both;"></div></div>';
+        }
+      }
+
+      str2 += '<div style="border-top:1px solid #ccc;margin-top:80px;padding-top:10px;">';
+      str2 += '<div id="lblStatusType" style="margin-top:5px;float:left;font-size:16px;"></div>';
+      str2 += '<div onClick="closeStatusPopup()" style="cursor:hand;cursor:pointer;margin-top:5px;border:1px solid #999;border-radius:3px;font-size:16px;float:right;margin-right:10px;text-align:center;padding:10px 20px;width:100px;">취소</div>';
+      str2 += '<div onClick="clickStatusTypeSave(' + type + ', ' + pos + ')" style="cursor:hand;cursor:pointer;margin-top:5px;border:1px solid #999;border-radius:3px;font-size:16px;float:right;margin-right:10px;text-align:center;padding:10px 20px;width:100px;color:white;background:#b13333;">확인</div>';
+      str2 += '<div style="clear:both;"></div></div>';
+      str2 += '<div style="clear:both;"></div></div>';
+      str2 += str3;
+
+      index = 1;
+      str += '<div class="divStatusCategory" id="divStatusCategory' + index + '" onClick="clickStatusCategory(' + index + ')" style="cursor:hand;cursor:pointer;border:1px solid #999;border-radius:3px;font-size:16px;float:left;margin-right:10px;text-align:center;padding:10px 20px;">' + titles.join(' / ') + '</div>';
+
+      index = 2;
+      str += '<div class="divStatusCategory" id="divStatusCategory' + index + '" onClick="clickStatusCategory(' + index + ')" style="cursor:hand;cursor:pointer;border:1px solid #999;border-radius:3px;font-size:16px;float:left;margin-right:10px;text-align:center;padding:10px 20px;">기타</div>';
+    } else {
+      for (var i = 0; i < list.statuscategorys.length; i++) {
+        var item = list.statuscategorys[i];
+        if (item.Company != _user.Company) {
+          continue;
+        }
+
+        if (item.Type != type) {
+          continue;
+        }
+
+        str += '<div class="divStatusCategory" id="divStatusCategory' + index + '" onClick="clickStatusCategory(' + index + ')" style="cursor:hand;cursor:pointer;border:1px solid #999;border-radius:3px;font-size:16px;float:left;margin-right:10px;text-align:center;padding:10px 20px;">' + item.Name + '</div>';
+        console.log(list.statuscategorys[i].Name);
+
+        str2 += '<div class="divStatusItem" style="display:none;margin-top:30px;" id="divStatusItem' + index + '">';
+        for (var j = 0; j < list.statuss.length; j++) {
+          var item2 = list.statuss[j];
+          if (item2.Company != _user.Company) {
+            continue;
+          }
+
+          if (item2.Type != type) {
+            continue;
+          }
+
+          if (item2.Statuscategory != item.Id) {
+            continue;
+          }
+
+          var bg = '';
+          if (current == item2.Name) {
+            bg = 'background:#048ab1;color:#FFF;';
+            tab = index;
+          }
+          str2 += '<div onClick="clickStatusItem(' + type + ', ' + pos + ',\'' + item2.Name + '\')" style="cursor:hand;cursor:pointer;margin-top:5px;border:1px solid #999;border-radius:3px;font-size:16px;float:left;margin-right:10px;text-align:center;padding:10px 20px;width:100px;' + bg + '">' + item2.Name + '</div>';
+    }
+
+        str2 += '<div style="clear:both;"></div></div>';
+
+        index++;
+      }
+    }
+
+    if (type == 1 || type == 2 || type == 3 || type == 4 || type == 5 || type == 6 || type == 7 || type == 10) {
+      var txt = '';
+
+      if (tab == -1) {
+        if (current == '') {
+          tab = 1;
+        } else {
+          tab = 0;
+          txt = current;
+        }
+      }
+
+      index = 0;
+      str += '<div class="divStatusCategory" id="divStatusCategory' + index + '" onClick="clickStatusCategory(' + index + ')" style="cursor:hand;cursor:pointer;border:1px solid #999;border-radius:3px;font-size:16px;float:left;margin-right:10px;text-align:center;padding:10px 20px;">직접입력</div>';
+      str2 += '<div class="divStatusItem" style="display:none;margin-top:30px;" id="divStatusItem' + index + '">';
+      str2 += '<input id="txtStatusItem" style="display:block;float:left;padding:7px 10px;font-size:16px;width:400px;margin-right:5px;margin-top:5px;" type="text" value="' + txt + '" />';
+      str2 += '<div onClick="clickStatusSave(' + type + ', ' + pos + ')" style="cursor:hand;cursor:pointer;margin-top:5px;border:1px solid #999;border-radius:3px;font-size:16px;float:left;margin-right:10px;text-align:center;padding:10px;20px;width:100px;background:#048ab1;color:#FFF;">확인</div>';
+      str2 += '<div style="clear:both;"></div></div>';
+    }
+
+
+
+    str += '<div style="clear:both;"></div></div>';
+
+    $('#divStatusPopupContent').html(str + str2);
+
+    if (tab > -1) {
+      clickStatusCategory(tab);
+    }
+    
+    var w = $(window).width();
+    var h = $(window).height();
+
+    changeStatusGroupTitle();
+
+    $('#divStatusPopupBg').css('width', w + 'px');
+    $('#divStatusPopupBg').css('height', h + 'px');
+    $('#divStatusPopupBg').show();
+
+    var left = parseInt((w - 760) / 2);
+    var top = parseInt((h - 550) / 2);    
+    
+    $('#divStatusPopup').css('left', left + 'px');
+    $('#divStatusPopup').css('top', top + 'px');
+    $('#divStatusPopup').show();    
+  }
+
+  function closeStatusPopup() {
+    $('#divStatusPopupBg').hide();
+    $('#divStatusPopup').hide();    
+  }
+
+  function showAptPopupAll() {
+    if (_serverMode == 'mobile' || _serverMode == 'electron') {
+      return;
+    } else {
+      showAptPopup();
+    }
+  }
+
+  function uploadFile(fileURI) {
+    var options = new FileUploadOptions();
+    options.fileKey = "upload";
+    options.fileName = fileURI.substr(fileURI.lastIndexOf('/') + 1);
+    options.mimeType = "multipart/form-data";
+    options.trustAllHosts = true;
+
+    var params = {};
+    params.apt = _apt;
+    params.image = _image;
+
+    options.params = params;
+
+    var target = cordova.file.dataDirectory;
+
+
+    var fileTransfer = new FileTransfer();
+    //fileURI = this.file.applicationDirectory + 'www/index.html';
+    fileTransfer.upload(fileURI, encodeURI(_serverAddr + '/api/image/upload'), function(r) {
+      console.log("Code = " + r.responseCode);
+      console.log("Response = " + r.response);
+      console.log("Sent = " + r.bytesSent);
+    }, function(error) {
+      alert("An error has occurred: Code = " + error.code);
+      console.log("upload error source " + error.source);
+      console.log("upload error target " + error.target);
+    }, options);
+  }
+
+  function uploadCanvas(apt, image) {
+    var filename = '' + apt + '-' + image + '.png';
+    var options = new FileUploadOptions();
+    options.fileKey = 'upload';
+    options.fileName = filename;
+    options.mimeType = 'multipart/form-data';
+    options.httpMethod = 'POST';
+    options.trustAllHosts = true;
+    options.chunkedMode = false;
+
+    var params = new Object();
+    params.apt = apt;
+    params.image = image;
+    params.filename = filename;
+
+    options.params = params;
+
+    var ft = new FileTransfer();
+    var target = cordova.file.dataDirectory;
+
+    //fns.push(
+    window.resolveLocalFileSystemURL(target, function (dir) {
+      var fileURL = dir.nativeURL + filename;
+      console.log('filename : ' + fileURL);
+      ft.upload(fileURL, encodeURI(_serverAddr + '/api/image/uploadandroidbase64'),
+                function(r) {
+                  console.log("Code = " + r.responseCode);
+                  console.log("Response = " + r.response);
+                  console.log("Sent = " + r.bytesSent);
+                },
+                function(error) {
+                  alert("An error has occurred: Code = " + error.code);
+                  console.log("upload error source " + error.source);
+                  console.log("upload error target " + error.target);
+                }, options, true);
+    })
+    //);
+  }
+
+  function uploadCameraImage(filename) {
+    var filename = basename(filename);
+    var options = new FileUploadOptions();
+    options.fileKey = 'upload';
+    options.fileName = filename;
+    options.mimeType = 'multipart/form-data';
+    options.httpMethod = 'POST';
+    options.trustAllHosts = true;
+    options.chunkedMode = false;
+
+    var params = new Object();
+    params.filename = filename;
+
+    options.params = params;
+
+    var ft = new FileTransfer();
+    var target = cordova.file.dataDirectory;
+
+    window.resolveLocalFileSystemURL(target, function (dir) {
+      var fileURL = dir.nativeURL + filename;
+      console.log('upload filename : ' + fileURL);
+      ft.upload(fileURL, encodeURI(_serverAddr + '/api/image/uploadandroid'),
+                function(r) {
+                  console.log("upload Code = " + r.responseCode);
+                  console.log("upload Response = " + r.response);
+                  console.log("upload Sent = " + r.bytesSent);
+                },
+                function(error) {
+                  alert("upload An error has occurred: Code = " + error.code);
+                  console.log("upload upload error source " + error.source);
+                  console.log("upload upload error target " + error.target);
+                }, options, true);
+    })
+  }
+
+  function popupDataSetting() {
+    for (var i = 0; i < _items.length; i++) {
+      if (!isNumber(_items[i].mode))
+        continue;
+
+      _items[i].name = $('#name' + i).val();
+      _items[i].fault = $('#fault' + i).val();
+      _items[i].content = $('#content' + i).val();
+      _items[i].report = $('#report' + i).val();
+      _items[i].usermemo = $('#usermemo' + i).val();
+      _items[i].aptmemo = $('#aptmemo_' + i).val();
+      _items[i].width = $('#width' + i).val();
+      _items[i].length = $('#length' + i).val();
+      _items[i].count = $('#count' + i).val();
+      _items[i].progress = $('#progress' + i).val();
+      _items[i].remark = $('#remark' + i).val();
+      _items[i].imagename = $('#imagename' + i).val();
+    }
+  }
+
+  function clickExit() {
+    if (!confirm('종료 하시겠습니까')) {
+      return;
+    }
+
+    astilectron.sendMessage("exit", function(message) {
+    });
+  }
+
+  function setFiletype() {
+    closeSinglePopup();
+
+    if (_filetype == -1) {
+      $('.button').hide();
+
+      $('#divCombo').hide();
+      $('#btnSlope1').hide();
+      $('#btnSlope2').hide();
+      $('#btnSlope3').hide();
+      $('#btnCarbonation1').hide();
+      $('#btnCarbonation2').hide();
+
+      $('#btnLength').hide();
+      $('#btnLength2').hide();
+      $('#btnArea').hide();
+
+      $('#btnMemo').hide();
+      $('#btnStatus').hide();
+      $('#btnMemoDraw').hide();
+    } else {
+      $('.button').show();
+      $('.btn').show();
+    }
+
+    if (_filetype == 1 || _filetype == 5 || _filetype == FILETYPE_FLOORDRAW) {
+      $('#divCombo').show();
+      $('#btnSlope1').hide();
+      $('#btnSlope2').hide();
+      $('#btnSlope3').hide();
+      $('#btnCarbonation1').hide();
+      $('#btnCarbonation2').hide();
+      $('#btnDetail').show();
+      $('#btnDetailClose').hide();
+      $('#btnNumber').show();
+      $('#btnNumber2').show();
+      $('#btnGroup').show();
+      $('#btnLength').hide();
+      $('#btnLength2').hide();
+      $('#btnArea').hide();
+
+      $('#areaPopup').hide();
+    } else if (_filetype == 2) {
+      $('#divCombo').hide();
+      $('#btnSlope1').show();
+      $('#btnSlope2').show();
+      $('#btnSlope3').show();
+      $('#btnCarbonation1').hide();
+      $('#btnCarbonation2').hide();
+      $('#btnDetail').hide();
+      $('#btnDetailClose').hide();
+      $('#btnNumber').hide();
+      $('#btnNumber2').hide();
+      $('#btnGroup').show();
+      $('#btnLength').hide();
+      $('#btnLength2').hide();
+      $('#btnArea').hide();
+      $('#areaPopup').hide();
+    } else if (_filetype == 3) {
+      $('#divCombo').hide();
+      $('#btnSlope1').hide();
+      $('#btnSlope2').hide();
+      $('#btnSlope3').hide();
+      $('#btnCarbonation1').show();
+      $('#btnCarbonation2').show();
+      $('#btnDetail').show();
+      $('#btnDetailClose').hide();
+
+      $('#btnNumber').hide();
+      $('#btnNumber2').hide();
+      $('#btnGroup').hide();
+      $('#btnLength').hide();
+      $('#btnLength2').hide();
+      $('#btnArea').hide();
+      $('#areaPopup').hide();
+    } else if (_filetype == 4) {
+      $('#divCombo').hide();
+      $('#btnSlope1').hide();
+      $('#btnSlope2').hide();
+      $('#btnSlope3').hide();
+      $('#btnCarbonation1').hide();
+      $('#btnCarbonation2').hide();
+      $('#btnDetail').hide();
+      $('#btnDetailClose').hide();
+
+      $('#btnNumber').show();
+      $('#btnNumber2').show();
+      $('#btnGroup').hide();
+      $('#btnLength').hide();
+      $('#btnLength2').hide();
+      $('#btnArea').hide();
+      $('#areaPopup').hide();
+    } else if (_filetype == 6) {
+      $('#divCombo').hide();
+      $('#btnSlope1').hide();
+      $('#btnSlope2').hide();
+      $('#btnSlope3').hide();
+      $('#btnCarbonation1').hide();
+      $('#btnCarbonation2').hide();
+      $('#btnDetail').hide();
+      $('#btnDetailClose').hide();
+
+      $('#btnNumber').hide();
+      $('#btnNumber2').hide();
+      $('#btnGroup').hide();
+      $('#btnLength').show();
+      $('#btnLength2').show();
+      $('#btnArea').show();
+
+      viewAreaPopup();
+    } else if ( _filetype == FILETYPE_FLOORITEM) {
+      $('#divCombo').hide();
+      $('#btnSlope1').hide();
+      $('#btnSlope2').hide();
+      $('#btnSlope3').hide();
+      $('#btnCarbonation1').hide();
+      $('#btnCarbonation2').hide();
+      $('#btnDetail').hide();
+      $('#btnDetailClose').hide();
+
+      $('#btnNumber').hide();
+      $('#btnNumber2').hide();
+      $('#btnGroup').hide();
+      $('#btnLength').hide();
+      $('#btnLength2').hide();
+      $('#btnArea').hide();
+    } else {
+      $('#areaPopup').hide();
+    }
+
+    if (_filetype == 5) {
+      viewFloorPopup();
+    }
+
+    if (_filetype == 0 || _filetype == FILETYPE_FLOORITEM) {
+      $('#btnMemoDraw').hide();
+
+      $('#divCombo').hide();
+      $('#btnSlope1').hide();
+      $('#btnSlope2').hide();
+      $('#btnSlope3').hide();
+
+      $('#btnCarbonation1').hide();
+      $('#btnCarbonation2').hide();
+
+      $('#btnLength').hide();
+      $('#btnLength2').hide();
+      $('#btnArea').hide();
+
+      $('#btnDetail').hide();
+      $('#btnDetailClose').hide();
+      $('#btnNumber').hide();
+      $('#btnGroup').hide();
+
+      $('#btnNumber').hide();
+      $('#btnNumber2').hide();
+      $('#btnGroup').hide();
+      $('#btnSelect').hide();
+      $('#btnDelete').hide();
+      $('#btnMove').hide();
+      $('#btnUndo').hide();
+      $('#btnRedo').hide();
+      $('#btnZoom').hide();
+      $('#btnZoomUp').hide();
+      $('#btnZoomDown').hide();
+      $('#btnPan').hide();
+
+      $('#btnMemo').hide();
+      $('#btnStatus').hide();
+      $('#btnMemoClose').hide();
+      $('#btnSave').show();
+
+      $('#areaPopup').hide();
+    } else {
+      $('#btnMemoDraw').show();
+
+      $('#btnSelect').show();
+      $('#btnDelete').show();
+      $('#btnMove').show();
+      $('#btnUndo').show();
+      $('#btnRedo').show();
+      $('#btnZoom').show();
+      $('#btnZoomUp').show();
+      $('#btnZoomDown').show();
+      $('#btnPan').show();
+    }
+
+    if (_memo == true) {
+      $('#btnMemoDraw').show();
+
+      $('#divCombo').hide();
+      $('#btnSlope1').hide();
+      $('#btnSlope2').hide();
+      $('#btnSlope3').hide();
+
+      $('#btnLength').hide();
+      $('#btnLength2').hide();
+      $('#btnArea').hide();
+
+      $('#btnCarbonation1').hide();
+      $('#btnCarbonation2').hide();
+
+      $('#btnDetail').hide();
+      $('#btnDetailClose').hide();
+      $('#btnNumber').hide();
+      $('#btnNumber2').hide();
+      $('#btnGroup').hide();
+
+      $('#btnMemo').hide();
+      $('#btnStatus').hide();
+      $('#btnMemoClose').show();
+    } else {
+      if (_filetype != 0 && _filetype != FILETYPE_FLOORITEM) {
+        $('#btnMemoDraw').hide();
+        $('#btnMemo').show();
+        $('#btnStatus').show();
+        $('#btnMemoClose').hide();
+      } else {
+        $('#btnMemoDraw').hide();
+        $('#btnMemo').hide();
+        $('#btnStatus').hide();
+        $('#btnMemoClose').hide();
+        $('#btnDetailClose').hide();
+      }
+    }
+
+    if (_filetype == FILETYPE_FLOORDRAW) {
+      $('#btnNumber').hide();
+      $('#btnNumber2').hide();
+      $('#btnGroup').hide();
+
+      $('#btnMemo').hide();
+      $('#btnStatus').show();
+      $('#btnDetail').hide();
+
+      $('#btnClose').show();
+    } else {
+      $('#btnClose').hide();
+    }
+  }
+
+  function updateCalc() {
+    for (var i = 0; i < 10; i++) {
+      var flow = $('#flow' + i).val();
+
+      $('#dflow' + i).html(flow);
+
+      var sh1 = $('#sh1' + i).val();
+      if (sh1 != '') {
+        $('#dsh1' + i).html(parseInt(sh1) + 2);
+      } else {
+        $('#dsh1' + i).html('');
+      }
+
+      var sh2 = $('#sh2' + i).val();
+      if (sh2 != '') {
+        $('#dsh2' + i).html(parseInt(sh2) + 2);
+      } else {
+        $('#dsh2' + i).html('');
+      }
+
+      if (sh1 != '' || sh2 != '') {
+        $('#dcomma' + i).html(', ');
+      } else {
+        $('#dcomma' + i).html('');
+      }
+
+      var n = $('#n' + i).val();
+      if (n != '') {
+        $('#dn' + i).html(parseInt(n) + 1);
+      } else {
+        $('#dn' + i).html('');
+      }
+
+      var ps = $('#ps' + i).val();
+      if (ps != '') {
+        $('#dps' + i).html(parseInt(ps) + 1);
+      } else {
+        $('#dps' + i).html('');
+      }
+    }
+  }
+
+  function closePopup2() {
+    _mode = 0;
+
+    viewPopupButton(true);
+
+    for (var i = 0; i < 10; i++) {
+      _items2[i].name = $('#flow' + i).val();
+      _items2[i].content = $('#sh1' + i).val();
+      _items2[i].width = $('#sh2' + i).val();
+      _items2[i].length = $('#n' + i).val();
+      _items2[i].count =  $('#ps' + i).val();
+    }
+
+    updateCalc();
+
+    $('#detailModal').toggle();
+    setButton();
+
+    makeUndoContent();
+
+    $('#btnNumber').css('color', 'red');
+    $('#btnNumber').css('background-color', 'white');
+    $('#btnNumber2').css('color', 'blue');
+    $('#btnNumber2').css('background-color', 'white');
+  }
+
+  function makeUndoContent() {
+    /*
+       for (var i = _items.length - 1; i > 0; i--) {
+       _items[i - 1].name = _items[i].name;
+       _items[i - 1].content = _items[i].content;
+       _items[i - 1].width = _items[i].width;
+       _items[i - 1].length = _items[i].length;
+       _items[i - 1].count = _items[i].count;
+       _items[i - 1].progress = _items[i].progress;
+       _items[i - 1].remark = _items[i].remark;
+       _items[i - 1].imagename =_items[i].imagename;
+       _items[i - 1].filename = _items[i].filename;
+       }
+     */
+  }
+
+  function viewPopup2() {
+    initUndo();
+
+    var count = _items2.length;
+    for (var i = 0; i < 10 - count; i++) {
+      _items2.push({
+        name: '',
+        content: '',
+        report: 1,
+        usermemo: '',
+        aptmemo: '',
+        width: '',
+        length: '',
+        count: ''
+      });
+    }
+
+    if ($('#detailModal').is(':visible')) {
+      closePopup2();
+      return;
+    }
+
+    setButton();
+
+    viewPopupButton(false);
+
+    var str = '';
+
+    var bg = '#ffcccc';
+    var bg2 = '#ccccff';
+
+    var b = 0;
+    var r = 0;
+
+    for (var i = 0; i < _items.length; i++) {
+      var item = _items[i];
+
+      if (item.mode == 13) {
+        b++;
+      } else if (item.mode == 14) {
+        r++;
+      }
+    }
+
+    if (b == 1 && r == 1) {
+      bg = '#ffcccc';
+      bg2 = '#ccccff';
+    } else if (b == 2) {
+      bg = '#ccccff';
+      bg2 = '#ccccff';
+    } else if (r == 2) {
+      bg = '#ffcccc';
+      bg2 = '#ffcccc';
+    } else {
+      bg = '';
+      bg2 = '';
+    }
+
+
+    str += '<table border="1" cellpadding="4" style="width:100%">';
+    str += '    <tr>';
+    str += '        <td style="background:' + bg + ';" align="center">층</td>';
+    str += '        <td style="background:' + bg + ';"  align="center">SH</td>';
+    str += '        <td style="background:' + bg + ';"  align="center">N</td>';
+    str += '        <td style="background:' + bg + ';"  align="center">PS</td>';
+    str += '        <td style="background:' + bg2 + ';"  align="center" >층</td>';
+    str += '        <td style="background:' + bg2 + ';"  align="center">SH</td>';
+    str += '        <td style="background:' + bg2 + ';"  align="center">N</td>';
+    str += '        <td style="background:' + bg2 + ';"  align="center">PS</td>';
+    str += '    </tr>';
+
+    var items = [];
+
+    for (var i = 0; i < _items2.length; i++) {
+      var item = _items2[i];
+      items.push(item);
+    }
+
+
+    var ccnt = items.length;
+    for (var i = 0; i < 10 + 1 - ccnt; i++) {
+      items.push({
+        name: '',
+        content: '',
+        report: 1,
+        usermemo: '',
+        aptmemo: '',
+        width: '',
+        length: '',
+        count: ''
+      });
+    }
+
+    for (var i = 0; i < 10; i++) {
+      var item = items[i];
+
+      try {
+        if (item.name == '0')
+          item.name = '';
+
+        if (item.name == undefined || item.name == null)
+          item.name = '';
+      } catch (e) {
+        item.name = '';
+      }
+
+      try {
+        if (item.content == '0')
+          item.content = '';
+
+        if (item.content == undefined || item.content == null)
+          item.content = '';
+      } catch (e) {
+        item.content = '';
+      }
+      
+      try {
+        if (item.usermemo == '0')
+          item.usermemo = '';
+
+        if (item.usermemo == undefined || item.usermemo == null)
+          item.usermemo = '';
+      } catch (e) {
+        item.usermemo = '';
+      }
+      
+      try {
+        if (item.aptmemo == '0')
+          item.aptmemo = '';        
+
+        if (item.aptmemo == undefined || item.aptmemo == null)
+          item.aptmemo = '';
+      } catch (e) {
+        item.aptmemo = '';
+      }
+
+      try {
+        if (item.report == '0')
+          item.report = '';        
+
+        if (item.report == undefined || item.report == null)
+          item.report = '';
+      } catch (e) {
+        item.report = '';
+      }
+      
+      try {
+        if (item.width == '0')
+          item.width = '';
+
+        if (item.width == undefined || item.width == null)
+          item.width = '';
+      } catch (e) {
+        item.width = '';
+      }
+
+      try {
+        if (item.length == '0')
+          item.length = '';
+
+        if (item.length == undefined || item.length == null)
+          item.length = '';
+      } catch (e) {
+        item.length = '';
+      }
+
+      try {
+        if (item.count == '0')
+          item.count = '';
+
+        if (item.count == undefined || item.count == null)
+          item.count = '';
+      } catch (e) {
+        item.count = '';
+      }
+
+      str += '    <tr>';
+      str += '        <td style="background:' + bg + ';"  align="center" ><input id="flow'+ i +'" style="width:50px;" type="text" onKeyUp="updateCalc()" value="' + item.name + '" /></td>';
+      str += '        <td style="background:' + bg + ';"  align="center" ><input id="sh1'+ i +'" style="width:50px;" type="text" onKeyUp="updateCalc()" value="' + item.content + '" /><input id="sh2'+ i +'" style="width:50px;" type="text" onKeyUp="updateCalc()" value="' + item.width + '" /></td>';
+      str += '        <td style="background:' + bg + ';"  align="center" ><input id="n'+ i +'" style="width:50px;" type="text"  onKeyUp="updateCalc()" value="' + item.length + '" /></td>';
+      str += '        <td style="background:' + bg + ';"  align="center" ><input id="ps'+ i +'" style="width:50px;" type="text"  onKeyUp="updateCalc()" value="' + item.count + '" /></td>';
+      str += '        <td style="background:' + bg2 + ';"  align="center" id="dflow'+ i +'"></td>';
+      str += '        <td style="background:' + bg2 + ';"  align="center"><span id="dsh1'+ i +'"></span><span id="dcomma'+ i +'"></span><span id="dsh2'+ i +'"></span></td>';
+      str += '        <td style="background:' + bg2 + ';"  align="center" id="dn'+ i +'"></td>';
+      str += '        <td style="background:' + bg2 + ';"  align="center" id="dps'+ i +'"></td>';
+      str += '    </tr>';
+    }
+    str += '</table>';
+
+    $('#detailModal').html(str);
+
+    /*
+       for (var i = 0; i < 10; i++) {
+       _items2[i].name = $('#flow' + i).val();
+       _items2[i].content = $('#sh1' + i).val();
+       _items2[i].width = $('#sh2' + i).val();
+       _items2[i].length = $('#n' + i).val();
+       _items2[i].count =  $('#ps' + i).val();
+       }
+     */
+
+    updateCalc();
+
+    $('#detailModal').toggle();
+  }
+
+  function cancelGroup() {
+    initUndo();
+
+    for (var j = 0; j < _items.length; j++) {
+      _items[j].selected = false;
+    }
+
+    _mode = 0;
+
+    setButton();
+
+    $('#divGroup').hide();
+  }
+
+  function resetType() {
+    var oHandler = $('#msCombo').msDropDown().data("dd");
+    if(oHandler) {
+      oHandler.set("selectedIndex", 0);
+    }
+  }
+
+  function viewGroup() {
+    resetType();
+
+    if (_mode == MODE_GROUP) {
+      return;
+    }
+
+    for (var j = 0; j < _items.length; j++) {
+      _items[j].selected = false;
+    }
+
+    initUndo();
+
+    setButton();
+
+    selectMode(MODE_GROUP);
+
+    var str = '';
+
+    str += '<table border="1" cellpadding="4" style="background:#f3f3f3;">';
+    str += '    <tr>';
+    str += '        <td align="center" style="width:60px;text-align:center;">순번</td>';
+    str += '        <td align="center" style="width:60px;text-align:center;">그룹/번호</td>';
+    str += '        <td align="center" style="width:60px;text-align:center;">지정</td>';
+    str += '    </tr>';
+
+    var n = 0;
+    for (var i = 0; i < _items.length; i++) {
+      var mode = _items[i].mode;
+      if (!isNumber(mode) && !isArrow(mode))
+        continue;
+
+      _items[i].selected = false;
+
+      str += '    <tr>';
+      str += '        <td align="center">' + (n+1) + '</td>';
+      str += '        <td align="center">' + _items[i].number + '</td>';
+
+      if (_items[i].selected == true)
+        str += '        <td align="center"><input style="background-color:#FFF;" onClick="clickChk(' + i + ')" type="checkbox" id="chk' + i + '" checked></td>';
+      else
+        str += '        <td align="center"><input style="background-color:#FFF;" onClick="clickChk(' + i + ')" type="checkbox" id="chk' + i + '"></td>';
+      str += '    </tr>';
+
+      n++;
+    }
+
+    str += '</table>';
+    str += '<div style="padding:10px 10px;">';
+    str += '<button onClick="setGroup()" style="padding: 5px 5px;background:#FFF;border:1px solid #000;width:50px;border-radius:3px;">확인</button>';
+    str += '<button onClick="cancelGroup()" style="margin-left:10px;padding: 5px 5px;background:#FFF;border:1px solid #000;width:50px;border-radius:3px;">취소</button>';
+    str += '</div>';
+
+    var w = $(window).width();
+    var left = w - 208;
+
+    $('#divGroup').css('top', '120px');
+    $('#divGroup').css('left', left + 'px');
+    $('#divGroup').html(str);
+
+    setButton();
+    $('#btnGroup').addClass('btn-select');
+
+    if (n > 0)
+      $('#divGroup').show();
+    else
+      $('#divGroup').hide();
+  }
+
+  function makeGroupNumber() {
+    // empty
+    for (var i = 0; i < _items.length; i++) {
+      _items[i].checked = false;
+    }
+
+    pos = 0;
+
+    for (var i = 0; i < _items.length; i++) {
+      mode = _items[i].mode;
+      if (!isGroupable(mode))
+        continue;
+
+      pos++;
+
+      flag = false;
+
+      for (var j = 0; j < _items.length; j++) {
+        mode = _items[j].mode;
+        if (!isGroupable(mode))
+          continue;
+
+        if (_items[j].number > pos) {
+          flag = true;
+          break;
+        }
+      }
+
+      if (flag == false)
+        break;
+
+
+      flag = false;
+
+      for (var j = 0; j < _items.length; j++) {
+        mode = _items[j].mode;
+        if (!isGroupable(mode))
+          continue;
+
+        if (_items[j].number == pos) {
+          flag = true;
+          break;
+        }
+      }
+
+      if (flag == true)
+        continue;
+
+      do {
+        for (var j = 0; j < _items.length; j++) {
+          mode = _items[j].mode;
+          if (!isGroupable(mode))
+            continue;
+
+          if (_items[j].number > pos) {
+            _items[j].number--;
+
+            if (_items[i].group > 0)
+              _items[j].group--;
+          }
+        }
+
+        flag = false;
+
+        for (var j = 0; j < _items.length; j++) {
+          mode = _items[j].mode;
+          if (!isGroupable(mode))
+            continue;
+
+          if (_items[j].number == pos) {
+            flag = true;
+            break;
+          }
+        }
+      } while (flag == false);
+
+    }
+
+  }
+
+  function setGroup() {
+    var min = -1;
+    var flag = false;
+    var pos = 0;
+
+    for (var i = 0; i < _items.length; i++) {
+      mode = _items[i].mode;
+      if (!isGroupable(mode))
+        continue;
+
+      pos++;
+
+      if (_items[i].selected == true) {
+        if (min == -1) {
+          min = pos;
+        }
+
+        _items[i].group = 0;
+
+        flag = true;
+      }
+    }
+
+    if (flag == true) {
+      makeUndo();
+      flag = true;
+      for (var i = 0; i < _items.length; i++) {
+        mode = _items[i].mode;
+        if (!isGroupable(mode))
+          continue;
+
+        if (_items[i].group == min) {
+          flag = false;
+        }
+      }
+
+      if (flag == false) {
+        for (var j = min + 1; j < _items.length; j++) {
+          flag = false;
+          for (var i = 0; i < _items.length; i++) {
+            mode = _items[i].mode;
+            if (!isGroupable(mode))
+              continue;
+
+            if (_items[i].group == j) {
+              flag = true;
+              break;
+            }
+          }
+
+          if (flag == false) {
+            min = j;
+            break;
+          }
+        }
+      }
+
+      for (var i = 0; i < _items.length; i++) {
+        mode = _items[i].mode;
+        if (!isGroupable(mode))
+          continue;
+
+        if (_items[i].selected == true) {
+          _items[i].group = min;
+          _items[i].number = min;
+        }
+      }
+
+      // sort
+      for (var i = 0; i < _items.length; i++) {
+        for (var j = 0; j < _items.length - (i + 1); j++) {
+          var item = _items[j];
+          var item2 = _items[j + 1];
+
+          if (item.number > item2.number) {
+            var temp = item;
+            _items[j] = item2;
+            _items[j + 1] = temp;
+          }
+        }
+      }
+
+      makeGroupNumber();
+
+      modified();
+    }
+
+    cancelGroup();
+  }
+
+  function clickChk(i) {
+    if ($('#chk' + i).is(':checked')) {
+      _items[i].selected = true;
+    } else {
+      _items[i].selected = false;
+    }
+  }
+
+  function closePopup() {
+    if (_filetype == 5) {
+      viewFloorPopup();
+    }
+
+    viewPopupButton(true);
+
+    _mode = 0;
+
+    initUndo();
+
+    if (_filetype == 3) {
+      closePopup2();
+      return;
+    }
+
+    if (_filetype == 1 || _filetype == 5 || _filetype == 0 || _filetype == FILETYPE_FLOORITEM) {
+      popupDataSetting();
+    }
+
+    if (_filetype == 5) {
+      for (var i = 0; i < _items.length; i++) {
+        _items[i].name = $('#cboFloorName').val();
+        _items[i].memo = {type: _floortypeId};
+      }
+    }
+
+    $('#detailModal').hide();
+
+    setButton();
+
+    makeUndoContent();
+
+    $('#btnNumber').css('color', 'red');
+    $('#btnNumber').css('background-color', 'white');
+    $('#btnNumber2').css('color', 'blue');
+    $('#btnNumber2').css('background-color', 'white');
+  }
+
+  function viewPopupButton(flag) {
+    if (flag == false) {
+      $('#btnDetail').addClass('btn-select');
+
+      $('#divCombo').hide();
+
+      $('#btnCarbonation1').hide();
+      $('#btnCarbonation2').hide();
+
+      $('#btnSlope1').hide();
+      $('#btnSlope2').hide();
+      $('#btnSlope3').hide();
+
+
+      $('#btnNumber').hide();
+      $('#btnNumber2').hide();
+      $('#btnGroup').hide();
+      $('#btnSelect').hide();
+      $('#btnDelete').hide();
+      $('#btnMove').hide();
+      $('#btnDetail').hide();
+
+      if (_filetype != 0) {
+        $('#btnDetailClose').show();
+        $('#btnSave').show();
+      } else {
+        $('#btnDetailClose').hide();
+        $('#btnSave').show();
+      }
+      $('#btnUndo').hide();
+      $('#btnRedo').hide();
+      $('#btnZoom').hide();
+      $('#btnZoomUp').hide();
+      $('#btnZoomDown').hide();
+      $('#btnPan').hide();
+
+      $('#btnMemo').hide();
+      $('#btnStatus').hide();
+      $('#btnMemoDraw').hide();
+      $('#btnMemoClose').hide();
+    } else {
+      if (_filetype == 1 || _filetype == 5 || _filetype == FILETYPE_FLOORDRAW) {
+        $('#divCombo').show();
+      } else {
+        $('#divCombo').hide();
+      }
+
+      if (_filetype == 2) {
+        $('#btnCarbonation1').hide();
+        $('#btnCarbonation2').hide();
+
+        $('#btnSlope1').show();
+        $('#btnSlope2').show();
+        $('#btnSlope3').show();
+      }
+
+
+      if (_filetype == 3) {
+        $('#btnCarbonation1').show();
+        $('#btnCarbonation2').show();
+
+        $('#btnSlope1').hide();
+        $('#btnSlope2').hide();
+        $('#btnSlope3').hide();
+      }
+
+      if (_filetype == 4) {
+        $('#btnCarbonation1').hide();
+        $('#btnCarbonation2').hide();
+
+        $('#btnSlope1').hide();
+        $('#btnSlope2').hide();
+        $('#btnSlope3').hide();
+      }
+
+      if (_filetype != 0) {
+        $('#btnNumber').show();
+        $('#btnNumber2').show();
+        $('#btnGroup').show();
+        $('#btnSelect').show();
+        $('#btnDelete').show();
+        $('#btnMove').show();
+        $('#btnDetail').show();
+        $('#btnDetailClose').hide();
+        $('#btnUndo').show();
+        $('#btnRedo').show();
+
+        $('#btnZoom').show();
+        $('#btnZoomUp').show();
+        $('#btnZoomDown').show();
+        $('#btnPan').show();
+
+        $('#btnSave').show();
+        $('#btnMemo').show();
+        $('#btnStatus').show();
+        $('#btnMemoClose').hide();
+      }
+    }
+
+    if (_filetype == 6 || _filetype == FILETYPE_FLOORITEM) {
+      $('#btnDetail').hide();
+      $('#btnDetailClose').hide();
+
+      $('#btnSave').show();
+    }
+
+    if (_filetype == FILETYPE_FLOORDRAW) {
+      $('#btnNumber').hide();
+      $('#btnNumber2').hide();
+      $('#btnGroup').hide();
+
+      $('#btnMemo').hide();
+      $('#btnStatus').hide();
+      $('#btnDetail').hide();
+
+      $('#btnClose').show();
+    } else {
+      $('#btnClose').hide();
+    }
+  }
+
+  function viewPopup() {
+    resetType();
+
+    if (_filetype == 5) {
+      closeFloorPopup();
+    }
+
+
+    $('#divGroup').hide();
+
+    closeSinglePopup();
+
+    _mode = 0;
+
+    initUndo();
+
+    if (_filetype == 3) {
+      viewPopup2();
+      return;
+    }
+
+    if ($('#detailModal').is(':visible')) {
+      closePopup();
+      return;
+    }
+
+    setButton();
+
+    viewPopupButton(false);
+
+    makePopup();
+
+    $('#detailModal').css('height', (_h+1) + 'px');
+    $('#detailModal').show();
+  }
+
+  var _contents = [];
+  var _floortypes = [];
+  var _floornames = [];
+
+  function changeContent(pos) {
+    var txt = $('#content' + pos).val();
+
+    for (var i = 0; i < _contents.length; i++) {
+      var item = _contents[i];
+      if (item.name == txt) {
+        $('#progress' + pos).val(item.progress);
+        $('#remark' + pos).val(item.remark);
+
+        $('#statusprogress' + pos).html(item.progress);
+        $('#statusremark' + pos).html(item.remark);
+        break;
+      }
+    }
+
+    var flag = false;
+    var temp = txt.split('/');
+
+    for (var i = 0; i < temp.length; i++) {
+      var item = temp[i];
+
+      if ($.trim(item).indexOf('누수') > -1) {
+        $('#remark' + pos).val('결함부위 누수');
+        $('#statusremark' + pos).html('결함부위 누수');
+
+        flag = true;
+      }
+      
+      if ($.trim(item) == '누수') {
+        $('#progress' + pos).val('O');
+        $('#statusprogress' + pos).html('O');
+
+        break;
+      } else {
+        $('#progress' + pos).val('X');
+        $('#statusprogress' + pos).html('X');
+      }      
+    }
+
+    if (flag == false) {
+      for (var i = 0; i < _contents.length; i++) {
+        var item = _contents[i];
+
+        for (var j = 0; j < temp.length; j++) {
+          if (item.name == temp[j]) {
+            $('#remark' + pos).val(item.remark);
+            $('#statusremark' + pos).html(item.remark);
+
+            flag = true;
+            break;
+          }
+        }
+
+        if (flag == true) {
+          break;
+        }
+      }
+    }
+    
+    
+    var count = $('#count' + pos).val();
+
+    if (count == '') {
+      $('#count' + pos).val('1');
+      $('#statuscount' + pos).html('1');
+    }
+
+    modified();
+  }
+
+  function changeData() {
+    modified();
+  }
+
+  function clickTableRowMemo() {
+    viewStatusPopup(100, _selectedTableRow);
+  }
+    
+  function clickTableRow(e, pos, type) {
+    _selectedTableRow = pos - 1;
+
+    var h = 119 + 17 + pos * 31;
+
+    if (_h - h <= 50) {
+      h = h - (50 - (_h - h));
+    }
+
+    $('#tablePopup').css('top', h + 'px');
+    $('#tablePopup').css('left', '70px');
+
+    if (type == true) {
+      $('#btnTableRowCopy').show();
+      $('#btnTableRowDelete').show();
+      $('#btnTableRowInsert').show();
+      $('#btnTableRowUp').show();
+      $('#btnTableRowDown').show();
+    } else {
+      $('#btnTableRowCopy').hide();
+      $('#btnTableRowDelete').hide();
+      $('#btnTableRowInsert').hide();
+      $('#btnTableRowUp').hide();
+      $('#btnTableRowDown').hide();
+    }
+    
+    $('#tablePopup').show();
+
+    e = e || window.event;
+
+    e.preventDefault();
+    e.stopPropagation();
+  }
+
+  function makePopup() {
+    var str = '';
+
+    str += getTableHeader(true);
+
+    var maxGroup = 0;
+
+    var n = 0;
+    for (var i = 0; i < _items.length; i++) {
+      if (!isNumber(_items[i].mode))
+        continue;
+
+      var item = _items[i];
+
+      try {
+        if (item.name == null || item.name == undefined)
+          item.name = '';
+      } catch (e) {
+        item.name = '';
+      }
+
+      try {
+        if (item.fault == null || item.fault == undefined)
+          item.fault = '';
+      } catch (e) {
+        item.fault = '';
+      }
+
+      try {
+        if (item.content == null || item.content == undefined)
+          item.content = '';
+      } catch (e) {
+        item.content = '';
+      }
+
+      try {
+        if (item.report == null || item.report == undefined)
+          item.report = '';
+      } catch (e) {
+        item.report = '';        
+      }
+
+      try {
+        if (item.usermemo == null || item.usermemo == undefined)
+          item.usermemo = '';
+      } catch (e) {
+        item.usermemo = '';
+      }
+
+      try {
+        if (item.aptmemo == null || item.aptmemo == undefined)
+          item.aptmemo = '';
+      } catch (e) {
+        item.aptmemo = '';
+      }
+
+      try {
+        if (item.width == null || item.width == undefined)
+          item.width = '';
+      } catch (e) {
+        item.width = '';
+      }
+
+      try {
+        if (item.length == null || item.length == undefined)
+          item.length = '';
+      } catch (e) {
+        item.length = '';
+      }
+
+      try {
+        if (item.count == null || item.count == undefined)
+          item.count = '';
+      } catch (e) {
+        item.count = '';
+      }
+
+      try {
+        if (item.progress == null || item.progress == undefined)
+          item.progress = '';
+      } catch (e) {
+        item.progress = '';
+      }
+
+      try {
+        if (item.remark == null || item.remark == undefined)
+          item.remark = '';
+      } catch (e) {
+        item.remark = '';
+      }
+
+      try {
+        if (item.imagename == null || item.imagename == undefined)
+          item.imagename = '';
+      } catch (e) {
+        item.imagename = '';
+      }
+
+      if (item.width == 0)
+        item.width = '';
+
+      if (item.length == 0)
+        item.length = '';
+
+      if (item.count == 0)
+        item.count = '';
+
+      str += '    <tr>';
+      if (_filetype == FILETYPE_FLOORITEM) {
+        str += '        <td onClick="clickTableRow(event, ' + (n+1) + ', true)" align="center" style="cursor:hand;cursor:pointer;height:30px;">' + (n+1) + '</td>';      
+      }
+
+      /*
+         if (_items[i].group > 0) {
+         str += '        <td align="center">' + _items[i].group + '</td>';
+         maxGroup = _items[i].group;
+         } else {
+         maxGroup++;
+         str += '        <td align=center>' + maxGroup + '</td>';
+         }
+       */
+
+      str += getTableStr(i, item, '');
+
+      if (_filetype == FILETYPE_FLOORITEM) {
+        str += '<td id="divDrawTd' + i + '"></td>';
+      }
+
+      var deleteStr = '';
+
+      if (_serverMode == 'mobile') {
+        if (item.filename != '') {
+          deleteStr = '<div class="btn btn-delete" onClick="uploadDelete(' + i + ')">삭제</div><div><img src="' + getImagePath(item.filename) + '" onClick="viewThumbnail(\'' + item.filename + '\')" style="cursor:hand;cursor:pointer;height:29px;"></div>';
+        }
+
+        str += '        <td id="divUploadTd' + i + '" align="center" style="width:200px;"><div style="margin-left:5px;" class="btn" onClick="uploadCamera(' + i + ')">카메라</div>' + deleteStr + '<div style="clear:both;"></div></td>';
+      } else {
+        if (item.filename != '') {
+          deleteStr = '<div class="btn btn-delete" onClick="uploadDelete(' + i + ')">삭제</div><div><img src="' + getImagePath(item.filename) + '" onClick="viewThumbnail(\'' + item.filename + '\')" style="cursor:hand;cursor:pointer;height:29px;"></div>';
+        }
+
+        str += '        <td id="divUploadTd' + i + '" align="center" style="width:200px;"><div class="btn" onClick="upload(' + i + ')">업로드</div>' + deleteStr + '<div style="clear:both;"></div></td>';
+      }
+
+
+      str += '        </tr>';
+
+      n++;
+    }
+
+    $('#detailModal').html(str);
+
+    for (var i = 0; i < n; i++) {
+      changeImagename(i);
+    }
+  }
+
+
+  function saveSinglePopup() {
+    if (!$('#singleModal').is(':visible')) {
+      return;
+    }
+
+    if (_filetype == 4) {
+      var ts = [];
+      for (var i = 0; i < 10; i++) {
+        var floor = $('#txtFloor' + i).val();
+        var t = $('#txtT' + i).val();
+
+        ts.push({
+          floor: floor,
+          t: t
+        });
+      }
+
+      _items[_singleTarget].memo = ts;
+
+      return;
+    }
+
+    var i = 1000;
+    var t = _singleTarget;
+
+    _items[t].name = $('#name' + i).val();
+    _items[t].fault = $('#fault' + i).val();
+    _items[t].content = $('#content' + i).val();
+    _items[t].report = $('#report' + i).val();
+    _items[t].usermemo = $('#usermemo' + i).val();
+    _items[t].aptmemo = $('#aptmemo' + i).val();    
+    _items[t].width = $('#width' + i).val();
+    _items[t].length = $('#length' + i).val();
+    _items[t].count = $('#count' + i).val();
+    _items[t].progress = $('#progress' + i).val();
+    _items[t].remark = $('#remark' + i).val();
+    _items[t].imagename = $('#imagename' + i).val();
+  }
+
+  function closeSinglePopup() {
+    if (_filetype == 6) {
+      viewAreaPopup();
+    }
+    if ($('#singleModal').is(':visible')) {
+      saveSinglePopup();
+    }
+
+    $('#singleModal').hide();
+  }
+
+
+  function updateT(pos) {
+    var floor = $('#txtFloor' + pos).val();
+    var t = $('#txtT' + pos).val();
+
+    $('#lblFloor' + pos).html(floor);
+
+    var val = 0;
+
+    try {
+      val = parseInt(t);
+    } catch (e) {
+    }
+
+    val++;
+
+    $('#lblT' + pos).html(val);
+
+
+    var ts = [];
+    for (var i = 0; i < 10; i++) {
+      var floor = $('#txtFloor' + i).val();
+      var t = $('#txtT' + i).val();
+
+      ts.push({
+        floor: floor,
+        t: t
+      });
+    }
+
+    _items[_singleTarget].memo = ts;
+
+    modified();
+  }
+
+  function closeTablePopup() {
+    $('#tablePopup').hide();
+  }
+
+  var _selectedTableRow = 0;
+
+  function popupDataIndexing() {
+    var number = 1;
+    for (var i = 0; i < _items.length; i++) {
+      if (!isNumber(_items[i].mode))
+        continue;
+
+      _items[i].number = number;
+      number++;
+    }
+  }
+
+  function clickTableRowCopy() {
+    popupDataSetting();
+
+    var pos = 0;
+
+    for (var i = 0; i < _items.length; i++) {
+      if (!isNumber(_items[i].mode))
+        continue;
+
+      var item = _items[i];
+
+      if (pos == _selectedTableRow) {
+        var newItem = JSON.parse(JSON.stringify(item));
+
+        _items.splice(pos, 0, newItem);
+        break;
+      }
+
+      pos++;
+    }
+
+    popupDataIndexing();
+
+    makePopup();
+  }
+
+  function clickTableRowDelete() {
+    if (!confirm('현재 행을 삭제하시겠습니까')) {
+      return;
+    }
+
+    popupDataSetting();
+
+    var pos = 0;
+
+    for (var i = 0; i < _items.length; i++) {
+      if (!isNumber(_items[i].mode))
+        continue;
+
+      var item = _items[i];
+
+      if (pos == _selectedTableRow) {
+        _items.splice(pos, 1);
+        break;
+      }
+
+      pos++;
+    }
+
+    popupDataIndexing();
+
+    makePopup();
+  }
+
+  function clickTableRowInsert() {
+    popupDataSetting();
+
+    var pos = 0;
+
+    for (var i = 0; i < _items.length; i++) {
+      if (!isNumber(_items[i].mode))
+        continue;
+
+      var item = _items[i];
+
+      if (pos == _selectedTableRow) {
+        var newItem =  {
+          mode: TYPE_NUMBER,
+          points: '',
+          x: 0,
+          y: 0,
+          color: '',
+          selected: false,
+          group: 0,
+          number: i,
+
+          name: '',
+          fault: '',
+          content: '',
+          report: 1,
+          usermemo: '',
+          aptmemo: '',
+          width: '',
+          length: '',
+          count: '',
+          progress: '',
+          remark: '',
+          imagename: '',
+          filename: '',
+          memo: []
+        };
+
+        _items.splice(pos, 0, newItem);
+        break;
+      }
+
+      pos++;
+    }
+
+    popupDataIndexing();
+
+    makePopup();
+  }
+
+  function clickTableRowUp() {
+    popupDataSetting();
+
+    var pos = 0;
+
+    for (var i = 0; i < _items.length; i++) {
+      if (!isNumber(_items[i].mode))
+        continue;
+
+      var item = _items[i];
+
+      if (pos == _selectedTableRow) {
+        if (pos == 0) {
+          break;
+        }
+
+        var item2 = _items[i - 1];
+
+        _items[i] = item2;
+        _items[i - 1] = item;
+
+        break;
+      }
+
+      pos++;
+    }
+
+    popupDataIndexing();
+
+    makePopup();
+  }
+
+  function clickTableRowDown() {
+    popupDataSetting();
+
+    var pos = 0;
+    var length = 0;
+    for (var i = 0; i < _items.length; i++) {
+      if (!isNumber(_items[i].mode))
+        continue;
+
+      length++;
+    }
+
+    for (var i = 0; i < _items.length; i++) {
+      if (!isNumber(_items[i].mode))
+        continue;
+
+      var item = _items[i];
+
+      if (pos == _selectedTableRow) {
+        if (pos >= length - 1) {
+          break;
+        }
+
+        var item2 = _items[i + 1];
+
+        _items[i] = item2;
+        _items[i + 1] = item;
+
+        break;
+      }
+
+      pos++;
+    }
+
+    popupDataIndexing();
+
+    makePopup();
+  }
+
+  function getTableHeader(flag) {
+    var str = '';
+    str += '<table id="divPopupTable" border="1" cellpadding="4" style="width:100%;background:#eeeeee;">';
+    str += '    <tr>';
+
+    if (flag == true) {
+      if (_filetype == FILETYPE_FLOORITEM) {
+        str += '        <td align="center" width=50 rowspan="2">순번</td>';
+      }
+    }
+
+    if (_filetype != FILETYPE_FLOORITEM) {
+      str += '        <td align="center" width=60 rowspan="2">그룹/번호</td>';
+    }
+
+
+
+    str += '        <td align="center" width=80 rowspan="2">부위</td>';
+    str += '        <td align="center" width=80 rowspan="2">부재</td>';
+
+
+    str += '        <td align="center" width=125 rowspan="2">유형 및 형상</td>';
+    str += '        <td align="center" width=195 colspan="3">크기</td>';
+    str += '        <td align="center" width=60 rowspan="2">진행사항</td>';
+    str += '        <td align="center" width=140 rowspan="2">비고</td>';
+
+    if (_filetype == FILETYPE_FLOORITEM) {
+      str += '        <td align="center" width=52 rowspan="2">그리기</td>';
+      str += '        <td align="center" rowspan="2">사진</td>';
+    } else {
+      str += '        <td align="center" width=60 rowspan="2">사진명</td>';
+      str += '        <td align="center" rowspan="2">사진</td>';
+    }
+    str += '    </tr>';
+    str += '    <tr>';
+    str += '        <td align="center" width=60>폭(mm)</td>';
+    str += '        <td align="center" width=60>길이(m)</td>';
+    str += '        <td align="center" width=60>개소(EA)</td>';
+    str += '    </tr>';
+
+    if (_filetype == FILETYPE_FLOORITEM) {
+      str += '<img onClick="addTable()" style="cursor:hand;cursor:pointer;display:block;position:absolute;top:5px;left:' + (_w-26) + 'px;z-index:99999;width:22px;" src="assets/img/add.png" />';
+    }
+
+    return str;
+  }
+
+  function addTable() {
+    var length = $('#divPopupTable tr').length - 2;
+    var str = '';
+    var pos = _items.length;
+
+    for (var j = 0; j < 10; j++) {
+      var i = j + pos;
+      var item =  {
+        mode: TYPE_NUMBER,
+        points: '',
+        x: 0,
+        y: 0,
+        color: '',
+        selected: false,
+        group: 0,
+        number: i,
+
+        name: '',
+        fault: '',
+        content: '',
+        report: 1,
+        usermemo: '',
+        aptmemo: '',
+        width: '',
+        length: '',
+        count: '',
+        progress: '',
+        remark: '',
+        imagename: '',
+        filename: '',
+        memo: []
+      }
+
+      _items.push(item);
+
+      str += "<tr>";
+      str += '        <td  onClick="clickTableRow(event, ' + (i) + ')" align="center" style="cursor:hand;cursor:pointer;height:30px;">' + (i+1) + '</td>';
+      str += getTableStr(i, item, '');
+      str += '<td id="divDrawTd' + (i) + '"></td>';
+
+
+      if (_serverMode == 'mobile') {
+        if (item.filename != '') {
+          str += '        <td id="divUploadTd' + i + '" align="center" style="width:200px;"><div style="margin-left:5px;"  class="btn" onClick="uploadCamera(' + i + ')">카메라</div><div class="btn btn-delete" onClick="uploadDelete(' + i + ')">삭제</div><div><img src="' + getImagePath(item.filename) + '" onClick="viewThumbnail(\'' + item.filename + '\')" style="cursor:hand;cursor:pointer;height:29px;"></div><div style="clear:both;"></div></td>';
+        } else {
+          str += '        <td id="divUploadTd' + i + '" align="center" style="width:200px;"><div style="margin-left:5px;" class="btn" onClick="uploadCamera(' + i + ')">카메라</div><div style="clear:both;"></div></td>';
+        }
+      } else {
+        if (item.filename != '') {
+          str += '        <td id="divUploadTd' + i + '" align="center" style="width:200px;"><div class="btn" onClick="upload(' + i + ')">업로드</div><div class="btn btn-delete" onClick="uploadDelete(' + i + ')">삭제</div><div><img src="' + getImagePath(item.filename) + '" onClick="viewThumbnail(\'' + item.filename + '\')" style="cursor:hand;cursor:pointer;height:29px;"></div><div style="clear:both;"></div></td>';
+        } else {
+          str += '        <td id="divUploadTd' + i + '" align="center" style="width:200px;"><div class="btn" onClick="upload(' + i + ')">업로드</div><div style="clear:both;"></div></td>';
+        }
+      }
+
+      str += "</tr>";
+    }
+
+    //$('#divPopupTable tr:nth-child(' + (length-1) + ')').after(str);
+    $('#divPopupTable').append(str);
+  }
+
+  function changeImagename(i) {
+    var imagename = $('#imagename' + i).val();
+
+    if (imagename == '')
+      return;
+
+    var str = '';
+    var list = JSON.parse(localStorage.getItem('lists'));
+
+    for (var j = 0; j < list.statuss.length; j++) {
+      var status = list.statuss[j];
+      if (list.statuss[j].Type != 8)
+        continue;
+
+      if (status.Name == imagename) {
+        if (status.Content != '') {
+          str = '<div class="btn" onClick="clickDraw(' + i + ')" style="margin-left:1px;">그리기</div>';
+        }
+      }
+    }
+
+    $('#divDrawTd' + i).html(str);
+
+    var name = imagename;
+
+    if (name.indexOf('슬래브') > -1 || name.indexOf('슬라브') > -1) {
+      $('#width' + i).val('0.2');
+      $('#statuswidth' + i).html('0.2');
+    }
+
+    if (name.indexOf('벽체') > -1) {
+      $('#width' + i).val('0.1');
+      $('#statuswidth' + i).html('0.1');
+    }
+  }
+
+  function changeName(i) {
+    var name = $('#name' + i).val();
+
+    if (name == '')
+      return;
+
+    if (name.indexOf('슬래브') > -1 || name.indexOf('슬라브') > -1) {
+      $('#width' + i).val('0.2');
+      $('#statuswidth' + i).html('0.2');
+    }
+
+    if (name.indexOf('벽체') > -1) {
+      $('#width' + i).val('0.1');
+      $('#statuswidth' + i).html('0.1');
+    }
+  }
+
+  function closeDraw() {
+    var pos = 0;
+
+    for (var i = 0; i < _optitems.length; i++) {
+      var item = _optitems[i];
+
+      if (item.Id == _lastImage) {
+        pos = i;
+      }
+    }
+
+    clickImage(_lastImage, pos, '');
+    $('#lblImage').html(_oldTitle);
+    $('#divMenu').show();
+    $('#divDrawMenu').hide();
+  }
+
+  function setDrawTitle(title) {
+    $('#divMenu').hide();
+    $('#divDrawMenu').show();
+
+    $('#lblDraw').html(title);
+  }
+  var _lastImage;
+  var _oldTitle;
+
+  function getImage(id) {
+    for (var i = 0; i < _optitems.length; i++) {
+      if (_optitems[i].Id == id)
+        return _optitems[i];
+    }
+
+    return null;
+  }
+
+  var _imageId = -1;
+  var _imagefloorId = -1;
+
+  function clickDraw(pos) {
+    var title = $('#lblImage').html();
+    _oldTitle = title;
+
+    var name = $('#name' + pos).val();
+    var imagename = $('#imagename' + pos).val();
+
+    if (name == '' || imagename == '')
+      return;
+
+    _lastImage = _image;
+
+
+    if (_serverMode == 'mobile' || _serverMode == 'electron') {
+      var lists = JSON.parse(localStorage.getItem('lists'));
+      var imagefloors = lists.imagefloors || [];
+
+      var flag = false;
+      var id;
+      var target;
+
+      for (var i = 0; i < imagefloors.length; i++) {
+        var imagefloor = imagefloors[i];
+
+        if (imagefloor.Image == _image && imagefloor.Name == name && imagefloor.Imagename == imagename) {
+          id = imagefloor.Id;
+          target = imagefloor.Target;
+          flag = true;
+          break;
+        }
+      }
+
+
+      if (flag != true) {
+        var parent = getImage(_image);
+
+        lists.images.push({
+          Id: _imageId,
+          Apt: parent.Apt,
+          Name: name,
+          Level: parent.Level + 1,
+          Parent: parent.Id,
+          Last: 1,
+          Title: "",
+          Type: 9
+        });
+
+        _optitems = lists.images;
+
+        target = _imageId;
+
+        imagefloors.push({
+          id: _imagefloorId,
+          Image: _image,
+          Name: name,
+          Imagename: imagename,
+          Target: _imageId
+        });
+
+        lists.imagefloors = imagefloors;
+
+        _imageId--;
+        _imagefloorId--;
+
+        localStorage.setItem('lists', JSON.stringify(lists));
+      }
+
+      var items = [];
+
+      for (var i = 0; i < lists.images.length; i++) {
+        var item = lists.images[i];
+
+        if (item.Apt != _apt)
+          continue;
+
+        items.push(item);
+      }
+
+      save(function() {
+        imageProcess(items);
+
+        var pos = 0;
+
+        for (var i = 0; i < _optitems.length; i++) {
+          var item = _optitems[i];
+
+          if (item.Id == target) {
+            pos = i;
+          }
+        }
+
+        clickImage(target, pos, '');
+        setDrawTitle(title + ' : ' + name + ' ' + imagename);
+      });
+    } else {
+      var params = 'image=' + _image + '&name=' + encodeURIComponent(name) + '&imagename=' + encodeURIComponent(imagename);
+      $.post(_serverAddr + '/api/imagefloor/get', params, function(drawData) {
+        var draw = drawData.item;
+
+        var params = 'apt=' + _apt;
+        $.post(_serverAddr + '/api/image/list', params, function(data) {
+
+          save(function() {
+            imageProcess(data.items);
+
+            var pos = 0;
+
+            for (var i = 0; i < _optitems.length; i++) {
+              var item = _optitems[i];
+
+              if (item.Id == draw.Target) {
+                pos = i;
+              }
+            }
+
+            clickImage(draw.Target, pos, '');
+            setDrawTitle(title + ' : ' + name + ' ' + imagename);
+          });
+        });
+      });
+    }
+  }
+
+  function getTableStr(i, item, fault) {
+    var str = '';
+
+    var list = JSON.parse(localStorage.getItem('lists'));
+
+    if (_filetype == FILETYPE_FLOORITEM) {
+      str += '        <td style="background:white;">';
+      str += '<div class="select-editable" style="width:75px;cursor:hand;cursor:pointer;overflow:hidden;" onClick="viewStatusPopup(9, ' + i + ')">';
+      str += '<input type="hidden" id="name' + i + '" value="' + item.name + '" /><div id="statusname' + i + '" style="margin-top:5px;">' + item.name + '</div>';
+      str += '</div>'; 
+      str += '        </td>';
+
+      str += '        <td style="background:white;">';
+      str += '<div class="select-editable" style="width:75px;cursor:hand;cursor:pointer;overflow:hidden;" onClick="viewStatusPopup(8, ' + i + ')">';
+      str += '<input type="hidden" id="imagename' + i + '" value="' + item.imagename + '" /><div id="statusimagename' + i + '" style="margin-top:5px;">' + item.imagename + '</div>';
+      str += '</div>';
+
+      str += '        </td>';
+    } else {
+
+      str += '        <td onClick="clickTableRow(event, ' + (i+1) + ', false)" align="center" style="text-align:center;cursor:hand;cursor:pointer;">' + item.number + '</td>';
+
+
+      if (item.fault == '' && fault != '') {
+        item.fault = fault;
+      }
+
+      str += '        <td style="background:white;">';
+      str += '<div class="select-editable" style="width:75px;cursor:hand;cursor:pointer;overflow:hidden;" onClick="viewStatusPopup(10, ' + i + ')">';
+      str += '<input type="hidden" id="fault' + i + '" value="' + item.fault + '" /><div id="statusfault' + i + '" style="margin-top:5px;">' + item.fault + '</div>';
+      str += '</div>';
+      str += '        </td>';
+
+      str += '        <td style="background:white;">';
+
+      str += '<div class="select-editable" style="width:75px;cursor:hand;cursor:pointer;overflow:hidden;" onClick="viewStatusPopup(1, ' + i + ')">';
+      str += '<input type="hidden" id="name' + i + '" value="' + item.name + '" /><div id="statusname' + i + '" style="margin-top:5px;">' + item.name + '</div>';
+      str += '</div>';
+      str += '        </td>';
+    }
+
+
+
+    str += '        <td style="background:white;">';
+
+    str += '<input type="hidden" id="report' + i + '" value="' + item.report + '" />';
+    str += '<input type="hidden" id="usermemo' + i + '" value="' + item.usermemo + '" />';
+    str += '<input type="hidden" id="aptmemo' + i + '" value="' + item.aptmemo + '" />';
+    
+    str += '<div class="select-editable" style="width:120px;cursor:hand;cursor:pointer;overflow:hidden;" onClick="viewStatusPopup(2, ' + i + ')">';
+    str += '<input type="hidden" id="content' + i + '" value="' + item.content + '" /><div id="statuscontent' + i + '" style="margin-top:5px;">' + item.content + '</div>';
+      str += '</div>';
+
+
+    str += '        </td>';
+
+    str += '        <td style="background:white;">';
+    str += '<div class="select-editable" style="width:55px;cursor:hand;cursor:pointer;overflow:hidden;" onClick="viewStatusPopup(3, ' + i + ')">';
+    str += '<input type="hidden" id="width' + i + '" value="' + item.width + '" /><div id="statuswidth' + i + '" style="text-align:right;margin-top:5px;">' + item.width + '</div>';
+    str += '</div>';
+    str += '        </td>';
+
+    str += '        <td style="background:white;">';
+    str += '<div class="select-editable" style="width:55px;cursor:hand;cursor:pointer;overflow:hidden;" onClick="viewStatusPopup(4, ' + i + ')">';
+    str += '<input type="hidden" id="length' + i + '" value="' + item.length + '" /><div id="statuslength' + i + '" style="text-align:right;margin-top:5px;">' + item.length + '</div>';
+    str += '</div>';
+    str += '        </td>';
+
+    str += '        <td style="background:white;">';
+    str += '<div class="select-editable" style="width:55px;cursor:hand;cursor:pointer;overflow:hidden;" onClick="viewStatusPopup(5, ' + i + ')">';
+    str += '<input type="hidden" id="count' + i + '" value="' + item.count + '" /><div id="statuscount' + i + '" style="text-align:right;margin-top:5px;">' + item.count + '</div>';
+    str += '</div>';
+    str += '        </td>';
+
+    str += '        <td style="background:white;">';
+    str += '<div class="select-editable" style="width:55px;cursor:hand;cursor:pointer;overflow:hidden;" onClick="viewStatusPopup(6, ' + i + ')">';
+    str += '<input type="hidden" id="progress' + i + '" value="' + item.progress + '" /><div id="statusprogress' + i + '" style="text-align:center;margin-top:5px;">' + item.progress + '</div>';
+    str += '</div>';
+    str += '        </td>';
+
+    str += '        <td style="background:white;">';
+    str += '<div class="select-editable" style="width:135px;cursor:hand;cursor:pointer;overflow:hidden;" onClick="viewStatusPopup(7, ' + i + ')">';
+    str += '<input type="hidden" id="remark' + i + '" value="' + item.remark + '" /><div id="statusremark' + i + '" style="text-align:left;margin-top:5px;">' + item.remark + '</div>';
+    str += '</div>';
+    str += '        </td>';
+
+    if (_filetype != FILETYPE_FLOORITEM) {
+      str += '        <td style="background:white;"><input onChange="changeData()" id="imagename' + i + '" type="text" style="width:40px;border:none;" value="' + item.imagename + '" /></td>';
+    }
+
+    return str;
+  }
+
+  var _standard = '';
+
+
+
+  function ccw(x1, y1, x2, y2, x3, y3) {
+    x1 = parseFloat(x1);
+    x2 = parseFloat(x2);
+    x3 = parseFloat(x3);
+    y1 = parseFloat(y1);
+    y2 = parseFloat(y2);
+    y3 = parseFloat(y3);
+    return (x1*y2+ x2*y3 + x3* y1) - (y1*x2 + y2*x3 + y3*x1);
+  }
+
+  function gerAreaOfTriangle(x1, y1, x2, y2, x3, y3) {
+    x1 = parseFloat(x1);
+    x2 = parseFloat(x2);
+    x3 = parseFloat(x3);
+    y1 = parseFloat(y1);
+    y2 = parseFloat(y2);
+    y3 = parseFloat(y3);
+    return 0.5 * ccw(x1,y1,x2,y2,x3,y3);
+  }
+
+
+  function calcArea2(n, x, y) {
+    var res = 0.0;
+    for (var i = 1; i < n; i++)
+      res += ccw(x[0], x[i - 1], x[i], y[0], y[i - 1], y[i]);
+
+    return Math.abs(res);
+  }
+
+
+  function calcArea(n, x, y) {
+    var sum = 0.0;
+
+    try {
+      for (var i = 0; i < n - 1; i++) {
+        sum += ((x[i] * y[i + 1]) / 2.0 - (x[i + 1] * y[i]) / 2.0);
+      }
+    } catch (e) {
+      return 0.0;
+    }
+
+    return Math.abs(sum);
+  }
+
+  function changeStandard() {
+    var value = parseFloat($('#txtStandard').val());
+
+    if (isNaN(value))
+      return;
+
+    var total = 0;
+    var total2 = 0;
+
+    _standard = value;
+
+    var pos = 0;
+    var standard = 0;
+
+    for (var i = 0; i < _items.length; i ++) {
+      var item = _items[i];
+
+      if (item.mode != TYPE_LENGTH && item.mode != TYPE_AREA && item.mode != TYPE_LENGTH2)
+        continue;
+
+      if (i == _items.length -1 && _area == true)
+        continue;
+
+      var dx = Math.abs(item.points[0].x - item.points[1].x);
+      var dy = Math.abs(item.points[0].y - item.points[1].y);
+      var length = Math.sqrt(dx * dx + dy * dy);
+      if (pos == 0) {
+        standard = length;
+        _items[i].width = value;
+      } else {
+        if (item.mode == TYPE_LENGTH) {
+          var value = 0;
+
+          try {
+            if (standard > 0) {
+              value = (_standard * length / standard).toFixed(2);
+            }
+          } catch (e) {
+          }
+          
+          _items[i].width = value;
+          $('#lblArea' + i).html(value);
+
+          total += parseFloat(value);
+        } else if (item.mode == TYPE_LENGTH2) {
+          var value = 0;
+
+          try {
+            var n = item.points.length;
+            var oldx = -9999;
+            var oldy = -9999;
+
+            for (var j = 0; j < item.points.length; j++) {
+              var point = item.points[j];
+
+              if (j > 0) {
+                var oldpoint = item.points[j - 1];
+
+                if (point.x == oldpoint.x && point.y == oldpoint.y) {
+                } else {
+                  var dx = Math.abs(point.x - oldpoint.x);
+                  var dy = Math.abs(point.y - oldpoint.y);
+                  var length = Math.sqrt(dx * dx + dy * dy);
+
+                  if (standard > 0) {
+                    value += (_standard * length / standard);
+                  }
+                }
+              }
+
+              oldx = point.x;
+              oldy = point.y;
+            }
+          } catch (e) {
+          }
+
+
+          value = value.toFixed(2);
+          _items[i].width = value;
+          $('#lblArea' + i).html(value);
+
+          total += parseFloat(value);
+        } else {
+          var x = [];
+          var y = [];
+          var n = item.points.length;
+          var oldx = -9999;
+          var oldy = -9999;
+
+          for (var j = 0; j < item.points.length; j++) {
+            var point = item.points[j];
+
+            if (oldx == point.x && oldy == point.y) {
+              continue;
+            }
+
+            x.push(point.x);
+            y.push(point.y);
+
+            oldx = point.x;
+            oldy = point.y;
+          }
+
+          var totalArea = calcArea(n, x, y);
+          var value = 0;
+          if (standard > 0) {
+            value = (_standard * _standard * totalArea / standard / standard ).toFixed(2);
+          }
+
+          if (item.points.length < 3)
+            value = 0.0;
+
+          _items[i].width = value;
+          $('#lblArea' + i).html(value);
+
+          total2 += parseFloat(value);
+        }
+      }
+
+      pos++;
+    }
+
+    $('#lblAreaTotal').html(parseFloat(total).toFixed(2));
+    $('#lblAreaTotalArea').html(parseFloat(total2).toFixed(2));
+
+    modified();
+  }
+
+  var _floortypeId = 0;
+
+  function clickFloorImage(id) {
+    _floortypeId = id;
+
+    viewFloorPopup();
+
+    modified();
+  }
+
+  function closeFloorPopup() {
+    $('#areaPopup').hide();
+  }
+
+  function changeFloorName() {
+    var name = $('#cboFloorName').val();
+    for (var i = 0; i < _items.length; i++) {
+      _items[i].name = name;
+    }
+
+    modified();
+  }
+
+  function viewFloorPopup() {
+    var str = '';
+
+    var name;
+
+    if (_items.length > 0) {
+      name = _items[0].name;
+    }
+
+
+    str += '<div style="height:' + (_h - 2) + 'px;overflow:auto;selector-dummy: expression(this.hideFocus=true);">';
+    str += '<table border="1" cellpadding="4" style="width:100%;background:#eeeeee;">';
+    str += '    <tr>';
+    str += '        <td style="height:30px;width:80px;" align="center">부재명</td>';
+    str += '    </tr>';
+    str += '    <tr>';
+    str += '        <td style="background:white;height:30px;padding-left:10px;" align="left">';
+    str += '<select onChange="changeFloorName()" id="cboFloorName" style="width:140px;border:none;margin:10px 0px;">';
+    str += '<option value=""></option>';
+
+
+    for (var i = 0; i < _floornames.length; i++) {
+      var selected = '';
+
+      if (_items.length > 0) {
+        if (_floornames[i].id == _items[0].name) {
+          selected = ' selected';
+        }
+      }
+      str += '<option value="' + _floornames[i].id + '"' + selected + '>' + _floornames[i].name + '</option>';
+    }
+
+    str += '</select>';
+
+    str += '</td>';
+    str += '    </tr>';
+    str += '    <tr>';
+    str += '        <td style="height:30px;width:80px;" align="center">부재열</td>';
+    str += '    </tr>';
+    str += '    <tr>';
+    str += '        <td style="background:white;padding:0px 10px 10px 10px;" align="left">';
+
+    for (var i = 0; i < _floortypes.length; i++) {
+      var item = _floortypes[i];
+      if (item.id == _floortypeId)
+        str += '<div style="padding:10px;margin-top:10px;cursor:hand;cursor:pointer;border:2px solid #cc0000;" onClick="clickFloorImage(' + item.id + ')"><img src="' + getImagePath(item.filename) + '" style="width:80px;display:block;margin-left:auto;margin-right:auto;"></div>';
+      else
+        str += '<div style="padding:10px;margin-top:10px;cursor:hand;cursor:pointer;border:2px solid #FFFFFF;" onClick="clickFloorImage(' + item.id + ')"><img src="' + getImagePath(item.filename) + '" style="width:80px;display:block;margin-left:auto;margin-right:auto;"></div>';
+    }
+
+
+    str += '</td>';
+    str += '    </tr>';
+
+    str += '</table>';
+    str += '</div>';
+
+    $('#areaPopup').html(str);
+
+    $('#areaPopup').css('left', (_w - 165 + 22) + 'px');
+    $('#areaPopup').css('width', '165px');
+    $('#areaPopup').css('top', '117px');
+    $('#areaPopup').show();
+
+  }
+
+  var _areaPopupPosition = 2;
+
+  function moveAreaPopup(pos) {
+    if (pos == 1) {
+      $('#btnAreaPopupLeft').hide();
+      $('#btnAreaPopupRight').show();
+
+      $('#areaPopup').css('left', 20 + 'px');
+
+      _areaPopupPosition = 1;
+    } else {
+      $('#btnAreaPopupLeft').show();
+      $('#btnAreaPopupRight').hide();
+
+      $('#areaPopup').css('left', (_w - 265 + 22) + 'px');
+
+      _areaPopupPosition = 2;
+    }
+  }
+
+  function viewAreaPopup() {
+    var str = '';
+
+    str += '<div style="overflow:auto;">';
+    str += '<table border="1" cellpadding="4" style="width:100%;background:#eeeeee;">';
+    str += '    <tr>';
+    str += '        <td style="background:#ccc;height:30px;width:80px;" align="center">순번</td>';
+    str += '        <td style="background:#ccc;height:30px;width:160px;" align="center">길이 <a id="btnAreaPopupLeft" href="javascript:moveAreaPopup(1)">◀</a><a id="btnAreaPopupRight" style="display:none;" href="javascript:moveAreaPopup(2)">▶</a></td>';
+    str += '    </tr>';
+
+    var already = false;
+    var pos = 0;
+    var total = 0;
+    var cnt = 0;
+
+    for (var i = 0; i < _items.length; i ++) {
+      var item = _items[i];
+
+      if (item.mode != TYPE_LENGTH && item.mode != TYPE_LENGTH2)
+        continue;
+
+      if (i == _items.length -1 && _area == true)
+        continue;
+
+      if (pos == 0) {
+        str += '    <tr>';
+        str += '        <td style="height:30px;width:80px;" align="center">' + item.number + '</td>';
+        str += '        <td style="background:white;height:30px;padding-left:10px;" align="left"><input type="text" id="txtStandard" onKeyUp="changeStandard()" style="width:140px;border:none;" value="' + item.width + '"></td>';
+        str += '    </tr>';
+
+        already = true;
+      } else {
+        str += '    <tr>';
+        str += '        <td style="height:30px;width:80px;" align="center">' + item.number + '</td>';
+        str += '        <td id="lblArea' + i + '" style="height:30px;padding-left:20px;" align="left">' + item.width + '</td>';
+        str += '    </tr>';
+      }
+
+      total += item.width;
+
+      pos++;
+    }
+
+    str += '    <tr>';
+    str += '        <td style="height:30px;width:80px;" align="center">합계</td>';
+    str += '        <td id="lblAreaTotal" style="height:30px;padding-left:20px;" align="left">' + parseFloat(total).toFixed(2) + '</td>';
+    str += '    </tr>';
+
+
+    str += '    <tr>';
+    str += '        <td style="background:#ccc;height:30px;width:80px;" align="center">순번</td>';
+    str += '        <td style="background:#ccc;height:30px;width:160px;" align="center">면적</td>';
+    str += '    </tr>';
+
+    pos = 0;
+    total = 0;
+
+
+    for (var i = 0; i < _items.length; i ++) {
+      var item = _items[i];
+
+      if (item.mode != TYPE_AREA)
+        continue;
+
+      if (i == _items.length -1 && _area == true)
+        continue;
+
+      if (pos == 0 && already == false) {
+        str += '    <tr>';
+        str += '        <td style="height:30px;width:80px;" align="center">' + item.number + '</td>';
+        str += '        <td style="background:white;height:30px;padding-left:10px;" align="left"><input type="text" id="txtStandard" onKeyUp="changeStandard()" style="width:140px;border:none;" value="' + item.width + '"></td>';
+        str += '    </tr>';
+
+        already = true;
+      } else {
+        str += '    <tr>';
+        str += '        <td style="height:30px;width:80px;" align="center">' + item.number + '</td>';
+        str += '        <td id="lblArea' + i + '" style="height:30px;padding-left:20px;" align="left">' + item.width + '</td>';
+        str += '    </tr>';
+      }
+
+      total += item.width;
+
+      pos++;
+    }
+
+    str += '    <tr>';
+    str += '        <td style="height:30px;width:80px;" align="center">합계</td>';
+    str += '        <td id="lblAreaTotalArea" style="height:30px;padding-left:20px;" align="left">' + parseFloat(total).toFixed(2) + '</td>';
+    str += '    </tr>';
+
+
+    str += '</table>';
+    str += '</div>';
+
+
+    $('#areaPopup').html(str);
+
+
+    moveAreaPopup(_areaPopupPosition);
+    //$('#areaPopup').css('left', (_w - 265 + 22) + 'px');
+
+    $('#areaPopup').css('width', '265px');
+    $('#areaPopup').css('height', _h + 'px');
+    $('#areaPopup').css('top', '117px');
+    $('#areaPopup').show();
+
+    changeStandard();
+
+    initModified();
+  }
+
+  function viewSinglePopup(pos) {
+    if (_filetype == 4) {
+      if (pos == -1) {
+        if (_items.length % 2 != 0) {
+          return;
+        }
+      } else {
+        if ((pos+1) % 2 != 0) {
+          if (pos == _items.length - 1) {
+            closeSinglePopup();
+            return;
+          }
+        }
+      }
+    }
+
+    var item;
+
+    if (pos == -1) {
+      var num = 0;
+      for (var i = 0; i < _items.length; i++) {
+        mode = _items[i].mode;
+        if (!isGroupable(mode))
+          continue;
+
+        if (_items[i].number > num)
+          num = _items[i].number;
+      }
+
+      num;
+
+      item =  {
+        mode: TYPE_NUMBER,
+        points: '',
+        x: 0,
+        y: 0,
+        color: '',
+        selected: false,
+        group: 0,
+        number: num,
+
+        name: '',
+        fault: '',
+        content: '',
+        report: 1,
+        usermemo: '',
+        aptmemo: '',
+        width: '',
+        length: '',
+        count: '',
+        progress: '',
+        remark: '',
+        imagename: '',
+        filename: '',
+        memo: []
+      }
+
+      _singleTarget = _items.length - 1;
+    } else {
+      if (_filetype == 4) {
+        var target = pos + 1;
+        if (pos == -1)
+          target = _items.length - 1;
+
+        if (target % 2 != 0)
+          target++;
+
+        pos = target - 1;
+      }
+
+      item = _items[pos];
+      _singleTarget = pos;
+    }
+
+
+    try {
+      if (item.name == null || item.name == undefined)
+        item.name = '';
+    } catch (e) {
+      item.name = '';
+    }
+
+    try {
+      if (item.fault == null || item.fault == undefined)
+        item.fault = '';
+    } catch (e) {
+      item.fault = '';
+    }
+
+    try {
+      if (item.content == null || item.content == undefined)
+        item.content = '';
+    } catch (e) {
+      item.content = '';
+    }
+
+    try {
+      if (item.report == null || item.report == undefined)
+        item.report = '';
+    } catch (e) {
+      item.report = '';
+    }
+
+    try {
+      if (item.usermemo == null || item.usermemo == undefined)
+        item.usermemo = '';
+    } catch (e) {
+      item.usermemo = '';
+    }
+
+    try {
+      if (item.aptmemo == null || item.aptmemo == undefined)
+        item.aptmemo = '';
+    } catch (e) {
+      item.aptmemo = '';
+    }
+
+    try {
+      if (item.width == null || item.width == undefined)
+        item.width = '';
+    } catch (e) {
+      item.width = '';
+    }
+
+    try {
+      if (item.length == null || item.length == undefined)
+        item.length = '';
+    } catch (e) {
+      item.length = '';
+    }
+
+    try {
+      if (item.count == null || item.count == undefined)
+        item.count = '';
+    } catch (e) {
+      item.count = '';
+    }
+
+    try {
+      if (item.progress == null || item.progress == undefined)
+        item.progress = '';
+    } catch (e) {
+      item.progress = '';
+    }
+
+    try {
+      if (item.remark == null || item.remark == undefined)
+        item.remark = '';
+    } catch (e) {
+      item.remark = '';
+    }
+
+    try {
+      if (item.imagename == null || item.imagename == undefined)
+        item.imagename = '';
+    } catch (e) {
+      item.imagename = '';
+    }
+
+    try {
+      if (item.memo == null || item.memo == undefined) {
+        item.memo = '';
+      }
+    } catch (e) {
+      item.memo = '';
+    }
+
+    i = 1000;
+
+
+
+    var str = '';
+
+    if (_filetype == 4) {
+      var color = '#ffcccc';
+
+      if (item.mode == TYPE_NUMBER2)
+        color = '#ccccff';
+
+      var tn = item.number;
+      if (item.number % 2 == 0) {
+        tn--;
+      }
+
+      //str += '<div style="height:' + (_h - 2) + 'px;overflow:auto;">';
+      str += '<div style="overflow:auto;">';
+      str += '<table border="1" cellpadding="4" style="width:100%;background:#eeeeee;">';
+      str += '    <tr>';
+      str += '        <td style="height:30px;width:160px;" colspan=2 align="center">측정위치 ' + (tn) + '</td>';
+      str += '        <td style="height:30px;width:160px;" colspan=2 align="center">측정위치 ' + (tn + 1) + '</td>';
+      str += '    </tr>';
+      str += '    <tr>';
+      str += '        <td style="height:30px;width:80px;" align="center">층</td>';
+      str += '        <td style="height:30px;width:80px;" align="center">T</td>';
+      str += '        <td style="height:30px;width:80px;" align="center">층</td>';
+      str += '        <td style="height:30px;width:80px;" align="center">T</td>';
+      str += '    </tr>';
+
+      var pos = 0;
+      var ts = item.memo;
+
+      for (var i = 0; i < 10; i ++) {
+
+        var floor = '';
+        var t = '';
+
+
+        if (ts.length > i) {
+          floor = ts[i].floor;
+          t = ts[i].t;
+        }
+
+        var floor2 = '';
+        var t2 = '';
+
+        str += '    <tr>';
+        str += '        <td style="background:#FFF;height:30px;width:80px;" align="center"><input onKeyUp="updateT(' + pos + ')" id="txtFloor' + pos + '" type="text" style="padding:0px 10px;width:58px;border:none;" value="' + floor + '" /></td>';
+        str += '        <td style="background:#FFF;height:30px;width:80px;" align="center"><input onKeyUp="updateT(' + pos + ')" id="txtT' + pos + '" type="text" style="padding:0px 10px;width:58px;border:none;" value="' + t + '" /></td>';
+        str += '        <td style="background:' + color + ';height:30px;padding-left:10px;" align="left" id="lblFloor' + pos + '">' + floor2 + '</td>';
+        str += '        <td style="background:' + color + ';height:30px;padding-left:10px;" align="left" id="lblT' + pos + '">' + t2 + '</td>';
+        str += '    </tr>';
+
+        pos++;
+      }
+
+      str += '</table>';
+      str += '</div>';
+
+      str += '<img onClick="closeSinglePopup()" style="cursor:hand;cursor:pointer;display:block;position:absolute;top:5px;left:298px;z-index:99999;width:22px;" src="assets/img/close2.png" />';
+
+      $('#singleModal').html(str);
+
+      for (var i = 0; i < 10; i ++) {
+        updateT(i);
+      }
+
+      $('#singleModal').css('left', (_w - 325 + 22) + 'px');
+      $('#singleModal').css('width', '325px');
+      $('#singleModal').css('top', '117px');
+      $('#singleModal').show();
+      return;
+    }
+
+    str += getTableHeader(false);
+
+    var fault = '';
+    for (var j = 0; j < _items.length; j++) {
+      if (!isGroupable(_items[j].mode))
+        continue;
+
+      if (_items[j] == undefined)
+        continue;
+
+      if (_items[j] == null)
+        continue;
+
+      var ftemp = _items[j].fault;
+
+      if (ftemp != undefined && ftemp != null && ftemp != '') {
+        fault = _items[j].fault;
+      }
+    }
+
+    str += '    <tr>';
+    /*
+       if (_items[i].group > 0) {
+       str += '        <td align="center">' + _items[i].group + '</td>';
+       maxGroup = _items[i].group;
+       } else {
+       maxGroup++;
+       str += '        <td align=center>' + maxGroup + '</td>';
+       }
+     */
+
+    str += getTableStr(i, item, fault);
+
+    if (_serverMode == 'mobile') {
+      if (item.filename != '') {
+        str += '        <td id="divUploadTd' + i + '" align="center" style="width:200px;"><div style="margin-left:5px;"  class="btn" onClick="uploadCamera(' + i + ')">카메라</div><div class="btn btn-delete" onClick="uploadDelete(' + i + ')">삭제</div><div><img src="' + getImagePath(item.filename) + '" onClick="viewThumbnail(\'' + item.filename + '\')" style="cursor:hand;cursor:pointer;height:29px;"></div><div style="clear:both;"></div></td>';
+      } else {
+        str += '        <td id="divUploadTd' + i + '" align="center" style="width:200px;"><div style="margin-left:5px;" class="btn" onClick="uploadCamera(' + i + ')">카메라</div><div style="clear:both;"></div></td>';
+      }
+    } else {
+      if (item.filename != '') {
+        str += '        <td id="divUploadTd' + i + '" align="center" style="width:200px;"><div class="btn" onClick="upload(' + i + ')">업로드</div><div class="btn btn-delete" onClick="uploadDelete(' + i + ')">삭제</div><div><img src="' + getImagePath(item.filename) + '" onClick="viewThumbnail(\'' + item.filename + '\')" style="cursor:hand;cursor:pointer;height:29px;"></div><div style="clear:both;"></div></td>';
+      } else {
+        str += '        <td id="divUploadTd' + i + '" align="center" style="width:200px;"><div class="btn" onClick="upload(' + i + ')">업로드</div><div style="clear:both;"></div></td>';
+      }
+    }
+    str += '        </tr>';
+    str += '        </table>';
+
+    str += '<img onClick="closeSinglePopup()" style="cursor:hand;cursor:pointer;display:block;position:absolute;top:5px;left:' + (_w-24) + 'px;z-index:99999;width:22px;" src="assets/img/close2.png" />';
+
+    $('#singleModal').html(str);
+    $('#singleModal').css('left', '20px');
+    $('#singleModal').css('width', (_w+2) + 'px');
+    $('#singleModal').css('top', (_h+48) + 'px');
+    $('#singleModal').show();
+  }
+
+  function makePopupUpload(pos) {
+    if (pos == 1000) {
+
+      var item = _items[_singleTarget];
+      var str = '';
+
+      var i = pos;
+
+      if (_serverMode == 'mobile') {
+        if (item.filename != '') {
+          str += '<div style="margin-left:5px;"  class="btn" onClick="uploadCamera(' + i + ')">카메라</div><div class="btn btn-delete" onClick="uploadDelete(' + i + ')">삭제</div><div><img src="' + getImagePath(item.filename) + '" onClick="viewThumbnail(\'' + item.filename + '\')" style="cursor:hand;cursor:pointer;height:29px;"></div><div style="clear:both;"></div>';
+        } else {
+          str += '<div style="margin-left:5px;" class="btn" onClick="uploadCamera(' + i + ')">카메라</div><div style="clear:both;"></div>';
+        }
+      } else {
+        if (item.filename != '') {
+          str += '<div class="btn" onClick="upload(' + i + ')">업로드</div><div class="btn btn-delete" onClick="uploadDelete(' + i + ')">삭제</div><div><img src="' + getImagePath(item.filename) + '" onClick="viewThumbnail(\'' + item.filename + '\')" style="cursor:hand;cursor:pointer;height:29px;"></div><div style="clear:both;"></div>';
+        } else {
+          str += '<div class="btn" onClick="upload(' + i + ')">업로드</div><div style="clear:both;"></div>';
+        }
+      }
+
+
+      $('#divUploadTd' + i).html(str);
+
+      return;
+    }
+
+    for (var i = 0; i < _items.length; i++) {
+      if (!isNumber(_items[i].mode))
+        continue;
+
+      var item = _items[i];
+      var str = '';
+
+      if (_serverMode == 'mobile') {
+        if (item.filename != '') {
+          str += '<div style="margin-left:5px;"  class="btn" onClick="uploadCamera(' + i + ')">카메라</div><div class="btn btn-delete" onClick="uploadDelete(' + i + ')">삭제</div><div><img src="' + getImagePath(item.filename) + '" onClick="viewThumbnail(\'' + item.filename + '\')" style="cursor:hand;cursor:pointer;height:29px;"></div><div style="clear:both;"></div>';
+        } else {
+          str += '<div style="margin-left:5px;" class="btn" onClick="uploadCamera(' + i + ')">카메라</div><div style="clear:both;"></div>';
+        }
+      } else {
+        if (item.filename != '') {
+          str += '<div class="btn" onClick="upload(' + i + ')">업로드</div><div class="btn btn-delete" onClick="uploadDelete(' + i + ')">삭제</div><div><img src="' + getImagePath(item.filename) + '" onClick="viewThumbnail(\'' + item.filename + '\')" style="cursor:hand;cursor:pointer;height:29px;"></div><div style="clear:both;"></div>';
+        } else {
+          str += '<div class="btn" onClick="upload(' + i + ')">업로드</div><div style="clear:both;"></div>';
+        }
+      }
+
+
+      $('#divUploadTd' + i).html(str);
+    }
+  }
+
+
+  function uploadDelete(pos) {
+    if (pos == 1000)
+      _items[_singleTarget].filename = '';
+    else
+      _items[pos].filename = '';
+
+    makePopupUpload(pos);
+  }
+
+  function reset() {
+    _mode = 1;
+    _items = [];
+    _type = 1;
+    _lines = [];
+    _undos = [];
+    _redos = [];
+
+    _zoom = 1;
+    resizeCanvas(true);
+  }
+
+  function makeItems2() {
+    var length = 0;
+
+    if (_items2 != null && _items2 != undefined) {
+      length = _items2.length;
+    } else {
+      if (_items2 == null) {
+        _items2 = [];
+      }
+
+      if (_items2 == undefined) {
+        _items2 = [];
+      }
+    }
+
+    for (var i = 0; i < 10 - length; i++) {
+      _items2.push(
+        {
+          name: '',
+          content: '',
+          width: '',
+          length: '',
+          count: ''
+        }
+      );
+
+    }
+
+    for (var i = 0; i < 10; i++) {
+      var name = $('#flow' + i).val();
+      if (name == undefined) name = '';
+      var sh1 = $('#sh1' + i).val();
+      if (sh1 == undefined) sh1 = '';
+      var sh2 = $('#sh2' + i).val();
+      if (sh2 == undefined) sh2 = '';
+      var n = $('#n' + i).val();
+      if (n == undefined) n = '';
+      var ps = $('#ps' + i).val();
+      if (ps == undefined) ps = '';
+      _items2[i].name = name;
+      _items2[i].content = sh1;
+      _items2[i].width = sh2;
+      _items2[i].length= n;
+      _items2[i].count= ps;
+    }
+  }
+  function closeMemo() {
+    _mode = 0;
+
+    initUndo();
+
+    _memo = false;
+
+    $('#btnMemo').removeClass('btn-select');
+
+    $('#btnMemo').show();
+    $('#btnMemoClose').hide();
+    setFiletype();
+
+    $('#btnNumber').css('color', 'red');
+    $('#btnNumber').css('background-color', 'white');
+    $('#btnNumber2').css('color', 'blue');
+    $('#btnNumber2').css('background-color', 'white');
+  }
+
+  function memo() {
+    initUndo();
+
+    if (_memo == true) {
+      closeMemo();
+      return;
+    }
+
+    setButton();
+
+    selectType(30);
+
+    _memo = true;
+
+    setFiletype();
+  }
+
+  function deleteImage() {
+    $('#image').val('');
+    $('#divImage').html('');
+  }
+
+  var _upload = 0;
+
+  function upload(pos) {
+    _upload = pos;
+
+    var c = document.querySelector('#upload');
+    c.click();
+  }
+
+  function displayImage(imgUri) {
+    //var elem = document.getElementById('imageFile');
+    //elem.src = imgUri;
+    console.log(imgUri);
+  }
+
+  function createNewFileEntry(imgUri) {
+    if (_upload == 1000)
+      _items[_singleTarget].filename = 'webdata/' + imgUri;
+    else
+      _items[_upload].filename = 'webdata/' + imgUri;
+    /*
+       var str = '<img src="/ajax/image/picture?filename=' + data.filename + '" style="width:168px;height:200px;" />';
+       $('#image').val(data.filename);
+       $('#divImage').html(str);
+     */
+
+    modified();
+  }
+
+  function setOptions(srcType) {
+    var options = {
+      // Some common settings are 20, 50, and 100
+      quality: 50,
+      destinationType: Camera.DestinationType.FILE_URI,
+      // In this app, dynamically set the picture source, Camera or photo gallery
+      sourceType: srcType,
+      encodingType: Camera.EncodingType.JPEG,
+      mediaType: Camera.MediaType.PICTURE,
+      allowEdit: false,
+      correctOrientation: true
+    }
+    return options;
+  }
+
+  function copyToLocation(src) {
+    window.resolveLocalFileSystemURL(src, function (fileEntry) {
+      window.resolveLocalFileSystemURL(cordova.file.dataDirectory, function (directory) {
+        fileEntry.moveTo(directory, basename(src), function() {
+          makePopupUpload(_upload);
+        }, function() {
+          alert('Copying Unsuccessful ');
+        });
+      },null);
+    }, null);
+  }
+
+  function uploadCamera(pos) {
+    _upload = pos;
+
+    if (_serverMode == 'mobile') {
+      var srcType = Camera.PictureSourceType.CAMERA;
+      var options = setOptions(srcType);
+      var func = createNewFileEntry;
+
+      navigator.camera.getPicture(function cameraSuccess(imageUri) {
+
+        //displayImage(imageUri);
+        // You may choose to copy the picture, save it somewhere, or upload.
+        copyToLocation(imageUri);
+        func(basename(imageUri));
+
+      }, function cameraError(error) {
+        console.debug("Unable to obtain picture: " + error, "app");
+
+      }, options);
+    } else {
+      var c = document.querySelector('#upload');
+      c.click();
+    }
+  }
+
+  function uploadProcess() {
+    $('#upload_form').submit();
+  }
+
+  function setButton() {
+    $('.btn').removeClass('btn-select');
+
+    if ($('#detailModal').is(':visible')) {
+      if (_filetype == 3) {
+        makeItems2();
+
+        updateCalc();
+
+        $('#detailModal').toggle();
+      }
+
+      if (_filetype == 1 || _filetype == 5) {
+        popupDataSetting();
+
+        $('#detailModal').hide();
+      }
+    }
+  }
+
+  function viewThumbnail(filename) {
+    var w = $(window).width();
+    var h = $(window).height();
+
+    $('#divShadow').css('width', w + 'px');
+    $('#divShadow').css('height', h + 'px');
+
+    $('#divThumbnail').css('width', w + 'px');
+    $('#divThumbnail').css('height', h + 'px');
+
+    $('#divShadow').show();
+    $('#divThumbnail').show();
+
+    $('#imgThumbnail').css('max-width', w + 'px');
+    $('#imgThumbnail').css('max-height', h + 'px');
+    $('#imgThumbnail').attr('src', '/' + filename);
+  }
+
+  function closeThumbnail() {
+    $('#divThumbnail').hide();
+    $('#divShadow').hide();
+  }
+
+  var _syncFlag = false;
+
+  function processData(items, last) {
+    var cnt = 0;
+    for (var i = 0; i < items.length; i++) {
+      var item = items[i];
+
+      if (item.Type == 100) {
+        continue;
+      }
+
+      var point = '';
+      var memo = '';
+
+      try {
+        point = JSON.parse(item.Point);
+      } catch (e) {
+      }
+
+      try {
+        memo = JSON.parse(item.Memo);
+      } catch (e) {
+      }
+
+      var type = item.Type;
+      if (type == 0)
+        type = 1;
+      if (item.Type == 200) {
+        _items2.push({
+          mode: type,
+          type: item.Type,
+          x: item.X,
+          y: item.Y,
+          color: item.Color,
+          selected: false,
+          group: item.Group,
+
+          name: item.Name,
+          fault: item.Fault,
+          content: item.Content,
+          report: item.Report,
+          usermemo: item.Usermemo,
+          aptmemo: item.Aptmemo,
+          width: item.Width,
+          length: item.Length,
+          count: item.Count,
+          progress: item.Progress,
+          remark: item.Remark,
+          imagename: item.Imagename,
+          filename: item.Filename,
+        });
+
+        continue;
+      }
+
+      _items.push({
+        mode: type,
+        type: item.Type,
+        points: point,
+        x: item.X,
+        y: item.Y,
+        color: item.Color,
+        selected: false,
+        group: item.Group,
+        number: item.Number,
+
+        name: item.Name,
+        fault: item.Fault,
+        content: item.Content,
+        report: item.Report,
+        usermemo: item.Usermemo,
+        aptmemo: item.Aptmemo,
+        width: item.Width,
+        length: item.Length,
+        count: item.Count,
+        progress: item.Progress,
+        remark: item.Remark,
+        imagename: item.Imagename,
+        filename: item.Filename,
+        memo: memo
+      });
+
+      cnt++;
+    }
+
+    if (last == true) {
+      if (cnt < 20) {
+        for (var i = 0; i < 20 - cnt; i++) {
+          _items.push({
+            mode: TYPE_NUMBER,
+            number: cnt + i + 1,
+            points: null,
+            x: -100,
+            y: -100,
+            color: '',
+            selected: false,
+            group: 0,
+
+            name: '',
+            fault: '',
+            content: '',
+            report: 1,
+            usermemo: '',
+            aptmemo: '',
+            width: '',
+            length: '',
+            count: '',
+            progress: '',
+            remark: '',
+            imagename: '',
+            filename: ''
+          });
+        }
+      }
+
+      viewPopup();
+    } else {
+      if (_filetype == 6)
+        viewAreaPopup();
+
+      if (_filetype == 5) {
+        if (_items.length > 0) {
+          try {
+            _floortypeId = _items[0].memo.type;
+          } catch (e) {
+          }
+
+          viewFloorPopup();
+        }
+      }
+    }
+
+    makeUndo();
+  }
+
+  function clickImage(id, pos, title) {
+    console.log('clikcimage : ' + id);
+    var params = 'apt=' + _apt;
+
+    var item;
+
+    for (var i = 0; i < _optitems.length; i++) {
+      if (id == _optitems[i].Id) {
+        item = _optitems[i];
+        break;
+      }
+    }
+
+    console.log(item);
+
+    if (isModified() == true) {
+      if (!confirm('기존에 작업한 내역이 저장되지 않았습니다.\n저장없이 작업위치를 변경하면 데이터가 사라집니다.\n위치를 변경하시겠습니까'))
+        return;
+
+      initModified();
+    }
+
+    _originalZoom = 0;
+
+    closeFloorPopup();
+
+    $('#areaPopup').hide();
+    closeSinglePopup();
+
+    if (title != '')
+      $('#lblImage').html(title);
+
+    var last = false;
+
+    if (item.Type == FILETYPE_FLOORITEM) {
+      _filetype = item.Type;
+      _bg = '';
+      last = true;
+    } else if (item.Type != 0) {
+      _filetype = item.Type;
+      _bg = item.Filename;
+    } else {
+      _filetype = 0;
+      _bg = '';
+      last = true;
+    }
+
+    setFiletype();
+    closeMemo();
+
+    resetItems();
+
+
+    if (item.Type != 0) {
+      if (_filetype == 5 || _filetype == FILETYPE_FLOORDRAW) {
+        _bg = 'assets/img/floor.png';
+      } else {
+        _bg = item.Filename;
+      }
+    } else {
+      _bg = '';
+    }
+
+    _image = id;
+
+    _areaPopupPosition = 2;
+
+    selectType(0);
+    $('#detailModal').hide();
+
+    if (_serverMode == 'mobile' || _serverMode == 'electron') {
+      var items = [];
+
+      var datas = JSON.parse(localStorage.getItem('datas'));
+      if (datas.datas != null) {
+        for (var i = 0; i < datas.datas.length; i++) {
+          var item = datas.datas[i];
+
+          if (item.Image != _image) {
+            continue;
+          }
+
+          items.push(item);
+        }
+      }
+
+      processData(items, last);
+    } else {
+      params += '&image=' + _image;
+      $.post(_serverAddr + '/api/data/list', params, function(data) {
+        data.items = data.items || [];
+        processData(data.items, last);
+      });
+    }
+  }
+
+  function imageProcess(items) {
+    var str = '';
+
+    var title = '';
+    var oldLevel = -1;
+
+    if (items != null) {
+      for (var i = 0; i < items.length; i++) {
+        var item = items[i];
+        var depth = item.Level * 16 + 16;
+
+        if (item.Apt != _apt)
+          continue;
+
+        if (item.Type == 8 || item.Type == 9)
+          continue;
+
+        if (item.Level == 0) {
+          title = item.Name;
+          oldLevel = 0;
+        } else {
+          if (item.Last == 2)
+            title += ' - ' + item.Name;
+        }
+
+        var currentTitle = title;
+        if (item.Level > 0)
+          currentTitle += ' - ' + item.Name;
+
+        if (item.Type == 5) {
+          str += '<li onClick="clickFloor(' + item.Id + ', event)" style="padding-left:' + depth + 'px;color:blue;">';
+          str += item.Name;
+          str += '</li>';
+
+          for (var j = 0; j < items.length; j++) {
+            var item2 = items[j];
+
+            if (item2.Parent != item.Id || item2.Type == 9)
+              continue;
+
+            var depth2 = item2.Level * 16 + 16;
+
+            var currentTitle2 = title  + ' - ' + item2.Name;
+
+            str += '<li class="selectitem" style="color:red;cursor:hand;cursor:pointer;padding-left:' + depth2 + 'px;" onClick="clickImage(' + item2.Id + ', ' + i + ', \'' + currentTitle2 + '\')">' + item2.Name + '</li>';
+
+          }
+        } else if (item.Level == 0 && item.Last == 2) {
+          str += '<li style="padding-left:' + depth + 'px;">' + item.Name + '</li>';
+        } else {
+          str += '<li class="selectitem" style="color:red;cursor:hand;cursor:pointer;padding-left:' + depth + 'px;" onClick="clickImage(' + item.Id + ', ' + i + ', \'' + currentTitle + '\')">' + item.Name + '</li>';
+        }
+
+        oldLevel = item.Level;
+      }
+    }
+
+    _optitems = items;
+
+    $('#lstImage').html(str);
+
+    resetItems();
+  }
+
+  function clickPopupBg(e) {
+    e = e || window.event;
+
+    e.preventDefault();
+    e.stopPropagation();
+  }
+
+  function clickFloor(id, e) {
+    e = e || window.event;
+
+    e.preventDefault();
+    e.stopPropagation();
+
+    readImage(id);
+  }
+
+  function readImageProcess(id, items) {
+    var str = '';
+
+    str += '<table border="0" cellpadding="0" cellspacing="0" style="width:100%;">';
+
+    for (var i = 0; i < items.length; i++) {
+      var item = items[i];
+      str += '<tr>';
+      str += '<td onClick="clickImage(' + item.Id + ', ' + i + ', "")" style="border-radius:2px;cursor:hand;cursor:pointer;background: #aaa;color: #FFF;font-weight:bold;padding:10px 10px;font-size:15px;text-align:left;">';
+      str += '<div style="float:left;">' + item.Name + '</div>';
+      str += '<div style="float:right;width:20px;color:white;font-size:15px;font-weight:bold;text-align:center;" onClick="clickImageDelete(' + id + ', ' + item.Id + ', event)">×</div>';
+      str += '<div style="clear:both;">';
+      str += '</td>';
+      str += '</tr>';
+      str += '<tr>';
+      str += '<td height="5px;"></td>';
+      str += '</tr>';
+    }
+
+    str += '<tr>';
+    str += '<td><input id="txtImageName" type="text" style="width:440px;height:26px;display:block;float:left;" /><div onClick="clickImageAdd(' + id + ')" class="btn btn-menu">추가</div><div style="clear:both;"></div></td>';
+    str += '</tr>';
+
+
+    str += '</table>';
+
+    var image = getImage(id);
+    showPopup(str, '계단실 등록 - ' + image.Name);
+  }
+
+  function readImage(id) {
+    if (_serverMode == 'mobile' || _serverMode == 'electron') {
+      var lists = JSON.parse(localStorage.getItem('lists'));
+
+      var items = [];
+
+      for (var i = 0; i < lists.images.length; i++) {
+        var item = lists.images[i];
+
+        if (item.Apt != _apt)
+          continue;
+
+        if (item.Parent != id)
+          continue;
+
+        items.push(item);
+      }
+
+      readImageProcess(id, items);
+    } else {
+      var params = 'apt=' + _apt + '&image=' + id;
+      $.post(_serverAddr + '/api/image/list', params, function(data) {
+        var items = data.items || [];
+
+        readImageProcess(id, items);
+      });
+    }
+  }
+
+  function clickImageAdd(id) {
+    var name = $('#txtImageName').val();
+
+    if (_serverMode == 'mobile' || _serverMode == 'electron') {
+      var parent = getImage(id);
+
+      var lists = JSON.parse(localStorage.getItem('lists'));
+
+      lists.images.push({
+        Id: _imageId,
+        Apt: _apt,
+        Name: name,
+        Level: parent.Level + 1,
+        Parent: parent.Id,
+        Last: 1,
+        Title: "",
+        Type: 8
+      });
+
+      _optitems = lists.images;
+
+      _imageId--;
+
+      localStorage.setItem('lists', JSON.stringify(lists));
+
+      readImage(id);
+
+      imageProcess(lists.images);
+    } else {
+      var params = 'apt=' + _apt + '&image=' + id + '&name=' + encodeURIComponent(name);
+      $.post(_serverAddr + '/api/image/insert', params, function(data) {
+        readImage(id);
+
+        var params = 'apt=' + _apt;
+        $.post(_serverAddr + '/api/image/list', params, function(data) {
+          imageProcess(data.items);
+        });
+      }) ;
+    }
+  }
+
+  function clickImageDelete(parent, id, e) {
+    if (!confirm('삭제할 경우 해당 항목에 등록된 모든 데이터가 삭제됩니다.\n삭제하시겠습니까'))
+      return;
+    var e = e || window.event;
+
+    e.preventDefault();
+    e.stopPropagation();
+
+    if (_serverMode == 'mobile' || _serverMode == 'electron') {
+      var lists = JSON.parse(localStorage.getItem('lists'));
+
+      var items = [];
+      for (var i = 0; i < lists.images.length; i++) {
+        if (lists.images[i].Id == id)
+          continue;
+
+        items.push(lists.images[i]);
+      }
+
+      lists.images = items;
+
+      _optitems = lists.images;
+
+      localStorage.setItem('lists', JSON.stringify(lists));
+
+      readImage(parent);
+
+      imageProcess(lists.images);
+    } else {
+      var params = 'id=' + id;
+      $.post(_serverAddr + '/api/image/delete', params, function(data) {
+        readImage(parent);
+
+        var params = 'apt=' + _apt;
+        $.post(_serverAddr + '/api/image/list', params, function(data) {
+          imageProcess(data.items);
+        });
+      })
+    }
+  }
+
+  function resetItems() {
+    _bgReload = true;
+    _bg = '';
+    _mode = 0;
+    _items = [];
+    _items2 = [];
+    _type = 1;
+    _lines = [];
+    _undos = [];
+    _redos = [];
+
+    _zoom = 1;
+    resizeCanvas(true);
+
+    _memo = false;
+  }
+
+  function clickLogout() {
+    if (_serverMode == 'mobile' || _serverMode == 'electron') {
+      if (!confirm('작업한 데이터를 서버로 동기화 하지 않고 로그아웃하시겠습니까')) {
+        return;
+      }
+    }
+
+    localStorage.removeItem('session');
+    localStorage.removeItem('apt');
+
+    resetItems();
+
+    //$('#txtPasswd').val('');
+
+    $('#divLogin').show();
+    $('#divMain').hide();
+  }
+
+  var _pinch = false;
+  var _pan = false;
+
+  function viewUserInfo() {
+    var str = '';
+    var session = getSession();
+    str += session.Name + '<span style="font-size:15px;">(';
+
+    if (session.Level == 1)
+      str += '작업자';
+    else if (session.Level == 2)
+      str += '매니저';
+    else
+      str += '관리자';
+    str += ')</span>';
+
+    str = session.Name;
+
+    $('#lblSessionName').html(str);
+  }
+
+  function clickImageProcess(id) {
+    _apt = id;
+
+    resetItems();
+
+    closeShowPopup();
+    $('#divLogin').hide();
+    $('#divMain').show();
+
+    viewUserInfo();
+
+    _contents = [];
+    _floortypes = [];
+    _floornames = [];
+
+    if (_serverMode == 'mobile' || _serverMode == 'electron') {
+      var list = JSON.parse(localStorage.getItem('lists'));
+
+      for (var i = 0; i < list.apts.length; i++) {
+        var item = list.apts[i];
+
+        if (item.Id != _apt)
+          continue;
+
+        $('#lblImageName').html(item.Name);
+      }
+
+      for (var i = 0; i < list.statuss.length; i++) {
+        var item = list.statuss[i];
+        if (item.Type == 2)
+          _contents.push({name: item.Name, progress: item.Content, remark: item.Etc});
+
+        if (item.Type == 8)
+          _floortypes.push({id: item.Id, name: item.Name, filename: item.Content});
+
+        if (item.Type == 9)
+          _floornames.push({id: item.Id, name: item.Name});
+      }
+    } else {
+      $.post(_serverAddr + '/api/status/list', 'company=' + _user.Company, function(data) {
+        if (data == null)
+          return;
+
+        var items = data.items;
+
+        for (var i = 0; i < items.length; i++) {
+          var item = items[i];
+          if (item.Type == 2)
+            _contents.push({name: item.Name, progress: item.Content, remark: item.Etc});
+
+          if (item.Type == 8)
+            _floortypes.push({id: item.Id, name: item.Name, filename: item.Content});
+
+          if (item.Type == 9)
+            _floornames.push({id: item.Id, name: item.Name});
+        }
+      });
+    }
+
+    if (_serverMode == 'mobile' || _serverMode == 'electron') {
+      var items = [];
+      var list = JSON.parse(localStorage.getItem('lists'));
+
+      for (var i = 0; i < list.images.length; i++) {
+        var item = list.images[i];
+
+        if (item.Apt != _apt)
+          continue;
+
+        items.push(item);
+
+      }
+
+      imageProcess(items);
+    } else {
+      var params = 'apt=' + _apt;
+      $.post(_serverAddr + '/api/image/list', params, function(data) {
+        imageProcess(data.items);
+      });
+    }
+  }
+
+  $('#divCombo').hide();
+
+
+  
+  var _hammer;
+  var container = null;
+  var img = null;
+
+  function initHammer() {
+    lastScale = _zoom;
+    viewportHeight = img.parentElement.offsetHeight;
+    curWidth = _imgWidth*_zoom;
+    curHeight = _imgHeight*_zoom;
+
+    updateLastScale();
+
+    _hammer = new Hammer(container, {
+      domEvents: true
+    });
+
+    _hammer.get('pinch').set({
+      enable: true
+    });
+
+    /*
+       hammer.get('pan').set({
+       enable: true
+       });
+     */
+
+    _hammer.on('pan', function (e) {
+      /*
+         _pan = true;
+         console.log('pan start');
+         //translate(e.deltaX, e.deltaY);
+
+         console.log(e.deltaX);
+         console.log(e.deltaY);
+         container.scrollLeft -= e.deltaX;
+         container.scrollTop -= e.deltaY;
+       */
+    });
+
+    _hammer.on('panend', function (e) {
+      /*
+         _pan = false;
+         console.log('pan end');
+         //updateLastPos();
+         /*/
+
+      updateLastScale();
+      resizeCanvas(true);
+    });
+
+    _hammer.on('pinch', function (e) {
+      console.log('pinch start');
+      _pinch = true;
+
+      _mouseDown = false;
+      /*
+         if (down == 1) {
+         _items.splice(_items.length - 1, 1);
+         down = 0;
+         }
+       */
+
+      //_zoom = restrictScale(lastScale * e.scale);
+      //resizeCanvas(false);
+      zoom(e.scale);
+      return;
+      // We only calculate the pinch center on the first pinch event as we want the center to
+      // stay consistent during the entire pinch
+      if (pinchCenter === null) {
+        pinchCenter = rawCenter(e);
+        var offsetX = pinchCenter.x*_zoom - (-x*_zoom + Math.min(viewportWidth, curWidth)/2);
+        var offsetY = pinchCenter.y*_zoom - (-y*_zoom + Math.min(viewportHeight, curHeight)/2);
+        pinchCenterOffset = { x: offsetX, y: offsetY };
+      }
+
+      // When the user pinch zooms, she/he expects the pinch center to remain in the same
+      // relative location of the screen. To achieve this, the raw zoom center is calculated by
+      // first storing the pinch center and the scaled offset to the current center of the
+      // image. The new scale is then used to calculate the zoom center. This has the effect of
+      // actually translating the zoom center on each pinch zoom event.
+      var newScale = restrictScale(_zoom*e.scale);
+      var zoomX = pinchCenter.x*newScale - pinchCenterOffset.x;
+      var zoomY = pinchCenter.y*newScale - pinchCenterOffset.y;
+      var zoomCenter = { x: zoomX/newScale, y: zoomY/newScale };
+
+      //zoomAround(e.scale, zoomCenter.x, zoomCenter.y, true);
+      //resizeCanvas();
+
+    });
+
+    _hammer.on('pinchend', function (e) {
+      console.log('pinch end');
+      _pinch = false;
+
+      updateLastScale();
+      //updateLastPos();
+      pinchCenter = null;
+
+      resizeCanvas(true);
+    });
+
+    /*
+       _hammer.on('doubletap', function (e) {
+       //var c = rawCenter(e);
+       //zoomAround(2, c.x, c.y);
+       });
+     */
+  }
+
+  function CustomSelectBox(selector){
+    this.$selectBox = null,
+    this.$select = null,
+    this.$list = null,
+    this.$listLi = null;
+    CustomSelectBox.prototype.init = function(selector){
+      this.$selectBox = $(selector);
+      this.$select = this.$selectBox.find('.box .select');
+      this.$list = this.$selectBox.find('.box .list');
+      this.$listLi = this.$list.children('li');
+    }
+    CustomSelectBox.prototype.initEvent = function(e){
+      var that = this;
+      this.$select.on('click', function(e){
+        that.listOn();
+        //that.$select.html(('#divSelectContent' + _type).html());
+        //that.$select.html($('#divSelectContent' + _type).html());
+      });
+      this.$listLi.on('click', function(e){
+        that.listSelect($(this));
+      });
+      $(document).on('click', function(e){
+        that.listOff($(e.target));
+      });
+    }
+    CustomSelectBox.prototype.listOn = function(){
+      this.$selectBox.toggleClass('on');
+      if(this.$selectBox.hasClass('on')){
+        this.$list.css('display', 'block');
+      }else{
+        this.$list.css('display', 'none');
+      };
+    }
+    CustomSelectBox.prototype.listSelect = function($target){
+      $target.addClass('selected').siblings('li').removeClass('selected');
+      this.$selectBox.removeClass('on');
+      this.$list.css('display', 'none');
+
+      this.$select.html($('#divSelectContent' + _type).html());
+    }
+    CustomSelectBox.prototype.listOff = function($target){
+      if(!$target.is(this.$select) && this.$selectBox.hasClass('on')){
+        this.$selectBox.removeClass('on');
+        this.$list.css('display', 'none');
+      };
+    }
+    this.init(selector);
+    this.initEvent();
+  }
+
+  var selectboxImage;
+  var selectboxType;
+  $(function(){
+    selectboxImage = new CustomSelectBox('#cboImage');
+    selectboxType = new CustomSelectBox('#cboSelect');
+  });
+
+  function viewSelectPopup() {
+    var content = '';
+    var title = '';
+
+    var w = $(window).width();
+    var h = $(window).height();
+
+    $('#divPopupBg').css('width', w + 'px');
+    $('#divPopupBg').css('height', h + 'px');
+
+    $('#divSelectPopup').css('width', w + 'px');
+    $('#divSelectPopup').css('height', h + 'px');
+
+    $('#divSelectPopupContent').html(content);
+
+    $('#divSelectPopupTitle').html(title);
+    $('#divSelectPopupBg').show();
+    $('#divSelectPopup').css('display', 'flex');
+  }
+
+  function closeSelectPopup() {
+    $('#divPopupBg').hide();
+    $('#divPopup').hide();
+  }
+
+
+  function initHtml() {
+    $('#upload_form').ajaxForm({
+      success: function(data) {
+        if (data.code == 'ok') {
+          if (_upload == 1000)
+            _items[_singleTarget].filename = data.filename;
+          else
+            _items[_upload].filename = data.filename;
+          /*
+             var str = '<img src="/ajax/image/picture?filename=' + data.filename + '" style="width:168px;height:200px;" />';
+             $('#image').val(data.filename);
+             $('#divImage').html(str);
+           */
+
+          makePopupUpload(_upload);
+
+          //modified();
+          save(function() {
+          });
+        }
+      }
+    });
+
+    $('#msCombo').msDropDown();
+    $('#divCombo').css('display', 'inline');
+    $('#detailModal').hide();
+  }
+  $(document).ready(function() {
+    if (window.cordova == undefined) {
+      _serverMode = 'web';
+      _serverAddr = '';
+    } else {
+      _serverMode = 'mobile';
+      _serverAddr = 'https://netb.co.kr';
+  }
+
+      $(document).click(function() {
+        closeTablePopup();
+    });
+
+    initHtml();
+
+    img = document.getElementById('canvas');
+    container = img.parentElement;
+
+    disableImgEventHandlers();
+
+    initCanvas();
+    initHammer();
+
+    if (_serverMode == 'mobile' || _serverMode == 'electron') {
+      var lists = JSON.parse(localStorage.getItem('lists'));
+      if (lists != null) {
+        if (lists.images != null) {
+          for (var i = 0; i < lists.images.length; i++) {
+            if (lists.images[i].Id < _imageId) {
+              _imageId = lists.images[i].Id;
+            }
+          }
+
+          _imageId--;
+        }
+
+        if (lists.imagefloors != null) {
+          for (var i = 0; i < lists.imagefloors.length; i++) {
+            if (lists.imagefloors[i].Id < _imagefloorId) {
+              _imagefloorId = lists.imagefloors[i].Id;
+            }
+          }
+
+          _imagefloorId--;
+        }
+      }
+
+      var session = JSON.parse(localStorage.getItem('session'));
+      var apt = JSON.parse(localStorage.getItem('apt'));
+
+      if (session && apt) {
+        _user = session;
+        _apt = apt;
+        clickApt(apt, '');
+      } else {
+        $('#divLogin').show();
+        $('#txtLoginid').focus();
+      }
+
+      $('#imgDownload').show();
+      $('#imgSync').show();
+      $('#imgExit').hide();
+
+      $('#divSync').show();
+      $('#divLogout').show();
+    } else {
+      //$('#divSystem').hide();
+      $('#divSync').hide();
+      $('#divLogout').show();
+      $('#divLogin').show();
+      $('#txtLoginid').focus();
+
+      $('#imgDownload').hide();
+      $('#imgSync').hide();
+      $('#imgExit').hide();
+    }
+
+    //viewStatusPopup(9, 0);
+    
+  });
+
+  function runSave() {
+     
+
+    var apt = parseInt($('#txtLoginid').val());
+    _saveApt = apt;
+
+    var params = 'loginid=anb000&passwd=0000';
+    $.post(_serverAddr + '/api/login/login', params, function(data) {
+      _user = data.user;
+      readRunSave();
+    });
+
+    setInterval('runSaveImage()', 2000);
+  }
+
+  function readRunSave() {
+    clickApt(_saveApt);
+    
+    var params = 'apt=' + _saveApt;
+    $.post(_serverAddr + '/api/image/list', params, function(data) {
+      console.log(data.items);
+
+      if (data.items == null) {
+      } else {
+        _saveImagelist = data.items;
+        _savePos = 0;
+      }
+    });
+
+  }
+
+  function runSaveImage() {
+    console.log('runSaveImage() ' + _savePos);
+    if (_savePos >= _saveImagelist.length) {
+      if (_saveApt > 1) {
+        _saveApt--;
+        readRunSave();
+      }
+      return;
+    }
+    
+    var item = _saveImagelist[_savePos];
+    _savePos++;
+
+    _optitems = _saveImagelist;
+
+    if (item.Type != 1 && item.Type != 2 && item.Type != 3 && item.Type != 4) {
+      setTimeout(runSaveImage(), 50);
+      return;
+    }
+
+    setTimeout(function() {
+      save(function() {
+      });
+    }, 10000);
+
+    clickImage(item.Id, 0, '');
+  }
+
+  var _saveApt = 0;
+  var _savePos = 0;
+  var _saveImagelist = [];
+
+  </script>
+  <script src="cordova.js"></script>
+  <script src="assets/js/index.js?t=2"></script>
+</body>
+</html>

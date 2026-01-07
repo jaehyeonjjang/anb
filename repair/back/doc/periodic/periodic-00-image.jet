@@ -1,0 +1,314 @@
+{{if partimageCount > 0}}{{range i, v := grouppartimages}}<P ColumnBreak="false" PageBreak="true" ParaShape="29" Style="0">
+<TEXT CharShape="38">
+{{if i == 0}}<TABLE BorderFill="16" CellSpacing="0" ColCount="1" PageBreak="None" RepeatHeader="true" RowCount="2">
+<SHAPEOBJECT InstId="1561048735" Lock="false" NumberingType="Table" ZOrder="50">
+<SIZE Height="3312" HeightRelTo="Absolute" Protect="false" Width="33140" WidthRelTo="Absolute"/>
+<POSITION AffectLSpacing="false" AllowOverlap="false" FlowWithText="true" HoldAnchorAndSO="false" HorzAlign="Left" HorzOffset="0" HorzRelTo="Column" TreatAsChar="true" VertAlign="Top" VertOffset="0" VertRelTo="Para"/>
+<OUTSIDEMARGIN Bottom="140" Left="140" Right="140" Top="140"/>
+</SHAPEOBJECT>
+<INSIDEMARGIN Bottom="140" Left="140" Right="140" Top="140"/>
+<ROW>
+<CELL BorderFill="28" ColAddr="0" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="2832" Protect="false" RowAddr="0" RowSpan="1" Width="33140">
+<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+<P ParaShape="104" Style="10">
+<TEXT CharShape="52">
+<CHAR>시설물 부위별 사진</CHAR></TEXT></P></PARALIST></CELL></ROW>
+<ROW>
+<CELL BorderFill="41" ColAddr="0" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="480" Protect="false" RowAddr="1" RowSpan="1" Width="33140">
+<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+<P ParaShape="9" Style="0">
+<TEXT CharShape="89"/>
+</P></PARALIST></CELL></ROW></TABLE>{{else}}
+<TABLE BorderFill="16" CellSpacing="0" ColCount="1" PageBreak="None" RepeatHeader="true" RowCount="1">
+<SHAPEOBJECT InstId="1561048735" Lock="false" NumberingType="Table" ZOrder="50">
+<SIZE Height="1512" HeightRelTo="Absolute" Protect="false" Width="33140" WidthRelTo="Absolute"/>
+<POSITION AffectLSpacing="false" AllowOverlap="false" FlowWithText="true" HoldAnchorAndSO="false" HorzAlign="Left" HorzOffset="0" HorzRelTo="Column" TreatAsChar="true" VertAlign="Top" VertOffset="0" VertRelTo="Para"/>
+<OUTSIDEMARGIN Bottom="140" Left="140" Right="140" Top="140"/>
+</SHAPEOBJECT>
+<INSIDEMARGIN Bottom="140" Left="140" Right="140" Top="140"/>
+<ROW>
+<CELL BorderFill="28" ColAddr="0" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="1512" Protect="false" RowAddr="0" RowSpan="1" Width="33140">
+<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+<P ParaShape="104" Style="10">
+<TEXT CharShape="52">
+<CHAR> </CHAR></TEXT></P></PARALIST></CELL></ROW>
+</TABLE>
+{{end}}
+<TABLE BorderFill="16" CellSpacing="0" ColCount="4" PageBreak="None" RepeatHeader="true" RowCount="8">
+<SHAPEOBJECT InstId="1561048737" Lock="false" NumberingType="Table" ZOrder="51">
+<SIZE Height="64801" HeightRelTo="Absolute" Protect="false" Width="44807" WidthRelTo="Absolute"/>
+<POSITION AffectLSpacing="false" AllowOverlap="false" FlowWithText="true" HoldAnchorAndSO="false" HorzAlign="Left" HorzOffset="0" HorzRelTo="Column" TreatAsChar="true" VertAlign="Top" VertOffset="0" VertRelTo="Para"/>
+<OUTSIDEMARGIN Bottom="140" Left="140" Right="140" Top="140"/>
+</SHAPEOBJECT>
+<INSIDEMARGIN Bottom="140" Left="0" Right="0" Top="140"/>
+<ROW>
+<CELL BorderFill="26" ColAddr="0" ColSpan="2" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="17467" Protect="false" RowAddr="0" RowSpan="1" Width="22408">
+<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+<P ParaShape="5" Style="0">
+<TEXT CharShape="95">
+<PICTURE Reverse="false">
+<SHAPEOBJECT InstId="1113920352" Lock="false" NumberingType="Figure" TextFlow="BothSides" TextWrap="Square" ZOrder="80">
+<SIZE Height="17442" HeightRelTo="Absolute" Protect="false" Width="23256" WidthRelTo="Absolute"/>
+<POSITION AffectLSpacing="false" AllowOverlap="false" FlowWithText="true" HoldAnchorAndSO="false" HorzAlign="Left" HorzOffset="0" HorzRelTo="Column" TreatAsChar="false" VertAlign="Top" VertOffset="0" VertRelTo="Para"/>
+<OUTSIDEMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+<SHAPECOMMENT>
+														This is Picture.
+</SHAPECOMMENT></SHAPEOBJECT><SHAPECOMPONENT CurHeight="17442" CurWidth="23256" GroupLevel="0" HorzFlip="false" InstID="40178529" OriHeight="16335" OriWidth="21780" VertFlip="false" XPos="0" YPos="786">
+<ROTATIONINFO Angle="0" CenterX="11628" CenterY="8721" Rotate="1"/>
+<RENDERINGINFO>
+<TRANSMATRIX E1="1.00000" E2="0.00000" E3="0.00000" E4="0.00000" E5="1.00000" E6="786.00000"/>
+<SCAMATRIX E1="1.00000" E2="0.00000" E3="0.00000" E4="0.00000" E5="1.00000" E6="0.00000"/>
+<ROTMATRIX E1="1.00000" E2="0.00000" E3="0.00000" E4="0.00000" E5="1.00000" E6="0.00000"/>
+<SCAMATRIX E1="1.06777" E2="0.00000" E3="0.00000" E4="0.00000" E5="1.06777" E6="-786.00000"/>
+<ROTMATRIX E1="1.00000" E2="0.00000" E3="0.00000" E4="0.00000" E5="1.00000" E6="0.00000"/>
+</RENDERINGINFO></SHAPECOMPONENT>
+<IMAGERECT X0="0" X1="21780" X2="21780" X3="0" Y0="0" Y1="0" Y2="16335" Y3="16335"/>
+<IMAGECLIP Bottom="183600" Left="0" Right="244800" Top="0"/>
+<INSIDEMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+<IMAGE Alpha="0" BinItem="{{i*6+16+1}}" Bright="0" Contrast="0" Effect="RealPic"/>
+<EFFECTS/>
+</PICTURE>
+<CHAR/>
+</TEXT></P></PARALIST></CELL>
+<CELL BorderFill="26" ColAddr="2" ColSpan="2" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="17467" Protect="false" RowAddr="0" RowSpan="1" Width="22399">
+<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+<P ParaShape="5" Style="0">
+<TEXT CharShape="38">
+<PICTURE Reverse="false">
+<SHAPEOBJECT InstId="1113920356" Lock="false" NumberingType="Figure" TextFlow="BothSides" TextWrap="Square" ZOrder="81">
+<SIZE Height="17442" HeightRelTo="Absolute" Protect="false" Width="23256" WidthRelTo="Absolute"/>
+<POSITION AffectLSpacing="false" AllowOverlap="false" FlowWithText="true" HoldAnchorAndSO="false" HorzAlign="Left" HorzOffset="0" HorzRelTo="Column" TreatAsChar="false" VertAlign="Top" VertOffset="0" VertRelTo="Para"/>
+<OUTSIDEMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+<SHAPECOMMENT>
+														This is Picture.
+</SHAPECOMMENT></SHAPEOBJECT><SHAPECOMPONENT CurHeight="17442" CurWidth="23256" GroupLevel="0" HorzFlip="false" InstID="40178533" OriHeight="16335" OriWidth="21780" VertFlip="false" XPos="0" YPos="786">
+<ROTATIONINFO Angle="0" CenterX="11628" CenterY="8721" Rotate="1"/>
+<RENDERINGINFO>
+<TRANSMATRIX E1="1.00000" E2="0.00000" E3="0.00000" E4="0.00000" E5="1.00000" E6="786.00000"/>
+<SCAMATRIX E1="1.00000" E2="0.00000" E3="0.00000" E4="0.00000" E5="1.00000" E6="0.00000"/>
+<ROTMATRIX E1="1.00000" E2="0.00000" E3="0.00000" E4="0.00000" E5="1.00000" E6="0.00000"/>
+<SCAMATRIX E1="1.06777" E2="0.00000" E3="0.00000" E4="0.00000" E5="1.06777" E6="-786.00000"/>
+<ROTMATRIX E1="1.00000" E2="0.00000" E3="0.00000" E4="0.00000" E5="1.00000" E6="0.00000"/>
+</RENDERINGINFO></SHAPECOMPONENT>
+<IMAGERECT X0="0" X1="21780" X2="21780" X3="0" Y0="0" Y1="0" Y2="16335" Y3="16335"/>
+<IMAGECLIP Bottom="183600" Left="0" Right="244800" Top="0"/>
+<INSIDEMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+<IMAGE Alpha="0" BinItem="{{i*6+16+2}}" Bright="0" Contrast="0" Effect="RealPic"/>
+<EFFECTS/>
+</PICTURE>
+<CHAR/>
+</TEXT></P></PARALIST></CELL></ROW>
+<ROW>
+<CELL BorderFill="24" ColAddr="0" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="3158" Protect="false" RowAddr="1" RowSpan="1" Width="2420">
+<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+<P ParaShape="5" Style="0">
+<TEXT CharShape="3">
+<CHAR>위치</CHAR></TEXT></P></PARALIST></CELL>
+<CELL BorderFill="25" ColAddr="1" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="3158" Protect="false" RowAddr="1" RowSpan="1" Width="19988">
+<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+<P ParaShape="5" Style="0">
+<TEXT CharShape="3">
+<CHAR>{{v.Image1.Text}}</CHAR></TEXT></P></PARALIST></CELL>
+<CELL BorderFill="24" ColAddr="2" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="3158" Protect="false" RowAddr="1" RowSpan="1" Width="2421">
+<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+<P ParaShape="5" Style="0">
+<TEXT CharShape="3">
+<CHAR>위치</CHAR></TEXT></P></PARALIST></CELL>
+<CELL BorderFill="25" ColAddr="3" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="3158" Protect="false" RowAddr="1" RowSpan="1" Width="19978">
+<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+<P ParaShape="5" Style="0">
+<TEXT CharShape="3">
+<CHAR>{{v.Image2.Text}}</CHAR></TEXT></P></PARALIST></CELL></ROW>
+<ROW>
+<CELL BorderFill="27" ColAddr="0" ColSpan="4" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="830" Protect="false" RowAddr="2" RowSpan="1" Width="44807">
+<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+<P ParaShape="5" Style="0">
+<TEXT CharShape="96"/>
+</P></PARALIST></CELL></ROW>
+<ROW>
+<CELL BorderFill="26" ColAddr="0" ColSpan="2" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="17404" Protect="false" RowAddr="3" RowSpan="1" Width="22408">
+<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+<P ParaShape="5" Style="0">
+<TEXT CharShape="38">
+<PICTURE Reverse="false">
+<SHAPEOBJECT InstId="1113920360" Lock="false" NumberingType="Figure" TextFlow="BothSides" TextWrap="Square" ZOrder="82">
+<SIZE Height="17442" HeightRelTo="Absolute" Protect="false" Width="23256" WidthRelTo="Absolute"/>
+<POSITION AffectLSpacing="false" AllowOverlap="false" FlowWithText="true" HoldAnchorAndSO="false" HorzAlign="Left" HorzOffset="0" HorzRelTo="Column" TreatAsChar="false" VertAlign="Top" VertOffset="0" VertRelTo="Para"/>
+<OUTSIDEMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+<SHAPECOMMENT>
+														This is Picture.
+</SHAPECOMMENT></SHAPEOBJECT><SHAPECOMPONENT CurHeight="17442" CurWidth="23256" GroupLevel="0" HorzFlip="false" InstID="40178537" OriHeight="16335" OriWidth="21780" VertFlip="false" XPos="0" YPos="786">
+<ROTATIONINFO Angle="0" CenterX="11628" CenterY="8721" Rotate="1"/>
+<RENDERINGINFO>
+<TRANSMATRIX E1="1.00000" E2="0.00000" E3="0.00000" E4="0.00000" E5="1.00000" E6="786.00000"/>
+<SCAMATRIX E1="1.00000" E2="0.00000" E3="0.00000" E4="0.00000" E5="1.00000" E6="0.00000"/>
+<ROTMATRIX E1="1.00000" E2="0.00000" E3="0.00000" E4="0.00000" E5="1.00000" E6="0.00000"/>
+<SCAMATRIX E1="1.06777" E2="0.00000" E3="0.00000" E4="0.00000" E5="1.06777" E6="-786.00000"/>
+<ROTMATRIX E1="1.00000" E2="0.00000" E3="0.00000" E4="0.00000" E5="1.00000" E6="0.00000"/>
+</RENDERINGINFO></SHAPECOMPONENT>
+<IMAGERECT X0="0" X1="21780" X2="21780" X3="0" Y0="0" Y1="0" Y2="16335" Y3="16335"/>
+<IMAGECLIP Bottom="183600" Left="0" Right="244800" Top="0"/>
+<INSIDEMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+<IMAGE Alpha="0" BinItem="{{i*6+16+3}}" Bright="0" Contrast="0" Effect="RealPic"/>
+<EFFECTS/>
+</PICTURE>
+<CHAR/>
+</TEXT></P></PARALIST></CELL>
+<CELL BorderFill="26" ColAddr="2" ColSpan="2" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="17404" Protect="false" RowAddr="3" RowSpan="1" Width="22399">
+<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+<P ParaShape="5" Style="0">
+<TEXT CharShape="38">
+<PICTURE Reverse="false">
+<SHAPEOBJECT InstId="1113920364" Lock="false" NumberingType="Figure" TextFlow="BothSides" TextWrap="Square" ZOrder="83">
+<SIZE Height="17442" HeightRelTo="Absolute" Protect="false" Width="23256" WidthRelTo="Absolute"/>
+<POSITION AffectLSpacing="false" AllowOverlap="false" FlowWithText="true" HoldAnchorAndSO="false" HorzAlign="Left" HorzOffset="0" HorzRelTo="Column" TreatAsChar="false" VertAlign="Top" VertOffset="0" VertRelTo="Para"/>
+<OUTSIDEMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+<SHAPECOMMENT>
+														This is Picture.
+</SHAPECOMMENT></SHAPEOBJECT><SHAPECOMPONENT CurHeight="17442" CurWidth="23256" GroupLevel="0" HorzFlip="false" InstID="40178541" OriHeight="16335" OriWidth="21780" VertFlip="false" XPos="0" YPos="786">
+<ROTATIONINFO Angle="0" CenterX="11628" CenterY="8721" Rotate="1"/>
+<RENDERINGINFO>
+<TRANSMATRIX E1="1.00000" E2="0.00000" E3="0.00000" E4="0.00000" E5="1.00000" E6="786.00000"/>
+<SCAMATRIX E1="1.00000" E2="0.00000" E3="0.00000" E4="0.00000" E5="1.00000" E6="0.00000"/>
+<ROTMATRIX E1="1.00000" E2="0.00000" E3="0.00000" E4="0.00000" E5="1.00000" E6="0.00000"/>
+<SCAMATRIX E1="1.06777" E2="0.00000" E3="0.00000" E4="0.00000" E5="1.06777" E6="-786.00000"/>
+<ROTMATRIX E1="1.00000" E2="0.00000" E3="0.00000" E4="0.00000" E5="1.00000" E6="0.00000"/>
+</RENDERINGINFO></SHAPECOMPONENT>
+<IMAGERECT X0="0" X1="21780" X2="21780" X3="0" Y0="0" Y1="0" Y2="16335" Y3="16335"/>
+<IMAGECLIP Bottom="183600" Left="0" Right="244800" Top="0"/>
+<INSIDEMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+<IMAGE Alpha="0" BinItem="{{i*6+16+4}}" Bright="0" Contrast="0" Effect="RealPic"/>
+<EFFECTS/>
+</PICTURE>
+<CHAR/>
+</TEXT></P></PARALIST></CELL></ROW>
+<ROW>
+<CELL BorderFill="24" ColAddr="0" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="3378" Protect="false" RowAddr="4" RowSpan="1" Width="2420">
+<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+<P ParaShape="5" Style="0">
+<TEXT CharShape="3">
+<CHAR>위치</CHAR></TEXT></P></PARALIST></CELL>
+<CELL BorderFill="25" ColAddr="1" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="3378" Protect="false" RowAddr="4" RowSpan="1" Width="19988">
+<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+<P ParaShape="5" Style="0">
+<TEXT CharShape="3">
+<CHAR>{{v.Image3.Text}}</CHAR></TEXT></P></PARALIST></CELL>
+<CELL BorderFill="24" ColAddr="2" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="3378" Protect="false" RowAddr="4" RowSpan="1" Width="2421">
+<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+<P ParaShape="5" Style="0">
+<TEXT CharShape="3">
+<CHAR>위치</CHAR></TEXT></P></PARALIST></CELL>
+<CELL BorderFill="25" ColAddr="3" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="3378" Protect="false" RowAddr="4" RowSpan="1" Width="19978">
+<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+<P ParaShape="5" Style="0">
+<TEXT CharShape="3">
+<CHAR>{{v.Image4.Text}}</CHAR></TEXT></P></PARALIST></CELL></ROW>
+<ROW>
+<CELL BorderFill="27" ColAddr="0" ColSpan="4" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="830" Protect="false" RowAddr="5" RowSpan="1" Width="44807">
+<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+<P ParaShape="5" Style="0">
+<TEXT CharShape="43"/>
+</P></PARALIST></CELL></ROW>
+<ROW>
+<CELL BorderFill="26" ColAddr="0" ColSpan="2" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="17404" Protect="false" RowAddr="6" RowSpan="1" Width="22408">
+<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+<P ParaShape="5" Style="0">
+<TEXT CharShape="3">
+<PICTURE Reverse="false">
+<SHAPEOBJECT InstId="1113920368" Lock="false" NumberingType="Figure" TextFlow="BothSides" TextWrap="Square" ZOrder="84">
+<SIZE Height="17442" HeightRelTo="Absolute" Protect="false" Width="23256" WidthRelTo="Absolute"/>
+<POSITION AffectLSpacing="false" AllowOverlap="false" FlowWithText="true" HoldAnchorAndSO="false" HorzAlign="Left" HorzOffset="0" HorzRelTo="Column" TreatAsChar="false" VertAlign="Top" VertOffset="0" VertRelTo="Para"/>
+<OUTSIDEMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+<SHAPECOMMENT>
+														This is Picture.
+</SHAPECOMMENT></SHAPEOBJECT><SHAPECOMPONENT CurHeight="17442" CurWidth="23256" GroupLevel="0" HorzFlip="false" InstID="40178545" OriHeight="16335" OriWidth="21780" VertFlip="false" XPos="0" YPos="786">
+<ROTATIONINFO Angle="0" CenterX="11628" CenterY="8721" Rotate="1"/>
+<RENDERINGINFO>
+<TRANSMATRIX E1="1.00000" E2="0.00000" E3="0.00000" E4="0.00000" E5="1.00000" E6="786.00000"/>
+<SCAMATRIX E1="1.00000" E2="0.00000" E3="0.00000" E4="0.00000" E5="1.00000" E6="0.00000"/>
+<ROTMATRIX E1="1.00000" E2="0.00000" E3="0.00000" E4="0.00000" E5="1.00000" E6="0.00000"/>
+<SCAMATRIX E1="1.06777" E2="0.00000" E3="0.00000" E4="0.00000" E5="1.06777" E6="-786.00000"/>
+<ROTMATRIX E1="1.00000" E2="0.00000" E3="0.00000" E4="0.00000" E5="1.00000" E6="0.00000"/>
+</RENDERINGINFO></SHAPECOMPONENT>
+<IMAGERECT X0="0" X1="21780" X2="21780" X3="0" Y0="0" Y1="0" Y2="16335" Y3="16335"/>
+<IMAGECLIP Bottom="183600" Left="0" Right="244800" Top="0"/>
+<INSIDEMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+<IMAGE Alpha="0" BinItem="{{i*6+16+5}}" Bright="0" Contrast="0" Effect="RealPic"/>
+<EFFECTS/>
+</PICTURE>
+<CHAR/>
+</TEXT></P></PARALIST></CELL>
+<CELL BorderFill="26" ColAddr="2" ColSpan="2" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="17404" Protect="false" RowAddr="6" RowSpan="1" Width="22399">
+<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+<P ParaShape="5" Style="0">
+<TEXT CharShape="3">
+<PICTURE Reverse="false">
+<SHAPEOBJECT InstId="1113920372" Lock="false" NumberingType="Figure" TextFlow="BothSides" TextWrap="Square" ZOrder="85">
+<SIZE Height="17442" HeightRelTo="Absolute" Protect="false" Width="23256" WidthRelTo="Absolute"/>
+<POSITION AffectLSpacing="false" AllowOverlap="false" FlowWithText="true" HoldAnchorAndSO="false" HorzAlign="Left" HorzOffset="0" HorzRelTo="Column" TreatAsChar="false" VertAlign="Top" VertOffset="0" VertRelTo="Para"/>
+<OUTSIDEMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+<SHAPECOMMENT>
+														This is Picture.
+</SHAPECOMMENT></SHAPEOBJECT><SHAPECOMPONENT CurHeight="17442" CurWidth="23256" GroupLevel="0" HorzFlip="false" InstID="40178549" OriHeight="16335" OriWidth="21780" VertFlip="false" XPos="0" YPos="786">
+<ROTATIONINFO Angle="0" CenterX="11628" CenterY="8721" Rotate="1"/>
+<RENDERINGINFO>
+<TRANSMATRIX E1="1.00000" E2="0.00000" E3="0.00000" E4="0.00000" E5="1.00000" E6="786.00000"/>
+<SCAMATRIX E1="1.00000" E2="0.00000" E3="0.00000" E4="0.00000" E5="1.00000" E6="0.00000"/>
+<ROTMATRIX E1="1.00000" E2="0.00000" E3="0.00000" E4="0.00000" E5="1.00000" E6="0.00000"/>
+<SCAMATRIX E1="1.06777" E2="0.00000" E3="0.00000" E4="0.00000" E5="1.06777" E6="-786.00000"/>
+<ROTMATRIX E1="1.00000" E2="0.00000" E3="0.00000" E4="0.00000" E5="1.00000" E6="0.00000"/>
+</RENDERINGINFO></SHAPECOMPONENT>
+<IMAGERECT X0="0" X1="21780" X2="21780" X3="0" Y0="0" Y1="0" Y2="16335" Y3="16335"/>
+<IMAGECLIP Bottom="183600" Left="0" Right="244800" Top="0"/>
+<INSIDEMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+<IMAGE Alpha="0" BinItem="{{i*6+16+6}}" Bright="0" Contrast="0" Effect="RealPic"/>
+<EFFECTS/>
+</PICTURE>
+<CHAR/>
+</TEXT></P></PARALIST></CELL></ROW>
+<ROW>
+<CELL BorderFill="24" ColAddr="0" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="3439" Protect="false" RowAddr="7" RowSpan="1" Width="2420">
+<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+<P ParaShape="5" Style="0">
+<TEXT CharShape="3">
+<CHAR>위치</CHAR></TEXT></P></PARALIST></CELL>
+<CELL BorderFill="25" ColAddr="1" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="3439" Protect="false" RowAddr="7" RowSpan="1" Width="19988">
+<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+<P ParaShape="5" Style="0">
+<TEXT CharShape="3">
+<CHAR>{{v.Image5.Text}}</CHAR></TEXT></P></PARALIST></CELL>
+<CELL BorderFill="24" ColAddr="2" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="3439" Protect="false" RowAddr="7" RowSpan="1" Width="2421">
+<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+<P ParaShape="5" Style="0">
+<TEXT CharShape="3">
+<CHAR>위치</CHAR></TEXT></P></PARALIST></CELL>
+<CELL BorderFill="25" ColAddr="3" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="3439" Protect="false" RowAddr="7" RowSpan="1" Width="19978">
+<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+<P ParaShape="5" Style="0">
+<TEXT CharShape="3">
+<CHAR>{{v.Image6.Text}}</CHAR></TEXT></P></PARALIST></CELL></ROW></TABLE>
+<CHAR/>
+</TEXT></P>{{end}}{{end}}

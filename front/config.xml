@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.anb.front" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>ANB</name>
+    <description>
+        A sample Apache Cordova application that responds to the deviceready event.
+    </description>
+    <author email="dev@cordova.apache.org" href="http://cordova.io">
+        Apache Cordova Team
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />    
+    <allow-navigation href="*" />
+    <platform name="android">
+        <allow-intent href="*" />
+        <allow-intent href="market:*" />        
+        <preference name="Orientation" value="landscape" />
+        <preference name="AndroidPersistentFileLocation" value="Compatibility" />
+        <edit-config file="AndroidManifest.xml" mode="merge" target="/manifest" xmlns:android="http://schemas.android.com/apk/res/android">
+            <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+            <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+            <uses-permission android:name="android.permission.CAMERA" />
+            <uses-permission android:name="android.permission.INTERNET" />
+            <uses-permission android:name="android.permission.MANAGE_DOCUMENTS" />
+        </edit-config>
+        <edit-config file="AndroidManifest.xml" mode="merge" target="/manifest" xmlns:android="http://schemas.android.com/apk/res/android">
+            <uses-feature android:name="android.hardware.camera" />
+            <uses-feature android:name="android.hardware.camera.autofocus" />
+        </edit-config>
+        <edit-config file="app/src/main/AndroidManifest.xml" mode="merge" target="/manifest/application" xmlns:android="http://schemas.android.com/apk/res/android">
+            <application android:networkSecurityConfig="@xml/network_security_config" />
+            <application android:usesCleartextTraffic="true" />
+        </edit-config>
+        <edit-config file="AndroidManifest.xml" mode="merge" target="/manifest/application/activity[@android:name='MainActivity']" xmlns:android="http://schemas.android.com/apk/res/android">
+            <activity android:name="MainActivity" android:windowSoftInputMode="adjustPan" />
+        </edit-config>
+        <resource-file src="resources/android/xml/network_security_config.xml" target="app/src/main/res/xml/network_security_config.xml" />
+         <icon src="resources/logo.png" />
+    </platform>
+    <platform name="ios">
+        <allow-intent href="itms:*" />
+        <allow-intent href="itms-apps:*" />
+        <preference name="Orientation" value="landscape" />
+
+        <edit-config target="NSCameraUsageDescription" file="*-Info.plist" mode="merge">
+            <string>need camera access to take pictures</string>
+        </edit-config>
+        <edit-config target="NSPhotoLibraryUsageDescription" file="*-Info.plist" mode="merge">
+            <string>need photo library access to get pictures from there</string>
+        </edit-config>
+        <edit-config target="NSLocationWhenInUseUsageDescription" file="*-Info.plist" mode="merge">
+            <string>need location access to find things nearby</string>
+        </edit-config>
+        <edit-config target="NSPhotoLibraryAddUsageDescription" file="*-Info.plist" mode="merge">
+            <string>need photo library access to save pictures there</string>
+        </edit-config>        
+    </platform>
+</widget>

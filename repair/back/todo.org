@@ -1,0 +1,11 @@
+#+title: Todo
+
+* DONE 4번 규격 넣어줘야 함
+* DONE 7
+* TODO 8 - 확인해야함
+* DONE 9
+* TODO 10 - 확인해야함
+* TODO 11
+* TODO 12
+* DONE 13
+* DONE 14

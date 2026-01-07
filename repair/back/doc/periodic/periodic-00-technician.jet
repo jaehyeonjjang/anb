@@ -1,0 +1,247 @@
+<P ColumnBreak="false" PageBreak="true" ParaShape="8" Style="0">
+  <TEXT CharShape="3">
+    <TABLE BorderFill="16" CellSpacing="0" ColCount="7" PageBreak="Cell" RepeatHeader="true" RowCount="8">
+      <SHAPEOBJECT InstId="1381001130" Lock="false" NumberingType="Table" ZOrder="8">
+        <SIZE Height="69340" HeightRelTo="Absolute" Protect="false" Width="47681" WidthRelTo="Absolute"/>
+        <POSITION AffectLSpacing="false" AllowOverlap="false" FlowWithText="true" HoldAnchorAndSO="false" HorzAlign="Left" HorzOffset="0" HorzRelTo="Column" TreatAsChar="true" VertAlign="Top" VertOffset="0" VertRelTo="Para"/>
+        <OUTSIDEMARGIN Bottom="140" Left="140" Right="140" Top="140"/>
+      </SHAPEOBJECT>
+      <INSIDEMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+      <ROW>
+        <CELL BorderFill="52" ColAddr="0" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="1565" Protect="false" RowAddr="0" RowSpan="1" Width="1711">
+          <CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+          <PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+            <P ParaShape="9" Style="0">
+              <TEXT CharShape="25"/>
+        </P></PARALIST></CELL>
+        <CELL BorderFill="53" ColAddr="1" ColSpan="2" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="1565" Protect="false" RowAddr="0" RowSpan="1" Width="1869">
+          <CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+          <PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+            <P ParaShape="9" Style="0">
+              <TEXT CharShape="25"/>
+        </P></PARALIST></CELL>
+        <CELL BorderFill="51" ColAddr="3" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="1565" Protect="false" RowAddr="0" RowSpan="1" Width="40521">
+          <CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+          <PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+            <P ParaShape="9" Style="0">
+              <TEXT CharShape="25"/>
+        </P></PARALIST></CELL>
+        <CELL BorderFill="53" ColAddr="4" ColSpan="2" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="1565" Protect="false" RowAddr="0" RowSpan="1" Width="1869">
+          <CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+          <PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+            <P ParaShape="9" Style="0">
+              <TEXT CharShape="25"/>
+        </P></PARALIST></CELL>
+        <CELL BorderFill="52" ColAddr="6" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="1565" Protect="false" RowAddr="0" RowSpan="1" Width="1711">
+          <CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+          <PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+            <P ParaShape="9" Style="0">
+              <TEXT CharShape="25"/>
+      </P></PARALIST></CELL></ROW>
+      <ROW>
+        <CELL BorderFill="54" ColAddr="0" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="1669" Protect="false" RowAddr="1" RowSpan="1" Width="1711">
+          <CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+          <PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+            <P ParaShape="9" Style="0">
+              <TEXT CharShape="25"/>
+        </P></PARALIST></CELL>
+        <CELL BorderFill="1" ColAddr="1" ColSpan="5" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="1669" Protect="false" RowAddr="1" RowSpan="1" Width="44259">
+          <CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+          <PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+            <P ParaShape="46" Style="0">
+              <TEXT CharShape="1"/>
+        </P></PARALIST></CELL>
+        <CELL BorderFill="55" ColAddr="6" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="1669" Protect="false" RowAddr="1" RowSpan="1" Width="1711">
+          <CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+          <PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+            <P ParaShape="9" Style="0">
+              <TEXT CharShape="25"/>
+      </P></PARALIST></CELL></ROW>
+      <ROW>
+        <CELL BorderFill="55" ColAddr="0" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="62976" Protect="false" RowAddr="2" RowSpan="4" Width="1711">
+          <CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+          <PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+            <P ParaShape="9" Style="0">
+              <TEXT CharShape="25"/>
+        </P></PARALIST></CELL>
+        <CELL BorderFill="1" ColAddr="1" ColSpan="5" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="13821" Protect="false" RowAddr="2" RowSpan="1" Width="44259">
+          <CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+          <PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+            <P ParaShape="5" Style="0">
+              <TEXT CharShape="25">
+                <TABLE BorderFill="16" CellSpacing="0" ColCount="1" PageBreak="None" RepeatHeader="true" RowCount="1">
+                  <SHAPEOBJECT InstId="1381001131" Lock="false" NumberingType="Table" ZOrder="9">
+                    <SIZE Height="5212" HeightRelTo="Absolute" Protect="false" Width="37456" WidthRelTo="Absolute"/>
+                    <POSITION AffectLSpacing="false" AllowOverlap="false" FlowWithText="true" HoldAnchorAndSO="false" HorzAlign="Left" HorzOffset="0" HorzRelTo="Column" TreatAsChar="true" VertAlign="Top" VertOffset="0" VertRelTo="Para"/>
+                    <OUTSIDEMARGIN Bottom="852" Left="852" Right="852" Top="852"/>
+                  </SHAPEOBJECT>
+                  <INSIDEMARGIN Bottom="140" Left="140" Right="140" Top="140"/>
+                  <ROW>
+                    <CELL BorderFill="45" ColAddr="0" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="5212" Protect="false" RowAddr="0" RowSpan="1" Width="37456">
+                      <CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+                      <PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+                        <P ParaShape="5" Style="0">
+                          <TEXT CharShape="51">
+                <CHAR>참여기술진 명단</CHAR></TEXT></P></PARALIST></CELL></ROW></TABLE>
+                <CHAR/>
+            </TEXT></P>
+            <P ParaShape="5" Style="0">
+              <TEXT CharShape="25"/>
+            </P>
+            <P ParaShape="5" Style="0">
+              <TEXT CharShape="25"/>
+            </P>
+            <P ParaShape="5" Style="0">
+              <TEXT CharShape="25"/>
+        </P></PARALIST></CELL>
+        <CELL BorderFill="54" ColAddr="6" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="62976" Protect="false" RowAddr="2" RowSpan="4" Width="1711">
+          <CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+          <PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+            <P ParaShape="9" Style="0">
+              <TEXT CharShape="25"/>
+      </P></PARALIST></CELL></ROW>
+      <ROW>
+        <CELL BorderFill="1" ColAddr="1" ColSpan="5" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="26342" Protect="false" RowAddr="3" RowSpan="1" Width="44259">
+          <CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+          <PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+            <P ParaShape="5" Style="0">
+              <TEXT CharShape="25">
+                <TABLE BorderFill="16" CellSpacing="0" ColCount="5" PageBreak="None" RepeatHeader="true" RowCount="{{technicianCount}}">
+                  <SHAPEOBJECT InstId="1879573095" Lock="false" NumberingType="Table" ZOrder="12">
+                    <SIZE Height="20760" HeightRelTo="Absolute" Protect="false" Width="42632" WidthRelTo="Absolute"/>
+                    <POSITION AffectLSpacing="false" AllowOverlap="false" FlowWithText="true" HoldAnchorAndSO="false" HorzAlign="Left" HorzOffset="0" HorzRelTo="Column" TreatAsChar="true" VertAlign="Top" VertOffset="0" VertRelTo="Para"/>
+                    <OUTSIDEMARGIN Bottom="140" Left="140" Right="140" Top="140"/>
+                  </SHAPEOBJECT>
+                  <INSIDEMARGIN Bottom="140" Left="140" Right="140" Top="140"/>
+                  <ROW>
+                    <CELL BorderFill="108" ColAddr="0" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="4161" Protect="false" RowAddr="0" RowSpan="1" Width="6967">
+                      <CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+                      <PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+                        <P ParaShape="5" Style="14">
+                          <TEXT CharShape="33">
+                    <CHAR>참여구분</CHAR></TEXT></P></PARALIST></CELL>
+                    <CELL BorderFill="109" ColAddr="1" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="4161" Protect="false" RowAddr="0" RowSpan="1" Width="6684">
+                      <CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+                      <PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+                        <P ParaShape="5" Style="14">
+                          <TEXT CharShape="33">
+                    <CHAR>성  명</CHAR></TEXT></P></PARALIST></CELL>
+                    <CELL BorderFill="109" ColAddr="2" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="4161" Protect="false" RowAddr="0" RowSpan="1" Width="13476">
+                      <CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+                      <PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+                        <P ParaShape="5" Style="14">
+                          <TEXT CharShape="33">
+                    <CHAR>참여분야</CHAR></TEXT></P></PARALIST></CELL>
+                    <CELL BorderFill="109" ColAddr="3" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="4161" Protect="false" RowAddr="0" RowSpan="1" Width="10375">
+                      <CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+                      <PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+                        <P ParaShape="5" Style="14">
+                          <TEXT CharShape="33">
+                    <CHAR>기술등급</CHAR></TEXT></P></PARALIST></CELL>
+                    <CELL BorderFill="110" ColAddr="4" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="4161" Protect="false" RowAddr="0" RowSpan="1" Width="5130">
+                      <CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+                      <PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+                        <P ParaShape="5" Style="0">
+                          <TEXT CharShape="33">
+                  <CHAR>비 고</CHAR></TEXT></P></PARALIST></CELL></ROW>
+                  {{range i, v := technicians}}<ROW>
+                  <CELL BorderFill="{{if i < technicianCount - 2}}65{{else}}66{{end}}" ColAddr="0" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="5533" Protect="false" RowAddr="{{i+1}}" RowSpan="1" Width="6967">
+                    <CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+                    <PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+                      <P ParaShape="5" Style="13">
+                        <TEXT CharShape="31">
+                  <CHAR>{{if v.Type == 1}}책임기술자{{else}}참여기술자{{end}}</CHAR></TEXT></P></PARALIST></CELL>
+                  <CELL BorderFill="{{if i < technicianCount - 2}}3{{else}}67{{end}}" ColAddr="1" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="5533" Protect="false" RowAddr="{{i+1}}" RowSpan="1" Width="6684">
+                    <CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+                    <PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+                      <P ParaShape="22" Style="46">
+                        <TEXT CharShape="3">
+                  <CHAR>{{v.Extra["technician"].Name}}</CHAR></TEXT></P></PARALIST></CELL>
+                  <CELL BorderFill="{{if i < technicianCount - 2}}3{{else}}67{{end}}" ColAddr="2" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="5533" Protect="false" RowAddr="{{i+1}}" RowSpan="1" Width="13476">
+                    <CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+                    <PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+                      <P ParaShape="5" Style="13">
+                        <TEXT CharShape="31">
+                  <CHAR>{{v.Part}}</CHAR></TEXT></P></PARALIST></CELL>
+                  <CELL BorderFill="{{if i < technicianCount - 2}}3{{else}}67{{end}}" ColAddr="3" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="5533" Protect="false" RowAddr="{{i+1}}" RowSpan="1" Width="10375">
+                    <CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+                    <PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+                      <P ParaShape="22" Style="46">
+                        <TEXT CharShape="3">
+                  <CHAR>{{if v.Extra["technician"].Grade == 1}}건축초급기술자{{else if v.Extra["technician"].Grade == 2}}건축중급기술자{{else if v.Extra["technician"].Grade == 3}}건축고급기술자{{else if v.Extra["technician"].Grade == 4}}건축특급기술자{{end}}</CHAR></TEXT></P></PARALIST></CELL>
+                  <CELL BorderFill="{{if i < technicianCount - 2}}50{{else}}68{{end}}" ColAddr="4" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="5533" Protect="false" RowAddr="{{i+1}}" RowSpan="1" Width="5130">
+                    <CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+                    <PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+                      <P ParaShape="5" Style="0">
+                        <TEXT CharShape="31">
+                        <CHAR>{{v.Remark}}</CHAR></TEXT>
+                        </P></PARALIST></CELL></ROW>{{end}}
+                      </TABLE>
+                      <CHAR/>
+                    </TEXT></P></PARALIST></CELL></ROW>
+                    <ROW>
+                      <CELL BorderFill="1" ColAddr="1" ColSpan="5" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="15044" Protect="false" RowAddr="4" RowSpan="1" Width="44259">
+                        <CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+                        <PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+                          <P ParaShape="47" Style="0">
+                            <TEXT CharShape="59"/>
+                    </P></PARALIST></CELL></ROW>
+                    <ROW>
+                      <CELL BorderFill="1" ColAddr="1" ColSpan="5" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="7769" Protect="false" RowAddr="5" RowSpan="1" Width="44259">
+                        <CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+                        <PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+                          <P ParaShape="48" Style="0">
+                            <TEXT CharShape="17"/>
+                    </P></PARALIST></CELL></ROW>
+                    <ROW>
+                      <CELL BorderFill="54" ColAddr="0" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="1565" Protect="false" RowAddr="6" RowSpan="1" Width="1711">
+                        <CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+                        <PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+                          <P ParaShape="9" Style="0">
+                            <TEXT CharShape="25"/>
+                      </P></PARALIST></CELL>
+                      <CELL BorderFill="1" ColAddr="1" ColSpan="5" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="1565" Protect="false" RowAddr="6" RowSpan="1" Width="44259">
+                        <CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+                        <PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+                          <P ParaShape="5" Style="0">
+                            <TEXT CharShape="25"/>
+                      </P></PARALIST></CELL>
+                      <CELL BorderFill="55" ColAddr="6" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="1565" Protect="false" RowAddr="6" RowSpan="1" Width="1711">
+                        <CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+                        <PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+                          <P ParaShape="9" Style="0">
+                            <TEXT CharShape="25"/>
+                    </P></PARALIST></CELL></ROW>
+                    <ROW>
+                      <CELL BorderFill="52" ColAddr="0" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="1565" Protect="false" RowAddr="7" RowSpan="1" Width="1711">
+                        <CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+                        <PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+                          <P ParaShape="9" Style="0">
+                            <TEXT CharShape="25"/>
+                      </P></PARALIST></CELL>
+                      <CELL BorderFill="51" ColAddr="1" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="1565" Protect="false" RowAddr="7" RowSpan="1" Width="1586">
+                        <CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+                        <PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+                          <P ParaShape="9" Style="0">
+                            <TEXT CharShape="25"/>
+                      </P></PARALIST></CELL>
+                      <CELL BorderFill="53" ColAddr="2" ColSpan="3" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="1565" Protect="false" RowAddr="7" RowSpan="1" Width="41087">
+                        <CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+                        <PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+                          <P ParaShape="9" Style="0">
+                            <TEXT CharShape="25"/>
+                      </P></PARALIST></CELL>
+                      <CELL BorderFill="56" ColAddr="5" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="1565" Protect="false" RowAddr="7" RowSpan="1" Width="1586">
+                        <CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+                        <PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+                          <P ParaShape="9" Style="0">
+                            <TEXT CharShape="25"/>
+                      </P></PARALIST></CELL>
+                      <CELL BorderFill="52" ColAddr="6" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="1565" Protect="false" RowAddr="7" RowSpan="1" Width="1711">
+                        <CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+                        <PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+                          <P ParaShape="9" Style="0">
+                            <TEXT CharShape="25"/>
+                          </P></PARALIST></CELL></ROW></TABLE>
+                          <CHAR/>
+                        </TEXT></P>

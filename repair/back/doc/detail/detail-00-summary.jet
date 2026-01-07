@@ -1,0 +1,294 @@
+<P ColumnBreak="false" PageBreak="true" ParaShape="10" Style="1">
+	<TEXT CharShape="69">
+		<TABLE BorderFill="3" CellSpacing="0" ColCount="1" PageBreak="None" RepeatHeader="true" RowCount="2">
+			<SHAPEOBJECT InstId="1717781052" Lock="false" NumberingType="Table" ZOrder="46">
+				<SIZE Height="3210" HeightRelTo="Absolute" Protect="false" Width="44460" WidthRelTo="Absolute"/>
+				<POSITION AffectLSpacing="false" AllowOverlap="false" FlowWithText="true" HoldAnchorAndSO="false" HorzAlign="Left" HorzOffset="0" HorzRelTo="Column" TreatAsChar="true" VertAlign="Top" VertOffset="0" VertRelTo="Para"/>
+				<OUTSIDEMARGIN Bottom="140" Left="140" Right="140" Top="140"/>
+			</SHAPEOBJECT>
+		<INSIDEMARGIN Bottom="140" Left="140" Right="140" Top="140"/>
+		<ROW>
+			<CELL BorderFill="21" ColAddr="0" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="2830" Protect="false" RowAddr="0" RowSpan="1" Width="44460">
+				<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+				<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+					<P ParaShape="133" Style="2">
+						<TEXT CharShape="74">
+							<CHAR>
+								곤지암2차쌍용아파트 정밀안전점검 실시결과 요약표</CHAR>
+						</TEXT>
+				</P>
+		</PARALIST>
+</CELL>
+</ROW>
+<ROW>
+	<CELL BorderFill="29" ColAddr="0" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="380" Protect="false" RowAddr="1" RowSpan="1" Width="44460">
+		<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+		<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+			<P ParaShape="22" Style="0">
+				<TEXT CharShape="106"/>
+			</P>
+	</PARALIST>
+</CELL>
+</ROW>
+</TABLE>
+<CHAR/>
+</TEXT>
+</P>
+<P ParaShape="10" Style="1">
+	<TEXT CharShape="69">
+		<TABLE BorderFill="3" CellSpacing="0" ColCount="1" PageBreak="Cell" RepeatHeader="true" RowCount="2">
+			<SHAPEOBJECT InstId="1717781053" Lock="false" NumberingType="Table" ZOrder="45">
+				<SIZE Height="62462" HeightRelTo="Absolute" Protect="false" Width="47625" WidthRelTo="Absolute"/>
+				<POSITION AffectLSpacing="false" AllowOverlap="false" FlowWithText="true" HoldAnchorAndSO="false" HorzAlign="Left" HorzOffset="0" HorzRelTo="Para" TreatAsChar="true" VertAlign="Top" VertOffset="0" VertRelTo="Para"/>
+				<OUTSIDEMARGIN Bottom="140" Left="140" Right="140" Top="140"/>
+			</SHAPEOBJECT>
+		<INSIDEMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+		<ROW>
+			<CELL BorderFill="96" ColAddr="0" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="2414" Protect="false" RowAddr="0" RowSpan="1" Width="47625">
+				<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+				<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+					<P ParaShape="106" Style="0">
+						<TEXT CharShape="8">
+							<CHAR>
+								책임기술자 종합의견</CHAR>
+						</TEXT>
+				</P>
+		</PARALIST>
+</CELL>
+</ROW>
+<ROW>
+	<CELL BorderFill="95" ColAddr="0" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="59190" Protect="false" RowAddr="1" RowSpan="1" Width="47625">
+		<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+		<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+			<P ParaShape="263" Style="0">
+				<TEXT CharShape="201"/>
+			</P>
+		<P ParaShape="263" Style="0">
+			<TEXT CharShape="203">
+				<CHAR>
+					가. 본 점검대상 건축물은 </CHAR>
+			</TEXT>
+		<TEXT CharShape="204">
+			<CHAR>
+				경기도 광주시 곤지암읍 곤지암로 108</CHAR>
+		</TEXT>
+	<TEXT CharShape="203">
+		<CHAR>
+			에 위치한 </CHAR>
+	</TEXT>
+<TEXT CharShape="204">
+	<CHAR>
+		곤지암2차쌍용아파트</CHAR>
+</TEXT>
+<TEXT CharShape="203">
+	<CHAR>
+		로서 공동주택(아파트) 용도로 사용 중인 </CHAR>
+</TEXT>
+<TEXT CharShape="204">
+	<CHAR>
+		2종</CHAR>
+</TEXT>
+<TEXT CharShape="203">
+	<CHAR>
+		 시설물이며, 사용승인 이후 약 </CHAR>
+</TEXT>
+<TEXT CharShape="204">
+	<CHAR>
+		24</CHAR>
+</TEXT>
+<TEXT CharShape="203">
+	<CHAR>
+		년이 경과된 상태로 자료수집 및 분석, 외관조사, 재료시험 및 측정, 상태평가 등을 통한 정밀안전점검 결과 안전등급 </CHAR>
+</TEXT>
+<TEXT CharShape="204">
+	<CHAR>
+		“B등급”</CHAR>
+</TEXT>
+<TEXT CharShape="203">
+	<CHAR>
+		으로 평가되었다. 안전등급 </CHAR>
+</TEXT>
+<TEXT CharShape="204">
+	<CHAR>
+		“B등급”</CHAR>
+</TEXT>
+<TEXT CharShape="203">
+	<CHAR>
+		은 보조부재에 경미한 결함이 발생하였으나 기능 발휘에는 지장이 없으며 내구성 증진을 위하여 일부의 보수가 필요한 상태이다.</CHAR>
+</TEXT>
+</P>
+<P ParaShape="274" Style="0">
+	<TEXT CharShape="203"/>
+</P>
+<P ParaShape="263" Style="0">
+	<TEXT CharShape="203">
+		<CHAR>
+			나. 본 건축물은 철근콘크리트구조로 재료시험에 의한 콘크리트의 물리적인 성능은 경과년수에 비교하여 적정한 것으로 확인되었고 부재단면규격 조사는 설계도면과 부합되며 변위/변형에 의한 기울기 측정 결과는 양호한 것으로 확인되었다.</CHAR>
+	</TEXT>
+</P>
+<P ParaShape="275" Style="0">
+	<TEXT CharShape="203"/>
+</P>
+<P ParaShape="263" Style="0">
+	<TEXT CharShape="203">
+		<CHAR>
+			다. 육안조사 주요 결함은 </CHAR>
+	</TEXT>
+<TEXT CharShape="204">
+	<CHAR>
+		외부 벽체 층간균열/콘크리트 박리</CHAR>
+</TEXT>
+<TEXT CharShape="203">
+	<CHAR>
+		가 조사되었고, </CHAR>
+</TEXT>
+<TEXT CharShape="204">
+	<CHAR>
+		지상층 계단실 벽체 층간/경사균열, 균열/누수흔적(누수)/백태, 슬래브 균열/누수흔적</CHAR>
+</TEXT>
+<TEXT CharShape="203">
+	<CHAR>
+		이 조사되었다. </CHAR>
+</TEXT>
+<TEXT CharShape="204">
+	<CHAR>
+		지하층(주차장 포함)의 경우 동지하 벽체 경사/수직균열, 철근노출이 조사되었으며, 주차장 벽체 균열/누수흔적/백태, 기둥 균열/누수흔적/백태, 철근노출, 보 균열/누수흔적(누수)/백태, 철근노출, 슬래브 균열, 균열/누수흔적(누수)/백태, 철근노출</CHAR>
+</TEXT>
+<TEXT CharShape="203">
+	<CHAR>
+		이 확인되었다. </CHAR>
+</TEXT>
+</P>
+<P ParaShape="263" Style="0">
+	<TEXT CharShape="203">
+		<CHAR>
+			    또한, </CHAR>
+	</TEXT>
+<TEXT CharShape="206">
+	<CHAR>
+		부대시설 육안조사 결과</CHAR>
+</TEXT>
+<TEXT CharShape="204">
+	<CHAR>
+		 </CHAR>
+</TEXT>
+<TEXT CharShape="206">
+	<CHAR>
+		D/A(환기구), 트렌치, 아스콘, 추락방지시설 등은 양호한 상태로 조사되었으나</CHAR>
+</TEXT>
+<TEXT CharShape="204">
+	<CHAR>
+		 일부 </CHAR>
+</TEXT>
+<TEXT CharShape="206">
+	<CHAR>
+		담장 균열, 이격이 조사되었다</CHAR>
+</TEXT>
+<TEXT CharShape="204">
+	<CHAR>
+		.</CHAR>
+</TEXT>
+<TEXT CharShape="203">
+	<CHAR>
+		 </CHAR>
+</TEXT>
+</P>
+<P ParaShape="263" Style="0">
+	<TEXT CharShape="203">
+		<CHAR>
+			    </CHAR>
+	</TEXT>
+<TEXT CharShape="205">
+	<CHAR>
+		또한, 지하2층 주차장 기둥(53번) 하단 주근노출과 램프 앞 보 부분의 철근노출은 건물의 안전성 및 내구성에 문제가 될 수 있으며 공공의 안전 확보를 위해서라도 빠른 시일 내에 보수조치를 요하는 바이다.</CHAR>
+</TEXT>
+<TEXT CharShape="203">
+	<CHAR>
+		  </CHAR>
+</TEXT>
+</P>
+<P ParaShape="275" Style="0">
+	<TEXT CharShape="203"/>
+</P>
+<P ParaShape="263" Style="0">
+	<TEXT CharShape="203">
+		<CHAR>
+			라. 발생한 대부분의 결함의 원인은 재료적 성질인 온도 및 건조수축에 기인한 부재간의 구속력차이, 이질재간 팽창률 차이에 의한 접합부 이격, 외벽방수불량 및 구조체의 균열 또는 상층부 바닥슬래브 균열 등에 의해 발생된 것으로 추정되며 대부분 0.3mm이하의 구조체에서 발생된 결함으로 대부분의 결함은 건물의 안전성 및 내구성에는 문제가 없을 것으로 사료되며 위와 같은 결함을 장기간 방치할 경우, 지속적인 수분 유입으로 인한 탄산화 가속화 및 구조체의 내력저하를 초래할 수 있으므로 안전성, 사용성 증진과 구조물의 내구성능 회복을 위해 유지관리 계획 수립을 통한 적극적인 보수가 필요하며, 결함의 진행여부를 주기적으로 점검해야 할 것이다. </CHAR>
+	</TEXT>
+</P>
+<P ParaShape="275" Style="0">
+	<TEXT CharShape="203">
+		<CHAR>
+			 </CHAR>
+	</TEXT>
+</P>
+<P ParaShape="263" Style="0">
+	<TEXT CharShape="203">
+		<PICTURE Reverse="false">
+			<SHAPEOBJECT InstId="1294442168" Lock="false" NumberingType="Figure" TextWrap="InFrontOfText" ZOrder="215">
+				<SIZE Height="5640" HeightRelTo="Absolute" Protect="false" Width="5880" WidthRelTo="Absolute"/>
+				<POSITION AffectLSpacing="false" AllowOverlap="false" FlowWithText="true" HoldAnchorAndSO="false" HorzAlign="Left" HorzOffset="40354" HorzRelTo="Column" TreatAsChar="false" VertAlign="Top" VertOffset="9630" VertRelTo="Para"/>
+				<OUTSIDEMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+				<SHAPECOMMENT>
+					그림입니다.
+원본 그림의 이름: 김장동도장.png
+원본 그림의 크기: 가로 242pixel, 세로 234pixel</SHAPECOMMENT>
+			</SHAPEOBJECT>
+		<SHAPECOMPONENT GroupLevel="0" HorzFlip="false" InstID="220700345" OriHeight="5640" OriWidth="5880" VertFlip="false" XPos="0" YPos="0">
+			<ROTATIONINFO Angle="0" CenterX="2940" CenterY="2820" Rotate="1"/>
+			<RENDERINGINFO>
+				<TRANSMATRIX E1="1.00000" E2="0.00000" E3="0.00000" E4="0.00000" E5="1.00000" E6="0.00000"/>
+				<SCAMATRIX E1="1.00000" E2="0.00000" E3="0.00000" E4="0.00000" E5="1.00000" E6="0.00000"/>
+				<ROTMATRIX E1="1.00000" E2="0.00000" E3="0.00000" E4="0.00000" E5="1.00000" E6="0.00000"/>
+			</RENDERINGINFO>
+	</SHAPECOMPONENT>
+<IMAGERECT X0="0" X1="5880" X2="5880" X3="0" Y0="0" Y1="0" Y2="5640" Y3="5640"/>
+<IMAGECLIP Bottom="8760" Left="0" Right="9060" Top="0"/>
+<INSIDEMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+<IMAGE Alpha="0" BinItem="27" Bright="0" Contrast="0" Effect="RealPic"/>
+<EFFECTS/>
+</PICTURE>
+<CHAR>
+	마. 설계도서 등의 관련서류(</CHAR>
+</TEXT>
+<TEXT CharShape="206">
+	<CHAR>
+		준공도면은 관리소 보관 중</CHAR>
+</TEXT>
+<TEXT CharShape="203">
+	<CHAR>
+		이며, </CHAR>
+</TEXT>
+<TEXT CharShape="206">
+	<CHAR>
+		시설물정보관리종합시스템(FMS)에는 보고서 및 관련서류가 등록되어 있는 것으로 확인</CHAR>
+</TEXT>
+<TEXT CharShape="203">
+	<CHAR>
+		되었다.)는 건축물의 관리 및 이력사항에 중요한 자료가 되므로 중요성을 인식하고 인수·인계시 추가 분실, 파손되지 않도록 노력하여야 하며, 결함진행부위 조기보수 및 안전사고 발생시 적극적으로 대처할 수 있도록 만전을 기해야 한다. 또한, 향후 시설물의 사용 시 용도변경, 구조변경 등 외부 하중증가 요인에 따른 설계 내하력을 초과하여 사용할 경우 안전진단기관 및 건축구조전문가의 구조안전성을 확인 받은 후 사용해야 할 것으로 사료된다.</CHAR>
+</TEXT>
+</P>
+<P ParaShape="263" Style="0">
+	<TEXT CharShape="201"/>
+</P>
+<P ColumnBreak="false" PageBreak="true" ParaShape="263" Style="0">
+	<TEXT CharShape="201">
+		<CHAR>
+			                                              책임기술자  :  </CHAR>
+	</TEXT>
+<TEXT CharShape="208">
+	<CHAR>
+		김   장   동</CHAR>
+</TEXT>
+<TEXT CharShape="201">
+	<CHAR>
+		    (인)</CHAR>
+</TEXT>
+</P>
+</PARALIST>
+</CELL>
+</ROW>
+</TABLE>
+<CHAR/>
+</TEXT>
+</P>

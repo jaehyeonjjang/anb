@@ -1,0 +1,10 @@
+-/dist
+-/public
+-/src/models
+-/README.md
+-/package.json
+-/package-lock.json
+-/src/env.d.ts
+-/vite.config.ts
+-/tsconfig.ts
+-/src/components.d.ts

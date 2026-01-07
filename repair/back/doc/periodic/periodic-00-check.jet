@@ -1,0 +1,530 @@
+{{range j, v2 := summarys}}<P ColumnBreak="false" PageBreak="true" ParaShape="77" Style="0">
+  <TEXT CharShape="14">
+    <TABLE BorderFill="16" CellSpacing="0" ColCount="1" PageBreak="None" RepeatHeader="true" RowCount="2">
+      <SHAPEOBJECT InstId="1197258202" Lock="false" NumberingType="Table" ZOrder="118">
+        <SIZE Height="3412" HeightRelTo="Absolute" Protect="false" Width="44000" WidthRelTo="Absolute"/>
+        <POSITION AffectLSpacing="false" AllowOverlap="false" FlowWithText="true" HoldAnchorAndSO="false" HorzAlign="Left" HorzOffset="0" HorzRelTo="Column" TreatAsChar="true" VertAlign="Top" VertOffset="0" VertRelTo="Para"/>
+        <OUTSIDEMARGIN Bottom="140" Left="140" Right="140" Top="140"/>
+      </SHAPEOBJECT>
+      <INSIDEMARGIN Bottom="140" Left="140" Right="140" Top="140"/>
+      <ROW>
+        <CELL BorderFill="28" ColAddr="0" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="2832" Protect="false" RowAddr="0" RowSpan="1" Width="44000">
+          <CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+          <PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+            <P ParaShape="36" Style="10">
+              <TEXT CharShape="35">
+              <CHAR>Ⅳ-{{j+1}}.  {{name}}{{if privateCount > 1 && privateDong.Id == 0}} {{v2.Name}}{{end}}</CHAR></TEXT>
+              <TEXT CharShape="106">
+              <CHAR> </CHAR></TEXT>
+              <TEXT CharShape="35">
+      <CHAR>정기안전점검표</CHAR></TEXT></P></PARALIST></CELL></ROW>
+      <ROW>
+        <CELL BorderFill="41" ColAddr="0" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="0" Protect="false" RowAddr="1" RowSpan="1" Width="44000">
+          <CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+          <PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+            <P ParaShape="9" Style="0">
+              <TEXT CharShape="60"/>
+    </P></PARALIST></CELL></ROW></TABLE>
+    <CHAR/>
+</TEXT></P>
+<P ParaShape="9" Style="0">
+  <TEXT CharShape="14">
+    <TABLE BorderFill="16" CellSpacing="0" ColCount="12" PageBreak="Cell" RepeatHeader="true" RowCount="24">
+      <SHAPEOBJECT InstId="1109612227" Lock="false" NumberingType="Table" ZOrder="66">
+        <SIZE Height="63626" HeightRelTo="Absolute" Protect="false" Width="47626" WidthRelTo="Absolute"/>
+        <POSITION AffectLSpacing="false" AllowOverlap="false" FlowWithText="true" HoldAnchorAndSO="false" HorzAlign="Left" HorzOffset="0" HorzRelTo="Column" TreatAsChar="true" VertAlign="Top" VertOffset="0" VertRelTo="Para"/>
+        <OUTSIDEMARGIN Bottom="140" Left="140" Right="140" Top="140"/>
+      </SHAPEOBJECT>
+      <INSIDEMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+      <ROW>
+        <CELL BorderFill="35" ColAddr="0" ColSpan="2" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="2273" Protect="false" RowAddr="0" RowSpan="1" Width="9076">
+          <CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+          <PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+            <P ParaShape="5" Style="0">
+              <TEXT CharShape="3">
+        <CHAR>시설물명</CHAR></TEXT></P></PARALIST></CELL>
+        <CELL BorderFill="30" ColAddr="2" ColSpan="4" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="2273" Protect="false" RowAddr="0" RowSpan="1" Width="14738">
+          <CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+          <PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+            <P ParaShape="38" Style="0">
+              <TEXT CharShape="3">
+        <CHAR>{{name}}{{if privateCount > 1 && privateDong.Id == 0}} {{v2.Name}}{{end}}</CHAR></TEXT></P></PARALIST></CELL>
+        <CELL BorderFill="30" ColAddr="6" ColSpan="2" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="2273" Protect="false" RowAddr="0" RowSpan="1" Width="9076">
+          <CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+          <PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+            <P ParaShape="38" Style="0">
+              <TEXT CharShape="3">
+        <CHAR>관리주체</CHAR></TEXT></P></PARALIST></CELL>
+        <CELL BorderFill="18" ColAddr="8" ColSpan="4" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="2273" Protect="false" RowAddr="0" RowSpan="1" Width="14736">
+          <CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+          <PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+            <P ParaShape="52" Style="2">
+              <TEXT CharShape="3">
+      <CHAR>{{periodic.Manager}}</CHAR></TEXT></P></PARALIST></CELL></ROW>
+      <ROW>
+        <CELL BorderFill="32" ColAddr="0" ColSpan="2" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="2273" Protect="false" RowAddr="1" RowSpan="1" Width="9076">
+          <CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+          <PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+            <P ParaShape="5" Style="0">
+              <TEXT CharShape="3">
+        <CHAR>사용승인일</CHAR></TEXT></P></PARALIST></CELL>
+        <CELL BorderFill="20" ColAddr="2" ColSpan="4" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="2273" Protect="false" RowAddr="1" RowSpan="1" Width="14738">
+          <CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+          <PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+            <P ParaShape="52" Style="0">
+              <TEXT CharShape="3">
+        <CHAR>{{apt.Useapproval|humandate}}</CHAR></TEXT></P></PARALIST></CELL>
+        <CELL BorderFill="20" ColAddr="6" ColSpan="2" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="2273" Protect="false" RowAddr="1" RowSpan="1" Width="9076">
+          <CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+          <PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+            <P ParaShape="38" Style="0">
+              <TEXT CharShape="3">
+        <CHAR>최종점검일</CHAR></TEXT></P></PARALIST></CELL>
+        <CELL BorderFill="21" ColAddr="8" ColSpan="4" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="2273" Protect="false" RowAddr="1" RowSpan="1" Width="14736">
+          <CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+          <PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+            <P ParaShape="38" Style="0">
+              <TEXT CharShape="3">
+      <CHAR>{{pastdate|humandate}}</CHAR></TEXT></P></PARALIST></CELL></ROW>
+      <ROW>
+        <CELL BorderFill="97" ColAddr="0" ColSpan="3" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="2697" Protect="false" RowAddr="2" RowSpan="1" Width="11360">
+          <CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+          <PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+            <P ParaShape="5" Style="0">
+              <TEXT CharShape="13">
+        <CHAR>점검항목</CHAR></TEXT></P></PARALIST></CELL>
+        <CELL BorderFill="97" ColAddr="3" ColSpan="9" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="2697" Protect="false" RowAddr="2" RowSpan="1" Width="36266">
+          <CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+          <PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+            <P ParaShape="5" Style="0">
+              <TEXT CharShape="13">
+      <CHAR>점검결과</CHAR></TEXT></P></PARALIST></CELL></ROW>
+      <ROW>
+        <CELL BorderFill="35" ColAddr="0" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="27735" Protect="false" RowAddr="3" RowSpan="9" Width="3699">
+          <CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+          <PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+            <P ParaShape="5" Style="0">
+              <TEXT CharShape="2">
+            <CHAR>건  축</CHAR></TEXT></P>
+            <P ParaShape="5" Style="0">
+              <TEXT CharShape="2">
+        <CHAR>구조물</CHAR></TEXT></P></PARALIST></CELL>
+        <CELL BorderFill="18" ColAddr="1" ColSpan="2" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="2308" Protect="false" RowAddr="3" RowSpan="1" Width="7661">
+          <CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+          <PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+            <P ParaShape="5" Style="0">
+              <TEXT CharShape="2">
+        <CHAR>용도변경</CHAR></TEXT></P></PARALIST></CELL>
+        <CELL BorderFill="92" ColAddr="3" ColSpan="9" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="2308" Protect="false" RowAddr="3" RowSpan="1" Width="36266">
+          <CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+          <PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+            <P ParaShape="111" Style="0">
+              <TEXT CharShape="46">
+      <CHAR>{{replace(periodic.Resulttext1, "※ ", "⦁", -1)}}</CHAR></TEXT></P></PARALIST></CELL></ROW>
+      <ROW>
+        <CELL BorderFill="19" ColAddr="1" ColSpan="2" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="2308" Protect="false" RowAddr="4" RowSpan="1" Width="7661">
+          <CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+          <PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+            <P ParaShape="5" Style="0">
+              <TEXT CharShape="2">
+        <CHAR>구조부재 변경</CHAR></TEXT></P></PARALIST></CELL>
+        <CELL BorderFill="98" ColAddr="3" ColSpan="9" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="2308" Protect="false" RowAddr="4" RowSpan="1" Width="36266">
+          <CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+          <PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+            <P ParaShape="111" Style="0">
+              <TEXT CharShape="46">
+                <CHAR>{{replace(periodic.Resulttext2, "※ ", "⦁", -1)}}</CHAR></TEXT></P></PARALIST></CELL></ROW>
+      
+      <ROW>
+        <CELL BorderFill="19" ColAddr="1" ColSpan="2" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="2308" Protect="false" RowAddr="5" RowSpan="1" Width="7661">
+          <CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+          <PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+            <P ParaShape="5" Style="0">
+              <TEXT CharShape="2">
+        <CHAR>증·개축</CHAR></TEXT></P></PARALIST></CELL>
+        <CELL BorderFill="98" ColAddr="3" ColSpan="9" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="2308" Protect="false" RowAddr="5" RowSpan="1" Width="36266">
+          <CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+          <PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+            <P ParaShape="111" Style="0">
+              <TEXT CharShape="46">
+                <CHAR>{{replace(periodic.Resulttext4, "※ ", "⦁", -1)}}</CHAR></TEXT></P></PARALIST></CELL></ROW>
+      <ROW>
+        <CELL BorderFill="19" ColAddr="1" ColSpan="2" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="3462" Protect="false" RowAddr="6" RowSpan="1" Width="7661">
+          <CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+          <PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+            <P ParaShape="5" Style="0">
+              <TEXT CharShape="2">
+        <CHAR>주변조건 변경</CHAR></TEXT></P></PARALIST></CELL>
+        <CELL BorderFill="98" ColAddr="3" ColSpan="9" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="3462" Protect="false" RowAddr="6" RowSpan="1" Width="36266">
+          <CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+          <PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+            <P ParaShape="88" Style="0">
+              <TEXT CharShape="46">
+                <CHAR>{{replace(periodic.Resulttext3, "※ ", "⦁", -1)}}</CHAR></TEXT></P></PARALIST></CELL></ROW>      
+      <ROW>
+        <CELL BorderFill="19" ColAddr="1" ColSpan="2" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="3784" Protect="false" RowAddr="7" RowSpan="1" Width="7661">
+          <CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+          <PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+            <P ParaShape="5" Style="0">
+              <TEXT CharShape="2">
+        <CHAR>균열발생현황</CHAR></TEXT></P></PARALIST></CELL>
+        <CELL BorderFill="98" ColAddr="3" ColSpan="9" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="3784" Protect="false" RowAddr="7" RowSpan="1" Width="36266">
+          <CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+          <PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+            {{range v2.Check.Crack}}<P ParaShape="88" Style="0"><TEXT CharShape="46"><CHAR>⦁{{.}}</CHAR></TEXT></P>{{end}}
+            {{if v2.Check.CrackCount == 0}}<P ParaShape="88" Style="0"><TEXT CharShape="46"><CHAR>⦁전반적으로 양호함</CHAR></TEXT></P>{{end}}
+         </PARALIST></CELL></ROW>
+      <ROW>
+        <CELL BorderFill="19" ColAddr="1" ColSpan="2" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="4897" Protect="false" RowAddr="8" RowSpan="1" Width="7661">
+          <CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+          <PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+            <P ParaShape="5" Style="0">
+              <TEXT CharShape="2">
+        <CHAR>누수·백태현황</CHAR></TEXT></P></PARALIST></CELL>
+        <CELL BorderFill="98" ColAddr="3" ColSpan="9" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="4897" Protect="false" RowAddr="8" RowSpan="1" Width="36266">
+          <CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+          <PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+            {{range v2.Check.Leak}}<P ParaShape="88" Style="0"><TEXT CharShape="46"><CHAR>⦁{{.}}</CHAR></TEXT></P>{{end}}
+            {{if v2.Check.LeakCount == 0}}<P ParaShape="88" Style="0"><TEXT CharShape="46"><CHAR>⦁전반적으로 양호함</CHAR></TEXT></P>{{end}}
+          </PARALIST></CELL></ROW>
+      <ROW>
+        <CELL BorderFill="19" ColAddr="1" ColSpan="2" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="3179" Protect="false" RowAddr="9" RowSpan="1" Width="7661">
+          <CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+          <PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+            <P ParaShape="10" Style="0">
+              <TEXT CharShape="2">
+            <CHAR>철근노출 및</CHAR></TEXT></P>
+            <P ParaShape="10" Style="0">
+              <TEXT CharShape="2">
+        <CHAR>부식 상태</CHAR></TEXT></P></PARALIST></CELL>
+        <CELL BorderFill="98" ColAddr="3" ColSpan="9" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="3179" Protect="false" RowAddr="9" RowSpan="1" Width="36266">
+          <CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+          <PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+            {{range v2.Check.Concret}}<P ParaShape="88" Style="0"><TEXT CharShape="46"><CHAR>⦁{{.}}</CHAR></TEXT></P>{{end}}
+            {{if v2.Check.ConcretCount == 0}}<P ParaShape="88" Style="0"><TEXT CharShape="46"><CHAR>⦁전반적으로 양호함</CHAR></TEXT></P>{{end}}
+          </PARALIST></CELL></ROW>
+      <ROW>
+        <CELL BorderFill="19" ColAddr="1" ColSpan="2" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="2047" Protect="false" RowAddr="10" RowSpan="1" Width="7661">
+          <CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+          <PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+            <P ParaShape="10" Style="0">
+              <TEXT CharShape="2">
+        <CHAR>강재구조 노후</CHAR></TEXT></P></PARALIST></CELL>
+        <CELL BorderFill="98" ColAddr="3" ColSpan="9" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="2047" Protect="false" RowAddr="10" RowSpan="1" Width="36266">
+          <CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+          <PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">            
+            {{range steelstructures}}<P ParaShape="88" Style="0"><TEXT CharShape="46"><CHAR>{{.}}</CHAR></TEXT></P>{{end}}
+          </PARALIST></CELL></ROW>
+      <ROW>
+        <CELL BorderFill="19" ColAddr="1" ColSpan="2" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="3462" Protect="false" RowAddr="11" RowSpan="1" Width="7661">
+          <CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+          <PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+            <P ParaShape="5" Style="0">
+              <TEXT CharShape="2">
+        <CHAR>마감재</CHAR></TEXT></P></PARALIST></CELL>
+        <CELL BorderFill="98" ColAddr="3" ColSpan="9" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="3462" Protect="false" RowAddr="11" RowSpan="1" Width="36266">
+          <CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+          <PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+            {{range v2.Check.Material}}<P ParaShape="88" Style="0"><TEXT CharShape="46"><CHAR>⦁{{.}}</CHAR></TEXT></P>{{end}}
+            {{if v2.Check.MaterialCount == 0}}<P ParaShape="88" Style="0"><TEXT CharShape="46"><CHAR>⦁전반적으로 양호함</CHAR></TEXT></P>{{end}}
+          </PARALIST></CELL></ROW>
+      <ROW>
+        <CELL BorderFill="31" ColAddr="0" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="18834" Protect="false" RowAddr="12" RowSpan="8" Width="3699">
+          <CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+          <PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+            <P ParaShape="5" Style="0">
+              <TEXT CharShape="2">
+            <CHAR>부 대</CHAR></TEXT></P>
+            <P ParaShape="5" Style="0">
+              <TEXT CharShape="2">
+        <CHAR>시 설</CHAR></TEXT></P></PARALIST></CELL>
+        <CELL BorderFill="19" ColAddr="1" ColSpan="2" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="2771" Protect="false" RowAddr="12" RowSpan="1" Width="7661">
+          <CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+          <PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+            <P ParaShape="5" Style="0">
+              <TEXT CharShape="2">
+        <CHAR>지반(포장)</CHAR></TEXT></P></PARALIST></CELL>
+        <CELL BorderFill="98" ColAddr="3" ColSpan="9" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="2771" Protect="false" RowAddr="12" RowSpan="1" Width="36266">
+          <CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+          <PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+            {{range roads}}<P ParaShape="88" Style="0"><TEXT CharShape="46"><CHAR>{{.}}</CHAR></TEXT></P>{{end}}            
+          </PARALIST></CELL></ROW>
+      <ROW>
+        <CELL BorderFill="19" ColAddr="1" ColSpan="2" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="2771" Protect="false" RowAddr="13" RowSpan="1" Width="7661">
+          <CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+          <PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+            <P ParaShape="5" Style="0">
+              <TEXT CharShape="2">
+        <CHAR>옹벽(축대)</CHAR></TEXT></P></PARALIST></CELL>
+        <CELL BorderFill="98" ColAddr="3" ColSpan="9" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="2771" Protect="false" RowAddr="13" RowSpan="1" Width="36266">
+          <CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+          <PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+            <P ParaShape="88" Style="0">
+              <TEXT CharShape="46">
+                <CHAR>{{retailwall}}</CHAR></TEXT></P></PARALIST></CELL></ROW>
+                
+      <ROW>
+        <CELL BorderFill="19" ColAddr="1" ColSpan="2" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="2771" Protect="false" RowAddr="14" RowSpan="1" Width="7661">
+          <CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+          <PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+            <P ParaShape="5" Style="0">
+              <TEXT CharShape="2">
+        <CHAR>담장</CHAR></TEXT></P></PARALIST></CELL>
+        <CELL BorderFill="98" ColAddr="3" ColSpan="9" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="2771" Protect="false" RowAddr="14" RowSpan="1" Width="36266">
+          <CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+          <PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+            <P ParaShape="88" Style="0">
+              <TEXT CharShape="46">
+                <CHAR>{{fence}}</CHAR></TEXT></P></PARALIST></CELL></ROW>
+                
+                  <ROW>
+                    <CELL BorderFill="19" ColAddr="1" ColSpan="2" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="7724" Protect="false" RowAddr="15" RowSpan="4" Width="7661">
+                      <CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+                      <PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+                        <P ParaShape="34" Style="0">
+                          <TEXT CharShape="2">
+                    <CHAR>공중이 이용하는 부위</CHAR></TEXT></P></PARALIST></CELL>
+                    <CELL BorderFill="143" ColAddr="3" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="1931" Protect="false" RowAddr="15" RowSpan="1" Width="3139">
+                      <CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+                      <PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+                        <P ParaShape="112" Style="13">
+                          <TEXT CharShape="46">
+                    <CHAR>{{if other10.Grade == "" && len(other10.Items) == 0}}□ 유{{else}}▣ 유{{end}}</CHAR></TEXT></P></PARALIST></CELL>
+                    <CELL BorderFill="144" ColAddr="4" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="1931" Protect="false" RowAddr="15" RowSpan="1" Width="3139">
+                      <CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+                      <PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+                        <P ParaShape="112" Style="13">
+                          <TEXT CharShape="46">
+                    <CHAR>{{if other10.Grade == "" && len(other10.Items) == 0}}▣ 무{{else}}□ 무{{end}}</CHAR></TEXT></P></PARALIST></CELL>
+                    <CELL BorderFill="142" ColAddr="5" ColSpan="2" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="1931" Protect="false" RowAddr="15" RowSpan="1" Width="7126">
+                      <CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+                      <PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+                        <P ParaShape="111" Style="0">
+                          <TEXT CharShape="46">
+                    <CHAR>추락방지시설</CHAR></TEXT></P></PARALIST></CELL>
+                    <CELL BorderFill="142" ColAddr="7" ColSpan="2" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="1931" Protect="false" RowAddr="15" RowSpan="1" Width="10339">
+                      <CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+                      <PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+                        <P ParaShape="88" Style="0">
+                          <TEXT CharShape="46">
+                            <CHAR>{{if other10.Good == 1}}{{if other10.Grade == ""}}⦁해당사항 없음{{else}}⦁전체적으로 양호함{{end}}{{end}}</CHAR></TEXT></P></PARALIST></CELL>                    
+                    <CELL BorderFill="142" ColAddr="9" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="1931" Protect="false" RowAddr="15" RowSpan="1" Width="2315">
+                      <CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+                      <PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+                        <P ParaShape="112" Style="0">
+                          <TEXT CharShape="46">
+                    <CHAR>{{if other10.Grade == ""}}-{{else}}{{other10.Grade}}{{end}}</CHAR></TEXT></P></PARALIST></CELL>
+                    <CELL BorderFill="145" ColAddr="10" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="1931" Protect="false" RowAddr="15" RowSpan="1" Width="5104">
+                      <CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+                      <PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+                        <P ParaShape="112" Style="13">
+                          <TEXT CharShape="46">
+                    <CHAR>{{if other10.Grade == "c" || other10.Grade == "d" || other10.Grade == "e"}}▣ 보수필요{{else}}□ 보수필요{{end}}</CHAR></TEXT></P></PARALIST></CELL>
+                    <CELL BorderFill="141" ColAddr="11" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="1931" Protect="false" RowAddr="15" RowSpan="1" Width="5104">
+                      <CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+                      <PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+                        <P ParaShape="112" Style="13">
+                          <TEXT CharShape="46">
+                            <CHAR>{{if other10.Grade == "" || other10.Grade == "a" || other10.Grade == "b"}}▣ 불필요{{else}}□ 불필요{{end}}</CHAR></TEXT></P></PARALIST></CELL></ROW>
+                            <ROW>
+                              <CELL BorderFill="143" ColAddr="3" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="1931" Protect="false" RowAddr="16" RowSpan="1" Width="3139">
+                    <CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+                    <PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+                      <P ParaShape="112" Style="13">
+                        <TEXT CharShape="46">
+                          <CHAR>{{if other11.Grade == "" && len(other11.Items) == 0}}□ 유{{else}}▣ 유{{end}}</CHAR></TEXT></P></PARALIST></CELL>
+                  <CELL BorderFill="144" ColAddr="4" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="1931" Protect="false" RowAddr="16" RowSpan="1" Width="3139">
+                    <CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+                    <PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+                      <P ParaShape="112" Style="13">
+                        <TEXT CharShape="46">
+                          <CHAR>{{if other11.Grade == "" && len(other11.Items) == 0}}▣ 무{{else}}□ 무{{end}}</CHAR></TEXT></P></PARALIST></CELL>
+                  <CELL BorderFill="142" ColAddr="5" ColSpan="2" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="1931" Protect="false" RowAddr="16" RowSpan="1" Width="7126">
+                    <CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+                    <PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+                      <P ParaShape="111" Style="0">
+                        <TEXT CharShape="46">
+                  <CHAR>도로포장</CHAR></TEXT></P></PARALIST></CELL>
+                  <CELL BorderFill="142" ColAddr="7" ColSpan="2" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="1931" Protect="false" RowAddr="16" RowSpan="1" Width="10339">
+                    <CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+                    <PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+                      <P ParaShape="88" Style="0">
+                        <TEXT CharShape="46">
+                          <CHAR>{{if other11.Good == 1 || other11.Good == 2}}{{if other11.Grade == ""}}⦁해당사항 없음{{else}}⦁전체적으로 양호함{{end}}{{end}}</CHAR></TEXT></P></PARALIST></CELL>
+                  <CELL BorderFill="142" ColAddr="9" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="1931" Protect="false" RowAddr="16" RowSpan="1" Width="2315">
+                    <CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+                    <PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+                      <P ParaShape="112" Style="0">
+                        <TEXT CharShape="46">
+                          <CHAR>{{if other11.Grade == ""}}-{{else}}{{other11.Grade}}{{end}}</CHAR></TEXT></P></PARALIST></CELL>
+                  <CELL BorderFill="145" ColAddr="10" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="1931" Protect="false" RowAddr="16" RowSpan="1" Width="5104">
+                    <CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+                    <PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+                      <P ParaShape="112" Style="13">
+                        <TEXT CharShape="46">
+                          <CHAR>{{if other11.Grade == "c" || other11.Grade == "d" || other11.Grade == "e"}}▣ 보수필요{{else}}□ 보수필요{{end}}</CHAR></TEXT></P></PARALIST></CELL>
+                  <CELL BorderFill="141" ColAddr="11" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="1931" Protect="false" RowAddr="16" RowSpan="1" Width="5104">
+                    <CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+                    <PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+                      <P ParaShape="112" Style="13">
+                        <TEXT CharShape="46">
+                          <CHAR>{{if other11.Grade == "" || other11.Grade == "a" || other11.Grade == "b"}}▣ 불필요{{else}}□ 불필요{{end}}</CHAR></TEXT></P></PARALIST></CELL></ROW>
+                <ROW>
+                  <CELL BorderFill="143" ColAddr="3" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="1931" Protect="false" RowAddr="17" RowSpan="1" Width="3139">
+                    <CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+                    <PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+                      <P ParaShape="112" Style="13">
+                        <TEXT CharShape="46">
+                          <CHAR>{{if other12.Grade == "" && len(other12.Items) == 0}}□ 유{{else}}▣ 유{{end}}</CHAR></TEXT></P></PARALIST></CELL>                  
+                  <CELL BorderFill="144" ColAddr="4" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="1931" Protect="false" RowAddr="17" RowSpan="1" Width="3139">
+                    <CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+                    <PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+                      <P ParaShape="112" Style="13">
+                        <TEXT CharShape="46">
+                          <CHAR>{{if other12.Grade == "" && len(other12.Items) == 0}}▣ 무{{else}}□ 무{{end}}</CHAR></TEXT></P></PARALIST></CELL>
+                
+                  <CELL BorderFill="142" ColAddr="5" ColSpan="2" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="1931" Protect="false" RowAddr="17" RowSpan="1" Width="7126">
+                    <CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+                    <PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+                      <P ParaShape="111" Style="0">
+                        <TEXT CharShape="46">
+                  <CHAR>도로부 신축이음부</CHAR></TEXT></P></PARALIST></CELL>
+                  <CELL BorderFill="142" ColAddr="7" ColSpan="2" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="1931" Protect="false" RowAddr="17" RowSpan="1" Width="10339">
+                    <CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+                    <PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+                      <P ParaShape="88" Style="0">
+                        <TEXT CharShape="46">
+                          <CHAR>{{if other12.Good == 1 || other12.Good == 2}}{{if other12.Good == 2 || other12.Grade == ""}}⦁해당사항 없음{{else}}⦁전체적으로 양호함{{end}}{{end}}</CHAR></TEXT></P></PARALIST></CELL>                          
+                  <CELL BorderFill="142" ColAddr="9" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="1931" Protect="false" RowAddr="17" RowSpan="1" Width="2315">
+                    <CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+                    <PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+                      <P ParaShape="112" Style="0">
+                        <TEXT CharShape="46">
+                          <CHAR>{{if other12.Grade == ""}}-{{else}}{{other12.Grade}}{{end}}</CHAR></TEXT></P></PARALIST></CELL>
+                  <CELL BorderFill="145" ColAddr="10" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="1931" Protect="false" RowAddr="17" RowSpan="1" Width="5104">
+                    <CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+                    <PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+                      <P ParaShape="112" Style="13">
+                        <TEXT CharShape="46">
+                          <CHAR>{{if (other12.Grade == "c" || other12.Grade == "d" || other12.Grade == "e") && other12.Good == 0}}▣ 보수필요{{else}}□ 보수필요{{end}}</CHAR></TEXT></P></PARALIST></CELL>
+                  <CELL BorderFill="141" ColAddr="11" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="1931" Protect="false" RowAddr="17" RowSpan="1" Width="5104">
+                    <CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+                    <PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+                      <P ParaShape="112" Style="13">
+                        <TEXT CharShape="46">
+                          <CHAR>{{if other12.Grade == "" || other12.Grade == "a" || other12.Grade == "b" || other12.Good != 0}}▣ 불필요{{else}}□ 불필요{{end}}</CHAR></TEXT></P></PARALIST></CELL></ROW>
+                <ROW>
+                  <CELL BorderFill="143" ColAddr="3" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="1931" Protect="false" RowAddr="18" RowSpan="1" Width="3139">
+                    <CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+                    <PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+                      <P ParaShape="112" Style="13">
+                        <TEXT CharShape="46">
+                          <CHAR>{{if other13.Grade == "" && len(other13.Items) == 0}}□ 유{{else}}▣ 유{{end}}</CHAR></TEXT></P></PARALIST></CELL>
+                  <CELL BorderFill="144" ColAddr="4" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="1931" Protect="false" RowAddr="18" RowSpan="1" Width="3139">
+                    <CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+                    <PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+                      <P ParaShape="112" Style="13">
+                        <TEXT CharShape="46">
+                          <CHAR>{{if other13.Grade == "" && len(other13.Items) == 0}}▣ 무{{else}}□ 무{{end}}</CHAR></TEXT></P></PARALIST></CELL>
+                  <CELL BorderFill="142" ColAddr="5" ColSpan="2" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="1931" Protect="false" RowAddr="18" RowSpan="1" Width="7126">
+                    <CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+                    <PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+                      <P ParaShape="111" Style="0">
+                        <TEXT CharShape="46">
+                  <CHAR>환기구 등의 덮개</CHAR></TEXT></P></PARALIST></CELL>
+                  <CELL BorderFill="142" ColAddr="7" ColSpan="2" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="1931" Protect="false" RowAddr="18" RowSpan="1" Width="10339">
+                    <CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+                    <PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+                      <P ParaShape="88" Style="0">
+                        <TEXT CharShape="46">
+                          <CHAR>{{if other13.Good == 1}}{{if other13.Grade == ""}}⦁해당사항 없음{{else}}⦁전체적으로 양호함{{end}}{{end}}</CHAR></TEXT></P></PARALIST></CELL>
+                  <CELL BorderFill="142" ColAddr="9" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="1931" Protect="false" RowAddr="18" RowSpan="1" Width="2315">
+                    <CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+                    <PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+                      <P ParaShape="112" Style="0">
+                        <TEXT CharShape="46">
+                          <CHAR>{{if other13.Grade == ""}}-{{else}}{{other13.Grade}}{{end}}</CHAR></TEXT></P></PARALIST></CELL>
+                  <CELL BorderFill="145" ColAddr="10" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="1931" Protect="false" RowAddr="18" RowSpan="1" Width="5104">
+                    <CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+                    <PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+                      <P ParaShape="112" Style="13">
+                        <TEXT CharShape="46">
+                          <CHAR>{{if other13.Grade == "c" || other13.Grade == "d" || other13.Grade == "e"}}▣ 보수필요{{else}}□ 보수필요{{end}}</CHAR></TEXT></P></PARALIST></CELL>
+                  <CELL BorderFill="141" ColAddr="11" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="1931" Protect="false" RowAddr="18" RowSpan="1" Width="5104">
+                    <CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+                    <PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+                      <P ParaShape="112" Style="13">
+                        <TEXT CharShape="46">
+                          <CHAR>{{if other13.Grade == "" || other13.Grade == "a" || other13.Grade == "b"}}▣ 불필요{{else}}□ 불필요{{end}}</CHAR></TEXT></P></PARALIST></CELL></ROW>
+                <ROW>
+                  <CELL BorderFill="19" ColAddr="1" ColSpan="2" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="2797" Protect="false" RowAddr="19" RowSpan="1" Width="7661">
+                    <CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+                    <PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+                      <P ParaShape="5" Style="0">
+                        <TEXT CharShape="2">
+                  <CHAR>천창 및 채광창 상태</CHAR></TEXT></P></PARALIST></CELL>
+                  <CELL BorderFill="98" ColAddr="3" ColSpan="9" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="2797" Protect="false" RowAddr="19" RowSpan="1" Width="36266">
+                    <CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+                    <PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+                      <P ParaShape="88" Style="0">
+                        <TEXT CharShape="46">
+                          <CHAR>{{range periodicchecks}}{{if v2.Id == .Aptdong}}{{.Content13}}{{end}}{{end}}</CHAR></TEXT></P></PARALIST></CELL></ROW>
+
+                <ROW>
+                  <CELL BorderFill="64" ColAddr="0" ColSpan="3" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="2340" Protect="false" RowAddr="20" RowSpan="1" Width="11360">
+                    <CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+                    <PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+                      <P ParaShape="5" Style="0">
+                        <TEXT CharShape="2">
+                  <CHAR>기타</CHAR></TEXT></P></PARALIST></CELL>
+                  <CELL BorderFill="64" ColAddr="3" ColSpan="9" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="2340" Protect="false" RowAddr="20" RowSpan="1" Width="36266">
+                    <CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+                    <PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+                      <P ParaShape="88" Style="0">
+                        <TEXT CharShape="46">
+                          <CHAR>{{range periodicchecks}}{{if v2.Id == .Aptdong}}{{.Content14}}{{end}}{{end}}</CHAR></TEXT></P></PARALIST></CELL></ROW>
+
+                <ROW>
+                  <CELL BorderFill="92" ColAddr="0" ColSpan="3" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="2340" Protect="false" RowAddr="21" RowSpan="1" Width="11360">
+                    <CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+                    <PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+                      <P ParaShape="5" Style="0">
+                        <TEXT CharShape="2">
+                  <CHAR>특기사항</CHAR></TEXT></P></PARALIST></CELL>
+                  <CELL BorderFill="92" ColAddr="3" ColSpan="9" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="2340" Protect="false" RowAddr="21" RowSpan="1" Width="36266">
+                    <CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+                    <PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+                      <P ParaShape="88" Style="0">
+                        <TEXT CharShape="46">
+                          <CHAR>{{range periodicchecks}}{{if v2.Id == .Aptdong}}{{.Content15}}{{end}}{{end}}</CHAR></TEXT></P></PARALIST></CELL></ROW>
+
+                <ROW>
+                  <CELL BorderFill="64" ColAddr="0" ColSpan="3" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="3732" Protect="false" RowAddr="22" RowSpan="1" Width="11360">
+                    <CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+                    <PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+                      <P ParaShape="5" Style="0">
+                        <TEXT CharShape="2">
+                  <CHAR>점검자 의견</CHAR></TEXT></P></PARALIST></CELL>
+                  <CELL BorderFill="64" ColAddr="3" ColSpan="9" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="3732" Protect="false" RowAddr="22" RowSpan="1" Width="36266">
+                    <CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+                    <PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+                      <P ParaShape="88" Style="0">                        
+                        <TEXT CharShape="86">
+                          <CHAR>{{range periodicchecks}}{{if v2.Id == .Aptdong}}{{.Content16}}{{end}}{{end}}</CHAR></TEXT></P></PARALIST></CELL></ROW>
+                      
+                <ROW>
+                  <CELL BorderFill="63" ColAddr="0" ColSpan="6" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="1382" Protect="false" RowAddr="23" RowSpan="1" Width="23814">
+                    <CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+                    <PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+                      <P ParaShape="9" Style="0">
+                        <TEXT CharShape="85"/>
+                  </P></PARALIST></CELL>
+                  <CELL BorderFill="63" ColAddr="6" ColSpan="6" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="1382" Protect="false" RowAddr="23" RowSpan="1" Width="23812">
+                    <CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+                    <PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+                      <P ParaShape="67" Style="0">
+                        <TEXT CharShape="85"/>
+                      </P></PARALIST></CELL></ROW></TABLE>
+                      <CHAR/>
+                    </TEXT></P>
+{{end}}

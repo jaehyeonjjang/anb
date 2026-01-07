@@ -1,0 +1,8 @@
+#+title: Todo
+
+* TODO 처음 이미지 받아올때 이미 다운받은것은 안 받아오도록
+* TODO 서버로 데이터 전송
+* TODO 상세 보기
+* TODO draw 저장
+* TODO 웹사이트
+

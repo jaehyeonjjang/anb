@@ -1,0 +1,48 @@
+{{range i, v := images}}{{if i > 2}}<P ColumnBreak="false" PageBreak="true" ParaShape="70" Style="2">
+{{if i == 3}}<TEXT CharShape="64">
+<CHAR>3. 전회점검 결과표</CHAR></TEXT>
+<TEXT CharShape="116"/>{{else}}<TEXT CharShape="66"/>{{end}}
+</P>
+<P ParaShape="60" Style="2">
+<TEXT CharShape="66">
+  <TABLE BorderFill="3" CellSpacing="0" ColCount="1" PageBreak="Cell" RepeatHeader="true" RowCount="1">
+    <SHAPEOBJECT InstId="1162229509" Lock="false" NumberingType="Table" ZOrder="6">
+      <SIZE Height="66081" HeightRelTo="Absolute" Protect="false" Width="47331" WidthRelTo="Absolute"/>
+      <POSITION AffectLSpacing="false" AllowOverlap="false" FlowWithText="true" HoldAnchorAndSO="false" HorzAlign="Left" HorzOffset="0" HorzRelTo="Para" TreatAsChar="true" VertAlign="Top" VertOffset="0" VertRelTo="Para"/>
+      <OUTSIDEMARGIN Bottom="283" Left="283" Right="283" Top="283"/>
+    </SHAPEOBJECT>
+    <INSIDEMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+    <ROW>
+      <CELL BorderFill="3" ColAddr="0" ColSpan="1" Dirty="false" Editable="false" HasMargin="true" Header="false" Height="66081" Protect="false" RowAddr="0" RowSpan="1" Width="47331">
+        <CELLMARGIN Bottom="0" Left="283" Right="0" Top="0"/>
+        <PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+          <P ParaShape="34" Style="0">
+            <TEXT CharShape="47">
+              <PICTURE Reverse="false">
+                <SHAPEOBJECT InstId="1200840431" Lock="false" NumberingType="Figure" TextFlow="BothSides" ZOrder="88">
+                  <SIZE Height="53760" HeightRelTo="Absolute" Protect="false" Width="40560" WidthRelTo="Absolute"/>
+                  <POSITION AffectLSpacing="false" AllowOverlap="false" FlowWithText="true" HoldAnchorAndSO="false" HorzAlign="Left" HorzOffset="6919" HorzRelTo="Para" TreatAsChar="true" VertAlign="Top" VertOffset="0" VertRelTo="Para"/>
+                  <OUTSIDEMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+                  <SHAPECOMMENT>그림입니다.원본 그림의 이름: 2022 상1.png
+                  </SHAPECOMMENT></SHAPEOBJECT><SHAPECOMPONENT GroupLevel="0" HorzFlip="false" InstID="127098608" OriHeight="53760" OriWidth="40560" VertFlip="false" XPos="0" YPos="0">
+                  <ROTATIONINFO Angle="0" CenterX="20280" CenterY="26880" Rotate="1"/>
+                  <RENDERINGINFO>
+                    <TRANSMATRIX E1="1.00000" E2="0.00000" E3="0.00000" E4="0.00000" E5="1.00000" E6="0.00000"/>
+                    <SCAMATRIX E1="1.00000" E2="0.00000" E3="0.00000" E4="0.00000" E5="1.00000" E6="0.00000"/>
+                    <ROTMATRIX E1="1.00000" E2="0.00000" E3="0.00000" E4="0.00000" E5="1.00000" E6="0.00000"/>
+                  </RENDERINGINFO></SHAPECOMPONENT>
+                  <IMAGERECT X0="0" X1="40560" X2="40560" X3="0" Y0="0" Y1="0" Y2="53760" Y3="53760"/>
+                  <IMAGECLIP Bottom="53760" Left="0" Right="40560" Top="0"/>
+                  <INSIDEMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+                  <IMAGE Alpha="0" BinItem="{{i+52}}" Bright="0" Contrast="0" Effect="RealPic"/>
+                  <EFFECTS/>
+              </PICTURE>
+              <CHAR/>
+            </TEXT>
+          </P>
+        </PARALIST>
+      </CELL>
+    </ROW>
+  </TABLE>
+  <CHAR/>
+</TEXT></P>{{end}}{{end}}

@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+  backend:
+    restart: always
+    image: yiyuhki/anbadmin
+    ports:
+      - "9000:9000"
+    volumes:
+      - /home/anb/webdata:/usr/local/main/webdata

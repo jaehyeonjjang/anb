@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  backend:
+    restart: always
+    image: yiyuhki/backend
+    ports:
+      - "3001:3001"
+    volumes:
+      - /home/anb/backend/webdata:/usr/local/backend/webdata

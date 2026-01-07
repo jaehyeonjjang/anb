@@ -1,0 +1,14 @@
+-peirodic/ios
+-peirodic/android
+-peirodic/windows
+-peirodic/web
+-peirodic/assets
+-back/bin
+-back/bild
+-back/dist
+-back/webdata
+-.xlsx
+-.jpg
+-.png
+-back/models
+-back/controllers/api/rest

@@ -1,0 +1,139 @@
+
+$--colors: (
+  "primary": (
+    "base": green,
+  ),
+  "success": (
+    "base": #21ba45,
+  ),
+  "warning": (
+    "base": #f2711c,
+  ),
+  "danger": (
+    "base": #db2828,
+  ),
+  "error": (
+    "base": #db2828,
+  ),
+  "info": (
+    "base": #42b8dd,
+  ),
+);
+
+// You should use them in scss, because we calculate it by sass.
+// comment next lines to use default color
+@forward "element-plus/theme-chalk/src/common/var.scss" with
+  (
+    // do not use same name, it will override.
+    $colors: $--colors,
+    $button-padding-horizontal: ("default": 50px)
+  );
+
+// if you want to import all
+// @use "element-plus/theme-chalk/src/index.scss" as *;
+
+// You can comment it to hide debug info.
+// @debug $--colors;
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;500&display=swap');
+
+
+:root {
+  font-size: 12px;
+  font-family: 'Noto Sans KR';
+}
+
+.el-table {
+  --el-border-color-lighter: #ddd;
+}
+
+.el-table tr:nth-child(odd) {
+  background-color: #fafafa;
+}
+
+.el-table .cell {
+  font-size: 12px;
+  padding: 0px 0px;
+  margin: 0px 0px;
+  color: #555;
+}
+
+.el-table .el-table__cell {
+  font-size: 12px;
+  padding: 2px 4px;
+  margin: 0px 0px;
+}
+
+.el-button {
+  font-size: 12px;
+}
+
+.el-input {
+  font-size: 12px;  
+}
+
+.el-input__inner {
+  font-size: 12px;
+  height: 22px;
+}
+
+.el-pagination li {
+  font-size: 12px;
+}
+
+.label {
+  font-size: 12px;  
+}
+
+.el-form-item {
+  font-size: 12px;
+  margin: 8px 8px;
+}
+
+.el-form-item__label {
+  font-size: 12px;
+}
+
+.el-form-item__content {
+  font-size: 12px;
+}
+
+.el-select-dropdown__item {
+  font-size: 12px;
+}
+
+.el-menu-item {
+  font-size: 12px;
+  height: 40px;
+  margin-left: -10px;
+}
+
+
+
+.el-radio-button {
+  font-size: 12px;  
+}
+
+.el-radio-button__inner {
+  font-size: 12px;  
+}
+
+.el-transfer-panel {
+  font-size: 12px;
+}
+
+.el-checkbox {
+  font-size: 12px;
+}
+
+.el-checkbox span {
+  font-size: 12px;
+}
+
+.el-checkbox__label {
+  font-size: 12px;  
+}
+
+.el-transfer-panel .el-transfer-panel__header .el-checkbox .el-checkbox__label {
+  font-size: 12px;
+}

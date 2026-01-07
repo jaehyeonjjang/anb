@@ -1,0 +1,1713 @@
+<P ColumnBreak="false" PageBreak="true" ParaShape="136" Style="0">
+<TEXT CharShape="64">
+<CHAR>4. 보수·보강 방법</CHAR></TEXT></P>
+<P ParaShape="135" Style="0">
+<TEXT CharShape="66">
+<CHAR> ◈ 표면처리공법(균열정지) 균열보수</CHAR></TEXT></P>
+<P ParaShape="131" Style="0">
+<TEXT CharShape="68">
+<TABLE BorderFill="3" CellSpacing="0" ColCount="1" PageBreak="Cell" RepeatHeader="true" RowCount="2">
+<SHAPEOBJECT InstId="2011782108" Lock="false" NumberingType="Table" ZOrder="21">
+<SIZE Height="61163" HeightRelTo="Absolute" Protect="false" Width="47626" WidthRelTo="Absolute"/>
+<POSITION AffectLSpacing="false" AllowOverlap="false" FlowWithText="true" HoldAnchorAndSO="false" HorzAlign="Left" HorzOffset="0" HorzRelTo="Column" TreatAsChar="true" VertAlign="Top" VertOffset="0" VertRelTo="Para"/>
+<OUTSIDEMARGIN Bottom="140" Left="140" Right="140" Top="140"/>
+</SHAPEOBJECT>
+<INSIDEMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+<ROW>
+<CELL BorderFill="3" ColAddr="0" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="34968" Protect="false" RowAddr="0" RowSpan="1" Width="47626">
+<CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+<P ParaShape="34" Style="0">
+<TEXT CharShape="39">
+<PICTURE Reverse="false">
+<SHAPEOBJECT InstId="2011782109" Lock="false" NumberingType="Figure" ZOrder="22">
+<SIZE Height="26759" HeightRelTo="Absolute" Protect="false" Width="43016" WidthRelTo="Absolute"/>
+<POSITION AffectLSpacing="false" AllowOverlap="false" FlowWithText="true" HoldAnchorAndSO="false" HorzAlign="Left" HorzOffset="0" HorzRelTo="Para" TreatAsChar="true" VertAlign="Top" VertOffset="0" VertRelTo="Para"/>
+<OUTSIDEMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+<SHAPECOMMENT>그림입니다.원본 그림의 이름: CLP000005d80001.bmp
+</SHAPECOMMENT></SHAPEOBJECT><SHAPECOMPONENT CurHeight="26759" CurWidth="43016" GroupLevel="0" HorzFlip="false" InstID="938040286" OriHeight="60840" OriWidth="103740" VertFlip="false" XPos="0" YPos="0">
+<ROTATIONINFO Angle="0" CenterX="21508" CenterY="13379" Rotate="1"/>
+<RENDERINGINFO>
+<TRANSMATRIX E1="1.00000" E2="0.00000" E3="0.00000" E4="0.00000" E5="1.00000" E6="0.00000"/>
+<SCAMATRIX E1="0.41465" E2="0.00000" E3="0.00000" E4="0.00000" E5="0.43983" E6="0.00000"/>
+<ROTMATRIX E1="1.00000" E2="0.00000" E3="0.00000" E4="0.00000" E5="1.00000" E6="0.00000"/>
+</RENDERINGINFO></SHAPECOMPONENT>
+<IMAGERECT X0="0" X1="103740" X2="103740" X3="0" Y0="0" Y1="0" Y2="60840" Y3="60840"/>
+<INSIDEMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+<IMAGE Alpha="0" BinItem="1" Bright="0" Contrast="0" Effect="RealPic"/>
+<EFFECTS/>
+</PICTURE>
+<CHAR/>
+</TEXT></P></PARALIST></CELL></ROW>
+<ROW>
+<CELL BorderFill="3" ColAddr="0" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="26195" Protect="false" RowAddr="1" RowSpan="1" Width="47626">
+<CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+<P ParaShape="34" Style="0">
+<TEXT CharShape="39">
+<PICTURE Reverse="false">
+<SHAPEOBJECT InstId="2011782111" Lock="false" NumberingType="Figure" ZOrder="23">
+<SIZE Height="21626" HeightRelTo="Absolute" Protect="false" Width="23880" WidthRelTo="Absolute"/>
+<POSITION AffectLSpacing="false" AllowOverlap="false" FlowWithText="true" HoldAnchorAndSO="false" HorzAlign="Left" HorzOffset="0" HorzRelTo="Para" TreatAsChar="true" VertAlign="Top" VertOffset="0" VertRelTo="Para"/>
+<OUTSIDEMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+<SHAPECOMMENT>그림입니다.원본 그림의 이름: CLP000005d80002.bmp
+</SHAPECOMMENT></SHAPEOBJECT><SHAPECOMPONENT CurHeight="21626" CurWidth="23880" GroupLevel="0" HorzFlip="false" InstID="938040288" OriHeight="48960" OriWidth="54060" VertFlip="false" XPos="0" YPos="0">
+<ROTATIONINFO Angle="0" CenterX="11940" CenterY="10813" Rotate="1"/>
+<RENDERINGINFO>
+<TRANSMATRIX E1="1.00000" E2="0.00000" E3="0.00000" E4="0.00000" E5="1.00000" E6="0.00000"/>
+<SCAMATRIX E1="0.44173" E2="0.00000" E3="0.00000" E4="0.00000" E5="0.44171" E6="0.00000"/>
+<ROTMATRIX E1="1.00000" E2="0.00000" E3="0.00000" E4="0.00000" E5="1.00000" E6="0.00000"/>
+</RENDERINGINFO></SHAPECOMPONENT>
+<IMAGERECT X0="0" X1="54060" X2="54060" X3="0" Y0="0" Y1="0" Y2="48960" Y3="48960"/>
+<INSIDEMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+<IMAGE Alpha="0" BinItem="2" Bright="0" Contrast="0" Effect="RealPic"/>
+<EFFECTS/>
+</PICTURE>
+<CHAR/>
+</TEXT></P></PARALIST></CELL></ROW></TABLE>
+<CHAR/>
+</TEXT></P>
+<P ColumnBreak="false" PageBreak="true" ParaShape="135" Style="0">
+<TEXT CharShape="66">
+<CHAR> ◈ 표면처리공법(균열진행) 균열보수</CHAR></TEXT></P>
+<P ParaShape="131" Style="0">
+<TEXT CharShape="68">
+<TABLE BorderFill="3" CellSpacing="0" ColCount="1" PageBreak="Cell" RepeatHeader="true" RowCount="2">
+<SHAPEOBJECT InstId="2011782113" Lock="false" NumberingType="Table" ZOrder="24">
+<SIZE Height="66540" HeightRelTo="Absolute" Protect="false" Width="47626" WidthRelTo="Absolute"/>
+<POSITION AffectLSpacing="false" AllowOverlap="false" FlowWithText="true" HoldAnchorAndSO="false" HorzAlign="Left" HorzOffset="0" HorzRelTo="Column" TreatAsChar="true" VertAlign="Top" VertOffset="0" VertRelTo="Para"/>
+<OUTSIDEMARGIN Bottom="140" Left="140" Right="140" Top="140"/>
+</SHAPEOBJECT>
+<INSIDEMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+<ROW>
+<CELL BorderFill="3" ColAddr="0" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="36949" Protect="false" RowAddr="0" RowSpan="1" Width="47626">
+<CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+<P ParaShape="34" Style="0">
+<TEXT CharShape="39">
+<PICTURE Reverse="false">
+<SHAPEOBJECT InstId="2011782114" Lock="false" NumberingType="Figure" ZOrder="25">
+<SIZE Height="28658" HeightRelTo="Absolute" Protect="false" Width="43866" WidthRelTo="Absolute"/>
+<POSITION AffectLSpacing="false" AllowOverlap="false" FlowWithText="true" HoldAnchorAndSO="false" HorzAlign="Left" HorzOffset="0" HorzRelTo="Para" TreatAsChar="true" VertAlign="Top" VertOffset="0" VertRelTo="Para"/>
+<OUTSIDEMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+<SHAPECOMMENT>그림입니다.원본 그림의 이름: CLP000005d80003.bmp
+</SHAPECOMMENT></SHAPEOBJECT><SHAPECOMPONENT CurHeight="28658" CurWidth="43866" GroupLevel="0" HorzFlip="false" InstID="938040291" OriHeight="74040" OriWidth="119400" VertFlip="false" XPos="0" YPos="0">
+<ROTATIONINFO Angle="0" CenterX="21933" CenterY="14329" Rotate="1"/>
+<RENDERINGINFO>
+<TRANSMATRIX E1="1.00000" E2="0.00000" E3="0.00000" E4="0.00000" E5="1.00000" E6="0.00000"/>
+<SCAMATRIX E1="0.36739" E2="0.00000" E3="0.00000" E4="0.00000" E5="0.38706" E6="0.00000"/>
+<ROTMATRIX E1="1.00000" E2="0.00000" E3="0.00000" E4="0.00000" E5="1.00000" E6="0.00000"/>
+</RENDERINGINFO></SHAPECOMPONENT>
+<IMAGERECT X0="0" X1="119400" X2="119400" X3="0" Y0="0" Y1="0" Y2="74040" Y3="74040"/>
+<INSIDEMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+<IMAGE Alpha="0" BinItem="3" Bright="0" Contrast="0" Effect="RealPic"/>
+<EFFECTS/>
+</PICTURE>
+<CHAR/>
+</TEXT></P></PARALIST></CELL></ROW>
+<ROW>
+<CELL BorderFill="3" ColAddr="0" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="29591" Protect="false" RowAddr="1" RowSpan="1" Width="47626">
+<CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+<P ParaShape="34" Style="0">
+<TEXT CharShape="39">
+<PICTURE Reverse="false">
+<SHAPEOBJECT InstId="2011782116" Lock="false" NumberingType="Figure" ZOrder="26">
+<SIZE Height="21873" HeightRelTo="Absolute" Protect="false" Width="25710" WidthRelTo="Absolute"/>
+<POSITION AffectLSpacing="false" AllowOverlap="false" FlowWithText="true" HoldAnchorAndSO="false" HorzAlign="Left" HorzOffset="0" HorzRelTo="Para" TreatAsChar="true" VertAlign="Top" VertOffset="0" VertRelTo="Para"/>
+<OUTSIDEMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+<SHAPECOMMENT>그림입니다.원본 그림의 이름: CLP000005d80004.bmp
+</SHAPECOMMENT></SHAPEOBJECT><SHAPECOMPONENT CurHeight="21873" CurWidth="25710" GroupLevel="0" HorzFlip="false" InstID="938040293" OriHeight="45480" OriWidth="53460" VertFlip="false" XPos="-18075" YPos="-15378">
+<ROTATIONINFO Angle="0" CenterX="12855" CenterY="10936" Rotate="1"/>
+<RENDERINGINFO>
+<TRANSMATRIX E1="1.00000" E2="0.00000" E3="-18075.00000" E4="0.00000" E5="1.00000" E6="-15378.00000"/>
+<SCAMATRIX E1="0.48092" E2="0.00000" E3="18075.00000" E4="0.00000" E5="0.48094" E6="15378.00000"/>
+<ROTMATRIX E1="1.00000" E2="0.00000" E3="0.00000" E4="0.00000" E5="1.00000" E6="0.00000"/>
+</RENDERINGINFO></SHAPECOMPONENT>
+<IMAGERECT X0="0" X1="53460" X2="53460" X3="0" Y0="0" Y1="0" Y2="45480" Y3="45480"/>
+<INSIDEMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+<IMAGE Alpha="0" BinItem="4" Bright="0" Contrast="0" Effect="RealPic"/>
+<EFFECTS/>
+</PICTURE>
+<CHAR/>
+</TEXT></P></PARALIST></CELL></ROW></TABLE></TEXT>
+<TEXT CharShape="8">
+<CHAR/>
+</TEXT></P>
+<P ColumnBreak="false" PageBreak="true" ParaShape="135" Style="0">
+<TEXT CharShape="66">
+<CHAR> ◈ 저압 주입식 균열보수</CHAR></TEXT></P>
+<P ParaShape="131" Style="0">
+<TEXT CharShape="68">
+<TABLE BorderFill="3" CellSpacing="0" ColCount="1" PageBreak="Cell" RepeatHeader="true" RowCount="1">
+<SHAPEOBJECT InstId="2011782118" Lock="false" NumberingType="Table" ZOrder="15">
+<SIZE Height="66539" HeightRelTo="Absolute" Protect="false" Width="47626" WidthRelTo="Absolute"/>
+<POSITION AffectLSpacing="false" AllowOverlap="false" FlowWithText="true" HoldAnchorAndSO="false" HorzAlign="Left" HorzOffset="0" HorzRelTo="Column" TreatAsChar="true" VertAlign="Top" VertOffset="0" VertRelTo="Para"/>
+<OUTSIDEMARGIN Bottom="140" Left="140" Right="140" Top="140"/>
+</SHAPEOBJECT>
+<INSIDEMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+<ROW>
+<CELL BorderFill="3" ColAddr="0" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="66539" Protect="false" RowAddr="0" RowSpan="1" Width="47626">
+<CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+<P ParaShape="34" Style="0">
+<TEXT CharShape="39">
+<PICTURE Reverse="false">
+<SHAPEOBJECT InstId="2011782119" Lock="false" NumberingType="Figure" ZOrder="16">
+<SIZE Height="63779" HeightRelTo="Absolute" Protect="false" Width="38834" WidthRelTo="Absolute"/>
+<POSITION AffectLSpacing="false" AllowOverlap="false" FlowWithText="true" HoldAnchorAndSO="false" HorzAlign="Left" HorzOffset="0" HorzRelTo="Para" TreatAsChar="true" VertAlign="Top" VertOffset="0" VertRelTo="Para"/>
+<OUTSIDEMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+<SHAPECOMMENT>그림입니다.원본 그림의 이름: CLP000019540016.bmp
+</SHAPECOMMENT></SHAPEOBJECT><SHAPECOMPONENT CurHeight="63779" CurWidth="38834" GroupLevel="0" HorzFlip="false" InstID="938040296" OriHeight="108300" OriWidth="66000" VertFlip="false" XPos="0" YPos="-10143">
+<ROTATIONINFO Angle="0" CenterX="19417" CenterY="31889" Rotate="1"/>
+<RENDERINGINFO>
+<TRANSMATRIX E1="1.00000" E2="0.00000" E3="0.00000" E4="0.00000" E5="1.00000" E6="-10143.00000"/>
+<SCAMATRIX E1="0.58839" E2="0.00000" E3="0.00000" E4="0.00000" E5="0.58891" E6="10143.00000"/>
+<ROTMATRIX E1="1.00000" E2="0.00000" E3="0.00000" E4="0.00000" E5="1.00000" E6="0.00000"/>
+</RENDERINGINFO></SHAPECOMPONENT>
+<IMAGERECT X0="0" X1="66000" X2="66000" X3="0" Y0="0" Y1="0" Y2="108300" Y3="108300"/>
+<INSIDEMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+<IMAGE Alpha="0" BinItem="5" Bright="0" Contrast="0" Effect="RealPic"/>
+<EFFECTS/>
+</PICTURE>
+<CHAR/>
+</TEXT></P></PARALIST></CELL></ROW></TABLE>
+<CHAR/>
+</TEXT></P>
+<P ColumnBreak="false" PageBreak="true" ParaShape="135" Style="0">
+<TEXT CharShape="66">
+<CHAR> ◈ 아크릴 주입식 균열보수</CHAR></TEXT></P>
+<P ParaShape="131" Style="0">
+<TEXT CharShape="68">
+<TABLE BorderFill="3" CellSpacing="0" ColCount="1" PageBreak="Cell" RepeatHeader="true" RowCount="1">
+<SHAPEOBJECT InstId="2011782121" Lock="false" NumberingType="Table" ZOrder="43">
+<SIZE Height="66822" HeightRelTo="Absolute" Protect="false" Width="47626" WidthRelTo="Absolute"/>
+<POSITION AffectLSpacing="false" AllowOverlap="false" FlowWithText="true" HoldAnchorAndSO="false" HorzAlign="Left" HorzOffset="0" HorzRelTo="Column" TreatAsChar="true" VertAlign="Top" VertOffset="0" VertRelTo="Para"/>
+<OUTSIDEMARGIN Bottom="140" Left="140" Right="140" Top="140"/>
+</SHAPEOBJECT>
+<INSIDEMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+<ROW>
+<CELL BorderFill="3" ColAddr="0" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="66822" Protect="false" RowAddr="0" RowSpan="1" Width="47626">
+<CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+<P ParaShape="34" Style="0">
+<TEXT CharShape="39">
+<PICTURE Reverse="false">
+<SHAPEOBJECT InstId="2011782122" Lock="false" NumberingType="Figure" ZOrder="46">
+<SIZE Height="65563" HeightRelTo="Absolute" Protect="false" Width="37683" WidthRelTo="Absolute"/>
+<POSITION AffectLSpacing="false" AllowOverlap="false" FlowWithText="true" HoldAnchorAndSO="false" HorzAlign="Left" HorzOffset="0" HorzRelTo="Para" TreatAsChar="true" VertAlign="Top" VertOffset="0" VertRelTo="Para"/>
+<OUTSIDEMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+<SHAPECOMMENT>그림입니다.원본 그림의 이름: CLP00001954001a.bmp
+</SHAPECOMMENT></SHAPEOBJECT><SHAPECOMPONENT CurHeight="65563" CurWidth="37683" GroupLevel="0" HorzFlip="false" InstID="938040299" OriHeight="196560" OriWidth="65700" VertFlip="false" XPos="0" YPos="-75341">
+<ROTATIONINFO Angle="0" CenterX="18841" CenterY="32781" Rotate="1"/>
+<RENDERINGINFO>
+<TRANSMATRIX E1="1.00000" E2="0.00000" E3="0.00000" E4="0.00000" E5="1.00000" E6="-75341.00000"/>
+<SCAMATRIX E1="0.57356" E2="0.00000" E3="0.00000" E4="0.00000" E5="0.33355" E6="75341.00000"/>
+<ROTMATRIX E1="1.00000" E2="0.00000" E3="0.00000" E4="0.00000" E5="1.00000" E6="0.00000"/>
+</RENDERINGINFO></SHAPECOMPONENT>
+<IMAGERECT X0="0" X1="65700" X2="65700" X3="0" Y0="0" Y1="0" Y2="196560" Y3="196560"/>
+<INSIDEMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+<IMAGE Alpha="0" BinItem="6" Bright="0" Contrast="0" Effect="RealPic"/>
+<EFFECTS/>
+</PICTURE>
+<CHAR/>
+</TEXT></P></PARALIST></CELL></ROW></TABLE>
+<CHAR/>
+</TEXT></P>
+<P ColumnBreak="false" PageBreak="true" ParaShape="130" Style="0">
+<TEXT CharShape="8"/>
+</P>
+<P ParaShape="131" Style="0">
+<TEXT CharShape="68">
+<TABLE BorderFill="3" CellSpacing="0" ColCount="1" PageBreak="Cell" RepeatHeader="true" RowCount="1">
+<SHAPEOBJECT InstId="2011782124" Lock="false" NumberingType="Table" ZOrder="44">
+<SIZE Height="49527" HeightRelTo="Absolute" Protect="false" Width="47626" WidthRelTo="Absolute"/>
+<POSITION AffectLSpacing="false" AllowOverlap="false" FlowWithText="true" HoldAnchorAndSO="false" HorzAlign="Left" HorzOffset="0" HorzRelTo="Column" TreatAsChar="true" VertAlign="Top" VertOffset="0" VertRelTo="Para"/>
+<OUTSIDEMARGIN Bottom="140" Left="140" Right="140" Top="140"/>
+</SHAPEOBJECT>
+<INSIDEMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+<ROW>
+<CELL BorderFill="3" ColAddr="0" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="49527" Protect="false" RowAddr="0" RowSpan="1" Width="47626">
+<CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+<P ParaShape="34" Style="0">
+<TEXT CharShape="39">
+<PICTURE Reverse="false">
+<SHAPEOBJECT InstId="2011782125" Lock="false" NumberingType="Figure" ZOrder="47">
+<SIZE Height="48113" HeightRelTo="Absolute" Protect="false" Width="37764" WidthRelTo="Absolute"/>
+<POSITION AffectLSpacing="false" AllowOverlap="false" FlowWithText="true" HoldAnchorAndSO="false" HorzAlign="Left" HorzOffset="0" HorzRelTo="Para" TreatAsChar="true" VertAlign="Top" VertOffset="0" VertRelTo="Para"/>
+<OUTSIDEMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+<SHAPECOMMENT>그림입니다.원본 그림의 이름: CLP00001954001a.bmp
+</SHAPECOMMENT></SHAPEOBJECT><SHAPECOMPONENT CurHeight="48113" CurWidth="37764" GroupLevel="0" HorzFlip="false" InstID="938040302" OriHeight="196560" OriWidth="65700" VertFlip="false" XPos="0" YPos="-112116">
+<ROTATIONINFO Angle="0" CenterX="18882" CenterY="24056" Rotate="1"/>
+<RENDERINGINFO>
+<TRANSMATRIX E1="1.00000" E2="0.00000" E3="0.00000" E4="0.00000" E5="1.00000" E6="-112116.00000"/>
+<SCAMATRIX E1="0.57479" E2="0.00000" E3="0.00000" E4="0.00000" E5="0.24478" E6="112116.00000"/>
+<ROTMATRIX E1="1.00000" E2="0.00000" E3="0.00000" E4="0.00000" E5="1.00000" E6="0.00000"/>
+</RENDERINGINFO></SHAPECOMPONENT>
+<IMAGERECT X0="0" X1="65700" X2="65700" X3="0" Y0="0" Y1="0" Y2="196560" Y3="196560"/>
+<INSIDEMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+<IMAGE Alpha="0" BinItem="7" Bright="0" Contrast="0" Effect="RealPic"/>
+<EFFECTS/>
+</PICTURE>
+<CHAR/>
+</TEXT></P></PARALIST></CELL></ROW></TABLE>
+<CHAR/>
+</TEXT></P>
+<P ColumnBreak="false" PageBreak="true" ParaShape="135" Style="0">
+<TEXT CharShape="66">
+<CHAR> ◈ 우레탄 주입식 균열보수</CHAR></TEXT></P>
+<P ParaShape="131" Style="0">
+<TEXT CharShape="68">
+<TABLE BorderFill="3" CellSpacing="0" ColCount="1" PageBreak="Cell" RepeatHeader="true" RowCount="1">
+<SHAPEOBJECT InstId="2011782127" Lock="false" NumberingType="Table" ZOrder="45">
+<SIZE Height="66822" HeightRelTo="Absolute" Protect="false" Width="47626" WidthRelTo="Absolute"/>
+<POSITION AffectLSpacing="false" AllowOverlap="false" FlowWithText="true" HoldAnchorAndSO="false" HorzAlign="Left" HorzOffset="0" HorzRelTo="Column" TreatAsChar="true" VertAlign="Top" VertOffset="0" VertRelTo="Para"/>
+<OUTSIDEMARGIN Bottom="140" Left="140" Right="140" Top="140"/>
+</SHAPEOBJECT>
+<INSIDEMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+<ROW>
+<CELL BorderFill="3" ColAddr="0" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="66822" Protect="false" RowAddr="0" RowSpan="1" Width="47626">
+<CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+<P ParaShape="34" Style="0">
+<TEXT CharShape="39">
+<PICTURE Reverse="false">
+<SHAPEOBJECT InstId="2011782128" Lock="false" NumberingType="Figure" ZOrder="48">
+<SIZE Height="65542" HeightRelTo="Absolute" Protect="false" Width="36829" WidthRelTo="Absolute"/>
+<POSITION AffectLSpacing="false" AllowOverlap="false" FlowWithText="true" HoldAnchorAndSO="false" HorzAlign="Left" HorzOffset="0" HorzRelTo="Para" TreatAsChar="true" VertAlign="Top" VertOffset="0" VertRelTo="Para"/>
+<OUTSIDEMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+<SHAPECOMMENT>그림입니다.원본 그림의 이름: CLP00001954001b.bmp
+</SHAPECOMMENT></SHAPEOBJECT><SHAPECOMPONENT CurHeight="65542" CurWidth="36829" GroupLevel="0" HorzFlip="false" InstID="938040305" OriHeight="116700" OriWidth="65580" VertFlip="false" XPos="0" YPos="-16061">
+<ROTATIONINFO Angle="0" CenterX="18414" CenterY="32771" Rotate="1"/>
+<RENDERINGINFO>
+<TRANSMATRIX E1="1.00000" E2="0.00000" E3="0.00000" E4="0.00000" E5="1.00000" E6="-16061.00000"/>
+<SCAMATRIX E1="0.56159" E2="0.00000" E3="0.00000" E4="0.00000" E5="0.56163" E6="16061.00000"/>
+<ROTMATRIX E1="1.00000" E2="0.00000" E3="0.00000" E4="0.00000" E5="1.00000" E6="0.00000"/>
+</RENDERINGINFO></SHAPECOMPONENT>
+<IMAGERECT X0="0" X1="65580" X2="65580" X3="0" Y0="0" Y1="0" Y2="116700" Y3="116700"/>
+<INSIDEMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+<IMAGE Alpha="0" BinItem="8" Bright="0" Contrast="0" Effect="RealPic"/>
+<EFFECTS/>
+</PICTURE>
+<CHAR/>
+</TEXT></P></PARALIST></CELL></ROW></TABLE>
+<CHAR/>
+</TEXT></P>
+<P ColumnBreak="false" PageBreak="true" ParaShape="135" Style="0">
+<TEXT CharShape="66">
+<CHAR> ◈ 배면그라우팅공법</CHAR></TEXT></P>
+<P ParaShape="131" Style="0">
+<TEXT CharShape="68">
+<TABLE BorderFill="3" CellSpacing="0" ColCount="2" PageBreak="Cell" RepeatHeader="true" RowCount="6">
+<SHAPEOBJECT InstId="2011782130" Lock="false" NumberingType="Table" ZOrder="62">
+<SIZE Height="66802" HeightRelTo="Absolute" Protect="false" Width="47626" WidthRelTo="Absolute"/>
+<POSITION AffectLSpacing="false" AllowOverlap="false" FlowWithText="true" HoldAnchorAndSO="false" HorzAlign="Left" HorzOffset="0" HorzRelTo="Column" TreatAsChar="true" VertAlign="Top" VertOffset="0" VertRelTo="Para"/>
+<OUTSIDEMARGIN Bottom="140" Left="140" Right="140" Top="140"/>
+</SHAPEOBJECT>
+<INSIDEMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+<ROW>
+<CELL BorderFill="3" ColAddr="0" ColSpan="2" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="16652" Protect="false" RowAddr="0" RowSpan="1" Width="47626">
+<CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+<P ParaShape="34" Style="0">
+<TEXT CharShape="39">
+<PICTURE Reverse="false">
+<SHAPEOBJECT InstId="2011782131" Lock="false" NumberingType="Figure" ZOrder="67">
+<SIZE Height="14947" HeightRelTo="Absolute" Protect="false" Width="22463" WidthRelTo="Absolute"/>
+<POSITION AffectLSpacing="false" AllowOverlap="false" FlowWithText="true" HoldAnchorAndSO="false" HorzAlign="Left" HorzOffset="0" HorzRelTo="Para" TreatAsChar="true" VertAlign="Top" VertOffset="0" VertRelTo="Para"/>
+<OUTSIDEMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+<SHAPECOMMENT>그림입니다.원본 그림의 이름: CLP000005d8001b.bmp
+</SHAPECOMMENT></SHAPEOBJECT><SHAPECOMPONENT CurHeight="14947" CurWidth="22463" GroupLevel="0" HorzFlip="false" InstID="938040308" OriHeight="44040" OriWidth="66180" VertFlip="false" XPos="0" YPos="0">
+<ROTATIONINFO Angle="0" CenterX="11231" CenterY="7473" Rotate="1"/>
+<RENDERINGINFO>
+<TRANSMATRIX E1="1.00000" E2="0.00000" E3="0.00000" E4="0.00000" E5="1.00000" E6="0.00000"/>
+<SCAMATRIX E1="0.33942" E2="0.00000" E3="0.00000" E4="0.00000" E5="0.33940" E6="0.00000"/>
+<ROTMATRIX E1="1.00000" E2="0.00000" E3="0.00000" E4="0.00000" E5="1.00000" E6="0.00000"/>
+</RENDERINGINFO></SHAPECOMPONENT>
+<IMAGERECT X0="0" X1="66180" X2="66180" X3="0" Y0="0" Y1="0" Y2="44040" Y3="44040"/>
+<INSIDEMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+<IMAGE Alpha="0" BinItem="9" Bright="0" Contrast="0" Effect="RealPic"/>
+<EFFECTS/>
+</PICTURE>
+<CHAR/>
+</TEXT></P></PARALIST></CELL></ROW>
+<ROW>
+<CELL BorderFill="3" ColAddr="0" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="10030" Protect="false" RowAddr="1" RowSpan="1" Width="12776">
+<CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+<P ParaShape="34" Style="0">
+<TEXT CharShape="39">
+<PICTURE Reverse="false">
+<SHAPEOBJECT InstId="2011782133" Lock="false" NumberingType="Figure" ZOrder="66">
+<SIZE Height="8794" HeightRelTo="Absolute" Protect="false" Width="11756" WidthRelTo="Absolute"/>
+<POSITION AffectLSpacing="false" AllowOverlap="false" FlowWithText="true" HoldAnchorAndSO="false" HorzAlign="Left" HorzOffset="0" HorzRelTo="Para" TreatAsChar="true" VertAlign="Top" VertOffset="0" VertRelTo="Para"/>
+<OUTSIDEMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+<SHAPECOMMENT>그림입니다.원본 그림의 이름: CLP000005d80016.bmp
+</SHAPECOMMENT></SHAPEOBJECT><SHAPECOMPONENT CurHeight="8794" CurWidth="11756" GroupLevel="0" HorzFlip="false" InstID="938040310" OriHeight="40980" OriWidth="54780" VertFlip="false" XPos="0" YPos="0">
+<ROTATIONINFO Angle="0" CenterX="5878" CenterY="4397" Rotate="1"/>
+<RENDERINGINFO>
+<TRANSMATRIX E1="1.00000" E2="0.00000" E3="0.00000" E4="0.00000" E5="1.00000" E6="0.00000"/>
+<SCAMATRIX E1="0.21460" E2="0.00000" E3="0.00000" E4="0.00000" E5="0.21459" E6="0.00000"/>
+<ROTMATRIX E1="1.00000" E2="0.00000" E3="0.00000" E4="0.00000" E5="1.00000" E6="0.00000"/>
+</RENDERINGINFO></SHAPECOMPONENT>
+<IMAGERECT X0="0" X1="54780" X2="54780" X3="0" Y0="0" Y1="0" Y2="40980" Y3="40980"/>
+<INSIDEMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+<IMAGE Alpha="0" BinItem="10" Bright="0" Contrast="0" Effect="RealPic"/>
+<EFFECTS/>
+</PICTURE>
+<CHAR/>
+</TEXT></P></PARALIST></CELL>
+<CELL BorderFill="3" ColAddr="1" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="10030" Protect="false" RowAddr="1" RowSpan="1" Width="34850">
+<CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+<P ParaShape="132" Style="0">
+<TEXT CharShape="8">
+<CHAR>1. 천공</CHAR></TEXT></P>
+<P ParaShape="133" Style="0">
+<TEXT CharShape="62">
+<CHAR> - </CHAR></TEXT>
+<TEXT CharShape="113">
+<CHAR>비파괴 검사 및 설계도면을 참조하여 철근 절단 위치를 피해 천공할 위치를 선정한다.</CHAR></TEXT></P>
+<P ParaShape="133" Style="0">
+<TEXT CharShape="62">
+<CHAR> - 천공 및 굴공은 벽체는 Drill(14mm), 천장은 Drill(10mm)로 천공을 하며, 보수결함개소의 중심을 따라 공간격 1000mm로 방수 쉬트에 손상이 없도록 천공을 한다.</CHAR></TEXT></P>
+<P ParaShape="133" Style="0">
+<TEXT CharShape="62">
+<CHAR> - 천공 시 용수가 많은 곳은 임시 수발공 설치 또는 일정 위치로 유도하는 등의 조치를 취한다.</CHAR></TEXT></P></PARALIST></CELL></ROW>
+<ROW>
+<CELL BorderFill="3" ColAddr="0" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="10030" Protect="false" RowAddr="2" RowSpan="1" Width="12776">
+<CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+<P ParaShape="34" Style="0">
+<TEXT CharShape="39">
+<PICTURE Reverse="false">
+<SHAPEOBJECT InstId="2011782135" Lock="false" NumberingType="Figure" ZOrder="63">
+<SIZE Height="8774" HeightRelTo="Absolute" Protect="false" Width="11756" WidthRelTo="Absolute"/>
+<POSITION AffectLSpacing="false" AllowOverlap="false" FlowWithText="true" HoldAnchorAndSO="false" HorzAlign="Left" HorzOffset="0" HorzRelTo="Para" TreatAsChar="true" VertAlign="Top" VertOffset="0" VertRelTo="Para"/>
+<OUTSIDEMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+<SHAPECOMMENT>그림입니다.원본 그림의 이름: CLP000005d80017.bmp
+</SHAPECOMMENT></SHAPEOBJECT><SHAPECOMPONENT CurHeight="8774" CurWidth="11756" GroupLevel="0" HorzFlip="false" InstID="938040312" OriHeight="40800" OriWidth="54660" VertFlip="false" XPos="0" YPos="0">
+<ROTATIONINFO Angle="0" CenterX="5878" CenterY="4387" Rotate="1"/>
+<RENDERINGINFO>
+<TRANSMATRIX E1="1.00000" E2="0.00000" E3="0.00000" E4="0.00000" E5="1.00000" E6="0.00000"/>
+<SCAMATRIX E1="0.21508" E2="0.00000" E3="0.00000" E4="0.00000" E5="0.21505" E6="0.00000"/>
+<ROTMATRIX E1="1.00000" E2="0.00000" E3="0.00000" E4="0.00000" E5="1.00000" E6="0.00000"/>
+</RENDERINGINFO></SHAPECOMPONENT>
+<IMAGERECT X0="0" X1="54660" X2="54660" X3="0" Y0="0" Y1="0" Y2="40800" Y3="40800"/>
+<INSIDEMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+<IMAGE Alpha="0" BinItem="11" Bright="0" Contrast="0" Effect="RealPic"/>
+<EFFECTS/>
+</PICTURE>
+<CHAR/>
+</TEXT></P></PARALIST></CELL>
+<CELL BorderFill="3" ColAddr="1" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="10030" Protect="false" RowAddr="2" RowSpan="1" Width="34850">
+<CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+<P ParaShape="132" Style="0">
+<TEXT CharShape="8">
+<CHAR>2. 주입구 설치</CHAR></TEXT></P>
+<P ParaShape="133" Style="0">
+<TEXT CharShape="62">
+<CHAR> - 천공한 홀 내부를 에어 콤프레셔 및 물로 이물질 등을 깨끗이 청소한 후 주입파이프나 Packer를 설치하고 그 주위는 급결 몰탈 및 Epoxy Putty로 씰링한다.</CHAR></TEXT></P>
+<P ParaShape="133" Style="0">
+<TEXT CharShape="62">
+<CHAR> - 약액 주입 시 약액의 누출 및 압력손실을 방지하기 위하여 보수부위 및 콘크리트 결함개소에 급결 몰탈 및 Putty재를 사용하여 Sealing을 한다.</CHAR></TEXT></P>
+<P ParaShape="133" Style="0">
+<TEXT CharShape="62">
+<CHAR> - </CHAR></TEXT>
+<TEXT CharShape="113">
+<CHAR>일반 배면주입의 경우 Packer(10~100mm, 14~120mm)를 사용하지만, 다량 누수의 경우는 밸브가 달린 PVC파이프를 사용할 수 있다.</CHAR></TEXT></P></PARALIST></CELL></ROW>
+<ROW>
+<CELL BorderFill="3" ColAddr="0" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="10030" Protect="false" RowAddr="3" RowSpan="1" Width="12776">
+<CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+<P ParaShape="34" Style="0">
+<TEXT CharShape="39">
+<PICTURE Reverse="false">
+<SHAPEOBJECT InstId="2011782137" Lock="false" NumberingType="Figure" ZOrder="64">
+<SIZE Height="8760" HeightRelTo="Absolute" Protect="false" Width="11756" WidthRelTo="Absolute"/>
+<POSITION AffectLSpacing="false" AllowOverlap="false" FlowWithText="true" HoldAnchorAndSO="false" HorzAlign="Left" HorzOffset="0" HorzRelTo="Para" TreatAsChar="true" VertAlign="Top" VertOffset="0" VertRelTo="Para"/>
+<OUTSIDEMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+<SHAPECOMMENT>그림입니다.원본 그림의 이름: CLP000005d80018.bmp
+</SHAPECOMMENT></SHAPEOBJECT><SHAPECOMPONENT CurHeight="8760" CurWidth="11756" GroupLevel="0" HorzFlip="false" InstID="938040314" OriHeight="40680" OriWidth="54600" VertFlip="false" XPos="0" YPos="0">
+<ROTATIONINFO Angle="0" CenterX="5878" CenterY="4380" Rotate="1"/>
+<RENDERINGINFO>
+<TRANSMATRIX E1="1.00000" E2="0.00000" E3="0.00000" E4="0.00000" E5="1.00000" E6="0.00000"/>
+<SCAMATRIX E1="0.21531" E2="0.00000" E3="0.00000" E4="0.00000" E5="0.21534" E6="0.00000"/>
+<ROTMATRIX E1="1.00000" E2="0.00000" E3="0.00000" E4="0.00000" E5="1.00000" E6="0.00000"/>
+</RENDERINGINFO></SHAPECOMPONENT>
+<IMAGERECT X0="0" X1="54600" X2="54600" X3="0" Y0="0" Y1="0" Y2="40680" Y3="40680"/>
+<INSIDEMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+<IMAGE Alpha="0" BinItem="12" Bright="0" Contrast="0" Effect="RealPic"/>
+<EFFECTS/>
+</PICTURE>
+<CHAR/>
+</TEXT></P></PARALIST></CELL>
+<CELL BorderFill="3" ColAddr="1" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="10030" Protect="false" RowAddr="3" RowSpan="1" Width="34850">
+<CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+<P ParaShape="132" Style="0">
+<TEXT CharShape="8">
+<CHAR>3. 주입장비의 점검 약액 조제</CHAR></TEXT></P>
+<P ParaShape="133" Style="0">
+<TEXT CharShape="62">
+<CHAR> - 약액은 A제와 B제로 구분되어 공급되는 가사시간이 매우 짧은 타입의 제품이므로 이액형 타입의 펌프로 주입하여야 한다.</CHAR></TEXT></P>
+<P ParaShape="133" Style="0">
+<TEXT CharShape="62">
+<CHAR> - 주입 작업 전에 주입 펌프의 장비 상태를 철저히 점검하고 A제와 B제의 배합비가 맞게 믹서 토출되는지 점검한다.</CHAR></TEXT></P>
+<P ParaShape="133" Style="0">
+<TEXT CharShape="62">
+<CHAR> - 약액 주입 전용 장비에 각각 A제와 B제를 용기에 충전한다.</CHAR></TEXT></P></PARALIST></CELL></ROW>
+<ROW>
+<CELL BorderFill="3" ColAddr="0" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="10030" Protect="false" RowAddr="4" RowSpan="1" Width="12776">
+<CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+<P ParaShape="34" Style="0">
+<TEXT CharShape="39">
+<PICTURE Reverse="false">
+<SHAPEOBJECT InstId="2011782139" Lock="false" NumberingType="Figure" ZOrder="65">
+<SIZE Height="8743" HeightRelTo="Absolute" Protect="false" Width="11756" WidthRelTo="Absolute"/>
+<POSITION AffectLSpacing="false" AllowOverlap="false" FlowWithText="true" HoldAnchorAndSO="false" HorzAlign="Left" HorzOffset="0" HorzRelTo="Para" TreatAsChar="true" VertAlign="Top" VertOffset="0" VertRelTo="Para"/>
+<OUTSIDEMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+<SHAPECOMMENT>그림입니다.원본 그림의 이름: CLP000005d80019.bmp
+</SHAPECOMMENT></SHAPEOBJECT><SHAPECOMPONENT CurHeight="8743" CurWidth="11756" GroupLevel="0" HorzFlip="false" InstID="938040316" OriHeight="40560" OriWidth="54540" VertFlip="false" XPos="0" YPos="0">
+<ROTATIONINFO Angle="0" CenterX="5878" CenterY="4371" Rotate="1"/>
+<RENDERINGINFO>
+<TRANSMATRIX E1="1.00000" E2="0.00000" E3="0.00000" E4="0.00000" E5="1.00000" E6="0.00000"/>
+<SCAMATRIX E1="0.21555" E2="0.00000" E3="0.00000" E4="0.00000" E5="0.21556" E6="0.00000"/>
+<ROTMATRIX E1="1.00000" E2="0.00000" E3="0.00000" E4="0.00000" E5="1.00000" E6="0.00000"/>
+</RENDERINGINFO></SHAPECOMPONENT>
+<IMAGERECT X0="0" X1="54540" X2="54540" X3="0" Y0="0" Y1="0" Y2="40560" Y3="40560"/>
+<INSIDEMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+<IMAGE Alpha="0" BinItem="13" Bright="0" Contrast="0" Effect="RealPic"/>
+<EFFECTS/>
+</PICTURE>
+<CHAR/>
+</TEXT></P></PARALIST></CELL>
+<CELL BorderFill="3" ColAddr="1" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="10030" Protect="false" RowAddr="4" RowSpan="1" Width="34850">
+<CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+<P ParaShape="132" Style="0">
+<TEXT CharShape="8">
+<CHAR>4. 주입작업</CHAR></TEXT></P>
+<P ParaShape="133" Style="0">
+<TEXT CharShape="62">
+<CHAR> - 주입 노즐을 주입구에 접속하여 주입을 개시한다.</CHAR></TEXT></P>
+<P ParaShape="133" Style="0">
+<TEXT CharShape="62">
+<CHAR> - 주입은 하단부에서부터 순차적으로 주입을 하며, 다음 주입구에서 약액의 유출이 확인되면 그 주입구와 주입하고 있는 주입구를 닫고 봉합하여 노즐을 뺀다.</CHAR></TEXT></P>
+<P ParaShape="133" Style="0">
+<TEXT CharShape="62">
+<CHAR> - 위와 같은 방법으로 모든 주입구에 약액을 주입해 나간다.</CHAR></TEXT></P>
+<P ParaShape="133" Style="0">
+<TEXT CharShape="62">
+<CHAR>   (누수가 다량일 경우 A제에 촉진제를 첨가하여 경화시간을 조정 사용한다.)</CHAR></TEXT></P></PARALIST></CELL></ROW>
+<ROW>
+<CELL BorderFill="3" ColAddr="0" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="10030" Protect="false" RowAddr="5" RowSpan="1" Width="12776">
+<CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+<P ParaShape="34" Style="0">
+<TEXT CharShape="39"/>
+</P></PARALIST></CELL>
+<CELL BorderFill="3" ColAddr="1" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="10030" Protect="false" RowAddr="5" RowSpan="1" Width="34850">
+<CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+<P ParaShape="132" Style="0">
+<TEXT CharShape="8">
+<CHAR>5. 마감</CHAR></TEXT></P>
+<P ParaShape="133" Style="0">
+<TEXT CharShape="4">
+<CHAR> </CHAR></TEXT>
+<TEXT CharShape="62">
+<CHAR>- 지수가 완료되면 주입파이프 또는 주입호스를 구조물의 면에 맞추어 절단 제거한다.</CHAR></TEXT></P>
+<P ParaShape="133" Style="0">
+<TEXT CharShape="62">
+<CHAR> - 표면을 그라인더 등으로 평활히 한 후 몰탈 등으로 마감을 하고 그 후에 필요한 경우 도장을 한다.</CHAR></TEXT></P></PARALIST></CELL></ROW></TABLE>
+<CHAR/>
+</TEXT></P>
+<P ColumnBreak="false" PageBreak="true" ParaShape="135" Style="0">
+<TEXT CharShape="66">
+<CHAR> ◈ 유동(씰링식) 균열보수</CHAR></TEXT></P>
+<P ParaShape="131" Style="0">
+<TEXT CharShape="68">
+<TABLE BorderFill="3" CellSpacing="0" ColCount="1" PageBreak="Cell" RepeatHeader="true" RowCount="1">
+<SHAPEOBJECT InstId="2011782141" Lock="false" NumberingType="Table" ZOrder="49">
+<SIZE Height="66822" HeightRelTo="Absolute" Protect="false" Width="47626" WidthRelTo="Absolute"/>
+<POSITION AffectLSpacing="false" AllowOverlap="false" FlowWithText="true" HoldAnchorAndSO="false" HorzAlign="Left" HorzOffset="0" HorzRelTo="Column" TreatAsChar="true" VertAlign="Top" VertOffset="0" VertRelTo="Para"/>
+<OUTSIDEMARGIN Bottom="140" Left="140" Right="140" Top="140"/>
+</SHAPEOBJECT>
+<INSIDEMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+<ROW>
+<CELL BorderFill="3" ColAddr="0" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="66822" Protect="false" RowAddr="0" RowSpan="1" Width="47626">
+<CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+<P ParaShape="34" Style="0">
+<TEXT CharShape="39">
+<PICTURE Reverse="false">
+<SHAPEOBJECT InstId="2011782142" Lock="false" NumberingType="Figure" ZOrder="50">
+<SIZE Height="65244" HeightRelTo="Absolute" Protect="false" Width="34995" WidthRelTo="Absolute"/>
+<POSITION AffectLSpacing="false" AllowOverlap="false" FlowWithText="true" HoldAnchorAndSO="false" HorzAlign="Left" HorzOffset="0" HorzRelTo="Para" TreatAsChar="true" VertAlign="Top" VertOffset="0" VertRelTo="Para"/>
+<OUTSIDEMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+<SHAPECOMMENT>그림입니다.원본 그림의 이름: CLP000019540019.bmp
+</SHAPECOMMENT></SHAPEOBJECT><SHAPECOMPONENT CurHeight="65244" CurWidth="34995" GroupLevel="0" HorzFlip="false" InstID="938040319" OriHeight="125700" OriWidth="65760" VertFlip="false" XPos="0" YPos="-22935">
+<ROTATIONINFO Angle="0" CenterX="17497" CenterY="32622" Rotate="1"/>
+<RENDERINGINFO>
+<TRANSMATRIX E1="1.00000" E2="0.00000" E3="0.00000" E4="0.00000" E5="1.00000" E6="-22935.00000"/>
+<SCAMATRIX E1="0.53216" E2="0.00000" E3="0.00000" E4="0.00000" E5="0.51905" E6="22935.00000"/>
+<ROTMATRIX E1="1.00000" E2="0.00000" E3="0.00000" E4="0.00000" E5="1.00000" E6="0.00000"/>
+</RENDERINGINFO></SHAPECOMPONENT>
+<IMAGERECT X0="0" X1="65760" X2="65760" X3="0" Y0="0" Y1="0" Y2="125700" Y3="125700"/>
+<INSIDEMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+<IMAGE Alpha="0" BinItem="14" Bright="0" Contrast="0" Effect="RealPic"/>
+<EFFECTS/>
+</PICTURE>
+<CHAR/>
+</TEXT></P></PARALIST></CELL></ROW></TABLE>
+<CHAR/>
+</TEXT></P>
+<P ColumnBreak="false" PageBreak="true" ParaShape="135" Style="0">
+<TEXT CharShape="66">
+<CHAR> ◈ 메꿈식(충전식) 균열보수</CHAR></TEXT></P>
+<P ParaShape="131" Style="0">
+<TEXT CharShape="68">
+<TABLE BorderFill="3" CellSpacing="0" ColCount="1" PageBreak="Cell" RepeatHeader="true" RowCount="1">
+<SHAPEOBJECT InstId="2011782144" Lock="false" NumberingType="Table" ZOrder="17">
+<SIZE Height="66822" HeightRelTo="Absolute" Protect="false" Width="47626" WidthRelTo="Absolute"/>
+<POSITION AffectLSpacing="false" AllowOverlap="false" FlowWithText="true" HoldAnchorAndSO="false" HorzAlign="Left" HorzOffset="0" HorzRelTo="Column" TreatAsChar="true" VertAlign="Top" VertOffset="0" VertRelTo="Para"/>
+<OUTSIDEMARGIN Bottom="140" Left="140" Right="140" Top="140"/>
+</SHAPEOBJECT>
+<INSIDEMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+<ROW>
+<CELL BorderFill="3" ColAddr="0" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="66822" Protect="false" RowAddr="0" RowSpan="1" Width="47626">
+<CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+<P ParaShape="34" Style="0">
+<TEXT CharShape="68">
+<PICTURE Reverse="false">
+<SHAPEOBJECT InstId="2011782145" Lock="false" NumberingType="Figure" ZOrder="18">
+<SIZE Height="63779" HeightRelTo="Absolute" Protect="false" Width="40252" WidthRelTo="Absolute"/>
+<POSITION AffectLSpacing="false" AllowOverlap="false" FlowWithText="true" HoldAnchorAndSO="false" HorzAlign="Left" HorzOffset="0" HorzRelTo="Para" TreatAsChar="true" VertAlign="Top" VertOffset="0" VertRelTo="Para"/>
+<OUTSIDEMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+<SHAPECOMMENT>그림입니다.원본 그림의 이름: CLP000019540017.bmp
+</SHAPECOMMENT></SHAPEOBJECT><SHAPECOMPONENT CurHeight="63779" CurWidth="40252" GroupLevel="0" HorzFlip="false" InstID="938040322" OriHeight="94140" OriWidth="65040" VertFlip="false" XPos="0" YPos="0">
+<ROTATIONINFO Angle="0" CenterX="20126" CenterY="31889" Rotate="1"/>
+<RENDERINGINFO>
+<TRANSMATRIX E1="1.00000" E2="0.00000" E3="0.00000" E4="0.00000" E5="1.00000" E6="0.00000"/>
+<SCAMATRIX E1="0.61888" E2="0.00000" E3="0.00000" E4="0.00000" E5="0.67749" E6="0.00000"/>
+<ROTMATRIX E1="1.00000" E2="0.00000" E3="0.00000" E4="0.00000" E5="1.00000" E6="0.00000"/>
+</RENDERINGINFO></SHAPECOMPONENT>
+<IMAGERECT X0="0" X1="65040" X2="65040" X3="0" Y0="0" Y1="0" Y2="94140" Y3="94140"/>
+<INSIDEMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+<IMAGE Alpha="0" BinItem="15" Bright="0" Contrast="0" Effect="RealPic"/>
+<EFFECTS/>
+</PICTURE></TEXT>
+<TEXT CharShape="39">
+<CHAR/>
+</TEXT></P></PARALIST></CELL></ROW></TABLE>
+<CHAR/>
+</TEXT></P>
+<P ColumnBreak="false" PageBreak="true" ParaShape="135" Style="0">
+<TEXT CharShape="66">
+<CHAR> ◈ 메꿈식(충전식) 균열보수(습식)</CHAR></TEXT></P>
+<P ParaShape="131" Style="0">
+<TEXT CharShape="68">
+<TABLE BorderFill="3" CellSpacing="0" ColCount="1" PageBreak="Cell" RepeatHeader="true" RowCount="1">
+<SHAPEOBJECT InstId="2011782147" Lock="false" NumberingType="Table" ZOrder="19">
+<SIZE Height="66822" HeightRelTo="Absolute" Protect="false" Width="47626" WidthRelTo="Absolute"/>
+<POSITION AffectLSpacing="false" AllowOverlap="false" FlowWithText="true" HoldAnchorAndSO="false" HorzAlign="Left" HorzOffset="0" HorzRelTo="Column" TreatAsChar="true" VertAlign="Top" VertOffset="0" VertRelTo="Para"/>
+<OUTSIDEMARGIN Bottom="140" Left="140" Right="140" Top="140"/>
+</SHAPEOBJECT>
+<INSIDEMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+<ROW>
+<CELL BorderFill="3" ColAddr="0" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="66822" Protect="false" RowAddr="0" RowSpan="1" Width="47626">
+<CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+<P ParaShape="34" Style="0">
+<TEXT CharShape="39">
+<PICTURE Reverse="false">
+<SHAPEOBJECT InstId="2011782148" Lock="false" NumberingType="Figure" ZOrder="20">
+<SIZE Height="53634" HeightRelTo="Absolute" Protect="false" Width="39953" WidthRelTo="Absolute"/>
+<POSITION AffectLSpacing="false" AllowOverlap="false" FlowWithText="true" HoldAnchorAndSO="false" HorzAlign="Left" HorzOffset="0" HorzRelTo="Para" TreatAsChar="true" VertAlign="Top" VertOffset="0" VertRelTo="Para"/>
+<OUTSIDEMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+<SHAPECOMMENT>그림입니다.원본 그림의 이름: CLP00001954001c.bmp
+</SHAPECOMMENT></SHAPEOBJECT><SHAPECOMPONENT CurHeight="53634" CurWidth="39953" GroupLevel="0" HorzFlip="false" InstID="938040325" OriHeight="87780" OriWidth="65400" VertFlip="false" XPos="0" YPos="0">
+<ROTATIONINFO Angle="0" CenterX="19976" CenterY="26817" Rotate="1"/>
+<RENDERINGINFO>
+<TRANSMATRIX E1="1.00000" E2="0.00000" E3="0.00000" E4="0.00000" E5="1.00000" E6="0.00000"/>
+<SCAMATRIX E1="0.61090" E2="0.00000" E3="0.00000" E4="0.00000" E5="0.61100" E6="0.00000"/>
+<ROTMATRIX E1="1.00000" E2="0.00000" E3="0.00000" E4="0.00000" E5="1.00000" E6="0.00000"/>
+</RENDERINGINFO></SHAPECOMPONENT>
+<IMAGERECT X0="0" X1="65400" X2="65400" X3="0" Y0="0" Y1="0" Y2="87780" Y3="87780"/>
+<INSIDEMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+<IMAGE Alpha="0" BinItem="16" Bright="0" Contrast="0" Effect="RealPic"/>
+<EFFECTS/>
+</PICTURE>
+<CHAR/>
+</TEXT></P>
+<P ParaShape="34" Style="0">
+<TEXT CharShape="39"/>
+</P>
+<P ParaShape="34" Style="0">
+<TEXT CharShape="39"/>
+</P>
+<P ParaShape="34" Style="0">
+<TEXT CharShape="39"/>
+</P>
+<P ParaShape="34" Style="0">
+<TEXT CharShape="39"/>
+</P>
+<P ParaShape="34" Style="0">
+<TEXT CharShape="39"/>
+</P>
+<P ParaShape="34" Style="0">
+<TEXT CharShape="39"/>
+</P></PARALIST></CELL></ROW></TABLE>
+<CHAR/>
+</TEXT></P>
+<P ColumnBreak="false" PageBreak="true" ParaShape="135" Style="0">
+<TEXT CharShape="66">
+<CHAR> ◈ 도포식 균열보수</CHAR></TEXT></P>
+<P ParaShape="131" Style="0">
+<TEXT CharShape="68">
+<TABLE BorderFill="3" CellSpacing="0" ColCount="1" PageBreak="Cell" RepeatHeader="true" RowCount="1">
+<SHAPEOBJECT InstId="2011782150" Lock="false" NumberingType="Table" ZOrder="51">
+<SIZE Height="66822" HeightRelTo="Absolute" Protect="false" Width="47626" WidthRelTo="Absolute"/>
+<POSITION AffectLSpacing="false" AllowOverlap="false" FlowWithText="true" HoldAnchorAndSO="false" HorzAlign="Left" HorzOffset="0" HorzRelTo="Column" TreatAsChar="true" VertAlign="Top" VertOffset="0" VertRelTo="Para"/>
+<OUTSIDEMARGIN Bottom="140" Left="140" Right="140" Top="140"/>
+</SHAPEOBJECT>
+<INSIDEMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+<ROW>
+<CELL BorderFill="3" ColAddr="0" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="66822" Protect="false" RowAddr="0" RowSpan="1" Width="47626">
+<CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+<P ParaShape="34" Style="0">
+<TEXT CharShape="39">
+<PICTURE Reverse="false">
+<SHAPEOBJECT InstId="2011782151" Lock="false" NumberingType="Figure" ZOrder="52">
+<SIZE Height="64496" HeightRelTo="Absolute" Protect="false" Width="39321" WidthRelTo="Absolute"/>
+<POSITION AffectLSpacing="false" AllowOverlap="false" FlowWithText="true" HoldAnchorAndSO="false" HorzAlign="Left" HorzOffset="0" HorzRelTo="Para" TreatAsChar="true" VertAlign="Top" VertOffset="0" VertRelTo="Para"/>
+<OUTSIDEMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+<SHAPECOMMENT>그림입니다.원본 그림의 이름: CLP000019540018.bmp
+</SHAPECOMMENT></SHAPEOBJECT><SHAPECOMPONENT CurHeight="64496" CurWidth="39321" GroupLevel="0" HorzFlip="false" InstID="938040328" OriHeight="107100" OriWidth="65280" VertFlip="false" XPos="0" YPos="-11273">
+<ROTATIONINFO Angle="0" CenterX="19660" CenterY="32248" Rotate="1"/>
+<RENDERINGINFO>
+<TRANSMATRIX E1="1.00000" E2="0.00000" E3="0.00000" E4="0.00000" E5="1.00000" E6="-11273.00000"/>
+<SCAMATRIX E1="0.60234" E2="0.00000" E3="0.00000" E4="0.00000" E5="0.60220" E6="11273.00000"/>
+<ROTMATRIX E1="1.00000" E2="0.00000" E3="0.00000" E4="0.00000" E5="1.00000" E6="0.00000"/>
+</RENDERINGINFO></SHAPECOMPONENT>
+<IMAGERECT X0="0" X1="65280" X2="65280" X3="0" Y0="0" Y1="0" Y2="107100" Y3="107100"/>
+<INSIDEMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+<IMAGE Alpha="0" BinItem="17" Bright="0" Contrast="0" Effect="RealPic"/>
+<EFFECTS/>
+</PICTURE>
+<CHAR/>
+</TEXT></P></PARALIST></CELL></ROW></TABLE>
+<CHAR/>
+</TEXT></P>
+<P ColumnBreak="false" PageBreak="true" ParaShape="135" Style="0">
+<TEXT CharShape="66">
+<CHAR> ◈ 단면복구공법(1) - 철근부식이 없는 경우, 모르타르패칭공법</CHAR></TEXT></P>
+<P ParaShape="131" Style="0">
+<TEXT CharShape="68">
+<TABLE BorderFill="3" CellSpacing="0" ColCount="1" PageBreak="Cell" RepeatHeader="true" RowCount="2">
+<SHAPEOBJECT InstId="2011782153" Lock="false" NumberingType="Table" ZOrder="53">
+<SIZE Height="66540" HeightRelTo="Absolute" Protect="false" Width="47626" WidthRelTo="Absolute"/>
+<POSITION AffectLSpacing="false" AllowOverlap="false" FlowWithText="true" HoldAnchorAndSO="false" HorzAlign="Left" HorzOffset="0" HorzRelTo="Column" TreatAsChar="true" VertAlign="Top" VertOffset="0" VertRelTo="Para"/>
+<OUTSIDEMARGIN Bottom="140" Left="140" Right="140" Top="140"/>
+</SHAPEOBJECT>
+<INSIDEMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+<ROW>
+<CELL BorderFill="3" ColAddr="0" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="36949" Protect="false" RowAddr="0" RowSpan="1" Width="47626">
+<CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+<P ParaShape="34" Style="0">
+<TEXT CharShape="39">
+<PICTURE Reverse="false">
+<SHAPEOBJECT InstId="2011782154" Lock="false" NumberingType="Figure" ZOrder="56">
+<SIZE Height="26116" HeightRelTo="Absolute" Protect="false" Width="45380" WidthRelTo="Absolute"/>
+<POSITION AffectLSpacing="false" AllowOverlap="false" FlowWithText="true" HoldAnchorAndSO="false" HorzAlign="Left" HorzOffset="0" HorzRelTo="Para" TreatAsChar="true" VertAlign="Top" VertOffset="0" VertRelTo="Para"/>
+<OUTSIDEMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+<SHAPECOMMENT>그림입니다.원본 그림의 이름: CLP000005d80005.bmp
+</SHAPECOMMENT></SHAPEOBJECT><SHAPECOMPONENT CurHeight="26116" CurWidth="45380" GroupLevel="0" HorzFlip="false" InstID="938040331" OriHeight="55740" OriWidth="104100" VertFlip="false" XPos="-23113" YPos="-13301">
+<ROTATIONINFO Angle="0" CenterX="22690" CenterY="13058" Rotate="1"/>
+<RENDERINGINFO>
+<TRANSMATRIX E1="1.00000" E2="0.00000" E3="-23113.00000" E4="0.00000" E5="1.00000" E6="-13301.00000"/>
+<SCAMATRIX E1="0.43593" E2="0.00000" E3="23113.00000" E4="0.00000" E5="0.46853" E6="13301.00000"/>
+<ROTMATRIX E1="1.00000" E2="0.00000" E3="0.00000" E4="0.00000" E5="1.00000" E6="0.00000"/>
+</RENDERINGINFO></SHAPECOMPONENT>
+<IMAGERECT X0="0" X1="104100" X2="104100" X3="0" Y0="0" Y1="0" Y2="55740" Y3="55740"/>
+<INSIDEMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+<IMAGE Alpha="0" BinItem="18" Bright="0" Contrast="0" Effect="RealPic"/>
+<EFFECTS/>
+</PICTURE>
+<CHAR/>
+</TEXT></P></PARALIST></CELL></ROW>
+<ROW>
+<CELL BorderFill="3" ColAddr="0" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="29591" Protect="false" RowAddr="1" RowSpan="1" Width="47626">
+<CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+<P ParaShape="34" Style="0">
+<TEXT CharShape="39">
+<PICTURE Reverse="false">
+<SHAPEOBJECT InstId="2011782156" Lock="false" NumberingType="Figure" ZOrder="57">
+<SIZE Height="26422" HeightRelTo="Absolute" Protect="false" Width="34894" WidthRelTo="Absolute"/>
+<POSITION AffectLSpacing="false" AllowOverlap="false" FlowWithText="true" HoldAnchorAndSO="false" HorzAlign="Left" HorzOffset="0" HorzRelTo="Para" TreatAsChar="true" VertAlign="Top" VertOffset="0" VertRelTo="Para"/>
+<OUTSIDEMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+<SHAPECOMMENT>그림입니다.원본 그림의 이름: CLP000005d80007.bmp
+</SHAPECOMMENT></SHAPEOBJECT><SHAPECOMPONENT CurHeight="26422" CurWidth="34894" GroupLevel="0" HorzFlip="false" InstID="938040333" OriHeight="51000" OriWidth="73440" VertFlip="false" XPos="-17611" YPos="-11510">
+<ROTATIONINFO Angle="0" CenterX="17447" CenterY="13211" Rotate="1"/>
+<RENDERINGINFO>
+<TRANSMATRIX E1="1.00000" E2="0.00000" E3="-17611.00000" E4="0.00000" E5="1.00000" E6="-11510.00000"/>
+<SCAMATRIX E1="0.47514" E2="0.00000" E3="17611.00000" E4="0.00000" E5="0.51808" E6="11510.00000"/>
+<ROTMATRIX E1="1.00000" E2="0.00000" E3="0.00000" E4="0.00000" E5="1.00000" E6="0.00000"/>
+</RENDERINGINFO></SHAPECOMPONENT>
+<IMAGERECT X0="0" X1="73440" X2="73440" X3="0" Y0="0" Y1="0" Y2="51000" Y3="51000"/>
+<INSIDEMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+<IMAGE Alpha="0" BinItem="19" Bright="0" Contrast="0" Effect="RealPic"/>
+<EFFECTS/>
+</PICTURE>
+<CHAR/>
+</TEXT></P></PARALIST></CELL></ROW></TABLE></TEXT>
+<TEXT CharShape="8">
+<CHAR/>
+</TEXT></P>
+<P ColumnBreak="false" PageBreak="true" ParaShape="135" Style="0">
+<TEXT CharShape="66">
+<CHAR> ◈ 단면복구공법(2) - 철근부식이 있는 경우, 모르타르패칭공법</CHAR></TEXT></P>
+<P ParaShape="131" Style="0">
+<TEXT CharShape="68">
+<TABLE BorderFill="3" CellSpacing="0" ColCount="1" PageBreak="Cell" RepeatHeader="true" RowCount="2">
+<SHAPEOBJECT InstId="2011782158" Lock="false" NumberingType="Table" ZOrder="54">
+<SIZE Height="66540" HeightRelTo="Absolute" Protect="false" Width="47626" WidthRelTo="Absolute"/>
+<POSITION AffectLSpacing="false" AllowOverlap="false" FlowWithText="true" HoldAnchorAndSO="false" HorzAlign="Left" HorzOffset="0" HorzRelTo="Column" TreatAsChar="true" VertAlign="Top" VertOffset="0" VertRelTo="Para"/>
+<OUTSIDEMARGIN Bottom="140" Left="140" Right="140" Top="140"/>
+</SHAPEOBJECT>
+<INSIDEMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+<ROW>
+<CELL BorderFill="3" ColAddr="0" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="36949" Protect="false" RowAddr="0" RowSpan="1" Width="47626">
+<CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+<P ParaShape="34" Style="0">
+<TEXT CharShape="39">
+<PICTURE Reverse="false">
+<SHAPEOBJECT InstId="2011782159" Lock="false" NumberingType="Figure" ZOrder="58">
+<SIZE Height="29023" HeightRelTo="Absolute" Protect="false" Width="45458" WidthRelTo="Absolute"/>
+<POSITION AffectLSpacing="false" AllowOverlap="false" FlowWithText="true" HoldAnchorAndSO="false" HorzAlign="Left" HorzOffset="0" HorzRelTo="Para" TreatAsChar="true" VertAlign="Top" VertOffset="0" VertRelTo="Para"/>
+<OUTSIDEMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+<SHAPECOMMENT>그림입니다.원본 그림의 이름: CLP000005d80008.bmp
+</SHAPECOMMENT></SHAPEOBJECT><SHAPECOMPONENT CurHeight="29023" CurWidth="45458" GroupLevel="0" HorzFlip="false" InstID="938040336" OriHeight="73200" OriWidth="124740" VertFlip="false" XPos="-25023" YPos="-15976">
+<ROTATIONINFO Angle="0" CenterX="22729" CenterY="14511" Rotate="1"/>
+<RENDERINGINFO>
+<TRANSMATRIX E1="1.00000" E2="0.00000" E3="-25023.00000" E4="0.00000" E5="1.00000" E6="-15976.00000"/>
+<SCAMATRIX E1="0.36442" E2="0.00000" E3="25023.00000" E4="0.00000" E5="0.39649" E6="15976.00000"/>
+<ROTMATRIX E1="1.00000" E2="0.00000" E3="0.00000" E4="0.00000" E5="1.00000" E6="0.00000"/>
+</RENDERINGINFO></SHAPECOMPONENT>
+<IMAGERECT X0="0" X1="124740" X2="124740" X3="0" Y0="0" Y1="0" Y2="73200" Y3="73200"/>
+<INSIDEMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+<IMAGE Alpha="0" BinItem="20" Bright="0" Contrast="0" Effect="RealPic"/>
+<EFFECTS/>
+</PICTURE>
+<CHAR/>
+</TEXT></P></PARALIST></CELL></ROW>
+<ROW>
+<CELL BorderFill="3" ColAddr="0" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="29591" Protect="false" RowAddr="1" RowSpan="1" Width="47626">
+<CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+<P ParaShape="34" Style="0">
+<TEXT CharShape="39">
+<PICTURE Reverse="false">
+<SHAPEOBJECT InstId="2011782161" Lock="false" NumberingType="Figure" ZOrder="59">
+<SIZE Height="25966" HeightRelTo="Absolute" Protect="false" Width="34028" WidthRelTo="Absolute"/>
+<POSITION AffectLSpacing="false" AllowOverlap="false" FlowWithText="true" HoldAnchorAndSO="false" HorzAlign="Left" HorzOffset="0" HorzRelTo="Para" TreatAsChar="true" VertAlign="Top" VertOffset="0" VertRelTo="Para"/>
+<OUTSIDEMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+<SHAPECOMMENT>그림입니다.원본 그림의 이름: CLP000005d80009.bmp
+</SHAPECOMMENT></SHAPEOBJECT><SHAPECOMPONENT CurHeight="25966" CurWidth="34028" GroupLevel="0" HorzFlip="false" InstID="938040338" OriHeight="63540" OriWidth="90660" VertFlip="false" XPos="-17932" YPos="-11763">
+<ROTATIONINFO Angle="0" CenterX="17014" CenterY="12983" Rotate="1"/>
+<RENDERINGINFO>
+<TRANSMATRIX E1="1.00000" E2="0.00000" E3="-17932.00000" E4="0.00000" E5="1.00000" E6="-11763.00000"/>
+<SCAMATRIX E1="0.37534" E2="0.00000" E3="17932.00000" E4="0.00000" E5="0.40866" E6="11763.00000"/>
+<ROTMATRIX E1="1.00000" E2="0.00000" E3="0.00000" E4="0.00000" E5="1.00000" E6="0.00000"/>
+</RENDERINGINFO></SHAPECOMPONENT>
+<IMAGERECT X0="0" X1="90660" X2="90660" X3="0" Y0="0" Y1="0" Y2="63540" Y3="63540"/>
+<INSIDEMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+<IMAGE Alpha="0" BinItem="21" Bright="0" Contrast="0" Effect="RealPic"/>
+<EFFECTS/>
+</PICTURE>
+<CHAR/>
+</TEXT></P></PARALIST></CELL></ROW></TABLE></TEXT>
+<TEXT CharShape="8">
+<CHAR/>
+</TEXT></P>
+<P ColumnBreak="false" PageBreak="true" ParaShape="135" Style="0">
+<TEXT CharShape="66">
+<CHAR> ◈ 단면복구공법(3) - 프리팩트공법</CHAR></TEXT></P>
+<P ParaShape="131" Style="0">
+<TEXT CharShape="68">
+<TABLE BorderFill="3" CellSpacing="0" ColCount="1" PageBreak="Cell" RepeatHeader="true" RowCount="2">
+<SHAPEOBJECT InstId="2011782163" Lock="false" NumberingType="Table" ZOrder="55">
+<SIZE Height="66540" HeightRelTo="Absolute" Protect="false" Width="47626" WidthRelTo="Absolute"/>
+<POSITION AffectLSpacing="false" AllowOverlap="false" FlowWithText="true" HoldAnchorAndSO="false" HorzAlign="Left" HorzOffset="0" HorzRelTo="Column" TreatAsChar="true" VertAlign="Top" VertOffset="0" VertRelTo="Para"/>
+<OUTSIDEMARGIN Bottom="140" Left="140" Right="140" Top="140"/>
+</SHAPEOBJECT>
+<INSIDEMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+<ROW>
+<CELL BorderFill="3" ColAddr="0" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="36949" Protect="false" RowAddr="0" RowSpan="1" Width="47626">
+<CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+<P ParaShape="34" Style="0">
+<TEXT CharShape="39">
+<PICTURE Reverse="false">
+<SHAPEOBJECT InstId="2011782164" Lock="false" NumberingType="Figure" ZOrder="60">
+<SIZE Height="27412" HeightRelTo="Absolute" Protect="false" Width="45319" WidthRelTo="Absolute"/>
+<POSITION AffectLSpacing="false" AllowOverlap="false" FlowWithText="true" HoldAnchorAndSO="false" HorzAlign="Left" HorzOffset="0" HorzRelTo="Para" TreatAsChar="true" VertAlign="Top" VertOffset="0" VertRelTo="Para"/>
+<OUTSIDEMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+<SHAPECOMMENT>그림입니다.원본 그림의 이름: CLP000005d8000a.bmp
+</SHAPECOMMENT></SHAPEOBJECT><SHAPECOMPONENT CurHeight="27412" CurWidth="45319" GroupLevel="0" HorzFlip="false" InstID="938040341" OriHeight="68400" OriWidth="124680" VertFlip="false" XPos="-22500" YPos="-13609">
+<ROTATIONINFO Angle="0" CenterX="22659" CenterY="13706" Rotate="1"/>
+<RENDERINGINFO>
+<TRANSMATRIX E1="1.00000" E2="0.00000" E3="-22500.00000" E4="0.00000" E5="1.00000" E6="-13609.00000"/>
+<SCAMATRIX E1="0.36348" E2="0.00000" E3="22500.00000" E4="0.00000" E5="0.40076" E6="13609.00000"/>
+<ROTMATRIX E1="1.00000" E2="0.00000" E3="0.00000" E4="0.00000" E5="1.00000" E6="0.00000"/>
+</RENDERINGINFO></SHAPECOMPONENT>
+<IMAGERECT X0="0" X1="124680" X2="124680" X3="0" Y0="0" Y1="0" Y2="68400" Y3="68400"/>
+<INSIDEMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+<IMAGE Alpha="0" BinItem="22" Bright="0" Contrast="0" Effect="RealPic"/>
+<EFFECTS/>
+</PICTURE>
+<CHAR/>
+</TEXT></P></PARALIST></CELL></ROW>
+<ROW>
+<CELL BorderFill="3" ColAddr="0" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="29591" Protect="false" RowAddr="1" RowSpan="1" Width="47626">
+<CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+<P ParaShape="34" Style="0">
+<TEXT CharShape="39">
+<PICTURE Reverse="false">
+<SHAPEOBJECT InstId="2011782166" Lock="false" NumberingType="Figure" ZOrder="61">
+<SIZE Height="23285" HeightRelTo="Absolute" Protect="false" Width="27346" WidthRelTo="Absolute"/>
+<POSITION AffectLSpacing="false" AllowOverlap="false" FlowWithText="true" HoldAnchorAndSO="false" HorzAlign="Left" HorzOffset="0" HorzRelTo="Para" TreatAsChar="true" VertAlign="Top" VertOffset="0" VertRelTo="Para"/>
+<OUTSIDEMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+<SHAPECOMMENT>그림입니다.원본 그림의 이름: CLP000005d8000b.bmp
+</SHAPECOMMENT></SHAPEOBJECT><SHAPECOMPONENT CurHeight="23285" CurWidth="27346" GroupLevel="0" HorzFlip="false" InstID="938040343" OriHeight="60360" OriWidth="91200" VertFlip="false" XPos="-20140" YPos="-12403">
+<ROTATIONINFO Angle="0" CenterX="13673" CenterY="11642" Rotate="1"/>
+<RENDERINGINFO>
+<TRANSMATRIX E1="1.00000" E2="0.00000" E3="-20140.00000" E4="0.00000" E5="1.00000" E6="-12403.00000"/>
+<SCAMATRIX E1="0.29985" E2="0.00000" E3="20140.00000" E4="0.00000" E5="0.38577" E6="12403.00000"/>
+<ROTMATRIX E1="1.00000" E2="0.00000" E3="0.00000" E4="0.00000" E5="1.00000" E6="0.00000"/>
+</RENDERINGINFO></SHAPECOMPONENT>
+<IMAGERECT X0="0" X1="91200" X2="91200" X3="0" Y0="0" Y1="0" Y2="60360" Y3="60360"/>
+<INSIDEMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+<IMAGE Alpha="0" BinItem="23" Bright="0" Contrast="0" Effect="RealPic"/>
+<EFFECTS/>
+</PICTURE>
+<CHAR/>
+</TEXT></P></PARALIST></CELL></ROW></TABLE>
+<CHAR/>
+</TEXT></P>
+<P ParaShape="131" Style="0">
+<TEXT CharShape="109"/>
+</P>
+<P ParaShape="135" Style="0">
+<TEXT CharShape="66">
+<CHAR> ◈ 강판접착공법</CHAR></TEXT></P>
+<P ParaShape="131" Style="0">
+<TEXT CharShape="68">
+<TABLE BorderFill="3" CellSpacing="0" ColCount="1" PageBreak="Cell" RepeatHeader="true" RowCount="2">
+<SHAPEOBJECT InstId="2011782168" Lock="false" NumberingType="Table" ZOrder="27">
+<SIZE Height="61163" HeightRelTo="Absolute" Protect="false" Width="47626" WidthRelTo="Absolute"/>
+<POSITION AffectLSpacing="false" AllowOverlap="false" FlowWithText="true" HoldAnchorAndSO="false" HorzAlign="Left" HorzOffset="0" HorzRelTo="Column" TreatAsChar="true" VertAlign="Top" VertOffset="0" VertRelTo="Para"/>
+<OUTSIDEMARGIN Bottom="140" Left="140" Right="140" Top="140"/>
+</SHAPEOBJECT>
+<INSIDEMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+<ROW>
+<CELL BorderFill="3" ColAddr="0" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="34968" Protect="false" RowAddr="0" RowSpan="1" Width="47626">
+<CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+<P ParaShape="34" Style="0">
+<TEXT CharShape="39">
+<PICTURE Reverse="false">
+<SHAPEOBJECT InstId="2011782169" Lock="false" NumberingType="Figure" ZOrder="28">
+<SIZE Height="28905" HeightRelTo="Absolute" Protect="false" Width="44599" WidthRelTo="Absolute"/>
+<POSITION AffectLSpacing="false" AllowOverlap="false" FlowWithText="true" HoldAnchorAndSO="false" HorzAlign="Left" HorzOffset="0" HorzRelTo="Para" TreatAsChar="true" VertAlign="Top" VertOffset="0" VertRelTo="Para"/>
+<OUTSIDEMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+<SHAPECOMMENT>그림입니다.원본 그림의 이름: CLP000005d8000c.bmp
+</SHAPECOMMENT></SHAPEOBJECT><SHAPECOMPONENT CurHeight="28905" CurWidth="44599" GroupLevel="0" HorzFlip="false" InstID="938040346" OriHeight="71760" OriWidth="119100" VertFlip="false" XPos="0" YPos="0">
+<ROTATIONINFO Angle="0" CenterX="22299" CenterY="14452" Rotate="1"/>
+<RENDERINGINFO>
+<TRANSMATRIX E1="1.00000" E2="0.00000" E3="0.00000" E4="0.00000" E5="1.00000" E6="0.00000"/>
+<SCAMATRIX E1="0.37447" E2="0.00000" E3="0.00000" E4="0.00000" E5="0.40280" E6="0.00000"/>
+<ROTMATRIX E1="1.00000" E2="0.00000" E3="0.00000" E4="0.00000" E5="1.00000" E6="0.00000"/>
+</RENDERINGINFO></SHAPECOMPONENT>
+<IMAGERECT X0="0" X1="119100" X2="119100" X3="0" Y0="0" Y1="0" Y2="71760" Y3="71760"/>
+<INSIDEMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+<IMAGE Alpha="0" BinItem="24" Bright="0" Contrast="0" Effect="RealPic"/>
+<EFFECTS/>
+</PICTURE>
+<CHAR/>
+</TEXT></P></PARALIST></CELL></ROW>
+<ROW>
+<CELL BorderFill="3" ColAddr="0" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="26195" Protect="false" RowAddr="1" RowSpan="1" Width="47626">
+<CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+<P ParaShape="34" Style="0">
+<TEXT CharShape="39">
+<PICTURE Reverse="false">
+<SHAPEOBJECT InstId="2011782171" Lock="false" NumberingType="Figure" ZOrder="29">
+<SIZE Height="24117" HeightRelTo="Absolute" Protect="false" Width="38669" WidthRelTo="Absolute"/>
+<POSITION AffectLSpacing="false" AllowOverlap="false" FlowWithText="true" HoldAnchorAndSO="false" HorzAlign="Left" HorzOffset="0" HorzRelTo="Para" TreatAsChar="true" VertAlign="Top" VertOffset="0" VertRelTo="Para"/>
+<OUTSIDEMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+<SHAPECOMMENT>그림입니다.원본 그림의 이름: CLP000005d8000d.bmp
+</SHAPECOMMENT></SHAPEOBJECT><SHAPECOMPONENT CurHeight="24117" CurWidth="38669" GroupLevel="0" HorzFlip="false" InstID="938040348" OriHeight="64500" OriWidth="103440" VertFlip="false" XPos="-3617" YPos="-2256">
+<ROTATIONINFO Angle="0" CenterX="19334" CenterY="12058" Rotate="1"/>
+<RENDERINGINFO>
+<TRANSMATRIX E1="1.00000" E2="0.00000" E3="-3617.00000" E4="0.00000" E5="1.00000" E6="-2256.00000"/>
+<SCAMATRIX E1="0.37383" E2="0.00000" E3="3617.00000" E4="0.00000" E5="0.37391" E6="2256.00000"/>
+<ROTMATRIX E1="1.00000" E2="0.00000" E3="0.00000" E4="0.00000" E5="1.00000" E6="0.00000"/>
+</RENDERINGINFO></SHAPECOMPONENT>
+<IMAGERECT X0="0" X1="103440" X2="103440" X3="0" Y0="0" Y1="0" Y2="64500" Y3="64500"/>
+<INSIDEMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+<IMAGE Alpha="0" BinItem="25" Bright="0" Contrast="0" Effect="RealPic"/>
+<EFFECTS/>
+</PICTURE>
+<CHAR/>
+</TEXT></P></PARALIST></CELL></ROW></TABLE>
+<CHAR/>
+</TEXT></P>
+<P ColumnBreak="false" PageBreak="true" ParaShape="135" Style="0">
+<TEXT CharShape="66">
+<CHAR> ◈ 외부 케이블 공법</CHAR></TEXT></P>
+<P ParaShape="131" Style="0">
+<TEXT CharShape="68">
+<TABLE BorderFill="3" CellSpacing="0" ColCount="1" PageBreak="Cell" RepeatHeader="true" RowCount="2">
+<SHAPEOBJECT InstId="2011782173" Lock="false" NumberingType="Table" ZOrder="30">
+<SIZE Height="66540" HeightRelTo="Absolute" Protect="false" Width="47626" WidthRelTo="Absolute"/>
+<POSITION AffectLSpacing="false" AllowOverlap="false" FlowWithText="true" HoldAnchorAndSO="false" HorzAlign="Left" HorzOffset="0" HorzRelTo="Column" TreatAsChar="true" VertAlign="Top" VertOffset="0" VertRelTo="Para"/>
+<OUTSIDEMARGIN Bottom="140" Left="140" Right="140" Top="140"/>
+</SHAPEOBJECT>
+<INSIDEMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+<ROW>
+<CELL BorderFill="3" ColAddr="0" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="33270" Protect="false" RowAddr="0" RowSpan="1" Width="47626">
+<CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+<P ParaShape="34" Style="0">
+<TEXT CharShape="39">
+<PICTURE Reverse="false">
+<SHAPEOBJECT InstId="2011782174" Lock="false" NumberingType="Figure" ZOrder="33">
+<SIZE Height="30558" HeightRelTo="Absolute" Protect="false" Width="44556" WidthRelTo="Absolute"/>
+<POSITION AffectLSpacing="false" AllowOverlap="false" FlowWithText="true" HoldAnchorAndSO="false" HorzAlign="Left" HorzOffset="0" HorzRelTo="Para" TreatAsChar="true" VertAlign="Top" VertOffset="0" VertRelTo="Para"/>
+<OUTSIDEMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+<SHAPECOMMENT>그림입니다.원본 그림의 이름: CLP000005d8000e.bmp
+</SHAPECOMMENT></SHAPEOBJECT><SHAPECOMPONENT CurHeight="30558" CurWidth="44556" GroupLevel="0" HorzFlip="false" InstID="938040351" OriHeight="84960" OriWidth="123900" VertFlip="false" XPos="0" YPos="0">
+<ROTATIONINFO Angle="0" CenterX="22278" CenterY="15279" Rotate="1"/>
+<RENDERINGINFO>
+<TRANSMATRIX E1="1.00000" E2="0.00000" E3="0.00000" E4="0.00000" E5="1.00000" E6="0.00000"/>
+<SCAMATRIX E1="0.35961" E2="0.00000" E3="0.00000" E4="0.00000" E5="0.35968" E6="0.00000"/>
+<ROTMATRIX E1="1.00000" E2="0.00000" E3="0.00000" E4="0.00000" E5="1.00000" E6="0.00000"/>
+</RENDERINGINFO></SHAPECOMPONENT>
+<IMAGERECT X0="0" X1="123900" X2="123900" X3="0" Y0="0" Y1="0" Y2="84960" Y3="84960"/>
+<INSIDEMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+<IMAGE Alpha="0" BinItem="26" Bright="0" Contrast="0" Effect="RealPic"/>
+<EFFECTS/>
+</PICTURE>
+<CHAR/>
+</TEXT></P></PARALIST></CELL></ROW>
+<ROW>
+<CELL BorderFill="3" ColAddr="0" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="33270" Protect="false" RowAddr="1" RowSpan="1" Width="47626">
+<CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+<P ParaShape="34" Style="0">
+<TEXT CharShape="39">
+<PICTURE Reverse="false">
+<SHAPEOBJECT InstId="2011782176" Lock="false" NumberingType="Figure" ZOrder="34">
+<SIZE Height="30061" HeightRelTo="Absolute" Protect="false" Width="44964" WidthRelTo="Absolute"/>
+<POSITION AffectLSpacing="false" AllowOverlap="false" FlowWithText="true" HoldAnchorAndSO="false" HorzAlign="Left" HorzOffset="0" HorzRelTo="Para" TreatAsChar="true" VertAlign="Top" VertOffset="0" VertRelTo="Para"/>
+<OUTSIDEMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+<SHAPECOMMENT>그림입니다.원본 그림의 이름: CLP000005d8000f.bmp
+</SHAPECOMMENT></SHAPEOBJECT><SHAPECOMPONENT CurHeight="30061" CurWidth="44964" GroupLevel="0" HorzFlip="false" InstID="938040353" OriHeight="83040" OriWidth="124200" VertFlip="false" XPos="0" YPos="0">
+<ROTATIONINFO Angle="0" CenterX="22482" CenterY="15030" Rotate="1"/>
+<RENDERINGINFO>
+<TRANSMATRIX E1="1.00000" E2="0.00000" E3="0.00000" E4="0.00000" E5="1.00000" E6="0.00000"/>
+<SCAMATRIX E1="0.36203" E2="0.00000" E3="0.00000" E4="0.00000" E5="0.36201" E6="0.00000"/>
+<ROTMATRIX E1="1.00000" E2="0.00000" E3="0.00000" E4="0.00000" E5="1.00000" E6="0.00000"/>
+</RENDERINGINFO></SHAPECOMPONENT>
+<IMAGERECT X0="0" X1="124200" X2="124200" X3="0" Y0="0" Y1="0" Y2="83040" Y3="83040"/>
+<INSIDEMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+<IMAGE Alpha="0" BinItem="27" Bright="0" Contrast="0" Effect="RealPic"/>
+<EFFECTS/>
+</PICTURE>
+<CHAR/>
+</TEXT></P></PARALIST></CELL></ROW></TABLE></TEXT>
+<TEXT CharShape="8">
+<CHAR/>
+</TEXT></P>
+<P ColumnBreak="false" PageBreak="true" ParaShape="135" Style="0">
+<TEXT CharShape="66">
+<CHAR> ◈ 시트접착공법(1)</CHAR></TEXT></P>
+<P ParaShape="130" Style="0">
+<TEXT CharShape="68">
+<TABLE BorderFill="3" CellSpacing="0" ColCount="1" PageBreak="Cell" RepeatHeader="true" RowCount="1">
+<SHAPEOBJECT InstId="2011782178" Lock="false" NumberingType="Table" ZOrder="31">
+<SIZE Height="40628" HeightRelTo="Absolute" Protect="false" Width="47626" WidthRelTo="Absolute"/>
+<POSITION AffectLSpacing="false" AllowOverlap="false" FlowWithText="true" HoldAnchorAndSO="false" HorzAlign="Left" HorzOffset="0" HorzRelTo="Column" TreatAsChar="true" VertAlign="Top" VertOffset="0" VertRelTo="Para"/>
+<OUTSIDEMARGIN Bottom="140" Left="140" Right="140" Top="140"/>
+</SHAPEOBJECT>
+<INSIDEMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+<ROW>
+<CELL BorderFill="3" ColAddr="0" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="40628" Protect="false" RowAddr="0" RowSpan="1" Width="47626">
+<CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+<P ParaShape="34" Style="0">
+<TEXT CharShape="39">
+<PICTURE Reverse="false">
+<SHAPEOBJECT InstId="2011782179" Lock="false" NumberingType="Figure" ZOrder="35">
+<SIZE Height="34795" HeightRelTo="Absolute" Protect="false" Width="45607" WidthRelTo="Absolute"/>
+<POSITION AffectLSpacing="false" AllowOverlap="false" FlowWithText="true" HoldAnchorAndSO="false" HorzAlign="Left" HorzOffset="0" HorzRelTo="Para" TreatAsChar="true" VertAlign="Top" VertOffset="0" VertRelTo="Para"/>
+<OUTSIDEMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+<SHAPECOMMENT>그림입니다.원본 그림의 이름: CLP000005d80010.bmp
+</SHAPECOMMENT></SHAPEOBJECT><SHAPECOMPONENT CurHeight="34795" CurWidth="45607" GroupLevel="0" HorzFlip="false" InstID="938040356" OriHeight="84180" OriWidth="124080" VertFlip="false" XPos="0" YPos="0">
+<ROTATIONINFO Angle="0" CenterX="22803" CenterY="17397" Rotate="1"/>
+<RENDERINGINFO>
+<TRANSMATRIX E1="1.00000" E2="0.00000" E3="0.00000" E4="0.00000" E5="1.00000" E6="0.00000"/>
+<SCAMATRIX E1="0.36756" E2="0.00000" E3="0.00000" E4="0.00000" E5="0.41334" E6="0.00000"/>
+<ROTMATRIX E1="1.00000" E2="0.00000" E3="0.00000" E4="0.00000" E5="1.00000" E6="0.00000"/>
+</RENDERINGINFO></SHAPECOMPONENT>
+<IMAGERECT X0="0" X1="124080" X2="124080" X3="0" Y0="0" Y1="0" Y2="84180" Y3="84180"/>
+<INSIDEMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+<IMAGE Alpha="0" BinItem="28" Bright="0" Contrast="0" Effect="RealPic"/>
+<EFFECTS/>
+</PICTURE>
+<CHAR/>
+</TEXT></P></PARALIST></CELL></ROW></TABLE></TEXT>
+<TEXT CharShape="8">
+<CHAR/>
+</TEXT></P>
+<P ColumnBreak="false" PageBreak="true" ParaShape="135" Style="0">
+<TEXT CharShape="66">
+<CHAR> ◈ 시트접착공법(2)</CHAR></TEXT></P>
+<P ParaShape="130" Style="0">
+<TEXT CharShape="68">
+<TABLE BorderFill="3" CellSpacing="0" ColCount="1" PageBreak="Cell" RepeatHeader="true" RowCount="1">
+<SHAPEOBJECT InstId="2011782181" Lock="false" NumberingType="Table" ZOrder="36">
+<SIZE Height="51948" HeightRelTo="Absolute" Protect="false" Width="47626" WidthRelTo="Absolute"/>
+<POSITION AffectLSpacing="false" AllowOverlap="false" FlowWithText="true" HoldAnchorAndSO="false" HorzAlign="Left" HorzOffset="0" HorzRelTo="Column" TreatAsChar="true" VertAlign="Top" VertOffset="0" VertRelTo="Para"/>
+<OUTSIDEMARGIN Bottom="140" Left="140" Right="140" Top="140"/>
+</SHAPEOBJECT>
+<INSIDEMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+<ROW>
+<CELL BorderFill="3" ColAddr="0" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="51948" Protect="false" RowAddr="0" RowSpan="1" Width="47626">
+<CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+<P ParaShape="34" Style="0">
+<TEXT CharShape="39">
+<PICTURE Reverse="false">
+<SHAPEOBJECT InstId="2011782182" Lock="false" NumberingType="Figure" ZOrder="38">
+<SIZE Height="29128" HeightRelTo="Absolute" Protect="false" Width="45319" WidthRelTo="Absolute"/>
+<POSITION AffectLSpacing="false" AllowOverlap="false" FlowWithText="true" HoldAnchorAndSO="false" HorzAlign="Left" HorzOffset="0" HorzRelTo="Para" TreatAsChar="true" VertAlign="Top" VertOffset="0" VertRelTo="Para"/>
+<OUTSIDEMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+<SHAPECOMMENT>그림입니다.원본 그림의 이름: CLP000005d80011.bmp
+</SHAPECOMMENT></SHAPEOBJECT><SHAPECOMPONENT CurHeight="29128" CurWidth="45319" GroupLevel="0" HorzFlip="false" InstID="938040359" OriHeight="79740" OriWidth="124080" VertFlip="false" XPos="0" YPos="0">
+<ROTATIONINFO Angle="0" CenterX="22659" CenterY="14564" Rotate="1"/>
+<RENDERINGINFO>
+<TRANSMATRIX E1="1.00000" E2="0.00000" E3="0.00000" E4="0.00000" E5="1.00000" E6="0.00000"/>
+<SCAMATRIX E1="0.36524" E2="0.00000" E3="0.00000" E4="0.00000" E5="0.36529" E6="0.00000"/>
+<ROTMATRIX E1="1.00000" E2="0.00000" E3="0.00000" E4="0.00000" E5="1.00000" E6="0.00000"/>
+</RENDERINGINFO></SHAPECOMPONENT>
+<IMAGERECT X0="0" X1="124080" X2="124080" X3="0" Y0="0" Y1="0" Y2="79740" Y3="79740"/>
+<INSIDEMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+<IMAGE Alpha="0" BinItem="29" Bright="0" Contrast="0" Effect="RealPic"/>
+<EFFECTS/>
+</PICTURE>
+<CHAR/>
+</TEXT></P>
+<P ParaShape="34" Style="0">
+<TEXT CharShape="39">
+<PICTURE Reverse="false">
+<SHAPEOBJECT InstId="2011782184" Lock="false" NumberingType="Figure" ZOrder="39">
+<SIZE Height="16448" HeightRelTo="Absolute" Protect="false" Width="45989" WidthRelTo="Absolute"/>
+<POSITION AffectLSpacing="false" AllowOverlap="false" FlowWithText="true" HoldAnchorAndSO="false" HorzAlign="Left" HorzOffset="0" HorzRelTo="Para" TreatAsChar="true" VertAlign="Top" VertOffset="0" VertRelTo="Para"/>
+<OUTSIDEMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+<SHAPECOMMENT>그림입니다.원본 그림의 이름: CLP000005d80012.bmp
+</SHAPECOMMENT></SHAPEOBJECT><SHAPECOMPONENT CurHeight="16448" CurWidth="45989" GroupLevel="0" HorzFlip="false" InstID="938040361" OriHeight="44640" OriWidth="124800" VertFlip="false" XPos="0" YPos="0">
+<ROTATIONINFO Angle="0" CenterX="22994" CenterY="8224" Rotate="1"/>
+<RENDERINGINFO>
+<TRANSMATRIX E1="1.00000" E2="0.00000" E3="0.00000" E4="0.00000" E5="1.00000" E6="0.00000"/>
+<SCAMATRIX E1="0.36850" E2="0.00000" E3="0.00000" E4="0.00000" E5="0.36846" E6="0.00000"/>
+<ROTMATRIX E1="1.00000" E2="0.00000" E3="0.00000" E4="0.00000" E5="1.00000" E6="0.00000"/>
+</RENDERINGINFO></SHAPECOMPONENT>
+<IMAGERECT X0="0" X1="124800" X2="124800" X3="0" Y0="0" Y1="0" Y2="44640" Y3="44640"/>
+<INSIDEMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+<IMAGE Alpha="0" BinItem="30" Bright="0" Contrast="0" Effect="RealPic"/>
+<EFFECTS/>
+</PICTURE>
+<CHAR/>
+</TEXT></P></PARALIST></CELL></ROW></TABLE></TEXT>
+<TEXT CharShape="8">
+<CHAR/>
+</TEXT></P>
+<P ColumnBreak="false" PageBreak="true" ParaShape="135" Style="0">
+<TEXT CharShape="66">
+<CHAR> ◈ 시트접착공법(3)</CHAR></TEXT></P>
+<P ParaShape="130" Style="0">
+<TEXT CharShape="68">
+<TABLE BorderFill="3" CellSpacing="0" ColCount="1" PageBreak="Cell" RepeatHeader="true" RowCount="1">
+<SHAPEOBJECT InstId="2011782186" Lock="false" NumberingType="Table" ZOrder="37">
+<SIZE Height="49967" HeightRelTo="Absolute" Protect="false" Width="47626" WidthRelTo="Absolute"/>
+<POSITION AffectLSpacing="false" AllowOverlap="false" FlowWithText="true" HoldAnchorAndSO="false" HorzAlign="Left" HorzOffset="0" HorzRelTo="Column" TreatAsChar="true" VertAlign="Top" VertOffset="0" VertRelTo="Para"/>
+<OUTSIDEMARGIN Bottom="140" Left="140" Right="140" Top="140"/>
+</SHAPEOBJECT>
+<INSIDEMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+<ROW>
+<CELL BorderFill="3" ColAddr="0" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="49967" Protect="false" RowAddr="0" RowSpan="1" Width="47626">
+<CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+<P ParaShape="34" Style="0">
+<TEXT CharShape="39">
+<PICTURE Reverse="false">
+<SHAPEOBJECT InstId="2011782187" Lock="false" NumberingType="Figure" ZOrder="40">
+<SIZE Height="31498" HeightRelTo="Absolute" Protect="false" Width="45557" WidthRelTo="Absolute"/>
+<POSITION AffectLSpacing="false" AllowOverlap="false" FlowWithText="true" HoldAnchorAndSO="false" HorzAlign="Left" HorzOffset="0" HorzRelTo="Para" TreatAsChar="true" VertAlign="Top" VertOffset="0" VertRelTo="Para"/>
+<OUTSIDEMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+<SHAPECOMMENT>그림입니다.원본 그림의 이름: CLP000005d80013.bmp
+</SHAPECOMMENT></SHAPEOBJECT><SHAPECOMPONENT CurHeight="31498" CurWidth="45557" GroupLevel="0" HorzFlip="false" InstID="938040364" OriHeight="84360" OriWidth="124560" VertFlip="false" XPos="-334" YPos="0">
+<ROTATIONINFO Angle="0" CenterX="22778" CenterY="15749" Rotate="1"/>
+<RENDERINGINFO>
+<TRANSMATRIX E1="1.00000" E2="0.00000" E3="-334.00000" E4="0.00000" E5="1.00000" E6="0.00000"/>
+<SCAMATRIX E1="0.36574" E2="0.00000" E3="334.00000" E4="0.00000" E5="0.37338" E6="0.00000"/>
+<ROTMATRIX E1="1.00000" E2="0.00000" E3="0.00000" E4="0.00000" E5="1.00000" E6="0.00000"/>
+</RENDERINGINFO></SHAPECOMPONENT>
+<IMAGERECT X0="0" X1="124560" X2="124560" X3="0" Y0="0" Y1="0" Y2="84360" Y3="84360"/>
+<INSIDEMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+<IMAGE Alpha="0" BinItem="31" Bright="0" Contrast="0" Effect="RealPic"/>
+<EFFECTS/>
+</PICTURE>
+<CHAR/>
+</TEXT></P>
+<P ParaShape="34" Style="0">
+<TEXT CharShape="39">
+<PICTURE Reverse="false">
+<SHAPEOBJECT InstId="2011782189" Lock="false" NumberingType="Figure" ZOrder="41">
+<SIZE Height="12278" HeightRelTo="Absolute" Protect="false" Width="45895" WidthRelTo="Absolute"/>
+<POSITION AffectLSpacing="false" AllowOverlap="false" FlowWithText="true" HoldAnchorAndSO="false" HorzAlign="Left" HorzOffset="0" HorzRelTo="Para" TreatAsChar="true" VertAlign="Top" VertOffset="0" VertRelTo="Para"/>
+<OUTSIDEMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+<SHAPECOMMENT>그림입니다.원본 그림의 이름: CLP000005d80014.bmp
+</SHAPECOMMENT></SHAPEOBJECT><SHAPECOMPONENT CurHeight="12278" CurWidth="45895" GroupLevel="0" HorzFlip="false" InstID="938040366" OriHeight="33240" OriWidth="124260" VertFlip="false" XPos="0" YPos="0">
+<ROTATIONINFO Angle="0" CenterX="22947" CenterY="6139" Rotate="1"/>
+<RENDERINGINFO>
+<TRANSMATRIX E1="1.00000" E2="0.00000" E3="0.00000" E4="0.00000" E5="1.00000" E6="0.00000"/>
+<SCAMATRIX E1="0.36935" E2="0.00000" E3="0.00000" E4="0.00000" E5="0.36937" E6="0.00000"/>
+<ROTMATRIX E1="1.00000" E2="0.00000" E3="0.00000" E4="0.00000" E5="1.00000" E6="0.00000"/>
+</RENDERINGINFO></SHAPECOMPONENT>
+<IMAGERECT X0="0" X1="124260" X2="124260" X3="0" Y0="0" Y1="0" Y2="33240" Y3="33240"/>
+<INSIDEMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+<IMAGE Alpha="0" BinItem="32" Bright="0" Contrast="0" Effect="RealPic"/>
+<EFFECTS/>
+</PICTURE>
+<CHAR/>
+</TEXT></P></PARALIST></CELL></ROW></TABLE>
+<CHAR/>
+</TEXT></P>
+<P ParaShape="130" Style="0">
+<TEXT CharShape="8"/>
+</P>
+<P ColumnBreak="false" PageBreak="true" ParaShape="135" Style="0">
+<TEXT CharShape="66">
+<CHAR> ◈ 강재교체공법</CHAR></TEXT></P>
+<P ParaShape="131" Style="0">
+<TEXT CharShape="68">
+<TABLE BorderFill="3" CellSpacing="0" ColCount="1" PageBreak="Cell" RepeatHeader="true" RowCount="1">
+<SHAPEOBJECT InstId="2011782191" Lock="false" NumberingType="Table" ZOrder="32">
+<SIZE Height="38647" HeightRelTo="Absolute" Protect="false" Width="47626" WidthRelTo="Absolute"/>
+<POSITION AffectLSpacing="false" AllowOverlap="false" FlowWithText="true" HoldAnchorAndSO="false" HorzAlign="Left" HorzOffset="0" HorzRelTo="Column" TreatAsChar="true" VertAlign="Top" VertOffset="0" VertRelTo="Para"/>
+<OUTSIDEMARGIN Bottom="140" Left="140" Right="140" Top="140"/>
+</SHAPEOBJECT>
+<INSIDEMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+<ROW>
+<CELL BorderFill="3" ColAddr="0" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="38647" Protect="false" RowAddr="0" RowSpan="1" Width="47626">
+<CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+<P ParaShape="34" Style="0">
+<TEXT CharShape="39">
+<PICTURE Reverse="false">
+<SHAPEOBJECT InstId="2011782192" Lock="false" NumberingType="Figure" ZOrder="42">
+<SIZE Height="30468" HeightRelTo="Absolute" Protect="false" Width="45815" WidthRelTo="Absolute"/>
+<POSITION AffectLSpacing="false" AllowOverlap="false" FlowWithText="true" HoldAnchorAndSO="false" HorzAlign="Left" HorzOffset="0" HorzRelTo="Para" TreatAsChar="true" VertAlign="Top" VertOffset="0" VertRelTo="Para"/>
+<OUTSIDEMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+<SHAPECOMMENT>그림입니다.원본 그림의 이름: CLP000005d80015.bmp
+</SHAPECOMMENT></SHAPEOBJECT><SHAPECOMPONENT CurHeight="30468" CurWidth="45815" GroupLevel="0" HorzFlip="false" InstID="938040369" OriHeight="80460" OriWidth="124860" VertFlip="false" XPos="0" YPos="0">
+<ROTATIONINFO Angle="0" CenterX="22907" CenterY="15234" Rotate="1"/>
+<RENDERINGINFO>
+<TRANSMATRIX E1="1.00000" E2="0.00000" E3="0.00000" E4="0.00000" E5="1.00000" E6="0.00000"/>
+<SCAMATRIX E1="0.36693" E2="0.00000" E3="0.00000" E4="0.00000" E5="0.37867" E6="0.00000"/>
+<ROTMATRIX E1="1.00000" E2="0.00000" E3="0.00000" E4="0.00000" E5="1.00000" E6="0.00000"/>
+</RENDERINGINFO></SHAPECOMPONENT>
+<IMAGERECT X0="0" X1="124860" X2="124860" X3="0" Y0="0" Y1="0" Y2="80460" Y3="80460"/>
+<INSIDEMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+<IMAGE Alpha="0" BinItem="33" Bright="0" Contrast="0" Effect="RealPic"/>
+<EFFECTS/>
+</PICTURE>
+<CHAR/>
+</TEXT></P></PARALIST></CELL></ROW></TABLE>
+<CHAR/>
+</TEXT></P>
+<P ParaShape="30" Style="1">
+<TEXT CharShape="63"/>
+</P>
+<P ParaShape="30" Style="1">
+<TEXT CharShape="63"/>
+</P>
+<P ParaShape="30" Style="1">
+<TEXT CharShape="63"/>
+</P>
+<P ParaShape="30" Style="1">
+<TEXT CharShape="63"/>
+</P>
+<P ParaShape="19" Style="0">
+<TEXT CharShape="112"/>
+</P>
+<P ColumnBreak="false" PageBreak="true" ParaShape="136" Style="0">
+<TEXT CharShape="64">
+<CHAR>5. 시설물정보관리종합시스템[FMS] 사용법</CHAR></TEXT>
+<TEXT CharShape="4"/>
+</P>
+<P ParaShape="124" Style="1">
+<TEXT CharShape="70">
+<CHAR> → 좀 더 자세한 내용은 </CHAR></TEXT>
+<TEXT CharShape="108">
+<CHAR>FMS의 「커뮤니티 / 자료실 / 시설물정보관리종합시스템사용법」</CHAR></TEXT>
+<TEXT CharShape="70">
+<CHAR> 참조</CHAR></TEXT></P>
+<P ParaShape="125" Style="1">
+<TEXT CharShape="70">
+<RECTANGLE Ratio="0" X0="0" X1="10643" X2="10643" X3="0" Y0="0" Y1="0" Y2="1001" Y3="1001">
+<SHAPEOBJECT InstId="1104237816" Lock="false" NumberingType="Figure" TextWrap="InFrontOfText" ZOrder="95">
+<SIZE Height="1001" HeightRelTo="Absolute" Protect="false" Width="10643" WidthRelTo="Absolute"/>
+<POSITION AffectLSpacing="false" AllowOverlap="true" FlowWithText="false" HoldAnchorAndSO="false" HorzAlign="Left" HorzOffset="16585" HorzRelTo="Paper" TreatAsChar="false" VertAlign="Top" VertOffset="24454" VertRelTo="Paper"/>
+<OUTSIDEMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+<SHAPECOMMENT>사각형입니다.</SHAPECOMMENT></SHAPEOBJECT>
+<DRAWINGOBJECT>
+<SHAPECOMPONENT GroupLevel="0" HorzFlip="false" InstID="30495993" OriHeight="1001" OriWidth="10643" VertFlip="false" XPos="0" YPos="0">
+<ROTATIONINFO Angle="0" CenterX="5321" CenterY="500" Rotate="1"/>
+<RENDERINGINFO>
+<TRANSMATRIX E1="1.00000" E2="0.00000" E3="0.00000" E4="0.00000" E5="1.00000" E6="0.00000"/>
+<SCAMATRIX E1="1.00000" E2="0.00000" E3="0.00000" E4="0.00000" E5="1.00000" E6="0.00000"/>
+<ROTMATRIX E1="1.00000" E2="0.00000" E3="0.00000" E4="0.00000" E5="1.00000" E6="0.00000"/>
+</RENDERINGINFO></SHAPECOMPONENT>
+<LINESHAPE Alpha="0" Color="255" EndCap="Flat" Style="Solid" Width="113"/>
+<SHADOW Alpha="0" Color="11711154" OffsetX="0" OffsetY="0" Type="0"/>
+</DRAWINGOBJECT></RECTANGLE>
+<TABLE BorderFill="3" CellSpacing="0" ColCount="1" PageBreak="Cell" RepeatHeader="true" RowCount="1">
+<SHAPEOBJECT InstId="2011782196" Lock="false" NumberingType="Table" ZOrder="68">
+<SIZE Height="32412" HeightRelTo="Absolute" Protect="false" Width="47624" WidthRelTo="Absolute"/>
+<POSITION AffectLSpacing="false" AllowOverlap="false" FlowWithText="true" HoldAnchorAndSO="false" HorzAlign="Left" HorzOffset="0" HorzRelTo="Para" TreatAsChar="true" VertAlign="Top" VertOffset="0" VertRelTo="Para"/>
+<OUTSIDEMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+</SHAPEOBJECT>
+<INSIDEMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+<ROW>
+<CELL BorderFill="3" ColAddr="0" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="32412" Protect="false" RowAddr="0" RowSpan="1" Width="47624">
+<CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+<P ParaShape="57" Style="0">
+<TEXT CharShape="39">
+<PICTURE Reverse="false">
+<SHAPEOBJECT InstId="1104237814" Lock="false" NumberingType="Figure" ZOrder="69">
+<SIZE Height="30741" HeightRelTo="Absolute" Protect="false" Width="46604" WidthRelTo="Absolute"/>
+<POSITION AffectLSpacing="false" AllowOverlap="false" FlowWithText="true" HoldAnchorAndSO="false" HorzAlign="Left" HorzOffset="0" HorzRelTo="Para" TreatAsChar="true" VertAlign="Top" VertOffset="0" VertRelTo="Para"/>
+<OUTSIDEMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+<SHAPECOMMENT>그림입니다.</SHAPECOMMENT></SHAPEOBJECT>
+<SHAPECOMPONENT CurHeight="30741" CurWidth="46604" GroupLevel="0" HorzFlip="false" InstID="30495991" OriHeight="72180" OriWidth="109440" VertFlip="false" XPos="0" YPos="0">
+<ROTATIONINFO Angle="0" CenterX="23302" CenterY="15370" Rotate="1"/>
+<RENDERINGINFO>
+<TRANSMATRIX E1="1.00000" E2="0.00000" E3="0.00000" E4="0.00000" E5="1.00000" E6="0.00000"/>
+<SCAMATRIX E1="0.42584" E2="0.00000" E3="0.00000" E4="0.00000" E5="0.42589" E6="0.00000"/>
+<ROTMATRIX E1="1.00000" E2="0.00000" E3="0.00000" E4="0.00000" E5="1.00000" E6="0.00000"/>
+</RENDERINGINFO></SHAPECOMPONENT>
+<IMAGERECT X0="0" X1="109440" X2="109440" X3="0" Y0="0" Y1="0" Y2="72180" Y3="72180"/>
+<INSIDEMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+<IMAGE Alpha="0" BinItem="34" Bright="0" Contrast="0" Effect="RealPic"/>
+<EFFECTS/>
+</PICTURE>
+<CHAR/>
+</TEXT></P></PARALIST></CELL></ROW></TABLE>
+<CHAR/>
+</TEXT></P>
+<P ColumnBreak="false" PageBreak="true" ParaShape="125" Style="1">
+<TEXT CharShape="70">
+<PICTURE Reverse="false">
+<SHAPEOBJECT InstId="1104237868" Lock="false" NumberingType="Figure" ZOrder="79">
+<SIZE Height="69252" HeightRelTo="Absolute" Protect="false" Width="47412" WidthRelTo="Absolute"/>
+<POSITION AffectLSpacing="false" AllowOverlap="false" FlowWithText="true" HoldAnchorAndSO="false" HorzAlign="Left" HorzOffset="0" HorzRelTo="Para" TreatAsChar="true" VertAlign="Top" VertOffset="0" VertRelTo="Para"/>
+<OUTSIDEMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+<SHAPECOMMENT>그림입니다.</SHAPECOMMENT></SHAPEOBJECT>
+<SHAPECOMPONENT CurHeight="69252" CurWidth="47412" GroupLevel="0" HorzFlip="false" InstID="30496045" OriHeight="126000" OriWidth="86280" VertFlip="false" XPos="0" YPos="0">
+<ROTATIONINFO Angle="0" CenterX="23706" CenterY="34626" Rotate="1"/>
+<RENDERINGINFO>
+<TRANSMATRIX E1="1.00000" E2="0.00000" E3="0.00000" E4="0.00000" E5="1.00000" E6="0.00000"/>
+<SCAMATRIX E1="0.54951" E2="0.00000" E3="0.00000" E4="0.00000" E5="0.54962" E6="0.00000"/>
+<ROTMATRIX E1="1.00000" E2="0.00000" E3="0.00000" E4="0.00000" E5="1.00000" E6="0.00000"/>
+</RENDERINGINFO></SHAPECOMPONENT>
+<IMAGERECT X0="0" X1="86280" X2="86280" X3="0" Y0="0" Y1="0" Y2="126000" Y3="126000"/>
+<INSIDEMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+<IMAGE Alpha="0" BinItem="35" Bright="0" Contrast="0" Effect="RealPic"/>
+<EFFECTS/>
+</PICTURE>
+<CHAR/>
+</TEXT></P>
+<P ColumnBreak="false" PageBreak="true" ParaShape="125" Style="1">
+<TEXT CharShape="70">
+<PICTURE Reverse="false">
+<SHAPEOBJECT InstId="1104237872" Lock="false" NumberingType="Figure" ZOrder="80">
+<SIZE Height="69111" HeightRelTo="Absolute" Protect="false" Width="48000" WidthRelTo="Absolute"/>
+<POSITION AffectLSpacing="false" AllowOverlap="false" FlowWithText="true" HoldAnchorAndSO="false" HorzAlign="Left" HorzOffset="0" HorzRelTo="Para" TreatAsChar="true" VertAlign="Top" VertOffset="0" VertRelTo="Para"/>
+<OUTSIDEMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+<SHAPECOMMENT>그림입니다.</SHAPECOMMENT></SHAPEOBJECT>
+<SHAPECOMPONENT CurHeight="69111" CurWidth="48000" GroupLevel="0" HorzFlip="false" InstID="30496049" OriHeight="125940" OriWidth="87480" VertFlip="false" XPos="0" YPos="0">
+<ROTATIONINFO Angle="0" CenterX="24000" CenterY="34555" Rotate="1"/>
+<RENDERINGINFO>
+<TRANSMATRIX E1="1.00000" E2="0.00000" E3="0.00000" E4="0.00000" E5="1.00000" E6="0.00000"/>
+<SCAMATRIX E1="0.54870" E2="0.00000" E3="0.00000" E4="0.00000" E5="0.54876" E6="0.00000"/>
+<ROTMATRIX E1="1.00000" E2="0.00000" E3="0.00000" E4="0.00000" E5="1.00000" E6="0.00000"/>
+</RENDERINGINFO></SHAPECOMPONENT>
+<IMAGERECT X0="0" X1="87480" X2="87480" X3="0" Y0="0" Y1="0" Y2="125940" Y3="125940"/>
+<INSIDEMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+<IMAGE Alpha="0" BinItem="36" Bright="0" Contrast="0" Effect="RealPic"/>
+<EFFECTS/>
+</PICTURE>
+<CHAR/>
+</TEXT></P>
+<P ColumnBreak="false" PageBreak="true" ParaShape="125" Style="1">
+<TEXT CharShape="70">
+<PICTURE Reverse="false">
+<SHAPEOBJECT InstId="1104237876" Lock="false" NumberingType="Figure" ZOrder="81">
+<SIZE Height="69157" HeightRelTo="Absolute" Protect="false" Width="47369" WidthRelTo="Absolute"/>
+<POSITION AffectLSpacing="false" AllowOverlap="false" FlowWithText="true" HoldAnchorAndSO="false" HorzAlign="Left" HorzOffset="0" HorzRelTo="Para" TreatAsChar="true" VertAlign="Top" VertOffset="0" VertRelTo="Para"/>
+<OUTSIDEMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+<SHAPECOMMENT>그림입니다.</SHAPECOMMENT></SHAPEOBJECT>
+<SHAPECOMPONENT CurHeight="69157" CurWidth="47369" GroupLevel="0" HorzFlip="false" InstID="30496053" OriHeight="125940" OriWidth="86280" VertFlip="false" XPos="0" YPos="0">
+<ROTATIONINFO Angle="0" CenterX="23684" CenterY="34578" Rotate="1"/>
+<RENDERINGINFO>
+<TRANSMATRIX E1="1.00000" E2="0.00000" E3="0.00000" E4="0.00000" E5="1.00000" E6="0.00000"/>
+<SCAMATRIX E1="0.54901" E2="0.00000" E3="0.00000" E4="0.00000" E5="0.54913" E6="0.00000"/>
+<ROTMATRIX E1="1.00000" E2="0.00000" E3="0.00000" E4="0.00000" E5="1.00000" E6="0.00000"/>
+</RENDERINGINFO></SHAPECOMPONENT>
+<IMAGERECT X0="0" X1="86280" X2="86280" X3="0" Y0="0" Y1="0" Y2="125940" Y3="125940"/>
+<INSIDEMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+<IMAGE Alpha="0" BinItem="37" Bright="0" Contrast="0" Effect="RealPic"/>
+<EFFECTS/>
+</PICTURE>
+<CHAR/>
+</TEXT></P>
+<P ColumnBreak="false" PageBreak="true" ParaShape="125" Style="1">
+<TEXT CharShape="70">
+<PICTURE Reverse="false">
+<SHAPEOBJECT InstId="1104237880" Lock="false" NumberingType="Figure" ZOrder="82">
+<SIZE Height="69142" HeightRelTo="Absolute" Protect="false" Width="47359" WidthRelTo="Absolute"/>
+<POSITION AffectLSpacing="false" AllowOverlap="false" FlowWithText="true" HoldAnchorAndSO="false" HorzAlign="Left" HorzOffset="0" HorzRelTo="Para" TreatAsChar="true" VertAlign="Top" VertOffset="0" VertRelTo="Para"/>
+<OUTSIDEMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+<SHAPECOMMENT>그림입니다.</SHAPECOMMENT></SHAPEOBJECT>
+<SHAPECOMPONENT CurHeight="69142" CurWidth="47359" GroupLevel="0" HorzFlip="false" InstID="30496057" OriHeight="125940" OriWidth="86280" VertFlip="false" XPos="0" YPos="0">
+<ROTATIONINFO Angle="0" CenterX="23679" CenterY="34571" Rotate="1"/>
+<RENDERINGINFO>
+<TRANSMATRIX E1="1.00000" E2="0.00000" E3="0.00000" E4="0.00000" E5="1.00000" E6="0.00000"/>
+<SCAMATRIX E1="0.54890" E2="0.00000" E3="0.00000" E4="0.00000" E5="0.54901" E6="0.00000"/>
+<ROTMATRIX E1="1.00000" E2="0.00000" E3="0.00000" E4="0.00000" E5="1.00000" E6="0.00000"/>
+</RENDERINGINFO></SHAPECOMPONENT>
+<IMAGERECT X0="0" X1="86280" X2="86280" X3="0" Y0="0" Y1="0" Y2="125940" Y3="125940"/>
+<INSIDEMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+<IMAGE Alpha="0" BinItem="38" Bright="0" Contrast="0" Effect="RealPic"/>
+<EFFECTS/>
+</PICTURE>
+<CHAR/>
+</TEXT></P>
+<P ColumnBreak="false" PageBreak="true" ParaShape="125" Style="1">
+<TEXT CharShape="70">
+<PICTURE Reverse="false">
+<SHAPEOBJECT InstId="1104237884" Lock="false" NumberingType="Figure" ZOrder="83">
+<SIZE Height="69376" HeightRelTo="Absolute" Protect="false" Width="46588" WidthRelTo="Absolute"/>
+<POSITION AffectLSpacing="false" AllowOverlap="false" FlowWithText="true" HoldAnchorAndSO="false" HorzAlign="Left" HorzOffset="0" HorzRelTo="Para" TreatAsChar="true" VertAlign="Top" VertOffset="0" VertRelTo="Para"/>
+<OUTSIDEMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+<SHAPECOMMENT>그림입니다.</SHAPECOMMENT></SHAPEOBJECT>
+<SHAPECOMPONENT CurHeight="69376" CurWidth="46588" GroupLevel="0" HorzFlip="false" InstID="30496061" OriHeight="128460" OriWidth="86280" VertFlip="false" XPos="0" YPos="0">
+<ROTATIONINFO Angle="0" CenterX="23294" CenterY="34688" Rotate="1"/>
+<RENDERINGINFO>
+<TRANSMATRIX E1="1.00000" E2="0.00000" E3="0.00000" E4="0.00000" E5="1.00000" E6="0.00000"/>
+<SCAMATRIX E1="0.53996" E2="0.00000" E3="0.00000" E4="0.00000" E5="0.54006" E6="0.00000"/>
+<ROTMATRIX E1="1.00000" E2="0.00000" E3="0.00000" E4="0.00000" E5="1.00000" E6="0.00000"/>
+</RENDERINGINFO></SHAPECOMPONENT>
+<IMAGERECT X0="0" X1="86280" X2="86280" X3="0" Y0="0" Y1="0" Y2="128460" Y3="128460"/>
+<INSIDEMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+<IMAGE Alpha="0" BinItem="39" Bright="0" Contrast="0" Effect="RealPic"/>
+<EFFECTS/>
+</PICTURE>
+<CHAR/>
+</TEXT></P>
+<P ColumnBreak="false" PageBreak="true" ParaShape="125" Style="1">
+<TEXT CharShape="70">
+<PICTURE Reverse="false">
+<SHAPEOBJECT InstId="1104237888" Lock="false" NumberingType="Figure" ZOrder="84">
+<SIZE Height="69110" HeightRelTo="Absolute" Protect="false" Width="47428" WidthRelTo="Absolute"/>
+<POSITION AffectLSpacing="false" AllowOverlap="false" FlowWithText="true" HoldAnchorAndSO="false" HorzAlign="Left" HorzOffset="0" HorzRelTo="Para" TreatAsChar="true" VertAlign="Top" VertOffset="0" VertRelTo="Para"/>
+<OUTSIDEMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+<SHAPECOMMENT>그림입니다.</SHAPECOMMENT></SHAPEOBJECT>
+<SHAPECOMPONENT CurHeight="69110" CurWidth="47428" GroupLevel="0" HorzFlip="false" InstID="30496065" OriHeight="125700" OriWidth="86280" VertFlip="false" XPos="0" YPos="0">
+<ROTATIONINFO Angle="0" CenterX="23714" CenterY="34555" Rotate="1"/>
+<RENDERINGINFO>
+<TRANSMATRIX E1="1.00000" E2="0.00000" E3="0.00000" E4="0.00000" E5="1.00000" E6="0.00000"/>
+<SCAMATRIX E1="0.54970" E2="0.00000" E3="0.00000" E4="0.00000" E5="0.54980" E6="0.00000"/>
+<ROTMATRIX E1="1.00000" E2="0.00000" E3="0.00000" E4="0.00000" E5="1.00000" E6="0.00000"/>
+</RENDERINGINFO></SHAPECOMPONENT>
+<IMAGERECT X0="0" X1="86280" X2="86280" X3="0" Y0="0" Y1="0" Y2="125700" Y3="125700"/>
+<INSIDEMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+<IMAGE Alpha="0" BinItem="40" Bright="0" Contrast="0" Effect="RealPic"/>
+<EFFECTS/>
+</PICTURE>
+<CHAR/>
+</TEXT></P>
+<P ColumnBreak="false" PageBreak="true" ParaShape="125" Style="1">
+<TEXT CharShape="70">
+<PICTURE Reverse="false">
+<SHAPEOBJECT InstId="1104237892" Lock="false" NumberingType="Figure" ZOrder="85">
+<SIZE Height="69032" HeightRelTo="Absolute" Protect="false" Width="47375" WidthRelTo="Absolute"/>
+<POSITION AffectLSpacing="false" AllowOverlap="false" FlowWithText="true" HoldAnchorAndSO="false" HorzAlign="Left" HorzOffset="0" HorzRelTo="Para" TreatAsChar="true" VertAlign="Top" VertOffset="0" VertRelTo="Para"/>
+<OUTSIDEMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+<SHAPECOMMENT>그림입니다.</SHAPECOMMENT></SHAPEOBJECT>
+<SHAPECOMPONENT CurHeight="69032" CurWidth="47374" GroupLevel="0" HorzFlip="false" InstID="30496069" OriHeight="125700" OriWidth="86280" VertFlip="false" XPos="0" YPos="0">
+<ROTATIONINFO Angle="0" CenterX="23687" CenterY="34516" Rotate="1"/>
+<RENDERINGINFO>
+<TRANSMATRIX E1="1.00000" E2="0.00000" E3="0.00000" E4="0.00000" E5="1.00000" E6="0.00000"/>
+<SCAMATRIX E1="0.54908" E2="0.00000" E3="0.00000" E4="0.00000" E5="0.54918" E6="0.00000"/>
+<ROTMATRIX E1="1.00000" E2="0.00000" E3="0.00000" E4="0.00000" E5="1.00000" E6="0.00000"/>
+</RENDERINGINFO></SHAPECOMPONENT>
+<IMAGERECT X0="0" X1="86280" X2="86280" X3="0" Y0="0" Y1="0" Y2="125700" Y3="125700"/>
+<INSIDEMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+<IMAGE Alpha="0" BinItem="41" Bright="0" Contrast="0" Effect="RealPic"/>
+<EFFECTS/>
+</PICTURE>
+<CHAR/>
+</TEXT></P>
+<P ColumnBreak="false" PageBreak="true" ParaShape="125" Style="1">
+<TEXT CharShape="70">
+<PICTURE Reverse="false">
+<SHAPEOBJECT InstId="1104237896" Lock="false" NumberingType="Figure" ZOrder="86">
+<SIZE Height="66193" HeightRelTo="Absolute" Protect="false" Width="48192" WidthRelTo="Absolute"/>
+<POSITION AffectLSpacing="false" AllowOverlap="false" FlowWithText="true" HoldAnchorAndSO="false" HorzAlign="Left" HorzOffset="0" HorzRelTo="Para" TreatAsChar="true" VertAlign="Top" VertOffset="0" VertRelTo="Para"/>
+<OUTSIDEMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+<SHAPECOMMENT>그림입니다.</SHAPECOMMENT></SHAPEOBJECT>
+<SHAPECOMPONENT CurHeight="66193" CurWidth="48192" GroupLevel="0" HorzFlip="false" InstID="30496073" OriHeight="125700" OriWidth="91500" VertFlip="false" XPos="0" YPos="0">
+<ROTATIONINFO Angle="0" CenterX="24096" CenterY="33096" Rotate="1"/>
+<RENDERINGINFO>
+<TRANSMATRIX E1="1.00000" E2="0.00000" E3="0.00000" E4="0.00000" E5="1.00000" E6="0.00000"/>
+<SCAMATRIX E1="0.52669" E2="0.00000" E3="0.00000" E4="0.00000" E5="0.52660" E6="0.00000"/>
+<ROTMATRIX E1="1.00000" E2="0.00000" E3="0.00000" E4="0.00000" E5="1.00000" E6="0.00000"/>
+</RENDERINGINFO></SHAPECOMPONENT>
+<IMAGERECT X0="0" X1="91500" X2="91500" X3="0" Y0="0" Y1="0" Y2="125700" Y3="125700"/>
+<INSIDEMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+<IMAGE Alpha="0" BinItem="42" Bright="0" Contrast="0" Effect="RealPic"/>
+<EFFECTS/>
+</PICTURE>
+<CHAR/>
+</TEXT></P>
+<P ColumnBreak="false" PageBreak="true" ParaShape="134" Style="100">
+<TEXT CharShape="78">
+<PICTURE Reverse="false">
+<SHAPEOBJECT InstId="1104237828" Lock="false" NumberingType="Figure" ZOrder="70">
+<SIZE Height="69299" HeightRelTo="Absolute" Protect="false" Width="47069" WidthRelTo="Absolute"/>
+<POSITION AffectLSpacing="false" AllowOverlap="false" FlowWithText="true" HoldAnchorAndSO="false" HorzAlign="Left" HorzOffset="0" HorzRelTo="Para" TreatAsChar="true" VertAlign="Top" VertOffset="0" VertRelTo="Para"/>
+<OUTSIDEMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+<SHAPECOMMENT>그림입니다.</SHAPECOMMENT></SHAPEOBJECT>
+<SHAPECOMPONENT CurHeight="69299" CurWidth="47069" GroupLevel="0" HorzFlip="false" InstID="30496005" OriHeight="125940" OriWidth="85560" VertFlip="false" XPos="0" YPos="0">
+<ROTATIONINFO Angle="0" CenterX="23534" CenterY="34649" Rotate="1"/>
+<RENDERINGINFO>
+<TRANSMATRIX E1="1.00000" E2="0.00000" E3="0.00000" E4="0.00000" E5="1.00000" E6="0.00000"/>
+<SCAMATRIX E1="0.55013" E2="0.00000" E3="0.00000" E4="0.00000" E5="0.55025" E6="0.00000"/>
+<ROTMATRIX E1="1.00000" E2="0.00000" E3="0.00000" E4="0.00000" E5="1.00000" E6="0.00000"/>
+</RENDERINGINFO></SHAPECOMPONENT>
+<IMAGERECT X0="0" X1="85560" X2="85560" X3="0" Y0="0" Y1="0" Y2="125940" Y3="125940"/>
+<INSIDEMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+<IMAGE Alpha="0" BinItem="43" Bright="0" Contrast="0" Effect="RealPic"/>
+<EFFECTS/>
+</PICTURE>
+<CHAR/>
+</TEXT></P>
+<P ColumnBreak="false" PageBreak="true" ParaShape="124" Style="64">
+<TEXT CharShape="68">
+<PICTURE Reverse="false">
+<SHAPEOBJECT InstId="1104237832" Lock="false" NumberingType="Figure" ZOrder="71">
+<SIZE Height="69173" HeightRelTo="Absolute" Protect="false" Width="47153" WidthRelTo="Absolute"/>
+<POSITION AffectLSpacing="false" AllowOverlap="false" FlowWithText="true" HoldAnchorAndSO="false" HorzAlign="Left" HorzOffset="0" HorzRelTo="Para" TreatAsChar="true" VertAlign="Top" VertOffset="0" VertRelTo="Para"/>
+<OUTSIDEMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+<SHAPECOMMENT>그림입니다.</SHAPECOMMENT></SHAPEOBJECT>
+<SHAPECOMPONENT CurHeight="69173" CurWidth="47153" GroupLevel="0" HorzFlip="false" InstID="30496009" OriHeight="125700" OriWidth="85680" VertFlip="false" XPos="0" YPos="0">
+<ROTATIONINFO Angle="0" CenterX="23576" CenterY="34586" Rotate="1"/>
+<RENDERINGINFO>
+<TRANSMATRIX E1="1.00000" E2="0.00000" E3="0.00000" E4="0.00000" E5="1.00000" E6="0.00000"/>
+<SCAMATRIX E1="0.55034" E2="0.00000" E3="0.00000" E4="0.00000" E5="0.55030" E6="0.00000"/>
+<ROTMATRIX E1="1.00000" E2="0.00000" E3="0.00000" E4="0.00000" E5="1.00000" E6="0.00000"/>
+</RENDERINGINFO></SHAPECOMPONENT>
+<IMAGERECT X0="0" X1="85680" X2="85680" X3="0" Y0="0" Y1="0" Y2="125700" Y3="125700"/>
+<INSIDEMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+<IMAGE Alpha="0" BinItem="44" Bright="0" Contrast="0" Effect="RealPic"/>
+<EFFECTS/>
+</PICTURE>
+<CHAR/>
+</TEXT></P>
+<P ColumnBreak="false" PageBreak="true" ParaShape="124" Style="64">
+<TEXT CharShape="68">
+<PICTURE Reverse="false">
+<SHAPEOBJECT InstId="1104237836" Lock="false" NumberingType="Figure" ZOrder="72">
+<SIZE Height="69346" HeightRelTo="Absolute" Protect="false" Width="47095" WidthRelTo="Absolute"/>
+<POSITION AffectLSpacing="false" AllowOverlap="false" FlowWithText="true" HoldAnchorAndSO="false" HorzAlign="Left" HorzOffset="0" HorzRelTo="Para" TreatAsChar="true" VertAlign="Top" VertOffset="0" VertRelTo="Para"/>
+<OUTSIDEMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+<SHAPECOMMENT>그림입니다.</SHAPECOMMENT></SHAPEOBJECT>
+<SHAPECOMPONENT CurHeight="69345" CurWidth="47095" GroupLevel="0" HorzFlip="false" InstID="30496013" OriHeight="125460" OriWidth="85200" VertFlip="false" XPos="0" YPos="0">
+<ROTATIONINFO Angle="0" CenterX="23547" CenterY="34673" Rotate="1"/>
+<RENDERINGINFO>
+<TRANSMATRIX E1="1.00000" E2="0.00000" E3="0.00000" E4="0.00000" E5="1.00000" E6="0.00000"/>
+<SCAMATRIX E1="0.55276" E2="0.00000" E3="0.00000" E4="0.00000" E5="0.55273" E6="0.00000"/>
+<ROTMATRIX E1="1.00000" E2="0.00000" E3="0.00000" E4="0.00000" E5="1.00000" E6="0.00000"/>
+</RENDERINGINFO></SHAPECOMPONENT>
+<IMAGERECT X0="0" X1="85200" X2="85200" X3="0" Y0="0" Y1="0" Y2="125460" Y3="125460"/>
+<INSIDEMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+<IMAGE Alpha="0" BinItem="45" Bright="0" Contrast="0" Effect="RealPic"/>
+<EFFECTS/>
+</PICTURE></TEXT>
+<TEXT CharShape="114">
+<PICTURE Reverse="false">
+<SHAPEOBJECT InstId="1104237840" Lock="false" NumberingType="Figure" ZOrder="73">
+<SIZE Height="69393" HeightRelTo="Absolute" Protect="false" Width="46947" WidthRelTo="Absolute"/>
+<POSITION AffectLSpacing="false" AllowOverlap="false" FlowWithText="true" HoldAnchorAndSO="false" HorzAlign="Left" HorzOffset="0" HorzRelTo="Para" TreatAsChar="true" VertAlign="Top" VertOffset="0" VertRelTo="Para"/>
+<OUTSIDEMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+<SHAPECOMMENT>그림입니다.</SHAPECOMMENT></SHAPEOBJECT>
+<SHAPECOMPONENT CurHeight="69393" CurWidth="46947" GroupLevel="0" HorzFlip="false" InstID="30496017" OriHeight="125940" OriWidth="85200" VertFlip="false" XPos="0" YPos="0">
+<ROTATIONINFO Angle="0" CenterX="23473" CenterY="34696" Rotate="1"/>
+<RENDERINGINFO>
+<TRANSMATRIX E1="1.00000" E2="0.00000" E3="0.00000" E4="0.00000" E5="1.00000" E6="0.00000"/>
+<SCAMATRIX E1="0.55102" E2="0.00000" E3="0.00000" E4="0.00000" E5="0.55100" E6="0.00000"/>
+<ROTMATRIX E1="1.00000" E2="0.00000" E3="0.00000" E4="0.00000" E5="1.00000" E6="0.00000"/>
+</RENDERINGINFO></SHAPECOMPONENT>
+<IMAGERECT X0="0" X1="85200" X2="85200" X3="0" Y0="0" Y1="0" Y2="125940" Y3="125940"/>
+<INSIDEMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+<IMAGE Alpha="0" BinItem="46" Bright="0" Contrast="0" Effect="RealPic"/>
+<EFFECTS/>
+</PICTURE>
+<CHAR/>
+</TEXT></P>
+<P ColumnBreak="false" PageBreak="true" ParaShape="124" Style="64">
+<TEXT CharShape="114">
+<PICTURE Reverse="false">
+<SHAPEOBJECT InstId="1104237848" Lock="false" NumberingType="Figure" ZOrder="74">
+<SIZE Height="69298" HeightRelTo="Absolute" Protect="false" Width="46995" WidthRelTo="Absolute"/>
+<POSITION AffectLSpacing="false" AllowOverlap="false" FlowWithText="true" HoldAnchorAndSO="false" HorzAlign="Left" HorzOffset="0" HorzRelTo="Para" TreatAsChar="true" VertAlign="Top" VertOffset="0" VertRelTo="Para"/>
+<OUTSIDEMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+<SHAPECOMMENT>그림입니다.</SHAPECOMMENT></SHAPEOBJECT>
+<SHAPECOMPONENT CurHeight="69298" CurWidth="46995" GroupLevel="0" HorzFlip="false" InstID="30496025" OriHeight="125640" OriWidth="85200" VertFlip="false" XPos="0" YPos="0">
+<ROTATIONINFO Angle="0" CenterX="23497" CenterY="34649" Rotate="1"/>
+<RENDERINGINFO>
+<TRANSMATRIX E1="1.00000" E2="0.00000" E3="0.00000" E4="0.00000" E5="1.00000" E6="0.00000"/>
+<SCAMATRIX E1="0.55158" E2="0.00000" E3="0.00000" E4="0.00000" E5="0.55156" E6="0.00000"/>
+<ROTMATRIX E1="1.00000" E2="0.00000" E3="0.00000" E4="0.00000" E5="1.00000" E6="0.00000"/>
+</RENDERINGINFO></SHAPECOMPONENT>
+<IMAGERECT X0="0" X1="85200" X2="85200" X3="0" Y0="0" Y1="0" Y2="125640" Y3="125640"/>
+<INSIDEMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+<IMAGE Alpha="0" BinItem="47" Bright="0" Contrast="0" Effect="RealPic"/>
+<EFFECTS/>
+</PICTURE>
+<CHAR/>
+</TEXT></P>
+<P ColumnBreak="false" PageBreak="true" ParaShape="124" Style="64">
+<TEXT CharShape="114">
+<PICTURE Reverse="false">
+<SHAPEOBJECT InstId="1104237860" Lock="false" NumberingType="Figure" ZOrder="77">
+<SIZE Height="69173" HeightRelTo="Absolute" Protect="false" Width="46888" WidthRelTo="Absolute"/>
+<POSITION AffectLSpacing="false" AllowOverlap="false" FlowWithText="true" HoldAnchorAndSO="false" HorzAlign="Left" HorzOffset="0" HorzRelTo="Para" TreatAsChar="true" VertAlign="Top" VertOffset="0" VertRelTo="Para"/>
+<OUTSIDEMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+<SHAPECOMMENT>그림입니다.</SHAPECOMMENT></SHAPEOBJECT>
+<SHAPECOMPONENT CurHeight="69173" CurWidth="46888" GroupLevel="0" HorzFlip="false" InstID="30496037" OriHeight="125700" OriWidth="85200" VertFlip="false" XPos="0" YPos="0">
+<ROTATIONINFO Angle="0" CenterX="23444" CenterY="34586" Rotate="1"/>
+<RENDERINGINFO>
+<TRANSMATRIX E1="1.00000" E2="0.00000" E3="0.00000" E4="0.00000" E5="1.00000" E6="0.00000"/>
+<SCAMATRIX E1="0.55033" E2="0.00000" E3="0.00000" E4="0.00000" E5="0.55030" E6="0.00000"/>
+<ROTMATRIX E1="1.00000" E2="0.00000" E3="0.00000" E4="0.00000" E5="1.00000" E6="0.00000"/>
+</RENDERINGINFO></SHAPECOMPONENT>
+<IMAGERECT X0="0" X1="85200" X2="85200" X3="0" Y0="0" Y1="0" Y2="125700" Y3="125700"/>
+<INSIDEMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+<IMAGE Alpha="0" BinItem="48" Bright="0" Contrast="0" Effect="RealPic"/>
+<EFFECTS/>
+</PICTURE>
+<CHAR/>
+</TEXT></P>
+<P ColumnBreak="false" PageBreak="true" ParaShape="124" Style="64">
+<TEXT CharShape="114">
+<PICTURE Reverse="false">
+<SHAPEOBJECT InstId="1104237864" Lock="false" NumberingType="Figure" ZOrder="78">
+<SIZE Height="69219" HeightRelTo="Absolute" Protect="false" Width="46945" WidthRelTo="Absolute"/>
+<POSITION AffectLSpacing="false" AllowOverlap="false" FlowWithText="true" HoldAnchorAndSO="false" HorzAlign="Left" HorzOffset="0" HorzRelTo="Para" TreatAsChar="true" VertAlign="Top" VertOffset="0" VertRelTo="Para"/>
+<OUTSIDEMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+<SHAPECOMMENT>그림입니다.</SHAPECOMMENT></SHAPEOBJECT>
+<SHAPECOMPONENT CurHeight="69219" CurWidth="46945" GroupLevel="0" HorzFlip="false" InstID="30496041" OriHeight="125700" OriWidth="85260" VertFlip="false" XPos="0" YPos="0">
+<ROTATIONINFO Angle="0" CenterX="23472" CenterY="34609" Rotate="1"/>
+<RENDERINGINFO>
+<TRANSMATRIX E1="1.00000" E2="0.00000" E3="0.00000" E4="0.00000" E5="1.00000" E6="0.00000"/>
+<SCAMATRIX E1="0.55061" E2="0.00000" E3="0.00000" E4="0.00000" E5="0.55067" E6="0.00000"/>
+<ROTMATRIX E1="1.00000" E2="0.00000" E3="0.00000" E4="0.00000" E5="1.00000" E6="0.00000"/>
+</RENDERINGINFO></SHAPECOMPONENT>
+<IMAGERECT X0="0" X1="85260" X2="85260" X3="0" Y0="0" Y1="0" Y2="125700" Y3="125700"/>
+<INSIDEMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+<IMAGE Alpha="0" BinItem="49" Bright="0" Contrast="0" Effect="RealPic"/>
+<EFFECTS/>
+</PICTURE>
+<CHAR/>
+</TEXT></P>
+<P ParaShape="124" Style="64">
+<TEXT CharShape="114"/>
+</P>
+<P ColumnBreak="false" PageBreak="true" ParaShape="124" Style="64">
+<TEXT CharShape="114">
+<PICTURE Reverse="false">
+<SHAPEOBJECT InstId="1104237852" Lock="false" NumberingType="Figure" ZOrder="75">
+<SIZE Height="69298" HeightRelTo="Absolute" Protect="false" Width="46973" WidthRelTo="Absolute"/>
+<POSITION AffectLSpacing="false" AllowOverlap="false" FlowWithText="true" HoldAnchorAndSO="false" HorzAlign="Left" HorzOffset="0" HorzRelTo="Para" TreatAsChar="true" VertAlign="Top" VertOffset="0" VertRelTo="Para"/>
+<OUTSIDEMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+<SHAPECOMMENT>그림입니다.</SHAPECOMMENT></SHAPEOBJECT>
+<SHAPECOMPONENT CurHeight="69297" CurWidth="46973" GroupLevel="0" HorzFlip="false" InstID="30496029" OriHeight="125700" OriWidth="85200" VertFlip="false" XPos="0" YPos="0">
+<ROTATIONINFO Angle="0" CenterX="23486" CenterY="34649" Rotate="1"/>
+<RENDERINGINFO>
+<TRANSMATRIX E1="1.00000" E2="0.00000" E3="0.00000" E4="0.00000" E5="1.00000" E6="0.00000"/>
+<SCAMATRIX E1="0.55133" E2="0.00000" E3="0.00000" E4="0.00000" E5="0.55130" E6="0.00000"/>
+<ROTMATRIX E1="1.00000" E2="0.00000" E3="0.00000" E4="0.00000" E5="1.00000" E6="0.00000"/>
+</RENDERINGINFO></SHAPECOMPONENT>
+<IMAGERECT X0="0" X1="85200" X2="85200" X3="0" Y0="0" Y1="0" Y2="125700" Y3="125700"/>
+<INSIDEMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+<IMAGE Alpha="0" BinItem="50" Bright="0" Contrast="0" Effect="RealPic"/>
+<EFFECTS/>
+</PICTURE>
+<CHAR/>
+</TEXT></P>
+<P ColumnBreak="false" PageBreak="true" ParaShape="124" Style="1">
+<TEXT CharShape="69">
+<PICTURE Reverse="false">
+<SHAPEOBJECT InstId="1104237856" Lock="false" NumberingType="Figure" ZOrder="76">
+<SIZE Height="40482" HeightRelTo="Absolute" Protect="false" Width="47124" WidthRelTo="Absolute"/>
+<POSITION AffectLSpacing="false" AllowOverlap="false" FlowWithText="true" HoldAnchorAndSO="false" HorzAlign="Left" HorzOffset="0" HorzRelTo="Para" TreatAsChar="true" VertAlign="Top" VertOffset="0" VertRelTo="Para"/>
+<OUTSIDEMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+<SHAPECOMMENT>그림입니다.</SHAPECOMMENT></SHAPEOBJECT>
+<SHAPECOMPONENT CurHeight="40482" CurWidth="47124" GroupLevel="0" HorzFlip="false" InstID="30496033" OriHeight="125940" OriWidth="85980" VertFlip="false" XPos="0" YPos="0">
+<ROTATIONINFO Angle="0" CenterX="23562" CenterY="20241" Rotate="1"/>
+<RENDERINGINFO>
+<TRANSMATRIX E1="1.00000" E2="0.00000" E3="0.00000" E4="0.00000" E5="1.00000" E6="0.00000"/>
+<SCAMATRIX E1="0.54808" E2="0.00000" E3="0.00000" E4="0.00000" E5="0.32144" E6="0.00000"/>
+<ROTMATRIX E1="1.00000" E2="0.00000" E3="0.00000" E4="0.00000" E5="1.00000" E6="0.00000"/>
+</RENDERINGINFO></SHAPECOMPONENT>
+<IMAGERECT X0="0" X1="85980" X2="85980" X3="0" Y0="0" Y1="0" Y2="125940" Y3="125940"/>
+<INSIDEMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+<IMAGE Alpha="0" BinItem="51" Bright="0" Contrast="0" Effect="RealPic"/>
+<EFFECTS/>
+</PICTURE>
+<CHAR/>
+</TEXT></P>
+<P ParaShape="60" Style="2">
+<TEXT CharShape="66"/>
+</P>
+<P ParaShape="60" Style="2">
+<TEXT CharShape="66"/>
+</P>

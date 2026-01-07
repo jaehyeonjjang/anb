@@ -1,0 +1,388 @@
+<P ColumnBreak="false" PageBreak="true" ParaShape="107" Style="1">
+	<TEXT CharShape="69">
+		<TABLE BorderFill="256" CellSpacing="0" ColCount="2" PageBreak="Cell" RepeatHeader="true" RowCount="1">
+			<SHAPEOBJECT InstId="1717781136" Lock="false" NumberingType="Table" ZOrder="52">
+				<SIZE Height="2069" HeightRelTo="Absolute" Protect="true" Width="27516" WidthRelTo="Absolute"/>
+				<POSITION AffectLSpacing="false" AllowOverlap="false" FlowWithText="true" HoldAnchorAndSO="false" HorzAlign="Left" HorzOffset="0" HorzRelTo="Para" TreatAsChar="true" VertAlign="Top" VertOffset="0" VertRelTo="Para"/>
+				<OUTSIDEMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+			</SHAPEOBJECT>
+		<INSIDEMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+		<ROW>
+			<CELL BorderFill="40" ColAddr="0" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="2069" Protect="false" RowAddr="0" RowSpan="1" Width="4560">
+				<CELLMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+				<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+					<P ParaShape="23" Style="50">
+						<TEXT CharShape="4">
+							<CHAR>
+								3.2</CHAR>
+						</TEXT>
+				</P>
+		</PARALIST>
+</CELL>
+<CELL BorderFill="40" ColAddr="1" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="2069" Protect="false" RowAddr="0" RowSpan="1" Width="22956">
+	<CELLMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+	<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+		<P ParaShape="24" Style="51">
+			<TEXT CharShape="4">
+				<CHAR>
+					결함(손상)의 발생원인 분석</CHAR>
+			</TEXT>
+	</P>
+</PARALIST>
+</CELL>
+</ROW>
+</TABLE>
+<CHAR/>
+</TEXT>
+</P>
+<P ParaShape="107" Style="1">
+	<TEXT CharShape="69">
+		<TABLE BorderFill="3" CellSpacing="0" ColCount="2" PageBreak="Cell" RepeatHeader="true" RowCount="7">
+			<SHAPEOBJECT InstId="1549867084" Lock="false" NumberingType="Table" ZOrder="97">
+				<SIZE Height="65727" HeightRelTo="Absolute" Protect="false" Width="49357" WidthRelTo="Absolute"/>
+				<POSITION AffectLSpacing="false" AllowOverlap="false" FlowWithText="true" HoldAnchorAndSO="false" HorzAlign="Left" HorzOffset="0" HorzRelTo="Column" TreatAsChar="true" VertAlign="Top" VertOffset="0" VertRelTo="Para"/>
+				<OUTSIDEMARGIN Bottom="140" Left="140" Right="140" Top="140"/>
+			</SHAPEOBJECT>
+		<INSIDEMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+		<ROW>
+			<CELL BorderFill="77" ColAddr="0" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="4112" Protect="false" RowAddr="0" RowSpan="1" Width="6104">
+				<CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+				<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+					<P ParaShape="6" Style="0">
+						<TEXT CharShape="70">
+							<CHAR>
+								구 분</CHAR>
+						</TEXT>
+				</P>
+		</PARALIST>
+</CELL>
+<CELL BorderFill="78" ColAddr="1" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="4112" Protect="false" RowAddr="0" RowSpan="1" Width="43253">
+	<CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+	<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+		<P ParaShape="6" Style="0">
+			<TEXT CharShape="70">
+				<CHAR>
+					층별 주요 손상</CHAR>
+			</TEXT>
+	</P>
+</PARALIST>
+</CELL>
+</ROW>
+<ROW>
+	<CELL BorderFill="75" ColAddr="0" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="4686" Protect="false" RowAddr="1" RowSpan="1" Width="6104">
+		<CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+		<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+			<P ParaShape="6" Style="0">
+				<TEXT CharShape="73">
+					<CHAR>
+						지붕층</CHAR>
+				</TEXT>
+		</P>
+	<P ParaShape="6" Style="0">
+		<TEXT CharShape="73">
+			<CHAR>
+				및</CHAR>
+		</TEXT>
+</P>
+<P ParaShape="6" Style="0">
+	<TEXT CharShape="73">
+		<CHAR>
+			옥탑층</CHAR>
+	</TEXT>
+</P>
+</PARALIST>
+</CELL>
+<CELL BorderFill="76" ColAddr="1" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="4686" Protect="false" RowAddr="1" RowSpan="1" Width="43253">
+	<CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+	<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+		<P ParaShape="4" Style="0">
+			<TEXT CharShape="202">
+				<CHAR>
+					지붕층 점검결과 E.V기계실 </CHAR>
+			</TEXT>
+		<TEXT CharShape="210">
+			<CHAR>
+				벽체 및 슬래브 마감부위는 전반적으로 양호</CHAR>
+		</TEXT>
+	<TEXT CharShape="202">
+		<CHAR>
+			하며, 외벽(옥탑) 또한 전반적으로 양호한 상태로 조사되었다. </CHAR>
+	</TEXT>
+</P>
+<P ParaShape="4" Style="0">
+	<TEXT CharShape="202">
+		<CHAR>
+			관리주체는 현재와 같은 상태를 유지하기 위해 노력해야 할 것이다.</CHAR>
+	</TEXT>
+</P>
+</PARALIST>
+</CELL>
+</ROW>
+<ROW>
+	<CELL BorderFill="24" ColAddr="0" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="7282" Protect="false" RowAddr="2" RowSpan="1" Width="6104">
+		<CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+		<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+			<P ParaShape="6" Style="0">
+				<TEXT CharShape="73">
+					<CHAR>
+						지상층</CHAR>
+				</TEXT>
+		</P>
+</PARALIST>
+</CELL>
+<CELL BorderFill="4" ColAddr="1" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="7282" Protect="false" RowAddr="2" RowSpan="1" Width="43253">
+	<CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+	<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+		<P ParaShape="4" Style="0">
+			<TEXT CharShape="202">
+				<CHAR>
+					지상층의 경우 전용세대부분은 육안조사에 제한이 있어 공용부위를 중점으로 점검하였고, 점검결과 </CHAR>
+			</TEXT>
+		<TEXT CharShape="210">
+			<CHAR>
+				계단실 벽체에서 층간/경사균열 및 균열/누수흔적(누수)/백태</CHAR>
+		</TEXT>
+	<TEXT CharShape="202">
+		<CHAR>
+			가 조사되었고, 슬래브에서 </CHAR>
+	</TEXT>
+<TEXT CharShape="210">
+	<CHAR>
+		균열/누수흔적</CHAR>
+</TEXT>
+<TEXT CharShape="202">
+	<CHAR>
+		이 조사되었다. </CHAR>
+</TEXT>
+</P>
+<P ParaShape="4" Style="0">
+	<TEXT CharShape="202">
+		<CHAR>
+			조사된 결함은 콘크리트 시공이음 부위 및 콘크리트 건조수축, 결함부위 누수 등으로 발생된 것으로 판단되며, 결함을 장기간 방치 시 내구성 저하의 원인이 되므로 내구성 보호를 위한 적극적인 보수가 요구된다.</CHAR>
+	</TEXT>
+</P>
+</PARALIST>
+</CELL>
+</ROW>
+<ROW>
+	<CELL BorderFill="24" ColAddr="0" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="13282" Protect="false" RowAddr="3" RowSpan="1" Width="6104">
+		<CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+		<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+			<P ParaShape="6" Style="0">
+				<TEXT CharShape="73">
+					<CHAR>
+						지하층</CHAR>
+				</TEXT>
+		</P>
+</PARALIST>
+</CELL>
+<CELL BorderFill="4" ColAddr="1" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="13282" Protect="false" RowAddr="3" RowSpan="1" Width="43253">
+	<CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+	<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+		<P ParaShape="4" Style="0">
+			<TEXT CharShape="202">
+				<CHAR>
+					지하층 및 지하주차장 점검결과 </CHAR>
+			</TEXT>
+		<TEXT CharShape="210">
+			<CHAR>
+				동지하 벽체 0.3mm이하의 수직/경사균열, 철근노출</CHAR>
+		</TEXT>
+	<TEXT CharShape="202">
+		<CHAR>
+			이 조사되었으며, </CHAR>
+	</TEXT>
+<TEXT CharShape="211">
+	<CHAR>
+		지하주차장 벽체(기둥 포함) 및 기둥</CHAR>
+</TEXT>
+<TEXT CharShape="202">
+	<CHAR>
+		에서</CHAR>
+</TEXT>
+<TEXT CharShape="210">
+	<CHAR>
+		 균열/누수흔적, 철근노출와 </CHAR>
+</TEXT>
+<TEXT CharShape="202">
+	<CHAR>
+		슬래브(보 포함)에서 </CHAR>
+</TEXT>
+<TEXT CharShape="210">
+	<CHAR>
+		균열/누수흔적(누수)/백태, 철근노출</CHAR>
+</TEXT>
+<TEXT CharShape="202">
+	<CHAR>
+		이 조사되었다. </CHAR>
+</TEXT>
+</P>
+<P ParaShape="4" Style="0">
+	<TEXT CharShape="202">
+		<CHAR>
+			조사된 결함은 콘크리트 건조수축, 피복두께 부족, </CHAR>
+	</TEXT>
+<TEXT CharShape="210">
+	<CHAR>
+		시공불량</CHAR>
+</TEXT>
+<TEXT CharShape="202">
+	<CHAR>
+		, 결함부위 누수 등으로 발생된 것으로 판단되며, 조사된 결함 중 누수흔적(누수), 철근노출은 수분침투에 의한 철근콘크리트 구조물의 내부 철근부식과 콘크리트 탄산화를 가속화시킬 수 있으므로 우선적인 보수가 필요할 것으로 판단된다.</CHAR>
+</TEXT>
+</P>
+<P ParaShape="4" Style="0">
+	<TEXT CharShape="202">
+		<CHAR>
+			(직접 입력)</CHAR>
+	</TEXT>
+</P>
+<P ParaShape="4" Style="0">
+	<TEXT CharShape="202">
+		<CHAR>
+			특히 지하2층 주차장 기둥(53번) 하단 주근노출과 램프 앞 보 부분의 철근노출은 건물의 안전성 및 내구성에 문제가 될 수 있으며 공공의 안전 확보를 위해서라도 빠른 시일 내에 보수조치를 요하는 바이다. 또한, </CHAR>
+	</TEXT>
+</P>
+</PARALIST>
+</CELL>
+</ROW>
+<ROW>
+	<CELL BorderFill="24" ColAddr="0" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="7282" Protect="false" RowAddr="4" RowSpan="1" Width="6104">
+		<CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+		<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+			<P ParaShape="6" Style="0">
+				<TEXT CharShape="73">
+					<CHAR>
+						건물외벽</CHAR>
+				</TEXT>
+		</P>
+</PARALIST>
+</CELL>
+<CELL BorderFill="4" ColAddr="1" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="7282" Protect="false" RowAddr="4" RowSpan="1" Width="43253">
+	<CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+	<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+		<P ParaShape="4" Style="0">
+			<TEXT CharShape="202">
+				<CHAR>
+					건물외벽 조사결과 상/중층 및 저층 일부 벽체에서 균열폭 0.1~0.2mm 이하의 </CHAR>
+			</TEXT>
+		<TEXT CharShape="210">
+			<CHAR>
+				층간균열</CHAR>
+		</TEXT>
+	<TEXT CharShape="202">
+		<CHAR>
+			과, </CHAR>
+	</TEXT>
+<TEXT CharShape="210">
+	<CHAR>
+		일부 콘크리트 박리 </CHAR>
+</TEXT>
+<TEXT CharShape="202">
+	<CHAR>
+		등이 조사되었다. </CHAR>
+</TEXT>
+</P>
+<P ParaShape="4" Style="0">
+	<TEXT CharShape="202">
+		<CHAR>
+			조사된 결함의 경우 장기간 방치 시 결함 확대 및 전유세대 누수로 이어지므로 적절한 보수조치가 필요한 것으로 사료된다. 또한, 향후 외벽 도장공사 진행시 해당결함이 재 발생 되지 않도록 철저한 관리감독이 이루어져야 할 것이다.</CHAR>
+	</TEXT>
+</P>
+</PARALIST>
+</CELL>
+</ROW>
+<ROW>
+	<CELL BorderFill="24" ColAddr="0" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="16452" Protect="false" RowAddr="5" RowSpan="1" Width="6104">
+		<CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+		<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+			<P ParaShape="6" Style="0">
+				<TEXT CharShape="73">
+					<CHAR>
+						부대시설</CHAR>
+				</TEXT>
+		</P>
+</PARALIST>
+</CELL>
+<CELL BorderFill="4" ColAddr="1" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="16452" Protect="false" RowAddr="5" RowSpan="1" Width="43253">
+	<CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+	<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+		<P ParaShape="4" Style="0">
+			<TEXT CharShape="210">
+				<CHAR>
+					(전체적으로 양호한 경우, 없는 경우)</CHAR>
+			</TEXT>
+	</P>
+<P ParaShape="4" Style="0">
+	<TEXT CharShape="210">
+		<CHAR>
+			부대시설 점검 결과 공중이 이용하는 부위 추락방지시설, 도로포장, 환기구 등의 덮개 등의 상태는 양호한 것으로 조사 되었고, 또한 옹벽, 담장, 안전난간 등 양호한 것으로 조사되었다. </CHAR>
+	</TEXT>
+</P>
+<P ParaShape="4" Style="0">
+	<TEXT CharShape="202">
+		<CHAR>
+			관리주체는 양호한 부분에 대해서는 현재와 같은 상태를 유지하기 위해 지속적인 점검 및 유지관리계획 등의 노력을 진행해야 할 것이다.</CHAR>
+	</TEXT>
+</P>
+<P ParaShape="4" Style="0">
+	<TEXT CharShape="202"/>
+</P>
+<P ParaShape="4" Style="0">
+	<TEXT CharShape="210">
+		<CHAR>
+			(전체적으로 양호하나 일부가 결함이 있는 경우)</CHAR>
+	</TEXT>
+</P>
+<P ParaShape="4" Style="0">
+	<TEXT CharShape="210">
+		<CHAR>
+			부대시설 점검 결과 공중이 이용하는 부위 추락방지시설, 도로포장, 환기구 등의 덮개 등의 상태는 양호한 것으로 조사 되었고, 기타 옹벽, 안전난간는 양호하나, 담장 일부에서 이격 및 균열이 있는 것으로 조사되었다. </CHAR>
+	</TEXT>
+</P>
+<P ParaShape="4" Style="0">
+	<TEXT CharShape="210">
+		<CHAR>
+			따라서 </CHAR>
+	</TEXT>
+<TEXT CharShape="202">
+	<CHAR>
+		관리주체는 결함이 발생한 부분에 대해서는 적절한 보수를 진행해야 할 것이며, 양호한 부분에 대해서는 현재와 같은 상태를 유지하기 위해 지속적인 점검 및 유지관리계획 등의 노력을 진행해야 할 것이다.</CHAR>
+</TEXT>
+</P>
+</PARALIST>
+</CELL>
+</ROW>
+<ROW>
+	<CELL BorderFill="66" ColAddr="0" ColSpan="2" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="12631" Protect="false" RowAddr="6" RowSpan="1" Width="49357">
+		<CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+		<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+			<P ParaShape="4" Style="0">
+				<TEXT CharShape="24">
+					<CHAR>
+						 </CHAR>
+				</TEXT>
+			<TEXT CharShape="183">
+				<CHAR>
+					조사된 균열의 원인은 대부분 재료적 성질인 온도 및 건조수축에 기인한 부재간의 구속력차이, 이질재간 팽창률 차이에 의한 접합부 이격 등의 원인으로 발생되어, 현재 구조적 안전성에 영향을 미치지 않을 것으로 사료되나, 균열폭 0.3mm이상의 균열과 누수를 동반하는 균열은 구조체의 내구성 저하와 철근부식 및 탄산화를 촉진하는 요소가 될 수 있으므로 내구성 및 사용성 증진을 위한 순차적인 보수가 필요한 것으로 사료된다.</CHAR>
+			</TEXT>
+	</P>
+<P ParaShape="4" Style="0">
+	<TEXT CharShape="183">
+		<CHAR>
+			또한, 철근노출·박리/박락 부위는 피복두께 부족에 따른 철근부식 팽창압으로 콘크리트가 탈락되어, 장기간 방치시 부식이 촉진되어 콘크리트 박락면이 확대되고, 구조체 내구성에 손상을 초래하게 될 수 있으므로 내구성 보호를 위해 방청 및 단면복구 등의 보수가 필요하다.</CHAR>
+	</TEXT>
+</P>
+</PARALIST>
+</CELL>
+</ROW>
+</TABLE>
+<CHAR/>
+</TEXT>
+</P>
+<P ParaShape="112" Style="1">
+	<TEXT CharShape="69"/>
+</P>
+<P ParaShape="112" Style="1">
+	<TEXT CharShape="69"/>
+</P>

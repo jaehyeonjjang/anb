@@ -1,0 +1,109 @@
+<P ColumnBreak="false" PageBreak="true" ParaShape="89" Style="1">
+  <TEXT CharShape="33">
+<CHAR> 2.7 기존 정기안전점검·정밀점검·정밀안전진단 실시결과</CHAR></TEXT></P>
+<P ParaShape="25" Style="2">
+  <TEXT CharShape="2">
+    <TABLE BorderFill="16" CellSpacing="0" ColCount="4" PageBreak="None" RepeatHeader="true" RowCount="{{pastCount(periodicpasts)}}">
+      <SHAPEOBJECT InstId="2105386204" Lock="false" NumberingType="Table" ZOrder="41">
+        <SIZE Height="44180" HeightRelTo="Absolute" Protect="false" Width="47532" WidthRelTo="Absolute"/>
+        <POSITION AffectLSpacing="false" AllowOverlap="false" FlowWithText="true" HoldAnchorAndSO="false" HorzAlign="Left" HorzOffset="0" HorzRelTo="Para" TreatAsChar="true" VertAlign="Top" VertOffset="0" VertRelTo="Para"/>
+        <OUTSIDEMARGIN Bottom="140" Left="140" Right="140" Top="140"/>
+      </SHAPEOBJECT>
+      <INSIDEMARGIN Bottom="140" Left="140" Right="140" Top="140"/>
+      <ROW>
+        <CELL BorderFill="73" ColAddr="0" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="2401" Protect="false" RowAddr="0" RowSpan="1" Width="6599">
+          <CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+          <PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+            <P ParaShape="5" Style="0">
+              <TEXT CharShape="33">
+        <CHAR>점검종류</CHAR></TEXT></P></PARALIST></CELL>
+        <CELL BorderFill="12" ColAddr="1" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="4802" Protect="false" RowAddr="0" RowSpan="2" Width="4290">
+          <CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+          <PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+            <P ParaShape="5" Style="0">
+              <TEXT CharShape="33">
+            <CHAR>점검</CHAR></TEXT></P>
+            <P ParaShape="5" Style="0">
+              <TEXT CharShape="33">
+        <CHAR>기간</CHAR></TEXT></P></PARALIST></CELL>
+        <CELL BorderFill="12" ColAddr="2" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="4802" Protect="false" RowAddr="0" RowSpan="2" Width="32730">
+          <CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+          <PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+            <P ParaShape="5" Style="0">
+              <TEXT CharShape="33">
+        <CHAR>점검결과 및 주요 보수·보강(안) 요약</CHAR></TEXT></P></PARALIST></CELL>
+        <CELL BorderFill="13" ColAddr="3" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="4802" Protect="false" RowAddr="0" RowSpan="2" Width="3913">
+          <CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+          <PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+            <P ParaShape="5" Style="0">
+              <TEXT CharShape="33">
+            <CHAR>안전</CHAR></TEXT></P>
+            <P ParaShape="5" Style="0">
+              <TEXT CharShape="33">
+      <CHAR>등급</CHAR></TEXT></P></PARALIST></CELL></ROW>
+      <ROW>
+        <CELL BorderFill="135" ColAddr="0" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="2401" Protect="false" RowAddr="1" RowSpan="1" Width="6599">
+          <CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+          <PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+            <P ParaShape="5" Style="0">
+              <TEXT CharShape="33">
+      <CHAR>시행자</CHAR></TEXT></P></PARALIST></CELL></ROW>
+      {{range i, v := periodicpasts}}
+      <ROW>
+        <CELL BorderFill="6" ColAddr="0" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="8495" Protect="false" RowAddr="{{i*2+2}}" RowSpan="1" Width="6599">
+          <CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+          <PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+            <P ParaShape="114" Style="0">
+              <TEXT CharShape="3">
+        <CHAR>{{v.Type}}</CHAR></TEXT></P></PARALIST></CELL>
+        <CELL BorderFill="{{if i == pastCounts - 1}}23{{else}}3{{end}}" ColAddr="1" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="23676" Protect="false" RowAddr="{{i*2+2}}" RowSpan="2" Width="4290">
+          <CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+          <PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+            <P ParaShape="34" Style="0">
+              <TEXT CharShape="3">
+            <CHAR>{{v.Repairstartdate|year}}</CHAR></TEXT></P>
+            <P ParaShape="34" Style="0">
+              <TEXT CharShape="3">
+            <CHAR>{{v.Repairstartdate|monthday}}</CHAR></TEXT></P>
+            <P ParaShape="34" Style="0">
+              <TEXT CharShape="3">
+            <CHAR>~</CHAR></TEXT></P>
+            <P ParaShape="34" Style="0">
+              <TEXT CharShape="3">
+            <CHAR>{{v.Repairenddate|year}}</CHAR></TEXT></P>
+            <P ParaShape="34" Style="0">
+              <TEXT CharShape="3">
+        <CHAR>{{v.Repairenddate|monthday}}</CHAR></TEXT></P></PARALIST></CELL>
+        <CELL BorderFill="{{if i == pastCounts - 1}}23{{else}}3{{end}}" ColAddr="2" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="23676" Protect="false" RowAddr="{{i*2+2}}" RowSpan="2" Width="32730">
+          <CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+          <PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+            {{range split(v.Content)}}<P ParaShape="116" Style="0"><TEXT CharShape="3"><CHAR>{{.}}</CHAR></TEXT></P>{{end}}            
+
+          </PARALIST>
+        </CELL>
+        <CELL BorderFill="{{if i == pastCounts - 1}}25{{else}}4{{end}}" ColAddr="3" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="23676" Protect="false" RowAddr="{{i*2+2}}" RowSpan="2" Width="3913">
+          <CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+          <PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+            <P ParaShape="34" Style="2"><TEXT CharShape="3"><CHAR>{{v.Grade}}</CHAR></TEXT></P>
+          </PARALIST>
+        </CELL>
+      </ROW>
+      <ROW>
+        <CELL BorderFill="{{if i == pastCounts - 1}}32{{else}}6{{end}}" ColAddr="0" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="15181" Protect="false" RowAddr="{{i*2+3}}" RowSpan="1" Width="6599">
+          <CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+          <PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+            <P ParaShape="114" Style="0"><TEXT CharShape="3"><CHAR>{{v.Company}}</CHAR></TEXT></P>
+          </PARALIST>
+        </CELL>
+      </ROW>
+      {{end}}
+                
+    </TABLE>
+    <CHAR/>
+  </TEXT></P>
+  <P ParaShape="96" Style="2">
+    <TEXT CharShape="16">
+  <CHAR>{{if periodic.Past != ""}}{{periodic.Past}}{{else}}{{if pastCount(periodicpasts) > 1}}가. 금번 정기안전점검에서 상기와 같은 결과를 검토·분석하여 기 발생된 결함사항에 대해 구조적 문제의 발생 및 결함의 진행, 보수·보강 여부 등을 중점으로 검토하였다.{{else}}가. 금회 진행하는 정기안전점검을 기준하여 이후 진행되는 안전점검은 상기와 같은 결과를 비교하고 변경/추가 발생된 결함사항에 대해 검토·분석하여 구조적 문제의 발생 및 결함의 진행, 보수·보강 여부 등을 중점으로 검토해야 할 것이다.{{end}}{{end}}</CHAR></TEXT></P>
+  <P ParaShape="29" Style="11">
+    <TEXT CharShape="45"/>
+  </P>

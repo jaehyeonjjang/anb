@@ -1,0 +1,2560 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<HWPML Style="embed" SubVersion="10.0.0.0" Version="2.91">
+<HEAD SecCnt="1">
+<DOCSUMMARY>
+<TITLE>2001-D-08-01</TITLE>
+<SUBJECT>정밀안전진단</SUBJECT>
+<AUTHOR>문제연</AUTHOR>
+<DATE>2001년 8월 17일</DATE></DOCSUMMARY>
+<DOCSETTING>
+<BEGINNUMBER Endnote="1" Equation="1" Footnote="1" Page="1" Picture="1" Table="1"/>
+<CARETPOS List="0" Para="5" Pos="7"/>
+</DOCSETTING>
+<MAPPINGTABLE>
+<FACENAMELIST>
+<FONTFACE Count="13" Lang="Hangul">
+<FONT Id="0" Name="DotumChe" Type="ttf"/>
+<FONT Id="1" Name="Gulim" Type="ttf"/>
+<FONT Id="2" Name="HCR Batang" Type="ttf"/>
+<FONT Id="3" Name="HYwulM" Type="ttf"/>
+<FONT Id="4" Name="휴먼고딕" Type="ttf"/>
+<FONT Id="5" Name="휴먼옛체" Type="ttf"/>
+<FONT Id="6" Name="돋움" Type="ttf">
+<SUBSTFONT Name="HCR Dotum" Type="ttf"/>
+<TYPEINFO ArmStyle="1" Contrast="0" FamilyType="2" Letterform="1" Midline="1" Proportion="0" StrokeVariation="1" Weight="6" XHeight="1"/>
+</FONT>
+<FONT Id="7" Name="새굴림" Type="ttf">
+<SUBSTFONT Name="HCR Dotum" Type="ttf"/>
+<TYPEINFO ArmStyle="1" Contrast="0" FamilyType="2" Letterform="1" Midline="1" Proportion="0" StrokeVariation="1" Weight="6" XHeight="1"/>
+</FONT>
+<FONT Id="8" Name="한양신명조" Type="hft">
+<SUBSTFONT Name="HCR Batang" Type="ttf"/>
+<TYPEINFO ArmStyle="0" Contrast="0" FamilyType="1" Letterform="0" Midline="0" Proportion="0" StrokeVariation="0" Weight="0" XHeight="0"/>
+</FONT>
+<FONT Id="9" Name="한양견명조" Type="hft">
+<SUBSTFONT Name="HCR Batang" Type="ttf"/>
+<TYPEINFO ArmStyle="0" Contrast="0" FamilyType="1" Letterform="0" Midline="0" Proportion="0" StrokeVariation="0" Weight="0" XHeight="0"/>
+</FONT>
+<FONT Id="10" Name="한양중고딕" Type="hft">
+<SUBSTFONT Name="Haansoft Dotum" Type="ttf"/>
+<TYPEINFO ArmStyle="0" Contrast="0" FamilyType="2" Letterform="0" Midline="0" Proportion="0" StrokeVariation="0" Weight="0" XHeight="0"/>
+</FONT>
+<FONT Id="11" Name="신명 신명조" Type="hft">
+<SUBSTFONT Name="HCR Batang" Type="ttf"/>
+<TYPEINFO ArmStyle="0" Contrast="0" FamilyType="1" Letterform="0" Midline="0" Proportion="0" StrokeVariation="0" Weight="0" XHeight="0"/>
+</FONT>
+<FONT Id="12" Name="#신명조" Type="hft">
+<SUBSTFONT Name="HCR Batang" Type="ttf"/>
+<TYPEINFO ArmStyle="0" Contrast="0" FamilyType="2" Letterform="0" Midline="0" Proportion="0" StrokeVariation="0" Weight="0" XHeight="0"/>
+</FONT></FONTFACE>
+<FONTFACE Count="14" Lang="Latin">
+<FONT Id="0" Name="Gulim" Type="ttf"/>
+<FONT Id="1" Name="HCR Batang" Type="ttf"/>
+<FONT Id="2" Name="HYwulM" Type="ttf"/>
+<FONT Id="3" Name="Times New Roman" Type="ttf"/>
+<FONT Id="4" Name="돋움" Type="ttf">
+<SUBSTFONT Name="HCR Dotum" Type="ttf"/>
+<TYPEINFO ArmStyle="1" Contrast="0" FamilyType="2" Letterform="1" Midline="1" Proportion="0" StrokeVariation="1" Weight="6" XHeight="1"/>
+</FONT>
+<FONT Id="5" Name="새굴림" Type="ttf">
+<SUBSTFONT Name="HCR Dotum" Type="ttf"/>
+<TYPEINFO ArmStyle="1" Contrast="0" FamilyType="2" Letterform="1" Midline="1" Proportion="0" StrokeVariation="1" Weight="6" XHeight="1"/>
+</FONT>
+<FONT Id="6" Name="Century Gothic" Type="ttf">
+<SUBSTFONT Name="Haan YHead M" Type="ttf"/>
+<TYPEINFO ArmStyle="2" Contrast="2" FamilyType="2" Letterform="2" Midline="2" Proportion="2" StrokeVariation="2" Weight="5" XHeight="4"/>
+</FONT>
+<FONT Id="7" Name="산세리프" Type="hft">
+<SUBSTFONT Name="HCR Dotum" Type="ttf"/>
+<TYPEINFO ArmStyle="0" Contrast="0" FamilyType="2" Letterform="0" Midline="0" Proportion="0" StrokeVariation="0" Weight="0" XHeight="0"/>
+</FONT>
+<FONT Id="8" Name="한양신명조" Type="hft">
+<SUBSTFONT Name="HCR Batang" Type="ttf"/>
+<TYPEINFO ArmStyle="0" Contrast="0" FamilyType="1" Letterform="0" Midline="0" Proportion="0" StrokeVariation="0" Weight="0" XHeight="0"/>
+</FONT>
+<FONT Id="9" Name="한양중고딕" Type="hft">
+<SUBSTFONT Name="HCR Dotum" Type="ttf"/>
+<TYPEINFO ArmStyle="0" Contrast="0" FamilyType="2" Letterform="0" Midline="0" Proportion="0" StrokeVariation="0" Weight="0" XHeight="0"/>
+</FONT>
+<FONT Id="10" Name="한양견명조" Type="hft">
+<SUBSTFONT Name="HCR Batang" Type="ttf"/>
+<TYPEINFO ArmStyle="0" Contrast="0" FamilyType="1" Letterform="0" Midline="0" Proportion="0" StrokeVariation="0" Weight="0" XHeight="0"/>
+</FONT>
+<FONT Id="11" Name="한양궁서" Type="hft">
+<SUBSTFONT Name="Gungsuh" Type="ttf"/>
+<TYPEINFO ArmStyle="0" Contrast="0" FamilyType="4" Letterform="0" Midline="0" Proportion="0" StrokeVariation="0" Weight="0" XHeight="0"/>
+</FONT>
+<FONT Id="12" Name="HCI Columbine" Type="hft">
+<SUBSTFONT Name="HCR Dotum" Type="ttf"/>
+<TYPEINFO ArmStyle="0" Contrast="0" FamilyType="2" Letterform="0" Midline="0" Proportion="0" StrokeVariation="0" Weight="0" XHeight="0"/>
+</FONT>
+<FONT Id="13" Name="HCI Acacia" Type="hft">
+<SUBSTFONT Name="HCR Dotum" Type="ttf"/>
+<TYPEINFO ArmStyle="0" Contrast="0" FamilyType="2" Letterform="0" Midline="0" Proportion="0" StrokeVariation="0" Weight="0" XHeight="0"/>
+</FONT></FONTFACE>
+<FONTFACE Count="8" Lang="Hanja">
+<FONT Id="0" Name="Gulim" Type="ttf"/>
+<FONT Id="1" Name="Haansoft Batang" Type="ttf"/>
+<FONT Id="2" Name="HCR Batang" Type="ttf"/>
+<FONT Id="3" Name="HYwulM" Type="ttf"/>
+<FONT Id="4" Name="새굴림" Type="ttf">
+<SUBSTFONT Name="HCR Dotum" Type="ttf"/>
+<TYPEINFO ArmStyle="1" Contrast="0" FamilyType="2" Letterform="1" Midline="1" Proportion="0" StrokeVariation="1" Weight="6" XHeight="1"/>
+</FONT>
+<FONT Id="5" Name="한양신명조" Type="hft">
+<SUBSTFONT Name="HCR Batang" Type="ttf"/>
+<TYPEINFO ArmStyle="0" Contrast="0" FamilyType="1" Letterform="0" Midline="0" Proportion="0" StrokeVariation="0" Weight="0" XHeight="0"/>
+</FONT>
+<FONT Id="6" Name="한양중고딕" Type="hft">
+<SUBSTFONT Name="HCR Dotum" Type="ttf"/>
+<TYPEINFO ArmStyle="0" Contrast="0" FamilyType="2" Letterform="0" Midline="0" Proportion="0" StrokeVariation="0" Weight="0" XHeight="0"/>
+</FONT>
+<FONT Id="7" Name="#신명조" Type="hft">
+<SUBSTFONT Name="HCR Batang" Type="ttf"/>
+<TYPEINFO ArmStyle="0" Contrast="0" FamilyType="1" Letterform="0" Midline="0" Proportion="0" StrokeVariation="0" Weight="0" XHeight="0"/>
+</FONT></FONTFACE>
+<FONTFACE Count="8" Lang="Japanese">
+<FONT Id="0" Name="Gulim" Type="ttf"/>
+<FONT Id="1" Name="Haansoft Batang" Type="ttf"/>
+<FONT Id="2" Name="HCR Batang" Type="ttf"/>
+<FONT Id="3" Name="HYwulM" Type="ttf"/>
+<FONT Id="4" Name="새굴림" Type="ttf">
+<SUBSTFONT Name="HCR Dotum" Type="ttf"/>
+<TYPEINFO ArmStyle="1" Contrast="0" FamilyType="2" Letterform="1" Midline="1" Proportion="0" StrokeVariation="1" Weight="6" XHeight="1"/>
+</FONT>
+<FONT Id="5" Name="한양신명조" Type="hft">
+<SUBSTFONT Name="HCR Batang" Type="ttf"/>
+<TYPEINFO ArmStyle="0" Contrast="0" FamilyType="1" Letterform="0" Midline="0" Proportion="0" StrokeVariation="0" Weight="0" XHeight="0"/>
+</FONT>
+<FONT Id="6" Name="한양중고딕" Type="hft">
+<SUBSTFONT Name="HCR Dotum" Type="ttf"/>
+<TYPEINFO ArmStyle="0" Contrast="0" FamilyType="2" Letterform="0" Midline="0" Proportion="0" StrokeVariation="0" Weight="0" XHeight="0"/>
+</FONT>
+<FONT Id="7" Name="#세명조" Type="hft">
+<SUBSTFONT Name="HCR Batang" Type="ttf"/>
+<TYPEINFO ArmStyle="0" Contrast="0" FamilyType="1" Letterform="0" Midline="0" Proportion="0" StrokeVariation="0" Weight="0" XHeight="0"/>
+</FONT></FONTFACE>
+<FONTFACE Count="7" Lang="Other">
+<FONT Id="0" Name="Gulim" Type="ttf"/>
+<FONT Id="1" Name="Haansoft Batang" Type="ttf"/>
+<FONT Id="2" Name="HCR Batang" Type="ttf"/>
+<FONT Id="3" Name="HYwulM" Type="ttf"/>
+<FONT Id="4" Name="새굴림" Type="ttf">
+<SUBSTFONT Name="HCR Dotum" Type="ttf"/>
+<TYPEINFO ArmStyle="1" Contrast="0" FamilyType="2" Letterform="1" Midline="1" Proportion="0" StrokeVariation="1" Weight="6" XHeight="1"/>
+</FONT>
+<FONT Id="5" Name="명조" Type="hft">
+<SUBSTFONT Name="HCR Batang" Type="ttf"/>
+<TYPEINFO ArmStyle="0" Contrast="0" FamilyType="1" Letterform="0" Midline="0" Proportion="0" StrokeVariation="0" Weight="0" XHeight="0"/>
+</FONT>
+<FONT Id="6" Name="한양신명조" Type="hft">
+<SUBSTFONT Name="HCR Batang" Type="ttf"/>
+<TYPEINFO ArmStyle="0" Contrast="0" FamilyType="1" Letterform="0" Midline="0" Proportion="0" StrokeVariation="0" Weight="0" XHeight="0"/>
+</FONT></FONTFACE>
+<FONTFACE Count="8" Lang="Symbol">
+<FONT Id="0" Name="Gulim" Type="ttf"/>
+<FONT Id="1" Name="Haansoft Batang" Type="ttf"/>
+<FONT Id="2" Name="HCR Batang" Type="ttf"/>
+<FONT Id="3" Name="HYwulM" Type="ttf"/>
+<FONT Id="4" Name="새굴림" Type="ttf">
+<SUBSTFONT Name="HCR Dotum" Type="ttf"/>
+<TYPEINFO ArmStyle="1" Contrast="0" FamilyType="2" Letterform="1" Midline="1" Proportion="0" StrokeVariation="1" Weight="6" XHeight="1"/>
+</FONT>
+<FONT Id="5" Name="한양신명조" Type="hft">
+<SUBSTFONT Name="HCR Batang" Type="ttf"/>
+<TYPEINFO ArmStyle="0" Contrast="0" FamilyType="1" Letterform="0" Midline="0" Proportion="0" StrokeVariation="0" Weight="0" XHeight="0"/>
+</FONT>
+<FONT Id="6" Name="한양중고딕" Type="hft">
+<SUBSTFONT Name="HCR Batang" Type="ttf"/>
+<TYPEINFO ArmStyle="0" Contrast="0" FamilyType="2" Letterform="0" Midline="0" Proportion="0" StrokeVariation="0" Weight="0" XHeight="0"/>
+</FONT>
+<FONT Id="7" Name="#신명조" Type="hft">
+<SUBSTFONT Name="HCR Batang" Type="ttf"/>
+<TYPEINFO ArmStyle="0" Contrast="0" FamilyType="1" Letterform="0" Midline="0" Proportion="0" StrokeVariation="0" Weight="0" XHeight="0"/>
+</FONT></FONTFACE>
+<FONTFACE Count="6" Lang="User">
+<FONT Id="0" Name="Gulim" Type="ttf"/>
+<FONT Id="1" Name="Haansoft Batang" Type="ttf"/>
+<FONT Id="2" Name="HCR Batang" Type="ttf"/>
+<FONT Id="3" Name="HYwulM" Type="ttf"/>
+<FONT Id="4" Name="새굴림" Type="ttf">
+<SUBSTFONT Name="HCR Dotum" Type="ttf"/>
+<TYPEINFO ArmStyle="1" Contrast="0" FamilyType="2" Letterform="1" Midline="1" Proportion="0" StrokeVariation="1" Weight="6" XHeight="1"/>
+</FONT>
+<FONT Id="5" Name="명조" Type="hft">
+<SUBSTFONT Name="HCR Batang" Type="ttf"/>
+<TYPEINFO ArmStyle="0" Contrast="0" FamilyType="1" Letterform="0" Midline="0" Proportion="0" StrokeVariation="0" Weight="0" XHeight="0"/>
+</FONT></FONTFACE></FACENAMELIST>
+<BORDERFILLLIST Count="12">
+<BORDERFILL BackSlash="0" BreakCellSeparateLine="0" CenterLine="0" CounterBackSlash="0" CounterSlash="0" CrookedSlash="0" Id="1" Shadow="false" Slash="0" ThreeD="false">
+<LEFTBORDER Type="None" Width="0.1mm"/>
+<RIGHTBORDER Type="None" Width="0.1mm"/>
+<TOPBORDER Type="None" Width="0.1mm"/>
+<BOTTOMBORDER Type="None" Width="0.1mm"/>
+<DIAGONAL Type="Solid" Width="0.1mm"/>
+</BORDERFILL>
+<BORDERFILL BackSlash="0" BreakCellSeparateLine="0" CenterLine="0" CounterBackSlash="0" CounterSlash="0" CrookedSlash="0" Id="2" Shadow="false" Slash="0" ThreeD="false">
+<LEFTBORDER Type="None" Width="0.1mm"/>
+<RIGHTBORDER Type="None" Width="0.1mm"/>
+<TOPBORDER Type="None" Width="0.1mm"/>
+<BOTTOMBORDER Type="None" Width="0.1mm"/>
+<DIAGONAL Type="Solid" Width="0.1mm"/>
+<FILLBRUSH>
+<WINDOWBRUSH Alpha="0" FaceColor="4294967295" HatchColor="4278190080"/>
+</FILLBRUSH></BORDERFILL>
+<BORDERFILL BackSlash="0" BreakCellSeparateLine="0" CenterLine="0" CounterBackSlash="0" CounterSlash="0" CrookedSlash="0" Id="3" Shadow="false" Slash="0" ThreeD="false">
+<LEFTBORDER Type="Solid" Width="0.12mm"/>
+<RIGHTBORDER Type="Solid" Width="0.12mm"/>
+<TOPBORDER Type="Solid" Width="0.12mm"/>
+<BOTTOMBORDER Type="Solid" Width="0.12mm"/>
+<DIAGONAL Type="Solid" Width="0.1mm"/>
+</BORDERFILL>
+<BORDERFILL BackSlash="0" BreakCellSeparateLine="0" CenterLine="0" CounterBackSlash="0" CounterSlash="0" CrookedSlash="0" Id="4" Shadow="false" Slash="0" ThreeD="false">
+<LEFTBORDER Type="Solid" Width="0.12mm"/>
+<RIGHTBORDER Type="Solid" Width="0.4mm"/>
+<TOPBORDER Type="Solid" Width="0.12mm"/>
+<BOTTOMBORDER Type="Solid" Width="0.4mm"/>
+<DIAGONAL Type="Solid" Width="0.12mm"/>
+</BORDERFILL>
+<BORDERFILL BackSlash="0" BreakCellSeparateLine="0" CenterLine="0" CounterBackSlash="0" CounterSlash="0" CrookedSlash="0" Id="5" Shadow="false" Slash="0" ThreeD="false">
+<LEFTBORDER Type="Solid" Width="0.12mm"/>
+<RIGHTBORDER Type="Solid" Width="0.4mm"/>
+<TOPBORDER Type="Solid" Width="0.12mm"/>
+<BOTTOMBORDER Type="Solid" Width="0.12mm"/>
+<DIAGONAL Type="Solid" Width="0.12mm"/>
+</BORDERFILL>
+<BORDERFILL BackSlash="0" BreakCellSeparateLine="0" CenterLine="0" CounterBackSlash="0" CounterSlash="0" CrookedSlash="0" Id="6" Shadow="false" Slash="0" ThreeD="false">
+<LEFTBORDER Type="Solid" Width="0.4mm"/>
+<RIGHTBORDER Type="Solid" Width="0.12mm"/>
+<TOPBORDER Type="Solid" Width="0.4mm"/>
+<BOTTOMBORDER Type="ThickSlim" Width="0.7mm"/>
+<DIAGONAL Type="Solid" Width="0.12mm"/>
+</BORDERFILL>
+<BORDERFILL BackSlash="0" BreakCellSeparateLine="0" CenterLine="0" CounterBackSlash="0" CounterSlash="0" CrookedSlash="0" Id="7" Shadow="false" Slash="0" ThreeD="false">
+<LEFTBORDER Type="Solid" Width="0.12mm"/>
+<RIGHTBORDER Type="Solid" Width="0.4mm"/>
+<TOPBORDER Type="Solid" Width="0.4mm"/>
+<BOTTOMBORDER Type="ThickSlim" Width="0.7mm"/>
+<DIAGONAL Type="Solid" Width="0.12mm"/>
+</BORDERFILL>
+<BORDERFILL BackSlash="0" BreakCellSeparateLine="0" CenterLine="0" CounterBackSlash="0" CounterSlash="0" CrookedSlash="0" Id="8" Shadow="false" Slash="0" ThreeD="false">
+<LEFTBORDER Type="None" Width="0.12mm"/>
+<RIGHTBORDER Type="None" Width="0.12mm"/>
+<TOPBORDER Type="None" Width="0.5mm"/>
+<BOTTOMBORDER Type="None" Width="0.5mm"/>
+<DIAGONAL Type="Solid" Width="0.1mm"/>
+</BORDERFILL>
+<BORDERFILL BackSlash="0" BreakCellSeparateLine="0" CenterLine="0" CounterBackSlash="0" CounterSlash="0" CrookedSlash="0" Id="9" Shadow="false" Slash="0" ThreeD="false">
+<LEFTBORDER Type="None" Width="0.12mm"/>
+<RIGHTBORDER Type="None" Width="0.12mm"/>
+<TOPBORDER Type="None" Width="0.7mm"/>
+<BOTTOMBORDER Type="SlimThick" Width="0.7mm"/>
+<DIAGONAL Type="Solid" Width="0.1mm"/>
+</BORDERFILL>
+<BORDERFILL BackSlash="0" BreakCellSeparateLine="0" CenterLine="0" CounterBackSlash="0" CounterSlash="0" CrookedSlash="0" Id="10" Shadow="false" Slash="0" ThreeD="false">
+<LEFTBORDER Type="Solid" Width="0.4mm"/>
+<RIGHTBORDER Type="Solid" Width="0.12mm"/>
+<TOPBORDER Type="Solid" Width="0.12mm"/>
+<BOTTOMBORDER Type="Solid" Width="0.12mm"/>
+<DIAGONAL Type="Solid" Width="0.12mm"/>
+</BORDERFILL>
+<BORDERFILL BackSlash="0" BreakCellSeparateLine="0" CenterLine="0" CounterBackSlash="0" CounterSlash="0" CrookedSlash="0" Id="11" Shadow="false" Slash="0" ThreeD="false">
+<LEFTBORDER Type="Solid" Width="0.4mm"/>
+<RIGHTBORDER Type="Solid" Width="0.12mm"/>
+<TOPBORDER Type="Solid" Width="0.12mm"/>
+<BOTTOMBORDER Type="Solid" Width="0.4mm"/>
+<DIAGONAL Type="Solid" Width="0.12mm"/>
+</BORDERFILL>
+<BORDERFILL BackSlash="0" BreakCellSeparateLine="0" CenterLine="0" CounterBackSlash="0" CounterSlash="0" CrookedSlash="0" Id="12" Shadow="false" Slash="0" ThreeD="false">
+<LEFTBORDER Type="None" Width="0.1mm"/>
+<RIGHTBORDER Type="None" Width="0.1mm"/>
+<TOPBORDER Type="None" Width="0.1mm"/>
+<BOTTOMBORDER Type="ThickSlim" Width="0.7mm"/>
+<DIAGONAL Type="Solid" Width="0.12mm"/>
+</BORDERFILL></BORDERFILLLIST>
+<CHARSHAPELIST Count="76">
+<CHARSHAPE BorderFillId="1" Height="1000" Id="0" ShadeColor="4294967295" SymMark="0" TextColor="0" UseFontSpace="false" UseKerning="false">
+<FONTID Hangul="1" Hanja="0" Japanese="0" Latin="0" Other="0" Symbol="0" User="0"/>
+<RATIO Hangul="100" Hanja="100" Japanese="100" Latin="100" Other="100" Symbol="100" User="100"/>
+<CHARSPACING Hangul="0" Hanja="0" Japanese="0" Latin="0" Other="0" Symbol="0" User="0"/>
+<RELSIZE Hangul="100" Hanja="100" Japanese="100" Latin="100" Other="100" Symbol="100" User="100"/>
+<CHAROFFSET Hangul="0" Hanja="0" Japanese="0" Latin="0" Other="0" Symbol="0" User="0"/>
+</CHARSHAPE>
+<CHARSHAPE BorderFillId="1" Height="1300" Id="1" ShadeColor="4294967295" SymMark="0" TextColor="0" UseFontSpace="false" UseKerning="false">
+<FONTID Hangul="0" Hanja="5" Japanese="5" Latin="7" Other="6" Symbol="5" User="5"/>
+<RATIO Hangul="100" Hanja="100" Japanese="100" Latin="100" Other="100" Symbol="100" User="100"/>
+<CHARSPACING Hangul="0" Hanja="0" Japanese="0" Latin="0" Other="0" Symbol="0" User="0"/>
+<RELSIZE Hangul="100" Hanja="100" Japanese="100" Latin="100" Other="100" Symbol="100" User="100"/>
+<CHAROFFSET Hangul="0" Hanja="0" Japanese="0" Latin="0" Other="0" Symbol="0" User="0"/>
+<BOLD/>
+</CHARSHAPE>
+<CHARSHAPE BorderFillId="1" Height="1200" Id="2" ShadeColor="4294967295" SymMark="0" TextColor="0" UseFontSpace="false" UseKerning="false">
+<FONTID Hangul="0" Hanja="5" Japanese="5" Latin="7" Other="6" Symbol="5" User="5"/>
+<RATIO Hangul="100" Hanja="100" Japanese="100" Latin="100" Other="100" Symbol="100" User="100"/>
+<CHARSPACING Hangul="0" Hanja="0" Japanese="0" Latin="0" Other="0" Symbol="0" User="0"/>
+<RELSIZE Hangul="100" Hanja="100" Japanese="100" Latin="100" Other="100" Symbol="100" User="100"/>
+<CHAROFFSET Hangul="0" Hanja="0" Japanese="0" Latin="0" Other="0" Symbol="0" User="0"/>
+</CHARSHAPE>
+<CHARSHAPE BorderFillId="1" Height="1100" Id="3" ShadeColor="4294967295" SymMark="0" TextColor="0" UseFontSpace="false" UseKerning="false">
+<FONTID Hangul="6" Hanja="5" Japanese="5" Latin="7" Other="6" Symbol="5" User="5"/>
+<RATIO Hangul="100" Hanja="100" Japanese="100" Latin="100" Other="100" Symbol="100" User="100"/>
+<CHARSPACING Hangul="0" Hanja="0" Japanese="0" Latin="0" Other="0" Symbol="0" User="0"/>
+<RELSIZE Hangul="100" Hanja="100" Japanese="100" Latin="100" Other="100" Symbol="100" User="100"/>
+<CHAROFFSET Hangul="0" Hanja="0" Japanese="0" Latin="0" Other="0" Symbol="0" User="0"/>
+</CHARSHAPE>
+<CHARSHAPE BorderFillId="2" Height="1000" Id="4" ShadeColor="4294967295" SymMark="0" TextColor="0" UseFontSpace="false" UseKerning="false">
+<FONTID Hangul="2" Hanja="2" Japanese="2" Latin="1" Other="2" Symbol="2" User="2"/>
+<RATIO Hangul="100" Hanja="100" Japanese="100" Latin="100" Other="100" Symbol="100" User="100"/>
+<CHARSPACING Hangul="0" Hanja="0" Japanese="0" Latin="0" Other="0" Symbol="0" User="0"/>
+<RELSIZE Hangul="100" Hanja="100" Japanese="100" Latin="100" Other="100" Symbol="100" User="100"/>
+<CHAROFFSET Hangul="0" Hanja="0" Japanese="0" Latin="0" Other="0" Symbol="0" User="0"/>
+</CHARSHAPE>
+<CHARSHAPE BorderFillId="1" Height="1000" Id="5" ShadeColor="4294967295" SymMark="0" TextColor="0" UseFontSpace="false" UseKerning="false">
+<FONTID Hangul="8" Hanja="5" Japanese="5" Latin="7" Other="6" Symbol="5" User="5"/>
+<RATIO Hangul="100" Hanja="100" Japanese="100" Latin="100" Other="100" Symbol="100" User="100"/>
+<CHARSPACING Hangul="0" Hanja="0" Japanese="0" Latin="0" Other="0" Symbol="0" User="0"/>
+<RELSIZE Hangul="100" Hanja="100" Japanese="100" Latin="100" Other="100" Symbol="100" User="100"/>
+<CHAROFFSET Hangul="0" Hanja="0" Japanese="0" Latin="0" Other="0" Symbol="0" User="0"/>
+</CHARSHAPE>
+<CHARSHAPE BorderFillId="1" Height="1300" Id="6" ShadeColor="4294967295" SymMark="0" TextColor="0" UseFontSpace="false" UseKerning="false">
+<FONTID Hangul="12" Hanja="7" Japanese="7" Latin="3" Other="5" Symbol="7" User="5"/>
+<RATIO Hangul="97" Hanja="97" Japanese="97" Latin="97" Other="97" Symbol="97" User="97"/>
+<CHARSPACING Hangul="-3" Hanja="-3" Japanese="-3" Latin="-3" Other="-3" Symbol="-3" User="-3"/>
+<RELSIZE Hangul="100" Hanja="100" Japanese="100" Latin="100" Other="100" Symbol="100" User="100"/>
+<CHAROFFSET Hangul="0" Hanja="0" Japanese="0" Latin="0" Other="0" Symbol="0" User="0"/>
+<BOLD/>
+</CHARSHAPE>
+<CHARSHAPE BorderFillId="1" Height="1300" Id="7" ShadeColor="4294967295" SymMark="0" TextColor="0" UseFontSpace="false" UseKerning="false">
+<FONTID Hangul="12" Hanja="7" Japanese="7" Latin="3" Other="5" Symbol="7" User="5"/>
+<RATIO Hangul="97" Hanja="97" Japanese="97" Latin="97" Other="97" Symbol="97" User="97"/>
+<CHARSPACING Hangul="-3" Hanja="-3" Japanese="-3" Latin="-3" Other="-3" Symbol="-3" User="-3"/>
+<RELSIZE Hangul="100" Hanja="100" Japanese="100" Latin="100" Other="100" Symbol="100" User="100"/>
+<CHAROFFSET Hangul="0" Hanja="0" Japanese="0" Latin="0" Other="0" Symbol="0" User="0"/>
+<BOLD/>
+</CHARSHAPE>
+<CHARSHAPE BorderFillId="2" Height="1000" Id="8" ShadeColor="4294967295" SymMark="0" TextColor="0" UseFontSpace="false" UseKerning="false">
+<FONTID Hangul="2" Hanja="2" Japanese="2" Latin="1" Other="2" Symbol="2" User="2"/>
+<RATIO Hangul="100" Hanja="100" Japanese="100" Latin="100" Other="100" Symbol="100" User="100"/>
+<CHARSPACING Hangul="0" Hanja="0" Japanese="0" Latin="0" Other="0" Symbol="0" User="0"/>
+<RELSIZE Hangul="100" Hanja="100" Japanese="100" Latin="100" Other="100" Symbol="100" User="100"/>
+<CHAROFFSET Hangul="0" Hanja="0" Japanese="0" Latin="0" Other="0" Symbol="0" User="0"/>
+<BOLD/>
+</CHARSHAPE>
+<CHARSHAPE BorderFillId="1" Height="1200" Id="9" ShadeColor="4294967295" SymMark="0" TextColor="0" UseFontSpace="false" UseKerning="false">
+<FONTID Hangul="0" Hanja="5" Japanese="5" Latin="7" Other="6" Symbol="5" User="5"/>
+<RATIO Hangul="100" Hanja="96" Japanese="96" Latin="96" Other="96" Symbol="96" User="96"/>
+<CHARSPACING Hangul="0" Hanja="0" Japanese="0" Latin="0" Other="0" Symbol="0" User="0"/>
+<RELSIZE Hangul="100" Hanja="100" Japanese="100" Latin="100" Other="100" Symbol="100" User="100"/>
+<CHAROFFSET Hangul="0" Hanja="0" Japanese="0" Latin="0" Other="0" Symbol="0" User="0"/>
+</CHARSHAPE>
+<CHARSHAPE BorderFillId="1" Height="1200" Id="10" ShadeColor="4294967295" SymMark="0" TextColor="0" UseFontSpace="false" UseKerning="false">
+<FONTID Hangul="0" Hanja="5" Japanese="5" Latin="7" Other="6" Symbol="5" User="5"/>
+<RATIO Hangul="100" Hanja="96" Japanese="96" Latin="100" Other="96" Symbol="96" User="96"/>
+<CHARSPACING Hangul="0" Hanja="0" Japanese="0" Latin="0" Other="0" Symbol="0" User="0"/>
+<RELSIZE Hangul="100" Hanja="100" Japanese="100" Latin="100" Other="100" Symbol="100" User="100"/>
+<CHAROFFSET Hangul="0" Hanja="0" Japanese="0" Latin="0" Other="0" Symbol="0" User="0"/>
+</CHARSHAPE>
+<CHARSHAPE BorderFillId="1" Height="1000" Id="11" ShadeColor="4294967295" SymMark="0" TextColor="0" UseFontSpace="false" UseKerning="false">
+<FONTID Hangul="8" Hanja="5" Japanese="5" Latin="8" Other="6" Symbol="5" User="5"/>
+<RATIO Hangul="100" Hanja="100" Japanese="100" Latin="100" Other="100" Symbol="100" User="100"/>
+<CHARSPACING Hangul="0" Hanja="0" Japanese="0" Latin="0" Other="0" Symbol="0" User="0"/>
+<RELSIZE Hangul="100" Hanja="100" Japanese="100" Latin="100" Other="100" Symbol="100" User="100"/>
+<CHAROFFSET Hangul="0" Hanja="0" Japanese="0" Latin="0" Other="0" Symbol="0" User="0"/>
+</CHARSHAPE>
+<CHARSHAPE BorderFillId="1" Height="1300" Id="12" ShadeColor="4294967295" SymMark="0" TextColor="0" UseFontSpace="false" UseKerning="false">
+<FONTID Hangul="8" Hanja="5" Japanese="5" Latin="8" Other="6" Symbol="5" User="5"/>
+<RATIO Hangul="100" Hanja="100" Japanese="100" Latin="100" Other="100" Symbol="100" User="100"/>
+<CHARSPACING Hangul="0" Hanja="0" Japanese="0" Latin="0" Other="0" Symbol="0" User="0"/>
+<RELSIZE Hangul="100" Hanja="100" Japanese="100" Latin="100" Other="100" Symbol="100" User="100"/>
+<CHAROFFSET Hangul="0" Hanja="0" Japanese="0" Latin="0" Other="0" Symbol="0" User="0"/>
+</CHARSHAPE>
+<CHARSHAPE BorderFillId="1" Height="1000" Id="13" ShadeColor="4294967295" SymMark="0" TextColor="0" UseFontSpace="false" UseKerning="false">
+<FONTID Hangul="0" Hanja="5" Japanese="5" Latin="7" Other="6" Symbol="5" User="5"/>
+<RATIO Hangul="100" Hanja="100" Japanese="100" Latin="100" Other="100" Symbol="100" User="100"/>
+<CHARSPACING Hangul="0" Hanja="0" Japanese="0" Latin="0" Other="0" Symbol="0" User="0"/>
+<RELSIZE Hangul="100" Hanja="100" Japanese="100" Latin="100" Other="100" Symbol="100" User="100"/>
+<CHAROFFSET Hangul="0" Hanja="0" Japanese="0" Latin="0" Other="0" Symbol="0" User="0"/>
+</CHARSHAPE>
+<CHARSHAPE BorderFillId="1" Height="900" Id="14" ShadeColor="4294967295" SymMark="0" TextColor="0" UseFontSpace="false" UseKerning="false">
+<FONTID Hangul="10" Hanja="6" Japanese="6" Latin="9" Other="6" Symbol="6" User="5"/>
+<RATIO Hangul="100" Hanja="100" Japanese="100" Latin="100" Other="100" Symbol="100" User="100"/>
+<CHARSPACING Hangul="0" Hanja="0" Japanese="0" Latin="0" Other="0" Symbol="0" User="0"/>
+<RELSIZE Hangul="100" Hanja="100" Japanese="100" Latin="100" Other="100" Symbol="100" User="100"/>
+<CHAROFFSET Hangul="0" Hanja="0" Japanese="0" Latin="0" Other="0" Symbol="0" User="0"/>
+</CHARSHAPE>
+<CHARSHAPE BorderFillId="1" Height="1200" Id="15" ShadeColor="4294967295" SymMark="0" TextColor="0" UseFontSpace="false" UseKerning="false">
+<FONTID Hangul="6" Hanja="5" Japanese="5" Latin="6" Other="6" Symbol="5" User="5"/>
+<RATIO Hangul="100" Hanja="100" Japanese="100" Latin="100" Other="100" Symbol="100" User="100"/>
+<CHARSPACING Hangul="0" Hanja="0" Japanese="0" Latin="0" Other="0" Symbol="0" User="0"/>
+<RELSIZE Hangul="100" Hanja="100" Japanese="100" Latin="100" Other="100" Symbol="100" User="100"/>
+<CHAROFFSET Hangul="0" Hanja="0" Japanese="0" Latin="0" Other="0" Symbol="0" User="0"/>
+</CHARSHAPE>
+<CHARSHAPE BorderFillId="1" Height="1100" Id="16" ShadeColor="4294967295" SymMark="0" TextColor="0" UseFontSpace="false" UseKerning="false">
+<FONTID Hangul="8" Hanja="5" Japanese="5" Latin="8" Other="6" Symbol="5" User="5"/>
+<RATIO Hangul="100" Hanja="100" Japanese="100" Latin="100" Other="100" Symbol="100" User="100"/>
+<CHARSPACING Hangul="0" Hanja="0" Japanese="0" Latin="0" Other="0" Symbol="0" User="0"/>
+<RELSIZE Hangul="100" Hanja="100" Japanese="100" Latin="100" Other="100" Symbol="100" User="100"/>
+<CHAROFFSET Hangul="0" Hanja="0" Japanese="0" Latin="0" Other="0" Symbol="0" User="0"/>
+</CHARSHAPE>
+<CHARSHAPE BorderFillId="1" Height="1200" Id="17" ShadeColor="4294967295" SymMark="0" TextColor="0" UseFontSpace="false" UseKerning="false">
+<FONTID Hangul="4" Hanja="5" Japanese="5" Latin="7" Other="6" Symbol="5" User="5"/>
+<RATIO Hangul="96" Hanja="96" Japanese="96" Latin="96" Other="96" Symbol="96" User="96"/>
+<CHARSPACING Hangul="0" Hanja="0" Japanese="0" Latin="0" Other="0" Symbol="0" User="0"/>
+<RELSIZE Hangul="100" Hanja="100" Japanese="100" Latin="100" Other="100" Symbol="100" User="100"/>
+<CHAROFFSET Hangul="0" Hanja="0" Japanese="0" Latin="0" Other="0" Symbol="0" User="0"/>
+</CHARSHAPE>
+<CHARSHAPE BorderFillId="1" Height="1700" Id="18" ShadeColor="4294967295" SymMark="0" TextColor="0" UseFontSpace="false" UseKerning="false">
+<FONTID Hangul="4" Hanja="5" Japanese="5" Latin="7" Other="6" Symbol="5" User="5"/>
+<RATIO Hangul="100" Hanja="100" Japanese="100" Latin="100" Other="100" Symbol="100" User="100"/>
+<CHARSPACING Hangul="0" Hanja="0" Japanese="0" Latin="0" Other="0" Symbol="0" User="0"/>
+<RELSIZE Hangul="100" Hanja="100" Japanese="100" Latin="100" Other="100" Symbol="100" User="100"/>
+<CHAROFFSET Hangul="0" Hanja="0" Japanese="0" Latin="0" Other="0" Symbol="0" User="0"/>
+<BOLD/>
+</CHARSHAPE>
+<CHARSHAPE BorderFillId="1" Height="1200" Id="19" ShadeColor="4294967295" SymMark="0" TextColor="0" UseFontSpace="false" UseKerning="false">
+<FONTID Hangul="4" Hanja="5" Japanese="5" Latin="7" Other="6" Symbol="5" User="5"/>
+<RATIO Hangul="100" Hanja="100" Japanese="100" Latin="100" Other="100" Symbol="100" User="100"/>
+<CHARSPACING Hangul="0" Hanja="0" Japanese="0" Latin="0" Other="0" Symbol="0" User="0"/>
+<RELSIZE Hangul="100" Hanja="100" Japanese="100" Latin="100" Other="100" Symbol="100" User="100"/>
+<CHAROFFSET Hangul="0" Hanja="0" Japanese="0" Latin="0" Other="0" Symbol="0" User="0"/>
+</CHARSHAPE>
+<CHARSHAPE BorderFillId="1" Height="1200" Id="20" ShadeColor="4294967295" SymMark="0" TextColor="0" UseFontSpace="false" UseKerning="false">
+<FONTID Hangul="4" Hanja="5" Japanese="5" Latin="7" Other="6" Symbol="5" User="5"/>
+<RATIO Hangul="97" Hanja="97" Japanese="97" Latin="97" Other="97" Symbol="97" User="97"/>
+<CHARSPACING Hangul="0" Hanja="0" Japanese="0" Latin="0" Other="0" Symbol="0" User="0"/>
+<RELSIZE Hangul="100" Hanja="100" Japanese="100" Latin="100" Other="100" Symbol="100" User="100"/>
+<CHAROFFSET Hangul="0" Hanja="0" Japanese="0" Latin="0" Other="0" Symbol="0" User="0"/>
+<BOLD/>
+<UNDERLINE Color="0" Shape="Solid" Type="Bottom"/>
+</CHARSHAPE>
+<CHARSHAPE BorderFillId="1" Height="1100" Id="21" ShadeColor="4294967295" SymMark="0" TextColor="0" UseFontSpace="false" UseKerning="false">
+<FONTID Hangul="4" Hanja="5" Japanese="5" Latin="7" Other="6" Symbol="5" User="5"/>
+<RATIO Hangul="100" Hanja="100" Japanese="100" Latin="100" Other="100" Symbol="100" User="100"/>
+<CHARSPACING Hangul="0" Hanja="0" Japanese="0" Latin="0" Other="0" Symbol="0" User="0"/>
+<RELSIZE Hangul="100" Hanja="100" Japanese="100" Latin="100" Other="100" Symbol="100" User="100"/>
+<CHAROFFSET Hangul="0" Hanja="0" Japanese="0" Latin="0" Other="0" Symbol="0" User="0"/>
+</CHARSHAPE>
+<CHARSHAPE BorderFillId="1" Height="1000" Id="22" ShadeColor="4294967295" SymMark="0" TextColor="0" UseFontSpace="false" UseKerning="false">
+<FONTID Hangul="4" Hanja="5" Japanese="5" Latin="6" Other="6" Symbol="5" User="5"/>
+<RATIO Hangul="100" Hanja="100" Japanese="100" Latin="100" Other="100" Symbol="100" User="100"/>
+<CHARSPACING Hangul="0" Hanja="0" Japanese="0" Latin="0" Other="0" Symbol="0" User="0"/>
+<RELSIZE Hangul="100" Hanja="100" Japanese="100" Latin="100" Other="100" Symbol="100" User="100"/>
+<CHAROFFSET Hangul="0" Hanja="0" Japanese="0" Latin="0" Other="0" Symbol="0" User="0"/>
+</CHARSHAPE>
+<CHARSHAPE BorderFillId="1" Height="1200" Id="23" ShadeColor="4294967295" SymMark="0" TextColor="0" UseFontSpace="false" UseKerning="false">
+<FONTID Hangul="4" Hanja="5" Japanese="5" Latin="13" Other="6" Symbol="5" User="5"/>
+<RATIO Hangul="100" Hanja="100" Japanese="100" Latin="100" Other="100" Symbol="100" User="100"/>
+<CHARSPACING Hangul="0" Hanja="0" Japanese="0" Latin="0" Other="0" Symbol="0" User="0"/>
+<RELSIZE Hangul="100" Hanja="100" Japanese="100" Latin="100" Other="100" Symbol="100" User="100"/>
+<CHAROFFSET Hangul="0" Hanja="0" Japanese="0" Latin="0" Other="0" Symbol="0" User="0"/>
+</CHARSHAPE>
+<CHARSHAPE BorderFillId="1" Height="1100" Id="24" ShadeColor="4294967295" SymMark="0" TextColor="0" UseFontSpace="false" UseKerning="false">
+<FONTID Hangul="6" Hanja="5" Japanese="5" Latin="7" Other="6" Symbol="5" User="5"/>
+<RATIO Hangul="100" Hanja="100" Japanese="100" Latin="100" Other="100" Symbol="100" User="100"/>
+<CHARSPACING Hangul="0" Hanja="0" Japanese="0" Latin="0" Other="0" Symbol="0" User="0"/>
+<RELSIZE Hangul="100" Hanja="100" Japanese="100" Latin="100" Other="100" Symbol="100" User="100"/>
+<CHAROFFSET Hangul="0" Hanja="0" Japanese="0" Latin="0" Other="0" Symbol="0" User="0"/>
+<BOLD/>
+</CHARSHAPE>
+<CHARSHAPE BorderFillId="1" Height="1300" Id="25" ShadeColor="4294967295" SymMark="0" TextColor="0" UseFontSpace="false" UseKerning="false">
+<FONTID Hangul="6" Hanja="5" Japanese="5" Latin="6" Other="6" Symbol="5" User="5"/>
+<RATIO Hangul="100" Hanja="100" Japanese="100" Latin="100" Other="100" Symbol="100" User="100"/>
+<CHARSPACING Hangul="0" Hanja="0" Japanese="0" Latin="0" Other="0" Symbol="0" User="0"/>
+<RELSIZE Hangul="100" Hanja="100" Japanese="100" Latin="100" Other="100" Symbol="100" User="100"/>
+<CHAROFFSET Hangul="0" Hanja="0" Japanese="0" Latin="0" Other="0" Symbol="0" User="0"/>
+<BOLD/>
+</CHARSHAPE>
+<CHARSHAPE BorderFillId="2" Height="1000" Id="26" ShadeColor="4294967295" SymMark="0" TextColor="255" UseFontSpace="false" UseKerning="false">
+<FONTID Hangul="2" Hanja="2" Japanese="2" Latin="1" Other="2" Symbol="2" User="2"/>
+<RATIO Hangul="100" Hanja="100" Japanese="100" Latin="100" Other="100" Symbol="100" User="100"/>
+<CHARSPACING Hangul="0" Hanja="0" Japanese="0" Latin="0" Other="0" Symbol="0" User="0"/>
+<RELSIZE Hangul="100" Hanja="100" Japanese="100" Latin="100" Other="100" Symbol="100" User="100"/>
+<CHAROFFSET Hangul="0" Hanja="0" Japanese="0" Latin="0" Other="0" Symbol="0" User="0"/>
+<BOLD/>
+</CHARSHAPE>
+<CHARSHAPE BorderFillId="2" Height="800" Id="27" ShadeColor="4294967295" SymMark="0" TextColor="0" UseFontSpace="false" UseKerning="false">
+<FONTID Hangul="2" Hanja="2" Japanese="2" Latin="1" Other="2" Symbol="2" User="2"/>
+<RATIO Hangul="100" Hanja="100" Japanese="100" Latin="100" Other="100" Symbol="100" User="100"/>
+<CHARSPACING Hangul="0" Hanja="0" Japanese="0" Latin="0" Other="0" Symbol="0" User="0"/>
+<RELSIZE Hangul="100" Hanja="100" Japanese="100" Latin="100" Other="100" Symbol="100" User="100"/>
+<CHAROFFSET Hangul="0" Hanja="0" Japanese="0" Latin="0" Other="0" Symbol="0" User="0"/>
+<BOLD/>
+</CHARSHAPE>
+<CHARSHAPE BorderFillId="2" Height="800" Id="28" ShadeColor="4294967295" SymMark="0" TextColor="0" UseFontSpace="false" UseKerning="false">
+<FONTID Hangul="2" Hanja="2" Japanese="2" Latin="1" Other="2" Symbol="2" User="2"/>
+<RATIO Hangul="100" Hanja="100" Japanese="100" Latin="100" Other="100" Symbol="100" User="100"/>
+<CHARSPACING Hangul="0" Hanja="0" Japanese="0" Latin="0" Other="0" Symbol="0" User="0"/>
+<RELSIZE Hangul="100" Hanja="100" Japanese="100" Latin="100" Other="100" Symbol="100" User="100"/>
+<CHAROFFSET Hangul="0" Hanja="0" Japanese="0" Latin="0" Other="0" Symbol="0" User="0"/>
+<UNDERLINE Color="0" Shape="Solid" Type="Bottom"/>
+</CHARSHAPE>
+<CHARSHAPE BorderFillId="2" Height="800" Id="29" ShadeColor="4294967295" SymMark="0" TextColor="0" UseFontSpace="false" UseKerning="false">
+<FONTID Hangul="2" Hanja="2" Japanese="2" Latin="1" Other="2" Symbol="2" User="2"/>
+<RATIO Hangul="100" Hanja="100" Japanese="100" Latin="100" Other="100" Symbol="100" User="100"/>
+<CHARSPACING Hangul="0" Hanja="0" Japanese="0" Latin="0" Other="0" Symbol="0" User="0"/>
+<RELSIZE Hangul="100" Hanja="100" Japanese="100" Latin="100" Other="100" Symbol="100" User="100"/>
+<CHAROFFSET Hangul="0" Hanja="0" Japanese="0" Latin="0" Other="0" Symbol="0" User="0"/>
+</CHARSHAPE>
+<CHARSHAPE BorderFillId="2" Height="800" Id="30" ShadeColor="4294967295" SymMark="0" TextColor="0" UseFontSpace="false" UseKerning="false">
+<FONTID Hangul="2" Hanja="2" Japanese="2" Latin="1" Other="2" Symbol="2" User="2"/>
+<RATIO Hangul="100" Hanja="100" Japanese="100" Latin="100" Other="100" Symbol="100" User="100"/>
+<CHARSPACING Hangul="-4" Hanja="-4" Japanese="-4" Latin="-4" Other="-4" Symbol="-4" User="-4"/>
+<RELSIZE Hangul="100" Hanja="100" Japanese="100" Latin="100" Other="100" Symbol="100" User="100"/>
+<CHAROFFSET Hangul="0" Hanja="0" Japanese="0" Latin="0" Other="0" Symbol="0" User="0"/>
+</CHARSHAPE>
+<CHARSHAPE BorderFillId="2" Height="2200" Id="31" ShadeColor="4294967295" SymMark="0" TextColor="0" UseFontSpace="false" UseKerning="false">
+<FONTID Hangul="3" Hanja="3" Japanese="3" Latin="2" Other="3" Symbol="3" User="3"/>
+<RATIO Hangul="100" Hanja="100" Japanese="100" Latin="100" Other="100" Symbol="100" User="100"/>
+<CHARSPACING Hangul="0" Hanja="0" Japanese="0" Latin="0" Other="0" Symbol="0" User="0"/>
+<RELSIZE Hangul="100" Hanja="100" Japanese="100" Latin="100" Other="100" Symbol="100" User="100"/>
+<CHAROFFSET Hangul="0" Hanja="0" Japanese="0" Latin="0" Other="0" Symbol="0" User="0"/>
+<BOLD/>
+<UNDERLINE Color="0" Shape="Solid" Type="Bottom"/>
+</CHARSHAPE>
+<CHARSHAPE BorderFillId="2" Height="1000" Id="32" ShadeColor="4294967295" SymMark="0" TextColor="0" UseFontSpace="false" UseKerning="false">
+<FONTID Hangul="2" Hanja="2" Japanese="2" Latin="1" Other="2" Symbol="2" User="2"/>
+<RATIO Hangul="100" Hanja="100" Japanese="100" Latin="100" Other="100" Symbol="100" User="100"/>
+<CHARSPACING Hangul="0" Hanja="0" Japanese="0" Latin="0" Other="0" Symbol="0" User="0"/>
+<RELSIZE Hangul="100" Hanja="100" Japanese="100" Latin="100" Other="100" Symbol="100" User="100"/>
+<CHAROFFSET Hangul="0" Hanja="0" Japanese="0" Latin="0" Other="0" Symbol="0" User="0"/>
+<BOLD/>
+</CHARSHAPE>
+<CHARSHAPE BorderFillId="2" Height="800" Id="33" ShadeColor="4294967295" SymMark="0" TextColor="0" UseFontSpace="false" UseKerning="false">
+<FONTID Hangul="2" Hanja="2" Japanese="2" Latin="1" Other="2" Symbol="2" User="2"/>
+<RATIO Hangul="100" Hanja="100" Japanese="100" Latin="100" Other="100" Symbol="100" User="100"/>
+<CHARSPACING Hangul="0" Hanja="0" Japanese="0" Latin="0" Other="0" Symbol="0" User="0"/>
+<RELSIZE Hangul="100" Hanja="100" Japanese="100" Latin="100" Other="100" Symbol="100" User="100"/>
+<CHAROFFSET Hangul="0" Hanja="0" Japanese="0" Latin="0" Other="0" Symbol="0" User="0"/>
+</CHARSHAPE>
+<CHARSHAPE BorderFillId="1" Height="1000" Id="34" ShadeColor="4294967295" SymMark="0" TextColor="0" UseFontSpace="false" UseKerning="false">
+<FONTID Hangul="8" Hanja="5" Japanese="5" Latin="8" Other="6" Symbol="5" User="5"/>
+<RATIO Hangul="95" Hanja="100" Japanese="100" Latin="98" Other="100" Symbol="100" User="100"/>
+<CHARSPACING Hangul="-5" Hanja="0" Japanese="0" Latin="0" Other="0" Symbol="0" User="0"/>
+<RELSIZE Hangul="100" Hanja="100" Japanese="100" Latin="100" Other="100" Symbol="100" User="100"/>
+<CHAROFFSET Hangul="0" Hanja="0" Japanese="0" Latin="0" Other="0" Symbol="0" User="0"/>
+</CHARSHAPE>
+<CHARSHAPE BorderFillId="1" Height="900" Id="35" ShadeColor="4294967295" SymMark="0" TextColor="0" UseFontSpace="false" UseKerning="false">
+<FONTID Hangul="8" Hanja="5" Japanese="5" Latin="8" Other="6" Symbol="5" User="5"/>
+<RATIO Hangul="100" Hanja="100" Japanese="100" Latin="100" Other="100" Symbol="100" User="100"/>
+<CHARSPACING Hangul="0" Hanja="0" Japanese="0" Latin="0" Other="0" Symbol="0" User="0"/>
+<RELSIZE Hangul="100" Hanja="100" Japanese="100" Latin="100" Other="100" Symbol="100" User="100"/>
+<CHAROFFSET Hangul="0" Hanja="0" Japanese="0" Latin="0" Other="0" Symbol="0" User="0"/>
+</CHARSHAPE>
+<CHARSHAPE BorderFillId="1" Height="948" Id="36" ShadeColor="4294967295" SymMark="0" TextColor="0" UseFontSpace="false" UseKerning="false">
+<FONTID Hangul="8" Hanja="5" Japanese="5" Latin="8" Other="6" Symbol="5" User="5"/>
+<RATIO Hangul="100" Hanja="100" Japanese="100" Latin="100" Other="100" Symbol="100" User="100"/>
+<CHARSPACING Hangul="0" Hanja="0" Japanese="0" Latin="0" Other="0" Symbol="0" User="0"/>
+<RELSIZE Hangul="100" Hanja="100" Japanese="100" Latin="100" Other="100" Symbol="100" User="100"/>
+<CHAROFFSET Hangul="0" Hanja="0" Japanese="0" Latin="0" Other="0" Symbol="0" User="0"/>
+</CHARSHAPE>
+<CHARSHAPE BorderFillId="2" Height="1000" Id="37" ShadeColor="4294967295" SymMark="0" TextColor="0" UseFontSpace="false" UseKerning="false">
+<FONTID Hangul="0" Hanja="5" Japanese="5" Latin="7" Other="6" Symbol="5" User="5"/>
+<RATIO Hangul="100" Hanja="100" Japanese="100" Latin="100" Other="100" Symbol="100" User="100"/>
+<CHARSPACING Hangul="0" Hanja="0" Japanese="0" Latin="0" Other="0" Symbol="0" User="0"/>
+<RELSIZE Hangul="100" Hanja="100" Japanese="100" Latin="100" Other="100" Symbol="100" User="100"/>
+<CHAROFFSET Hangul="0" Hanja="0" Japanese="0" Latin="0" Other="0" Symbol="0" User="0"/>
+</CHARSHAPE>
+<CHARSHAPE BorderFillId="1" Height="1100" Id="38" ShadeColor="4294967295" SymMark="0" TextColor="0" UseFontSpace="false" UseKerning="false">
+<FONTID Hangul="10" Hanja="6" Japanese="6" Latin="9" Other="6" Symbol="6" User="5"/>
+<RATIO Hangul="100" Hanja="100" Japanese="100" Latin="100" Other="100" Symbol="100" User="100"/>
+<CHARSPACING Hangul="0" Hanja="0" Japanese="0" Latin="0" Other="0" Symbol="0" User="0"/>
+<RELSIZE Hangul="100" Hanja="100" Japanese="100" Latin="100" Other="100" Symbol="100" User="100"/>
+<CHAROFFSET Hangul="0" Hanja="0" Japanese="0" Latin="0" Other="0" Symbol="0" User="0"/>
+<BOLD/>
+</CHARSHAPE>
+<CHARSHAPE BorderFillId="1" Height="1500" Id="39" ShadeColor="4294967295" SymMark="0" TextColor="0" UseFontSpace="false" UseKerning="false">
+<FONTID Hangul="7" Hanja="4" Japanese="4" Latin="5" Other="4" Symbol="4" User="4"/>
+<RATIO Hangul="105" Hanja="105" Japanese="105" Latin="105" Other="105" Symbol="105" User="105"/>
+<CHARSPACING Hangul="4" Hanja="4" Japanese="4" Latin="4" Other="4" Symbol="4" User="4"/>
+<RELSIZE Hangul="100" Hanja="100" Japanese="100" Latin="100" Other="100" Symbol="100" User="100"/>
+<CHAROFFSET Hangul="0" Hanja="0" Japanese="0" Latin="0" Other="0" Symbol="0" User="0"/>
+<BOLD/>
+</CHARSHAPE>
+<CHARSHAPE BorderFillId="1" Height="1400" Id="40" ShadeColor="4294967295" SymMark="0" TextColor="0" UseFontSpace="false" UseKerning="false">
+<FONTID Hangul="11" Hanja="5" Japanese="5" Latin="13" Other="6" Symbol="5" User="5"/>
+<RATIO Hangul="100" Hanja="100" Japanese="100" Latin="100" Other="100" Symbol="100" User="100"/>
+<CHARSPACING Hangul="15" Hanja="15" Japanese="15" Latin="15" Other="15" Symbol="15" User="15"/>
+<RELSIZE Hangul="100" Hanja="100" Japanese="100" Latin="100" Other="100" Symbol="100" User="100"/>
+<CHAROFFSET Hangul="0" Hanja="0" Japanese="0" Latin="0" Other="0" Symbol="0" User="0"/>
+<BOLD/>
+</CHARSHAPE>
+<CHARSHAPE BorderFillId="2" Height="2400" Id="41" ShadeColor="4294967295" SymMark="0" TextColor="0" UseFontSpace="false" UseKerning="false">
+<FONTID Hangul="2" Hanja="2" Japanese="2" Latin="1" Other="2" Symbol="2" User="2"/>
+<RATIO Hangul="95" Hanja="100" Japanese="100" Latin="100" Other="100" Symbol="100" User="100"/>
+<CHARSPACING Hangul="0" Hanja="0" Japanese="0" Latin="0" Other="0" Symbol="0" User="0"/>
+<RELSIZE Hangul="100" Hanja="100" Japanese="100" Latin="100" Other="100" Symbol="100" User="100"/>
+<CHAROFFSET Hangul="0" Hanja="0" Japanese="0" Latin="0" Other="0" Symbol="0" User="0"/>
+<BOLD/>
+</CHARSHAPE>
+<CHARSHAPE BorderFillId="2" Height="900" Id="42" ShadeColor="4294967295" SymMark="0" TextColor="0" UseFontSpace="false" UseKerning="false">
+<FONTID Hangul="2" Hanja="2" Japanese="2" Latin="1" Other="2" Symbol="2" User="2"/>
+<RATIO Hangul="97" Hanja="97" Japanese="97" Latin="97" Other="97" Symbol="97" User="97"/>
+<CHARSPACING Hangul="0" Hanja="0" Japanese="0" Latin="0" Other="0" Symbol="0" User="0"/>
+<RELSIZE Hangul="100" Hanja="100" Japanese="100" Latin="100" Other="100" Symbol="100" User="100"/>
+<CHAROFFSET Hangul="0" Hanja="0" Japanese="0" Latin="0" Other="0" Symbol="0" User="0"/>
+</CHARSHAPE>
+<CHARSHAPE BorderFillId="2" Height="2600" Id="43" ShadeColor="4294967295" SymMark="0" TextColor="0" UseFontSpace="false" UseKerning="false">
+<FONTID Hangul="3" Hanja="3" Japanese="3" Latin="2" Other="3" Symbol="3" User="3"/>
+<RATIO Hangul="95" Hanja="95" Japanese="95" Latin="95" Other="95" Symbol="95" User="95"/>
+<CHARSPACING Hangul="0" Hanja="0" Japanese="0" Latin="0" Other="0" Symbol="0" User="0"/>
+<RELSIZE Hangul="100" Hanja="100" Japanese="100" Latin="100" Other="100" Symbol="100" User="100"/>
+<CHAROFFSET Hangul="0" Hanja="0" Japanese="0" Latin="0" Other="0" Symbol="0" User="0"/>
+<BOLD/>
+</CHARSHAPE>
+<CHARSHAPE BorderFillId="1" Height="1100" Id="44" ShadeColor="4294967295" SymMark="0" TextColor="0" UseFontSpace="false" UseKerning="false">
+<FONTID Hangul="8" Hanja="5" Japanese="5" Latin="8" Other="6" Symbol="5" User="5"/>
+<RATIO Hangul="95" Hanja="95" Japanese="95" Latin="95" Other="95" Symbol="95" User="95"/>
+<CHARSPACING Hangul="-5" Hanja="-5" Japanese="-5" Latin="-5" Other="-5" Symbol="-5" User="-5"/>
+<RELSIZE Hangul="100" Hanja="100" Japanese="100" Latin="100" Other="100" Symbol="100" User="100"/>
+<CHAROFFSET Hangul="0" Hanja="0" Japanese="0" Latin="0" Other="0" Symbol="0" User="0"/>
+</CHARSHAPE>
+<CHARSHAPE BorderFillId="1" Height="1200" Id="45" ShadeColor="4294967295" SymMark="0" TextColor="0" UseFontSpace="false" UseKerning="false">
+<FONTID Hangul="9" Hanja="5" Japanese="5" Latin="10" Other="6" Symbol="5" User="5"/>
+<RATIO Hangul="100" Hanja="100" Japanese="100" Latin="100" Other="100" Symbol="100" User="100"/>
+<CHARSPACING Hangul="0" Hanja="0" Japanese="0" Latin="0" Other="0" Symbol="0" User="0"/>
+<RELSIZE Hangul="100" Hanja="100" Japanese="100" Latin="100" Other="100" Symbol="100" User="100"/>
+<CHAROFFSET Hangul="0" Hanja="0" Japanese="0" Latin="0" Other="0" Symbol="0" User="0"/>
+</CHARSHAPE>
+<CHARSHAPE BorderFillId="1" Height="1000" Id="46" ShadeColor="4294967295" SymMark="0" TextColor="0" UseFontSpace="false" UseKerning="false">
+<FONTID Hangul="10" Hanja="6" Japanese="6" Latin="9" Other="6" Symbol="6" User="5"/>
+<RATIO Hangul="90" Hanja="90" Japanese="90" Latin="90" Other="90" Symbol="90" User="90"/>
+<CHARSPACING Hangul="-3" Hanja="-3" Japanese="-3" Latin="-3" Other="-3" Symbol="-3" User="-3"/>
+<RELSIZE Hangul="100" Hanja="100" Japanese="100" Latin="100" Other="100" Symbol="100" User="100"/>
+<CHAROFFSET Hangul="0" Hanja="0" Japanese="0" Latin="0" Other="0" Symbol="0" User="0"/>
+</CHARSHAPE>
+<CHARSHAPE BorderFillId="1" Height="1200" Id="47" ShadeColor="4294967295" SymMark="0" TextColor="0" UseFontSpace="false" UseKerning="false">
+<FONTID Hangul="10" Hanja="6" Japanese="6" Latin="9" Other="6" Symbol="6" User="5"/>
+<RATIO Hangul="90" Hanja="90" Japanese="90" Latin="90" Other="90" Symbol="90" User="90"/>
+<CHARSPACING Hangul="-3" Hanja="-3" Japanese="-3" Latin="-3" Other="-3" Symbol="-3" User="-3"/>
+<RELSIZE Hangul="100" Hanja="100" Japanese="100" Latin="100" Other="100" Symbol="100" User="100"/>
+<CHAROFFSET Hangul="0" Hanja="0" Japanese="0" Latin="0" Other="0" Symbol="0" User="0"/>
+</CHARSHAPE>
+<CHARSHAPE BorderFillId="2" Height="900" Id="48" ShadeColor="4294967295" SymMark="0" TextColor="0" UseFontSpace="false" UseKerning="false">
+<FONTID Hangul="2" Hanja="2" Japanese="2" Latin="1" Other="2" Symbol="2" User="2"/>
+<RATIO Hangul="97" Hanja="97" Japanese="97" Latin="97" Other="97" Symbol="97" User="97"/>
+<CHARSPACING Hangul="0" Hanja="0" Japanese="0" Latin="0" Other="0" Symbol="0" User="0"/>
+<RELSIZE Hangul="100" Hanja="100" Japanese="100" Latin="100" Other="100" Symbol="100" User="100"/>
+<CHAROFFSET Hangul="0" Hanja="0" Japanese="0" Latin="0" Other="0" Symbol="0" User="0"/>
+<BOLD/>
+</CHARSHAPE>
+<CHARSHAPE BorderFillId="1" Height="1100" Id="49" ShadeColor="4294967295" SymMark="0" TextColor="0" UseFontSpace="false" UseKerning="false">
+<FONTID Hangul="10" Hanja="6" Japanese="6" Latin="9" Other="6" Symbol="6" User="5"/>
+<RATIO Hangul="100" Hanja="100" Japanese="100" Latin="100" Other="100" Symbol="100" User="100"/>
+<CHARSPACING Hangul="3" Hanja="3" Japanese="3" Latin="3" Other="3" Symbol="3" User="3"/>
+<RELSIZE Hangul="100" Hanja="100" Japanese="100" Latin="100" Other="100" Symbol="100" User="100"/>
+<CHAROFFSET Hangul="0" Hanja="0" Japanese="0" Latin="0" Other="0" Symbol="0" User="0"/>
+</CHARSHAPE>
+<CHARSHAPE BorderFillId="1" Height="2300" Id="50" ShadeColor="4294967295" SymMark="0" TextColor="0" UseFontSpace="false" UseKerning="false">
+<FONTID Hangul="7" Hanja="4" Japanese="4" Latin="5" Other="4" Symbol="4" User="4"/>
+<RATIO Hangul="110" Hanja="110" Japanese="110" Latin="110" Other="110" Symbol="110" User="110"/>
+<CHARSPACING Hangul="4" Hanja="4" Japanese="4" Latin="4" Other="4" Symbol="4" User="4"/>
+<RELSIZE Hangul="100" Hanja="100" Japanese="100" Latin="100" Other="100" Symbol="100" User="100"/>
+<CHAROFFSET Hangul="0" Hanja="0" Japanese="0" Latin="0" Other="0" Symbol="0" User="0"/>
+<BOLD/>
+</CHARSHAPE>
+<CHARSHAPE BorderFillId="1" Height="1300" Id="51" ShadeColor="4294967295" SymMark="0" TextColor="0" UseFontSpace="false" UseKerning="false">
+<FONTID Hangul="7" Hanja="4" Japanese="4" Latin="5" Other="4" Symbol="4" User="4"/>
+<RATIO Hangul="100" Hanja="100" Japanese="100" Latin="100" Other="100" Symbol="100" User="100"/>
+<CHARSPACING Hangul="0" Hanja="0" Japanese="0" Latin="0" Other="0" Symbol="0" User="0"/>
+<RELSIZE Hangul="100" Hanja="100" Japanese="100" Latin="100" Other="100" Symbol="100" User="100"/>
+<CHAROFFSET Hangul="0" Hanja="0" Japanese="0" Latin="0" Other="0" Symbol="0" User="0"/>
+<BOLD/>
+</CHARSHAPE>
+<CHARSHAPE BorderFillId="1" Height="1300" Id="52" ShadeColor="4294967295" SymMark="0" TextColor="0" UseFontSpace="false" UseKerning="false">
+<FONTID Hangul="8" Hanja="5" Japanese="5" Latin="8" Other="6" Symbol="5" User="5"/>
+<RATIO Hangul="97" Hanja="97" Japanese="97" Latin="97" Other="97" Symbol="97" User="97"/>
+<CHARSPACING Hangul="-3" Hanja="-3" Japanese="-3" Latin="-3" Other="-3" Symbol="-3" User="-3"/>
+<RELSIZE Hangul="100" Hanja="100" Japanese="100" Latin="100" Other="100" Symbol="100" User="100"/>
+<CHAROFFSET Hangul="0" Hanja="0" Japanese="0" Latin="0" Other="0" Symbol="0" User="0"/>
+<BOLD/>
+</CHARSHAPE>
+<CHARSHAPE BorderFillId="1" Height="1152" Id="53" ShadeColor="4294967295" SymMark="0" TextColor="0" UseFontSpace="false" UseKerning="false">
+<FONTID Hangul="8" Hanja="5" Japanese="5" Latin="8" Other="6" Symbol="5" User="5"/>
+<RATIO Hangul="100" Hanja="100" Japanese="100" Latin="100" Other="100" Symbol="100" User="100"/>
+<CHARSPACING Hangul="3" Hanja="3" Japanese="3" Latin="3" Other="3" Symbol="3" User="3"/>
+<RELSIZE Hangul="100" Hanja="100" Japanese="100" Latin="100" Other="100" Symbol="100" User="100"/>
+<CHAROFFSET Hangul="0" Hanja="0" Japanese="0" Latin="0" Other="0" Symbol="0" User="0"/>
+</CHARSHAPE>
+<CHARSHAPE BorderFillId="1" Height="1200" Id="54" ShadeColor="4294967295" SymMark="0" TextColor="0" UseFontSpace="false" UseKerning="false">
+<FONTID Hangul="10" Hanja="6" Japanese="6" Latin="9" Other="6" Symbol="6" User="5"/>
+<RATIO Hangul="100" Hanja="100" Japanese="100" Latin="100" Other="100" Symbol="100" User="100"/>
+<CHARSPACING Hangul="0" Hanja="0" Japanese="0" Latin="0" Other="0" Symbol="0" User="0"/>
+<RELSIZE Hangul="100" Hanja="100" Japanese="100" Latin="100" Other="100" Symbol="100" User="100"/>
+<CHAROFFSET Hangul="0" Hanja="0" Japanese="0" Latin="0" Other="0" Symbol="0" User="0"/>
+<BOLD/>
+</CHARSHAPE>
+<CHARSHAPE BorderFillId="1" Height="1100" Id="55" ShadeColor="4294967295" SymMark="0" TextColor="0" UseFontSpace="false" UseKerning="false">
+<FONTID Hangul="6" Hanja="1" Japanese="1" Latin="4" Other="1" Symbol="1" User="1"/>
+<RATIO Hangul="100" Hanja="100" Japanese="100" Latin="100" Other="100" Symbol="100" User="100"/>
+<CHARSPACING Hangul="0" Hanja="0" Japanese="0" Latin="0" Other="0" Symbol="0" User="0"/>
+<RELSIZE Hangul="100" Hanja="100" Japanese="100" Latin="100" Other="100" Symbol="100" User="100"/>
+<CHAROFFSET Hangul="0" Hanja="0" Japanese="0" Latin="0" Other="0" Symbol="0" User="0"/>
+</CHARSHAPE>
+<CHARSHAPE BorderFillId="1" Height="2000" Id="56" ShadeColor="4294967295" SymMark="0" TextColor="0" UseFontSpace="false" UseKerning="false">
+<FONTID Hangul="5" Hanja="5" Japanese="5" Latin="11" Other="6" Symbol="5" User="5"/>
+<RATIO Hangul="100" Hanja="100" Japanese="100" Latin="100" Other="100" Symbol="100" User="100"/>
+<CHARSPACING Hangul="0" Hanja="0" Japanese="0" Latin="0" Other="0" Symbol="0" User="0"/>
+<RELSIZE Hangul="100" Hanja="100" Japanese="100" Latin="100" Other="100" Symbol="100" User="100"/>
+<CHAROFFSET Hangul="0" Hanja="0" Japanese="0" Latin="0" Other="0" Symbol="0" User="0"/>
+</CHARSHAPE>
+<CHARSHAPE BorderFillId="1" Height="1600" Id="57" ShadeColor="16579836" SymMark="0" TextColor="0" UseFontSpace="false" UseKerning="false">
+<FONTID Hangul="0" Hanja="5" Japanese="5" Latin="6" Other="6" Symbol="5" User="5"/>
+<RATIO Hangul="100" Hanja="100" Japanese="100" Latin="100" Other="100" Symbol="100" User="100"/>
+<CHARSPACING Hangul="0" Hanja="0" Japanese="0" Latin="0" Other="0" Symbol="0" User="0"/>
+<RELSIZE Hangul="100" Hanja="100" Japanese="100" Latin="100" Other="100" Symbol="100" User="100"/>
+<CHAROFFSET Hangul="0" Hanja="0" Japanese="0" Latin="0" Other="0" Symbol="0" User="0"/>
+<BOLD/>
+<OUTLINE Type="Solid"/>
+<SHADOW Color="12632256" OffsetX="10" OffsetY="10" Type="Drop"/>
+</CHARSHAPE>
+<CHARSHAPE BorderFillId="1" Height="1100" Id="58" ShadeColor="4294967295" SymMark="0" TextColor="0" UseFontSpace="false" UseKerning="false">
+<FONTID Hangul="4" Hanja="5" Japanese="5" Latin="12" Other="6" Symbol="5" User="5"/>
+<RATIO Hangul="100" Hanja="100" Japanese="100" Latin="100" Other="100" Symbol="100" User="100"/>
+<CHARSPACING Hangul="0" Hanja="0" Japanese="0" Latin="0" Other="0" Symbol="0" User="0"/>
+<RELSIZE Hangul="100" Hanja="100" Japanese="100" Latin="100" Other="100" Symbol="100" User="100"/>
+<CHAROFFSET Hangul="0" Hanja="0" Japanese="0" Latin="0" Other="0" Symbol="0" User="0"/>
+<BOLD/>
+</CHARSHAPE>
+<CHARSHAPE BorderFillId="1" Height="1700" Id="59" ShadeColor="4294967295" SymMark="0" TextColor="0" UseFontSpace="false" UseKerning="false">
+<FONTID Hangul="6" Hanja="1" Japanese="1" Latin="4" Other="1" Symbol="1" User="1"/>
+<RATIO Hangul="100" Hanja="100" Japanese="100" Latin="100" Other="100" Symbol="100" User="100"/>
+<CHARSPACING Hangul="0" Hanja="0" Japanese="0" Latin="0" Other="0" Symbol="0" User="0"/>
+<RELSIZE Hangul="100" Hanja="100" Japanese="100" Latin="100" Other="100" Symbol="100" User="100"/>
+<CHAROFFSET Hangul="0" Hanja="0" Japanese="0" Latin="0" Other="0" Symbol="0" User="0"/>
+</CHARSHAPE>
+<CHARSHAPE BorderFillId="2" Height="800" Id="60" ShadeColor="4294967295" SymMark="0" TextColor="0" UseFontSpace="false" UseKerning="false">
+<FONTID Hangul="2" Hanja="2" Japanese="2" Latin="1" Other="2" Symbol="2" User="2"/>
+<RATIO Hangul="100" Hanja="100" Japanese="100" Latin="100" Other="100" Symbol="100" User="100"/>
+<CHARSPACING Hangul="0" Hanja="0" Japanese="0" Latin="0" Other="0" Symbol="0" User="0"/>
+<RELSIZE Hangul="100" Hanja="100" Japanese="100" Latin="100" Other="100" Symbol="100" User="100"/>
+<CHAROFFSET Hangul="0" Hanja="0" Japanese="0" Latin="0" Other="0" Symbol="0" User="0"/>
+</CHARSHAPE>
+<CHARSHAPE BorderFillId="1" Height="1500" Id="61" ShadeColor="4294967295" SymMark="0" TextColor="255" UseFontSpace="false" UseKerning="false">
+<FONTID Hangul="6" Hanja="1" Japanese="1" Latin="4" Other="1" Symbol="1" User="1"/>
+<RATIO Hangul="100" Hanja="100" Japanese="100" Latin="100" Other="100" Symbol="100" User="100"/>
+<CHARSPACING Hangul="0" Hanja="0" Japanese="0" Latin="0" Other="0" Symbol="0" User="0"/>
+<RELSIZE Hangul="100" Hanja="100" Japanese="100" Latin="100" Other="100" Symbol="100" User="100"/>
+<CHAROFFSET Hangul="0" Hanja="0" Japanese="0" Latin="0" Other="0" Symbol="0" User="0"/>
+</CHARSHAPE>
+<CHARSHAPE BorderFillId="2" Height="900" Id="62" ShadeColor="4294967295" SymMark="0" TextColor="0" UseFontSpace="false" UseKerning="false">
+<FONTID Hangul="2" Hanja="2" Japanese="2" Latin="1" Other="2" Symbol="2" User="2"/>
+<RATIO Hangul="100" Hanja="100" Japanese="100" Latin="100" Other="100" Symbol="100" User="100"/>
+<CHARSPACING Hangul="0" Hanja="0" Japanese="0" Latin="0" Other="0" Symbol="0" User="0"/>
+<RELSIZE Hangul="100" Hanja="100" Japanese="100" Latin="100" Other="100" Symbol="100" User="100"/>
+<CHAROFFSET Hangul="0" Hanja="0" Japanese="0" Latin="0" Other="0" Symbol="0" User="0"/>
+</CHARSHAPE>
+<CHARSHAPE BorderFillId="2" Height="1200" Id="63" ShadeColor="4294967295" SymMark="0" TextColor="0" UseFontSpace="false" UseKerning="false">
+<FONTID Hangul="2" Hanja="2" Japanese="2" Latin="1" Other="2" Symbol="2" User="2"/>
+<RATIO Hangul="100" Hanja="100" Japanese="100" Latin="100" Other="100" Symbol="100" User="100"/>
+<CHARSPACING Hangul="0" Hanja="0" Japanese="0" Latin="0" Other="0" Symbol="0" User="0"/>
+<RELSIZE Hangul="100" Hanja="100" Japanese="100" Latin="100" Other="100" Symbol="100" User="100"/>
+<CHAROFFSET Hangul="0" Hanja="0" Japanese="0" Latin="0" Other="0" Symbol="0" User="0"/>
+<BOLD/>
+</CHARSHAPE>
+<CHARSHAPE BorderFillId="2" Height="900" Id="64" ShadeColor="4294967295" SymMark="0" TextColor="0" UseFontSpace="false" UseKerning="false">
+<FONTID Hangul="2" Hanja="2" Japanese="2" Latin="1" Other="2" Symbol="2" User="2"/>
+<RATIO Hangul="100" Hanja="100" Japanese="100" Latin="100" Other="100" Symbol="100" User="100"/>
+<CHARSPACING Hangul="0" Hanja="0" Japanese="0" Latin="0" Other="0" Symbol="0" User="0"/>
+<RELSIZE Hangul="100" Hanja="100" Japanese="100" Latin="100" Other="100" Symbol="100" User="100"/>
+<CHAROFFSET Hangul="0" Hanja="0" Japanese="0" Latin="0" Other="0" Symbol="0" User="0"/>
+<BOLD/>
+</CHARSHAPE>
+<CHARSHAPE BorderFillId="1" Height="1100" Id="65" ShadeColor="4294967295" SymMark="0" TextColor="0" UseFontSpace="false" UseKerning="false">
+<FONTID Hangul="6" Hanja="1" Japanese="1" Latin="4" Other="1" Symbol="1" User="1"/>
+<RATIO Hangul="100" Hanja="100" Japanese="100" Latin="100" Other="100" Symbol="100" User="100"/>
+<CHARSPACING Hangul="0" Hanja="0" Japanese="0" Latin="0" Other="0" Symbol="0" User="0"/>
+<RELSIZE Hangul="100" Hanja="100" Japanese="100" Latin="100" Other="100" Symbol="100" User="100"/>
+<CHAROFFSET Hangul="0" Hanja="0" Japanese="0" Latin="0" Other="0" Symbol="0" User="0"/>
+</CHARSHAPE>
+<CHARSHAPE BorderFillId="1" Height="1500" Id="66" ShadeColor="4294967295" SymMark="0" TextColor="0" UseFontSpace="false" UseKerning="false">
+<FONTID Hangul="6" Hanja="1" Japanese="1" Latin="4" Other="1" Symbol="1" User="1"/>
+<RATIO Hangul="100" Hanja="100" Japanese="100" Latin="100" Other="100" Symbol="100" User="100"/>
+<CHARSPACING Hangul="0" Hanja="0" Japanese="0" Latin="0" Other="0" Symbol="0" User="0"/>
+<RELSIZE Hangul="100" Hanja="100" Japanese="100" Latin="100" Other="100" Symbol="100" User="100"/>
+<CHAROFFSET Hangul="0" Hanja="0" Japanese="0" Latin="0" Other="0" Symbol="0" User="0"/>
+</CHARSHAPE>
+<CHARSHAPE BorderFillId="1" Height="1000" Id="67" ShadeColor="4294967295" SymMark="0" TextColor="0" UseFontSpace="false" UseKerning="false">
+<FONTID Hangul="6" Hanja="1" Japanese="1" Latin="4" Other="1" Symbol="1" User="1"/>
+<RATIO Hangul="100" Hanja="100" Japanese="100" Latin="100" Other="100" Symbol="100" User="100"/>
+<CHARSPACING Hangul="0" Hanja="0" Japanese="0" Latin="0" Other="0" Symbol="0" User="0"/>
+<RELSIZE Hangul="100" Hanja="100" Japanese="100" Latin="100" Other="100" Symbol="100" User="100"/>
+<CHAROFFSET Hangul="0" Hanja="0" Japanese="0" Latin="0" Other="0" Symbol="0" User="0"/>
+</CHARSHAPE>
+<CHARSHAPE BorderFillId="1" Height="1000" Id="68" ShadeColor="4294967295" SymMark="0" TextColor="255" UseFontSpace="false" UseKerning="false">
+<FONTID Hangul="6" Hanja="1" Japanese="1" Latin="4" Other="1" Symbol="1" User="1"/>
+<RATIO Hangul="100" Hanja="100" Japanese="100" Latin="100" Other="100" Symbol="100" User="100"/>
+<CHARSPACING Hangul="0" Hanja="0" Japanese="0" Latin="0" Other="0" Symbol="0" User="0"/>
+<RELSIZE Hangul="100" Hanja="100" Japanese="100" Latin="100" Other="100" Symbol="100" User="100"/>
+<CHAROFFSET Hangul="0" Hanja="0" Japanese="0" Latin="0" Other="0" Symbol="0" User="0"/>
+</CHARSHAPE>
+<CHARSHAPE BorderFillId="1" Height="1000" Id="69" ShadeColor="4294967295" SymMark="0" TextColor="0" UseFontSpace="false" UseKerning="false">
+<FONTID Hangul="6" Hanja="1" Japanese="1" Latin="4" Other="1" Symbol="1" User="1"/>
+<RATIO Hangul="100" Hanja="100" Japanese="100" Latin="100" Other="100" Symbol="100" User="100"/>
+<CHARSPACING Hangul="0" Hanja="0" Japanese="0" Latin="0" Other="0" Symbol="0" User="0"/>
+<RELSIZE Hangul="100" Hanja="100" Japanese="100" Latin="100" Other="100" Symbol="100" User="100"/>
+<CHAROFFSET Hangul="0" Hanja="0" Japanese="0" Latin="0" Other="0" Symbol="0" User="0"/>
+</CHARSHAPE>
+<CHARSHAPE BorderFillId="1" Height="1000" Id="70" ShadeColor="4294967295" SymMark="0" TextColor="0" UseFontSpace="false" UseKerning="false">
+<FONTID Hangul="4" Hanja="5" Japanese="5" Latin="7" Other="6" Symbol="5" User="5"/>
+<RATIO Hangul="100" Hanja="100" Japanese="100" Latin="100" Other="100" Symbol="100" User="100"/>
+<CHARSPACING Hangul="0" Hanja="0" Japanese="0" Latin="0" Other="0" Symbol="0" User="0"/>
+<RELSIZE Hangul="100" Hanja="100" Japanese="100" Latin="100" Other="100" Symbol="100" User="100"/>
+<CHAROFFSET Hangul="0" Hanja="0" Japanese="0" Latin="0" Other="0" Symbol="0" User="0"/>
+</CHARSHAPE>
+<CHARSHAPE BorderFillId="2" Height="3000" Id="71" ShadeColor="4294967295" SymMark="0" TextColor="0" UseFontSpace="false" UseKerning="false">
+<FONTID Hangul="2" Hanja="2" Japanese="2" Latin="1" Other="2" Symbol="2" User="2"/>
+<RATIO Hangul="100" Hanja="100" Japanese="100" Latin="100" Other="100" Symbol="100" User="100"/>
+<CHARSPACING Hangul="0" Hanja="0" Japanese="0" Latin="0" Other="0" Symbol="0" User="0"/>
+<RELSIZE Hangul="100" Hanja="100" Japanese="100" Latin="100" Other="100" Symbol="100" User="100"/>
+<CHAROFFSET Hangul="0" Hanja="0" Japanese="0" Latin="0" Other="0" Symbol="0" User="0"/>
+<BOLD/>
+</CHARSHAPE>
+<CHARSHAPE BorderFillId="2" Height="800" Id="72" ShadeColor="4294967295" SymMark="0" TextColor="0" UseFontSpace="false" UseKerning="false">
+<FONTID Hangul="2" Hanja="2" Japanese="2" Latin="1" Other="2" Symbol="2" User="2"/>
+<RATIO Hangul="100" Hanja="100" Japanese="100" Latin="100" Other="100" Symbol="100" User="100"/>
+<CHARSPACING Hangul="0" Hanja="0" Japanese="0" Latin="0" Other="0" Symbol="0" User="0"/>
+<RELSIZE Hangul="100" Hanja="100" Japanese="100" Latin="100" Other="100" Symbol="100" User="100"/>
+<CHAROFFSET Hangul="0" Hanja="0" Japanese="0" Latin="0" Other="0" Symbol="0" User="0"/>
+<UNDERLINE Color="0" Shape="Solid" Type="Bottom"/>
+</CHARSHAPE>
+<CHARSHAPE BorderFillId="2" Height="800" Id="73" ShadeColor="4294967295" SymMark="0" TextColor="255" UseFontSpace="false" UseKerning="false">
+<FONTID Hangul="2" Hanja="2" Japanese="2" Latin="1" Other="2" Symbol="2" User="2"/>
+<RATIO Hangul="100" Hanja="100" Japanese="100" Latin="100" Other="100" Symbol="100" User="100"/>
+<CHARSPACING Hangul="0" Hanja="0" Japanese="0" Latin="0" Other="0" Symbol="0" User="0"/>
+<RELSIZE Hangul="100" Hanja="100" Japanese="100" Latin="100" Other="100" Symbol="100" User="100"/>
+<CHAROFFSET Hangul="0" Hanja="0" Japanese="0" Latin="0" Other="0" Symbol="0" User="0"/>
+</CHARSHAPE>
+<CHARSHAPE BorderFillId="2" Height="200" Id="74" ShadeColor="4294967295" SymMark="0" TextColor="0" UseFontSpace="false" UseKerning="false">
+<FONTID Hangul="2" Hanja="2" Japanese="2" Latin="1" Other="2" Symbol="2" User="2"/>
+<RATIO Hangul="100" Hanja="100" Japanese="100" Latin="100" Other="100" Symbol="100" User="100"/>
+<CHARSPACING Hangul="0" Hanja="0" Japanese="0" Latin="0" Other="0" Symbol="0" User="0"/>
+<RELSIZE Hangul="100" Hanja="100" Japanese="100" Latin="100" Other="100" Symbol="100" User="100"/>
+<CHAROFFSET Hangul="0" Hanja="0" Japanese="0" Latin="0" Other="0" Symbol="0" User="0"/>
+</CHARSHAPE>
+<CHARSHAPE BorderFillId="2" Height="800" Id="75" ShadeColor="4294967295" SymMark="0" TextColor="0" UseFontSpace="false" UseKerning="false">
+<FONTID Hangul="2" Hanja="2" Japanese="2" Latin="1" Other="2" Symbol="2" User="2"/>
+<RATIO Hangul="100" Hanja="100" Japanese="100" Latin="100" Other="100" Symbol="100" User="100"/>
+<CHARSPACING Hangul="-2" Hanja="-2" Japanese="-2" Latin="-2" Other="-2" Symbol="-2" User="-2"/>
+<RELSIZE Hangul="100" Hanja="100" Japanese="100" Latin="100" Other="100" Symbol="100" User="100"/>
+<CHAROFFSET Hangul="0" Hanja="0" Japanese="0" Latin="0" Other="0" Symbol="0" User="0"/>
+</CHARSHAPE></CHARSHAPELIST>
+<TABDEFLIST Count="14">
+<TABDEF AutoTabLeft="false" AutoTabRight="false" Id="0"/>
+<TABDEF AutoTabLeft="false" AutoTabRight="false" Id="1">
+<TABITEM Leader="None" Pos="8000" Type="Left"/>
+<TABITEM Leader="None" Pos="16000" Type="Left"/>
+<TABITEM Leader="None" Pos="24000" Type="Left"/>
+<TABITEM Leader="None" Pos="32000" Type="Left"/>
+<TABITEM Leader="None" Pos="40000" Type="Left"/>
+<TABITEM Leader="None" Pos="48000" Type="Left"/>
+<TABITEM Leader="None" Pos="56000" Type="Left"/>
+<TABITEM Leader="None" Pos="64000" Type="Left"/>
+<TABITEM Leader="None" Pos="72000" Type="Left"/>
+<TABITEM Leader="None" Pos="80000" Type="Left"/>
+<TABITEM Leader="None" Pos="88000" Type="Left"/>
+<TABITEM Leader="None" Pos="104000" Type="Left"/>
+<TABITEM Leader="None" Pos="112000" Type="Left"/>
+<TABITEM Leader="None" Pos="120000" Type="Left"/>
+<TABITEM Leader="None" Pos="128000" Type="Left"/>
+<TABITEM Leader="None" Pos="136000" Type="Left"/>
+<TABITEM Leader="None" Pos="144000" Type="Left"/>
+<TABITEM Leader="None" Pos="152000" Type="Left"/>
+<TABITEM Leader="None" Pos="160000" Type="Left"/>
+<TABITEM Leader="None" Pos="168000" Type="Left"/>
+<TABITEM Leader="None" Pos="176000" Type="Left"/>
+<TABITEM Leader="None" Pos="184000" Type="Left"/>
+<TABITEM Leader="None" Pos="192000" Type="Left"/>
+<TABITEM Leader="None" Pos="200000" Type="Left"/>
+<TABITEM Leader="None" Pos="208000" Type="Left"/>
+<TABITEM Leader="None" Pos="216000" Type="Left"/>
+<TABITEM Leader="None" Pos="224000" Type="Left"/>
+<TABITEM Leader="None" Pos="232000" Type="Left"/>
+<TABITEM Leader="None" Pos="240000" Type="Left"/>
+<TABITEM Leader="None" Pos="248000" Type="Left"/>
+</TABDEF>
+<TABDEF AutoTabLeft="false" AutoTabRight="false" Id="2">
+<TABITEM Leader="Dot" Pos="90424" Type="Right"/>
+</TABDEF>
+<TABDEF AutoTabLeft="false" AutoTabRight="false" Id="3">
+<TABITEM Leader="None" Pos="8064" Type="Left"/>
+<TABITEM Leader="None" Pos="16128" Type="Left"/>
+<TABITEM Leader="None" Pos="24192" Type="Left"/>
+<TABITEM Leader="None" Pos="32256" Type="Left"/>
+<TABITEM Leader="None" Pos="40320" Type="Left"/>
+<TABITEM Leader="None" Pos="48384" Type="Left"/>
+<TABITEM Leader="None" Pos="56448" Type="Left"/>
+<TABITEM Leader="None" Pos="64512" Type="Left"/>
+<TABITEM Leader="None" Pos="72576" Type="Left"/>
+<TABITEM Leader="None" Pos="80640" Type="Left"/>
+<TABITEM Leader="None" Pos="88704" Type="Left"/>
+<TABITEM Leader="None" Pos="104832" Type="Left"/>
+<TABITEM Leader="None" Pos="112896" Type="Left"/>
+<TABITEM Leader="None" Pos="120960" Type="Left"/>
+<TABITEM Leader="None" Pos="129024" Type="Left"/>
+<TABITEM Leader="None" Pos="137088" Type="Left"/>
+<TABITEM Leader="None" Pos="145152" Type="Left"/>
+<TABITEM Leader="None" Pos="153216" Type="Left"/>
+<TABITEM Leader="None" Pos="161280" Type="Left"/>
+<TABITEM Leader="None" Pos="169344" Type="Left"/>
+<TABITEM Leader="None" Pos="177408" Type="Left"/>
+<TABITEM Leader="None" Pos="185472" Type="Left"/>
+<TABITEM Leader="None" Pos="193536" Type="Left"/>
+<TABITEM Leader="None" Pos="201600" Type="Left"/>
+<TABITEM Leader="None" Pos="209664" Type="Left"/>
+<TABITEM Leader="None" Pos="217728" Type="Left"/>
+<TABITEM Leader="None" Pos="225792" Type="Left"/>
+<TABITEM Leader="None" Pos="233856" Type="Left"/>
+<TABITEM Leader="None" Pos="241920" Type="Left"/>
+<TABITEM Leader="None" Pos="249984" Type="Left"/>
+<TABITEM Leader="None" Pos="258048" Type="Left"/>
+</TABDEF>
+<TABDEF AutoTabLeft="false" AutoTabRight="false" Id="4">
+<TABITEM Leader="None" Pos="0" Type="Left"/>
+<TABITEM Leader="None" Pos="0" Type="Left"/>
+<TABITEM Leader="None" Pos="0" Type="Left"/>
+<TABITEM Leader="None" Pos="0" Type="Left"/>
+<TABITEM Leader="None" Pos="0" Type="Left"/>
+<TABITEM Leader="None" Pos="0" Type="Left"/>
+<TABITEM Leader="None" Pos="0" Type="Left"/>
+<TABITEM Leader="None" Pos="0" Type="Left"/>
+<TABITEM Leader="None" Pos="0" Type="Left"/>
+<TABITEM Leader="None" Pos="8000" Type="Left"/>
+<TABITEM Leader="None" Pos="16000" Type="Left"/>
+<TABITEM Leader="None" Pos="24000" Type="Left"/>
+<TABITEM Leader="None" Pos="32000" Type="Left"/>
+<TABITEM Leader="None" Pos="40000" Type="Left"/>
+<TABITEM Leader="None" Pos="48000" Type="Left"/>
+<TABITEM Leader="None" Pos="56000" Type="Left"/>
+<TABITEM Leader="None" Pos="64000" Type="Left"/>
+<TABITEM Leader="None" Pos="72000" Type="Left"/>
+<TABITEM Leader="None" Pos="80000" Type="Left"/>
+<TABITEM Leader="None" Pos="88000" Type="Left"/>
+<TABITEM Leader="None" Pos="96000" Type="Left"/>
+<TABITEM Leader="None" Pos="104000" Type="Left"/>
+<TABITEM Leader="None" Pos="112000" Type="Left"/>
+<TABITEM Leader="None" Pos="120000" Type="Left"/>
+<TABITEM Leader="None" Pos="128000" Type="Left"/>
+<TABITEM Leader="None" Pos="136000" Type="Left"/>
+<TABITEM Leader="None" Pos="144000" Type="Left"/>
+<TABITEM Leader="None" Pos="152000" Type="Left"/>
+<TABITEM Leader="None" Pos="160000" Type="Left"/>
+<TABITEM Leader="None" Pos="168000" Type="Left"/>
+<TABITEM Leader="None" Pos="176000" Type="Left"/>
+<TABITEM Leader="None" Pos="184000" Type="Left"/>
+<TABITEM Leader="None" Pos="192000" Type="Left"/>
+<TABITEM Leader="None" Pos="200000" Type="Left"/>
+<TABITEM Leader="None" Pos="208000" Type="Left"/>
+<TABITEM Leader="None" Pos="216000" Type="Left"/>
+<TABITEM Leader="None" Pos="224000" Type="Left"/>
+<TABITEM Leader="None" Pos="232000" Type="Left"/>
+<TABITEM Leader="None" Pos="240000" Type="Left"/>
+<TABITEM Leader="None" Pos="248000" Type="Left"/>
+</TABDEF>
+<TABDEF AutoTabLeft="false" AutoTabRight="false" Id="5">
+<TABITEM Leader="None" Pos="9944" Type="Left"/>
+<TABITEM Leader="None" Pos="16000" Type="Left"/>
+<TABITEM Leader="None" Pos="24000" Type="Left"/>
+<TABITEM Leader="None" Pos="32000" Type="Left"/>
+<TABITEM Leader="None" Pos="40000" Type="Left"/>
+<TABITEM Leader="None" Pos="48000" Type="Left"/>
+<TABITEM Leader="None" Pos="56000" Type="Left"/>
+<TABITEM Leader="None" Pos="64000" Type="Left"/>
+<TABITEM Leader="None" Pos="72000" Type="Left"/>
+<TABITEM Leader="None" Pos="80000" Type="Left"/>
+<TABITEM Leader="None" Pos="88000" Type="Left"/>
+<TABITEM Leader="None" Pos="96000" Type="Left"/>
+<TABITEM Leader="None" Pos="104000" Type="Left"/>
+</TABDEF>
+<TABDEF AutoTabLeft="false" AutoTabRight="false" Id="6">
+<TABITEM Leader="None" Pos="26722" Type="Left"/>
+</TABDEF>
+<TABDEF AutoTabLeft="false" AutoTabRight="false" Id="7">
+<TABITEM Leader="None" Pos="3216" Type="Left"/>
+<TABITEM Leader="Dot" Pos="37296" Type="Left"/>
+</TABDEF>
+<TABDEF AutoTabLeft="false" AutoTabRight="false" Id="8">
+<TABITEM Leader="None" Pos="0" Type="Left"/>
+<TABITEM Leader="None" Pos="0" Type="Left"/>
+<TABITEM Leader="None" Pos="0" Type="Left"/>
+<TABITEM Leader="None" Pos="0" Type="Left"/>
+<TABITEM Leader="None" Pos="0" Type="Left"/>
+<TABITEM Leader="None" Pos="0" Type="Left"/>
+<TABITEM Leader="None" Pos="0" Type="Left"/>
+<TABITEM Leader="None" Pos="0" Type="Left"/>
+<TABITEM Leader="None" Pos="0" Type="Left"/>
+<TABITEM Leader="None" Pos="0" Type="Left"/>
+<TABITEM Leader="None" Pos="0" Type="Left"/>
+<TABITEM Leader="None" Pos="0" Type="Left"/>
+<TABITEM Leader="None" Pos="0" Type="Left"/>
+<TABITEM Leader="None" Pos="0" Type="Left"/>
+<TABITEM Leader="None" Pos="0" Type="Left"/>
+<TABITEM Leader="None" Pos="0" Type="Left"/>
+<TABITEM Leader="None" Pos="0" Type="Left"/>
+<TABITEM Leader="None" Pos="0" Type="Left"/>
+<TABITEM Leader="None" Pos="0" Type="Left"/>
+<TABITEM Leader="None" Pos="0" Type="Left"/>
+<TABITEM Leader="None" Pos="0" Type="Left"/>
+<TABITEM Leader="None" Pos="0" Type="Left"/>
+<TABITEM Leader="None" Pos="0" Type="Left"/>
+<TABITEM Leader="None" Pos="0" Type="Left"/>
+<TABITEM Leader="None" Pos="8000" Type="Left"/>
+<TABITEM Leader="None" Pos="16000" Type="Left"/>
+<TABITEM Leader="None" Pos="24000" Type="Left"/>
+<TABITEM Leader="None" Pos="32000" Type="Left"/>
+<TABITEM Leader="None" Pos="40000" Type="Left"/>
+<TABITEM Leader="None" Pos="48000" Type="Left"/>
+<TABITEM Leader="None" Pos="56000" Type="Left"/>
+<TABITEM Leader="None" Pos="64000" Type="Left"/>
+<TABITEM Leader="None" Pos="72000" Type="Left"/>
+<TABITEM Leader="None" Pos="80000" Type="Left"/>
+<TABITEM Leader="None" Pos="88000" Type="Left"/>
+<TABITEM Leader="None" Pos="96000" Type="Left"/>
+<TABITEM Leader="None" Pos="104000" Type="Left"/>
+<TABITEM Leader="None" Pos="112000" Type="Left"/>
+<TABITEM Leader="None" Pos="120000" Type="Left"/>
+<TABITEM Leader="None" Pos="128000" Type="Left"/>
+</TABDEF>
+<TABDEF AutoTabLeft="false" AutoTabRight="false" Id="9">
+<TABITEM Leader="None" Pos="8000" Type="Left"/>
+<TABITEM Leader="None" Pos="16000" Type="Left"/>
+<TABITEM Leader="None" Pos="24000" Type="Left"/>
+<TABITEM Leader="None" Pos="32000" Type="Left"/>
+<TABITEM Leader="None" Pos="40000" Type="Left"/>
+<TABITEM Leader="None" Pos="48000" Type="Left"/>
+<TABITEM Leader="None" Pos="56000" Type="Left"/>
+<TABITEM Leader="None" Pos="64000" Type="Left"/>
+<TABITEM Leader="None" Pos="72000" Type="Left"/>
+<TABITEM Leader="None" Pos="80000" Type="Left"/>
+<TABITEM Leader="None" Pos="88000" Type="Left"/>
+<TABITEM Leader="None" Pos="104000" Type="Left"/>
+<TABITEM Leader="None" Pos="112000" Type="Left"/>
+<TABITEM Leader="None" Pos="120000" Type="Left"/>
+<TABITEM Leader="None" Pos="128000" Type="Left"/>
+<TABITEM Leader="None" Pos="136000" Type="Left"/>
+<TABITEM Leader="None" Pos="144000" Type="Left"/>
+<TABITEM Leader="None" Pos="152000" Type="Left"/>
+<TABITEM Leader="None" Pos="160000" Type="Left"/>
+<TABITEM Leader="None" Pos="168000" Type="Left"/>
+<TABITEM Leader="None" Pos="176000" Type="Left"/>
+<TABITEM Leader="None" Pos="184000" Type="Left"/>
+<TABITEM Leader="None" Pos="192000" Type="Left"/>
+<TABITEM Leader="None" Pos="200000" Type="Left"/>
+<TABITEM Leader="None" Pos="208000" Type="Left"/>
+<TABITEM Leader="None" Pos="216000" Type="Left"/>
+<TABITEM Leader="None" Pos="224000" Type="Left"/>
+<TABITEM Leader="None" Pos="232000" Type="Left"/>
+<TABITEM Leader="None" Pos="240000" Type="Left"/>
+<TABITEM Leader="None" Pos="248000" Type="Left"/>
+</TABDEF>
+<TABDEF AutoTabLeft="false" AutoTabRight="false" Id="10">
+<TABITEM Leader="None" Pos="0" Type="Left"/>
+<TABITEM Leader="None" Pos="0" Type="Left"/>
+<TABITEM Leader="None" Pos="0" Type="Left"/>
+<TABITEM Leader="None" Pos="0" Type="Left"/>
+<TABITEM Leader="None" Pos="0" Type="Left"/>
+<TABITEM Leader="None" Pos="0" Type="Left"/>
+<TABITEM Leader="None" Pos="0" Type="Left"/>
+<TABITEM Leader="None" Pos="0" Type="Left"/>
+<TABITEM Leader="None" Pos="0" Type="Left"/>
+<TABITEM Leader="None" Pos="0" Type="Left"/>
+<TABITEM Leader="None" Pos="0" Type="Left"/>
+<TABITEM Leader="None" Pos="0" Type="Left"/>
+<TABITEM Leader="None" Pos="0" Type="Left"/>
+<TABITEM Leader="None" Pos="0" Type="Left"/>
+<TABITEM Leader="None" Pos="0" Type="Left"/>
+<TABITEM Leader="None" Pos="0" Type="Left"/>
+<TABITEM Leader="None" Pos="0" Type="Left"/>
+<TABITEM Leader="None" Pos="0" Type="Left"/>
+<TABITEM Leader="None" Pos="0" Type="Left"/>
+<TABITEM Leader="None" Pos="0" Type="Left"/>
+<TABITEM Leader="None" Pos="0" Type="Left"/>
+<TABITEM Leader="None" Pos="0" Type="Left"/>
+<TABITEM Leader="None" Pos="0" Type="Left"/>
+<TABITEM Leader="None" Pos="0" Type="Left"/>
+<TABITEM Leader="None" Pos="8000" Type="Left"/>
+<TABITEM Leader="None" Pos="16000" Type="Left"/>
+<TABITEM Leader="None" Pos="24000" Type="Left"/>
+<TABITEM Leader="None" Pos="30936" Type="Left"/>
+<TABITEM Leader="None" Pos="40000" Type="Left"/>
+<TABITEM Leader="None" Pos="48000" Type="Left"/>
+<TABITEM Leader="None" Pos="56000" Type="Left"/>
+<TABITEM Leader="None" Pos="64000" Type="Left"/>
+<TABITEM Leader="None" Pos="72000" Type="Left"/>
+<TABITEM Leader="None" Pos="80000" Type="Left"/>
+<TABITEM Leader="None" Pos="88000" Type="Left"/>
+<TABITEM Leader="None" Pos="96000" Type="Left"/>
+<TABITEM Leader="None" Pos="104000" Type="Left"/>
+<TABITEM Leader="None" Pos="112000" Type="Left"/>
+<TABITEM Leader="None" Pos="120000" Type="Left"/>
+<TABITEM Leader="None" Pos="128000" Type="Left"/>
+</TABDEF>
+<TABDEF AutoTabLeft="false" AutoTabRight="false" Id="11">
+<TABITEM Leader="None" Pos="9944" Type="Left"/>
+<TABITEM Leader="None" Pos="16000" Type="Left"/>
+<TABITEM Leader="None" Pos="24000" Type="Left"/>
+<TABITEM Leader="None" Pos="32000" Type="Left"/>
+<TABITEM Leader="None" Pos="40000" Type="Left"/>
+<TABITEM Leader="None" Pos="48000" Type="Left"/>
+<TABITEM Leader="None" Pos="56000" Type="Left"/>
+<TABITEM Leader="None" Pos="64000" Type="Left"/>
+<TABITEM Leader="None" Pos="72000" Type="Left"/>
+<TABITEM Leader="None" Pos="80000" Type="Left"/>
+<TABITEM Leader="None" Pos="88000" Type="Left"/>
+<TABITEM Leader="None" Pos="96000" Type="Left"/>
+<TABITEM Leader="None" Pos="104000" Type="Left"/>
+</TABDEF>
+<TABDEF AutoTabLeft="false" AutoTabRight="false" Id="12">
+<TABITEM Leader="None" Pos="30516" Type="Left"/>
+</TABDEF>
+<TABDEF AutoTabLeft="false" AutoTabRight="false" Id="13">
+<TABITEM Leader="None" Pos="9944" Type="Left"/>
+</TABDEF></TABDEFLIST>
+<BULLETLIST Count="1">
+<BULLET Char="∙" Id="1">
+<PARAHEAD Alignment="Left" AutoIndent="true" TextOffset="50" TextOffsetType="percent" UseInstWidth="false" WidthAdjust="-600"/>
+</BULLET></BULLETLIST>
+<PARASHAPELIST Count="87">
+<PARASHAPE Align="Justify" AutoSpaceEAsianEng="false" AutoSpaceEAsianNum="false" BreakLatinWord="KeepWord" BreakNonLatinWord="true" Condense="0" FontLineHeight="false" HeadingType="None" Id="0" KeepLines="false" KeepWithNext="false" Level="0" LineWrap="Break" PageBreakBefore="false" SnapToGrid="false" TabDef="0" VerAlign="Baseline" WidowOrphan="false">
+<PARAMARGIN Indent="0" Left="0" LineSpacing="150" LineSpacingType="Percent" Next="0" Prev="0" Right="0"/>
+<PARABORDER BorderFill="1" Connect="false" IgnoreMargin="false"/>
+</PARASHAPE>
+<PARASHAPE Align="Justify" AutoSpaceEAsianEng="false" AutoSpaceEAsianNum="false" BreakLatinWord="KeepWord" BreakNonLatinWord="true" Condense="0" FontLineHeight="false" HeadingType="None" Id="1" KeepLines="false" KeepWithNext="false" Level="0" LineWrap="Break" PageBreakBefore="false" SnapToGrid="false" TabDef="0" VerAlign="Baseline" WidowOrphan="false">
+<PARAMARGIN Indent="0" Left="0" LineSpacing="270" LineSpacingType="Percent" Next="0" Prev="0" Right="0"/>
+<PARABORDER BorderFill="1" Connect="false" IgnoreMargin="false"/>
+</PARASHAPE>
+<PARASHAPE Align="Justify" AutoSpaceEAsianEng="false" AutoSpaceEAsianNum="false" BreakLatinWord="KeepWord" BreakNonLatinWord="true" Condense="0" FontLineHeight="false" HeadingType="None" Id="2" KeepLines="false" KeepWithNext="false" Level="0" LineWrap="Break" PageBreakBefore="false" SnapToGrid="false" TabDef="0" VerAlign="Baseline" WidowOrphan="false">
+<PARAMARGIN Indent="0" Left="2000" LineSpacing="230" LineSpacingType="Percent" Next="0" Prev="0" Right="1000"/>
+<PARABORDER BorderFill="1" Connect="false" IgnoreMargin="false"/>
+</PARASHAPE>
+<PARASHAPE Align="Justify" AutoSpaceEAsianEng="false" AutoSpaceEAsianNum="false" BreakLatinWord="KeepWord" BreakNonLatinWord="true" Condense="0" FontLineHeight="false" HeadingType="None" Id="3" KeepLines="false" KeepWithNext="false" Level="0" LineWrap="Break" PageBreakBefore="false" SnapToGrid="false" TabDef="0" VerAlign="Baseline" WidowOrphan="false">
+<PARAMARGIN Indent="0" Left="5000" LineSpacing="220" LineSpacingType="Percent" Next="0" Prev="0" Right="2000"/>
+<PARABORDER BorderFill="1" Connect="false" IgnoreMargin="false"/>
+</PARASHAPE>
+<PARASHAPE Align="Justify" AutoSpaceEAsianEng="false" AutoSpaceEAsianNum="false" BreakLatinWord="KeepWord" BreakNonLatinWord="true" Condense="0" FontLineHeight="false" HeadingType="None" Id="4" KeepLines="false" KeepWithNext="false" Level="0" LineWrap="Break" PageBreakBefore="false" SnapToGrid="false" TabDef="0" VerAlign="Baseline" WidowOrphan="false">
+<PARAMARGIN Indent="0" Left="8000" LineSpacing="220" LineSpacingType="Percent" Next="0" Prev="0" Right="2000"/>
+<PARABORDER BorderFill="1" Connect="false" IgnoreMargin="false"/>
+</PARASHAPE>
+<PARASHAPE Align="Justify" AutoSpaceEAsianEng="false" AutoSpaceEAsianNum="false" BreakLatinWord="KeepWord" BreakNonLatinWord="true" Condense="0" FontLineHeight="false" HeadingType="None" Id="5" KeepLines="false" KeepWithNext="false" Level="0" LineWrap="Break" PageBreakBefore="false" SnapToGrid="false" TabDef="0" VerAlign="Baseline" WidowOrphan="false">
+<PARAMARGIN Indent="0" Left="12000" LineSpacing="220" LineSpacingType="Percent" Next="0" Prev="0" Right="2000"/>
+<PARABORDER BorderFill="1" Connect="false" IgnoreMargin="false"/>
+</PARASHAPE>
+<PARASHAPE Align="Justify" AutoSpaceEAsianEng="false" AutoSpaceEAsianNum="false" BreakLatinWord="KeepWord" BreakNonLatinWord="true" Condense="0" FontLineHeight="false" HeadingType="None" Id="6" KeepLines="false" KeepWithNext="false" Level="0" LineWrap="Break" PageBreakBefore="false" SnapToGrid="false" TabDef="0" VerAlign="Baseline" WidowOrphan="false">
+<PARAMARGIN Indent="0" Left="14000" LineSpacing="220" LineSpacingType="Percent" Next="0" Prev="0" Right="2000"/>
+<PARABORDER BorderFill="1" Connect="false" IgnoreMargin="false"/>
+</PARASHAPE>
+<PARASHAPE Align="Justify" AutoSpaceEAsianEng="false" AutoSpaceEAsianNum="false" BreakLatinWord="KeepWord" BreakNonLatinWord="true" Condense="0" FontLineHeight="false" HeadingType="None" Id="7" KeepLines="false" KeepWithNext="false" Level="0" LineWrap="Break" PageBreakBefore="false" SnapToGrid="false" TabDef="0" VerAlign="Baseline" WidowOrphan="false">
+<PARAMARGIN Indent="-4000" Left="7000" LineSpacing="210" LineSpacingType="Percent" Next="0" Prev="0" Right="2000"/>
+<PARABORDER BorderFill="1" Connect="false" IgnoreMargin="false"/>
+</PARASHAPE>
+<PARASHAPE Align="Justify" AutoSpaceEAsianEng="false" AutoSpaceEAsianNum="false" BreakLatinWord="KeepWord" BreakNonLatinWord="true" Condense="0" FontLineHeight="false" HeadingType="None" Id="8" KeepLines="false" KeepWithNext="false" Level="0" LineWrap="Break" PageBreakBefore="false" SnapToGrid="false" TabDef="2" VerAlign="Baseline" WidowOrphan="false">
+<PARAMARGIN Indent="0" Left="20000" LineSpacing="350" LineSpacingType="Percent" Next="0" Prev="0" Right="0"/>
+<PARABORDER BorderFill="1" Connect="false" IgnoreMargin="false"/>
+</PARASHAPE>
+<PARASHAPE Align="Center" AutoSpaceEAsianEng="false" AutoSpaceEAsianNum="false" BreakLatinWord="KeepWord" BreakNonLatinWord="false" Condense="0" FontLineHeight="false" HeadingType="None" Id="9" KeepLines="false" KeepWithNext="false" Level="0" LineWrap="Break" PageBreakBefore="false" SnapToGrid="false" TabDef="0" VerAlign="Baseline" WidowOrphan="false">
+<PARAMARGIN Indent="0" Left="0" LineSpacing="180" LineSpacingType="Percent" Next="0" Prev="0" Right="0"/>
+<PARABORDER BorderFill="1" Connect="false" IgnoreMargin="false"/>
+</PARASHAPE>
+<PARASHAPE Align="Center" AutoSpaceEAsianEng="false" AutoSpaceEAsianNum="false" BreakLatinWord="KeepWord" BreakNonLatinWord="false" Condense="0" FontLineHeight="false" HeadingType="None" Id="10" KeepLines="false" KeepWithNext="false" Level="0" LineWrap="Break" PageBreakBefore="false" SnapToGrid="false" TabDef="2" VerAlign="Baseline" WidowOrphan="false">
+<PARAMARGIN Indent="0" Left="0" LineSpacing="200" LineSpacingType="Percent" Next="0" Prev="0" Right="0"/>
+<PARABORDER BorderFill="1" Connect="false" IgnoreMargin="false"/>
+</PARASHAPE>
+<PARASHAPE Align="Center" AutoSpaceEAsianEng="false" AutoSpaceEAsianNum="false" BreakLatinWord="KeepWord" BreakNonLatinWord="false" Condense="0" FontLineHeight="false" HeadingType="None" Id="11" KeepLines="false" KeepWithNext="false" Level="0" LineWrap="Break" PageBreakBefore="false" SnapToGrid="false" TabDef="0" VerAlign="Baseline" WidowOrphan="false">
+<PARAMARGIN Indent="0" Left="0" LineSpacing="150" LineSpacingType="Percent" Next="0" Prev="0" Right="0"/>
+<PARABORDER BorderFill="1" Connect="false" IgnoreMargin="false"/>
+</PARASHAPE>
+<PARASHAPE Align="Center" AutoSpaceEAsianEng="false" AutoSpaceEAsianNum="false" BreakLatinWord="KeepWord" BreakNonLatinWord="false" Condense="0" FontLineHeight="false" HeadingType="None" Id="12" KeepLines="false" KeepWithNext="false" Level="0" LineWrap="Break" PageBreakBefore="false" SnapToGrid="false" TabDef="0" VerAlign="Baseline" WidowOrphan="false">
+<PARAMARGIN Indent="0" Left="0" LineSpacing="200" LineSpacingType="Percent" Next="0" Prev="0" Right="0"/>
+<PARABORDER BorderFill="1" Connect="false" IgnoreMargin="false"/>
+</PARASHAPE>
+<PARASHAPE Align="Justify" AutoSpaceEAsianEng="false" AutoSpaceEAsianNum="false" BreakLatinWord="KeepWord" BreakNonLatinWord="true" Condense="0" FontLineHeight="false" HeadingType="None" Id="13" KeepLines="false" KeepWithNext="false" Level="0" LineWrap="Break" PageBreakBefore="false" SnapToGrid="false" TabDef="0" VerAlign="Baseline" WidowOrphan="false">
+<PARAMARGIN Indent="-3000" Left="6000" LineSpacing="210" LineSpacingType="Percent" Next="0" Prev="0" Right="3000"/>
+<PARABORDER BorderFill="1" Connect="false" IgnoreMargin="false"/>
+</PARASHAPE>
+<PARASHAPE Align="Justify" AutoSpaceEAsianEng="false" AutoSpaceEAsianNum="false" BreakLatinWord="KeepWord" BreakNonLatinWord="true" Condense="0" FontLineHeight="false" HeadingType="None" Id="14" KeepLines="false" KeepWithNext="false" Level="0" LineWrap="Break" PageBreakBefore="false" SnapToGrid="false" TabDef="0" VerAlign="Baseline" WidowOrphan="false">
+<PARAMARGIN Indent="0" Left="2000" LineSpacing="240" LineSpacingType="Percent" Next="0" Prev="0" Right="3000"/>
+<PARABORDER BorderFill="1" Connect="false" IgnoreMargin="false"/>
+</PARASHAPE>
+<PARASHAPE Align="Justify" AutoSpaceEAsianEng="false" AutoSpaceEAsianNum="false" BreakLatinWord="KeepWord" BreakNonLatinWord="true" Condense="0" FontLineHeight="false" HeadingType="None" Id="15" KeepLines="false" KeepWithNext="false" Level="0" LineWrap="Break" PageBreakBefore="false" SnapToGrid="false" TabDef="0" VerAlign="Baseline" WidowOrphan="false">
+<PARAMARGIN Indent="0" Left="0" LineSpacing="160" LineSpacingType="Percent" Next="0" Prev="0" Right="0"/>
+<PARABORDER BorderFill="1" Connect="false" IgnoreMargin="false"/>
+</PARASHAPE>
+<PARASHAPE Align="Justify" AutoSpaceEAsianEng="false" AutoSpaceEAsianNum="false" BreakLatinWord="KeepWord" BreakNonLatinWord="true" Condense="0" FontLineHeight="false" HeadingType="None" Id="16" KeepLines="false" KeepWithNext="false" Level="0" LineWrap="Break" PageBreakBefore="false" SnapToGrid="false" TabDef="0" VerAlign="Baseline" WidowOrphan="false">
+<PARAMARGIN Indent="0" Left="1400" LineSpacing="180" LineSpacingType="Percent" Next="0" Prev="0" Right="0"/>
+<PARABORDER BorderFill="1" Connect="false" IgnoreMargin="false"/>
+</PARASHAPE>
+<PARASHAPE Align="Left" AutoSpaceEAsianEng="false" AutoSpaceEAsianNum="false" BreakLatinWord="KeepWord" BreakNonLatinWord="false" Condense="0" FontLineHeight="false" HeadingType="None" Id="17" KeepLines="false" KeepWithNext="false" Level="0" LineWrap="Break" PageBreakBefore="false" SnapToGrid="false" TabDef="0" VerAlign="Baseline" WidowOrphan="false">
+<PARAMARGIN Indent="0" Left="600" LineSpacing="180" LineSpacingType="Percent" Next="0" Prev="0" Right="0"/>
+<PARABORDER BorderFill="1" Connect="false" IgnoreMargin="false"/>
+</PARASHAPE>
+<PARASHAPE Align="Center" AutoSpaceEAsianEng="false" AutoSpaceEAsianNum="false" BreakLatinWord="KeepWord" BreakNonLatinWord="false" Condense="0" FontLineHeight="false" HeadingType="None" Id="18" KeepLines="false" KeepWithNext="false" Level="0" LineWrap="Break" PageBreakBefore="false" SnapToGrid="false" TabDef="0" VerAlign="Baseline" WidowOrphan="false">
+<PARAMARGIN Indent="0" Left="0" LineSpacing="130" LineSpacingType="Percent" Next="0" Prev="0" Right="0"/>
+<PARABORDER BorderFill="1" Connect="false" IgnoreMargin="false"/>
+</PARASHAPE>
+<PARASHAPE Align="Center" AutoSpaceEAsianEng="false" AutoSpaceEAsianNum="false" BreakLatinWord="KeepWord" BreakNonLatinWord="false" Condense="0" FontLineHeight="false" HeadingType="None" Id="19" KeepLines="false" KeepWithNext="false" Level="0" LineWrap="Break" PageBreakBefore="false" SnapToGrid="false" TabDef="0" VerAlign="Baseline" WidowOrphan="false">
+<PARAMARGIN Indent="0" Left="0" LineSpacing="160" LineSpacingType="Percent" Next="0" Prev="0" Right="0"/>
+<PARABORDER BorderFill="1" Connect="false" IgnoreMargin="false"/>
+</PARASHAPE>
+<PARASHAPE Align="Center" AutoSpaceEAsianEng="false" AutoSpaceEAsianNum="false" BreakLatinWord="KeepWord" BreakNonLatinWord="false" Condense="0" FontLineHeight="false" HeadingType="None" Id="20" KeepLines="false" KeepWithNext="false" Level="0" LineWrap="Break" PageBreakBefore="false" SnapToGrid="false" TabDef="3" VerAlign="Baseline" WidowOrphan="false">
+<PARAMARGIN Indent="0" Left="0" LineSpacing="150" LineSpacingType="Percent" Next="0" Prev="0" Right="2000"/>
+<PARABORDER BorderFill="1" Connect="false" IgnoreMargin="false"/>
+</PARASHAPE>
+<PARASHAPE Align="Right" AutoSpaceEAsianEng="false" AutoSpaceEAsianNum="false" BreakLatinWord="KeepWord" BreakNonLatinWord="false" Condense="0" FontLineHeight="false" HeadingType="None" Id="21" KeepLines="false" KeepWithNext="false" Level="0" LineWrap="Break" PageBreakBefore="false" SnapToGrid="false" TabDef="0" VerAlign="Baseline" WidowOrphan="false">
+<PARAMARGIN Indent="-32" Left="0" LineSpacing="150" LineSpacingType="Percent" Next="0" Prev="0" Right="0"/>
+<PARABORDER BorderFill="1" Connect="false" IgnoreMargin="false"/>
+</PARASHAPE>
+<PARASHAPE Align="Justify" AutoSpaceEAsianEng="false" AutoSpaceEAsianNum="false" BreakLatinWord="KeepWord" BreakNonLatinWord="true" Condense="0" FontLineHeight="false" HeadingType="None" Id="22" KeepLines="false" KeepWithNext="false" Level="0" LineWrap="Break" PageBreakBefore="false" SnapToGrid="false" TabDef="0" VerAlign="Baseline" WidowOrphan="false">
+<PARAMARGIN Indent="0" Left="0" LineSpacing="180" LineSpacingType="Percent" Next="0" Prev="0" Right="0"/>
+<PARABORDER BorderFill="1" Connect="false" IgnoreMargin="false"/>
+</PARASHAPE>
+<PARASHAPE Align="Justify" AutoSpaceEAsianEng="false" AutoSpaceEAsianNum="false" BreakLatinWord="KeepWord" BreakNonLatinWord="true" Condense="0" FontLineHeight="false" HeadingType="None" Id="23" KeepLines="false" KeepWithNext="false" Level="0" LineWrap="Break" PageBreakBefore="false" SnapToGrid="true" TabDef="0" VerAlign="Baseline" WidowOrphan="false">
+<PARAMARGIN Indent="0" Left="0" LineSpacing="160" LineSpacingType="Percent" Next="0" Prev="0" Right="0"/>
+<PARABORDER BorderFill="1" Connect="false" IgnoreMargin="false"/>
+</PARASHAPE>
+<PARASHAPE Align="Justify" AutoSpaceEAsianEng="false" AutoSpaceEAsianNum="false" BreakLatinWord="KeepWord" BreakNonLatinWord="true" Condense="0" FontLineHeight="false" HeadingType="None" Id="24" KeepLines="false" KeepWithNext="false" Level="0" LineWrap="Break" PageBreakBefore="false" SnapToGrid="false" TabDef="1" VerAlign="Baseline" WidowOrphan="false">
+<PARAMARGIN Indent="0" Left="18000" LineSpacing="330" LineSpacingType="Percent" Next="0" Prev="0" Right="0"/>
+<PARABORDER BorderFill="1" Connect="false" IgnoreMargin="false"/>
+</PARASHAPE>
+<PARASHAPE Align="Right" AutoSpaceEAsianEng="false" AutoSpaceEAsianNum="false" BreakLatinWord="KeepWord" BreakNonLatinWord="false" Condense="0" FontLineHeight="false" HeadingType="None" Id="25" KeepLines="false" KeepWithNext="false" Level="0" LineWrap="Break" PageBreakBefore="false" SnapToGrid="false" TabDef="4" VerAlign="Baseline" WidowOrphan="false">
+<PARAMARGIN Indent="0" Left="0" LineSpacing="100" LineSpacingType="Percent" Next="0" Prev="0" Right="0"/>
+<PARABORDER BorderFill="1" Connect="false" IgnoreMargin="false"/>
+</PARASHAPE>
+<PARASHAPE Align="DistributeSpace" AutoSpaceEAsianEng="false" AutoSpaceEAsianNum="false" BreakLatinWord="KeepWord" BreakNonLatinWord="true" Condense="0" FontLineHeight="false" HeadingType="None" Id="26" KeepLines="false" KeepWithNext="false" Level="0" LineWrap="Break" PageBreakBefore="false" SnapToGrid="false" TabDef="0" VerAlign="Baseline" WidowOrphan="false">
+<PARAMARGIN Indent="0" Left="0" LineSpacing="150" LineSpacingType="Percent" Next="0" Prev="0" Right="0"/>
+<PARABORDER BorderFill="1" Connect="false" IgnoreMargin="false"/>
+</PARASHAPE>
+<PARASHAPE Align="Justify" AutoSpaceEAsianEng="false" AutoSpaceEAsianNum="false" BreakLatinWord="KeepWord" BreakNonLatinWord="true" Condense="0" FontLineHeight="false" HeadingType="None" Id="27" KeepLines="false" KeepWithNext="false" Level="0" LineWrap="Break" PageBreakBefore="false" SnapToGrid="false" TabDef="1" VerAlign="Baseline" WidowOrphan="false">
+<PARAMARGIN Indent="0" Left="9000" LineSpacing="220" LineSpacingType="Percent" Next="0" Prev="0" Right="2000"/>
+<PARABORDER BorderFill="1" Connect="false" IgnoreMargin="false"/>
+</PARASHAPE>
+<PARASHAPE Align="Right" AutoSpaceEAsianEng="false" AutoSpaceEAsianNum="false" BreakLatinWord="KeepWord" BreakNonLatinWord="false" Condense="0" FontLineHeight="false" HeadingType="None" Id="28" KeepLines="false" KeepWithNext="false" Level="0" LineWrap="Break" PageBreakBefore="false" SnapToGrid="false" TabDef="3" VerAlign="Baseline" WidowOrphan="false">
+<PARAMARGIN Indent="0" Left="0" LineSpacing="150" LineSpacingType="Percent" Next="0" Prev="0" Right="2000"/>
+<PARABORDER BorderFill="1" Connect="false" IgnoreMargin="false"/>
+</PARASHAPE>
+<PARASHAPE Align="Justify" AutoSpaceEAsianEng="false" AutoSpaceEAsianNum="false" BreakLatinWord="KeepWord" BreakNonLatinWord="true" Condense="0" FontLineHeight="false" HeadingType="None" Id="29" KeepLines="false" KeepWithNext="false" Level="0" LineWrap="Break" PageBreakBefore="false" SnapToGrid="false" TabDef="3" VerAlign="Baseline" WidowOrphan="false">
+<PARAMARGIN Indent="0" Left="0" LineSpacing="150" LineSpacingType="Percent" Next="0" Prev="0" Right="2000"/>
+<PARABORDER BorderFill="2" Connect="false" IgnoreMargin="false"/>
+</PARASHAPE>
+<PARASHAPE Align="Center" AutoSpaceEAsianEng="false" AutoSpaceEAsianNum="false" BreakLatinWord="KeepWord" BreakNonLatinWord="false" Condense="0" FontLineHeight="false" HeadingType="None" Id="30" KeepLines="false" KeepWithNext="false" Level="0" LineWrap="Break" PageBreakBefore="false" SnapToGrid="false" TabDef="0" VerAlign="Baseline" WidowOrphan="false">
+<PARAMARGIN Indent="0" Left="0" LineSpacing="300" LineSpacingType="Percent" Next="0" Prev="0" Right="0"/>
+<PARABORDER BorderFill="2" Connect="false" IgnoreMargin="false"/>
+</PARASHAPE>
+<PARASHAPE Align="Justify" AutoSpaceEAsianEng="false" AutoSpaceEAsianNum="false" BreakLatinWord="KeepWord" BreakNonLatinWord="true" Condense="0" FontLineHeight="false" HeadingType="None" Id="31" KeepLines="false" KeepWithNext="false" Level="0" LineWrap="Break" PageBreakBefore="false" SnapToGrid="false" TabDef="0" VerAlign="Baseline" WidowOrphan="false">
+<PARAMARGIN Indent="-3664" Left="0" LineSpacing="150" LineSpacingType="Percent" Next="0" Prev="0" Right="0"/>
+<PARABORDER BorderFill="2" Connect="false" IgnoreMargin="false"/>
+</PARASHAPE>
+<PARASHAPE Align="Justify" AutoSpaceEAsianEng="false" AutoSpaceEAsianNum="false" BreakLatinWord="KeepWord" BreakNonLatinWord="true" Condense="0" FontLineHeight="false" HeadingType="None" Id="32" KeepLines="false" KeepWithNext="false" Level="0" LineWrap="Break" PageBreakBefore="false" SnapToGrid="false" TabDef="0" VerAlign="Baseline" WidowOrphan="false">
+<PARAMARGIN Indent="-3000" Left="0" LineSpacing="150" LineSpacingType="Percent" Next="0" Prev="0" Right="0"/>
+<PARABORDER BorderFill="2" Connect="false" IgnoreMargin="false"/>
+</PARASHAPE>
+<PARASHAPE Align="Justify" AutoSpaceEAsianEng="false" AutoSpaceEAsianNum="false" BreakLatinWord="KeepWord" BreakNonLatinWord="true" Condense="20" FontLineHeight="false" HeadingType="None" Id="33" KeepLines="false" KeepWithNext="false" Level="0" LineWrap="Break" PageBreakBefore="false" SnapToGrid="false" TabDef="0" VerAlign="Baseline" WidowOrphan="false">
+<PARAMARGIN Indent="0" Left="3504" LineSpacing="165" LineSpacingType="Percent" Next="848" Prev="848" Right="3504"/>
+<PARABORDER BorderFill="1" Connect="false" IgnoreMargin="false"/>
+</PARASHAPE>
+<PARASHAPE Align="Center" AutoSpaceEAsianEng="false" AutoSpaceEAsianNum="false" BreakLatinWord="KeepWord" BreakNonLatinWord="false" Condense="0" FontLineHeight="false" HeadingType="None" Id="34" KeepLines="false" KeepWithNext="false" Level="0" LineWrap="Break" PageBreakBefore="false" SnapToGrid="false" TabDef="0" VerAlign="Baseline" WidowOrphan="false">
+<PARAMARGIN Indent="0" Left="0" LineSpacing="150" LineSpacingType="Percent" Next="0" Prev="0" Right="0"/>
+<PARABORDER BorderFill="2" Connect="false" IgnoreMargin="false"/>
+</PARASHAPE>
+<PARASHAPE Align="Justify" AutoSpaceEAsianEng="false" AutoSpaceEAsianNum="false" BreakLatinWord="KeepWord" BreakNonLatinWord="true" Condense="0" FontLineHeight="false" HeadingType="None" Id="35" KeepLines="false" KeepWithNext="false" Level="0" LineWrap="Break" PageBreakBefore="false" SnapToGrid="false" TabDef="0" VerAlign="Baseline" WidowOrphan="false">
+<PARAMARGIN Indent="-1488" Left="2000" LineSpacing="160" LineSpacingType="Percent" Next="0" Prev="0" Right="0"/>
+<PARABORDER BorderFill="1" Connect="false" IgnoreMargin="false"/>
+</PARASHAPE>
+<PARASHAPE Align="Justify" AutoSpaceEAsianEng="false" AutoSpaceEAsianNum="false" BreakLatinWord="KeepWord" BreakNonLatinWord="true" Condense="0" FontLineHeight="false" HeadingType="None" Id="36" KeepLines="false" KeepWithNext="false" Level="0" LineWrap="Break" PageBreakBefore="false" SnapToGrid="false" TabDef="0" VerAlign="Baseline" WidowOrphan="false">
+<PARAMARGIN Indent="-1488" Left="4000" LineSpacing="160" LineSpacingType="Percent" Next="0" Prev="0" Right="0"/>
+<PARABORDER BorderFill="1" Connect="false" IgnoreMargin="false"/>
+</PARASHAPE>
+<PARASHAPE Align="Justify" AutoSpaceEAsianEng="false" AutoSpaceEAsianNum="false" BreakLatinWord="KeepWord" BreakNonLatinWord="true" Condense="0" FontLineHeight="false" HeadingType="None" Id="37" KeepLines="false" KeepWithNext="false" Level="0" LineWrap="Break" PageBreakBefore="false" SnapToGrid="false" TabDef="0" VerAlign="Baseline" WidowOrphan="false">
+<PARAMARGIN Indent="-1488" Left="6000" LineSpacing="160" LineSpacingType="Percent" Next="0" Prev="0" Right="0"/>
+<PARABORDER BorderFill="1" Connect="false" IgnoreMargin="false"/>
+</PARASHAPE>
+<PARASHAPE Align="Justify" AutoSpaceEAsianEng="false" AutoSpaceEAsianNum="false" BreakLatinWord="KeepWord" BreakNonLatinWord="true" Condense="0" FontLineHeight="false" HeadingType="None" Id="38" KeepLines="false" KeepWithNext="false" Level="0" LineWrap="Break" PageBreakBefore="false" SnapToGrid="false" TabDef="0" VerAlign="Baseline" WidowOrphan="false">
+<PARAMARGIN Indent="-1488" Left="8000" LineSpacing="160" LineSpacingType="Percent" Next="0" Prev="0" Right="0"/>
+<PARABORDER BorderFill="1" Connect="false" IgnoreMargin="false"/>
+</PARASHAPE>
+<PARASHAPE Align="Justify" AutoSpaceEAsianEng="false" AutoSpaceEAsianNum="false" BreakLatinWord="KeepWord" BreakNonLatinWord="true" Condense="0" FontLineHeight="false" HeadingType="None" Id="39" KeepLines="false" KeepWithNext="false" Level="0" LineWrap="Break" PageBreakBefore="false" SnapToGrid="false" TabDef="0" VerAlign="Baseline" WidowOrphan="false">
+<PARAMARGIN Indent="-1488" Left="10000" LineSpacing="160" LineSpacingType="Percent" Next="0" Prev="0" Right="0"/>
+<PARABORDER BorderFill="1" Connect="false" IgnoreMargin="false"/>
+</PARASHAPE>
+<PARASHAPE Align="Justify" AutoSpaceEAsianEng="false" AutoSpaceEAsianNum="false" BreakLatinWord="KeepWord" BreakNonLatinWord="true" Condense="0" FontLineHeight="false" HeadingType="None" Id="40" KeepLines="false" KeepWithNext="false" Level="0" LineWrap="Break" PageBreakBefore="false" SnapToGrid="false" TabDef="0" VerAlign="Baseline" WidowOrphan="false">
+<PARAMARGIN Indent="-1488" Left="12000" LineSpacing="160" LineSpacingType="Percent" Next="0" Prev="0" Right="0"/>
+<PARABORDER BorderFill="1" Connect="false" IgnoreMargin="false"/>
+</PARASHAPE>
+<PARASHAPE Align="Justify" AutoSpaceEAsianEng="false" AutoSpaceEAsianNum="false" BreakLatinWord="KeepWord" BreakNonLatinWord="true" Condense="0" FontLineHeight="false" HeadingType="None" Id="41" KeepLines="false" KeepWithNext="false" Level="0" LineWrap="Break" PageBreakBefore="false" SnapToGrid="false" TabDef="0" VerAlign="Baseline" WidowOrphan="false">
+<PARAMARGIN Indent="-2640" Left="0" LineSpacing="130" LineSpacingType="Percent" Next="0" Prev="0" Right="0"/>
+<PARABORDER BorderFill="1" Connect="false" IgnoreMargin="false"/>
+</PARASHAPE>
+<PARASHAPE Align="Justify" AutoSpaceEAsianEng="false" AutoSpaceEAsianNum="false" BreakLatinWord="KeepWord" BreakNonLatinWord="true" Condense="0" FontLineHeight="false" HeadingType="None" Id="42" KeepLines="false" KeepWithNext="false" Level="0" LineWrap="Break" PageBreakBefore="false" SnapToGrid="false" TabDef="7" VerAlign="Baseline" WidowOrphan="false">
+<PARAMARGIN Indent="0" Left="0" LineSpacing="160" LineSpacingType="Percent" Next="0" Prev="0" Right="0"/>
+<PARABORDER BorderFill="1" Connect="false" IgnoreMargin="false"/>
+</PARASHAPE>
+<PARASHAPE Align="Justify" AutoSpaceEAsianEng="false" AutoSpaceEAsianNum="false" BreakLatinWord="KeepWord" BreakNonLatinWord="true" Condense="0" FontLineHeight="false" HeadingType="None" Id="43" KeepLines="false" KeepWithNext="false" Level="0" LineWrap="Break" PageBreakBefore="false" SnapToGrid="false" TabDef="0" VerAlign="Baseline" WidowOrphan="false">
+<PARAMARGIN Indent="0" Left="3000" LineSpacing="160" LineSpacingType="Percent" Next="0" Prev="0" Right="0"/>
+<PARABORDER BorderFill="1" Connect="false" IgnoreMargin="false"/>
+</PARASHAPE>
+<PARASHAPE Align="Justify" AutoSpaceEAsianEng="false" AutoSpaceEAsianNum="false" BreakLatinWord="KeepWord" BreakNonLatinWord="true" Condense="0" FontLineHeight="false" HeadingType="None" Id="44" KeepLines="false" KeepWithNext="false" Level="0" LineWrap="Break" PageBreakBefore="false" SnapToGrid="false" TabDef="0" VerAlign="Baseline" WidowOrphan="false">
+<PARAMARGIN Indent="4000" Left="0" LineSpacing="171" LineSpacingType="Percent" Next="0" Prev="0" Right="0"/>
+<PARABORDER BorderFill="1" Connect="false" IgnoreMargin="false"/>
+</PARASHAPE>
+<PARASHAPE Align="Center" AutoSpaceEAsianEng="false" AutoSpaceEAsianNum="false" BreakLatinWord="KeepWord" BreakNonLatinWord="false" Condense="0" FontLineHeight="false" HeadingType="None" Id="45" KeepLines="false" KeepWithNext="false" Level="0" LineWrap="Break" PageBreakBefore="false" SnapToGrid="false" TabDef="0" VerAlign="Baseline" WidowOrphan="false">
+<PARAMARGIN Indent="0" Left="0" LineSpacing="165" LineSpacingType="Percent" Next="0" Prev="0" Right="0"/>
+<PARABORDER BorderFill="1" Connect="false" IgnoreMargin="false"/>
+</PARASHAPE>
+<PARASHAPE Align="Justify" AutoSpaceEAsianEng="false" AutoSpaceEAsianNum="false" BreakLatinWord="KeepWord" BreakNonLatinWord="true" Condense="0" FontLineHeight="false" HeadingType="None" Id="46" KeepLines="false" KeepWithNext="false" Level="0" LineWrap="Break" PageBreakBefore="false" SnapToGrid="false" TabDef="8" VerAlign="Baseline" WidowOrphan="false">
+<PARAMARGIN Indent="0" Left="1000" LineSpacing="230" LineSpacingType="Percent" Next="0" Prev="0" Right="0"/>
+<PARABORDER BorderFill="1" Connect="false" IgnoreMargin="false"/>
+</PARASHAPE>
+<PARASHAPE Align="Justify" AutoSpaceEAsianEng="false" AutoSpaceEAsianNum="false" BreakLatinWord="KeepWord" BreakNonLatinWord="true" Condense="0" FontLineHeight="false" HeadingType="None" Id="47" KeepLines="false" KeepWithNext="false" Level="0" LineWrap="Break" PageBreakBefore="false" SnapToGrid="false" TabDef="0" VerAlign="Baseline" WidowOrphan="false">
+<PARAMARGIN Indent="0" Left="0" LineSpacing="250" LineSpacingType="Percent" Next="0" Prev="0" Right="0"/>
+<PARABORDER BorderFill="1" Connect="false" IgnoreMargin="false"/>
+</PARASHAPE>
+<PARASHAPE Align="Justify" AutoSpaceEAsianEng="false" AutoSpaceEAsianNum="false" BreakLatinWord="KeepWord" BreakNonLatinWord="false" Condense="50" FontLineHeight="false" Heading="1" HeadingType="Bullet" Id="48" KeepLines="false" KeepWithNext="false" Level="0" LineWrap="Break" PageBreakBefore="false" SnapToGrid="false" TabDef="0" VerAlign="Baseline" WidowOrphan="false">
+<PARAMARGIN Indent="0" Left="1000" LineSpacing="180" LineSpacingType="Percent" Next="0" Prev="0" Right="600"/>
+<PARABORDER BorderFill="1" Connect="false" IgnoreMargin="false"/>
+</PARASHAPE>
+<PARASHAPE Align="Justify" AutoSpaceEAsianEng="false" AutoSpaceEAsianNum="false" BreakLatinWord="KeepWord" BreakNonLatinWord="true" Condense="0" FontLineHeight="false" HeadingType="None" Id="49" KeepLines="false" KeepWithNext="false" Level="0" LineWrap="Break" PageBreakBefore="false" SnapToGrid="false" TabDef="0" VerAlign="Baseline" WidowOrphan="false">
+<PARAMARGIN Indent="0" Left="0" LineSpacing="165" LineSpacingType="Percent" Next="0" Prev="0" Right="0"/>
+<PARABORDER BorderFill="1" Connect="false" IgnoreMargin="false"/>
+</PARASHAPE>
+<PARASHAPE Align="Justify" AutoSpaceEAsianEng="false" AutoSpaceEAsianNum="false" BreakLatinWord="KeepWord" BreakNonLatinWord="true" Condense="0" FontLineHeight="false" HeadingType="None" Id="50" KeepLines="false" KeepWithNext="false" Level="0" LineWrap="Break" PageBreakBefore="false" SnapToGrid="false" TabDef="0" VerAlign="Baseline" WidowOrphan="false">
+<PARAMARGIN Indent="3000" Left="1000" LineSpacing="165" LineSpacingType="Percent" Next="0" Prev="0" Right="1000"/>
+<PARABORDER BorderFill="1" Connect="false" IgnoreMargin="false"/>
+</PARASHAPE>
+<PARASHAPE Align="Justify" AutoSpaceEAsianEng="false" AutoSpaceEAsianNum="false" BreakLatinWord="KeepWord" BreakNonLatinWord="true" Condense="0" FontLineHeight="false" HeadingType="None" Id="51" KeepLines="false" KeepWithNext="false" Level="0" LineWrap="Break" PageBreakBefore="false" SnapToGrid="false" TabDef="9" VerAlign="Baseline" WidowOrphan="false">
+<PARAMARGIN Indent="0" Left="6000" LineSpacing="200" LineSpacingType="Percent" Next="0" Prev="0" Right="0"/>
+<PARABORDER BorderFill="1" Connect="false" IgnoreMargin="false"/>
+</PARASHAPE>
+<PARASHAPE Align="Right" AutoSpaceEAsianEng="false" AutoSpaceEAsianNum="false" BreakLatinWord="KeepWord" BreakNonLatinWord="false" Condense="0" FontLineHeight="false" HeadingType="None" Id="52" KeepLines="false" KeepWithNext="false" Level="0" LineWrap="Break" PageBreakBefore="false" SnapToGrid="false" TabDef="0" VerAlign="Baseline" WidowOrphan="false">
+<PARAMARGIN Indent="0" Left="0" LineSpacing="150" LineSpacingType="Percent" Next="0" Prev="0" Right="0"/>
+<PARABORDER BorderFill="2" Connect="false" IgnoreMargin="false"/>
+</PARASHAPE>
+<PARASHAPE Align="Center" AutoSpaceEAsianEng="false" AutoSpaceEAsianNum="false" BreakLatinWord="KeepWord" BreakNonLatinWord="false" Condense="0" FontLineHeight="false" HeadingType="None" Id="53" KeepLines="false" KeepWithNext="false" Level="0" LineWrap="Break" PageBreakBefore="false" SnapToGrid="false" TabDef="8" VerAlign="Baseline" WidowOrphan="false">
+<PARAMARGIN Indent="0" Left="0" LineSpacing="220" LineSpacingType="Percent" Next="0" Prev="0" Right="0"/>
+<PARABORDER BorderFill="1" Connect="false" IgnoreMargin="false"/>
+</PARASHAPE>
+<PARASHAPE Align="Justify" AutoSpaceEAsianEng="false" AutoSpaceEAsianNum="false" BreakLatinWord="KeepWord" BreakNonLatinWord="true" Condense="0" FontLineHeight="false" HeadingType="None" Id="54" KeepLines="false" KeepWithNext="false" Level="0" LineWrap="Break" PageBreakBefore="false" SnapToGrid="false" TabDef="10" VerAlign="Baseline" WidowOrphan="false">
+<PARAMARGIN Indent="0" Left="3000" LineSpacing="220" LineSpacingType="Percent" Next="0" Prev="0" Right="0"/>
+<PARABORDER BorderFill="1" Connect="false" IgnoreMargin="false"/>
+</PARASHAPE>
+<PARASHAPE Align="Left" AutoSpaceEAsianEng="false" AutoSpaceEAsianNum="false" BreakLatinWord="KeepWord" BreakNonLatinWord="false" Condense="0" FontLineHeight="false" HeadingType="None" Id="55" KeepLines="false" KeepWithNext="false" Level="0" LineWrap="Break" PageBreakBefore="false" SnapToGrid="false" TabDef="0" VerAlign="Baseline" WidowOrphan="false">
+<PARAMARGIN Indent="0" Left="1000" LineSpacing="180" LineSpacingType="Percent" Next="0" Prev="0" Right="0"/>
+<PARABORDER BorderFill="1" Connect="false" IgnoreMargin="false"/>
+</PARASHAPE>
+<PARASHAPE Align="Center" AutoSpaceEAsianEng="false" AutoSpaceEAsianNum="false" BreakLatinWord="KeepWord" BreakNonLatinWord="true" Condense="0" FontLineHeight="false" HeadingType="None" Id="56" KeepLines="false" KeepWithNext="false" Level="0" LineWrap="Break" PageBreakBefore="false" SnapToGrid="true" TabDef="0" VerAlign="Baseline" WidowOrphan="false">
+<PARAMARGIN Indent="0" Left="0" LineSpacing="160" LineSpacingType="Percent" Next="0" Prev="0" Right="0"/>
+<PARABORDER BorderFill="1" Connect="false" IgnoreMargin="false"/>
+</PARASHAPE>
+<PARASHAPE Align="DistributeSpace" AutoSpaceEAsianEng="false" AutoSpaceEAsianNum="false" BreakLatinWord="KeepWord" BreakNonLatinWord="true" Condense="0" FontLineHeight="false" HeadingType="None" Id="57" KeepLines="false" KeepWithNext="false" Level="0" LineWrap="Break" PageBreakBefore="false" SnapToGrid="false" TabDef="0" VerAlign="Baseline" WidowOrphan="false">
+<PARAMARGIN Indent="0" Left="0" LineSpacing="150" LineSpacingType="Percent" Next="0" Prev="0" Right="0"/>
+<PARABORDER BorderFill="2" Connect="false" IgnoreMargin="false"/>
+</PARASHAPE>
+<PARASHAPE Align="Left" AutoSpaceEAsianEng="false" AutoSpaceEAsianNum="false" BreakLatinWord="KeepWord" BreakNonLatinWord="true" Condense="0" FontLineHeight="false" HeadingType="None" Id="58" KeepLines="false" KeepWithNext="false" Level="0" LineWrap="Break" PageBreakBefore="false" SnapToGrid="true" TabDef="0" VerAlign="Baseline" WidowOrphan="false">
+<PARAMARGIN Indent="0" Left="0" LineSpacing="160" LineSpacingType="Percent" Next="0" Prev="0" Right="0"/>
+<PARABORDER BorderFill="1" Connect="false" IgnoreMargin="false"/>
+</PARASHAPE>
+<PARASHAPE Align="Right" AutoSpaceEAsianEng="false" AutoSpaceEAsianNum="false" BreakLatinWord="KeepWord" BreakNonLatinWord="true" Condense="0" FontLineHeight="false" HeadingType="None" Id="59" KeepLines="false" KeepWithNext="false" Level="0" LineWrap="Break" PageBreakBefore="false" SnapToGrid="true" TabDef="0" VerAlign="Baseline" WidowOrphan="false">
+<PARAMARGIN Indent="0" Left="0" LineSpacing="160" LineSpacingType="Percent" Next="0" Prev="0" Right="0"/>
+<PARABORDER BorderFill="1" Connect="false" IgnoreMargin="false"/>
+</PARASHAPE>
+<PARASHAPE Align="Center" AutoSpaceEAsianEng="false" AutoSpaceEAsianNum="false" BreakLatinWord="KeepWord" BreakNonLatinWord="false" Condense="0" FontLineHeight="false" HeadingType="None" Id="60" KeepLines="false" KeepWithNext="false" Level="0" LineWrap="Break" PageBreakBefore="false" SnapToGrid="false" TabDef="0" VerAlign="Baseline" WidowOrphan="false">
+<PARAMARGIN Indent="0" Left="0" LineSpacing="130" LineSpacingType="Percent" Next="0" Prev="0" Right="0"/>
+<PARABORDER BorderFill="2" Connect="false" IgnoreMargin="false"/>
+</PARASHAPE>
+<PARASHAPE Align="Justify" AutoSpaceEAsianEng="false" AutoSpaceEAsianNum="false" BreakLatinWord="KeepWord" BreakNonLatinWord="true" Condense="0" FontLineHeight="false" HeadingType="None" Id="61" KeepLines="false" KeepWithNext="false" Level="0" LineWrap="Break" PageBreakBefore="false" SnapToGrid="false" TabDef="13" VerAlign="Baseline" WidowOrphan="false">
+<PARAMARGIN Indent="6000" Left="1000" LineSpacing="171" LineSpacingType="Percent" Next="0" Prev="0" Right="0"/>
+<PARABORDER BorderFill="1" Connect="false" IgnoreMargin="false"/>
+</PARASHAPE>
+<PARASHAPE Align="Justify" AutoSpaceEAsianEng="false" AutoSpaceEAsianNum="false" BreakLatinWord="KeepWord" BreakNonLatinWord="true" Condense="20" FontLineHeight="false" HeadingType="None" Id="62" KeepLines="false" KeepWithNext="false" Level="0" LineWrap="Break" PageBreakBefore="false" SnapToGrid="false" TabDef="0" VerAlign="Baseline" WidowOrphan="false">
+<PARAMARGIN Indent="-4000" Left="0" LineSpacing="170" LineSpacingType="Percent" Next="600" Prev="400" Right="0"/>
+<PARABORDER BorderFill="1" Connect="false" IgnoreMargin="false"/>
+</PARASHAPE>
+<PARASHAPE Align="Justify" AutoSpaceEAsianEng="false" AutoSpaceEAsianNum="false" BreakLatinWord="KeepWord" BreakNonLatinWord="true" Condense="0" FontLineHeight="false" HeadingType="None" Id="63" KeepLines="false" KeepWithNext="false" Level="0" LineWrap="Break" PageBreakBefore="false" SnapToGrid="false" TabDef="0" VerAlign="Baseline" WidowOrphan="false">
+<PARAMARGIN Indent="-6000" Left="0" LineSpacing="150" LineSpacingType="Percent" Next="0" Prev="0" Right="0"/>
+<PARABORDER BorderFill="2" Connect="false" IgnoreMargin="false"/>
+</PARASHAPE>
+<PARASHAPE Align="Justify" AutoSpaceEAsianEng="false" AutoSpaceEAsianNum="false" BreakLatinWord="KeepWord" BreakNonLatinWord="true" Condense="0" FontLineHeight="false" HeadingType="None" Id="64" KeepLines="false" KeepWithNext="false" Level="0" LineWrap="Break" PageBreakBefore="false" SnapToGrid="false" TabDef="0" VerAlign="Baseline" WidowOrphan="false">
+<PARAMARGIN Indent="-9024" Left="0" LineSpacing="150" LineSpacingType="Percent" Next="0" Prev="0" Right="0"/>
+<PARABORDER BorderFill="2" Connect="false" IgnoreMargin="false"/>
+</PARASHAPE>
+<PARASHAPE Align="Justify" AutoSpaceEAsianEng="false" AutoSpaceEAsianNum="false" BreakLatinWord="KeepWord" BreakNonLatinWord="true" Condense="0" FontLineHeight="false" HeadingType="None" Id="65" KeepLines="false" KeepWithNext="false" Level="0" LineWrap="Break" PageBreakBefore="false" SnapToGrid="false" TabDef="0" VerAlign="Baseline" WidowOrphan="false">
+<PARAMARGIN Indent="-9092" Left="0" LineSpacing="150" LineSpacingType="Percent" Next="0" Prev="0" Right="0"/>
+<PARABORDER BorderFill="2" Connect="false" IgnoreMargin="false"/>
+</PARASHAPE>
+<PARASHAPE Align="Justify" AutoSpaceEAsianEng="false" AutoSpaceEAsianNum="false" BreakLatinWord="KeepWord" BreakNonLatinWord="true" Condense="0" FontLineHeight="false" HeadingType="None" Id="66" KeepLines="false" KeepWithNext="false" Level="0" LineWrap="Break" PageBreakBefore="false" SnapToGrid="false" TabDef="0" VerAlign="Baseline" WidowOrphan="false">
+<PARAMARGIN Indent="-10326" Left="0" LineSpacing="150" LineSpacingType="Percent" Next="0" Prev="0" Right="0"/>
+<PARABORDER BorderFill="2" Connect="false" IgnoreMargin="false"/>
+</PARASHAPE>
+<PARASHAPE Align="Justify" AutoSpaceEAsianEng="false" AutoSpaceEAsianNum="false" BreakLatinWord="KeepWord" BreakNonLatinWord="true" Condense="0" FontLineHeight="false" HeadingType="None" Id="67" KeepLines="false" KeepWithNext="false" Level="0" LineWrap="Break" PageBreakBefore="false" SnapToGrid="false" TabDef="0" VerAlign="Baseline" WidowOrphan="false">
+<PARAMARGIN Indent="-10000" Left="0" LineSpacing="150" LineSpacingType="Percent" Next="0" Prev="0" Right="0"/>
+<PARABORDER BorderFill="2" Connect="false" IgnoreMargin="false"/>
+</PARASHAPE>
+<PARASHAPE Align="Justify" AutoSpaceEAsianEng="false" AutoSpaceEAsianNum="false" BreakLatinWord="KeepWord" BreakNonLatinWord="true" Condense="0" FontLineHeight="false" HeadingType="None" Id="68" KeepLines="false" KeepWithNext="false" Level="0" LineWrap="Break" PageBreakBefore="false" SnapToGrid="false" TabDef="0" VerAlign="Baseline" WidowOrphan="false">
+<PARAMARGIN Indent="-9660" Left="0" LineSpacing="150" LineSpacingType="Percent" Next="0" Prev="0" Right="0"/>
+<PARABORDER BorderFill="2" Connect="false" IgnoreMargin="false"/>
+</PARASHAPE>
+<PARASHAPE Align="Justify" AutoSpaceEAsianEng="false" AutoSpaceEAsianNum="false" BreakLatinWord="KeepWord" BreakNonLatinWord="true" Condense="0" FontLineHeight="false" HeadingType="None" Id="69" KeepLines="false" KeepWithNext="false" Level="0" LineWrap="Break" PageBreakBefore="false" SnapToGrid="false" TabDef="0" VerAlign="Baseline" WidowOrphan="false">
+<PARAMARGIN Indent="-9380" Left="0" LineSpacing="150" LineSpacingType="Percent" Next="0" Prev="0" Right="0"/>
+<PARABORDER BorderFill="2" Connect="false" IgnoreMargin="false"/>
+</PARASHAPE>
+<PARASHAPE Align="Justify" AutoSpaceEAsianEng="false" AutoSpaceEAsianNum="false" BreakLatinWord="KeepWord" BreakNonLatinWord="true" Condense="0" FontLineHeight="false" HeadingType="None" Id="70" KeepLines="false" KeepWithNext="false" Level="0" LineWrap="Break" PageBreakBefore="false" SnapToGrid="false" TabDef="0" VerAlign="Baseline" WidowOrphan="false">
+<PARAMARGIN Indent="-8664" Left="0" LineSpacing="150" LineSpacingType="Percent" Next="0" Prev="0" Right="0"/>
+<PARABORDER BorderFill="2" Connect="false" IgnoreMargin="false"/>
+</PARASHAPE>
+<PARASHAPE Align="Justify" AutoSpaceEAsianEng="false" AutoSpaceEAsianNum="false" BreakLatinWord="KeepWord" BreakNonLatinWord="true" Condense="0" FontLineHeight="false" HeadingType="None" Id="71" KeepLines="false" KeepWithNext="false" Level="0" LineWrap="Break" PageBreakBefore="false" SnapToGrid="false" TabDef="0" VerAlign="Baseline" WidowOrphan="false">
+<PARAMARGIN Indent="-5664" Left="0" LineSpacing="150" LineSpacingType="Percent" Next="0" Prev="0" Right="0"/>
+<PARABORDER BorderFill="2" Connect="false" IgnoreMargin="false"/>
+</PARASHAPE>
+<PARASHAPE Align="Justify" AutoSpaceEAsianEng="false" AutoSpaceEAsianNum="false" BreakLatinWord="KeepWord" BreakNonLatinWord="true" Condense="0" FontLineHeight="false" HeadingType="None" Id="72" KeepLines="false" KeepWithNext="false" Level="0" LineWrap="Break" PageBreakBefore="false" SnapToGrid="false" TabDef="0" VerAlign="Baseline" WidowOrphan="false">
+<PARAMARGIN Indent="-9028" Left="0" LineSpacing="150" LineSpacingType="Percent" Next="0" Prev="0" Right="0"/>
+<PARABORDER BorderFill="2" Connect="false" IgnoreMargin="false"/>
+</PARASHAPE>
+<PARASHAPE Align="Justify" AutoSpaceEAsianEng="false" AutoSpaceEAsianNum="false" BreakLatinWord="KeepWord" BreakNonLatinWord="true" Condense="0" FontLineHeight="false" HeadingType="None" Id="73" KeepLines="false" KeepWithNext="false" Level="0" LineWrap="Break" PageBreakBefore="false" SnapToGrid="false" TabDef="0" VerAlign="Baseline" WidowOrphan="false">
+<PARAMARGIN Indent="-2664" Left="0" LineSpacing="150" LineSpacingType="Percent" Next="0" Prev="0" Right="0"/>
+<PARABORDER BorderFill="2" Connect="false" IgnoreMargin="false"/>
+</PARASHAPE>
+<PARASHAPE Align="Justify" AutoSpaceEAsianEng="false" AutoSpaceEAsianNum="false" BreakLatinWord="KeepWord" BreakNonLatinWord="true" Condense="0" FontLineHeight="false" HeadingType="None" Id="74" KeepLines="false" KeepWithNext="false" Level="0" LineWrap="Break" PageBreakBefore="false" SnapToGrid="false" TabDef="0" VerAlign="Baseline" WidowOrphan="false">
+<PARAMARGIN Indent="-9664" Left="0" LineSpacing="150" LineSpacingType="Percent" Next="0" Prev="0" Right="0"/>
+<PARABORDER BorderFill="2" Connect="false" IgnoreMargin="false"/>
+</PARASHAPE>
+<PARASHAPE Align="Justify" AutoSpaceEAsianEng="false" AutoSpaceEAsianNum="false" BreakLatinWord="KeepWord" BreakNonLatinWord="true" Condense="0" FontLineHeight="false" HeadingType="None" Id="75" KeepLines="false" KeepWithNext="false" Level="0" LineWrap="Break" PageBreakBefore="false" SnapToGrid="false" TabDef="0" VerAlign="Baseline" WidowOrphan="false">
+<PARAMARGIN Indent="-6664" Left="0" LineSpacing="150" LineSpacingType="Percent" Next="0" Prev="0" Right="0"/>
+<PARABORDER BorderFill="2" Connect="false" IgnoreMargin="false"/>
+</PARASHAPE>
+<PARASHAPE Align="Justify" AutoSpaceEAsianEng="false" AutoSpaceEAsianNum="false" BreakLatinWord="KeepWord" BreakNonLatinWord="true" Condense="0" FontLineHeight="false" HeadingType="None" Id="76" KeepLines="false" KeepWithNext="false" Level="0" LineWrap="Break" PageBreakBefore="false" SnapToGrid="false" TabDef="0" VerAlign="Baseline" WidowOrphan="false">
+<PARAMARGIN Indent="-11664" Left="0" LineSpacing="150" LineSpacingType="Percent" Next="0" Prev="0" Right="0"/>
+<PARABORDER BorderFill="2" Connect="false" IgnoreMargin="false"/>
+</PARASHAPE>
+<PARASHAPE Align="Justify" AutoSpaceEAsianEng="false" AutoSpaceEAsianNum="false" BreakLatinWord="KeepWord" BreakNonLatinWord="true" Condense="0" FontLineHeight="false" HeadingType="None" Id="77" KeepLines="false" KeepWithNext="false" Level="0" LineWrap="Break" PageBreakBefore="false" SnapToGrid="false" TabDef="0" VerAlign="Baseline" WidowOrphan="false">
+<PARAMARGIN Indent="-7664" Left="0" LineSpacing="150" LineSpacingType="Percent" Next="0" Prev="0" Right="0"/>
+<PARABORDER BorderFill="2" Connect="false" IgnoreMargin="false"/>
+</PARASHAPE>
+<PARASHAPE Align="Justify" AutoSpaceEAsianEng="false" AutoSpaceEAsianNum="false" BreakLatinWord="KeepWord" BreakNonLatinWord="true" Condense="0" FontLineHeight="false" HeadingType="None" Id="78" KeepLines="false" KeepWithNext="false" Level="0" LineWrap="Break" PageBreakBefore="false" SnapToGrid="false" TabDef="0" VerAlign="Baseline" WidowOrphan="false">
+<PARAMARGIN Indent="-5000" Left="0" LineSpacing="150" LineSpacingType="Percent" Next="0" Prev="0" Right="0"/>
+<PARABORDER BorderFill="2" Connect="false" IgnoreMargin="false"/>
+</PARASHAPE>
+<PARASHAPE Align="Justify" AutoSpaceEAsianEng="false" AutoSpaceEAsianNum="false" BreakLatinWord="KeepWord" BreakNonLatinWord="true" Condense="0" FontLineHeight="false" HeadingType="None" Id="79" KeepLines="false" KeepWithNext="false" Level="0" LineWrap="Break" PageBreakBefore="false" SnapToGrid="false" TabDef="0" VerAlign="Baseline" WidowOrphan="false">
+<PARAMARGIN Indent="-4664" Left="0" LineSpacing="150" LineSpacingType="Percent" Next="0" Prev="0" Right="0"/>
+<PARABORDER BorderFill="2" Connect="false" IgnoreMargin="false"/>
+</PARASHAPE>
+<PARASHAPE Align="Center" AutoSpaceEAsianEng="false" AutoSpaceEAsianNum="false" BreakLatinWord="KeepWord" BreakNonLatinWord="false" Condense="20" FontLineHeight="false" HeadingType="None" Id="80" KeepLines="false" KeepWithNext="false" Level="0" LineWrap="Break" PageBreakBefore="false" SnapToGrid="false" TabDef="11" VerAlign="Baseline" WidowOrphan="false">
+<PARAMARGIN Indent="0" Left="0" LineSpacing="130" LineSpacingType="Percent" Next="0" Prev="0" Right="0"/>
+<PARABORDER BorderFill="2" Connect="false" IgnoreMargin="false"/>
+</PARASHAPE>
+<PARASHAPE Align="Justify" AutoSpaceEAsianEng="false" AutoSpaceEAsianNum="false" BreakLatinWord="KeepWord" BreakNonLatinWord="true" Condense="20" FontLineHeight="false" HeadingType="None" Id="81" KeepLines="false" KeepWithNext="false" Level="0" LineWrap="Break" PageBreakBefore="false" SnapToGrid="false" TabDef="0" VerAlign="Baseline" WidowOrphan="false">
+<PARAMARGIN Indent="-1000" Left="0" LineSpacing="130" LineSpacingType="Percent" Next="848" Prev="848" Right="1288"/>
+<PARABORDER BorderFill="2" Connect="false" IgnoreMargin="false"/>
+</PARASHAPE>
+<PARASHAPE Align="Center" AutoSpaceEAsianEng="false" AutoSpaceEAsianNum="false" BreakLatinWord="KeepWord" BreakNonLatinWord="false" Condense="20" FontLineHeight="false" HeadingType="None" Id="82" KeepLines="false" KeepWithNext="false" Level="0" LineWrap="Break" PageBreakBefore="false" SnapToGrid="false" TabDef="12" VerAlign="Baseline" WidowOrphan="false">
+<PARAMARGIN Indent="0" Left="0" LineSpacing="130" LineSpacingType="Percent" Next="0" Prev="0" Right="0"/>
+<PARABORDER BorderFill="2" Connect="false" IgnoreMargin="false"/>
+</PARASHAPE>
+<PARASHAPE Align="Justify" AutoSpaceEAsianEng="false" AutoSpaceEAsianNum="false" BreakLatinWord="KeepWord" BreakNonLatinWord="true" Condense="20" FontLineHeight="false" HeadingType="None" Id="83" KeepLines="false" KeepWithNext="false" Level="0" LineWrap="Break" PageBreakBefore="false" SnapToGrid="false" TabDef="12" VerAlign="Baseline" WidowOrphan="false">
+<PARAMARGIN Indent="-1000" Left="0" LineSpacing="130" LineSpacingType="Percent" Next="848" Prev="848" Right="1288"/>
+<PARABORDER BorderFill="2" Connect="false" IgnoreMargin="false"/>
+</PARASHAPE>
+<PARASHAPE Align="Center" AutoSpaceEAsianEng="false" AutoSpaceEAsianNum="false" BreakLatinWord="KeepWord" BreakNonLatinWord="false" Condense="20" FontLineHeight="false" HeadingType="None" Id="84" KeepLines="false" KeepWithNext="false" Level="0" LineWrap="Break" PageBreakBefore="false" SnapToGrid="false" TabDef="5" VerAlign="Baseline" WidowOrphan="false">
+<PARAMARGIN Indent="0" Left="0" LineSpacing="130" LineSpacingType="Percent" Next="0" Prev="0" Right="0"/>
+<PARABORDER BorderFill="2" Connect="false" IgnoreMargin="false"/>
+</PARASHAPE>
+<PARASHAPE Align="Justify" AutoSpaceEAsianEng="false" AutoSpaceEAsianNum="false" BreakLatinWord="KeepWord" BreakNonLatinWord="true" Condense="0" FontLineHeight="false" HeadingType="None" Id="85" KeepLines="false" KeepWithNext="false" Level="0" LineWrap="Break" PageBreakBefore="false" SnapToGrid="false" TabDef="6" VerAlign="Baseline" WidowOrphan="false">
+<PARAMARGIN Indent="0" Left="0" LineSpacing="150" LineSpacingType="Percent" Next="0" Prev="0" Right="0"/>
+<PARABORDER BorderFill="2" Connect="false" IgnoreMargin="false"/>
+</PARASHAPE>
+<PARASHAPE Align="Justify" AutoSpaceEAsianEng="false" AutoSpaceEAsianNum="false" BreakLatinWord="KeepWord" BreakNonLatinWord="true" Condense="0" FontLineHeight="false" HeadingType="None" Id="86" KeepLines="false" KeepWithNext="false" Level="0" LineWrap="Break" PageBreakBefore="false" SnapToGrid="false" TabDef="0" VerAlign="Baseline" WidowOrphan="false">
+<PARAMARGIN Indent="0" Left="0" LineSpacing="150" LineSpacingType="Percent" Next="0" Prev="0" Right="0"/>
+<PARABORDER BorderFill="2" Connect="false" IgnoreMargin="false"/>
+</PARASHAPE></PARASHAPELIST>
+<STYLELIST Count="100">
+<STYLE CharShape="37" EngName="Normal" Id="0" LangId="1042" LockForm="0" Name="Normal" NextStyle="0" ParaShape="57" Type="Para"/>
+<STYLE CharShape="1" Id="1" LangId="1042" LockForm="0" Name="1.1" NextStyle="1" ParaShape="1" Type="Para"/>
+<STYLE CharShape="2" Id="2" LangId="1042" LockForm="0" Name="1)" NextStyle="2" ParaShape="2" Type="Para"/>
+<STYLE CharShape="2" Id="3" LangId="1042" LockForm="0" Name="(1)" NextStyle="3" ParaShape="3" Type="Para"/>
+<STYLE CharShape="2" Id="4" LangId="1042" LockForm="0" Name="여백9" NextStyle="4" ParaShape="27" Type="Para"/>
+<STYLE CharShape="9" Id="5" LangId="1042" LockForm="0" Name="여백12" NextStyle="5" ParaShape="5" Type="Para"/>
+<STYLE CharShape="2" Id="6" LangId="1042" LockForm="0" Name="여백14" NextStyle="6" ParaShape="6" Type="Para"/>
+<STYLE CharShape="10" Id="7" LangId="1042" LockForm="0" Name="동그라미1" NextStyle="7" ParaShape="4" Type="Para"/>
+<STYLE CharShape="17" Id="8" LangId="1042" LockForm="0" Name="." NextStyle="8" ParaShape="7" Type="Para"/>
+<STYLE CharShape="20" Id="9" LangId="1042" LockForm="0" Name="표제목" NextStyle="9" ParaShape="10" Type="Para"/>
+<STYLE CharShape="19" Id="10" LangId="1042" LockForm="0" Name="표" NextStyle="10" ParaShape="9" Type="Para"/>
+<STYLE CharShape="21" Id="11" LangId="1042" LockForm="0" Name="수식" NextStyle="11" ParaShape="0" Type="Para"/>
+<STYLE CharShape="18" Id="12" LangId="1042" LockForm="0" Name="중간제목" NextStyle="12" ParaShape="8" Type="Para"/>
+<STYLE CharShape="22" Id="13" LangId="1042" LockForm="0" Name="개요 1" NextStyle="13" ParaShape="0" Type="Para"/>
+<STYLE CharShape="18" Id="14" LangId="1042" LockForm="0" Name="작은제목" NextStyle="14" ParaShape="24" Type="Para"/>
+<STYLE CharShape="70" EngName="Page Number" Id="15" LangId="1042" LockForm="0" Name="쪽 번호" NextStyle="15" ParaShape="0" Type="Para"/>
+<STYLE CharShape="23" Id="16" LangId="1042" LockForm="0" Name="표1" NextStyle="16" ParaShape="12" Type="Para"/>
+<STYLE CharShape="25" Id="17" LangId="1042" LockForm="0" Name="0(1.1)" NextStyle="17" ParaShape="1" Type="Para"/>
+<STYLE CharShape="15" Id="18" LangId="1042" LockForm="0" Name="8+3(동그라미4)" NextStyle="18" ParaShape="13" Type="Para"/>
+<STYLE CharShape="15" Id="19" LangId="1042" LockForm="0" Name="2-2)" NextStyle="19" ParaShape="14" Type="Para"/>
+<STYLE CharShape="24" Id="20" LangId="1042" LockForm="0" Name="표주제1" NextStyle="20" ParaShape="11" Type="Para"/>
+<STYLE CharShape="3" Id="21" LangId="1042" LockForm="0" Name="표내용1" NextStyle="21" ParaShape="11" Type="Para"/>
+<STYLE CharShape="14" Id="22" LangId="1042" LockForm="0" Name="머리말(중고딕9)" NextStyle="22" ParaShape="15" Type="Para"/>
+<STYLE CharShape="5" Id="23" LangId="1042" LockForm="0" Name="선그리기" NextStyle="23" ParaShape="0" Type="Para"/>
+<STYLE CharShape="34" Id="24" LangId="1042" LockForm="0" Name="본문" NextStyle="24" ParaShape="33" Type="Para"/>
+<STYLE CharShape="11" Id="25" LangId="1042" LockForm="0" Name="개요 2" NextStyle="25" ParaShape="35" Type="Para"/>
+<STYLE CharShape="11" Id="26" LangId="1042" LockForm="0" Name="개요 3" NextStyle="26" ParaShape="36" Type="Para"/>
+<STYLE CharShape="11" Id="27" LangId="1042" LockForm="0" Name="개요 4" NextStyle="27" ParaShape="37" Type="Para"/>
+<STYLE CharShape="11" Id="28" LangId="1042" LockForm="0" Name="개요 5" NextStyle="28" ParaShape="38" Type="Para"/>
+<STYLE CharShape="11" Id="29" LangId="1042" LockForm="0" Name="개요 6" NextStyle="29" ParaShape="39" Type="Para"/>
+<STYLE CharShape="11" Id="30" LangId="1042" LockForm="0" Name="개요 7" NextStyle="30" ParaShape="40" Type="Para"/>
+<STYLE CharShape="14" Id="31" LangId="1042" LockForm="0" Name="머리말" NextStyle="31" ParaShape="28" Type="Para"/>
+<STYLE CharShape="36" Id="32" LangId="1042" LockForm="0" Name="각주" NextStyle="32" ParaShape="41" Type="Para"/>
+<STYLE CharShape="14" Id="33" LangId="1042" LockForm="0" Name="그림캡션" NextStyle="33" ParaShape="15" Type="Para"/>
+<STYLE CharShape="14" Id="34" LangId="1042" LockForm="0" Name="표캡션" NextStyle="34" ParaShape="15" Type="Para"/>
+<STYLE CharShape="14" Id="35" LangId="1042" LockForm="0" Name="수식캡션" NextStyle="35" ParaShape="15" Type="Para"/>
+<STYLE CharShape="35" Id="36" LangId="1042" LockForm="0" Name="찾아보기" NextStyle="36" ParaShape="42" Type="Para"/>
+<STYLE CharShape="11" Id="37" LangId="1042" LockForm="0" Name="본문(신명조10)" NextStyle="37" ParaShape="15" Type="Para"/>
+<STYLE CharShape="16" Id="38" LangId="1042" LockForm="0" Name="비즈폼" NextStyle="38" ParaShape="15" Type="Para"/>
+<STYLE CharShape="57" Id="39" LangId="1042" LockForm="0" Name="장제목" NextStyle="39" ParaShape="0" Type="Para"/>
+<STYLE CharShape="16" Id="40" LangId="1042" LockForm="0" Name="표내용" NextStyle="40" ParaShape="11" Type="Para"/>
+<STYLE CharShape="16" Id="41" LangId="1042" LockForm="0" Name="표 그림 캡션" NextStyle="41" ParaShape="45" Type="Para"/>
+<STYLE CharShape="44" Id="42" LangId="1042" LockForm="0" Name="#기본방향 내용 " NextStyle="42" ParaShape="48" Type="Para"/>
+<STYLE CharShape="16" Id="43" LangId="1042" LockForm="0" Name="표.그림" NextStyle="43" ParaShape="18" Type="Para"/>
+<STYLE CharShape="11" Id="44" LangId="1042" LockForm="0" Name="표 내용" NextStyle="44" ParaShape="49" Type="Para"/>
+<STYLE CharShape="38" Id="45" LangId="1042" LockForm="0" Name="표머리" NextStyle="45" ParaShape="45" Type="Para"/>
+<STYLE CharShape="16" Id="46" LangId="1042" LockForm="0" Name="용어정의" NextStyle="46" ParaShape="50" Type="Para"/>
+<STYLE CharShape="16" Id="47" LangId="1042" LockForm="0" Name="항목" NextStyle="47" ParaShape="43" Type="Para"/>
+<STYLE CharShape="58" Id="48" LangId="1042" LockForm="0" Name="표주제" NextStyle="48" ParaShape="11" Type="Para"/>
+<STYLE CharShape="56" Id="49" LangId="1042" LockForm="0" Name="중간제목(옛체20)" NextStyle="49" ParaShape="19" Type="Para"/>
+<STYLE CharShape="6" Id="50" LangId="1042" LockForm="0" Name="#1-1-1 숫자" NextStyle="50" ParaShape="16" Type="Para"/>
+<STYLE CharShape="7" Id="51" LangId="1042" LockForm="0" Name="#1-1-1" NextStyle="51" ParaShape="17" Type="Para"/>
+<STYLE CharShape="52" Id="52" LangId="1042" LockForm="0" Name="#1.1.1" NextStyle="52" ParaShape="55" Type="Para"/>
+<STYLE CharShape="45" Id="53" LangId="1042" LockForm="0" Name="원1" NextStyle="53" ParaShape="51" Type="Para"/>
+<STYLE CharShape="40" Id="54" LangId="1042" LockForm="0" Name="큰제목" NextStyle="54" ParaShape="47" Type="Para"/>
+<STYLE CharShape="47" Id="55" LangId="1042" LockForm="0" Name="소제목" NextStyle="55" ParaShape="15" Type="Para"/>
+<STYLE CharShape="46" Id="56" LangId="1042" LockForm="0" Name="표내부글자" NextStyle="56" ParaShape="15" Type="Para"/>
+<STYLE CharShape="49" Id="57" LangId="1042" LockForm="0" Name="1.1 바탕" NextStyle="57" ParaShape="44" Type="Para"/>
+<STYLE CharShape="39" Id="58" LangId="1042" LockForm="0" Name="둘째제목" NextStyle="58" ParaShape="46" Type="Para"/>
+<STYLE CharShape="51" Id="59" LangId="1042" LockForm="0" Name="세째제목" NextStyle="59" ParaShape="54" Type="Para"/>
+<STYLE CharShape="50" Id="60" LangId="1042" LockForm="0" Name="제목" NextStyle="60" ParaShape="53" Type="Para"/>
+<STYLE CharShape="16" Id="61" LangId="1042" LockForm="0" Name="제1조" NextStyle="61" ParaShape="9" Type="Para"/>
+<STYLE CharShape="53" Id="62" LangId="1042" LockForm="0" Name="1.1.1. 바탕" NextStyle="62" ParaShape="61" Type="Para"/>
+<STYLE CharShape="12" Id="63" LangId="1042" LockForm="0" Name="개정안 본문" NextStyle="63" ParaShape="62" Type="Para"/>
+<STYLE CharShape="54" Id="64" LangId="1042" LockForm="0" Name="1" NextStyle="64" ParaShape="22" Type="Para"/>
+<STYLE CharShape="59" EngName="xl90" Id="65" LangId="1042" LockForm="0" Name="xl90" NextStyle="65" ParaShape="56" Type="Para"/>
+<STYLE CharShape="61" EngName="xl35" Id="66" LangId="1042" LockForm="0" Name="xl35" NextStyle="66" ParaShape="58" Type="Para"/>
+<STYLE CharShape="55" EngName="xl94" Id="67" LangId="1042" LockForm="0" Name="xl94" NextStyle="67" ParaShape="58" Type="Para"/>
+<STYLE CharShape="65" EngName="xl97" Id="68" LangId="1042" LockForm="0" Name="xl97" NextStyle="68" ParaShape="58" Type="Para"/>
+<STYLE CharShape="55" EngName="xl61" Id="69" LangId="1042" LockForm="0" Name="xl61" NextStyle="69" ParaShape="58" Type="Para"/>
+<STYLE CharShape="65" EngName="xl52" Id="70" LangId="1042" LockForm="0" Name="xl52" NextStyle="70" ParaShape="58" Type="Para"/>
+<STYLE CharShape="65" EngName="xl49" Id="71" LangId="1042" LockForm="0" Name="xl49" NextStyle="71" ParaShape="58" Type="Para"/>
+<STYLE CharShape="55" EngName="xl28" Id="72" LangId="1042" LockForm="0" Name="xl28" NextStyle="72" ParaShape="23" Type="Para"/>
+<STYLE CharShape="55" EngName="xl70" Id="73" LangId="1042" LockForm="0" Name="xl70" NextStyle="73" ParaShape="58" Type="Para"/>
+<STYLE CharShape="65" EngName="xl55" Id="74" LangId="1042" LockForm="0" Name="xl55" NextStyle="74" ParaShape="23" Type="Para"/>
+<STYLE CharShape="55" EngName="xl58" Id="75" LangId="1042" LockForm="0" Name="xl58" NextStyle="75" ParaShape="56" Type="Para"/>
+<STYLE CharShape="65" EngName="xl64" Id="76" LangId="1042" LockForm="0" Name="xl64" NextStyle="76" ParaShape="58" Type="Para"/>
+<STYLE CharShape="55" EngName="xl67" Id="77" LangId="1042" LockForm="0" Name="xl67" NextStyle="77" ParaShape="56" Type="Para"/>
+<STYLE CharShape="55" EngName="xl29" Id="78" LangId="1042" LockForm="0" Name="xl29" NextStyle="78" ParaShape="23" Type="Para"/>
+<STYLE CharShape="55" EngName="xl30" Id="79" LangId="1042" LockForm="0" Name="xl30" NextStyle="79" ParaShape="23" Type="Para"/>
+<STYLE CharShape="65" EngName="xl81" Id="80" LangId="1042" LockForm="0" Name="xl81" NextStyle="80" ParaShape="58" Type="Para"/>
+<STYLE CharShape="55" EngName="xl107" Id="81" LangId="1042" LockForm="0" Name="xl107" NextStyle="81" ParaShape="56" Type="Para"/>
+<STYLE CharShape="65" EngName="xl63" Id="82" LangId="1042" LockForm="0" Name="xl63" NextStyle="82" ParaShape="58" Type="Para"/>
+<STYLE CharShape="55" EngName="xl103" Id="83" LangId="1042" LockForm="0" Name="xl103" NextStyle="83" ParaShape="58" Type="Para"/>
+<STYLE CharShape="65" EngName="xl87" Id="84" LangId="1042" LockForm="0" Name="xl87" NextStyle="84" ParaShape="58" Type="Para"/>
+<STYLE CharShape="55" EngName="xl78" Id="85" LangId="1042" LockForm="0" Name="xl78" NextStyle="85" ParaShape="56" Type="Para"/>
+<STYLE CharShape="65" EngName="xl84" Id="86" LangId="1042" LockForm="0" Name="xl84" NextStyle="86" ParaShape="58" Type="Para"/>
+<STYLE CharShape="66" EngName="xl101" Id="87" LangId="1042" LockForm="0" Name="xl101" NextStyle="87" ParaShape="58" Type="Para"/>
+<STYLE CharShape="55" EngName="xl45" Id="88" LangId="1042" LockForm="0" Name="xl45" NextStyle="88" ParaShape="56" Type="Para"/>
+<STYLE CharShape="55" EngName="xl47" Id="89" LangId="1042" LockForm="0" Name="xl47" NextStyle="89" ParaShape="56" Type="Para"/>
+<STYLE CharShape="67" EngName="xl43" Id="90" LangId="1042" LockForm="0" Name="xl43" NextStyle="90" ParaShape="56" Type="Para"/>
+<STYLE CharShape="55" EngName="xl48" Id="91" LangId="1042" LockForm="0" Name="xl48" NextStyle="91" ParaShape="23" Type="Para"/>
+<STYLE CharShape="67" EngName="xl34" Id="92" LangId="1042" LockForm="0" Name="xl34" NextStyle="92" ParaShape="56" Type="Para"/>
+<STYLE CharShape="68" EngName="xl36" Id="93" LangId="1042" LockForm="0" Name="xl36" NextStyle="93" ParaShape="56" Type="Para"/>
+<STYLE CharShape="69" EngName="xl42" Id="94" LangId="1042" LockForm="0" Name="xl42" NextStyle="94" ParaShape="56" Type="Para"/>
+<STYLE CharShape="67" EngName="xl40" Id="95" LangId="1042" LockForm="0" Name="xl40" NextStyle="95" ParaShape="56" Type="Para"/>
+<STYLE CharShape="69" EngName="xl44" Id="96" LangId="1042" LockForm="0" Name="xl44" NextStyle="96" ParaShape="23" Type="Para"/>
+<STYLE CharShape="67" EngName="xl41" Id="97" LangId="1042" LockForm="0" Name="xl41" NextStyle="97" ParaShape="56" Type="Para"/>
+<STYLE CharShape="68" EngName="xl37" Id="98" LangId="1042" LockForm="0" Name="xl37" NextStyle="98" ParaShape="56" Type="Para"/>
+<STYLE CharShape="68" EngName="xl38" Id="99" LangId="1042" LockForm="0" Name="xl38" NextStyle="99" ParaShape="59" Type="Para"/>
+</STYLELIST></MAPPINGTABLE>
+<COMPATIBLEDOCUMENT TargetProgram="None">
+<LAYOUTCOMPATIBILITY AdjustBaselineInFixedLinespacing="false" AdjustBaselineOfObjectToBottom="false" AdjustLineheightToFont="false" AdjustMarginFromAdjustLineheight="false" AdjustParaBorderOffsetWithBorder="false" AdjustParaBorderfillToSpacing="false" AdjustVertPosOfLine="false" ApplyAtLeastToPercent100Pct="false" ApplyCharSpacingToCharGrid="false" ApplyExtendHeaderFooterEachSection="false" ApplyFontWeightToBold="false" ApplyFontspaceToLatin="false" ApplyMinColumnWidthTo1mm="false" ApplyNextspacingOfLastPara="false" ApplyParaBorderToOutside="false" ApplyPrevspacingBeneathObject="false" ApplyTabPosBasedOnSegment="false" BaseCharUnitOfIndentOnFirstChar="false" BaseCharUnitOnEAsian="false" BaseLinespacingOnLinegrid="false" BreakTabOverLine="false" ConnectParaBorderfillOfEqualBorder="false" DoNotAdjustEmptyAnchorLine="false" DoNotAdjustWordInJustify="false" DoNotAlignLastForbidden="false" DoNotAlignLastPeriod="false" DoNotAlignWhitespaceOnRight="false" DoNotApplyAutoSpaceEAsianEng="false" DoNotApplyAutoSpaceEAsianNum="false" DoNotApplyColSeparatorAtNoGap="false" DoNotApplyExtensionCharCompose="false" DoNotApplyGridInHeaderFooter="false" DoNotApplyHeaderFooterAtNoSpace="false" DoNotApplyImageEffect="false" DoNotApplyLinegridAtNoLinespacing="false" DoNotApplyShapeComment="false" DoNotApplyStrikeoutWithUnderline="false" DoNotApplyVertOffsetOfForward="false" DoNotApplyWhiteSpaceHeight="false" DoNotFormattingAtBeneathAnchor="false" DoNotHoldAnchorOfTable="false" ExtendLineheightToOffset="false" ExtendLineheightToParaBorderOffset="false" ExtendVertLimitToPageMargins="false" FixedUnderlineWidth="false" OverlapBothAllowOverlap="false" TreatQuotationAsLatin="false" UseInnerUnderline="false" UseLowercaseStrikeout="false"/>
+</COMPATIBLEDOCUMENT></HEAD>
+<BODY>
+<SECTION Id="0">
+<P ColumnBreak="false" PageBreak="false" ParaShape="30" Style="1">
+<TEXT CharShape="71">
+<SECDEF CharGrid="0" FirstBorder="false" FirstFill="false" LineGrid="0" SpaceColumns="1134" TabStop="8000" TextDirection="0" TextVerticalWidthHead="0">
+<PARAMETERSET Count="1" SetId="539">
+<ITEM ItemId="537" Type="Set">
+<PARAMETERSET Count="3" SetId="537">
+<ITEM ItemId="614" Type="Set">
+<PARAMETERSET Count="15" SetId="614">
+<ITEM ItemId="16385" Type="Integer">4</ITEM>
+<ITEM ItemId="16386" Type="Integer">1</ITEM>
+<ITEM ItemId="16388" Type="Integer">50</ITEM>
+<ITEM ItemId="16389" Type="Integer">0</ITEM>
+<ITEM ItemId="16387" Type="Integer">0</ITEM>
+<ITEM ItemId="16390" Type="Integer">100</ITEM>
+<ITEM ItemId="16391" Type="Integer">2</ITEM>
+<ITEM ItemId="16394" Type="Integer">50</ITEM>
+<ITEM ItemId="16392" Type="Array">
+<PARAMETERARRAY Count="10">
+<ITEM Type="Integer">16711680</ITEM>
+<ITEM Type="Integer">0</ITEM>
+<ITEM Type="Integer">0</ITEM>
+<ITEM Type="Integer">0</ITEM>
+<ITEM Type="Integer">0</ITEM>
+<ITEM Type="Integer">0</ITEM>
+<ITEM Type="Integer">0</ITEM>
+<ITEM Type="Integer">0</ITEM>
+<ITEM Type="Integer">0</ITEM>
+<ITEM Type="Integer">0</ITEM></PARAMETERARRAY></ITEM>
+<ITEM ItemId="16393" Type="Array">
+<PARAMETERARRAY Count="10">
+<ITEM Type="Integer">0</ITEM>
+<ITEM Type="Integer">100</ITEM>
+<ITEM Type="Integer">0</ITEM>
+<ITEM Type="Integer">0</ITEM>
+<ITEM Type="Integer">0</ITEM>
+<ITEM Type="Integer">0</ITEM>
+<ITEM Type="Integer">0</ITEM>
+<ITEM Type="Integer">0</ITEM>
+<ITEM Type="Integer">0</ITEM>
+<ITEM Type="Integer">0</ITEM></PARAMETERARRAY></ITEM>
+<ITEM ItemId="16414" Type="BinData">0</ITEM>
+<ITEM ItemId="16420" Type="Integer">5</ITEM>
+<ITEM ItemId="16416" Type="Integer">0</ITEM>
+<ITEM ItemId="16418" Type="Integer">0</ITEM>
+<ITEM ItemId="16417" Type="Integer">0</ITEM></PARAMETERSET></ITEM>
+<ITEM ItemId="16384" Type="Integer">0</ITEM>
+<ITEM ItemId="16386" Type="Integer">1</ITEM></PARAMETERSET></ITEM></PARAMETERSET>
+<STARTNUMBER Equation="0" Figure="0" Page="0" PageStartsOn="Both" Table="0"/>
+<HIDE Border="false" EmptyLine="true" Fill="false" Footer="false" Header="false" MasterPage="false" PageNumPos="false"/>
+<PAGEDEF GutterType="LeftOnly" Height="84188" Landscape="0" Width="59528">
+<PAGEMARGIN Bottom="3400" Footer="3684" Gutter="0" Header="4252" Left="5668" Right="5668" Top="3400"/>
+</PAGEDEF>
+<FOOTNOTESHAPE>
+<AUTONUMFORMAT SuffixChar=")" Superscript="false" Type="Digit"/>
+<NOTELINE Length="5cm" Type="Solid" Width="0.12mm"/>
+<NOTESPACING AboveLine="852" BelowLine="568" BetweenNotes="284"/>
+<NOTENUMBERING NewNumber="1" Type="Continuous"/>
+<NOTEPLACEMENT BeneathText="false" Place="EachColumn"/>
+</FOOTNOTESHAPE>
+<ENDNOTESHAPE>
+<AUTONUMFORMAT SuffixChar=")" Superscript="false" Type="Digit"/>
+<NOTELINE Length="0" Type="None" Width="0.12mm"/>
+<NOTESPACING AboveLine="864" BelowLine="576" BetweenNotes="0"/>
+<NOTENUMBERING NewNumber="1" Type="Continuous"/>
+<NOTEPLACEMENT BeneathText="false" Place="EndOfDocument"/>
+</ENDNOTESHAPE>
+<PAGEBORDERFILL BorferFill="1" FillArea="Paper" FooterInside="false" HeaderInside="false" TextBorder="true" Type="Both">
+<PAGEOFFSET Bottom="1417" Left="1417" Right="1417" Top="1417"/>
+</PAGEBORDERFILL>
+<PAGEBORDERFILL BorferFill="1" FillArea="Paper" FooterInside="false" HeaderInside="false" TextBorder="true" Type="Even">
+<PAGEOFFSET Bottom="1417" Left="1417" Right="1417" Top="1417"/>
+</PAGEBORDERFILL>
+<PAGEBORDERFILL BorferFill="1" FillArea="Paper" FooterInside="false" HeaderInside="false" TextBorder="true" Type="Odd">
+<PAGEOFFSET Bottom="1417" Left="1417" Right="1417" Top="1417"/>
+</PAGEBORDERFILL></SECDEF>
+<COLDEF Count="1" Layout="Left" SameGap="0" SameSize="true" Type="Newspaper"/>
+<PAGENUM FormatType="Digit" Pos="None" SideChar="-"/>
+<HEADER ApplyPageType="Both" SeriesNum="3">
+<PARALIST HasNumRef="false" HasTextRef="false" LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" TextHeight="4252" TextWidth="48192" VertAlign="Top">
+<P ParaShape="25" Style="23">
+<TEXT CharShape="0">
+<TABLE BorderFill="3" CellSpacing="0" ColCount="3" PageBreak="Cell" RepeatHeader="true" RowCount="1">
+<SHAPEOBJECT InstId="2114344509" Lock="false" NumberingType="Table" ZOrder="2">
+<SIZE Height="1982" HeightRelTo="Absolute" Protect="false" Width="48117" WidthRelTo="Absolute"/>
+<POSITION AffectLSpacing="false" AllowOverlap="false" FlowWithText="true" HoldAnchorAndSO="false" HorzAlign="Left" HorzOffset="0" HorzRelTo="Column" TreatAsChar="true" VertAlign="Top" VertOffset="0" VertRelTo="Para"/>
+<OUTSIDEMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+</SHAPEOBJECT>
+<INSIDEMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+<ROW>
+<CELL BorderFill="9" ColAddr="0" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="1982" Protect="false" RowAddr="0" RowSpan="1" Width="16039">
+<CELLMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+<P ParaShape="29" Style="31">
+<TEXT CharShape="42">
+<CHAR>정기점검 보고서</CHAR></TEXT></P></PARALIST></CELL>
+<CELL BorderFill="9" ColAddr="1" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="1982" Protect="false" RowAddr="0" RowSpan="1" Width="16039">
+<CELLMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+<P ParaShape="20" Style="31">
+<TEXT CharShape="4"/>
+</P></PARALIST></CELL>
+<CELL BorderFill="9" ColAddr="2" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="1982" Protect="false" RowAddr="0" RowSpan="1" Width="16039">
+<CELLMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+<P ParaShape="21" Style="0">
+<TEXT CharShape="48">
+<CHAR>부  록</CHAR></TEXT></P></PARALIST></CELL></ROW></TABLE>
+<CHAR/>
+</TEXT></P></PARALIST></HEADER>
+<CHAR/>
+</TEXT></P>
+<P ParaShape="30" Style="1">
+<TEXT CharShape="41">
+<TABLE BorderFill="3" CellSpacing="0" ColCount="1" PageBreak="Cell" RepeatHeader="true" RowCount="1">
+<SHAPEOBJECT InstId="2114344501" Lock="false" NumberingType="Table" ZOrder="1">
+<SIZE Height="7693" HeightRelTo="Absolute" Protect="false" Width="38570" WidthRelTo="Absolute"/>
+<POSITION AffectLSpacing="false" AllowOverlap="false" FlowWithText="true" HoldAnchorAndSO="false" HorzAlign="Left" HorzOffset="0" HorzRelTo="Column" TreatAsChar="true" VertAlign="Top" VertOffset="0" VertRelTo="Para"/>
+<OUTSIDEMARGIN Bottom="140" Left="140" Right="140" Top="140"/>
+</SHAPEOBJECT>
+<INSIDEMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+<ROW>
+<CELL BorderFill="8" ColAddr="0" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="7693" Protect="false" RowAddr="0" RowSpan="1" Width="38570">
+<CELLMARGIN Bottom="141" Left="510" Right="510" Top="141"/>
+<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+<P ParaShape="11" Style="0">
+<TEXT CharShape="43">
+<CHAR>Ⅰ.   과업지시서</CHAR></TEXT></P></PARALIST></CELL></ROW></TABLE></TEXT>
+<TEXT CharShape="71">
+<FOOTER ApplyPageType="Both" SeriesNum="2">
+<PARALIST HasNumRef="false" HasTextRef="false" LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" TextHeight="3684" TextWidth="48192" VertAlign="Bottom">
+<P ParaShape="26" Style="0">
+<TEXT CharShape="13">
+<TABLE BorderFill="3" CellSpacing="0" ColCount="1" PageBreak="None" RepeatHeader="true" RowCount="1">
+<SHAPEOBJECT InstId="2114344511" Lock="false" NumberingType="Table" ZOrder="3">
+<SIZE Height="639" HeightRelTo="Absolute" Protect="false" Width="47788" WidthRelTo="Absolute"/>
+<POSITION AffectLSpacing="false" AllowOverlap="false" FlowWithText="true" HoldAnchorAndSO="false" HorzAlign="Left" HorzOffset="0" HorzRelTo="Column" TreatAsChar="true" VertAlign="Top" VertOffset="0" VertRelTo="Para"/>
+<OUTSIDEMARGIN Bottom="140" Left="140" Right="140" Top="140"/>
+</SHAPEOBJECT>
+<INSIDEMARGIN Bottom="140" Left="140" Right="140" Top="140"/>
+<ROW>
+<CELL BorderFill="12" ColAddr="0" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="639" Protect="false" RowAddr="0" RowSpan="1" Width="47788">
+<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+<P ParaShape="26" Style="0">
+<TEXT CharShape="74"/>
+</P></PARALIST></CELL></ROW></TABLE>
+<CHAR/>
+</TEXT></P>
+<P ParaShape="52" Style="0">
+<TEXT CharShape="8">
+<CHAR>(주)에 이 앤 비</CHAR></TEXT>
+<TEXT CharShape="13"/>
+</P>
+<P ParaShape="26" Style="0">
+<TEXT CharShape="13"/>
+</P></PARALIST></FOOTER>
+<CHAR/>
+</TEXT></P>
+<P ParaShape="30" Style="1">
+<TEXT CharShape="71">
+<NEWNUM Number="105" NumberType="Page"/>
+<CHAR/>
+</TEXT></P>
+<P ColumnBreak="false" PageBreak="true" ParaShape="34" Style="0">
+<TEXT CharShape="31">
+<CHAR>정기안전점검 과업지시서</CHAR></TEXT></P>
+<P ParaShape="86" Style="0">
+<TEXT CharShape="63"/>
+</P>
+<P ParaShape="86" Style="0">
+<TEXT CharShape="63">
+<CHAR>1. 일반조건</CHAR></TEXT></P>
+<P ParaShape="86" Style="0">
+<TEXT CharShape="63"/>
+</P>
+<P ParaShape="86" Style="0">
+<TEXT CharShape="26">
+<CHAR> </CHAR></TEXT>
+<TEXT CharShape="8">
+<CHAR>1.1 과업명 : </CHAR></TEXT>
+<TEXT CharShape="32">
+<CHAR>{{apt.Name}}</CHAR></TEXT>
+<TEXT CharShape="8">
+<CHAR> {{periodic.Name}} 용역</CHAR></TEXT></P>
+<P ParaShape="86" Style="0">
+<TEXT CharShape="27"/>
+</P>
+<P ParaShape="86" Style="0">
+<TEXT CharShape="8">
+<CHAR> 1.2 과업의 목적</CHAR></TEXT></P>
+<P ParaShape="78" Style="0">
+<TEXT CharShape="60">
+<CHAR>     본 과업은“시설물의 안전 및 유지관리에 관한 특별법”(이하 ”시설물안전법“ 이라한다.) 제11조(구6조) 및 동법 시행령 제8조(구6조)에 규정에 따른 정기안전점검으로서 시설물에 대한 물리적 기능적 결함을 조사하고 구조적 안전성 및 손상상태를 점검하여, 재해를 예방하고 시설물의 효용을 증진시켜 공공의 안전을 확보하는데 그 목적이 있다.</CHAR></TEXT></P>
+<P ParaShape="32" Style="0">
+<TEXT CharShape="60"/>
+</P>
+<P ParaShape="86" Style="0">
+<TEXT CharShape="8">
+<CHAR> 1.3 시설물 개요</CHAR></TEXT></P>
+<P ParaShape="86" Style="0">
+<TEXT CharShape="60">
+<CHAR>      1) 시  설  명 : </CHAR></TEXT>
+<TEXT CharShape="33">
+<CHAR>{{apt.Name}}</CHAR></TEXT></P>
+<P ParaShape="86" Style="0">
+<TEXT CharShape="60">
+<CHAR>      2) 위      치 : </CHAR></TEXT>
+<TEXT CharShape="33">
+<CHAR>{{apt.Position}}</CHAR></TEXT></P>
+<P ParaShape="86" Style="0">
+<TEXT CharShape="60">
+<CHAR>      3) 연  면  적 : </CHAR></TEXT>
+<TEXT CharShape="33">
+<CHAR>{{aptperiodic.Outline6}}</CHAR></TEXT>
+<TEXT CharShape="60">
+<CHAR>㎡</CHAR></TEXT></P>
+<P ParaShape="86" Style="0">
+<TEXT CharShape="60">
+<CHAR>      4) 구      조 : </CHAR></TEXT>
+<TEXT CharShape="33">
+<CHAR>{{if aptperiodic.Outline7 == 7}}{{aptperiodic.Outline7content}}{{else}}{{aptperiodic.Outline7|structure}}{{end}}</CHAR></TEXT></P>
+<P ParaShape="86" Style="0">
+<TEXT CharShape="60">
+<CHAR>      5) 층      수 : </CHAR></TEXT>
+<TEXT CharShape="33">
+<CHAR>{{floor}}</CHAR></TEXT></P>
+<P ParaShape="85" Style="0">
+<TEXT CharShape="60">
+<CHAR>      6) 용      도 : </CHAR></TEXT>
+<TEXT CharShape="72">
+<CHAR>{{if aptperiodic.Outline9 == 1}}공동주택(아파트){{end}}{{if aptperiodic.Outline9 == 2}}제 1종 근린생활시설{{end}}{{if aptperiodic.Outline9 == 3}}제 2종 근린생활시설{{end}}{{if aptperiodic.Outline9 == 4}}업무시설{{end}}{{if aptperiodic.Outline9 == 5}}{{aptperiodic.Outline9content}}{{end}}</CHAR></TEXT></P>
+<P ParaShape="86" Style="0">
+<TEXT CharShape="60">
+<CHAR>      7) 사용승인일 : </CHAR></TEXT>
+<TEXT CharShape="33">
+<CHAR>{{apt.Useapproval|humandate}}</CHAR></TEXT></P>
+<P ParaShape="86" Style="0">
+<TEXT CharShape="73"/>
+</P>
+<P ParaShape="86" Style="0">
+<TEXT CharShape="8">
+<CHAR> 1.4 적용 법규</CHAR></TEXT></P>
+<P ParaShape="86" Style="0">
+<TEXT CharShape="60">
+<CHAR>    (1) 시설물의 안전 및 유지관리에 관한 특별법</CHAR></TEXT></P>
+<P ParaShape="86" Style="0">
+<TEXT CharShape="60">
+<CHAR>    (2) 시설물의 안전점검 및 정밀안전진단 지침 (이하 “지침”이라 한다.)</CHAR></TEXT></P>
+<P ParaShape="86" Style="0">
+<TEXT CharShape="60">
+<CHAR>    (3) 시설물의 안전점검 및 정밀안전진단 세부지침(국토교통부ㆍ한국시설안전공단,</CHAR></TEXT></P>
+<P ParaShape="86" Style="0">
+<TEXT CharShape="60">
+<CHAR>        이하“세부지침”이라 한다.)</CHAR></TEXT></P>
+<P ParaShape="86" Style="0">
+<TEXT CharShape="60">
+<CHAR>    (4) 안전점검 및 정밀안전진단 대가(비용 산정)기준(이하 “대가기준”이라 한다.)</CHAR></TEXT></P>
+<P ParaShape="86" Style="0">
+<TEXT CharShape="60">
+<CHAR>    (5) 기타 관련법규</CHAR></TEXT></P>
+<P ParaShape="86" Style="0">
+<TEXT CharShape="60"/>
+</P>
+<P ParaShape="86" Style="0">
+<TEXT CharShape="8">
+<CHAR> 1.5 과업 내용</CHAR></TEXT></P>
+<P ParaShape="86" Style="0">
+<TEXT CharShape="60">
+<CHAR>     [안전점검]</CHAR></TEXT></P>
+<P ParaShape="86" Style="0">
+<TEXT CharShape="60">
+<CHAR>     1) 자료수집 및 분석                       2) 현장조사 및 시험(필요 시)</CHAR></TEXT></P>
+<P ParaShape="86" Style="0">
+<TEXT CharShape="60">
+<CHAR>     3) 보수·보강방법(선택과업이 있을 경우)      4) 보고서 작성</CHAR></TEXT></P>
+<P ParaShape="86" Style="0">
+<TEXT CharShape="8"/>
+</P>
+<P ParaShape="86" Style="0">
+<TEXT CharShape="8">
+<CHAR> 1.6 과업수행기간</CHAR></TEXT></P>
+<P ParaShape="86" Style="0">
+<TEXT CharShape="60">
+<CHAR>     (1) 수행기간 : 착수일로부터 </CHAR></TEXT>
+<TEXT CharShape="28">
+<CHAR> 7 </CHAR></TEXT>
+<TEXT CharShape="60">
+<CHAR>일 까지로 한다.</CHAR></TEXT></P>
+<P ParaShape="86" Style="0">
+<TEXT CharShape="60">
+<CHAR>     (2) 다음에 한하여 과업 수행기간을 조정할 수 있다.</CHAR></TEXT></P>
+<P ParaShape="86" Style="0">
+<TEXT CharShape="60">
+<CHAR>        - 천재지변으로 인하여 과업시행이 불가능해 졌을 경우</CHAR></TEXT></P>
+<P ParaShape="86" Style="0">
+<TEXT CharShape="60">
+<CHAR>        - 관리주체의 요청으로 공기연장이 불가피 할 경우</CHAR></TEXT></P>
+<P ParaShape="86" Style="0">
+<TEXT CharShape="60"/>
+</P>
+<P ParaShape="86" Style="0">
+<TEXT CharShape="8">
+<CHAR> 1.7 설계변경 조건</CHAR></TEXT></P>
+<P ParaShape="86" Style="0">
+<TEXT CharShape="60">
+<CHAR>     계약 상대자는 다음의 경우 감독원과 협의하여 변경할 수 있다.</CHAR></TEXT></P>
+<P ParaShape="86" Style="0">
+<TEXT CharShape="60">
+<CHAR>     (1) 계약내용 중 선택과업의 이행 수량에 따른 변경 시</CHAR></TEXT></P>
+<P ParaShape="86" Style="0">
+<TEXT CharShape="60"/>
+</P>
+<P ParaShape="86" Style="0">
+<TEXT CharShape="8">
+<CHAR> 1.8 업무의 사전 협의 등</CHAR></TEXT></P>
+<P ParaShape="63" Style="0">
+<TEXT CharShape="60">
+<CHAR>     </CHAR></TEXT>
+<TEXT CharShape="75">
+<CHAR>계약 상대자는 다음 사항에 대하여는 사전에 감독원의 승인 또는 협의 후 과업을 수행하여야 한다</CHAR></TEXT>
+<TEXT CharShape="60">
+<CHAR>.</CHAR></TEXT></P>
+<P ParaShape="86" Style="0">
+<TEXT CharShape="60">
+<CHAR>     (1) 과업수행계획서 및 착수신고서의 내용변경</CHAR></TEXT></P>
+<P ParaShape="86" Style="0">
+<TEXT CharShape="60">
+<CHAR>     (2) 기본계획을 포함한 주요내용 및 방침의 설정 또는 변경</CHAR></TEXT></P>
+<P ParaShape="86" Style="0">
+<TEXT CharShape="60">
+<CHAR>     (3) 기타 감독원의 지시나 계약상대자의 판단에 따라 승인 받아야 할 사항</CHAR></TEXT></P>
+<P ParaShape="86" Style="0">
+<TEXT CharShape="60"/>
+</P>
+<P ParaShape="86" Style="0">
+<TEXT CharShape="8">
+<CHAR> 1.9 과업 일반사항</CHAR></TEXT></P>
+<P ParaShape="86" Style="0">
+<TEXT CharShape="60">
+<CHAR>     (1) 착수계 제출</CHAR></TEXT></P>
+<P ParaShape="86" Style="0">
+<TEXT CharShape="60">
+<CHAR>        계약상대자는 과업 착수 시 제출할 서류는 다음 각호와 같다.</CHAR></TEXT></P>
+<P ParaShape="86" Style="0">
+<TEXT CharShape="60">
+<CHAR>         - 착수계                              - 용역수행세부계획서</CHAR></TEXT></P>
+<P ParaShape="86" Style="0">
+<TEXT CharShape="60">
+<CHAR>         - 인력(장비)투입계획서                 - 안전관리 조직표</CHAR></TEXT></P>
+<P ParaShape="86" Style="0">
+<TEXT CharShape="60">
+<CHAR>         - 참여기술자 편성현황(현장대리인계)    - 보안각서</CHAR></TEXT></P>
+<P ParaShape="64" Style="0">
+<TEXT CharShape="60">
+<CHAR>     (2) 착수계는 계약일로부터 </CHAR></TEXT>
+<TEXT CharShape="28">
+<CHAR> 7 </CHAR></TEXT>
+<TEXT CharShape="60">
+<CHAR>일 이내에 제출하여야 하며, 착수신고 서류 2부를 작성하여 감독원에게 제출하여 승인을 받아야 하며 용역수행에 대한 상세계획을 설명하여야 한다.</CHAR></TEXT></P>
+<P ParaShape="65" Style="0">
+<TEXT CharShape="60">
+<CHAR>     (3) 계약상대자는 과업 수행 중 외업 진단 시 필요시 다음 사항을 포함한 일보 또는 주보를 작성하여 감독원에게 제출하여야 한다.</CHAR></TEXT></P>
+<P ParaShape="86" Style="0">
+<TEXT CharShape="60">
+<CHAR>         - 기상상황                            - 진단 부재와 위치 등</CHAR></TEXT></P>
+<P ParaShape="86" Style="0">
+<TEXT CharShape="60">
+<CHAR>         - 전일(주) 실적 및 금일(주) 계획        - 참여 기술자와 장비 투입 현황(누계 포함)</CHAR></TEXT></P>
+<P ParaShape="86" Style="0">
+<TEXT CharShape="60">
+<CHAR>         - 기타 사항</CHAR></TEXT></P>
+<P ParaShape="86" Style="0">
+<TEXT CharShape="60"/>
+</P>
+<P ParaShape="86" Style="0">
+<TEXT CharShape="8">
+<CHAR> 1.10 계약상대자의 책임</CHAR></TEXT></P>
+<P ParaShape="86" Style="0">
+<TEXT CharShape="60">
+<CHAR>     (1) 문서의 기록 비치</CHAR></TEXT></P>
+<P ParaShape="66" Style="0">
+<TEXT CharShape="60">
+<CHAR>        - 계약상대자는 이 과업을 수행함에 있어 관계기관과의 협의 사항, 감독원의 지시 및 조치사항 등 과업추진에 따른 주요 내용을 문서로 작성 비치하여야 하며 감독원의 요구가 있을때에는 이에 따라야 한다.</CHAR></TEXT>
+<TEXT CharShape="27"/>
+</P>
+<P ParaShape="86" Style="0">
+<TEXT CharShape="60">
+<CHAR>        - 용역수행자는 작업사항에 대한 기록 보존을 위하여 사진촬영을 하여야 한다.</CHAR></TEXT></P>
+<P ParaShape="86" Style="0">
+<TEXT CharShape="60">
+<CHAR>     (2) 안전관리의 의무</CHAR></TEXT></P>
+<P ParaShape="67" Style="0">
+<TEXT CharShape="60">
+<CHAR>          계약상대자는 관계법규의 의한 안전수칙의 준수 등 안전관리에 최선을 다하여야 하며 계약상대자의 과실이나 부주의로 인하여 발생하는 사고 및 손해에 대하여 책임을 져야 한다.</CHAR></TEXT></P>
+<P ParaShape="86" Style="0">
+<TEXT CharShape="60">
+<CHAR>     (3) 법률 준수의 의무</CHAR></TEXT></P>
+<P ParaShape="67" Style="0">
+<TEXT CharShape="60">
+<CHAR>          계약상대자는 이 과업을 수행함에 있어 관계 법률에 저촉되는 행위로 인한 모든 피해사항에 대하여 책임을 져야 한다.</CHAR></TEXT></P>
+<P ParaShape="86" Style="0">
+<TEXT CharShape="60"/>
+</P>
+<P ParaShape="86" Style="0">
+<TEXT CharShape="8">
+<CHAR> 1.11 용역대가의 지급</CHAR></TEXT></P>
+<P ParaShape="68" Style="0">
+<TEXT CharShape="60">
+<CHAR>      (1) 이 과업의 지시서와 기타 계약문서에 특별히 기술하지 않는 한 용역 대가는 산출내역서 상의 계약금액으로 한다.</CHAR></TEXT></P>
+<P ParaShape="86" Style="0">
+<TEXT CharShape="60">
+<CHAR>      (2) 감독원이 인정하는 추가조사비 등은 실비 정산한다.</CHAR></TEXT></P>
+<P ParaShape="86" Style="0">
+<TEXT CharShape="60"/>
+</P>
+<P ParaShape="86" Style="0">
+<TEXT CharShape="8">
+<CHAR> 1.12 보안 및 비밀유지</CHAR></TEXT></P>
+<P ParaShape="86" Style="0">
+<TEXT CharShape="60">
+<CHAR>     (1) 보안관계 법규의 준수</CHAR></TEXT></P>
+<P ParaShape="69" Style="0">
+<TEXT CharShape="60">
+<CHAR>       - 용역수행 중 인지하게 된 사실에 대하여는 외부에 유출하여서는 안되며 관련자 교육을 통하여 철저히 기밀을 유지하여야 하며, 계약상대자의 과실이나 부주의로 인하여 발생한 손해에 대하여 책임을 져야 한다.</CHAR></TEXT></P>
+<P ParaShape="86" Style="0">
+<TEXT CharShape="60">
+<CHAR>       - 보안이 필요한 장소 출입 시에는 관리주체의 안내를 받아야 한다.</CHAR></TEXT></P>
+<P ParaShape="86" Style="0">
+<TEXT CharShape="60">
+<CHAR>     (2) 과업성과품 발간 시 유의사항</CHAR></TEXT></P>
+<P ParaShape="70" Style="0">
+<TEXT CharShape="60">
+<CHAR>         계약상대자는 과업성과품을 감독원과 협의하여 내용의 중요도에 따라 대외비로 분류 및 관리하여야 하고 대외비로 분류되는 자료 발간 시는 감독원과 협의하여 정부에서 인가한 비밀문서 발간업체에서 발간하되 계약상대자는 발간과정에 입회하여 원지, 폐지 등을 회수·소각하여야 한다.</CHAR></TEXT></P>
+<P ParaShape="86" Style="0">
+<TEXT CharShape="60"/>
+</P>
+<P ParaShape="86" Style="0">
+<TEXT CharShape="8">
+<CHAR> 1.13 용어의 해석</CHAR></TEXT></P>
+<P ParaShape="71" Style="0">
+<TEXT CharShape="60">
+<CHAR>      과업지시서상의 용어해석에 차이가 있을 경우에는 감독원과 계약상대자가 상호 협의하여 결정하여야 한다.</CHAR></TEXT></P>
+<P ParaShape="86" Style="0">
+<TEXT CharShape="60"/>
+</P>
+<P ParaShape="86" Style="0">
+<TEXT CharShape="8">
+<CHAR> 1.14 용역수행자의 교체</CHAR></TEXT></P>
+<P ParaShape="72" Style="0">
+<TEXT CharShape="60">
+<CHAR>     (1) 이 과업에 참여하는 기술자는 충분한 학력, 경험과 관련법에 의한 자격을 갖춘자로 하여야 하며 감독원이 과업의 적정한 수행에 부적격하다고 판단되는 경우 협의에 따라 교체를 요구할 수 있다.</CHAR></TEXT></P>
+<P ParaShape="65" Style="0">
+<TEXT CharShape="60">
+<CHAR>     (2) 이 과업에 참여는 기술자가 퇴직 혹은 기타 사유로 과업을 수행할 수 없을 때에는 그와 동등한 자격을 갖춘 기술자로 감독원의 승인을 받아 교체한다.</CHAR></TEXT></P>
+<P ParaShape="65" Style="0">
+<TEXT CharShape="60"/>
+</P>
+<P ParaShape="65" Style="0">
+<TEXT CharShape="60"/>
+</P>
+<P ParaShape="86" Style="0">
+<TEXT CharShape="63">
+<CHAR>2. 과업수행 내역</CHAR></TEXT></P>
+<P ParaShape="86" Style="0">
+<TEXT CharShape="8">
+<CHAR> 2.1 점검계획</CHAR></TEXT></P>
+<P ParaShape="86" Style="0">
+<TEXT CharShape="62">
+<CHAR>  2.1.1 일반</CHAR></TEXT></P>
+<P ParaShape="68" Style="0">
+<TEXT CharShape="60">
+<CHAR>     점검계획은 현장에서의 예비조사 후에 수립하며 조사항목은 아래와 같다.</CHAR></TEXT></P>
+<P ParaShape="68" Style="0">
+<TEXT CharShape="60">
+<CHAR>       1) 현장여건 및 문제점</CHAR></TEXT></P>
+<P ParaShape="68" Style="0">
+<TEXT CharShape="60">
+<CHAR>       2) 시설관리자 및 주민의견 청취</CHAR></TEXT></P>
+<P ParaShape="86" Style="0">
+<TEXT CharShape="60">
+<CHAR>       3) 제반시설 관련자료</CHAR></TEXT></P>
+<P ParaShape="73" Style="0">
+<TEXT CharShape="60">
+<CHAR>     이때 도면 및 자료를 개략 검토한 후에 조사를 수행함으로써 구조물의 형상이나 세부사항들에 대한 예비검증이 되도록 한다.</CHAR></TEXT></P>
+<P ParaShape="86" Style="0">
+<TEXT CharShape="62">
+<CHAR>  2.1.2 점검계획 수립</CHAR></TEXT></P>
+<P ParaShape="68" Style="0">
+<TEXT CharShape="60">
+<CHAR>     예비조사 시 수립된 자료의 검토 후 점검계획을 수립하며 다음 사항이 포함되어야 한다.</CHAR></TEXT></P>
+<P ParaShape="68" Style="0">
+<TEXT CharShape="60">
+<CHAR>       1) 조사 범위 및 항목 결정</CHAR></TEXT></P>
+<P ParaShape="68" Style="0">
+<TEXT CharShape="60">
+<CHAR>       2) 기존 점검자료 검토</CHAR></TEXT></P>
+<P ParaShape="68" Style="0">
+<TEXT CharShape="60">
+<CHAR>       3) 분야별 소요인원 및 구성</CHAR></TEXT></P>
+<P ParaShape="68" Style="0">
+<TEXT CharShape="60">
+<CHAR>       4) 재료시험 실시에 대한 적정성 여부 판단(필요 시)</CHAR></TEXT></P>
+<P ParaShape="68" Style="0">
+<TEXT CharShape="60">
+<CHAR>       5) 점검 기간 및 계획된 작업시간 예측</CHAR></TEXT></P>
+<P ParaShape="68" Style="0">
+<TEXT CharShape="60">
+<CHAR>       6) 점검 범위 및 안전성에 대한 판단</CHAR></TEXT></P>
+<P ParaShape="68" Style="0">
+<TEXT CharShape="60">
+<CHAR>       7) 점검 장비 산정(필요 시)</CHAR></TEXT></P>
+<P ParaShape="68" Style="0">
+<TEXT CharShape="60">
+<CHAR>       8) 점검 종사자 안전</CHAR></TEXT></P>
+<P ParaShape="68" Style="0">
+<TEXT CharShape="60">
+<CHAR>        o 점검업무 및 접근방법과 관련하여 점검자는 안전사고 예방에 유의한다.</CHAR></TEXT></P>
+<P ParaShape="68" Style="0">
+<TEXT CharShape="60">
+<CHAR>       9) 기타 점검자와 관리주체가 필요하다고 판단되는 사항</CHAR></TEXT></P>
+<P ParaShape="68" Style="0">
+<TEXT CharShape="60"/>
+</P>
+<P ParaShape="86" Style="0">
+<TEXT CharShape="8">
+<CHAR> 2.2 점검실시 세부사항</CHAR></TEXT></P>
+<P ParaShape="86" Style="0">
+<TEXT CharShape="62">
+<CHAR>  2.2.1 시설물 관련도서 검토</CHAR></TEXT></P>
+<P ParaShape="68" Style="0">
+<TEXT CharShape="60">
+<CHAR>     계약상대자는 이 과업을 수행하기 위하여 다음의 자료를 포함한 관련 자료를 검토하여야 한다.</CHAR></TEXT></P>
+<P ParaShape="68" Style="0">
+<TEXT CharShape="60">
+<CHAR>      (1) 설계도서</CHAR></TEXT></P>
+<P ParaShape="68" Style="0">
+<TEXT CharShape="60">
+<CHAR>      (2) 사진</CHAR></TEXT></P>
+<P ParaShape="86" Style="0">
+<TEXT CharShape="60">
+<CHAR>      (3) 품질관리 관련자료</CHAR></TEXT></P>
+<P ParaShape="86" Style="0">
+<TEXT CharShape="60">
+<CHAR>      (4) 시설물관리대장</CHAR></TEXT></P>
+<P ParaShape="86" Style="0">
+<TEXT CharShape="60">
+<CHAR>      (5) 안전점검 및 정기점검 결과</CHAR></TEXT></P>
+<P ParaShape="86" Style="0">
+<TEXT CharShape="60">
+<CHAR>      (6) 유지관리지침서</CHAR></TEXT></P>
+<P ParaShape="86" Style="0">
+<TEXT CharShape="60">
+<CHAR>      (7) 기타 필요한 자료</CHAR></TEXT></P>
+<P ParaShape="86" Style="0">
+<TEXT CharShape="62">
+<CHAR>  2.2.2 계획 수립</CHAR></TEXT></P>
+<P ParaShape="68" Style="0">
+<TEXT CharShape="60">
+<CHAR>      (1) 점검을 효과적으로 수행하려면 자료조사ㆍ수집과 현장조사를 통한 사전점검을 하여 계획을 수립하여야 하며 현장조사 시에는 다음 사항이 고려되어야 한다.</CHAR></TEXT></P>
+<P ParaShape="68" Style="0">
+<TEXT CharShape="60">
+<CHAR>       - 점검형식의 결정</CHAR></TEXT></P>
+<P ParaShape="68" Style="0">
+<TEXT CharShape="60">
+<CHAR>       - 점검을 수행하는데 필요한 인원, 장비와 기기의 결정(필요 시)</CHAR></TEXT></P>
+<P ParaShape="68" Style="0">
+<TEXT CharShape="60">
+<CHAR>       - 기 발생한 결함의 확인을 위한 기존 점검자료 검토</CHAR></TEXT></P>
+<P ParaShape="68" Style="0">
+<TEXT CharShape="60">
+<CHAR>       - </CHAR></TEXT>
+<TEXT CharShape="30">
+<CHAR>비파괴 시험을 포함한 기타 재료시험 실시에 대한 적정성 여부의 판단과 실시위치, 시험실시 계획(필요 시)</CHAR></TEXT></P>
+<P ParaShape="68" Style="0">
+<TEXT CharShape="60">
+<CHAR>       - 구조물에 붕괴유발부재, 피로 취약구조부위와 같이 특별한 주위를 요구하는 부재와 부위가 포함되었는지 판단</CHAR></TEXT>
+<TEXT CharShape="30">
+<CHAR>(필요 시)</CHAR></TEXT></P>
+<P ParaShape="68" Style="0">
+<TEXT CharShape="60">
+<CHAR>       - 시설물의 기초와 주위 지반에 대한 조사 여부, 조사항목과 범위의 판단</CHAR></TEXT>
+<TEXT CharShape="30">
+<CHAR>(필요 시)</CHAR></TEXT></P>
+<P ParaShape="68" Style="0">
+<TEXT CharShape="60">
+<CHAR>       - 내하력 검토를 위한 조사ㆍ측정ㆍ시험ㆍ계측항목 및 범위의 판단</CHAR></TEXT>
+<TEXT CharShape="30">
+<CHAR>(필요 시)</CHAR></TEXT></P>
+<P ParaShape="68" Style="0">
+<TEXT CharShape="60">
+<CHAR>      (2) 정밀육안검사 결과를 “안전점검 및 정밀안전진단 세부지침”의 손상상태 평가를 기록하기 위하여 결함 발생된 부재 또는 부위에 대한 망 구성계획을 수립하여 감독원과 협의하여 결정하여야 한다.</CHAR></TEXT></P>
+<P ParaShape="74" Style="0">
+<TEXT CharShape="60">
+<CHAR>      (3) 점검자는 진단을 수행하기 위하여 구조부재에 접근할 필요가 있을 때 가장 안전한 장비를 선정하여야 한다.</CHAR></TEXT></P>
+<P ParaShape="74" Style="0">
+<TEXT CharShape="60">
+<CHAR>      (4) 진단방법과 진단장비의 선정을 위한 현장 조사 시 도면이 있는 경우는 도면을 가지고 수행하여 구조물의 형상이나 세부사항들에 대하여 가장 알맞은 장비가 선정되도록 하여야 한다.</CHAR></TEXT></P>
+<P ParaShape="86" Style="0">
+<TEXT CharShape="62">
+<CHAR>  2.2.3 현장조사</CHAR></TEXT></P>
+<P ParaShape="68" Style="0">
+<TEXT CharShape="60">
+<CHAR>      (1) 현장조사는 기존 시설물에 관한 기초 자료를 얻고, 시간이 경과함에 따라 변화되는 균열 폭과 길이 등의 변화를 추적하기 위하여 정밀하게 수행한다.</CHAR></TEXT></P>
+<P ParaShape="68" Style="0">
+<TEXT CharShape="60">
+<CHAR>      (2) 도면이 없거나 도면상에 나타난 자료 확인을 위해서는 현장 측정을 원칙으로 하며 측정의 정확성은 원하는 목적을 달성 할 정도이어야 한다.</CHAR></TEXT></P>
+<P ParaShape="74" Style="0">
+<TEXT CharShape="60">
+<CHAR>      (3) 계약상대자는 “안전점검 및 정밀안전진단 세부지침”에 의한 손상상태 조사표를 작성하기 위하여 시설물 전체 표면에 대한 상세한 육안점사를 하여야 한다.</CHAR></TEXT></P>
+<P ParaShape="74" Style="0">
+<TEXT CharShape="60">
+<CHAR>      (4) 부식, 노후와 또는 기타 식별이 어려운 결함을 발견하기 위하여 육안으로 검사하기 전에 검사부위를 깨끗이 청소하여야 한다.</CHAR></TEXT></P>
+<P ParaShape="86" Style="0">
+<TEXT CharShape="62">
+<CHAR>  2.2.4 세부조사항목</CHAR></TEXT></P>
+<P ParaShape="68" Style="0">
+<TEXT CharShape="60">
+<CHAR>      (1) 청문조사</CHAR></TEXT></P>
+<P ParaShape="74" Style="0">
+<TEXT CharShape="60">
+<CHAR>         1) 경과 기간 중 하자 관련사항</CHAR></TEXT></P>
+<P ParaShape="74" Style="0">
+<TEXT CharShape="60">
+<CHAR>         2) 정기 및 정밀점검 보고서</CHAR></TEXT></P>
+<P ParaShape="74" Style="0">
+<TEXT CharShape="60">
+<CHAR>         3) 보유 건축물의 유지보수 관련 서류</CHAR></TEXT></P>
+<P ParaShape="74" Style="0">
+<TEXT CharShape="60">
+<CHAR>         4) 보수ㆍ보강, 증축 이력</CHAR></TEXT></P>
+<P ParaShape="74" Style="0">
+<TEXT CharShape="60">
+<CHAR>         5) 관리자의 관리적 불편사항 등</CHAR></TEXT>
+<TEXT CharShape="29">
+<CHAR>     </CHAR></TEXT></P>
+<P ParaShape="68" Style="0">
+<TEXT CharShape="60">
+<CHAR>      (2) 선택과업</CHAR></TEXT></P>
+<P ParaShape="75" Style="0">
+<TEXT CharShape="60">
+<CHAR>        선택과업은 과업수행 전 계약상대자와 합동으로 실시한 사전조사 결과에 따라 조사항목을 선정하며, 과업수행 중에 발생되는 항목은 협의하여 추진한다.</CHAR></TEXT></P>
+<P ParaShape="68" Style="0">
+<TEXT CharShape="60">
+<CHAR>      (3) 상태평가(필요 시)</CHAR></TEXT></P>
+<P ParaShape="75" Style="0">
+<TEXT CharShape="60">
+<CHAR>        상태평가는 재료시험 및 외관조사에 의해 시설물의 각 부재로부터 발견된 상태변화(결함, 손상, 열화)를 근거로 하여 세부지침의 상태평가 기준에 따라 실시한다.</CHAR></TEXT></P>
+<P ParaShape="75" Style="0">
+<TEXT CharShape="60">
+<CHAR>       정밀안전진단에서는 시설물의 전체 부재에 대하여 외관조사망도를 작성하여 부재별로 상세히 상태평가를 실시하며, 책임기술자가 시설물 전체에 대한 상태평가 결과를 결정한다.</CHAR></TEXT></P>
+<P ParaShape="75" Style="0">
+<TEXT CharShape="60">
+<CHAR>       상태평가가 정확히 이루어졌는지 확인하는 동시에 기록용 문서로서 이용하기 위하여 안전점검ㆍ정밀안전진단 서식에 각각의 결함의 형태, 크기, 양 및 심각한 정도 등을 기록하여야 한다.</CHAR></TEXT></P>
+<P ParaShape="75" Style="0">
+<TEXT CharShape="60">
+<CHAR>       (정밀점검에서는 기본시설물에 대하여 점검하고, 외관조사망도를 작성하여 상세히 상태평가를 실시하며, 외관조사망도를 작성하지 않은 부위는 이전의 안전점검 및 정밀안전진단 보고서에 수록된 상태평가 결과를 참조하여 책임기술자가 시설물 전체에 대한 상태평가 결과를 결정한다.)</CHAR></TEXT></P>
+<P ParaShape="68" Style="0">
+<TEXT CharShape="60">
+<CHAR>      (4) 안전성 평가(정밀안전진단 및 정밀점검의 선택과업 시)</CHAR></TEXT></P>
+<P ParaShape="75" Style="0">
+<TEXT CharShape="60">
+<CHAR>        책임기술자는 계측 및 구조해석 또는 기존의 안전성평가 자료와 함께 부재별 상태평가, 재료시험 결과 및 각종 계측, 측정, 시험 등을 통하여 얻은 결과를 분석하고 이를 바탕으로 구조물의 안전과 부재의 내(하)력 등을 종합적으로 평가하여 세부지침의 안전성평가 기준에 따라 시설물의 안전성평가 결과를 결정한다.</CHAR></TEXT></P>
+<P ParaShape="68" Style="0">
+<TEXT CharShape="60">
+<CHAR>      (5) 종합평가 및 안전등급 지정</CHAR></TEXT></P>
+<P ParaShape="74" Style="0">
+<TEXT CharShape="60">
+<CHAR>         1) 상태평가 및 안전성평가를 실시한 결과를 종합하여 세부지침의 종합평가 기준에 시설물의 종합평가 결과를 결정한다.</CHAR></TEXT></P>
+<P ParaShape="74" Style="0">
+<TEXT CharShape="60">
+<CHAR>         2) 정밀안전진단(안전점검)을 실시한 책임기술자는 당해 시설물에 대한 종합적으로 평가한 결과로부터 안전등급을 지정한다.</CHAR></TEXT></P>
+<P ParaShape="74" Style="0">
+<TEXT CharShape="60">
+<CHAR>           다만 정밀안전진단(안전점검) 실시결과 기존의 안전등급보다 상향하여 조정할 경우에는 해당 시설물에 대한 보수ㆍ보강 조치 등 그 사유가 분명하여야 한다.</CHAR></TEXT></P>
+<P ParaShape="74" Style="0">
+<TEXT CharShape="60"/>
+</P>
+<P ParaShape="86" Style="0">
+<TEXT CharShape="60">
+<CHAR>        </CHAR>
+<TABLE BorderFill="3" CellSpacing="0" ColCount="2" PageBreak="None" RepeatHeader="true" RowCount="4">
+<SHAPEOBJECT InstId="1171073797" Lock="false" NumberingType="Table" ZOrder="0">
+<SIZE Height="11891" HeightRelTo="Absolute" Protect="false" Width="43342" WidthRelTo="Absolute"/>
+<POSITION AffectLSpacing="false" AllowOverlap="false" FlowWithText="true" HoldAnchorAndSO="false" HorzAlign="Left" HorzOffset="0" HorzRelTo="Para" TreatAsChar="true" VertAlign="Top" VertOffset="0" VertRelTo="Para"/>
+<OUTSIDEMARGIN Bottom="0" Left="0" Right="0" Top="0"/>
+</SHAPEOBJECT>
+<INSIDEMARGIN Bottom="140" Left="140" Right="140" Top="140"/>
+<ROW>
+<CELL BorderFill="6" ColAddr="0" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="2635" Protect="false" RowAddr="0" RowSpan="1" Width="6702">
+<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+<P ParaShape="60" Style="0">
+<TEXT CharShape="64">
+<CHAR>정기점검</CHAR></TEXT></P>
+<P ParaShape="60" Style="0">
+<TEXT CharShape="64">
+<CHAR>안전등급</CHAR></TEXT></P></PARALIST></CELL>
+<CELL BorderFill="7" ColAddr="1" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="2635" Protect="false" RowAddr="0" RowSpan="1" Width="36640">
+<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+<P ParaShape="80" Style="24">
+<TEXT CharShape="64">
+<CHAR>시설물의 상태</CHAR></TEXT></P></PARALIST></CELL></ROW>
+<ROW>
+<CELL BorderFill="10" ColAddr="0" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="2603" Protect="false" RowAddr="1" RowSpan="1" Width="6702">
+<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+<P ParaShape="82" Style="24">
+<TEXT CharShape="62">
+<CHAR>양호</CHAR></TEXT></P></PARALIST></CELL>
+<CELL BorderFill="5" ColAddr="1" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="2603" Protect="false" RowAddr="1" RowSpan="1" Width="36640">
+<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+<P ParaShape="83" Style="24">
+<TEXT CharShape="60">
+<CHAR> 보조부재에 경미한 결함이 발생하였으나 기능 발휘에는 지장이 없으며 내구성 증진을 위하여 일부의 보수가 필요한 상태</CHAR></TEXT></P></PARALIST></CELL></ROW>
+<ROW>
+<CELL BorderFill="10" ColAddr="0" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="4050" Protect="false" RowAddr="2" RowSpan="1" Width="6702">
+<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+<P ParaShape="84" Style="24">
+<TEXT CharShape="62">
+<CHAR>보통</CHAR></TEXT></P></PARALIST></CELL>
+<CELL BorderFill="5" ColAddr="1" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="4050" Protect="false" RowAddr="2" RowSpan="1" Width="36640">
+<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+<P ParaShape="81" Style="24">
+<TEXT CharShape="60">
+<CHAR> 주요부재에 경미한 결함 또는 보조부재에 광범위한 결함이 발생하였으나 전체적인 시설물의 안전에는 지장이 없으며, 주요부재에 내구성, 기능성 저하 방지를 위한 보수가 필요하거나 보조부재에 간단한 보강이 필요한 상태</CHAR></TEXT></P></PARALIST></CELL></ROW>
+<ROW>
+<CELL BorderFill="11" ColAddr="0" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="2603" Protect="false" RowAddr="3" RowSpan="1" Width="6702">
+<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+<P ParaShape="80" Style="24">
+<TEXT CharShape="62">
+<CHAR>불량</CHAR></TEXT></P></PARALIST></CELL>
+<CELL BorderFill="4" ColAddr="1" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="2603" Protect="false" RowAddr="3" RowSpan="1" Width="36640">
+<CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+<PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+<P ParaShape="81" Style="24">
+<TEXT CharShape="60">
+<CHAR> 주요부재에 발생한 심각한 결함으로 인하여 시설물의 안전에 위험이 있어 즉각 사용을 금지하고 보강 또는 개축을 하여야 하는 상태</CHAR></TEXT></P></PARALIST></CELL></ROW></TABLE></TEXT>
+<TEXT CharShape="8">
+<CHAR/>
+</TEXT></P>
+<P ParaShape="86" Style="0">
+<TEXT CharShape="8"/>
+</P>
+<P ParaShape="68" Style="0">
+<TEXT CharShape="60">
+<CHAR>      (6) 보수ㆍ보강방법 제시(정밀안전진단 및 정밀점검의 선택과업 시)</CHAR></TEXT></P>
+<P ParaShape="74" Style="0">
+<TEXT CharShape="60">
+<CHAR>         1) 일반</CHAR></TEXT></P>
+<P ParaShape="70" Style="0">
+<TEXT CharShape="60">
+<CHAR>         보수는 시설물의 내구성능을 회복 또는 향상시키는 것을 목적으로 한 유지관리 대책을 말하며, 보강이란 부재나 구조물의 내하력과 강성 등의 역학적인 성능을 회복, 혹은 향상시키는 것을 목적으로 한 대책을 말한다.</CHAR></TEXT></P>
+<P ParaShape="70" Style="0">
+<TEXT CharShape="60">
+<CHAR>         보수를 위해서는 상태평가 결과 등을, 보강을 위해서는 상태평가 및 안전성평가 결과 등을 상세히 검토하고, 발생된 결함의 종류 및 정도, 구조물의 중요도, 사용 환경조건 및 경제성 등에 의해서 필요한 보수ㆍ보강 방법 및 수준을 정하여야 한다.</CHAR></TEXT></P>
+<P ParaShape="74" Style="0">
+<TEXT CharShape="60">
+<CHAR>        2) 보수ㆍ보강의 필요성 판단</CHAR></TEXT></P>
+<P ParaShape="70" Style="0">
+<TEXT CharShape="60">
+<CHAR>         보수의 필요성은 발생된 손상(균열 등)이 어느 정도까지 허용되는가의 판단에 의하여야 하며, 이를 위해 본 지침 및 각종기준(표준시방서 등)을 참조한다.</CHAR></TEXT></P>
+<P ParaShape="70" Style="0">
+<TEXT CharShape="60">
+<CHAR>         보강의 경우는 부재 안전율을 각종 기준에서 정하는 수치이상으로 하기 위하여 어느 정도까지 부재단면 등을 증가하여야 하는지를 판단하여야 한다.</CHAR></TEXT></P>
+<P ParaShape="74" Style="0">
+<TEXT CharShape="60">
+<CHAR>        3) 보수ㆍ보강의 수준의 결정</CHAR></TEXT></P>
+<P ParaShape="70" Style="0">
+<TEXT CharShape="60">
+<CHAR>         보수ㆍ보강의 수준은 위험도, 경제성 등을 고려하여 아래의 경우 중에서 결정한다.</CHAR></TEXT></P>
+<P ParaShape="70" Style="0">
+<TEXT CharShape="60">
+<CHAR>           ∘현상유지(진행억제)</CHAR></TEXT></P>
+<P ParaShape="70" Style="0">
+<TEXT CharShape="60">
+<CHAR>           ∘실용상 지장이 없는 성능까지 회복</CHAR></TEXT></P>
+<P ParaShape="70" Style="0">
+<TEXT CharShape="60">
+<CHAR>           ∘초기 수준이상으로 개선</CHAR></TEXT></P>
+<P ParaShape="70" Style="0">
+<TEXT CharShape="60">
+<CHAR>           ∘개축</CHAR></TEXT></P>
+<P ParaShape="74" Style="0">
+<TEXT CharShape="60">
+<CHAR>        4) 공법의 선정</CHAR></TEXT></P>
+<P ParaShape="70" Style="0">
+<TEXT CharShape="60">
+<CHAR>         구조물 결함에 따른 보수ㆍ보강은 보수재료와 공법 선정 시 공법의 적용성, 구조적 안전성, 경제성 등을 검토하여 결정한다.</CHAR></TEXT></P>
+<P ParaShape="70" Style="0">
+<TEXT CharShape="60">
+<CHAR>         이때 중용한 것은 구조물의 결함발생 원인에 대한 정확한 분석이며, 이를 통해 적절한 공봅을 선정할 수 있고, 또한 적절한 보수재료를 선택할 수 있다.</CHAR></TEXT></P>
+<P ParaShape="70" Style="0">
+<TEXT CharShape="60">
+<CHAR>         따라서 시설물관련 제반자료, 진단 시 수행한 각종 상태평가 및 안전성평가 결과를 기초로 하여 결함 발생원인에 대한 정확한 분석 후 결함부위 또는 부재에 가장 적합한 보수ㆍ보강공법을 선정하여야 한다.</CHAR></TEXT></P>
+<P ParaShape="74" Style="0">
+<TEXT CharShape="60">
+<CHAR>        5) 보수ㆍ보강 우선순위의 결정</CHAR></TEXT></P>
+<P ParaShape="70" Style="0">
+<TEXT CharShape="60">
+<CHAR>         각 시설물은 주요부재와 보조부재로 이루어져 있으며, 이들 시설물에서 발생된 각종 결함에 대한 보수ㆍ보강 우선순위는 다음과 같이 결정한다</CHAR></TEXT></P>
+<P ParaShape="70" Style="0">
+<TEXT CharShape="60">
+<CHAR>           ∘보수보다 보강을, 주부재를 보조부재보다 우선하여 실시한다.</CHAR></TEXT></P>
+<P ParaShape="76" Style="0">
+<TEXT CharShape="60">
+<CHAR>           ∘시설물 전체에서의 우선순위 결정은 각 부재가 갖는 중요도, 발생한 결함의 심각성 등을 종합 검토하여 결정한다.</CHAR></TEXT></P>
+<P ParaShape="74" Style="0">
+<TEXT CharShape="60">
+<CHAR>        6) 유지관리 방안 제시(선택과업)</CHAR></TEXT></P>
+<P ParaShape="70" Style="0">
+<TEXT CharShape="60">
+<CHAR>         시설물을 안전하고 경제적으로 유지 관리하는데 필요한 사항을 제시하는 것으로 결함 및 손상의 종류와 원인, 점검요령, 조치대책 등에 관한 실무적이고 필수적인 내용을 해당 시설물의 그림 및 사진 등을 위주로 구성하여 안전점검 경험이 적은 사람도 쉽게 활용할 수 있도록 하여야 한다.</CHAR></TEXT></P>
+<P ParaShape="86" Style="0">
+<TEXT CharShape="63"/>
+</P>
+<P ParaShape="86" Style="0">
+<TEXT CharShape="63">
+<CHAR>3. 과업성과품 작성</CHAR></TEXT></P>
+<P ParaShape="31" Style="0">
+<TEXT CharShape="60">
+<CHAR>    (1) 현장에서 사용하는 진단양식과 보고서는 체계적으로 작성되어야 하며, 결함에 대한 설명과 개략도가 포함되어야 한다. 완성된 보고서는 시간이 경과한 후에도 설명과 결함에 대한 해석이 가능하도록 상세하고 명확해야 한다. 현장 사진을 촬영하여 결함을 확인할 수 있도록 하여야 하며, 여러 가지 결함이 언급된 경우에는 보고서와 양식에서 상호 참조할 수 있도록 하여야 한다. 개략도와 사진은 결함의 위치와 특성에 관한 설명을 보충하기 위한 수단으로 사용하여야 한다.</CHAR></TEXT></P>
+<P ParaShape="31" Style="0">
+<TEXT CharShape="60">
+<CHAR>    (2) 보고서에 포함된 모든 자료의 근거를 명확히 하여야 하고 진단일시와 기타 자료의 근거도 기록하여야 한다.</CHAR></TEXT></P>
+<P ParaShape="31" Style="0">
+<TEXT CharShape="60">
+<CHAR>    (3) 정밀점검 보고서 포함될 사항</CHAR></TEXT></P>
+<P ParaShape="31" Style="0">
+<TEXT CharShape="60">
+<CHAR>     1) 서두</CHAR></TEXT></P>
+<P ParaShape="31" Style="0">
+<TEXT CharShape="60">
+<CHAR>     보고서의 표지 다음에 정밀점검의 개요를 쉽게 알 수 있도록 다음의 서류를 붙인다.</CHAR></TEXT></P>
+<P ParaShape="31" Style="0">
+<TEXT CharShape="60">
+<CHAR>       ∘제출문(정기점검을 실시한 기관의 장)</CHAR></TEXT></P>
+<P ParaShape="31" Style="0">
+<TEXT CharShape="60">
+<CHAR>       ∘정기점검 결과표(안전등급)</CHAR></TEXT></P>
+<P ParaShape="31" Style="0">
+<TEXT CharShape="60">
+<CHAR>       ∘참여기술진 명단</CHAR></TEXT></P>
+<P ParaShape="31" Style="0">
+<TEXT CharShape="60">
+<CHAR>       ∘시설물의 위치도</CHAR></TEXT></P>
+<P ParaShape="31" Style="0">
+<TEXT CharShape="60">
+<CHAR>       ∘시설물의 전경사진, 부위별 사진</CHAR></TEXT></P>
+<P ParaShape="31" Style="0">
+<TEXT CharShape="60">
+<CHAR>       ∘정기점검 실시결과 요약문</CHAR></TEXT></P>
+<P ParaShape="31" Style="0">
+<TEXT CharShape="60">
+<CHAR>       ∘보고서 목차</CHAR></TEXT></P>
+<P ParaShape="31" Style="0">
+<TEXT CharShape="60">
+<CHAR>     2) 정기점검 개요</CHAR></TEXT></P>
+<P ParaShape="31" Style="0">
+<TEXT CharShape="60">
+<CHAR>     정기점검의 범위와 과업내용 등 정밀점검 계획 및 실시와 관련된 주요사항을 기술한다.</CHAR></TEXT></P>
+<P ParaShape="31" Style="0">
+<TEXT CharShape="60">
+<CHAR>       ∘점검의 목적</CHAR></TEXT></P>
+<P ParaShape="31" Style="0">
+<TEXT CharShape="60">
+<CHAR>       ∘시설물의 개요 및 이력사항</CHAR></TEXT></P>
+<P ParaShape="31" Style="0">
+<TEXT CharShape="60">
+<CHAR>       ∘점검의 범위 및 과업내용</CHAR></TEXT></P>
+<P ParaShape="31" Style="0">
+<TEXT CharShape="60">
+<CHAR>       ∘점검 수행 일정</CHAR></TEXT></P>
+<P ParaShape="31" Style="0">
+<TEXT CharShape="60">
+<CHAR>     3) 자료수집 및 분석</CHAR></TEXT></P>
+<P ParaShape="31" Style="0">
+<TEXT CharShape="60">
+<CHAR>     정기점검의 관련자료를 검토･분석하고 그 내용을 기술한다.</CHAR></TEXT></P>
+<P ParaShape="31" Style="0">
+<TEXT CharShape="60">
+<CHAR>       ∘설계도면, 구조계산서</CHAR></TEXT></P>
+<P ParaShape="31" Style="0">
+<TEXT CharShape="60">
+<CHAR>       ∘기존 안전점검ㆍ정밀안전진단 실시 결과</CHAR></TEXT></P>
+<P ParaShape="31" Style="0">
+<TEXT CharShape="60">
+<CHAR>       ∘보수ㆍ보강 이력</CHAR></TEXT></P>
+<P ParaShape="31" Style="0">
+<TEXT CharShape="60">
+<CHAR>       ∘기타 관련자료</CHAR></TEXT></P>
+<P ParaShape="31" Style="0">
+<TEXT CharShape="60">
+<CHAR>     4) 현장조사 및 시험(필요 시)</CHAR></TEXT></P>
+<P ParaShape="79" Style="64">
+<TEXT CharShape="60">
+<CHAR>     과업내용에 의거해 실시한 현장조사, 시험 및 측정 등의 결과분석 내용을 기술하고, 필요한 경우 사진 또는 동영상 등을 첨부한다.</CHAR></TEXT></P>
+<P ParaShape="31" Style="0">
+<TEXT CharShape="60">
+<CHAR>       ∘기본 시설물 또는 주요부재별 외관조사 결과 분석</CHAR></TEXT></P>
+<P ParaShape="31" Style="0">
+<TEXT CharShape="60">
+<CHAR>       ∘주요한 결함(손상)의 발생원인 분석</CHAR></TEXT></P>
+<P ParaShape="31" Style="0">
+<TEXT CharShape="60">
+<CHAR>       ∘재료시험 및 측정 결과 분석(필요 시)</CHAR></TEXT></P>
+<P ParaShape="31" Style="0">
+<TEXT CharShape="60">
+<CHAR>     5) 시설물의 상태평가(필요 시)</CHAR></TEXT></P>
+<P ParaShape="79" Style="64">
+<TEXT CharShape="60">
+<CHAR>     과업내용에 의거 실시한 현장조사, 시험 분석 결과에 따라서 상태평가 결과의 작성 방법은 본 「세부지침」의 제8장에서 기술한 내용을 따른다.</CHAR></TEXT></P>
+<P ParaShape="31" Style="0">
+<TEXT CharShape="60">
+<CHAR>       ∘대상 부재별 상태평가 및 시설물 전체의 상태평가 결과 결정</CHAR></TEXT></P>
+<P ParaShape="31" Style="0">
+<TEXT CharShape="60">
+<CHAR>       ∘콘크리트 또는 강재의 내구성 평가</CHAR></TEXT></P>
+<P ParaShape="31" Style="0">
+<TEXT CharShape="60">
+<CHAR>     6) 안전등급 지정</CHAR></TEXT></P>
+<P ParaShape="79" Style="64">
+<TEXT CharShape="60">
+<CHAR>     정기점검 실시결과 외관조사 및 안전성평가(필요시) 등을 종합적으로 평가하여 당해 시설물의 안전등급을 지정하여야 한다.</CHAR></TEXT></P>
+<P ParaShape="31" Style="0">
+<TEXT CharShape="60">
+<CHAR>     7) 시설물의 안전성 평가 (필요한 경우 추가로 실시)</CHAR></TEXT></P>
+<P ParaShape="79" Style="64">
+<TEXT CharShape="60">
+<CHAR>     안전점검 결과 시설물의 보수ㆍ보강방법을 제시한 때에는 보수ㆍ보강 시 예상되는 임시 고정하중(공사용 장비 및 자재 등)이 시설물에 현저하게 작용하는 경우에 대한 시행방법을 검토</CHAR></TEXT></P>
+<P ParaShape="31" Style="0">
+<TEXT CharShape="60">
+<CHAR>     8) 종합결론 및 건의</CHAR></TEXT></P>
+<P ParaShape="31" Style="0">
+<TEXT CharShape="60">
+<CHAR>       ∘정기점검 실시결과의 종합결론</CHAR></TEXT></P>
+<P ParaShape="31" Style="0">
+<TEXT CharShape="60">
+<CHAR>       ∘정밀안전진단 및 시설물의 사용제한의 필요성 여부</CHAR></TEXT></P>
+<P ParaShape="31" Style="0">
+<TEXT CharShape="60">
+<CHAR>       ∘유지관리 시 특별한 관리가 요구되는 사항</CHAR></TEXT></P>
+<P ParaShape="31" Style="0">
+<TEXT CharShape="60">
+<CHAR>       ∘기타 필요한 사항</CHAR></TEXT></P>
+<P ParaShape="31" Style="0">
+<TEXT CharShape="60">
+<CHAR>     9) 부록</CHAR></TEXT></P>
+<P ParaShape="31" Style="0">
+<TEXT CharShape="60">
+<CHAR>       ∘과업지시서</CHAR></TEXT></P>
+<P ParaShape="31" Style="0">
+<TEXT CharShape="60">
+<CHAR>       ∘시설물관리대장 사본</CHAR></TEXT></P>
+<P ParaShape="31" Style="0">
+<TEXT CharShape="60">
+<CHAR>       ∘사진첩</CHAR></TEXT></P>
+<P ParaShape="31" Style="0">
+<TEXT CharShape="60">
+<CHAR>       ∘사전조사 자료</CHAR></TEXT></P>
+<P ParaShape="77" Style="0">
+<TEXT CharShape="60">
+<CHAR>       ∘기타 관련자료</CHAR></TEXT></P>
+<P ParaShape="77" Style="0">
+<TEXT CharShape="60"/>
+</P>
+<P ParaShape="31" Style="0">
+<TEXT CharShape="60">
+<CHAR>    (4) 용역완료 성과품 제출</CHAR></TEXT></P>
+<P ParaShape="31" Style="0">
+<TEXT CharShape="60">
+<CHAR>    이 과업과 관련한 성과품은 다음과 같다.</CHAR></TEXT></P>
+<P ParaShape="31" Style="0">
+<TEXT CharShape="73">
+<CHAR>    </CHAR></TEXT>
+<TEXT CharShape="60">
+<CHAR> 1) 정기안전점검 보고서(부록 포함) : 1부</CHAR></TEXT></P></SECTION></BODY>
+<TAIL>
+<SCRIPTCODE Type="JScript" Version="1.0">
+<SCRIPTHEADER>var Documents = XHwpDocuments;var Document = Documents.Active_XHwpDocument;
+</SCRIPTHEADER><SCRIPTSOURCE>function OnDocument_New(){
+	//todo : 
+}
+
+</SCRIPTSOURCE></SCRIPTCODE></TAIL></HWPML>

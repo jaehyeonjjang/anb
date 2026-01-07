@@ -1,0 +1,221 @@
+{{range i, v := inclinationPeriodicdatas}}
+<P ColumnBreak="false" PageBreak="true" ParaShape="131" Style="3">
+  {{if i == 0}}
+  <TEXT CharShape="76">
+    <CHAR>
+    다. 건축물 기울기(수평변위) 측정 결과</CHAR>
+  </TEXT>
+  {{end}}
+  {{if i > 0}}
+  <TEXT CharShape="76">
+    <CHAR>
+    </CHAR>
+    </TEXT>
+  {{end}}
+</P>
+<P ParaShape="264" Style="2">
+  <TEXT CharShape="76">
+    <TABLE BorderFill="25" CellSpacing="0" ColCount="7" PageBreak="None" RepeatHeader="true" RowCount="{{1+len(v)}}">
+      <SHAPEOBJECT InstId="1554151427" Lock="false" NumberingType="Table" ZOrder="119">
+        <SIZE Height="63327" HeightRelTo="Absolute" Protect="false" Width="49652" WidthRelTo="Absolute"/>
+        <POSITION AffectLSpacing="false" AllowOverlap="false" FlowWithText="true" HoldAnchorAndSO="false" HorzAlign="Left" HorzOffset="0" HorzRelTo="Column" TreatAsChar="true" VertAlign="Top" VertOffset="0" VertRelTo="Para"/>
+        <OUTSIDEMARGIN Bottom="140" Left="140" Right="140" Top="140"/>
+      </SHAPEOBJECT>
+      <INSIDEMARGIN Bottom="140" Left="140" Right="140" Top="140"/>
+      <ROW>
+        <CELL BorderFill="94" ColAddr="0" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="4447" Protect="false" RowAddr="0" RowSpan="1" Width="5101">
+          <CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+          <PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+            <P ParaShape="248" Style="0">
+              <TEXT CharShape="70">
+                <CHAR>측점</CHAR>
+              </TEXT>
+            </P>
+            <P ParaShape="248" Style="0">
+              <TEXT CharShape="70">
+                <CHAR>위치</CHAR>
+              </TEXT>
+            </P>
+          </PARALIST>
+        </CELL>
+        <CELL BorderFill="98" ColAddr="1" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="4447" Protect="false" RowAddr="0" RowSpan="1" Width="7400">
+          <CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+          <PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+            <P ParaShape="248" Style="0">
+              <TEXT CharShape="70">
+                <CHAR>변위 방향</CHAR>
+              </TEXT>
+            </P>
+          </PARALIST>
+        </CELL>
+        <CELL BorderFill="98" ColAddr="2" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="4447" Protect="false" RowAddr="0" RowSpan="1" Width="7103">
+          <CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+          <PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+            <P ParaShape="248" Style="0">
+              <TEXT CharShape="70">
+                <CHAR>변위량</CHAR>
+              </TEXT>
+            </P>
+            <P ParaShape="248" Style="0">
+              <TEXT CharShape="70">
+                <CHAR>(mm)</CHAR>
+              </TEXT>
+            </P>
+          </PARALIST>
+        </CELL>
+        <CELL BorderFill="98" ColAddr="3" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="4447" Protect="false" RowAddr="0" RowSpan="1" Width="9773">
+          <CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+          <PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+            <P ParaShape="248" Style="0">
+              <TEXT CharShape="70">
+                <CHAR>측정 높이(mm)</CHAR>
+              </TEXT>
+            </P>
+          </PARALIST>
+        </CELL>
+        <CELL BorderFill="98" ColAddr="4" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="4447" Protect="false" RowAddr="0" RowSpan="1" Width="9773">
+          <CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+          <PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+            <P ParaShape="248" Style="0">
+              <TEXT CharShape="70">
+                <CHAR>기울기</CHAR>
+              </TEXT>
+            </P>
+          </PARALIST>
+        </CELL>
+        <CELL BorderFill="98" ColAddr="5" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="4447" Protect="false" RowAddr="0" RowSpan="1" Width="5251">
+          <CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+          <PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+            <P ParaShape="248" Style="0">
+              <TEXT CharShape="70">
+                <CHAR>평가</CHAR>
+              </TEXT>
+            </P>
+            <P ParaShape="248" Style="0">
+              <TEXT CharShape="70">
+                <CHAR>등급</CHAR>
+              </TEXT>
+            </P>
+          </PARALIST>
+        </CELL>
+        <CELL BorderFill="99" ColAddr="6" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="4447" Protect="false" RowAddr="0" RowSpan="1" Width="5251">
+          <CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+          <PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+            <P ParaShape="248" Style="0">
+              <TEXT CharShape="70">
+                <CHAR>비 고</CHAR>
+              </TEXT>
+            </P>
+          </PARALIST>
+        </CELL>
+      </ROW>
+      {{range j, v2 := v}}
+      <ROW>
+        <CELL BorderFill="{{border(len(v), j, 73, 48, 45)}}" ColAddr="0" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="2944" Protect="false" RowAddr="{{j+1}}" RowSpan="1" Width="5101">
+          <CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+          <PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+            <P ParaShape="0" Style="96">
+              <TEXT CharShape="1">
+                <CHAR>T#{{v2.Order}}</CHAR>
+              </TEXT>
+            </P>
+          </PARALIST>
+        </CELL>
+        <CELL BorderFill="{{border(len(v), j, 32, 18, 49)}}" ColAddr="1" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="2944" Protect="false" RowAddr="{{j+1}}" RowSpan="1" Width="7400">
+          <CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+          <PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+            <P ParaShape="0" Style="96">
+              <TEXT CharShape="1">
+                <CHAR>{{v2.Part}}</CHAR>
+              </TEXT>
+            </P>
+          </PARALIST>
+        </CELL>
+        <CELL BorderFill="{{border(len(v), j, 32, 18, 49)}}" ColAddr="2" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="2944" Protect="false" RowAddr="{{j+1}}" RowSpan="1" Width="7103">
+          <CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+          <PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+            <P ParaShape="0" Style="96">
+              <TEXT CharShape="1">
+                <CHAR>{{v2.Member|comma}}</CHAR>
+              </TEXT>
+            </P>
+          </PARALIST>
+        </CELL>
+        <CELL BorderFill="{{border(len(v), j, 32, 18, 49)}}" ColAddr="3" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="2944" Protect="false" RowAddr="{{j+1}}" RowSpan="1" Width="9773">
+          <CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+          <PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+            <P ParaShape="0" Style="98">
+              <TEXT CharShape="1">
+                <CHAR>{{v2.Shape|comma}}</CHAR>
+              </TEXT>
+            </P>
+          </PARALIST>
+        </CELL>
+        <CELL BorderFill="{{border(len(v), j, 32, 18, 49)}}" ColAddr="4" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="2944" Protect="false" RowAddr="{{j+1}}" RowSpan="1" Width="9773">
+          <CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+          <PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+            <P ParaShape="0" Style="100">
+              <TEXT CharShape="1">
+                <CHAR>{{v2.Width}}</CHAR>
+              </TEXT>
+            </P>
+          </PARALIST>
+        </CELL>
+        <CELL BorderFill="{{border(len(v), j, 32, 18, 49)}}" ColAddr="5" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="2944" Protect="false" RowAddr="{{j+1}}" RowSpan="1" Width="5251">
+          <CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+          <PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+            <P ParaShape="0" Style="102">
+              <TEXT CharShape="1">
+                <CHAR>{{v2.Width|inclination}}</CHAR>
+              </TEXT>
+            </P>
+          </PARALIST>
+        </CELL>
+        <CELL BorderFill="{{border(len(v), j, 74, 46, 47)}}" ColAddr="6" ColSpan="1" Dirty="false" Editable="false" HasMargin="false" Header="false" Height="2944" Protect="false" RowAddr="{{j+1}}" RowSpan="1" Width="5251">
+          <CELLMARGIN Bottom="141" Left="141" Right="141" Top="141"/>
+          <PARALIST LineWrap="Break" LinkListID="0" LinkListIDNext="0" TextDirection="0" VertAlign="Center">
+            <P ParaShape="0" Style="101">
+              <TEXT CharShape="0">
+                <CHAR>{{v2.Remark}}</CHAR>
+              </TEXT>
+            </P>
+          </PARALIST>
+        </CELL>
+      </ROW>
+      {{end}}
+    </TABLE>
+    <CHAR/>
+  </TEXT>
+</P>
+{{if i == len(inclinationPeriodicdatas) - 1}}
+<P ColumnBreak="false" PageBreak="false" ParaShape="250" Style="3">
+  <TEXT CharShape="76">
+    <CHAR>
+    </CHAR>
+  </TEXT>
+</P>
+<P ParaShape="250" Style="3">
+  <TEXT CharShape="76">
+    <CHAR>
+    라. 소  결</CHAR>
+  </TEXT>
+</P>
+<P ParaShape="282" Style="3">
+  <TEXT CharShape="76">
+    <CHAR>
+    건축물 외부에서 트랜싯(Transit)을 이용한 측정결과 </CHAR>
+  </TEXT>
+  <TEXT CharShape="83">
+    <CHAR>
+    “a”</CHAR>
+  </TEXT>
+  <TEXT CharShape="76">
+    <CHAR>
+    등급으로 조사되었다. 또한, 특기할만한 방향성이나 부동침하에 의한 건축물의 이상 징후 현상은 발견되지 않았다.</CHAR>
+  </TEXT>
+</P>
+<P ParaShape="267" Style="3">
+  <TEXT CharShape="83"/>
+</P>
+{{end}}
+{{end}}
