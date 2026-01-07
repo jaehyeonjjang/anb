@@ -6,6 +6,7 @@ class Input extends StatelessWidget {
   final TextEditingController? controller;
   final String hintText;
   final bool password;
+  final TextInputType? keyboardType;
   final void Function(String)? onChanged;
 
   const Input(
@@ -13,6 +14,7 @@ class Input extends StatelessWidget {
       this.controller,
       this.password = false,
       this.hintText = '',
+      this.keyboardType,
       this.onChanged})
       : super(key: key);
 
@@ -22,6 +24,7 @@ class Input extends StatelessWidget {
         onChanged: onChanged,
         controller: controller,
         obscureText: password,
+        keyboardType: keyboardType ?? TextInputType.text,
         decoration: InputDecoration(
             filled: true,
             fillColor: Colors.white,

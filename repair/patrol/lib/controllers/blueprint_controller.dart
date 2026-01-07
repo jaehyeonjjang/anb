@@ -1,6 +1,5 @@
 import 'dart:convert';
 import 'dart:io' as io;
-import 'dart:typed_data';
 
 import 'package:common_control/common_control.dart';
 import 'package:dio/dio.dart';
@@ -72,7 +71,8 @@ class BlueprintController extends GetxController {
 
       // 임시 파일로 저장
       final tempDir = await getTemporaryDirectory();
-      final tempFile = io.File('${tempDir.path}/${DateTime.now().millisecondsSinceEpoch}.jpg');
+      final tempFile = io.File(
+          '${tempDir.path}/${DateTime.now().millisecondsSinceEpoch}.jpg');
       await tempFile.writeAsBytes(response.data);
 
       // 갤러리에 저장
@@ -91,7 +91,6 @@ class BlueprintController extends GetxController {
 
     final AuthController authController = Get.find<AuthController>();
 
-
     if (id != 0 && authController.periodic.id == id) {
       final LocalStorage storageBlueprint = LocalStorage('blueprints.json');
       await storageBlueprint.ready;
@@ -107,7 +106,7 @@ class BlueprintController extends GetxController {
 
       modified = true;
       loading = true;
-      
+
       return;
     }
 
@@ -118,7 +117,7 @@ class BlueprintController extends GetxController {
 
     if (periodic.id == 0) {
       final now = DateTime.now();
-      periodic.resulttext4 = DateFormat('yyyy-MM-dd HH:mm:ss').format(now);          
+      periodic.resulttext4 = DateFormat('yyyy-MM-dd HH:mm:ss').format(now);
     }
 
     authController.periodic = periodic;

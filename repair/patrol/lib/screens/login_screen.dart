@@ -181,6 +181,7 @@ class LoginScreen extends StatelessWidget {
                   Input(
                     controller: c.txtLoginid,
                     hintText: '아이디를 입력해주세요',
+                    keyboardType: TextInputType.text,
                   ),
                   const SizedBox(height: 8),
                   Input(
