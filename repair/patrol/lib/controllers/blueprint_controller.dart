@@ -4,8 +4,8 @@ import 'dart:typed_data';
 
 import 'package:common_control/common_control.dart';
 import 'package:dio/dio.dart';
-import 'package:image_downloader/image_downloader.dart';
-import 'package:image_gallery_saver/image_gallery_saver.dart';
+import 'package:gal/gal.dart';
+import 'package:path_provider/path_provider.dart';
 import 'package:intl/intl.dart';
 import 'package:localstorage/localstorage.dart';
 import 'package:patrol/components/painter/painter_controller.dart';
@@ -62,8 +62,7 @@ class BlueprintController extends GetxController {
   final TextEditingController txtOpinion = TextEditingController();
 
   Future<String> downloadFile(String filename) async {
-    String imageId = '';
-    if (io.Platform.isAndroid) {
+    try {
       var response = await Dio()
           .get(filename, options: Options(responseType: ResponseType.bytes));
 
@@ -71,28 +70,18 @@ class BlueprintController extends GetxController {
         return '';
       }
 
-      final result = await ImageGallerySaver.saveImage(
-          Uint8List.fromList(response.data),
-          quality: 100);
+      // 임시 파일로 저장
+      final tempDir = await getTemporaryDirectory();
+      final tempFile = io.File('${tempDir.path}/${DateTime.now().millisecondsSinceEpoch}.jpg');
+      await tempFile.writeAsBytes(response.data);
 
-      var temp = result['filePath'].split('/');
+      // 갤러리에 저장
+      await Gal.putImage(tempFile.path);
 
-      imageId = temp[temp.length - 1];
-    } else {
-      try {
-        var tempId = await ImageDownloader.downloadImage(filename);
-        if (tempId == null) {
-          return '';
-        }
-
-        imageId = tempId;
-      } catch (e) {
-        return '';
-      }
+      return tempFile.path;
+    } catch (e) {
+      return '';
     }
-
-    var path = await ImageDownloader.findPath(imageId);
-    return path!;
   }
 
   init() async {

@@ -129,11 +129,11 @@ class MainScreen extends StatelessWidget {
 
   body() {
     if (c.loading == false) {
-      return Center(
+      return const Center(
         child: SizedBox(
             width: 200,
             height: 250,
-            child: Column(children: const [
+            child: Column(children: [
               SizedBox(
                   width: 150, height: 150, child: CircularProgressIndicator()),
               SizedBox(height: 20),
