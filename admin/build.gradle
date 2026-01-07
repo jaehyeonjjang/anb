@@ -16,7 +16,6 @@ apply plugin: "io.spring.dependency-management"
 version = "2022.04.15"
 
 group = "com.anb.admin"
-version = "${jar.version}"
 
 sourceCompatibility = 1.8
 
