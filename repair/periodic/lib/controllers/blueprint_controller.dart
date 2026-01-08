@@ -5,8 +5,7 @@ import 'dart:typed_data';
 import 'package:common_control/common_control.dart';
 import 'package:dio/dio.dart';
 import 'package:http/http.dart' as http;
-// import 'package:image_downloader/image_downloader.dart';
-import 'package:image_gallery_saver/image_gallery_saver.dart';
+import 'package:gal/gal.dart';
 import 'package:localstorage/localstorage.dart';
 import 'package:path/path.dart' as p;
 import 'package:path_provider/path_provider.dart';
@@ -167,16 +166,17 @@ class BlueprintController extends GetxController {
         }
 
         try {
-          final result = await ImageGallerySaver.saveImage(
-              Uint8List.fromList(response.data),
-              name: onlyFilename,
-              quality: 100);
+          // 임시 파일로 저장
+          final tempDir = await getTemporaryDirectory();
+          final tempFile = File('${tempDir.path}/$onlyFilename');
+          await tempFile.writeAsBytes(response.data);
+
+          // 갤러리에 저장
+          await Gal.putImage(tempFile.path);
 
           String? path = await findSavedFilePath(onlyFilename);
           if (path == null) {
-            final temp = result['filePath'].split('/');
-            final id = temp[temp.length - 1];
-            path = await findSavedFilePath('$id${p.extension(onlyFilename)}');
+            path = tempFile.path;
           }
           return path!;
         } catch (e) {
