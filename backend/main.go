@@ -40,6 +40,6 @@ func main() {
 
 	models.InitCache()
 
-	go services.Report()
+	// go services.Report() // Disabled for SQLite mode
 	services.Http()
 }

@@ -1,6 +1,5 @@
 import 'dart:convert';
 import 'dart:io';
-import 'dart:typed_data';
 
 import 'package:common_control/common_control.dart';
 import 'package:dio/dio.dart';
@@ -175,10 +174,8 @@ class BlueprintController extends GetxController {
           await Gal.putImage(tempFile.path);
 
           String? path = await findSavedFilePath(onlyFilename);
-          if (path == null) {
-            path = tempFile.path;
-          }
-          return path!;
+          path ??= tempFile.path;
+          return path;
         } catch (e) {
           // error
         }

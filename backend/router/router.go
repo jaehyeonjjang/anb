@@ -337,5 +337,15 @@ func SetRouter(r *gin.Engine) {
             controller.Close()
             c.JSON(http.StatusOK, controller.Result)
         })
+
+        apiGroup.Any("/jwt", func(c *gin.Context) {
+            var controller api.LoginController
+
+            controller.Init(c)
+
+            controller.AjaxLogin()
+            controller.Close()
+            c.JSON(http.StatusOK, controller.Result)
+        })
     }
 }

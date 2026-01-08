@@ -2,7 +2,8 @@ import 'dart:io';
 
 import 'package:flutter/material.dart';
 
-const serverUrl = 'http://localhost:9108';
+// Android 에뮬레이터에서는 10.0.2.2 사용
+const serverUrl = 'http://10.0.2.2:9108';
 //const serverUrl = 'https://service.anbweb.kr';
 //const serverUrl = 'http://service.anbweb.kr';
 

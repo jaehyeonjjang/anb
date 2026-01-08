@@ -5,7 +5,9 @@ import (
 	"anb/controllers"
 	"anb/global"
 	"anb/models"
+	"fmt"
 	"log"
+	"time"
 
 	"github.com/gin-gonic/contrib/sessions"
 )
@@ -64,7 +66,11 @@ func (c *LoginController) AjaxLogin() {
 		session.Set("user", user)
 		session.Save()
 
+		// Generate a simple token
+		token := global.GetSha256(fmt.Sprintf("%d_%s_%d", user.Id, user.Loginid, time.Now().Unix()))
+
 		c.Set("user", user)
 		c.Set("level", user.Level)
+		c.Set("token", token)
 	}
 }

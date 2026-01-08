@@ -66,6 +66,10 @@ func init() {
 		panic(fmt.Errorf("Fatal error config file: %s \n", err))
 	}
 
+	if value := viper.Get("database"); value != nil {
+		Database = value.(string)
+	}
+
 	if value := viper.Get("connectionString"); value != nil {
 		ConnectionString = value.(string)
 	}
