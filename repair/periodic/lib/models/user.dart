@@ -31,16 +31,17 @@ class User {
   
 
   factory User.fromJson(Map<String, dynamic> json) {
+    // 서버는 대문자 키(Id, Loginid 등)를 사용하므로 양쪽 모두 확인
     return User(
-        id: json['id'] as int,
-        loginid: json['loginid'] as String,
-        passwd: json['passwd'] as String,
-        name: json['name'] as String,
-        email: json['email'] as String,
-        level: UserLevel.values[json['level'] as int],
-        apt: json['apt'] as int,
-        date: json['date'] as String,
-        extra: json['extra'] == null ? <String, dynamic>{} : json['extra'] as Map<String, dynamic>);
+        id: (json['id'] ?? json['Id']) as int? ?? 0,
+        loginid: (json['loginid'] ?? json['Loginid']) as String? ?? '',
+        passwd: (json['passwd'] ?? json['Passwd']) as String? ?? '',
+        name: (json['name'] ?? json['Name']) as String? ?? '',
+        email: (json['email'] ?? json['Email']) as String? ?? '',
+        level: UserLevel.values[(json['level'] ?? json['Level']) as int? ?? 0],
+        apt: (json['apt'] ?? json['Apt']) as int? ?? 0,
+        date: (json['date'] ?? json['Date']) as String? ?? '',
+        extra: json['extra'] ?? json['Extra'] ?? <String, dynamic>{});
   }
 
   Map<String, dynamic> toJson() =>

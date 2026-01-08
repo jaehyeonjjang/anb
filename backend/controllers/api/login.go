@@ -46,31 +46,32 @@ func (c *LoginController) AjaxLogin() {
 	}
 
 	if user == nil {
-		c.Set("code", "user not found")
-		log.Println("user not found")
-	} else if user.Passwd != passwd && user.Passwd != global.GetSha256(passwd) {
-		c.Set("code", "wrong password")
-		log.Println("wrong password")
-	} else if user.Status != int(global.Default) {
-		c.Set("code", "not permit")
-		log.Println("not permit")
-	} else {
-		session := sessions.Default(c.Context)
-
-		if session.Get("user") != nil {
-			session.Delete("user")
-		}
-
-		user.Passwd = ""
-
-		session.Set("user", user)
-		session.Save()
-
-		// Generate a simple token
-		token := global.GetSha256(fmt.Sprintf("%d_%s_%d", user.Id, user.Loginid, time.Now().Unix()))
-
-		c.Set("user", user)
-		c.Set("level", user.Level)
-		c.Set("token", token)
+		c.Set("code", "fail")
+		return
 	}
+
+	hashedPasswd := global.GetSha256(passwd)
+	
+	if user.Passwd != hashedPasswd {
+		c.Set("code", "fail")
+		return
+	}
+
+	session := sessions.Default(c.Context)
+
+	if session.Get("user") != nil {
+		session.Delete("user")
+	}
+
+	user.Passwd = ""
+
+	session.Set("user", user)
+	session.Save()
+
+	// Generate a simple token
+	token := global.GetSha256(fmt.Sprintf("%d_%s_%d", user.Id, user.Loginid, time.Now().Unix()))
+
+	c.Set("user", user)
+	c.Set("level", user.Level)
+	c.Set("token", token)
 }
