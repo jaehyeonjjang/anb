@@ -74,6 +74,13 @@ class MainScreen extends StatelessWidget {
         appBar: DefaultAppBar(
           actions: [
             IconButton(
+                icon: const Icon(Icons.refresh),
+                color: Colors.black,
+                tooltip: '새로고침',
+                onPressed: () {
+                  c.reset();
+                }),
+            IconButton(
                 icon: const Icon(Icons.settings),
                 color: Colors.black,
                 onPressed: () {
@@ -149,10 +156,15 @@ class MainScreen extends StatelessWidget {
           )),
       const SizedBox(height: 10),
       Expanded(
-          child: InfiniteScroll<Periodic>(
-        builder: _renderItem,
-        controller: c,
-        axis: Axis.vertical,
+          child: RefreshIndicator(
+        onRefresh: () async {
+          c.reset();
+        },
+        child: InfiniteScroll<Periodic>(
+          builder: _renderItem,
+          controller: c,
+          axis: Axis.vertical,
+        ),
       )),
     ]);
   }

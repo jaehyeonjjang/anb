@@ -1,11 +1,8 @@
 import 'package:common_control/common_control.dart';
 
+enum UserLevel { none, normal, manager, admin, rootadmin }
 
-enum UserLevel {
-    none, normal, manager, admin, rootadmin
-}
-  
-class User { 
+class User {
   int id;
   String loginid;
   String passwd;
@@ -15,20 +12,19 @@ class User {
   int apt;
   String date;
   bool checked;
-  Map<String, dynamic> extra;  
+  Map<String, dynamic> extra;
 
-  User({        
-          this.id = 0,       
-          this.loginid = '',       
-          this.passwd = '',       
-          this.name = '',       
-          this.email = '',       
-          this.level = UserLevel.none,       
-          this.apt = 0,       
-          this.date = '',
-          this.extra = const{},
-          this.checked = false}) ;
-  
+  User(
+      {this.id = 0,
+      this.loginid = '',
+      this.passwd = '',
+      this.name = '',
+      this.email = '',
+      this.level = UserLevel.none,
+      this.apt = 0,
+      this.date = '',
+      this.extra = const {},
+      this.checked = false});
 
   factory User.fromJson(Map<String, dynamic> json) {
     // 서버는 대문자 키(Id, Loginid 등)를 사용하므로 양쪽 모두 확인
@@ -44,12 +40,20 @@ class User {
         extra: json['extra'] ?? json['Extra'] ?? <String, dynamic>{});
   }
 
-  Map<String, dynamic> toJson() =>
-      { 'id': id,'loginid': loginid,'passwd': passwd,'name': name,'email': email,'level': level.index,'apt': apt,'date': date };
+  Map<String, dynamic> toJson() => {
+        'id': id,
+        'loginid': loginid,
+        'passwd': passwd,
+        'name': name,
+        'email': email,
+        'level': level.index,
+        'apt': apt,
+        'date': date
+      };
 }
 
 class UserManager {
-  static const baseUrl = '/api/user';  
+  static const baseUrl = '/api/user';
 
   static Future<List<User>> find(
       {int page = 0, int pagesize = 20, String? params}) async {
@@ -59,9 +63,7 @@ class UserManager {
       return List<User>.empty(growable: true);
     }
 
-    return result['items']
-        .map<User>((json) => User.fromJson(json))
-        .toList();
+    return result['items'].map<User>((json) => User.fromJson(json)).toList();
   }
 
   static Future<User> get(int id) async {

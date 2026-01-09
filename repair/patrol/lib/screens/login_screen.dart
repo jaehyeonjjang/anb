@@ -68,7 +68,8 @@ class LoginScreen extends StatelessWidget {
       authController.authenticated = true;
       authController.user = user;
 
-      if (user.level != UserLevel.normal && user.level != UserLevel.manager) {
+      // level 체크: normal, manager, admin, rootadmin 모두 허용
+      if (user.level == UserLevel.none) {
         Alert(
           context: context,
           type: AlertType.error,
