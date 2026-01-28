@@ -30,13 +30,14 @@ class LoginManager {
           print('DEBUG: Login failed, code=${result["code"]}');
         }
         return User();
-      }        
+      }
 
       final token = result['token'];
       final user = User.fromJson(result['user']);
       user.extra["token"] = token;
       if (kDebugMode) {
-        print('DEBUG: Login success! user.id=${user.id}, user.level=${user.level}');
+        print(
+            'DEBUG: Login success! user.id=${user.id}, user.level=${user.level}');
       }
       return user;
     } catch (e) {

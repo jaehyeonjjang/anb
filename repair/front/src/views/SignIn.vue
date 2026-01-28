@@ -14,7 +14,7 @@
   </div>
 
   <div style="margin-top:-80px;" @click="clickDownload">
-    프로그램 다운 로드
+    프로그램 다운로드
   </div>
 
 
