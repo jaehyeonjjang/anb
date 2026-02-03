@@ -113,6 +113,8 @@ const data = reactive({
 //    - 메인 페이지(/)로 이동
 // 4. 로그인 실패 시: 에러 메시지 표시
 async function clickSignin() {
+  console.log('🔵 로그인 버튼 클릭됨')
+  
   // 아이디 입력 검증
   if (item.loginid === '') {
     util.error('로그인 아이디를 입력하세요')
@@ -125,8 +127,12 @@ async function clickSignin() {
     return
   }  
 
+  console.log('🔵 로그인 요청 시작:', item.loginid)
+  
   // 서버에 로그인 요청 (API 호출)
   const res = await Login.login(item)
+  
+  console.log('🔵 로그인 응답:', res)
   
   if (res.code === 'ok') {
     // 로그인 성공

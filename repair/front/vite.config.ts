@@ -36,4 +36,13 @@ export default defineConfig({
       dts: 'src/components.d.ts',
     }),
   ],
+  server: {
+    proxy: {
+      '/api': {
+        target: 'https://service.anbweb.kr',
+        changeOrigin: true,
+        secure: false,
+      }
+    }
+  }
 })

@@ -546,6 +546,20 @@
   <div style="display:flex;justify-content:space-between;gap:10px;align-items:flex-start;">
     <y-table style="width:400px;">
       <y-tr>
+        <y-th>견적 기본값</y-th>
+        <y-td>
+          <el-select v-model.number="data.selectedWageId" style="width:200px;" size="small" @change="changeStandardwage">
+            <el-option
+              v-for="wage in data.standardwages"
+              :key="wage.id"
+              :label="getWageLabel(wage)"
+              :value="wage.id"
+            />
+          </el-select>
+          <span style="margin-left:10px;color:#666;font-size:12px;">초급: {{util.money(data.standardwage?.person5 || 0)}}원</span>
+        </y-td>
+      </y-tr>
+      <y-tr>
         <y-td>
           <el-select v-model.number="data.estimate.type" style="width:110px;" size="small" placeholder="" @change="changeEstimateType">
             <el-option
@@ -1504,6 +1518,8 @@ const data = reactive({
   menu: 'inquiry',
   content: '',
   standardwage: null,
+  standardwages: [],
+  selectedWageId: 1,
   types: [
     {id: 1, title:'장기수선계획'},
     {id: 2, title:'정밀점검'},
@@ -1588,8 +1604,20 @@ async function initData() {
 
   data.facilitycategorys = [{id: 0, name: ' '}, ...res.items]
 
-  res = await Standardwage.get(1)
-  data.standardwage = res.item
+  // 모든 단가 기본값 조회
+  res = await Standardwage.find({orderby: 'sw_id'})
+  if (res.items && res.items.length > 0) {
+    data.standardwages = res.items
+    // 가장 최신 단가를 기본으로 선택 (마지막 ID)
+    data.selectedWageId = res.items[res.items.length - 1].id
+    data.standardwage = res.items[res.items.length - 1]
+  } else {
+    // 없으면 ID=1 조회 (기존 방식)
+    res = await Standardwage.get(1)
+    data.standardwage = res.item
+    data.standardwages = [res.item]
+    data.selectedWageId = 1
+  }
 
   res = await Comparecompany.find({orderby: 'cc_order,cc_id'})
   data.allcomparecompanys = [{id: 0, name: ' '}, ...res.items]
@@ -3312,6 +3340,29 @@ function changeDays() {
   for (let i = 0; i < data.compareestimates.length; i++) {
     changePriceCompare(i)
   }
+}
+
+// 단가 기본값 변경 시 호출
+function changeStandardwage() {
+  const selectedWage = data.standardwages.find(w => w.id === data.selectedWageId)
+  if (selectedWage) {
+    data.standardwage = selectedWage
+    // 견적 금액 재계산
+    changePrice()
+    for (let i = 0; i < data.compareestimates.length; i++) {
+      changePriceCompare(i)
+    }
+  }
+}
+
+// 단가 선택 드롭다운 라벨 생성
+function getWageLabel(wage) {
+  if (!wage.date || wage.date === '1000-01-01 00:00:00' || wage.date === '') {
+    return `단가 ${wage.id}`
+  }
+  // 날짜에서 연도 추출
+  const year = wage.date.substring(0, 4)
+  return `${year}년도 단가`
 }
 
 </script>
