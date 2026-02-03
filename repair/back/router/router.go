@@ -1,53 +1,89 @@
+// ============================================
+// Package router - API 라우팅 설정
+// ============================================
+// 이 파일은 모든 HTTP API 엔드포인트를 정의하고
+// 각 요청을 적절한 컨트롤러로 연결합니다.
+// ============================================
+
 package router
 
 import (
-    "encoding/json"
-    "strconv"
-    "strings"
-    "net/http"
+	"encoding/json"
+	"net/http"
 	"repair/controllers/api"
 	"repair/controllers/rest"
-    "repair/models"
-    "repair/models/repairlist"
-    "repair/models/user"
+	"repair/models"
+	"repair/models/repairlist"
+	"repair/models/user"
+	"strconv"
+	"strings"
+
 	"github.com/gin-gonic/gin"
 )
 
+// ============================================
+// 유틸리티 함수
+// ============================================
+
+// getArrayCommal - 쉼표로 구분된 문자열을 int64 배열로 변환
+// 예: "1,2,3" -> []int64{1, 2, 3}
 func getArrayCommal(name string) []int64 {
 	values := strings.Split(name, ",")
 
 	var items []int64
 	for _, item := range values {
-        n, _ := strconv.ParseInt(item, 10, 64)
+		n, _ := strconv.ParseInt(item, 10, 64)
 		items = append(items, n)
 	}
 
 	return items
 }
 
+// getArrayCommai - 쉼표로 구분된 문자열을 int 배열로 변환
+// 예: "1,2,3" -> []int{1, 2, 3}
 func getArrayCommai(name string) []int {
 	values := strings.Split(name, ",")
 
 	var items []int
 	for _, item := range values {
-        n, _ := strconv.Atoi(item)
+		n, _ := strconv.Atoi(item)
 		items = append(items, n)
 	}
 
 	return items
 }
 
+// ============================================
+// SetRouter - 모든 API 라우트 설정
+// ============================================
+// 매개변수: r - Gin 엔진 인스턴스
+// ============================================
 func SetRouter(r *gin.Engine) {
 
-    r.GET("/api/jwt", func(c *gin.Context) {
+	// ============================================
+	// 인증 API - JWT 토큰 발급 (로그인)
+	// ============================================
+	// GET /api/jwt?loginid=xxx&passwd=xxx
+	// 로그인 아이디와 비밀번호로 JWT 토큰 발급
+	r.GET("/api/jwt", func(c *gin.Context) {
 		loginid := c.Query("loginid")
-        passwd := c.Query("passwd")
-        c.JSON(http.StatusOK, JwtAuth(c, loginid, passwd))
+		passwd := c.Query("passwd")
+		c.JSON(http.StatusOK, JwtAuth(c, loginid, passwd))
 	})
+
+	// ============================================
+	// 보호된 API 그룹 - JWT 인증 필수
+	// ============================================
+	// 아래 모든 엔드포인트는 유효한 JWT 토큰이 필요합니다.
 	apiGroup := r.Group("/api")
 	apiGroup.Use(JwtAuthRequired())
 	{
 
+		// ============================================
+		// 아파트(Apt) 관련 API
+		// ============================================
+
+		// GET /api/apt/search - 아파트 검색
 		apiGroup.GET("/apt/search", func(c *gin.Context) {
 			var controller api.AptController
 			controller.Init(c)
@@ -56,6 +92,11 @@ func SetRouter(r *gin.Engine) {
 			c.JSON(controller.Code, controller.Result)
 		})
 
+		// ============================================
+		// 아파트 동 도면(Blueprint) API
+		// ============================================
+
+		// POST /api/aptdong/blueprint - 동 도면 생성/수정
 		apiGroup.POST("/aptdong/blueprint", func(c *gin.Context) {
 			item_ := &models.Aptdongblueprint{}
 			c.ShouldBindJSON(item_)
@@ -66,6 +107,11 @@ func SetRouter(r *gin.Engine) {
 			c.JSON(controller.Code, controller.Result)
 		})
 
+		// ============================================
+		// 고장 내역(Breakdown) 관련 API
+		// ============================================
+
+		// POST /api/breakdown/deduplication - 고장 내역 중복 제거
 		apiGroup.POST("/breakdown/deduplication", func(c *gin.Context) {
 			var results map[string]any
 			jsonData, _ := c.GetRawData()
@@ -81,6 +127,7 @@ func SetRouter(r *gin.Engine) {
 			c.JSON(controller.Code, controller.Result)
 		})
 
+		// POST /api/breakdown/lastdate - 마지막 날짜 업데이트
 		apiGroup.POST("/breakdown/lastdate", func(c *gin.Context) {
 			var results map[string]any
 			jsonData, _ := c.GetRawData()
@@ -91,7 +138,7 @@ func SetRouter(r *gin.Engine) {
 			}
 			var ids_ []int64
 			if v, flag := results["ids"]; flag {
-				ids_= getArrayCommal(v.(string))
+				ids_ = getArrayCommal(v.(string))
 			}
 			var controller api.BreakdownController
 			controller.Init(c)
@@ -100,6 +147,7 @@ func SetRouter(r *gin.Engine) {
 			c.JSON(controller.Code, controller.Result)
 		})
 
+		// POST /api/breakdown/duedate - 마감 날짜 업데이트
 		apiGroup.POST("/breakdown/duedate", func(c *gin.Context) {
 			var results map[string]any
 			jsonData, _ := c.GetRawData()
@@ -114,7 +162,7 @@ func SetRouter(r *gin.Engine) {
 			}
 			var ids_ []int64
 			if v, flag := results["ids"]; flag {
-				ids_= getArrayCommal(v.(string))
+				ids_ = getArrayCommal(v.(string))
 			}
 			var controller api.BreakdownController
 			controller.Init(c)
@@ -123,6 +171,11 @@ func SetRouter(r *gin.Engine) {
 			c.JSON(controller.Code, controller.Result)
 		})
 
+		// ============================================
+		// 고장 이력(Breakdownhistory) API
+		// ============================================
+
+		// GET /api/breakdownhistory/auto/:id - 자동 생성
 		apiGroup.GET("/breakdownhistory/auto/:id", func(c *gin.Context) {
 			id_, _ := strconv.ParseInt(c.Param("id"), 10, 64)
 			var controller api.BreakdownhistoryController
@@ -132,6 +185,11 @@ func SetRouter(r *gin.Engine) {
 			c.JSON(controller.Code, controller.Result)
 		})
 
+		// ============================================
+		// 카테고리(Category) 관련 API
+		// ============================================
+
+		// POST /api/category/initdata - 카테고리 초기 데이터 생성
 		apiGroup.POST("/category/initdata", func(c *gin.Context) {
 			var results map[string]any
 			jsonData, _ := c.GetRawData()
@@ -147,6 +205,7 @@ func SetRouter(r *gin.Engine) {
 			c.JSON(controller.Code, controller.Result)
 		})
 
+		// POST /api/category/duplicationdata - 카테고리 중복 데이터 처리
 		apiGroup.POST("/category/duplicationdata", func(c *gin.Context) {
 			var results map[string]any
 			jsonData, _ := c.GetRawData()
@@ -162,6 +221,11 @@ func SetRouter(r *gin.Engine) {
 			c.JSON(controller.Code, controller.Result)
 		})
 
+		// ============================================
+		// 상세 내역(Detail) 관련 API
+		// ============================================
+
+		// POST /api/detail/duplication - 상세 내역 복사
 		apiGroup.POST("/detail/duplication", func(c *gin.Context) {
 			var results map[string]any
 			jsonData, _ := c.GetRawData()
@@ -177,6 +241,11 @@ func SetRouter(r *gin.Engine) {
 			c.JSON(controller.Code, controller.Result)
 		})
 
+		// ============================================
+		// 파일 다운로드(Download) 관련 API
+		// ============================================
+
+		// GET /api/download/file/:id - 파일 다운로드
 		apiGroup.GET("/download/file/:id", func(c *gin.Context) {
 			id_, _ := strconv.ParseInt(c.Param("id"), 10, 64)
 			var controller api.DownloadController
@@ -185,6 +254,7 @@ func SetRouter(r *gin.Engine) {
 			controller.Close()
 		})
 
+		// GET /api/download/report/:id - 보고서 다운로드
 		apiGroup.GET("/download/report/:id", func(c *gin.Context) {
 			id_, _ := strconv.ParseInt(c.Param("id"), 10, 64)
 			var controller api.DownloadController
@@ -193,6 +263,7 @@ func SetRouter(r *gin.Engine) {
 			controller.Close()
 		})
 
+		// GET /api/download/address - 주소록 다운로드
 		apiGroup.GET("/download/address", func(c *gin.Context) {
 			var controller api.DownloadController
 			controller.Init(c)
@@ -200,6 +271,7 @@ func SetRouter(r *gin.Engine) {
 			controller.Close()
 		})
 
+		// GET /api/download/periodic0~5/:id - 정기점검 보고서 타입별 다운로드
 		apiGroup.GET("/download/periodic0/:id", func(c *gin.Context) {
 			id_, _ := strconv.ParseInt(c.Param("id"), 10, 64)
 			var controller api.DownloadController
@@ -248,6 +320,7 @@ func SetRouter(r *gin.Engine) {
 			controller.Close()
 		})
 
+		// GET /api/download/periodic/:id - 정기점검 통합 다운로드
 		apiGroup.GET("/download/periodic/:id", func(c *gin.Context) {
 			id_, _ := strconv.ParseInt(c.Param("id"), 10, 64)
 			var controller api.DownloadController
@@ -256,6 +329,7 @@ func SetRouter(r *gin.Engine) {
 			controller.Close()
 		})
 
+		// GET /api/download/estimate/:id - 견적서 다운로드
 		apiGroup.GET("/download/estimate/:id", func(c *gin.Context) {
 			id_, _ := strconv.ParseInt(c.Param("id"), 10, 64)
 			type_, _ := strconv.Atoi(c.Query("type"))
@@ -265,6 +339,7 @@ func SetRouter(r *gin.Engine) {
 			controller.Close()
 		})
 
+		// GET /api/download/contract/:id - 계약서 다운로드
 		apiGroup.GET("/download/contract/:id", func(c *gin.Context) {
 			id_, _ := strconv.ParseInt(c.Param("id"), 10, 64)
 			type_, _ := strconv.Atoi(c.Query("type"))
@@ -274,6 +349,7 @@ func SetRouter(r *gin.Engine) {
 			controller.Close()
 		})
 
+		// GET /api/download/addressrepair - 수리 주소록 다운로드
 		apiGroup.GET("/download/addressrepair", func(c *gin.Context) {
 			var controller api.DownloadController
 			controller.Init(c)
@@ -281,6 +357,7 @@ func SetRouter(r *gin.Engine) {
 			controller.Close()
 		})
 
+		// GET /api/download/detail0~2/:id - 상세 보고서 타입별 다운로드
 		apiGroup.GET("/download/detail0/:id", func(c *gin.Context) {
 			id_, _ := strconv.ParseInt(c.Param("id"), 10, 64)
 			var controller api.DownloadController
@@ -659,10 +736,10 @@ func SetRouter(r *gin.Engine) {
 			}
 			var filenames_ []string
 			if v, flag := results["filenames"]; flag {
-			    strs := make([]string, 0)
-			    for _, str := range v.([]any) {
-			        strs = append(strs, str.(string))
-			    }
+				strs := make([]string, 0)
+				for _, str := range v.([]any) {
+					strs = append(strs, str.(string))
+				}
 				filenames_ = strs
 			}
 			var historydel_ int
