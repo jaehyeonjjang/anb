@@ -546,20 +546,6 @@
   <div style="display:flex;justify-content:space-between;gap:10px;align-items:flex-start;">
     <y-table style="width:400px;">
       <y-tr>
-        <y-th>견적 기본값</y-th>
-        <y-td>
-          <el-select v-model.number="data.selectedWageId" style="width:200px;" size="small" @change="changeStandardwage">
-            <el-option
-              v-for="wage in data.standardwages"
-              :key="wage.id"
-              :label="getWageLabel(wage)"
-              :value="wage.id"
-            />
-          </el-select>
-          <span style="margin-left:10px;color:#666;font-size:12px;">초급: {{util.money(data.standardwage?.person5 || 0)}}원</span>
-        </y-td>
-      </y-tr>
-      <y-tr>
         <y-td>
           <el-select v-model.number="data.estimate.type" style="width:110px;" size="small" placeholder="" @change="changeEstimateType">
             <el-option
@@ -602,9 +588,21 @@
       </y-tr>
       <y-tr>
         <y-td style="display:flex;justify-content:space-between;border:none;">
-          <div>
-            <b>견적일 : </b>
-            <el-date-picker style="margin: 0px 0px;height: 24px;width:120px;" v-model="data.estimate.writedate" placeholder="" />
+          <div style="display:flex;align-items:center;gap:10px;">
+            <div>
+              <b>견적일 : </b>
+              <el-date-picker style="margin: 0px 0px;height: 24px;width:120px;" v-model="data.estimate.writedate" placeholder="" />
+            </div>
+            <el-checkbox 
+              v-model="data.usePreviousYearWage" 
+              @change="changeStandardwage"
+              size="small"
+            >
+              전년도 단가 적용
+            </el-checkbox>
+            <span style="color:#999;font-size:11px;" v-if="!data.previousYearWage">
+              ※ 전년도 단가 데이터 없음 (테스트 모드)
+            </span>
           </div>
 
           <div style="margin-right:5px;">
@@ -1519,7 +1517,9 @@ const data = reactive({
   content: '',
   standardwage: null,
   standardwages: [],
-  selectedWageId: 1,
+  currentYearWage: null,
+  previousYearWage: null,
+  usePreviousYearWage: false,
   types: [
     {id: 1, title:'장기수선계획'},
     {id: 2, title:'정밀점검'},
@@ -1604,19 +1604,43 @@ async function initData() {
 
   data.facilitycategorys = [{id: 0, name: ' '}, ...res.items]
 
-  // 모든 단가 기본값 조회
-  res = await Standardwage.find({orderby: 'sw_id'})
+  // 모든 단가 기본값 조회 (날짜 역순으로 정렬)
+  res = await Standardwage.find({orderby: 'sw_date DESC'})
   if (res.items && res.items.length > 0) {
     data.standardwages = res.items
-    // 가장 최신 단가를 기본으로 선택 (마지막 ID)
-    data.selectedWageId = res.items[res.items.length - 1].id
-    data.standardwage = res.items[res.items.length - 1]
+    // 가장 최신 단가가 현년도
+    data.currentYearWage = res.items[0]
+    // 두번째가 전년도 (있으면)
+    if (res.items.length > 1) {
+      data.previousYearWage = res.items[1]
+    } else {
+      // 테스트용: 전년도 단가가 없으면 현년도 기준 -5% 가짜 데이터 생성
+      data.previousYearWage = {
+        ...res.items[0],
+        id: 999,
+        person1: Math.round(res.items[0].person1 / 1.05),
+        person2: Math.round(res.items[0].person2 / 1.05),
+        person3: Math.round(res.items[0].person3 / 1.05),
+        person4: Math.round(res.items[0].person4 / 1.05),
+        person5: Math.round(res.items[0].person5 / 1.05),
+        person6: Math.round(res.items[0].person6 / 1.05),
+        person7: Math.round(res.items[0].person7 / 1.05),
+        person8: Math.round(res.items[0].person8 / 1.05),
+        person9: Math.round(res.items[0].person9 / 1.05),
+        person10: Math.round(res.items[0].person10 / 1.05),
+        date: '2024-01-01 00:00:00'
+      }
+    }
+    // 기본값은 현년도 단가
+    data.standardwage = data.currentYearWage
+    data.usePreviousYearWage = false
   } else {
     // 없으면 ID=1 조회 (기존 방식)
     res = await Standardwage.get(1)
     data.standardwage = res.item
     data.standardwages = [res.item]
-    data.selectedWageId = 1
+    data.currentYearWage = res.item
+    data.previousYearWage = null
   }
 
   res = await Comparecompany.find({orderby: 'cc_order,cc_id'})
@@ -3344,14 +3368,17 @@ function changeDays() {
 
 // 단가 기본값 변경 시 호출
 function changeStandardwage() {
-  const selectedWage = data.standardwages.find(w => w.id === data.selectedWageId)
-  if (selectedWage) {
-    data.standardwage = selectedWage
-    // 견적 금액 재계산
-    changePrice()
-    for (let i = 0; i < data.compareestimates.length; i++) {
-      changePriceCompare(i)
-    }
+  // 체크박스 상태에 따라 전년도 또는 현년도 단가 선택
+  if (data.usePreviousYearWage && data.previousYearWage) {
+    data.standardwage = data.previousYearWage
+  } else {
+    data.standardwage = data.currentYearWage
+  }
+  
+  // 견적 금액 재계산
+  changePrice()
+  for (let i = 0; i < data.compareestimates.length; i++) {
+    changePriceCompare(i)
   }
 }
 

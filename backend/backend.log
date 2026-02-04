@@ -1,0 +1,361 @@
+[GIN-debug] [WARNING] Creating an Engine instance with the Logger and Recovery middleware already attached.
+
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /assets/*filepath         --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (5 handlers)
+[GIN-debug] HEAD   /assets/*filepath         --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (5 handlers)
+[GIN-debug] GET    /js/*filepath             --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (5 handlers)
+[GIN-debug] HEAD   /js/*filepath             --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (5 handlers)
+[GIN-debug] GET    /webdata/*filepath        --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (5 handlers)
+[GIN-debug] HEAD   /webdata/*filepath        --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (5 handlers)
+[GIN-debug] GET    /                         --> anb/services.Http.func1 (5 handlers)
+[GIN-debug] GET    /make                     --> anb/services.Http.func2 (5 handlers)
+[GIN-debug] GET    /api/picture/list         --> anb/router.SetRouter.func1 (5 handlers)
+[GIN-debug] POST   /api/picture/list         --> anb/router.SetRouter.func1 (5 handlers)
+[GIN-debug] PUT    /api/picture/list         --> anb/router.SetRouter.func1 (5 handlers)
+[GIN-debug] PATCH  /api/picture/list         --> anb/router.SetRouter.func1 (5 handlers)
+[GIN-debug] HEAD   /api/picture/list         --> anb/router.SetRouter.func1 (5 handlers)
+[GIN-debug] OPTIONS /api/picture/list         --> anb/router.SetRouter.func1 (5 handlers)
+[GIN-debug] DELETE /api/picture/list         --> anb/router.SetRouter.func1 (5 handlers)
+[GIN-debug] CONNECT /api/picture/list         --> anb/router.SetRouter.func1 (5 handlers)
+[GIN-debug] TRACE  /api/picture/list         --> anb/router.SetRouter.func1 (5 handlers)
+[GIN-debug] GET    /api/picture/upload       --> anb/router.SetRouter.func2 (5 handlers)
+[GIN-debug] POST   /api/picture/upload       --> anb/router.SetRouter.func2 (5 handlers)
+[GIN-debug] PUT    /api/picture/upload       --> anb/router.SetRouter.func2 (5 handlers)
+[GIN-debug] PATCH  /api/picture/upload       --> anb/router.SetRouter.func2 (5 handlers)
+[GIN-debug] HEAD   /api/picture/upload       --> anb/router.SetRouter.func2 (5 handlers)
+[GIN-debug] OPTIONS /api/picture/upload       --> anb/router.SetRouter.func2 (5 handlers)
+[GIN-debug] DELETE /api/picture/upload       --> anb/router.SetRouter.func2 (5 handlers)
+[GIN-debug] CONNECT /api/picture/upload       --> anb/router.SetRouter.func2 (5 handlers)
+[GIN-debug] TRACE  /api/picture/upload       --> anb/router.SetRouter.func2 (5 handlers)
+[GIN-debug] GET    /api/picture/insert       --> anb/router.SetRouter.func3 (5 handlers)
+[GIN-debug] POST   /api/picture/insert       --> anb/router.SetRouter.func3 (5 handlers)
+[GIN-debug] PUT    /api/picture/insert       --> anb/router.SetRouter.func3 (5 handlers)
+[GIN-debug] PATCH  /api/picture/insert       --> anb/router.SetRouter.func3 (5 handlers)
+[GIN-debug] HEAD   /api/picture/insert       --> anb/router.SetRouter.func3 (5 handlers)
+[GIN-debug] OPTIONS /api/picture/insert       --> anb/router.SetRouter.func3 (5 handlers)
+[GIN-debug] DELETE /api/picture/insert       --> anb/router.SetRouter.func3 (5 handlers)
+[GIN-debug] CONNECT /api/picture/insert       --> anb/router.SetRouter.func3 (5 handlers)
+[GIN-debug] TRACE  /api/picture/insert       --> anb/router.SetRouter.func3 (5 handlers)
+[GIN-debug] GET    /api/sync/insert          --> anb/router.SetRouter.func4 (5 handlers)
+[GIN-debug] POST   /api/sync/insert          --> anb/router.SetRouter.func4 (5 handlers)
+[GIN-debug] PUT    /api/sync/insert          --> anb/router.SetRouter.func4 (5 handlers)
+[GIN-debug] PATCH  /api/sync/insert          --> anb/router.SetRouter.func4 (5 handlers)
+[GIN-debug] HEAD   /api/sync/insert          --> anb/router.SetRouter.func4 (5 handlers)
+[GIN-debug] OPTIONS /api/sync/insert          --> anb/router.SetRouter.func4 (5 handlers)
+[GIN-debug] DELETE /api/sync/insert          --> anb/router.SetRouter.func4 (5 handlers)
+[GIN-debug] CONNECT /api/sync/insert          --> anb/router.SetRouter.func4 (5 handlers)
+[GIN-debug] TRACE  /api/sync/insert          --> anb/router.SetRouter.func4 (5 handlers)
+[GIN-debug] GET    /api/sync/sync            --> anb/router.SetRouter.func5 (5 handlers)
+[GIN-debug] POST   /api/sync/sync            --> anb/router.SetRouter.func5 (5 handlers)
+[GIN-debug] PUT    /api/sync/sync            --> anb/router.SetRouter.func5 (5 handlers)
+[GIN-debug] PATCH  /api/sync/sync            --> anb/router.SetRouter.func5 (5 handlers)
+[GIN-debug] HEAD   /api/sync/sync            --> anb/router.SetRouter.func5 (5 handlers)
+[GIN-debug] OPTIONS /api/sync/sync            --> anb/router.SetRouter.func5 (5 handlers)
+[GIN-debug] DELETE /api/sync/sync            --> anb/router.SetRouter.func5 (5 handlers)
+[GIN-debug] CONNECT /api/sync/sync            --> anb/router.SetRouter.func5 (5 handlers)
+[GIN-debug] TRACE  /api/sync/sync            --> anb/router.SetRouter.func5 (5 handlers)
+[GIN-debug] GET    /api/sync/download        --> anb/router.SetRouter.func6 (5 handlers)
+[GIN-debug] POST   /api/sync/download        --> anb/router.SetRouter.func6 (5 handlers)
+[GIN-debug] PUT    /api/sync/download        --> anb/router.SetRouter.func6 (5 handlers)
+[GIN-debug] PATCH  /api/sync/download        --> anb/router.SetRouter.func6 (5 handlers)
+[GIN-debug] HEAD   /api/sync/download        --> anb/router.SetRouter.func6 (5 handlers)
+[GIN-debug] OPTIONS /api/sync/download        --> anb/router.SetRouter.func6 (5 handlers)
+[GIN-debug] DELETE /api/sync/download        --> anb/router.SetRouter.func6 (5 handlers)
+[GIN-debug] CONNECT /api/sync/download        --> anb/router.SetRouter.func6 (5 handlers)
+[GIN-debug] TRACE  /api/sync/download        --> anb/router.SetRouter.func6 (5 handlers)
+[GIN-debug] GET    /api/sync/upload          --> anb/router.SetRouter.func7 (5 handlers)
+[GIN-debug] POST   /api/sync/upload          --> anb/router.SetRouter.func7 (5 handlers)
+[GIN-debug] PUT    /api/sync/upload          --> anb/router.SetRouter.func7 (5 handlers)
+[GIN-debug] PATCH  /api/sync/upload          --> anb/router.SetRouter.func7 (5 handlers)
+[GIN-debug] HEAD   /api/sync/upload          --> anb/router.SetRouter.func7 (5 handlers)
+[GIN-debug] OPTIONS /api/sync/upload          --> anb/router.SetRouter.func7 (5 handlers)
+[GIN-debug] DELETE /api/sync/upload          --> anb/router.SetRouter.func7 (5 handlers)
+[GIN-debug] CONNECT /api/sync/upload          --> anb/router.SetRouter.func7 (5 handlers)
+[GIN-debug] TRACE  /api/sync/upload          --> anb/router.SetRouter.func7 (5 handlers)
+[GIN-debug] GET    /api/sync/complete        --> anb/router.SetRouter.func8 (5 handlers)
+[GIN-debug] POST   /api/sync/complete        --> anb/router.SetRouter.func8 (5 handlers)
+[GIN-debug] PUT    /api/sync/complete        --> anb/router.SetRouter.func8 (5 handlers)
+[GIN-debug] PATCH  /api/sync/complete        --> anb/router.SetRouter.func8 (5 handlers)
+[GIN-debug] HEAD   /api/sync/complete        --> anb/router.SetRouter.func8 (5 handlers)
+[GIN-debug] OPTIONS /api/sync/complete        --> anb/router.SetRouter.func8 (5 handlers)
+[GIN-debug] DELETE /api/sync/complete        --> anb/router.SetRouter.func8 (5 handlers)
+[GIN-debug] CONNECT /api/sync/complete        --> anb/router.SetRouter.func8 (5 handlers)
+[GIN-debug] TRACE  /api/sync/complete        --> anb/router.SetRouter.func8 (5 handlers)
+[GIN-debug] GET    /api/imagefloor/get       --> anb/router.SetRouter.func9 (5 handlers)
+[GIN-debug] POST   /api/imagefloor/get       --> anb/router.SetRouter.func9 (5 handlers)
+[GIN-debug] PUT    /api/imagefloor/get       --> anb/router.SetRouter.func9 (5 handlers)
+[GIN-debug] PATCH  /api/imagefloor/get       --> anb/router.SetRouter.func9 (5 handlers)
+[GIN-debug] HEAD   /api/imagefloor/get       --> anb/router.SetRouter.func9 (5 handlers)
+[GIN-debug] OPTIONS /api/imagefloor/get       --> anb/router.SetRouter.func9 (5 handlers)
+[GIN-debug] DELETE /api/imagefloor/get       --> anb/router.SetRouter.func9 (5 handlers)
+[GIN-debug] CONNECT /api/imagefloor/get       --> anb/router.SetRouter.func9 (5 handlers)
+[GIN-debug] TRACE  /api/imagefloor/get       --> anb/router.SetRouter.func9 (5 handlers)
+[GIN-debug] GET    /api/apt/list             --> anb/router.SetRouter.func10 (5 handlers)
+[GIN-debug] POST   /api/apt/list             --> anb/router.SetRouter.func10 (5 handlers)
+[GIN-debug] PUT    /api/apt/list             --> anb/router.SetRouter.func10 (5 handlers)
+[GIN-debug] PATCH  /api/apt/list             --> anb/router.SetRouter.func10 (5 handlers)
+[GIN-debug] HEAD   /api/apt/list             --> anb/router.SetRouter.func10 (5 handlers)
+[GIN-debug] OPTIONS /api/apt/list             --> anb/router.SetRouter.func10 (5 handlers)
+[GIN-debug] DELETE /api/apt/list             --> anb/router.SetRouter.func10 (5 handlers)
+[GIN-debug] CONNECT /api/apt/list             --> anb/router.SetRouter.func10 (5 handlers)
+[GIN-debug] TRACE  /api/apt/list             --> anb/router.SetRouter.func10 (5 handlers)
+[GIN-debug] GET    /api/data/list            --> anb/router.SetRouter.func11 (5 handlers)
+[GIN-debug] POST   /api/data/list            --> anb/router.SetRouter.func11 (5 handlers)
+[GIN-debug] PUT    /api/data/list            --> anb/router.SetRouter.func11 (5 handlers)
+[GIN-debug] PATCH  /api/data/list            --> anb/router.SetRouter.func11 (5 handlers)
+[GIN-debug] HEAD   /api/data/list            --> anb/router.SetRouter.func11 (5 handlers)
+[GIN-debug] OPTIONS /api/data/list            --> anb/router.SetRouter.func11 (5 handlers)
+[GIN-debug] DELETE /api/data/list            --> anb/router.SetRouter.func11 (5 handlers)
+[GIN-debug] CONNECT /api/data/list            --> anb/router.SetRouter.func11 (5 handlers)
+[GIN-debug] TRACE  /api/data/list            --> anb/router.SetRouter.func11 (5 handlers)
+[GIN-debug] GET    /api/data/delete          --> anb/router.SetRouter.func12 (5 handlers)
+[GIN-debug] POST   /api/data/delete          --> anb/router.SetRouter.func12 (5 handlers)
+[GIN-debug] PUT    /api/data/delete          --> anb/router.SetRouter.func12 (5 handlers)
+[GIN-debug] PATCH  /api/data/delete          --> anb/router.SetRouter.func12 (5 handlers)
+[GIN-debug] HEAD   /api/data/delete          --> anb/router.SetRouter.func12 (5 handlers)
+[GIN-debug] OPTIONS /api/data/delete          --> anb/router.SetRouter.func12 (5 handlers)
+[GIN-debug] DELETE /api/data/delete          --> anb/router.SetRouter.func12 (5 handlers)
+[GIN-debug] CONNECT /api/data/delete          --> anb/router.SetRouter.func12 (5 handlers)
+[GIN-debug] TRACE  /api/data/delete          --> anb/router.SetRouter.func12 (5 handlers)
+[GIN-debug] GET    /api/data/insert          --> anb/router.SetRouter.func13 (5 handlers)
+[GIN-debug] POST   /api/data/insert          --> anb/router.SetRouter.func13 (5 handlers)
+[GIN-debug] PUT    /api/data/insert          --> anb/router.SetRouter.func13 (5 handlers)
+[GIN-debug] PATCH  /api/data/insert          --> anb/router.SetRouter.func13 (5 handlers)
+[GIN-debug] HEAD   /api/data/insert          --> anb/router.SetRouter.func13 (5 handlers)
+[GIN-debug] OPTIONS /api/data/insert          --> anb/router.SetRouter.func13 (5 handlers)
+[GIN-debug] DELETE /api/data/insert          --> anb/router.SetRouter.func13 (5 handlers)
+[GIN-debug] CONNECT /api/data/insert          --> anb/router.SetRouter.func13 (5 handlers)
+[GIN-debug] TRACE  /api/data/insert          --> anb/router.SetRouter.func13 (5 handlers)
+[GIN-debug] GET    /api/data/image           --> anb/router.SetRouter.func14 (5 handlers)
+[GIN-debug] POST   /api/data/image           --> anb/router.SetRouter.func14 (5 handlers)
+[GIN-debug] PUT    /api/data/image           --> anb/router.SetRouter.func14 (5 handlers)
+[GIN-debug] PATCH  /api/data/image           --> anb/router.SetRouter.func14 (5 handlers)
+[GIN-debug] HEAD   /api/data/image           --> anb/router.SetRouter.func14 (5 handlers)
+[GIN-debug] OPTIONS /api/data/image           --> anb/router.SetRouter.func14 (5 handlers)
+[GIN-debug] DELETE /api/data/image           --> anb/router.SetRouter.func14 (5 handlers)
+[GIN-debug] CONNECT /api/data/image           --> anb/router.SetRouter.func14 (5 handlers)
+[GIN-debug] TRACE  /api/data/image           --> anb/router.SetRouter.func14 (5 handlers)
+[GIN-debug] GET    /api/data/multiinsert     --> anb/router.SetRouter.func15 (5 handlers)
+[GIN-debug] POST   /api/data/multiinsert     --> anb/router.SetRouter.func15 (5 handlers)
+[GIN-debug] PUT    /api/data/multiinsert     --> anb/router.SetRouter.func15 (5 handlers)
+[GIN-debug] PATCH  /api/data/multiinsert     --> anb/router.SetRouter.func15 (5 handlers)
+[GIN-debug] HEAD   /api/data/multiinsert     --> anb/router.SetRouter.func15 (5 handlers)
+[GIN-debug] OPTIONS /api/data/multiinsert     --> anb/router.SetRouter.func15 (5 handlers)
+[GIN-debug] DELETE /api/data/multiinsert     --> anb/router.SetRouter.func15 (5 handlers)
+[GIN-debug] CONNECT /api/data/multiinsert     --> anb/router.SetRouter.func15 (5 handlers)
+[GIN-debug] TRACE  /api/data/multiinsert     --> anb/router.SetRouter.func15 (5 handlers)
+[GIN-debug] GET    /api/status/list          --> anb/router.SetRouter.func16 (5 handlers)
+[GIN-debug] POST   /api/status/list          --> anb/router.SetRouter.func16 (5 handlers)
+[GIN-debug] PUT    /api/status/list          --> anb/router.SetRouter.func16 (5 handlers)
+[GIN-debug] PATCH  /api/status/list          --> anb/router.SetRouter.func16 (5 handlers)
+[GIN-debug] HEAD   /api/status/list          --> anb/router.SetRouter.func16 (5 handlers)
+[GIN-debug] OPTIONS /api/status/list          --> anb/router.SetRouter.func16 (5 handlers)
+[GIN-debug] DELETE /api/status/list          --> anb/router.SetRouter.func16 (5 handlers)
+[GIN-debug] CONNECT /api/status/list          --> anb/router.SetRouter.func16 (5 handlers)
+[GIN-debug] TRACE  /api/status/list          --> anb/router.SetRouter.func16 (5 handlers)
+[GIN-debug] GET    /api/image/list           --> anb/router.SetRouter.func17 (5 handlers)
+[GIN-debug] POST   /api/image/list           --> anb/router.SetRouter.func17 (5 handlers)
+[GIN-debug] PUT    /api/image/list           --> anb/router.SetRouter.func17 (5 handlers)
+[GIN-debug] PATCH  /api/image/list           --> anb/router.SetRouter.func17 (5 handlers)
+[GIN-debug] HEAD   /api/image/list           --> anb/router.SetRouter.func17 (5 handlers)
+[GIN-debug] OPTIONS /api/image/list           --> anb/router.SetRouter.func17 (5 handlers)
+[GIN-debug] DELETE /api/image/list           --> anb/router.SetRouter.func17 (5 handlers)
+[GIN-debug] CONNECT /api/image/list           --> anb/router.SetRouter.func17 (5 handlers)
+[GIN-debug] TRACE  /api/image/list           --> anb/router.SetRouter.func17 (5 handlers)
+[GIN-debug] GET    /api/image/insert         --> anb/router.SetRouter.func18 (5 handlers)
+[GIN-debug] POST   /api/image/insert         --> anb/router.SetRouter.func18 (5 handlers)
+[GIN-debug] PUT    /api/image/insert         --> anb/router.SetRouter.func18 (5 handlers)
+[GIN-debug] PATCH  /api/image/insert         --> anb/router.SetRouter.func18 (5 handlers)
+[GIN-debug] HEAD   /api/image/insert         --> anb/router.SetRouter.func18 (5 handlers)
+[GIN-debug] OPTIONS /api/image/insert         --> anb/router.SetRouter.func18 (5 handlers)
+[GIN-debug] DELETE /api/image/insert         --> anb/router.SetRouter.func18 (5 handlers)
+[GIN-debug] CONNECT /api/image/insert         --> anb/router.SetRouter.func18 (5 handlers)
+[GIN-debug] TRACE  /api/image/insert         --> anb/router.SetRouter.func18 (5 handlers)
+[GIN-debug] GET    /api/image/delete         --> anb/router.SetRouter.func19 (5 handlers)
+[GIN-debug] POST   /api/image/delete         --> anb/router.SetRouter.func19 (5 handlers)
+[GIN-debug] PUT    /api/image/delete         --> anb/router.SetRouter.func19 (5 handlers)
+[GIN-debug] PATCH  /api/image/delete         --> anb/router.SetRouter.func19 (5 handlers)
+[GIN-debug] HEAD   /api/image/delete         --> anb/router.SetRouter.func19 (5 handlers)
+[GIN-debug] OPTIONS /api/image/delete         --> anb/router.SetRouter.func19 (5 handlers)
+[GIN-debug] DELETE /api/image/delete         --> anb/router.SetRouter.func19 (5 handlers)
+[GIN-debug] CONNECT /api/image/delete         --> anb/router.SetRouter.func19 (5 handlers)
+[GIN-debug] TRACE  /api/image/delete         --> anb/router.SetRouter.func19 (5 handlers)
+[GIN-debug] GET    /api/image/view           --> anb/router.SetRouter.func20 (5 handlers)
+[GIN-debug] POST   /api/image/view           --> anb/router.SetRouter.func20 (5 handlers)
+[GIN-debug] PUT    /api/image/view           --> anb/router.SetRouter.func20 (5 handlers)
+[GIN-debug] PATCH  /api/image/view           --> anb/router.SetRouter.func20 (5 handlers)
+[GIN-debug] HEAD   /api/image/view           --> anb/router.SetRouter.func20 (5 handlers)
+[GIN-debug] OPTIONS /api/image/view           --> anb/router.SetRouter.func20 (5 handlers)
+[GIN-debug] DELETE /api/image/view           --> anb/router.SetRouter.func20 (5 handlers)
+[GIN-debug] CONNECT /api/image/view           --> anb/router.SetRouter.func20 (5 handlers)
+[GIN-debug] TRACE  /api/image/view           --> anb/router.SetRouter.func20 (5 handlers)
+[GIN-debug] GET    /api/image/upload         --> anb/router.SetRouter.func21 (5 handlers)
+[GIN-debug] POST   /api/image/upload         --> anb/router.SetRouter.func21 (5 handlers)
+[GIN-debug] PUT    /api/image/upload         --> anb/router.SetRouter.func21 (5 handlers)
+[GIN-debug] PATCH  /api/image/upload         --> anb/router.SetRouter.func21 (5 handlers)
+[GIN-debug] HEAD   /api/image/upload         --> anb/router.SetRouter.func21 (5 handlers)
+[GIN-debug] OPTIONS /api/image/upload         --> anb/router.SetRouter.func21 (5 handlers)
+[GIN-debug] DELETE /api/image/upload         --> anb/router.SetRouter.func21 (5 handlers)
+[GIN-debug] CONNECT /api/image/upload         --> anb/router.SetRouter.func21 (5 handlers)
+[GIN-debug] TRACE  /api/image/upload         --> anb/router.SetRouter.func21 (5 handlers)
+[GIN-debug] GET    /api/image/upload2        --> anb/router.SetRouter.func22 (5 handlers)
+[GIN-debug] POST   /api/image/upload2        --> anb/router.SetRouter.func22 (5 handlers)
+[GIN-debug] PUT    /api/image/upload2        --> anb/router.SetRouter.func22 (5 handlers)
+[GIN-debug] PATCH  /api/image/upload2        --> anb/router.SetRouter.func22 (5 handlers)
+[GIN-debug] HEAD   /api/image/upload2        --> anb/router.SetRouter.func22 (5 handlers)
+[GIN-debug] OPTIONS /api/image/upload2        --> anb/router.SetRouter.func22 (5 handlers)
+[GIN-debug] DELETE /api/image/upload2        --> anb/router.SetRouter.func22 (5 handlers)
+[GIN-debug] CONNECT /api/image/upload2        --> anb/router.SetRouter.func22 (5 handlers)
+[GIN-debug] TRACE  /api/image/upload2        --> anb/router.SetRouter.func22 (5 handlers)
+[GIN-debug] GET    /api/image/uploadandroidbase64 --> anb/router.SetRouter.func23 (5 handlers)
+[GIN-debug] POST   /api/image/uploadandroidbase64 --> anb/router.SetRouter.func23 (5 handlers)
+[GIN-debug] PUT    /api/image/uploadandroidbase64 --> anb/router.SetRouter.func23 (5 handlers)
+[GIN-debug] PATCH  /api/image/uploadandroidbase64 --> anb/router.SetRouter.func23 (5 handlers)
+[GIN-debug] HEAD   /api/image/uploadandroidbase64 --> anb/router.SetRouter.func23 (5 handlers)
+[GIN-debug] OPTIONS /api/image/uploadandroidbase64 --> anb/router.SetRouter.func23 (5 handlers)
+[GIN-debug] DELETE /api/image/uploadandroidbase64 --> anb/router.SetRouter.func23 (5 handlers)
+[GIN-debug] CONNECT /api/image/uploadandroidbase64 --> anb/router.SetRouter.func23 (5 handlers)
+[GIN-debug] TRACE  /api/image/uploadandroidbase64 --> anb/router.SetRouter.func23 (5 handlers)
+[GIN-debug] GET    /api/image/uploadandroid  --> anb/router.SetRouter.func24 (5 handlers)
+[GIN-debug] POST   /api/image/uploadandroid  --> anb/router.SetRouter.func24 (5 handlers)
+[GIN-debug] PUT    /api/image/uploadandroid  --> anb/router.SetRouter.func24 (5 handlers)
+[GIN-debug] PATCH  /api/image/uploadandroid  --> anb/router.SetRouter.func24 (5 handlers)
+[GIN-debug] HEAD   /api/image/uploadandroid  --> anb/router.SetRouter.func24 (5 handlers)
+[GIN-debug] OPTIONS /api/image/uploadandroid  --> anb/router.SetRouter.func24 (5 handlers)
+[GIN-debug] DELETE /api/image/uploadandroid  --> anb/router.SetRouter.func24 (5 handlers)
+[GIN-debug] CONNECT /api/image/uploadandroid  --> anb/router.SetRouter.func24 (5 handlers)
+[GIN-debug] TRACE  /api/image/uploadandroid  --> anb/router.SetRouter.func24 (5 handlers)
+[GIN-debug] GET    /api/report               --> anb/router.SetRouter.func25 (5 handlers)
+[GIN-debug] GET    /api/report/download/hwp  --> anb/router.SetRouter.func26 (5 handlers)
+[GIN-debug] GET    /api/report/summary       --> anb/router.SetRouter.func27 (5 handlers)
+[GIN-debug] POST   /api/report/summary       --> anb/router.SetRouter.func27 (5 handlers)
+[GIN-debug] PUT    /api/report/summary       --> anb/router.SetRouter.func27 (5 handlers)
+[GIN-debug] PATCH  /api/report/summary       --> anb/router.SetRouter.func27 (5 handlers)
+[GIN-debug] HEAD   /api/report/summary       --> anb/router.SetRouter.func27 (5 handlers)
+[GIN-debug] OPTIONS /api/report/summary       --> anb/router.SetRouter.func27 (5 handlers)
+[GIN-debug] DELETE /api/report/summary       --> anb/router.SetRouter.func27 (5 handlers)
+[GIN-debug] CONNECT /api/report/summary       --> anb/router.SetRouter.func27 (5 handlers)
+[GIN-debug] TRACE  /api/report/summary       --> anb/router.SetRouter.func27 (5 handlers)
+[GIN-debug] GET    /api/json/list            --> anb/router.SetRouter.func28 (5 handlers)
+[GIN-debug] POST   /api/json/list            --> anb/router.SetRouter.func28 (5 handlers)
+[GIN-debug] PUT    /api/json/list            --> anb/router.SetRouter.func28 (5 handlers)
+[GIN-debug] PATCH  /api/json/list            --> anb/router.SetRouter.func28 (5 handlers)
+[GIN-debug] HEAD   /api/json/list            --> anb/router.SetRouter.func28 (5 handlers)
+[GIN-debug] OPTIONS /api/json/list            --> anb/router.SetRouter.func28 (5 handlers)
+[GIN-debug] DELETE /api/json/list            --> anb/router.SetRouter.func28 (5 handlers)
+[GIN-debug] CONNECT /api/json/list            --> anb/router.SetRouter.func28 (5 handlers)
+[GIN-debug] TRACE  /api/json/list            --> anb/router.SetRouter.func28 (5 handlers)
+[GIN-debug] GET    /api/json/data            --> anb/router.SetRouter.func29 (5 handlers)
+[GIN-debug] POST   /api/json/data            --> anb/router.SetRouter.func29 (5 handlers)
+[GIN-debug] PUT    /api/json/data            --> anb/router.SetRouter.func29 (5 handlers)
+[GIN-debug] PATCH  /api/json/data            --> anb/router.SetRouter.func29 (5 handlers)
+[GIN-debug] HEAD   /api/json/data            --> anb/router.SetRouter.func29 (5 handlers)
+[GIN-debug] OPTIONS /api/json/data            --> anb/router.SetRouter.func29 (5 handlers)
+[GIN-debug] DELETE /api/json/data            --> anb/router.SetRouter.func29 (5 handlers)
+[GIN-debug] CONNECT /api/json/data            --> anb/router.SetRouter.func29 (5 handlers)
+[GIN-debug] TRACE  /api/json/data            --> anb/router.SetRouter.func29 (5 handlers)
+[GIN-debug] GET    /api/json/check           --> anb/router.SetRouter.func30 (5 handlers)
+[GIN-debug] POST   /api/json/check           --> anb/router.SetRouter.func30 (5 handlers)
+[GIN-debug] PUT    /api/json/check           --> anb/router.SetRouter.func30 (5 handlers)
+[GIN-debug] PATCH  /api/json/check           --> anb/router.SetRouter.func30 (5 handlers)
+[GIN-debug] HEAD   /api/json/check           --> anb/router.SetRouter.func30 (5 handlers)
+[GIN-debug] OPTIONS /api/json/check           --> anb/router.SetRouter.func30 (5 handlers)
+[GIN-debug] DELETE /api/json/check           --> anb/router.SetRouter.func30 (5 handlers)
+[GIN-debug] CONNECT /api/json/check           --> anb/router.SetRouter.func30 (5 handlers)
+[GIN-debug] TRACE  /api/json/check           --> anb/router.SetRouter.func30 (5 handlers)
+[GIN-debug] GET    /api/aptgroup/get         --> anb/router.SetRouter.func31 (5 handlers)
+[GIN-debug] POST   /api/aptgroup/get         --> anb/router.SetRouter.func31 (5 handlers)
+[GIN-debug] PUT    /api/aptgroup/get         --> anb/router.SetRouter.func31 (5 handlers)
+[GIN-debug] PATCH  /api/aptgroup/get         --> anb/router.SetRouter.func31 (5 handlers)
+[GIN-debug] HEAD   /api/aptgroup/get         --> anb/router.SetRouter.func31 (5 handlers)
+[GIN-debug] OPTIONS /api/aptgroup/get         --> anb/router.SetRouter.func31 (5 handlers)
+[GIN-debug] DELETE /api/aptgroup/get         --> anb/router.SetRouter.func31 (5 handlers)
+[GIN-debug] CONNECT /api/aptgroup/get         --> anb/router.SetRouter.func31 (5 handlers)
+[GIN-debug] TRACE  /api/aptgroup/get         --> anb/router.SetRouter.func31 (5 handlers)
+[GIN-debug] GET    /api/login/login          --> anb/router.SetRouter.func32 (5 handlers)
+[GIN-debug] POST   /api/login/login          --> anb/router.SetRouter.func32 (5 handlers)
+[GIN-debug] PUT    /api/login/login          --> anb/router.SetRouter.func32 (5 handlers)
+[GIN-debug] PATCH  /api/login/login          --> anb/router.SetRouter.func32 (5 handlers)
+[GIN-debug] HEAD   /api/login/login          --> anb/router.SetRouter.func32 (5 handlers)
+[GIN-debug] OPTIONS /api/login/login          --> anb/router.SetRouter.func32 (5 handlers)
+[GIN-debug] DELETE /api/login/login          --> anb/router.SetRouter.func32 (5 handlers)
+[GIN-debug] CONNECT /api/login/login          --> anb/router.SetRouter.func32 (5 handlers)
+[GIN-debug] TRACE  /api/login/login          --> anb/router.SetRouter.func32 (5 handlers)
+[GIN-debug] GET    /api/jwt                  --> anb/router.SetRouter.func33 (5 handlers)
+[GIN-debug] POST   /api/jwt                  --> anb/router.SetRouter.func33 (5 handlers)
+[GIN-debug] PUT    /api/jwt                  --> anb/router.SetRouter.func33 (5 handlers)
+[GIN-debug] PATCH  /api/jwt                  --> anb/router.SetRouter.func33 (5 handlers)
+[GIN-debug] HEAD   /api/jwt                  --> anb/router.SetRouter.func33 (5 handlers)
+[GIN-debug] OPTIONS /api/jwt                  --> anb/router.SetRouter.func33 (5 handlers)
+[GIN-debug] DELETE /api/jwt                  --> anb/router.SetRouter.func33 (5 handlers)
+[GIN-debug] CONNECT /api/jwt                  --> anb/router.SetRouter.func33 (5 handlers)
+[GIN-debug] TRACE  /api/jwt                  --> anb/router.SetRouter.func33 (5 handlers)
+[GIN] 2026/02/04 - 13:06:57 | 404 |      26.084µs |             ::1 | GET      "/api/standardwage?orderby=sw_date+DESC"
+[GIN] 2026/02/04 - 13:07:15 | 404 |       3.167µs |             ::1 | GET      "/api/standardwage?orderby=sw_date+DESC"
+[GIN] 2026/02/04 - 13:08:35 | 200 |    1.434625ms |             ::1 | GET      "/"
+[GIN] 2026/02/04 - 13:08:35 | 200 |    2.246541ms |             ::1 | GET      "/assets/css/normalize.min.css?t=1"
+[GIN] 2026/02/04 - 13:08:35 | 200 |    3.040084ms |             ::1 | GET      "/assets/css/log.css?t=1"
+[GIN] 2026/02/04 - 13:08:35 | 200 |    2.861958ms |             ::1 | GET      "/assets/css/loading.css?t=1"
+[GIN] 2026/02/04 - 13:08:35 | 200 |    2.254875ms |             ::1 | GET      "/assets/css/combo.select.css?t=1"
+[GIN] 2026/02/04 - 13:08:35 | 200 |    2.073584ms |             ::1 | GET      "/assets/css/msdropdown/dd.css?t=1"
+[GIN] 2026/02/04 - 13:08:35 | 200 |    2.107625ms |             ::1 | GET      "/assets/css/common.css?t=15"
+[GIN] 2026/02/04 - 13:08:35 | 200 |    1.098917ms |             ::1 | GET      "/assets/js/jquery-1.9.1.js"
+[GIN] 2026/02/04 - 13:08:35 | 200 |     323.041µs |             ::1 | GET      "/assets/js/jquery.form.min.js"
+[GIN] 2026/02/04 - 13:08:35 | 200 |     259.708µs |             ::1 | GET      "/assets/js/jquery.combo.select.js?t=3"
+[GIN] 2026/02/04 - 13:08:35 | 200 |     431.917µs |             ::1 | GET      "/assets/js/hammer.min.js"
+[GIN] 2026/02/04 - 13:08:35 | 200 |     170.875µs |             ::1 | GET      "/assets/img/icon/cancel.png"
+[GIN] 2026/02/04 - 13:08:35 | 200 |     127.958µs |             ::1 | GET      "/assets/img/login_icon_01.png"
+[GIN] 2026/02/04 - 13:08:35 | 200 |     323.083µs |             ::1 | GET      "/assets/img/icon/upload.png"
+[GIN] 2026/02/04 - 13:08:35 | 200 |     129.708µs |             ::1 | GET      "/assets/img/i_crack_01_.png"
+[GIN] 2026/02/04 - 13:08:35 | 200 |     135.459µs |             ::1 | GET      "/assets/img/i_crack_02_.png"
+[GIN] 2026/02/04 - 13:08:35 | 200 |     102.208µs |             ::1 | GET      "/assets/img/i_crack_01.png"
+[GIN] 2026/02/04 - 13:08:35 | 200 |     123.375µs |             ::1 | GET      "/assets/img/i_crack_02.png"
+[GIN] 2026/02/04 - 13:08:35 | 200 |     110.583µs |             ::1 | GET      "/assets/img/i_crack_03.png"
+[GIN] 2026/02/04 - 13:08:35 | 200 |     157.667µs |             ::1 | GET      "/assets/img/i_crack_04.png"
+[GIN] 2026/02/04 - 13:08:35 | 200 |      143.25µs |             ::1 | GET      "/assets/img/i_crack_05.png"
+[GIN] 2026/02/04 - 13:08:35 | 200 |     106.625µs |             ::1 | GET      "/assets/img/i_crack_06.png"
+[GIN] 2026/02/04 - 13:08:35 | 200 |     122.125µs |             ::1 | GET      "/assets/img/i_crack_07.png"
+[GIN] 2026/02/04 - 13:08:35 | 200 |        97.5µs |             ::1 | GET      "/assets/img/i_crack_08.png"
+[GIN] 2026/02/04 - 13:08:35 | 200 |     165.292µs |             ::1 | GET      "/assets/img/i_crack_09.png"
+[GIN] 2026/02/04 - 13:08:35 | 200 |     122.708µs |             ::1 | GET      "/assets/img/i_crack_10.png"
+[GIN] 2026/02/04 - 13:08:35 | 200 |     239.459µs |             ::1 | GET      "/assets/img/4arrow2.png"
+[GIN] 2026/02/04 - 13:08:35 | 200 |     226.167µs |             ::1 | GET      "/assets/img/zoom2.png"
+[GIN] 2026/02/04 - 13:08:35 | 200 |     198.375µs |             ::1 | GET      "/js/common.js?t=23"
+[GIN] 2026/02/04 - 13:08:35 | 200 |     149.333µs |             ::1 | GET      "/js/save.js?t=65"
+[GIN] 2026/02/04 - 13:08:35 | 200 |     705.916µs |             ::1 | GET      "/js/sync.js?t=49"
+[GIN] 2026/02/04 - 13:08:35 | 200 |     279.125µs |             ::1 | GET      "/js/download.js?t=51"
+[GIN] 2026/02/04 - 13:08:35 | 200 |     196.834µs |             ::1 | GET      "/js/login.js?t=52"
+[GIN] 2026/02/04 - 13:08:35 | 200 |    1.405541ms |             ::1 | GET      "/assets/js/msdropdown/jquery.dd.js"
+[GIN] 2026/02/04 - 13:08:35 | 404 |       4.333µs |             ::1 | GET      "/cordova.js"
+[GIN] 2026/02/04 - 13:08:35 | 200 |     236.459µs |             ::1 | GET      "/assets/js/index.js?t=2"
+[GIN] 2026/02/04 - 13:08:35 | 200 |     749.416µs |             ::1 | GET      "/js/canvas.js?t=168"
+[GIN] 2026/02/04 - 13:08:35 | 200 |    5.974083ms |             ::1 | GET      "/assets/fonts/NotoSansKR-Regular.otf"
+[GIN] 2026/02/04 - 13:08:35 | 200 |     588.917µs |             ::1 | GET      "/assets/img/field/login_bg.png"
+[GIN] 2026/02/04 - 13:08:35 | 200 |    2.288125ms |             ::1 | GET      "/assets/img/field/login_center_bg.png"
+[GIN] 2026/02/04 - 13:08:35 | 200 |     271.583µs |             ::1 | GET      "/assets/img/ico_view.gif"
+[GIN] 2026/02/04 - 13:08:35 | 200 |         279µs |             ::1 | GET      "/assets/img/i_crack_01green.png"
+[GIN] 2026/02/04 - 13:08:35 | 200 |     324.542µs |             ::1 | GET      "/assets/img/i_crack_85.png"
+[GIN] 2026/02/04 - 13:08:35 | 200 |     574.375µs |             ::1 | GET      "/assets/img/i_crack_01_green.png"
+[GIN] 2026/02/04 - 13:08:35 | 200 |     504.084µs |             ::1 | GET      "/assets/img/i_crack_84.png"
+[GIN] 2026/02/04 - 13:08:35 | 200 |     521.375µs |             ::1 | GET      "/assets/img/i_crack_82.png"
+[GIN] 2026/02/04 - 13:08:35 | 200 |     324.042µs |             ::1 | GET      "/assets/img/i_crack_87.png"
+[GIN] 2026/02/04 - 13:08:35 | 200 |     431.792µs |             ::1 | GET      "/assets/img/i_crack_86.png"
+[GIN] 2026/02/04 - 13:08:35 | 200 |     452.792µs |             ::1 | GET      "/assets/img/i_crack_fillcircle2.png"
+[GIN] 2026/02/04 - 13:08:35 | 200 |     514.834µs |             ::1 | GET      "/assets/img/i_crack_88.png"
+[GIN] 2026/02/04 - 13:08:35 | 200 |    1.150208ms |             ::1 | GET      "/assets/img/remark.png"
+[GIN] 2026/02/04 - 13:08:35 | 200 |   14.637417ms |             ::1 | GET      "/assets/img/i_crack_81.png"
+[GIN] 2026/02/04 - 13:08:35 | 200 |      229.75µs |             ::1 | GET      "/assets/img/i_crack_83.png"
+[GIN] 2026/02/04 - 13:08:35 | 200 |       2.923ms |             ::1 | GET      "/assets/img/i_crack_11.png"
+[GIN] 2026/02/04 - 13:08:35 | 200 |   17.438583ms |             ::1 | GET      "/assets/img/i_crack_12.png"
+[GIN] 2026/02/04 - 13:08:35 | 200 |   26.778708ms |             ::1 | GET      "/assets/fonts/NotoSansKR-Bold.otf"
+[GIN] 2026/02/04 - 13:08:35 | 200 |   30.021875ms |             ::1 | GET      "/assets/fonts/NotoSansKR-Black.otf"
+[GIN] 2026/02/04 - 13:08:35 | 404 |       5.375µs |             ::1 | GET      "/favicon.ico"
+[GIN] 2026/02/04 - 13:08:49 | 200 |     554.084µs |             ::1 | POST     "/api/login/login"
+[GIN] 2026/02/04 - 13:08:50 | 200 |     130.292µs |             ::1 | POST     "/api/login/login"
+[GIN] 2026/02/04 - 13:08:51 | 200 |     145.459µs |             ::1 | POST     "/api/login/login"
+[GIN] 2026/02/04 - 13:09:10 | 200 |    1.023583ms |             ::1 | GET      "/"
+[GIN] 2026/02/04 - 13:09:10 | 404 |       6.292µs |             ::1 | GET      "/cordova.js"
+[GIN] 2026/02/04 - 13:28:56 | 404 |      35.333µs |             ::1 | GET      "/favicon.ico"
