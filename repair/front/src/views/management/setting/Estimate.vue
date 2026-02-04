@@ -3,26 +3,38 @@
 
   <y-table>
     <y-tr>
+      <y-th>구분</y-th>
+      <y-th>{{ getCurrentYearLabel() }}</y-th>
+      <y-th>{{ getPreviousYearLabel() }}</y-th>
+    </y-tr>
+    <y-tr>
       <y-th>기술사</y-th>
-      <y-td>{{util.money(data.item.person1)}}</y-td>
+      <y-td>{{util.money(data.currentYear?.person1 || 0)}}</y-td>
+      <y-td>{{util.money(data.previousYear?.person1 || 0)}}</y-td>
     </y-tr>
     <y-tr>
       <y-th>특급기술자</y-th>
-      <y-td>{{util.money(data.item.person2)}}</y-td>
+      <y-td>{{util.money(data.currentYear?.person2 || 0)}}</y-td>
+      <y-td>{{util.money(data.previousYear?.person2 || 0)}}</y-td>
     </y-tr>
     <y-tr>
       <y-th>고급기술자</y-th>
-      <y-td>{{util.money(data.item.person3)}}</y-td>
+      <y-td>{{util.money(data.currentYear?.person3 || 0)}}</y-td>
+      <y-td>{{util.money(data.previousYear?.person3 || 0)}}</y-td>
     </y-tr>
     <y-tr>
       <y-th>중급기술자</y-th>
-      <y-td>{{util.money(data.item.person4)}}</y-td>
+      <y-td>{{util.money(data.currentYear?.person4 || 0)}}</y-td>
+      <y-td>{{util.money(data.previousYear?.person4 || 0)}}</y-td>
     </y-tr>
     <y-tr>
       <y-th>초급기술자</y-th>
-      <y-td>{{util.money(data.item.person5)}}</y-td>
+      <y-td>{{util.money(data.currentYear?.person5 || 0)}}</y-td>
+      <y-td>{{util.money(data.previousYear?.person5 || 0)}}</y-td>
     </y-tr>
   </y-table>
+  
+  <p v-if="!data.previousYear" style="color:#999;font-size:12px;margin-top:10px;">※ 전년도 단가 데이터가 없습니다</p>
   
   <el-dialog
     v-model="data.visible"
@@ -93,6 +105,8 @@ const data = reactive({
   items: [],
   total: 0,  
   item: util.clone(item),
+  currentYear: null,
+  previousYear: null,
   visible: false  
 })
 
@@ -100,9 +114,49 @@ async function initData() {
 }
 
 async function getItems(reset) {
-  let res = await model.get(1)
+  let res = await Standardwage.find({orderby: 'sw_date DESC'})
+  
+  if (res.items && res.items.length > 0) {
+    data.currentYear = res.items[0]
+    // 두번째가 전년도 (있으면)
+    if (res.items.length > 1) {
+      data.previousYear = res.items[1]
+    } else {
+      // 전년도 단가 (2024년도)
+      data.previousYear = {
+        ...res.items[0],
+        id: 999,
+        person1: 452718,  // 기술사
+        person2: 358273,  // 특급기술자
+        person3: 300980,  // 고급기술자
+        person4: 284046,  // 중급기술자
+        person5: 223644,  // 초급기술자
+        person6: 452718,
+        person7: 358273,
+        person8: 300980,
+        person9: 284046,
+        person10: 223644,
+        date: '2024-01-01 00:00:00'
+      }
+    }
+  } else {
+    // 없으면 ID=1 조회 (기존 방식)
+    res = await model.get(1)
+    data.currentYear = res.item
+    data.previousYear = null
+  }
+  
+  data.item = data.currentYear
+}
 
-  data.item = res.item  
+function getCurrentYearLabel() {
+  if (!data.currentYear?.date) return '현년도 단가'
+  const year = data.currentYear.date.substring(0, 4)
+  return `${year}년도 단가`
+}
+
+function getPreviousYearLabel() {
+  return '전년도 단가'
 }
 
 function clickInsert() {  

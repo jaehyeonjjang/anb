@@ -1614,20 +1614,20 @@ async function initData() {
     if (res.items.length > 1) {
       data.previousYearWage = res.items[1]
     } else {
-      // 테스트용: 전년도 단가가 없으면 현년도 기준 -5% 가짜 데이터 생성
+      // 전년도 단가 (2024년도)
       data.previousYearWage = {
         ...res.items[0],
         id: 999,
-        person1: Math.round(res.items[0].person1 / 1.05),
-        person2: Math.round(res.items[0].person2 / 1.05),
-        person3: Math.round(res.items[0].person3 / 1.05),
-        person4: Math.round(res.items[0].person4 / 1.05),
-        person5: Math.round(res.items[0].person5 / 1.05),
-        person6: Math.round(res.items[0].person6 / 1.05),
-        person7: Math.round(res.items[0].person7 / 1.05),
-        person8: Math.round(res.items[0].person8 / 1.05),
-        person9: Math.round(res.items[0].person9 / 1.05),
-        person10: Math.round(res.items[0].person10 / 1.05),
+        person1: 452718,  // 기술사
+        person2: 358273,  // 특급기술자
+        person3: 300980,  // 고급기술자
+        person4: 284046,  // 중급기술자
+        person5: 223644,  // 초급기술자
+        person6: 452718,
+        person7: 358273,
+        person8: 300980,
+        person9: 284046,
+        person10: 223644,
         date: '2024-01-01 00:00:00'
       }
     }
