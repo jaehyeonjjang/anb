@@ -746,7 +746,7 @@
               <y-td style="text-align:right;padding-right:10px;">{{util.money(calc.directprice)}}</y-td>
             </y-tr>
             <y-tr v-if="data.estimate.type != 1">
-              <y-th>&nbsp;&nbsp;&nbsp;여비 및<br>&nbsp;&nbsp;&nbsp;현장체재비</y-th>
+              <y-th>여비 및<br>현장체재비</y-th>
                             
               <y-td style="text-align:right;padding-right:10px;">
                 <el-input v-model="data.estimate.travelprice"
@@ -766,7 +766,7 @@
               <y-td style="text-align:right;padding-right:10px;">{{util.money(calc.travelprice)}}</y-td>
             </y-tr>            
             <y-tr v-if="data.estimate.type != 1">
-              <y-th>&nbsp;&nbsp;&nbsp;차량운행비</y-th>              
+              <y-th>차량운행비</y-th>              
               <y-td style="text-align:right;padding-right:10px;">
                 <el-input v-model="data.estimate.carprice"
                           :formatter="(value) => `${value}`.replace(/\D/g,'').replace(/\B(?=(\d{3})+(?!\d))/g, ',')"
@@ -833,7 +833,7 @@
             </y-tr>
             -->
             <y-tr v-if="data.estimate.type != 1">
-              <y-th>&nbsp;&nbsp;&nbsp;위험수당</y-th>              
+              <y-th>위험수당</y-th>              
               <y-td style="text-align:right;padding-right:10px;">                
               </y-td>
               <y-td colspan="2" style="text-align:right;">
@@ -845,7 +845,7 @@
               <y-td style="text-align:right;padding-right:10px;">{{util.money(calc.dangerprice)}}</y-td>
             </y-tr>
             <y-tr v-if="data.estimate.type != 1">
-              <y-th>&nbsp;&nbsp;&nbsp;기계기구손료</y-th>              
+              <y-th>기계기구손료</y-th>              
               <y-td style="text-align:right;padding-right:10px;">                
               </y-td>
               <y-td colspan="2" style="text-align:right;">
@@ -1102,7 +1102,7 @@
               <y-td style="text-align:right;padding-right:10px;">{{util.money(comparecalc[index].directprice)}}</y-td>
             </y-tr>
             <y-tr v-if="data.estimate.type != 1">
-              <y-th>&nbsp;&nbsp;&nbsp;여비 및<br>&nbsp;&nbsp;&nbsp;현장체재비</y-th>
+              <y-th>여비 및<br>현장체재비</y-th>
                             
               <y-td style="text-align:right;padding-right:10px;">
                 <el-input v-model="data.compareestimates[index].travelprice"
@@ -1119,7 +1119,7 @@
               <y-td style="text-align:right;padding-right:10px;">{{util.money(comparecalc[index].travelprice)}}</y-td>
             </y-tr>            
             <y-tr v-if="data.estimate.type != 1">
-              <y-th>&nbsp;&nbsp;&nbsp;차량운행비</y-th>              
+              <y-th>차량운행비</y-th>              
               <y-td style="text-align:right;padding-right:10px;">
                 <el-input v-model="data.compareestimates[index].carprice"
                           :formatter="(value) => `${value}`.replace(/\D/g,'').replace(/\B(?=(\d{3})+(?!\d))/g, ',')"
@@ -1140,7 +1140,7 @@
               <y-td style="text-align:right;padding-right:10px;">{{util.money(comparecalc[index].carprice)}}</y-td>
             </y-tr>
             <y-tr v-if="data.estimate.type != 1">
-              <y-th>&nbsp;&nbsp;&nbsp;위험수당</y-th>              
+              <y-th>위험수당</y-th>              
               <y-td style="text-align:right;padding-right:10px;">                
               </y-td>
               <y-td colspan="2" style="text-align:right;">
@@ -1152,7 +1152,7 @@
               <y-td style="text-align:right;padding-right:10px;">{{util.money(comparecalc[index].dangerprice)}}</y-td>
             </y-tr>
             <y-tr v-if="data.estimate.type != 1">
-              <y-th>&nbsp;&nbsp;&nbsp;기계기구손료</y-th>              
+              <y-th>기계기구손료</y-th>              
               <y-td style="text-align:right;padding-right:10px;">                
               </y-td>
               <y-td colspan="2" style="text-align:right;">
