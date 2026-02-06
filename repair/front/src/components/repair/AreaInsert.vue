@@ -659,6 +659,10 @@ function clickDraw(item) {
 
     data.visibleDraw = true
   }
+  
+  img.onerror = function() {
+    util.error('이미지를 불러올 수 없습니다. 이미지를 먼저 업로드해 주세요.')
+  }
 }
 
 function clickUpdate(row, index) {

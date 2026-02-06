@@ -597,11 +597,12 @@
               v-model="data.usePreviousYearWage" 
               @change="changeStandardwage"
               size="small"
+              :disabled="!data.previousYearWage"
             >
               전년도 단가 적용
             </el-checkbox>
-            <span style="color:#999;font-size:11px;" v-if="!data.previousYearWage">
-              ※ 전년도 단가 데이터 없음 (테스트 모드)
+            <span style="color:#ff6b6b;font-size:11px;" v-if="!data.previousYearWage">
+              ※ 전년도 단가 데이터가 없습니다
             </span>
           </div>
 
