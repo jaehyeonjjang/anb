@@ -11,15 +11,15 @@ import (
 func main() {
 	// 프로덕션 DB 연결 정보
 	connectionString := "repair:repairdb@tcp(10.34.96.4:3306)/repair?charset=utf8mb4&parseTime=True&loc=Local"
-	
+
 	fmt.Println("⚠️  프로덕션 DB에 2024년도 단가 데이터를 추가합니다.")
 	fmt.Println("연결 정보를 확인해주세요:")
 	fmt.Println(connectionString)
 	fmt.Print("\n계속하려면 'yes'를 입력하세요: ")
-	
+
 	var confirm string
 	fmt.Scanln(&confirm)
-	
+
 	if confirm != "yes" {
 		fmt.Println("작업이 취소되었습니다.")
 		return
@@ -44,7 +44,7 @@ func main() {
 	if err != nil {
 		log.Fatal("조회 실패:", err)
 	}
-	
+
 	var count int
 	for rows.Next() {
 		var id int
@@ -55,7 +55,7 @@ func main() {
 		count++
 	}
 	rows.Close()
-	
+
 	if count >= 2 {
 		fmt.Println("\n⚠️  이미 2개 이상의 레코드가 존재합니다. 작업을 중단합니다.")
 		return
@@ -63,7 +63,7 @@ func main() {
 
 	// 2024년도 데이터 INSERT
 	fmt.Println("\n📝 2024년도 단가 데이터 삽입 중...")
-	
+
 	query := `INSERT INTO standardwage_tb (
 		sw_date, sw_person1, sw_person2, sw_person3, sw_person4, sw_person5,
 		sw_person6, sw_person7, sw_person8, sw_person9, sw_person10,
@@ -88,7 +88,7 @@ func main() {
 
 	rowsAffected, _ := result.RowsAffected()
 	lastInsertId, _ := result.LastInsertId()
-	
+
 	fmt.Printf("✅ 삽입 완료! (영향받은 행: %d, 삽입된 ID: %d)\n", rowsAffected, lastInsertId)
 
 	// 삽입 결과 확인
@@ -97,14 +97,14 @@ func main() {
 	if err != nil {
 		log.Fatal("조회 실패:", err)
 	}
-	
+
 	for rows.Next() {
 		var id int
 		var date string
 		var person1, person2, person3, person4, person5 int
 		rows.Scan(&id, &date, &person1, &person2, &person3, &person4, &person5)
 		fmt.Printf("  ID: %d, 날짜: %s\n", id, date)
-		fmt.Printf("    기술사: %d원, 특급: %d원, 고급: %d원, 중급: %d원, 초급: %d원\n", 
+		fmt.Printf("    기술사: %d원, 특급: %d원, 고급: %d원, 중급: %d원, 초급: %d원\n",
 			person1, person2, person3, person4, person5)
 	}
 	rows.Close()

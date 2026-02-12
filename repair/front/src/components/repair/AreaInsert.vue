@@ -188,7 +188,7 @@
           <y-th style="width:120px;">길이</y-th>
           <y-th>삭제</y-th>
         </y-tr>
-        <y-tr v-for="(item, index) in lengths">
+        <y-tr v-for="(item, index) in lengths" :key="index">
           <y-td style="text-align:center;">
             <span v-if="index==0">기준</span>
             <span v-else>{{item[0].index+1}}</span>
@@ -197,7 +197,7 @@
             <el-input v-model="data.item.standard" style="text-align:right;" @keypress="inputKey" />
           </y-td>
           <y-td style="text-align:right;" v-if="index!=0">
-            <span v-html="getValue(item)" />
+            <span>{{ getValue(item) }}</span>
           </y-td>
           <y-td style="text-align:center;">
             <el-button size="small" type="danger" @click="clickDeletePoint(item[0].index)"><el-icon><Delete /></el-icon></el-button>
@@ -221,10 +221,10 @@
           <y-th style="width:120px;">면적</y-th>
           <y-th>삭제</y-th>
         </y-tr>
-        <y-tr v-for="(item, index) in areas">
+        <y-tr v-for="(item, index) in areas" :key="item[0].index">
           <y-td style="text-align:center;">{{item[0].index+1}}</y-td>
           <y-td style="text-align:right;">
-            <span v-html="getArea(item)" />
+            <span>{{ getArea(item) }}</span>
           </y-td>
           <y-td style="text-align:center;">
             <el-button size="small" type="danger" @click="clickDeletePoint(item[0].index)"><el-icon><Delete /></el-icon></el-button>
@@ -497,6 +497,8 @@ const handleExceed: UploadProps['onExceed'] = (files, uploadFiles) => {
 async function handleSuccess(response: any, uploadFile: UploadFile, uploadFiles: UploadFiles) {
   const filename = response.filename
   data.filename = filename
+  // 업로드 성공 후 파일 리스트 정리하여 중복 방지
+  upload.value.clearFiles()
 }
 
 const submitUpload = () => {
@@ -512,6 +514,8 @@ const handleExceedMulti: UploadProps['onExceed'] = (files, uploadFiles) => {
 async function handleSuccessMulti(response: any, uploadFile: UploadFile, uploadFiles: UploadFiles) {
   const filename = response.filename
   data.filenames[util.getInt(response.param)] = filename
+  // 업로드 성공 후 파일 리스트 정리하여 중복 방지
+  uploads.value[data.uploadIndex]?.clearFiles()
 }
 
 const submitUploads = (index) => {
